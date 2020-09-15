@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
@@ -11,7 +12,23 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] Image m_ScenarioArt;
     [SerializeField] Sprite[] m_ScenarioArtSprites;
     [SerializeField] GameObject[] m_DisabledForLoadGame;
+    [SerializeField] GameObject[] m_EnabledForLoadGame;
+    [SerializeField] EventSystem m_EventSystem;
+    [SerializeField] Button m_BackButton;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            m_BackButton.OnPointerDown(new PointerEventData(m_EventSystem));
+        }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            m_BackButton.OnPointerUp(new PointerEventData(m_EventSystem));
+            BackPressed();
+        }
+    }
     public void NewGamePressed()
     {
         m_ScenarioScreen.SetActive(true);
@@ -21,6 +38,11 @@ public class MainMenuController : MonoBehaviour
         foreach (GameObject _GO in m_DisabledForLoadGame)
         {
             _GO.SetActive(true);
+        }
+
+        foreach (GameObject _GO in m_EnabledForLoadGame)
+        {
+            _GO.SetActive(false);
         }
 
         m_ScenarioArt.sprite = m_ScenarioArtSprites[Random.Range(0, m_ScenarioArtSprites.Length)];
@@ -35,6 +57,11 @@ public class MainMenuController : MonoBehaviour
         foreach (GameObject _GO in m_DisabledForLoadGame)
         {
             _GO.SetActive(false);
+        }
+
+        foreach (GameObject _GO in m_EnabledForLoadGame)
+        {
+            _GO.SetActive(true);
         }
     }
 
