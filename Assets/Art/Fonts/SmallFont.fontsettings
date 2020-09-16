@@ -8,7 +8,7 @@ Font:
   m_PrefabAsset: {fileID: 0}
   m_Name: SmallFont
   serializedVersion: 5
-  m_LineSpacing: 30
+  m_LineSpacing: 16
   m_DefaultMaterial: {fileID: 2100000, guid: 9adeb0ca6371ea146a30fcb697ef453d, type: 2}
   m_FontSize: 0
   m_Texture: {fileID: 0}
@@ -112,7 +112,7 @@ Font:
       y: 0
       width: 14
       height: -16
-    advance: 10
+    advance: 8
     flipped: 0
   - serializedVersion: 2
     index: 71
@@ -336,7 +336,7 @@ Font:
       y: 0
       width: 14
       height: -16
-    advance: 10
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 85
@@ -384,7 +384,7 @@ Font:
       y: 0
       width: 14
       height: -16
-    advance: 10
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 88
@@ -608,7 +608,7 @@ Font:
       y: 0
       width: 14
       height: -16
-    advance: 6
+    advance: 7
     flipped: 0
   - serializedVersion: 2
     index: 108
@@ -881,6 +881,38 @@ Font:
       width: 14
       height: -16
     advance: 3
+    flipped: 0
+  - serializedVersion: 2
+    index: 44
+    uv:
+      serializedVersion: 2
+      x: 0.75
+      y: 0.875
+      width: 0.0625
+      height: 0.125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 14
+      height: -16
+    advance: 4
+    flipped: 0
+  - serializedVersion: 2
+    index: 46
+    uv:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.875
+      width: 0.0625
+      height: 0.125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 14
+      height: -16
+    advance: 4
     flipped: 0
   m_KerningValues: []
   m_PixelScale: 0.1
