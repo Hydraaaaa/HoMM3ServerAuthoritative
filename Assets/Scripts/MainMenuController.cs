@@ -15,9 +15,32 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] GameObject[] m_EnabledForLoadGame;
     [SerializeField] EventSystem m_EventSystem;
     [SerializeField] Button m_BackButton;
+    [SerializeField] RectTransform m_CenterAnchor;
 
     void Update()
     {
+        Vector2 _AnchoredPosition = m_CenterAnchor.anchoredPosition;
+
+        if (Screen.width / 2.0f != Mathf.Round(Screen.width / 2.0f))
+        {
+            _AnchoredPosition.x = 0.5f;
+        }
+        else
+        {
+            _AnchoredPosition.x = 0.0f;
+        }
+
+        if (Screen.height / 2.0f != Mathf.Round(Screen.height / 2.0f))
+        {
+            _AnchoredPosition.y = 0.5f;
+        }
+        else
+        {
+            _AnchoredPosition.y = 0.0f;
+        }
+
+        m_CenterAnchor.anchoredPosition = _AnchoredPosition;
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             m_BackButton.OnPointerDown(new PointerEventData(m_EventSystem));
