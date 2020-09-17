@@ -15,8 +15,6 @@ public class ScenarioEntry : MonoBehaviour
     {
         Map = a_Map;
 
-        Debug.Log(a_Map);
-
         if (a_Map != null)
         {
             m_ScenarioName.text = a_Map.Name;
