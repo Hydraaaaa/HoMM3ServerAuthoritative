@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
+  m_Name: 'Pandora''s Box '
+  m_EditorClassIdentifier: 
+  Name: Pandora's Box
+  Description: Hades has taken a vacation, leaving some of his minions in charge. 
+    For a little while things went well, but now it seems something drastic has happened
+    down there.  If he does not return soon or someone doesn't fix whatever the problem
+    is, then Greece will be buried in the dead.

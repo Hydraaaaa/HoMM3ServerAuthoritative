@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
+  m_Name: Pirates
+  m_EditorClassIdentifier: 
+  Name: Pirates!
+  Description: There are islands in the Sea of Prosperity that are the homes for
+    some vicious pirates. You have been sent with a small contingent of troops to
+    take one of the castles and establish a base with which to cleanse the region
+    of these accursed Corsairs.

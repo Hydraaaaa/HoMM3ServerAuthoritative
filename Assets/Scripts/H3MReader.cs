@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.IO.Compression;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using System.Text;
 using System;
@@ -16,6 +18,7 @@ public class H3MReader : MonoBehaviour
     [SerializeField] string m_OutputFolder;
     [SerializeField] bool m_Overwrite;
 
+#if UNITY_EDITOR
     void Awake()
     {
         object[] _ExistingObjects = AssetDatabase.LoadAllAssetsAtPath(m_OutputFolder);
@@ -95,4 +98,5 @@ public class H3MReader : MonoBehaviour
             AssetDatabase.CreateAsset(_Map, "Assets/" + m_OutputFolder + _Map.name + ".asset");
         }
     }
+#endif
 }

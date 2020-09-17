@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
+  m_Name: Myth and Legend
+  m_EditorClassIdentifier: 
+  Name: Myth and Legend
+  Description: You are a God.  Scaring mortals, granting wishes and generally mucking
+    about Greece has been great fun, but with all fun it eventually turns to boredom. 
+    Fortunately Autolycus has provided you and the other gods with some amusement. 
+    He has stolen the Titan's Cuirass and you must find it first.
