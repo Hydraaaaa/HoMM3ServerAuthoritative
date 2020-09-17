@@ -5,15 +5,19 @@ using UnityEngine.UI;
 
 public class ScenarioList : MonoBehaviour
 {
-    [SerializeField] Map[] m_Maps;
-    [SerializeField] ScenarioEntry[] m_ScenarioEntries;
+    public List<Map> Maps => m_Maps;
+    public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
+    [SerializeField] List<Map> m_Maps;
+    [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
     [SerializeField] Text m_Description;
 
     Map m_SelectedMap;
 
+    public int ListOffset { get; private set; }
+
     void Awake()
     {
-        for (int i = 0; i < m_ScenarioEntries.Length; i++)
+        for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].ScenarioList = this;
         }
@@ -21,9 +25,11 @@ public class ScenarioList : MonoBehaviour
         PopulateScenarioEntries(0);
     }
     
-    void PopulateScenarioEntries(int a_Offset)
+    public void PopulateScenarioEntries(int a_Offset)
     {
-        int _EntriesToPopulate = Mathf.Min(m_ScenarioEntries.Length, m_Maps.Length - a_Offset);
+        ListOffset = a_Offset;
+
+        int _EntriesToPopulate = Mathf.Min(m_ScenarioEntries.Count, m_Maps.Count - a_Offset);
 
         for (int i = 0; i < _EntriesToPopulate; i++)
         {
@@ -31,7 +37,7 @@ public class ScenarioList : MonoBehaviour
             m_ScenarioEntries[i].SetSelected(m_SelectedMap);
         }
 
-        for (int i = _EntriesToPopulate; i < m_ScenarioEntries.Length; i++)
+        for (int i = _EntriesToPopulate; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].SetMap(null);
         }
@@ -43,7 +49,7 @@ public class ScenarioList : MonoBehaviour
 
         m_Description.text = a_Map.Description;
 
-        for (int i = 0; i < m_ScenarioEntries.Length; i++)
+        for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].SetSelected(m_SelectedMap);
         }
