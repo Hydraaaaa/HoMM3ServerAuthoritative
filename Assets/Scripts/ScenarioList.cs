@@ -9,7 +9,8 @@ public class ScenarioList : MonoBehaviour
     public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
     [SerializeField] List<Map> m_Maps;
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
-    [SerializeField] Text m_Description;
+    [SerializeField] Text m_DetailsName;
+    [SerializeField] Text m_DetailsDescription;
 
     Map m_SelectedMap;
 
@@ -23,6 +24,11 @@ public class ScenarioList : MonoBehaviour
         }
 
         PopulateScenarioEntries(0);
+
+        if (m_Maps.Count > 0)
+        {
+            EntryClicked(m_Maps[0]);
+        }
     }
     
     public void PopulateScenarioEntries(int a_Offset)
@@ -47,7 +53,8 @@ public class ScenarioList : MonoBehaviour
     {
         m_SelectedMap = a_Map;
 
-        m_Description.text = a_Map.Description;
+        m_DetailsName.text = a_Map.Name;
+        m_DetailsDescription.text = a_Map.Description;
 
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
