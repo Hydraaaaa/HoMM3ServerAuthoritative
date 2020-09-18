@@ -14,8 +14,8 @@ Font:
   m_Texture: {fileID: 0}
   m_AsciiStartOffset: 0
   m_Tracking: 1
-  m_CharacterSpacing: 2
-  m_CharacterPadding: 1
+  m_CharacterSpacing: 0
+  m_CharacterPadding: 0
   m_ConvertCase: 0
   m_CharacterRects:
   - serializedVersion: 2
@@ -864,7 +864,7 @@ Font:
       y: 0
       width: 0
       height: 0
-    advance: 3.5
+    advance: 4
     flipped: 0
   - serializedVersion: 2
     index: 58

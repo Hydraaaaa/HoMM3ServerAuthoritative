@@ -6,10 +6,10 @@ Font:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SmallFont
+  m_Name: MedFont
   serializedVersion: 5
-  m_LineSpacing: 16
-  m_DefaultMaterial: {fileID: 2100000, guid: 9adeb0ca6371ea146a30fcb697ef453d, type: 2}
+  m_LineSpacing: 18
+  m_DefaultMaterial: {fileID: 2100000, guid: 4f2c0ec8bbb1f8c4cadfee4ef288f053, type: 2}
   m_FontSize: 0
   m_Texture: {fileID: 0}
   m_AsciiStartOffset: 0
@@ -30,9 +30,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 66
@@ -46,9 +46,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 67
@@ -62,9 +62,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 68
@@ -78,9 +78,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 69
@@ -94,9 +94,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 70
@@ -110,9 +110,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 71
@@ -126,9 +126,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 72
@@ -142,9 +142,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 14
     flipped: 0
   - serializedVersion: 2
     index: 73
@@ -158,9 +158,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 8
     flipped: 0
   - serializedVersion: 2
     index: 74
@@ -174,9 +174,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 75
@@ -190,9 +190,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 14
     flipped: 0
   - serializedVersion: 2
     index: 76
@@ -206,9 +206,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 77
@@ -222,9 +222,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 13
+      width: 19
+      height: -18
+    advance: 18
     flipped: 0
   - serializedVersion: 2
     index: 78
@@ -238,9 +238,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 14
     flipped: 0
   - serializedVersion: 2
     index: 79
@@ -254,9 +254,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 80
@@ -270,9 +270,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 81
@@ -286,9 +286,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 82
@@ -302,9 +302,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 14
     flipped: 0
   - serializedVersion: 2
     index: 83
@@ -318,9 +318,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 84
@@ -334,9 +334,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 85
@@ -350,9 +350,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 86
@@ -366,9 +366,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 87
@@ -382,9 +382,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 12
+      width: 19
+      height: -18
+    advance: 17
     flipped: 0
   - serializedVersion: 2
     index: 88
@@ -398,9 +398,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 89
@@ -414,9 +414,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 12
     flipped: 0
   - serializedVersion: 2
     index: 90
@@ -430,9 +430,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 9
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 97
@@ -446,9 +446,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 98
@@ -462,9 +462,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 99
@@ -478,9 +478,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 8
     flipped: 0
   - serializedVersion: 2
     index: 100
@@ -494,9 +494,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 101
@@ -510,9 +510,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 102
@@ -526,9 +526,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 6
     flipped: 0
   - serializedVersion: 2
     index: 103
@@ -542,9 +542,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 104
@@ -558,9 +558,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 105
@@ -574,9 +574,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 4
+      width: 19
+      height: -18
+    advance: 5
     flipped: 0
   - serializedVersion: 2
     index: 106
@@ -590,8 +590,8 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
+      width: 19
+      height: -18
     advance: 6
     flipped: 0
   - serializedVersion: 2
@@ -606,9 +606,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 108
@@ -622,9 +622,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 4
+      width: 19
+      height: -18
+    advance: 5
     flipped: 0
   - serializedVersion: 2
     index: 109
@@ -638,9 +638,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 13
     flipped: 0
   - serializedVersion: 2
     index: 110
@@ -654,9 +654,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 111
@@ -670,9 +670,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 112
@@ -686,9 +686,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 113
@@ -702,9 +702,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 9
     flipped: 0
   - serializedVersion: 2
     index: 114
@@ -718,9 +718,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 7
     flipped: 0
   - serializedVersion: 2
     index: 115
@@ -734,9 +734,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 8
     flipped: 0
   - serializedVersion: 2
     index: 116
@@ -750,9 +750,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 6
     flipped: 0
   - serializedVersion: 2
     index: 117
@@ -766,9 +766,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 118
@@ -782,9 +782,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 7
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 119
@@ -798,9 +798,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 10
+      width: 19
+      height: -18
+    advance: 14
     flipped: 0
   - serializedVersion: 2
     index: 120
@@ -814,9 +814,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 121
@@ -830,9 +830,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 8
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   - serializedVersion: 2
     index: 122
@@ -846,9 +846,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 6
+      width: 19
+      height: -18
+    advance: 8
     flipped: 0
   - serializedVersion: 2
     index: 32
@@ -864,7 +864,7 @@ Font:
       y: 0
       width: 0
       height: 0
-    advance: 4
+    advance: 5
     flipped: 0
   - serializedVersion: 2
     index: 58
@@ -878,9 +878,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 3
+      width: 19
+      height: -18
+    advance: 4
     flipped: 0
   - serializedVersion: 2
     index: 44
@@ -894,8 +894,8 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
+      width: 19
+      height: -18
     advance: 4
     flipped: 0
   - serializedVersion: 2
@@ -910,8 +910,8 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
+      width: 19
+      height: -18
     advance: 4
     flipped: 0
   - serializedVersion: 2
@@ -926,9 +926,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 6
     flipped: 0
   - serializedVersion: 2
     index: 41
@@ -942,9 +942,9 @@ Font:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 14
-      height: -16
-    advance: 5
+      width: 19
+      height: -18
+    advance: 6
     flipped: 0
   m_KerningValues: []
   m_PixelScale: 0.1
