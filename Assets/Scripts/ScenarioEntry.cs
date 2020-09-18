@@ -23,6 +23,21 @@ public class ScenarioEntry : MonoBehaviour
         {
             m_ScenarioName.text = "";
         }
+
+        if (m_ScenarioName.preferredWidth > m_ScenarioName.rectTransform.rect.width)
+        {
+            m_ScenarioName.alignment = TextAnchor.UpperLeft;
+
+            do
+            {
+                m_ScenarioName.text = m_ScenarioName.text.Substring(0, m_ScenarioName.text.Length - 1);
+            }
+            while (m_ScenarioName.preferredWidth > m_ScenarioName.rectTransform.rect.width);
+        }
+        else
+        {
+            m_ScenarioName.alignment = TextAnchor.UpperCenter;
+        }
     }
     
     public void SetSelected(Map a_Map)
