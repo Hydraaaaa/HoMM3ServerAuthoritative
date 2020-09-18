@@ -26,7 +26,7 @@ n bytes     Description string where n is the above length
             0 = No limit
 
 PLAYER SPECS
-This data is repeated for each potential player(? Double check this), 8 times in total
+This data is repeated for each potential player, 8 times in total
 Red, Blue, Tan, Green, Orange, Purple, Teal, Pink
 
 1 byte      Playability -> Human (Is this player playable by a human?)
@@ -99,3 +99,11 @@ n bytes     Hero name where n is the above length
 
 1 byte      Unknown
 4 bytes     How many heroes the player has
+
+--- repeated for how many heroes the player has
+
+1 byte      Hero Portrait, seems to just be FF, possibly for custom portraits
+4 bytes     Length of hero name string
+n bytes     Hero name where n is the above length
+
+---

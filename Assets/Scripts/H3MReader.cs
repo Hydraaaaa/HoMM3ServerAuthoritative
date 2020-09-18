@@ -95,6 +95,8 @@ public class H3MReader : MonoBehaviour
 
             _Map.Description = Encoding.UTF8.GetString(_Bytes, _CurrentByte, _DescLength);
 
+            _CurrentByte += 4;
+
             AssetDatabase.CreateAsset(_Map, "Assets/" + m_OutputFolder + _Map.name + ".asset");
         }
     }
