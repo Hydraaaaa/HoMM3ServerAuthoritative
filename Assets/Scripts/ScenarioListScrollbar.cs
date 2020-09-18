@@ -46,10 +46,10 @@ public class ScenarioListScrollbar : MonoBehaviour
 
             _SegmentPos = Mathf.Clamp(_SegmentPos, 0, m_ScrollSegments);
 
-            m_Scrollbar.anchoredPosition = new Vector2(0, Mathf.Round(-m_SegmentLength * _SegmentPos));
-
             m_ScenarioList.PopulateScenarioEntries(_SegmentPos);
         }
+
+        m_Scrollbar.anchoredPosition = new Vector2(0, Mathf.Round(-m_SegmentLength * m_ScenarioList.ListOffset));
     }
 
 

@@ -30,9 +30,23 @@ public class ScenarioList : MonoBehaviour
             EntryClicked(m_Maps[0]);
         }
     }
+
+    void Update()
+    {
+        if (Input.mouseScrollDelta.y > 0)
+        {
+            PopulateScenarioEntries(ListOffset - 1);
+        }
+        else if (Input.mouseScrollDelta.y < 0)
+        {
+            PopulateScenarioEntries(ListOffset + 1);
+        }
+    }
     
     public void PopulateScenarioEntries(int a_Offset)
     {
+        a_Offset = Mathf.Clamp(a_Offset, 0, m_Maps.Count - m_ScenarioEntries.Count);
+
         ListOffset = a_Offset;
 
         int _EntriesToPopulate = Mathf.Min(m_ScenarioEntries.Count, m_Maps.Count - a_Offset);
