@@ -75,4 +75,14 @@ public class ScenarioList : MonoBehaviour
             m_ScenarioEntries[i].SetSelected(m_SelectedMap);
         }
     }
+
+    public void ScrollUpPressed()
+    {
+        PopulateScenarioEntries(ListOffset - 1);
+    }
+
+    public void ScrollDownPressed()
+    {
+        PopulateScenarioEntries(ListOffset + 1);
+    }
 }
