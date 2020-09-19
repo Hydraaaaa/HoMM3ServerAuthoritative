@@ -21,8 +21,8 @@ public class ScenarioListScrollbar : MonoBehaviour
     void Start()
     {
         m_ScrollLength = m_ScrollArea.rect.height - m_Scrollbar.rect.height;
-        m_ScrollSegments = Mathf.Max(m_ScenarioList.Maps.Count - m_ScenarioList.ScenarioEntries.Count, 0);
-        m_SegmentLength = m_ScrollLength / m_ScrollSegments;
+
+        UpdateScrollSegments();
     }
 
     void Update()
@@ -92,5 +92,11 @@ public class ScenarioListScrollbar : MonoBehaviour
     {
         m_Scrolling = false;
         m_PotentiallyScrolling = false;
+    }
+
+    public void UpdateScrollSegments()
+    {
+        m_ScrollSegments = Mathf.Max(m_ScenarioList.CurrentMaps.Count - m_ScenarioList.ScenarioEntries.Count, 0);
+        m_SegmentLength = m_ScrollLength / m_ScrollSegments;
     }
 }
