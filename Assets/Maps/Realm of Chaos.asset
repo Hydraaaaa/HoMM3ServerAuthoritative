@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Realm of Chaos
   m_EditorClassIdentifier: 
+  Version: 14
   Name: Realm of Chaos
   Description: Good wishes to destroy Evil, the Neutrals just want everything for
     themselves, and Evil wants to destroy the world!  Of course, everyone has their
@@ -19,3 +20,132 @@ MonoBehaviour:
   Size: 72
   HasUnderground: 1
   Difficulty: 1
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 4
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 66
+    MainTownYCoord: 4
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 1
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 5
+    MainTownYCoord: 3
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 2
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 45
+    MainTownYCoord: 33
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 64
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 21
+    MainTownYCoord: 43
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 128
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 68
+    MainTownYCoord: 67
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 32
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 36
+    MainTownYCoord: 6
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 8
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 43
+    MainTownYCoord: 50
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 16
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 50
+    MainTownYCoord: 60
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

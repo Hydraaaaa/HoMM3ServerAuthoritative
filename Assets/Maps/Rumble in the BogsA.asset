@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Rumble in the BogsA
   m_EditorClassIdentifier: 
+  Version: 14
   Name: Rumble in the Bogs (Allies)
   Description: A classic case of the grass being greener on the other side, you and
     your ally must first dispose of your pesky swamp neighbor, then slog across a
@@ -19,3 +20,132 @@ MonoBehaviour:
   Size: 72
   HasUnderground: 1
   Difficulty: 1
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 29
+    MainTownYCoord: 15
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 63
+    MainTownYCoord: 9
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 31
+    MainTownYCoord: 62
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 63
+    MainTownYCoord: 65
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 16
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 42
+    MainTownYCoord: 36
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Peaceful Ending - Allied
   m_EditorClassIdentifier: 
+  Version: 28
   Name: Peaceful Ending (Allies)
   Description: 'Trade has been the key to peace for as long as everyone can remember. 
     Everything was going well until one nation stopped trading with the others, their
@@ -20,3 +21,132 @@ MonoBehaviour:
   Size: 108
   HasUnderground: 1
   Difficulty: 2
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 7
+    MainTownYCoord: 47
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 23
+    MainTownYCoord: 11
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 105
+    MainTownYCoord: 7
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 92
+    MainTownYCoord: 6
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 93
+    MainTownYCoord: 57
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 511
+    IsTownChoosable: 1
+    HasMainTown: 1
+    MainTownXCoord: 103
+    MainTownYCoord: 98
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

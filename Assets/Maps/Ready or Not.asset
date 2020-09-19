@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Ready or Not
   m_EditorClassIdentifier: 
+  Version: 21
   Name: Ready or Not
   Description: A war is coming... ready or not.  Your enemies are charging... ready
     or not.  You'll have to win... ready or not.  Otherwise, they'll bury you...
@@ -19,3 +20,132 @@ MonoBehaviour:
   Size: 72
   HasUnderground: 1
   Difficulty: 1
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 2
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 68
+    MainTownYCoord: 70
+    IsMainTownUnderground: 0
+    MainTownType: 1
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 8
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 69
+    MainTownYCoord: 4
+    IsMainTownUnderground: 0
+    MainTownType: 3
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 128
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 3
+    MainTownYCoord: 35
+    IsMainTownUnderground: 0
+    MainTownType: 7
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

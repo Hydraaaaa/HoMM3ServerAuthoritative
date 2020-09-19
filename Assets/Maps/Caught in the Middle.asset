@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Caught in the Middle
   m_EditorClassIdentifier: 
+  Version: 28
   Name: Caught in the Middle (Allies)
   Description: For years and years two of the kingdom's biggest landholders have
     been friends.  At least they were before they bet on who had the most land. 
@@ -20,3 +21,138 @@ MonoBehaviour:
   Size: 72
   HasUnderground: 1
   Difficulty: 3
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 470
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 4
+    MainTownYCoord: 25
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 470
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 64
+    MainTownYCoord: 61
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 1
+    AIBehaviour: 1
+    LimitedTownChoice: 0
+    AllowedTowns: 8
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 12
+    MainTownYCoord: 54
+    IsMainTownUnderground: 0
+    MainTownType: 3
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 49
+    MainHeroName: 
+    HeroNames:
+    - 1
+    - 6
+    - "\x01\x01"
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 470
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 43
+    MainTownYCoord: 38
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 1
+    AIBehaviour: 2
+    LimitedTownChoice: 0
+    AllowedTowns: 1
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 67
+    MainTownYCoord: 15
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 2
+    MainHeroName: 
+    HeroNames:
+    - "\x05"
+    - "\f"
+    - 
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

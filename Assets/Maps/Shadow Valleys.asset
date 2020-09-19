@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Shadow Valleys
   m_EditorClassIdentifier: 
+  Version: 28
   Name: Shadow Valleys
   Description: Your valley is too small for one of your stature and ambition.  Fortunately,
     seizing your neighbors' lands will expand your holdings suitably.  Once you have
@@ -20,3 +21,132 @@ MonoBehaviour:
   Size: 72
   HasUnderground: 1
   Difficulty: 2
+  PlayerInfo:
+  - HumanPlayable: 0
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 4
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 12
+    MainTownYCoord: 7
+    IsMainTownUnderground: 0
+    MainTownType: 2
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 1
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 248
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 65
+    MainTownYCoord: 13
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 248
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 25
+    MainTownYCoord: 44
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 248
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 43
+    MainTownYCoord: 30
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 248
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 6
+    MainTownYCoord: 65
+    IsMainTownUnderground: 0
+    MainTownType: 255
+    GenerateHeroAtMainTown: 1
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 1
+    AllowedTowns: 0
+    IsTownChoosable: 1
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 0
+    ComputerPlayable: 0
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 0
+    IsTownChoosable: 0
+    HasMainTown: 0
+    MainTownXCoord: 0
+    MainTownYCoord: 0
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

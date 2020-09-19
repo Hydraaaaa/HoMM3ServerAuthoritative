@@ -13,6 +13,7 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
     [SerializeField] Text m_DetailsDiff;
+    [SerializeField] ScenarioSettings m_Settings;
 
     Map m_SelectedMap;
 
@@ -97,6 +98,8 @@ public class ScenarioList : MonoBehaviour
         {
             m_ScenarioEntries[i].SetSelected(m_SelectedMap);
         }
+
+        m_Settings.UpdateSettings(a_Map);
     }
 
     public void ScrollUpPressed()

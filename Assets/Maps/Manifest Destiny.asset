@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fab2358e436da849b74cf6ffb26e914, type: 3}
   m_Name: Manifest Destiny
   m_EditorClassIdentifier: 
+  Version: 14
   Name: Manifest Destiny
   Description: The neighboring lands have become increasingly more crowded.  Only
     one kingdom is fit to rule the others.  It is time to show the other petty nobles
@@ -19,3 +20,132 @@ MonoBehaviour:
   Size: 36
   HasUnderground: 1
   Difficulty: 2
+  PlayerInfo:
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 2
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 4
+    MainTownYCoord: 6
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 64
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 31
+    MainTownYCoord: 6
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 1
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 31
+    MainTownYCoord: 28
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 4
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 4
+    MainTownYCoord: 28
+    IsMainTownUnderground: 0
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 16
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 31
+    MainTownYCoord: 6
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 128
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 31
+    MainTownYCoord: 28
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 32
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 4
+    MainTownYCoord: 28
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []
+  - HumanPlayable: 1
+    ComputerPlayable: 1
+    AIBehaviour: 0
+    LimitedTownChoice: 0
+    AllowedTowns: 8
+    IsTownChoosable: 0
+    HasMainTown: 1
+    MainTownXCoord: 4
+    MainTownYCoord: 6
+    IsMainTownUnderground: 1
+    MainTownType: 0
+    GenerateHeroAtMainTown: 0
+    IsMainHeroRandom: 0
+    MainHeroType: 255
+    MainHeroName: 
+    HeroNames: []

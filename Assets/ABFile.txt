@@ -1,0 +1,124 @@
+The .h3m file format is packaged as a .gz file (gzip)
+Change the extension and then extract
+The resulting file is specified here
+
+BASIC MAP DATA
+
+4 bytes     Version
+            0E 00 00 00 = The Restoration of Erathia
+            15 00 00 00 = Armageddon's Blade
+            1C 00 00 00 = The Shadow of Death
+
+1 byte      Unknown
+4 bytes     Map size - Both width and height are equal to this number
+1 byte      Two level map (Is underground present?)
+
+4 bytes     Length of Map name string
+n bytes     Map name string where n is the above length
+
+4 bytes     Length of Description string
+n bytes     Description string where n is the above length
+
+1 byte      Difficulty
+            0 = Easy
+            1 = Normal
+            2 = Hard
+            3 = Expert
+            4 = Impossible
+
+1 byte      Limit hero experience level to this number
+            0 = No limit
+
+PLAYER SPECS
+This data is repeated for each potential player, 8 times in total
+Red, Blue, Tan, Green, Orange, Purple, Teal, Pink
+
+1 byte      Playability -> Human (Is this player playable by a human?)
+1 byte      Playability -> Computer (Is this player playable by an AI?)
+
+1 byte      Playability -> Behavior (AI behavior type)
+            0 = Random
+            1 = Warrior
+            2 = Builder
+            3 = Explorer
+
+2 bytes     Allowed Alignments (Starting town choices)
+            Each town has a bit determining whether it's avaiable
+            00000001 00000000 = Castle
+            00000010 00000000 = Rampart
+            00000100 00000000 = Tower
+            00001000 00000000 = Inferno
+            00010000 00000000 = Necropolis
+            00100000 00000000 = Dungeon
+            01000000 00000000 = Stronghold
+            10000000 00000000 = Fortress
+            00000000 00000001 = Conflux
+
+1 byte      Does this player have a random town?
+            True when the player's main town is a random one and Customize isn't true
+            Also true when Customize is true and Random is selected
+
+1 byte      Has main town
+
+--- if Has main town = 1
+
+1 byte      Generate hero at main town
+
+1 byte      Main town type
+            0 = Castle
+            1 = Rampart
+            2 = Tower
+            3 = Inferno
+            4 = Necropolis
+            5 = Dungeon
+            6 = Stronghold
+            7 = Fortress
+            8 = Conflux
+            255 = Random
+
+1 byte      X coordinate of main town
+1 byte      Y coordinate of main town
+1 byte      Is main town underground?
+
+---
+
+1 byte      Random hero  
+1 byte      Hero type
+
+            255 = Random
+
+            Knights
+            0 = Orrin
+            2 = Valeska
+            3 = Edric
+            4 = Sylvia
+            5 = Sorsha
+            6 = Christian
+            7 = Tyris
+            144 = Sir Mullich
+            
+            TODO
+            8 (0x8)   = Cleric
+            20 (0x14) = Ranger
+            28 (0x1C) = Druid
+            53 (0x35) = Demoniac
+            67 (0x43) = Death Knight
+
+--- if Hero type != 255 (Random)
+
+1 byte      Hero Portrait, values mean the same thing as hero type, FF if not customized
+4 bytes     Length of hero name string
+n bytes     Hero name where n is the above length
+
+---
+
+1 byte      Unknown
+4 bytes     How many heroes the player has
+
+--- repeated for how many heroes the player has
+
+1 byte      Hero Type
+4 bytes     Length of hero name string
+n bytes     Hero name where n is the above length
+
+---
