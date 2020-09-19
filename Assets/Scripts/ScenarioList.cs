@@ -47,7 +47,7 @@ public class ScenarioList : MonoBehaviour
 
         m_CurrentMaps = m_Maps;
 
-        NameSort();
+        VersionSort();
 
         PopulateScenarioEntries(0);
 
