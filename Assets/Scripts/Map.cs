@@ -10,4 +10,6 @@ public class Map : ScriptableObject
 
     public int Size;
     public bool HasUnderground;
+
+    public byte Difficulty;
 }

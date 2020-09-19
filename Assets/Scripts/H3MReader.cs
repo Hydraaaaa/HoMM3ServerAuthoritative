@@ -105,7 +105,11 @@ public class H3MReader : MonoBehaviour
 
             _Map.Description = Encoding.UTF8.GetString(_Bytes, _CurrentByte, _DescLength);
 
-            _CurrentByte += 2;
+            _CurrentByte += _DescLength;
+
+            _Map.Difficulty = _Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
 
             // <><><><><> Player Specs
 

@@ -12,6 +12,7 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
+    [SerializeField] Text m_DetailsDiff;
 
     Map m_SelectedMap;
 
@@ -81,6 +82,16 @@ public class ScenarioList : MonoBehaviour
 
         m_DetailsName.text = a_Map.Name;
         m_DetailsDescription.text = a_Map.Description;
+
+        switch (a_Map.Difficulty)
+        {
+            case 0: m_DetailsDiff.text = "Easy"; break;
+            case 1: m_DetailsDiff.text = "Normal"; break;
+            case 2: m_DetailsDiff.text = "Hard"; break;
+            case 3: m_DetailsDiff.text = "Expert"; break;
+            case 4: m_DetailsDiff.text = "Impossible"; break;
+            case 5: m_DetailsDiff.text = "???"; break;
+        }
 
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
