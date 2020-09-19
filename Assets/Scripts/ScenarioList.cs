@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,12 +17,23 @@ public class ScenarioList : MonoBehaviour
 
     public int ListOffset { get; private set; }
 
+    enum SortType
+    {
+        Unsorted,
+        Name,
+        Size
+    }
+
+    SortType m_SortType = SortType.Unsorted;
+
     void Awake()
     {
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].ScenarioList = this;
         }
+
+        NameSort();
 
         PopulateScenarioEntries(0);
 
@@ -84,5 +96,37 @@ public class ScenarioList : MonoBehaviour
     public void ScrollDownPressed()
     {
         PopulateScenarioEntries(ListOffset + 1);
+    }
+
+    public void NameSort()
+    {
+        if (m_SortType != SortType.Name)
+        {
+            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Name).ToList();
+
+            m_SortType = SortType.Name;
+        }
+        else
+        {
+            m_Maps.Reverse();
+        }
+
+        PopulateScenarioEntries(0);
+    }
+
+    public void SizeSort()
+    {
+        if (m_SortType != SortType.Size)
+        {
+            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Size).ToList();
+
+            m_SortType = SortType.Size;
+        }
+        else
+        {
+            m_Maps.Reverse();
+        }
+
+        PopulateScenarioEntries(0);
     }
 }

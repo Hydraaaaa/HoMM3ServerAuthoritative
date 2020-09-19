@@ -76,9 +76,19 @@ public class H3MReader : MonoBehaviour
                 }
             }
 
-            int _CurrentByte = 10;
+            // <><><><><> Basic Map Data
+
+            int _CurrentByte = 5;
 
             byte[] _Bytes = _BytesList.ToArray();
+
+            _Map.Size = BitConverter.ToInt32(_Bytes, _CurrentByte);
+
+            _CurrentByte += 4;
+
+            _Map.HasUnderground = BitConverter.ToBoolean(_Bytes, _CurrentByte);
+
+            _CurrentByte += 1;
 
             // Set Name and Description
             int _NameLength = BitConverter.ToInt32(_Bytes, _CurrentByte);
@@ -95,7 +105,9 @@ public class H3MReader : MonoBehaviour
 
             _Map.Description = Encoding.UTF8.GetString(_Bytes, _CurrentByte, _DescLength);
 
-            _CurrentByte += 4;
+            _CurrentByte += 2;
+
+            // <><><><><> Player Specs
 
             AssetDatabase.CreateAsset(_Map, "Assets/" + m_OutputFolder + _Map.name + ".asset");
         }
