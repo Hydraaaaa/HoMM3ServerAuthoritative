@@ -23,7 +23,8 @@ public class ScenarioList : MonoBehaviour
     {
         Unsorted,
         Name,
-        Size
+        Size,
+        Version
     }
 
     SortType m_SortType = SortType.Unsorted;
@@ -135,6 +136,23 @@ public class ScenarioList : MonoBehaviour
             m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Size).ToList();
 
             m_SortType = SortType.Size;
+        }
+        else
+        {
+            m_Maps.Reverse();
+        }
+
+        PopulateScenarioEntries(0);
+    }
+
+    public void VersionSort()
+    {
+        if (m_SortType != SortType.Version)
+        {
+            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Name).ToList();
+            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Version).ToList();
+
+            m_SortType = SortType.Version;
         }
         else
         {
