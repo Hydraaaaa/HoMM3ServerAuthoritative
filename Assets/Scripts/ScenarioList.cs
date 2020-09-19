@@ -13,6 +13,11 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
     [SerializeField] Text m_DetailsDiff;
+    [SerializeField] Image m_DetailsSizeImage;
+    [SerializeField] Sprite m_SmallSprite;
+    [SerializeField] Sprite m_MedSprite;
+    [SerializeField] Sprite m_LargeSprite;
+    [SerializeField] Sprite m_XLSprite;
     [SerializeField] ScenarioSettings m_Settings;
 
     Map m_SelectedMap;
@@ -98,6 +103,14 @@ public class ScenarioList : MonoBehaviour
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].SetSelected(m_SelectedMap);
+        }
+
+        switch (a_Map.Size)
+        {
+            case 36: m_DetailsSizeImage.sprite = m_SmallSprite; break;
+            case 72: m_DetailsSizeImage.sprite = m_MedSprite; break;
+            case 108: m_DetailsSizeImage.sprite = m_LargeSprite; break;
+            case 144: m_DetailsSizeImage.sprite = m_XLSprite; break;
         }
 
         m_Settings.UpdateSettings(a_Map);
