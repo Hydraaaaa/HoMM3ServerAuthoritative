@@ -11,6 +11,7 @@ public class ScenarioEntry : MonoBehaviour
     public Text SizeText => m_SizeText;
     [SerializeField] Text m_NameText;
     [SerializeField] Text m_SizeText;
+    [SerializeField] Text m_PlayerCountText;
     [SerializeField] Image m_VersionImage;
     [SerializeField] Color m_SelectedColor;
 
@@ -34,24 +35,46 @@ public class ScenarioEntry : MonoBehaviour
                 case 144: m_SizeText.text = "XL"; break;
                 default: m_SizeText.text = "?"; break;
             }
+
+            m_VersionImage.gameObject.SetActive(true);
+
+            if (a_Map.Version == Map.RESTORATION_OF_ERATHIA)
+            {
+                m_VersionImage.sprite = m_ROESprite;
+            }
+            else if (a_Map.Version == Map.ARMAGEDDONS_BLADE)
+            {
+                m_VersionImage.sprite = m_ABSprite;
+            }
+            else
+            {
+                m_VersionImage.sprite = m_SODSprite;
+            }
+
+            int _ComputerCount = 0;
+            int _PlayerCount = 0;
+
+            for (int i = 0; i < a_Map.PlayerInfo.Count; i++)
+            {
+                if (a_Map.PlayerInfo[i].ComputerPlayable)
+                {
+                    _ComputerCount++;
+                }
+
+                if (a_Map.PlayerInfo[i].HumanPlayable)
+                {
+                    _PlayerCount++;
+                }
+            }
+
+            m_PlayerCountText.text = _ComputerCount + "/" + _PlayerCount;
         }
         else
         {
             m_NameText.text = "";
             m_SizeText.text = "";
-        }
-
-        if (a_Map.Version == Map.RESTORATION_OF_ERATHIA)
-        {
-            m_VersionImage.sprite = m_ROESprite;
-        }
-        else if (a_Map.Version == Map.ARMAGEDDONS_BLADE)
-        {
-            m_VersionImage.sprite = m_ABSprite;
-        }
-        else
-        {
-            m_VersionImage.sprite = m_SODSprite;
+            m_VersionImage.gameObject.SetActive(false);
+            m_PlayerCountText.text = "";
         }
 
         if (m_NameText.preferredWidth > m_NameText.rectTransform.rect.width)
@@ -76,11 +99,13 @@ public class ScenarioEntry : MonoBehaviour
         {
             m_NameText.color = m_SelectedColor;
             m_SizeText.color = m_SelectedColor;
+            m_PlayerCountText.color = m_SelectedColor;
         }
         else
         {
             m_NameText.color = Color.white;
             m_SizeText.color = Color.white;
+            m_PlayerCountText.color = Color.white;
         }
     }
 
