@@ -88,6 +88,26 @@ public class H3MReader : MonoBehaviour
                 case Map.ARMAGEDDONS_BLADE: ReadAB(ref _Map, _Bytes); break;
                 case Map.SHADOW_OF_DEATH: ReadSoD(ref _Map, _Bytes); break;
             }
+
+            int _ComputerCount = 0;
+            int _PlayerCount = 0;
+
+            for (int j = 0; j < _Map.PlayerInfo.Count; j++)
+            {
+                if (_Map.PlayerInfo[j].ComputerPlayable)
+                {
+                    _ComputerCount++;
+                }
+
+                if (_Map.PlayerInfo[j].HumanPlayable)
+                {
+                    _PlayerCount++;
+                }
+            }
+
+            _Map.PlayerCount = _PlayerCount;
+            _Map.ComputerCount = _ComputerCount;
+            
             AssetDatabase.CreateAsset(_Map, "Assets/" + m_OutputFolder + _Map.name + ".asset");
         }
     }

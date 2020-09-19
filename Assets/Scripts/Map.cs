@@ -42,4 +42,7 @@ public class Map : ScriptableObject
     public byte Difficulty;
 
     public List<PlayerInfo> PlayerInfo;
+
+    public int PlayerCount;
+    public int ComputerCount;
 }

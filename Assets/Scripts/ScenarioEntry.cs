@@ -51,23 +51,7 @@ public class ScenarioEntry : MonoBehaviour
                 m_VersionImage.sprite = m_SODSprite;
             }
 
-            int _ComputerCount = 0;
-            int _PlayerCount = 0;
-
-            for (int i = 0; i < a_Map.PlayerInfo.Count; i++)
-            {
-                if (a_Map.PlayerInfo[i].ComputerPlayable)
-                {
-                    _ComputerCount++;
-                }
-
-                if (a_Map.PlayerInfo[i].HumanPlayable)
-                {
-                    _PlayerCount++;
-                }
-            }
-
-            m_PlayerCountText.text = _ComputerCount + "/" + _PlayerCount;
+            m_PlayerCountText.text = a_Map.ComputerCount + "/" + a_Map.PlayerCount;
         }
         else
         {
