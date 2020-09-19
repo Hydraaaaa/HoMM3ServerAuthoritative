@@ -11,7 +11,12 @@ public class ScenarioEntry : MonoBehaviour
     public Text SizeText => m_SizeText;
     [SerializeField] Text m_NameText;
     [SerializeField] Text m_SizeText;
+    [SerializeField] Image m_VersionImage;
     [SerializeField] Color m_SelectedColor;
+
+    [SerializeField] Sprite m_ROESprite;
+    [SerializeField] Sprite m_ABSprite;
+    [SerializeField] Sprite m_SODSprite;
 
     public void SetMap(Map a_Map)
     {
@@ -34,6 +39,19 @@ public class ScenarioEntry : MonoBehaviour
         {
             m_NameText.text = "";
             m_SizeText.text = "";
+        }
+
+        if (a_Map.Version == Map.RESTORATION_OF_ERATHIA)
+        {
+            m_VersionImage.sprite = m_ROESprite;
+        }
+        else if (a_Map.Version == Map.ARMAGEDDONS_BLADE)
+        {
+            m_VersionImage.sprite = m_ABSprite;
+        }
+        else
+        {
+            m_VersionImage.sprite = m_SODSprite;
         }
 
         if (m_NameText.preferredWidth > m_NameText.rectTransform.rect.width)
