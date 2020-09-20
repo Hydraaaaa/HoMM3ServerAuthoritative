@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameSettings : ScriptableObject
 {
-    public int Difficulty;
+    public int Rating;
 }
