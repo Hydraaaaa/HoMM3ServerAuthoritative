@@ -2,6 +2,8 @@ The .h3m file format is packaged as a .gz file (gzip)
 Change the extension and then extract
 The resulting file is specified here
 
+This specific layout is for The Shadow of Death maps
+
 BASIC MAP DATA
 
 4 bytes     Version
@@ -122,5 +124,128 @@ n bytes     Hero name where n is the above length
 1 byte      Hero Type
 4 bytes     Length of hero name string
 n bytes     Hero name where n is the above length
+
+---
+
+VICTORY CONDITION
+
+1 byte      Victory Condition
+            255 = None
+            0 = Acquire a specific artifact
+            1 = Accumulate creatures
+            2 = Accumulate resources
+            3 = Upgrade a specific town
+            4 = Build the grail structure
+            5 = Defeat a specific hero
+            6 = Capture a specific town
+            7 = Defeat a specific monster
+            8 = Flag all creature dwellings
+            9 = Flag all mines
+            10 = Transport a specific artifact
+
+--- Acquire a specific artifact
+
+1 byte      Special victory condition also applies to computer opponents
+3 bytes     TBD
+
+--- Accumulate creatures
+
+1 byte      Also allow normal Victory
+1 byte      Special victory condition also applies to computer opponents
+2 bytes     Creature ID
+4 bytes     Creature Amount
+
+--- Accumulate resources
+
+1 byte      Also allow normal Victory
+1 byte      Special victory condition also applies to computer opponents
+1 bytes     Resource ID
+4 bytes     Resource Amount
+
+--- Upgrade a specific town
+
+1 byte      Also allow normal Victory
+6 bytes     TBD
+
+--- Build the grail structure
+
+1 byte      Special victory condition also applies to computer opponents
+4 bytes     TBD
+
+--- Defeat a specific hero
+
+5 bytes     TBD
+
+--- Capture a specific town
+
+1 byte      Also allow normal Victory
+1 byte      Special victory condition also applies to computer opponents
+1 byte      X coord of town
+1 byte      Y coord of town
+1 byte      Is town underground?
+
+--- Defeat a specific monster
+
+1 byte      Also allow normal Victory
+4 bytes     TBD
+
+--- Flag all creature dwellings
+
+1 byte      Also allow normal Victory
+1 byte      Special victory condition also applies to computer opponents
+
+--- Flag all mines
+
+1 byte      Also allow normal Victory
+1 byte      Special victory condition also applies to computer opponents
+
+--- Transport a specific artifact
+
+1 byte      Special victory condition also applies to computer opponents
+5 bytes     TBD
+
+---
+
+LOSS CONDITION
+
+1 byte      Loss Condition
+            FF = None
+            00 = Lose a specific town
+            01 = Lose a specific hero
+            02 = Time expires
+
+--- Lose a specific town
+
+1 byte      X coord of town
+1 byte      Y coord of town
+1 byte      Is town underground?
+
+--- Lose a specific hero
+
+1 byte      X coord of hero
+1 byte      Y coord of hero
+1 byte      Is hero underground?
+
+--- Time expires
+
+2 bytes     Time limit
+
+---
+
+
+TEAMS
+
+1 byte      Number of teams
+
+--- if Number of teams > 0
+
+1 byte      Team of player 1 (0 = Team 1)
+1 byte      Team of player 2
+1 byte      Team of player 3
+1 byte      Team of player 4
+1 byte      Team of player 5
+1 byte      Team of player 6
+1 byte      Team of player 7
+1 byte      Team of player 8
 
 ---
