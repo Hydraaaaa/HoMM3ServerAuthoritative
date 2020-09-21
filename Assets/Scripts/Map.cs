@@ -49,4 +49,6 @@ public class Map : ScriptableObject
 
     public byte WinCondition;
     public byte LossCondition;
+
+    public bool HasTeams;
 }

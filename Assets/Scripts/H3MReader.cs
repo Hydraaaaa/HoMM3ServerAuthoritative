@@ -263,6 +263,12 @@ public class H3MReader : MonoBehaviour
 
                     _CurrentByte += 1;
                 }
+
+                a_Map.HasTeams = true;
+            }
+            else
+            {
+                a_Map.HasTeams = false;
             }
         }
         catch (Exception e)
@@ -457,6 +463,12 @@ public class H3MReader : MonoBehaviour
 
                     _CurrentByte += 1;
                 }
+
+                a_Map.HasTeams = true;
+            }
+            else
+            {
+                a_Map.HasTeams = false;
             }
         }
         catch (Exception e)
@@ -657,6 +669,12 @@ public class H3MReader : MonoBehaviour
 
                     _CurrentByte += 1;
                 }
+
+                a_Map.HasTeams = true;
+            }
+            else
+            {
+                a_Map.HasTeams = false;
             }
         }
         catch (Exception e)
