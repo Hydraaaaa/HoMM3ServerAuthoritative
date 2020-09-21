@@ -17,7 +17,7 @@ public class ScenarioSettings : MonoBehaviour
     {
         m_Map = a_Map;
 
-        for (int i = 0; i < a_Map.PlayerInfo.Count; i++)
+        for (int i = 0; i < 8; i++)
         {
             if (a_Map.PlayerInfo[i].HumanPlayable)
             {
@@ -37,44 +37,50 @@ public class ScenarioSettings : MonoBehaviour
         int _AlliesIndex = 0;
         int _EnemiesIndex = 0;
 
-        for (int i = 0; i < a_Map.PlayerInfo.Count; i++)
+        for (int i = 0; i < 8; i++)
         {
             m_Players[i].SetActive(a_Map.PlayerInfo[i].ComputerPlayable);
         }
 
         if (a_Map.HasTeams)
         {
-            for (int i = 0; i < a_Map.ComputerCount; i++)
+            for (int i = 0; i < 8; i++)
             {
-                if (a_Map.PlayerInfo[i].Team == _Team)
+                if (a_Map.PlayerInfo[i].ComputerPlayable)
                 {
-                    m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
-                    m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
-                    _AlliesIndex++;
-                }
-                else
-                {
-                    m_EnemiesFlags[_EnemiesIndex].gameObject.SetActive(true);
-                    m_EnemiesFlags[_EnemiesIndex].sprite = m_FlagSprites[i];
-                    _EnemiesIndex++;
+                    if (a_Map.PlayerInfo[i].Team == _Team)
+                    {
+                        m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
+                        m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
+                        _AlliesIndex++;
+                    }
+                    else
+                    {
+                        m_EnemiesFlags[_EnemiesIndex].gameObject.SetActive(true);
+                        m_EnemiesFlags[_EnemiesIndex].sprite = m_FlagSprites[i];
+                        _EnemiesIndex++;
+                    }
                 }
             }
         }
         else
         {
-            for (int i = 0; i < a_Map.ComputerCount; i++)
+            for (int i = 0; i < 8; i++)
             {
-                if (i == m_PlayerIndex)
+                if (a_Map.PlayerInfo[i].ComputerPlayable)
                 {
-                    m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
-                    m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
-                    _AlliesIndex++;
-                }
-                else
-                {
-                    m_EnemiesFlags[_EnemiesIndex].gameObject.SetActive(true);
-                    m_EnemiesFlags[_EnemiesIndex].sprite = m_FlagSprites[i];
-                    _EnemiesIndex++;
+                    if (i == m_PlayerIndex)
+                    {
+                        m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
+                        m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
+                        _AlliesIndex++;
+                    }
+                    else
+                    {
+                        m_EnemiesFlags[_EnemiesIndex].gameObject.SetActive(true);
+                        m_EnemiesFlags[_EnemiesIndex].sprite = m_FlagSprites[i];
+                        _EnemiesIndex++;
+                    }
                 }
             }
         }
