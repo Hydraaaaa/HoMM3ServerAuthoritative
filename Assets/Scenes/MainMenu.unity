@@ -3217,6 +3217,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Settings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
   m_RatingText: {fileID: 68071720}
+  m_EasyButton: {fileID: 2075266796}
+  m_NormalButton: {fileID: 843818630}
+  m_HardButton: {fileID: 869573866}
+  m_ExpertButton: {fileID: 1277240453}
+  m_ImpossibleButton: {fileID: 611666549}
+  m_EasySelectedSprite: {fileID: 21300000, guid: 449023462a7802343bbd3d7af7d1910b,
+    type: 3}
+  m_NormalSelectedSprite: {fileID: 21300000, guid: 361aeb6b255e326478e446ff5053000e,
+    type: 3}
+  m_HardSelectedSprite: {fileID: 21300000, guid: 68e54d9987ebaaa4c82b4ce25ff7ce9c,
+    type: 3}
+  m_ExpertSelectedSprite: {fileID: 21300000, guid: 7cfc628f472426a408c9d913abcc3c54,
+    type: 3}
+  m_ImpossibleSelectedSprite: {fileID: 21300000, guid: 29cb5dbeb644af1489235e12c7bed8d3,
+    type: 3}
 --- !u!1 &831148566
 GameObject:
   m_ObjectHideFlags: 0
