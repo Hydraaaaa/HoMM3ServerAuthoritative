@@ -35,6 +35,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 2
     MainHeroName: Jared Haret
+    Team: 0
     HeroNames:
     - Jared Haret
   - HumanPlayable: 0
@@ -52,6 +53,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 85
     MainHeroName: 
+    Team: 0
     HeroNames:
     - LothelenU
     - 
@@ -70,6 +72,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 33
     MainHeroName: Thenith
+    Team: 0
     HeroNames:
     - Thenith"
     - ",\x06"
@@ -89,6 +92,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -105,6 +109,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -121,6 +126,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -137,6 +143,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -153,6 +160,9 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   PlayerCount: 1
   ComputerCount: 3
+  WinCondition: 6
+  LossCondition: 1

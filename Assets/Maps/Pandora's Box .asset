@@ -37,6 +37,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -53,6 +54,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 144
     MainHeroName: Hercules
+    Team: 0
     HeroNames:
     - "Perseus\uFFFD\b"
     - "Hercules\x01\x01"
@@ -71,6 +73,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 1
     MainHeroName: Paris
+    Team: 0
     HeroNames:
     - "Paris\a\x05"
     - "Poena\x01\x01"
@@ -89,6 +92,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 91
     MainHeroName: Abaris
+    Team: 0
     HeroNames:
     - "Laocoon[\x06"
     - Abaris
@@ -107,6 +111,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -123,6 +128,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 12
     MainHeroName: Theseus
+    Team: 0
     HeroNames:
     - "Erechtheus\f\a"
     - Theseus
@@ -141,6 +147,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -157,8 +164,11 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 23
     MainHeroName: Aeneas
+    Team: 0
     HeroNames:
     - "Aeneas\x1F\x04"
     - "Eros\x06"
   PlayerCount: 5
   ComputerCount: 5
+  WinCondition: 6
+  LossCondition: 2

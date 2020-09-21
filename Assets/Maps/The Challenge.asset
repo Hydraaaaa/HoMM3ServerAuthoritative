@@ -37,6 +37,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -53,6 +54,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -69,6 +71,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -85,6 +88,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -101,6 +105,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -117,6 +122,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -133,6 +139,7 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 255
     MainHeroName: 
+    Team: 0
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -149,7 +156,10 @@ MonoBehaviour:
     IsMainHeroRandom: 0
     MainHeroType: 102
     MainHeroName: 
+    Team: 0
     HeroNames:
     - "\x04\x01\x01\x03\x0F"
   PlayerCount: 2
   ComputerCount: 3
+  WinCondition: 4
+  LossCondition: 2

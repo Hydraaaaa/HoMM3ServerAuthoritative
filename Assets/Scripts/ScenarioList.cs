@@ -33,7 +33,9 @@ public class ScenarioList : MonoBehaviour
         Name,
         Size,
         Version,
-        PlayerCount
+        PlayerCount,
+        WinCondition,
+        LossCondition
     }
 
     SortType m_SortType = SortType.Unsorted;
@@ -199,6 +201,42 @@ public class ScenarioList : MonoBehaviour
             m_Maps = m_Maps.OrderBy((a_Map) => a_Map.ComputerCount).ToList();
 
             m_SortType = SortType.PlayerCount;
+        }
+        else
+        {
+            m_CurrentMaps.Reverse();
+        }
+
+        PopulateScenarioEntries(0);
+    }
+
+    public void WinConditionSort()
+    {
+        if (m_SortType != SortType.WinCondition)
+        {
+            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => (byte)(a_Map.WinCondition + 1)).ToList();
+
+            m_Maps = m_Maps.OrderBy((a_Map) => (byte)(a_Map.WinCondition + 1)).ToList();
+
+            m_SortType = SortType.WinCondition;
+        }
+        else
+        {
+            m_CurrentMaps.Reverse();
+        }
+
+        PopulateScenarioEntries(0);
+    }
+
+    public void LossConditionSort()
+    {
+        if (m_SortType != SortType.LossCondition)
+        {
+            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => (byte)(a_Map.LossCondition + 1)).ToList();
+
+            m_Maps = m_Maps.OrderBy((a_Map) => (byte)(a_Map.LossCondition + 1)).ToList();
+
+            m_SortType = SortType.LossCondition;
         }
         else
         {

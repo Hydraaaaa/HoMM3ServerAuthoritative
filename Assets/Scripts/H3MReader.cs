@@ -214,6 +214,56 @@ public class H3MReader : MonoBehaviour
                     _CurrentByte += _HeroNameLength;
                 }
             }
+
+            // <><><><><> Win Condition
+
+            a_Map.WinCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.WinCondition)
+            {
+                case 0: _CurrentByte += 4; break;
+                case 1: _CurrentByte += 8; break;
+                case 2: _CurrentByte += 7; break;
+                case 3: _CurrentByte += 7; break;
+                case 4: _CurrentByte += 5; break;
+                case 5: _CurrentByte += 5; break;
+                case 6: _CurrentByte += 5; break;
+                case 7: _CurrentByte += 5; break;
+                case 8: _CurrentByte += 2; break;
+                case 9: _CurrentByte += 2; break;
+                case 10: _CurrentByte += 6; break;
+            }
+
+            // <><><><><> Loss Condition
+
+            a_Map.LossCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.LossCondition)
+            {
+                case 0: _CurrentByte += 3; break;
+                case 1: _CurrentByte += 3; break;
+                case 2: _CurrentByte += 2; break;
+            }
+
+            // <><><><><> Teams
+
+            int _NumberOfTeams = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            if (_NumberOfTeams > 0)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+
+                    _CurrentByte += 1;
+                }
+            }
         }
         catch (Exception e)
         {
@@ -356,6 +406,56 @@ public class H3MReader : MonoBehaviour
                     _PlayerInfo.HeroNames.Add(Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _NameLength));
 
                     _CurrentByte += _HeroNameLength;
+                }
+            }
+
+            // <><><><><> Win Condition
+
+            a_Map.WinCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.WinCondition)
+            {
+                case 0: _CurrentByte += 4; break;
+                case 1: _CurrentByte += 8; break;
+                case 2: _CurrentByte += 7; break;
+                case 3: _CurrentByte += 7; break;
+                case 4: _CurrentByte += 5; break;
+                case 5: _CurrentByte += 5; break;
+                case 6: _CurrentByte += 5; break;
+                case 7: _CurrentByte += 5; break;
+                case 8: _CurrentByte += 2; break;
+                case 9: _CurrentByte += 2; break;
+                case 10: _CurrentByte += 6; break;
+            }
+
+            // <><><><><> Loss Condition
+
+            a_Map.LossCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.LossCondition)
+            {
+                case 0: _CurrentByte += 3; break;
+                case 1: _CurrentByte += 3; break;
+                case 2: _CurrentByte += 2; break;
+            }
+
+            // <><><><><> Teams
+
+            int _NumberOfTeams = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            if (_NumberOfTeams > 0)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+
+                    _CurrentByte += 1;
                 }
             }
         }
@@ -506,6 +606,56 @@ public class H3MReader : MonoBehaviour
                     _PlayerInfo.HeroNames.Add(Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _NameLength));
 
                     _CurrentByte += _HeroNameLength;
+                }
+            }
+
+            // <><><><><> Win Condition
+
+            a_Map.WinCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.WinCondition)
+            {
+                case 0: _CurrentByte += 4; break;
+                case 1: _CurrentByte += 8; break;
+                case 2: _CurrentByte += 7; break;
+                case 3: _CurrentByte += 7; break;
+                case 4: _CurrentByte += 5; break;
+                case 5: _CurrentByte += 5; break;
+                case 6: _CurrentByte += 5; break;
+                case 7: _CurrentByte += 5; break;
+                case 8: _CurrentByte += 2; break;
+                case 9: _CurrentByte += 2; break;
+                case 10: _CurrentByte += 6; break;
+            }
+
+            // <><><><><> Loss Condition
+
+            a_Map.LossCondition = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            switch (a_Map.LossCondition)
+            {
+                case 0: _CurrentByte += 3; break;
+                case 1: _CurrentByte += 3; break;
+                case 2: _CurrentByte += 2; break;
+            }
+
+            // <><><><><> Teams
+
+            int _NumberOfTeams = a_Bytes[_CurrentByte];
+
+            _CurrentByte += 1;
+
+            if (_NumberOfTeams > 0)
+            {
+                for (int i = 0; i < 8; i++)
+                {
+                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+
+                    _CurrentByte += 1;
                 }
             }
         }

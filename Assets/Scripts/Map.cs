@@ -21,6 +21,7 @@ public class PlayerInfo
     public bool IsMainHeroRandom;
     public byte MainHeroType;
     public string MainHeroName;
+    public byte Team;
 
     public List<string> HeroNames;
 }
@@ -45,4 +46,7 @@ public class Map : ScriptableObject
 
     public int PlayerCount;
     public int ComputerCount;
+
+    public byte WinCondition;
+    public byte LossCondition;
 }
