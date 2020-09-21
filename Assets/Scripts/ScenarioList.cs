@@ -13,6 +13,10 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
+    [SerializeField] Image m_DetailsWinConditionImage;
+    [SerializeField] Text m_DetailsWinCondition;
+    [SerializeField] Image m_DetailsLossConditionImage;
+    [SerializeField] Text m_DetailsLossCondition;
     [SerializeField] Text m_DetailsDiff;
     [SerializeField] Image m_DetailsSizeImage;
     [SerializeField] Sprite m_SmallSprite;
@@ -21,6 +25,46 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] Sprite m_XLSprite;
     [SerializeField] ScenarioSettings m_Settings;
     [SerializeField] ScenarioListScrollbar m_Scrollbar;
+
+    public Sprite NormalWinSprite => m_NormalWinSprite;
+    public Sprite AcquireArtifactSprite => m_AcquireArtifactSprite;
+    public Sprite CreaturesSprite => m_CreaturesSprite;
+    public Sprite ResourcesSprite => m_ResourcesSprite;
+    public Sprite UpgradeTownSprite => m_UpgradeTownSprite;
+    public Sprite BuildGrailSprite => m_BuildGrailSprite;
+    public Sprite DefeatHeroSprite => m_DefeatHeroSprite;
+    public Sprite CaptureTownSprite => m_CaptureTownSprite;
+    public Sprite DefeatMonsterSprite => m_DefeatMonsterSprite;
+    public Sprite DwellingsSprite => m_DwellingsSprite;
+    public Sprite MinesSprite => m_MinesSprite;
+    public Sprite TransportSprite => m_TransportSprite;
+
+    [Space]
+
+    [SerializeField] Sprite m_NormalWinSprite;
+    [SerializeField] Sprite m_AcquireArtifactSprite;
+    [SerializeField] Sprite m_CreaturesSprite;
+    [SerializeField] Sprite m_ResourcesSprite;
+    [SerializeField] Sprite m_UpgradeTownSprite;
+    [SerializeField] Sprite m_BuildGrailSprite;
+    [SerializeField] Sprite m_DefeatHeroSprite;
+    [SerializeField] Sprite m_CaptureTownSprite;
+    [SerializeField] Sprite m_DefeatMonsterSprite;
+    [SerializeField] Sprite m_DwellingsSprite;
+    [SerializeField] Sprite m_MinesSprite;
+    [SerializeField] Sprite m_TransportSprite;
+
+    public Sprite NormalLossSprite => m_NormalLossSprite;
+    public Sprite LoseTownSprite => m_LoseTownSprite;
+    public Sprite LoseHeroSprite => m_LoseHeroSprite;
+    public Sprite TimeExpiresSprite => m_TimeExpiresSprite;
+
+    [Space]
+
+    [SerializeField] Sprite m_NormalLossSprite;
+    [SerializeField] Sprite m_LoseTownSprite;
+    [SerializeField] Sprite m_LoseHeroSprite;
+    [SerializeField] Sprite m_TimeExpiresSprite;
 
     List<Map> m_CurrentMaps;
     Map m_SelectedMap;
@@ -97,6 +141,92 @@ public class ScenarioList : MonoBehaviour
 
         m_DetailsName.text = a_Map.Name;
         m_DetailsDescription.text = a_Map.Description;
+
+        switch (a_Map.WinCondition)
+        {
+            case 255:
+                m_DetailsWinCondition.text = "Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_NormalWinSprite;
+                break;
+
+            case 0:
+                m_DetailsWinCondition.text = "Acquire Artifact or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_AcquireArtifactSprite;
+                break;
+
+            case 1:
+                m_DetailsWinCondition.text = "Accumulate Creatures";
+                m_DetailsWinConditionImage.sprite = m_CreaturesSprite;
+                break;
+
+            case 2:
+                m_DetailsWinCondition.text = "Accumulate Resources or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_ResourcesSprite;
+                break;
+
+            case 3:
+                m_DetailsWinCondition.text = "Upgrade Town or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_UpgradeTownSprite;
+                break;
+
+            case 4:
+                m_DetailsWinCondition.text = "Build a Grail Structure or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_BuildGrailSprite;
+                break;
+
+            case 5:
+                m_DetailsWinCondition.text = "Defeat Hero or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_DefeatHeroSprite;
+                break;
+
+            case 6:
+                m_DetailsWinCondition.text = "Capture Town or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_CaptureTownSprite;
+                break;
+
+            case 7:
+                m_DetailsWinCondition.text = "Defeat Monster";
+                m_DetailsWinConditionImage.sprite = m_DefeatMonsterSprite;
+                break;
+
+            case 8:
+                m_DetailsWinCondition.text = "Flag All Creature Dwellings";
+                m_DetailsWinConditionImage.sprite = m_DwellingsSprite;
+                break;
+
+            case 9:
+                m_DetailsWinCondition.text = "Flag All Mines";
+                m_DetailsWinConditionImage.sprite = m_MinesSprite;
+                break;
+
+            case 10:
+                m_DetailsWinCondition.text = "Transport Artifact or Defeat All Enemies";
+                m_DetailsWinConditionImage.sprite = m_TransportSprite;
+                break;
+        }
+
+        switch (a_Map.LossCondition)
+        {
+            case 255:
+                m_DetailsLossCondition.text = "Lose All Your Towns and Heroes";
+                m_DetailsLossConditionImage.sprite = m_NormalLossSprite;
+                break;
+
+            case 0:
+                m_DetailsLossCondition.text = "Lose Town";
+                m_DetailsLossConditionImage.sprite = m_LoseTownSprite;
+                break;
+
+            case 1:
+                m_DetailsLossCondition.text = "Lose Hero";
+                m_DetailsLossConditionImage.sprite = m_LoseHeroSprite;
+                break;
+
+            case 2:
+                m_DetailsLossCondition.text = "Time Expires";
+                m_DetailsLossConditionImage.sprite = m_TimeExpiresSprite;
+                break;
+        }
 
         switch (a_Map.Difficulty)
         {
