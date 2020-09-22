@@ -255,20 +255,36 @@ public class H3MReader : MonoBehaviour
 
             _CurrentByte += 1;
 
+            a_Map.HasTeams = false;
+
             if (_NumberOfTeams > 0)
             {
+                byte _Team = a_Map.PlayerInfo[0].Team;
+
                 for (int i = 0; i < 8; i++)
                 {
                     a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
-
-                a_Map.HasTeams = true;
-            }
-            else
-            {
-                a_Map.HasTeams = false;
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    {
+                        _Team = a_Map.PlayerInfo[i].Team;
+                        break;
+                    }
+                }
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
+                        a_Map.PlayerInfo[i].Team != _Team)
+                    {
+                        a_Map.HasTeams = true;
+                    }
+                }
             }
         }
         catch (Exception e)
@@ -455,20 +471,36 @@ public class H3MReader : MonoBehaviour
 
             _CurrentByte += 1;
 
+            a_Map.HasTeams = false;
+
             if (_NumberOfTeams > 0)
             {
+                byte _Team = a_Map.PlayerInfo[0].Team;
+
                 for (int i = 0; i < 8; i++)
                 {
                     a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
-
-                a_Map.HasTeams = true;
-            }
-            else
-            {
-                a_Map.HasTeams = false;
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    {
+                        _Team = a_Map.PlayerInfo[i].Team;
+                        break;
+                    }
+                }
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
+                        a_Map.PlayerInfo[i].Team != _Team)
+                    {
+                        a_Map.HasTeams = true;
+                    }
+                }
             }
         }
         catch (Exception e)
@@ -661,20 +693,36 @@ public class H3MReader : MonoBehaviour
 
             _CurrentByte += 1;
 
+            a_Map.HasTeams = false;
+
             if (_NumberOfTeams > 0)
             {
+                byte _Team = a_Map.PlayerInfo[0].Team;
+
                 for (int i = 0; i < 8; i++)
                 {
                     a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
-
-                a_Map.HasTeams = true;
-            }
-            else
-            {
-                a_Map.HasTeams = false;
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    {
+                        _Team = a_Map.PlayerInfo[i].Team;
+                        break;
+                    }
+                }
+                
+                for (int i = 0; i < 8; i++)
+                {
+                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
+                        a_Map.PlayerInfo[i].Team != _Team)
+                    {
+                        a_Map.HasTeams = true;
+                    }
+                }
             }
         }
         catch (Exception e)
