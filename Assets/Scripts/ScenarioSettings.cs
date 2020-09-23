@@ -8,10 +8,11 @@ public class ScenarioSettings : MonoBehaviour
     Map m_Map;
     int m_PlayerIndex;
 
-    [SerializeField] GameObject[] m_Players;
+    [SerializeField] ScenarioSettingsPlayer[] m_Players;
     [SerializeField] Image[] m_AlliesFlags;
     [SerializeField] Image[] m_EnemiesFlags;
     [SerializeField] Sprite[] m_FlagSprites;
+    [SerializeField] Sprite[] m_PlayerBackgroundSprites;
 
     public void UpdateSettings(Map a_Map)
     {
@@ -37,9 +38,23 @@ public class ScenarioSettings : MonoBehaviour
         int _AlliesIndex = 0;
         int _EnemiesIndex = 0;
 
+        int _CurrentPlayer = 0;
+
         for (int i = 0; i < 8; i++)
         {
-            m_Players[i].SetActive(a_Map.PlayerInfo[i].ComputerPlayable);
+            if (a_Map.PlayerInfo[i].ComputerPlayable)
+            {
+                m_Players[_CurrentPlayer].gameObject.SetActive(true);
+                m_Players[_CurrentPlayer].Image.sprite = m_PlayerBackgroundSprites[i];
+                m_Players[_CurrentPlayer].PlayerIndex = i;
+
+                _CurrentPlayer++;
+            }
+        }
+
+        for (int i = _CurrentPlayer + 1; i < 8; i++)
+        {
+            m_Players[i].gameObject.SetActive(false);
         }
 
         if (a_Map.HasTeams)
