@@ -11,6 +11,7 @@ public class ScenarioList : MonoBehaviour
     public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
     [SerializeField] List<Map> m_Maps;
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
+    [SerializeField] GameObject m_DisableToHide;
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
     [SerializeField] Image m_DetailsWinConditionImage;

@@ -12,7 +12,6 @@ public class ScenarioSettings : MonoBehaviour
     [SerializeField] Image[] m_AlliesFlags;
     [SerializeField] Image[] m_EnemiesFlags;
     [SerializeField] Sprite[] m_FlagSprites;
-    [SerializeField] Sprite[] m_PlayerBackgroundSprites;
 
     public void UpdateSettings(Map a_Map)
     {
@@ -45,8 +44,7 @@ public class ScenarioSettings : MonoBehaviour
             if (a_Map.PlayerInfo[i].ComputerPlayable)
             {
                 m_Players[_CurrentPlayer].gameObject.SetActive(true);
-                m_Players[_CurrentPlayer].Image.sprite = m_PlayerBackgroundSprites[i];
-                m_Players[_CurrentPlayer].PlayerIndex = i;
+                m_Players[_CurrentPlayer].Initialize(i, a_Map.PlayerInfo[i]);
 
                 _CurrentPlayer++;
             }
