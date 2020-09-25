@@ -50,7 +50,7 @@ public class ScenarioSettings : MonoBehaviour
             }
         }
 
-        for (int i = _CurrentPlayer + 1; i < 8; i++)
+        for (int i = _CurrentPlayer; i < 8; i++)
         {
             m_Players[i].gameObject.SetActive(false);
         }
