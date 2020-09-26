@@ -36,6 +36,12 @@ public class TerrainLoader : MonoBehaviour
         m_TerrainSprites.Add(m_WaterSprites);
         m_TerrainSprites.Add(m_RockSprites);
 
+        if (m_GameSettings.Map.Version != Map.SHADOW_OF_DEATH)
+        {
+            Debug.Log($"!! This map isn't SoD, not supported yet");
+            return;
+        }
+
         List<TerrainTile> _Terrain = m_GameSettings.Map.Terrain;
         int _Size = m_GameSettings.Map.Size;
 
