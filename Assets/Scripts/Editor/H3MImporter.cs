@@ -73,7 +73,7 @@ public class H3MImporter : EditorWindow
 
         for (int i = 0; i < _InputFiles.Count; i++)
         {
-            Map _Map = new Map();
+            Map _Map = ScriptableObject.CreateInstance<Map>();
 
             int _Length = _InputFiles[i].Length - 4 - _StartIndex;
             _Map.name = _InputFiles[i].Substring(_StartIndex, _Length);
