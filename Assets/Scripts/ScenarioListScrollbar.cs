@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ScenarioListScrollbar : MonoBehaviour
 {
-    [SerializeField] RectTransform m_ScrollArea;
-    [SerializeField] RectTransform m_Scrollbar;
+    [SerializeField] RectTransform m_ScrollArea = null;
+    [SerializeField] RectTransform m_Scrollbar = null;
 
-    [SerializeField] ScenarioList m_ScenarioList;
+    [SerializeField] ScenarioList m_ScenarioList = null;
 
     int m_ScrollSegments;
 

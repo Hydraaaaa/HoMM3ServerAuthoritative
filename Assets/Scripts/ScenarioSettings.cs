@@ -8,11 +8,10 @@ public class ScenarioSettings : MonoBehaviour
     Map m_Map;
     int m_PlayerIndex;
 
-    [SerializeField] GameSettings m_GameSettings;
-    [SerializeField] ScenarioSettingsPlayer[] m_Players;
-    [SerializeField] Image[] m_AlliesFlags;
-    [SerializeField] Image[] m_EnemiesFlags;
-    [SerializeField] Sprite[] m_FlagSprites;
+    [SerializeField] ScenarioSettingsPlayer[] m_Players = null;
+    [SerializeField] Image[] m_AlliesFlags = null;
+    [SerializeField] Image[] m_EnemiesFlags = null;
+    [SerializeField] Sprite[] m_FlagSprites = null;
 
     public void UpdateSettings(Map a_Map)
     {

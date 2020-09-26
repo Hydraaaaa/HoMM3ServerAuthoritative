@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class TerrainLoader : MonoBehaviour
 {
-    [SerializeField] GameSettings m_GameSettings;
-    [SerializeField] SpriteRenderer m_TerrainSpritePrefab;
-    [SerializeField] SpriteRenderer m_TerrainFrame;
+    [SerializeField] GameSettings m_GameSettings = null;
+    [SerializeField] SpriteRenderer m_TerrainSpritePrefab = null;
+    [SerializeField] SpriteRenderer m_TerrainFrame = null;
 
     [Space]
 
-    [SerializeField] List<Sprite> m_DirtSprites;
-    [SerializeField] List<Sprite> m_SandSprites;
-    [SerializeField] List<Sprite> m_GrassSprites;
-    [SerializeField] List<Sprite> m_SnowSprites;
-    [SerializeField] List<Sprite> m_SwampSprites;
-    [SerializeField] List<Sprite> m_RoughSprites;
-    [SerializeField] List<Sprite> m_SubterraneanSprites;
-    [SerializeField] List<Sprite> m_LavaSprites;
-    [SerializeField] List<Sprite> m_WaterSprites;
-    [SerializeField] List<Sprite> m_RockSprites;
+    [SerializeField] List<Sprite> m_DirtSprites = null;
+    [SerializeField] List<Sprite> m_SandSprites = null;
+    [SerializeField] List<Sprite> m_GrassSprites = null;
+    [SerializeField] List<Sprite> m_SnowSprites = null;
+    [SerializeField] List<Sprite> m_SwampSprites = null;
+    [SerializeField] List<Sprite> m_RoughSprites = null;
+    [SerializeField] List<Sprite> m_SubterraneanSprites = null;
+    [SerializeField] List<Sprite> m_LavaSprites = null;
+    [SerializeField] List<Sprite> m_WaterSprites = null;
+    [SerializeField] List<Sprite> m_RockSprites = null;
 
     List<SpriteRenderer> m_TerrainSpriteRenderers;
     List<SpriteRenderer> m_TerrainObjectSpriteRenderers;

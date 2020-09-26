@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    [SerializeField] Camera m_Camera;
-    [SerializeField] GameSettings m_GameSettings;
+
+    [SerializeField] GameSettings m_GameSettings = null;
 
     [Space]
 

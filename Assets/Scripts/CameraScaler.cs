@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraScaler : MonoBehaviour
 {
-    [SerializeField] Camera m_Camera;
+    [SerializeField] Camera m_Camera = null;
 
     void Update()
     {

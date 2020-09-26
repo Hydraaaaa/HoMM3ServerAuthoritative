@@ -7,15 +7,15 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 {
     public int PlayerIndex { get; private set; }
 
-    [SerializeField] Image m_BackgroundImage;
-    [SerializeField] Button m_FlagButton;
+    [SerializeField] Image m_BackgroundImage = null;
+    [SerializeField] Button m_FlagButton = null;
 
     [Space]
 
-    [SerializeField] Sprite[] m_BackgroundSprites;
-    [SerializeField] Sprite[] m_FlagSprites;
-    [SerializeField] Sprite[] m_FlagHoverSprites;
-    [SerializeField] Sprite[] m_FlagPressedSprites;
+    [SerializeField] Sprite[] m_BackgroundSprites = null;
+    [SerializeField] Sprite[] m_FlagSprites = null;
+    [SerializeField] Sprite[] m_FlagHoverSprites = null;
+    [SerializeField] Sprite[] m_FlagPressedSprites = null;
 
     public void Initialize(int a_Index, PlayerInfo a_PlayerInfo)
     {
