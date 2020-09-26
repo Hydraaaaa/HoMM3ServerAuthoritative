@@ -9,9 +9,10 @@ public class ScenarioList : MonoBehaviour
     public List<Map> Maps => m_Maps;
     public List<Map> CurrentMaps => m_CurrentMaps;
     public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
+
+    [SerializeField] GameSettings m_GameSettings;
     [SerializeField] List<Map> m_Maps;
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
-    [SerializeField] GameObject m_DisableToHide;
     [SerializeField] Text m_DetailsName;
     [SerializeField] Text m_DetailsDescription;
     [SerializeField] Image m_DetailsWinConditionImage;
@@ -24,7 +25,7 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] Sprite m_MedSprite;
     [SerializeField] Sprite m_LargeSprite;
     [SerializeField] Sprite m_XLSprite;
-    [SerializeField] ScenarioSettings m_Settings;
+    [SerializeField] ScenarioSettings m_ScenarioSettings;
     [SerializeField] ScenarioListScrollbar m_Scrollbar;
 
     public Sprite NormalWinSprite => m_NormalWinSprite;
@@ -140,6 +141,8 @@ public class ScenarioList : MonoBehaviour
     {
         m_SelectedMap = a_Map;
 
+        m_GameSettings.Map = a_Map;
+
         m_DetailsName.text = a_Map.Name;
         m_DetailsDescription.text = a_Map.Description;
 
@@ -252,7 +255,7 @@ public class ScenarioList : MonoBehaviour
             case 144: m_DetailsSizeImage.sprite = m_XLSprite; break;
         }
 
-        m_Settings.UpdateSettings(a_Map);
+        m_ScenarioSettings.UpdateSettings(a_Map);
     }
 
     public void ScrollUpPressed()

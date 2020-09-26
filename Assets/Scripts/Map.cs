@@ -26,6 +26,18 @@ public class PlayerInfo
     public List<string> HeroNames;
 }
 
+[Serializable]
+public class TerrainTile
+{
+    public byte TerrainType;
+    public byte TerrainSpriteID;
+    public byte RiverType;
+    public byte RiverSpriteID;
+    public byte RoadType;
+    public byte RoadSpriteID;
+    public byte Mirrored;
+}
+
 public class Map : ScriptableObject
 {
     public const int RESTORATION_OF_ERATHIA = 0x0E;
@@ -51,4 +63,6 @@ public class Map : ScriptableObject
     public byte LossCondition;
 
     public bool HasTeams;
+
+    public List<TerrainTile> Terrain;
 }

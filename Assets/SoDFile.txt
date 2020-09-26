@@ -249,3 +249,138 @@ TEAMS
 1 byte      Team of player 8
 
 ---
+
+FREE HEROES(?)
+
+24 bytes    Unknown
+1 byte      Hero Count
+
+--- Repeated based on Hero Count
+
+2 bytes     Unknown
+4 bytes     String Length
+n bytes     String
+1 byte      Unknown
+
+---
+
+31 bytes    Unknown
+
+ARTIFACTS
+
+18 bytes    Unknown
+
+SPELLS
+
+9 bytes     Unknown
+
+SecondarySkills
+
+4 bytes     Unknown
+
+RUMORS
+
+4 bytes     Rumor Count
+
+--- Repeated based on Rumor Count
+
+4 bytes     String Length
+n bytes     String
+4 bytes     String Length
+n bytes     String
+
+---
+
+HERO OPTIONS
+
+--- Repeated 156 times
+
+1 byte      Unknown Bool 1
+
+--- if Bool 1 is true
+
+1 byte      Unknown Bool 2
+
+--- if Bool 2 is true
+
+4 bytes     Unknown
+
+---
+
+1 byte      Unknown Bool 3
+
+--- if Bool 3 is true
+
+4 bytes     Count
+
+--- Repeated Count times
+
+4 bytes     Unknown
+
+---
+
+---
+
+1 byte      Unknown Bool 4
+
+--- if Bool 4 is true
+
+38 bytes    Unknown
+
+2 bytes     Count
+
+--- Repeated Count times
+
+2 bytes     Unknown
+
+---
+
+1 byte      Unknown Bool 5
+
+--- if Bool 5 is true
+
+4 bytes     String Length
+n bytes     String
+
+---
+
+1 byte      Unknown
+
+1 byte      Unknown Bool 6
+
+--- if Bool 6 is true
+
+9 bytes     Unknown
+
+---
+
+1 byte      Unknown Bool 7
+
+--- if Bool 7 is true
+
+4 bytes     Unknown
+
+---
+
+--- Bool 1
+
+TERRAIN
+
+1 byte      Terrain Type
+            0 = Dirt
+            1 = Sand
+            2 = Grass
+            3 = Snow
+            4 = Swamp
+            5 = Rough
+            6 = Subterranean
+            7 = Lava
+            8 = Water
+            9 = Rock
+
+1 byte      Terrain Sprite ID
+1 byte      River Type
+1 byte      River Sprite ID
+1 byte      Road Type
+1 byte      Road Sprite ID
+1 byte      Mirrored(?)

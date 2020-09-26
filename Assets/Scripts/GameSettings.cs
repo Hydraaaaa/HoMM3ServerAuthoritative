@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameSettings : ScriptableObject
 {
+    public Map Map;
     public int Rating;
 }
