@@ -67,7 +67,7 @@ public class TerrainLoader : MonoBehaviour
                     _Sprite.transform.localScale = new Vector3(-1, -1, 1);
                 }
 
-                _Sprite.name = _Sprite.sprite.name + " " + _Terrain[_Index].Mirrored;
+                _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID}";
 
                 m_TerrainSpriteRenderers.Add(_Sprite);
             }
