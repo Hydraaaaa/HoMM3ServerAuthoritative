@@ -6,6 +6,10 @@ public class TerrainLoader : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] SpriteRenderer m_TerrainSpritePrefab;
+    [SerializeField] SpriteRenderer m_TerrainFrame;
+
+    [Space]
+
     [SerializeField] List<Sprite> m_DirtSprites;
     [SerializeField] List<Sprite> m_SandSprites;
     [SerializeField] List<Sprite> m_GrassSprites;
@@ -45,6 +49,9 @@ public class TerrainLoader : MonoBehaviour
         List<TerrainTile> _Terrain = m_GameSettings.Map.Terrain;
         int _Size = m_GameSettings.Map.Size;
 
+        m_TerrainFrame.size = new Vector2(_Size + 2, _Size + 2);
+        m_TerrainFrame.transform.localPosition = new Vector3(_Size / 2 - 0.5f, -_Size / 2 + 0.5f, 0);
+
         m_TerrainSpriteRenderers = new List<SpriteRenderer>(_Terrain.Capacity);
 
         for (int x = 0; x < _Size; x++)
@@ -55,25 +62,36 @@ public class TerrainLoader : MonoBehaviour
 
                 SpriteRenderer _Sprite = Instantiate (m_TerrainSpritePrefab, new Vector2(x, -y), Quaternion.identity, transform);
 
-                _Sprite.sprite = m_TerrainSprites[_Terrain[_Index].TerrainType][_Terrain[_Index].TerrainSpriteID];
+                if (_Terrain[_Index].TerrainType < m_TerrainSprites.Count)
+                {
+                    if (_Terrain[_Index].TerrainSpriteID < m_TerrainSprites[_Terrain[_Index].TerrainType].Count)
+                    {
+                        _Sprite.sprite = m_TerrainSprites[_Terrain[_Index].TerrainType][_Terrain[_Index].TerrainSpriteID];
+                    }
+                    else
+                    {
+                        Debug.Log($"!! Failed ID {_Terrain[_Index].TerrainSpriteID}");
+                    }
+                }
+                else
+                {
+                    Debug.Log($"!! Failed Type {_Terrain[_Index].TerrainType}");
+                }
 
-                if (_Terrain[_Index].Mirrored == 1 ||
-                    _Terrain[_Index].Mirrored == 65)
+                if (_Terrain[_Index].Mirrored % 4 == 1)
                 {
                     _Sprite.transform.localScale = new Vector3(-1, 1, 1);
                 }
-                else if (_Terrain[_Index].Mirrored == 2 ||
-                         _Terrain[_Index].Mirrored == 66)
+                else if (_Terrain[_Index].Mirrored % 4 == 2)
                 {
                     _Sprite.transform.localScale = new Vector3(1, -1, 1);
                 }
-                else if (_Terrain[_Index].Mirrored == 3 ||
-                         _Terrain[_Index].Mirrored == 67)
+                else if (_Terrain[_Index].Mirrored % 4 == 3)
                 {
                     _Sprite.transform.localScale = new Vector3(-1, -1, 1);
                 }
 
-                _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID}";
+                _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID} Mirror {_Terrain[_Index].Mirrored}";
 
                 m_TerrainSpriteRenderers.Add(_Sprite);
             }

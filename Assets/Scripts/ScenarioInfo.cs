@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScenarioInfo : MonoBehaviour
@@ -90,5 +91,10 @@ public class ScenarioInfo : MonoBehaviour
 
         ResetSprites();
         m_ImpossibleButton.image.sprite = m_ImpossibleSelectedSprite;
+    }
+
+    public void BeginPressed()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
