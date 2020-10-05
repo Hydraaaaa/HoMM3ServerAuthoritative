@@ -26,16 +26,11 @@ public class ScenarioSettings : MonoBehaviour
             }
         }
 
-        byte _Team = a_Map.PlayerInfo[m_GameSettings.LocalPlayerIndex].Team;
-
         for (int i = 0; i < 8; i++)
         {
             m_AlliesFlags[i].gameObject.SetActive(false);
             m_EnemiesFlags[i].gameObject.SetActive(false);
         }
-
-        int _AlliesIndex = 0;
-        int _EnemiesIndex = 0;
 
         int _CurrentPlayer = 0;
 
@@ -55,13 +50,23 @@ public class ScenarioSettings : MonoBehaviour
             m_Players[i].gameObject.SetActive(false);
         }
 
-        if (a_Map.HasTeams)
+        UpdateFlags();
+    }
+
+    void UpdateFlags()
+    {
+        byte _Team = m_Map.PlayerInfo[m_GameSettings.LocalPlayerIndex].Team;
+
+        int _AlliesIndex = 0;
+        int _EnemiesIndex = 0;
+
+        if (m_Map.HasTeams)
         {
             for (int i = 0; i < 8; i++)
             {
-                if (a_Map.PlayerInfo[i].ComputerPlayable)
+                if (m_Map.PlayerInfo[i].ComputerPlayable)
                 {
-                    if (a_Map.PlayerInfo[i].Team == _Team)
+                    if (m_Map.PlayerInfo[i].Team == _Team)
                     {
                         m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
                         m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
@@ -80,7 +85,7 @@ public class ScenarioSettings : MonoBehaviour
         {
             for (int i = 0; i < 8; i++)
             {
-                if (a_Map.PlayerInfo[i].ComputerPlayable)
+                if (m_Map.PlayerInfo[i].ComputerPlayable)
                 {
                     if (i == m_GameSettings.LocalPlayerIndex)
                     {
@@ -106,5 +111,7 @@ public class ScenarioSettings : MonoBehaviour
         m_GameSettings.LocalPlayerIndex = a_Player.PlayerIndex;
 
         // TODO: Set new local player text as Player
+
+        UpdateFlags();
     }
 }
