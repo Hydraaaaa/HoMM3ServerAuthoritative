@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ScenarioSettingsPlayer : MonoBehaviour
 {
     public int PlayerIndex { get; private set; }
 
+    [SerializeField] ScenarioSettings m_ScenarioSettings = null;
     [SerializeField] Image m_BackgroundImage = null;
     [SerializeField] Button m_FlagButton = null;
 
@@ -37,6 +39,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     public void FlagPressed()
     {
-
+        m_ScenarioSettings.FlagPressed(this);
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }

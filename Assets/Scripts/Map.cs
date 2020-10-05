@@ -65,4 +65,5 @@ public class Map : ScriptableObject
     public bool HasTeams;
 
     public List<TerrainTile> Terrain;
+    public List<TerrainTile> UndergroundTerrain;
 }

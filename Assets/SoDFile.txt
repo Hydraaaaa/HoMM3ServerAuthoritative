@@ -383,4 +383,10 @@ TERRAIN
 1 byte      River Sprite ID
 1 byte      Road Type
 1 byte      Road Sprite ID
-1 byte      Mirrored(?)
+1 byte      Flipped Sprite
+            00000001 = Flip terrain sprite on X axis
+            00000010 = Flip terrain sprite on Y axis
+            00000100 = Flip river sprite on X axis
+            00001000 = Flip river sprite on Y axis
+            00010000 = Flip road sprite on X axis
+            00100000 = Flip road sprite on Y axis

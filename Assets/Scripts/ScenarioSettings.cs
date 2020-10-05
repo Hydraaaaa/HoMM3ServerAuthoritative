@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class ScenarioSettings : MonoBehaviour
 {
     Map m_Map;
-    int m_PlayerIndex;
 
+    [SerializeField] GameSettings m_GameSettings = null;
     [SerializeField] ScenarioSettingsPlayer[] m_Players = null;
     [SerializeField] Image[] m_AlliesFlags = null;
     [SerializeField] Image[] m_EnemiesFlags = null;
@@ -21,12 +21,12 @@ public class ScenarioSettings : MonoBehaviour
         {
             if (a_Map.PlayerInfo[i].HumanPlayable)
             {
-                m_PlayerIndex = i;
+                m_GameSettings.LocalPlayerIndex = i;
                 break;
             }
         }
 
-        byte _Team = a_Map.PlayerInfo[m_PlayerIndex].Team;
+        byte _Team = a_Map.PlayerInfo[m_GameSettings.LocalPlayerIndex].Team;
 
         for (int i = 0; i < 8; i++)
         {
@@ -82,7 +82,7 @@ public class ScenarioSettings : MonoBehaviour
             {
                 if (a_Map.PlayerInfo[i].ComputerPlayable)
                 {
-                    if (i == m_PlayerIndex)
+                    if (i == m_GameSettings.LocalPlayerIndex)
                     {
                         m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
                         m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
@@ -97,5 +97,14 @@ public class ScenarioSettings : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void FlagPressed(ScenarioSettingsPlayer a_Player)
+    {
+        // TODO: Set local player text as Computer
+
+        m_GameSettings.LocalPlayerIndex = a_Player.PlayerIndex;
+
+        // TODO: Set new local player text as Player
     }
 }

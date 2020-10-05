@@ -10,9 +10,7 @@ using System;
 
 public class H3MImporter : EditorWindow
 {
-    [Tooltip("Path starts from within the assets folder")]
     string m_InputFolder;
-    [Tooltip("Path starts from within the assets folder")]
     string m_OutputFolder;
     bool m_Overwrite;
 
@@ -869,6 +867,28 @@ public class H3MImporter : EditorWindow
                 _CurrentByte += 7;
 
                 a_Map.Terrain.Add(_Tile);
+            }
+
+            if (a_Map.HasUnderground)
+            {
+                a_Map.UndergroundTerrain = new List<TerrainTile>(a_Map.Size * a_Map.Size);
+
+                for (int i = 0; i < a_Map.UndergroundTerrain.Capacity; i++)
+                {
+                    TerrainTile _Tile = new TerrainTile();
+
+                    _Tile.TerrainType = a_Bytes[_CurrentByte];
+                    _Tile.TerrainSpriteID = a_Bytes[_CurrentByte + 1];
+                    _Tile.RiverType = a_Bytes[_CurrentByte + 2];
+                    _Tile.RiverSpriteID = a_Bytes[_CurrentByte + 3];
+                    _Tile.RoadType = a_Bytes[_CurrentByte + 4];
+                    _Tile.RoadSpriteID = a_Bytes[_CurrentByte + 5];
+                    _Tile.Mirrored = a_Bytes[_CurrentByte + 6];
+
+                    _CurrentByte += 7;
+
+                    a_Map.UndergroundTerrain.Add(_Tile);
+                }
             }
         }
         catch (Exception e)
