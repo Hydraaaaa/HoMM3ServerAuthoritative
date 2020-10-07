@@ -72740,3 +72740,3132 @@ MonoBehaviour:
     RoadType: 0
     RoadSpriteID: 0
     Mirrored: 0
+  Objects:
+  - Template:
+      Name: AVLSPTR1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 0
+    YPos: 3
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 3
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLrk3s0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+    XPos: 16
+    YPos: 7
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 1
+    YPos: 9
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLctrs0
+      MineType: 0
+      Type: 21
+      TypeDebug: 118
+    XPos: 6
+    YPos: 9
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 13
+    YPos: 9
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 13
+    YPos: 10
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 16
+    YPos: 11
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 7
+    YPos: 12
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWhoun0
+      MineType: 46
+      Type: 7
+      TypeDebug: 54
+    XPos: 21
+    YPos: 41
+    IsUnderground: 0
+    Monster:
+      Type: -1669662078
+      Count: 0
+      Mood: 3
+      IsTreasureOrText: 1
+      Text: The hounds seem to have a bed of sulfur nearby.
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 10
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: -1
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWharx0
+      MineType: 73
+      Type: 7
+      TypeDebug: 54
+    XPos: 45
+    YPos: 25
+    IsUnderground: 0
+    Monster:
+      Type: -1669662077
+      Count: 0
+      Mood: 4
+      IsTreasureOrText: 1
+      Text: The Harpies were living on a nest made of gold.
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 6
+      ArtifactID: -1
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 60
+    YPos: 3
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 15
+    YPos: 12
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLmoss0
+      MineType: 0
+      Type: 21
+      TypeDebug: 132
+    XPos: 8
+    YPos: 11
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 13
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 11
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: adcfra
+      MineType: 0
+      Type: 21
+      TypeDebug: 12
+    XPos: 62
+    YPos: 11
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 55
+    YPos: 31
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 0
+    YPos: 6
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 1
+    YPos: 6
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 5
+    YPos: 18
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 9
+    YPos: 2
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 11
+    YPos: 6
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 11
+    YPos: 5
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 7
+    YPos: 7
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 6
+    YPos: 7
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 17
+    YPos: 7
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 8
+    YPos: 59
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 58
+    YPos: 43
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLswp30
+      MineType: 0
+      Type: 21
+      TypeDebug: 126
+    XPos: 59
+    YPos: 38
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 20
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 19
+    YPos: 2
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 22
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 24
+    YPos: 3
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 24
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 26
+    YPos: 3
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvXOblB
+      MineType: 0
+      Type: 21
+      TypeDebug: 57
+    XPos: 51
+    YPos: 12
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvXOblB
+      MineType: 0
+      Type: 21
+      TypeDebug: 57
+    XPos: 52
+    YPos: 40
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvXOblB
+      MineType: 0
+      Type: 21
+      TypeDebug: 57
+    XPos: 58
+    YPos: 54
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvXOblB
+      MineType: 0
+      Type: 21
+      TypeDebug: 57
+    XPos: 3
+    YPos: 65
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvTCave
+      MineType: 0
+      Type: 21
+      TypeDebug: 103
+    XPos: 35
+    YPos: 19
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVXkey00
+      MineType: 0
+      Type: 21
+      TypeDebug: 10
+    XPos: 55
+    YPos: 66
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVXkey10
+      MineType: 1
+      Type: 21
+      TypeDebug: 10
+    XPos: 15
+    YPos: 66
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 34
+    YPos: 22
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 36
+    YPos: 22
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR5
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 31
+    YPos: 21
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR5
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 29
+    YPos: 21
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 37
+    YPos: 15
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 35
+    YPos: 15
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 32
+    YPos: 14
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 30
+    YPos: 16
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 29
+    YPos: 14
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AvLRD01
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+    XPos: 12
+    YPos: 43
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 6
+    YPos: 27
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 1
+    YPos: 32
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 8
+    YPos: 50
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVMsulf0
+      MineType: 3
+      Type: 2
+      TypeDebug: 53
+    XPos: 49
+    YPos: 64
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 255
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 64
+    YPos: 6
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 43
+    YPos: 60
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 44
+    YPos: 60
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 3
+    YPos: 18
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR4
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 2
+    YPos: 16
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 0
+    YPos: 16
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 0
+    YPos: 14
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 1
+    YPos: 14
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr0
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 0
+    YPos: 13
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlautr1
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 2
+    YPos: 15
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 16
+    YPos: 9
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 5
+    YPos: 2
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR2
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 9
+    YPos: 1
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLAUTR3
+      MineType: 0
+      Type: 21
+      TypeDebug: 135
+    XPos: 33
+    YPos: 16
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVTchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+    XPos: 30
+    YPos: 15
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVXschl0
+      MineType: 0
+      Type: 9
+      TypeDebug: 81
+    XPos: 36
+    YPos: 42
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 2
+    YPos: 32
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0

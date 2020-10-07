@@ -145317,3 +145317,106 @@ MonoBehaviour:
     RoadSpriteID: 0
     Mirrored: 0
   UndergroundTerrain: []
+  Objects:
+  - Template:
+      Name: AVCinfx0
+      MineType: 3
+      Type: 14
+      TypeDebug: 98
+    XPos: 107
+    YPos: 5
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 4
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVLSNTR0
+      MineType: 0
+      Type: 21
+      TypeDebug: 137
+    XPos: 99
+    YPos: 111
+    IsUnderground: 1
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVWmrnd0
+      MineType: 0
+      Type: 7
+      TypeDebug: 71
+    XPos: 0
+    YPos: 0
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0

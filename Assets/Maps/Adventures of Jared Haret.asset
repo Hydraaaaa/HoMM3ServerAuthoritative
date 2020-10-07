@@ -55,7 +55,7 @@ MonoBehaviour:
     MainHeroName: 
     Team: 0
     HeroNames:
-    - LothelenU
+    - Lothelen
     - 
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -74,8 +74,8 @@ MonoBehaviour:
     MainHeroName: Thenith
     Team: 0
     HeroNames:
-    - Thenith"
-    - ",\x06"
+    - Thenith
+    - 
     - Tumlac
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -18313,3 +18313,72 @@ MonoBehaviour:
     RoadType: 0
     RoadSpriteID: 0
     Mirrored: 0
+  Objects:
+  - Template:
+      Name: AvTCave
+      MineType: 0
+      Type: 21
+      TypeDebug: 103
+    XPos: 22
+    YPos: 9
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: AVZevnt0
+      MineType: 0
+      Type: 3
+      TypeDebug: 26
+    XPos: 21
+    YPos: 10
+    IsUnderground: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0

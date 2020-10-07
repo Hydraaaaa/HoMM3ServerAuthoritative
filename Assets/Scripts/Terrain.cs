@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 public class Terrain : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings = null;
     [SerializeField] SpriteRenderer m_TerrainSpritePrefab = null;
     [SerializeField] SpriteRenderer m_TerrainFrame = null;
+    [SerializeField] Transform m_TerrainMask = null;
+    [SerializeField] SpriteRenderer m_ObjectSpritePrefab = null;
 
     [Space]
 
@@ -18,12 +21,14 @@ public class Terrain : MonoBehaviour
     [SerializeField] Transform m_TerrainSpriteParent = null;
     [SerializeField] Transform m_RiverSpriteParent = null;
     [SerializeField] Transform m_RoadSpriteParent = null;
+    [SerializeField] Transform m_ObjectSpriteParent = null;
     
     [Space]
 
     [SerializeField] Transform m_UndergroundTerrainSpriteParent = null;
     [SerializeField] Transform m_UndergroundRiverSpriteParent = null;
     [SerializeField] Transform m_UndergroundRoadSpriteParent = null;
+    [SerializeField] Transform m_UndergroundObjectSpriteParent = null;
 
 
     [Space]
@@ -101,6 +106,8 @@ public class Terrain : MonoBehaviour
 
         m_TerrainFrame.size = new Vector2(_Size + 2, _Size + 2);
         m_TerrainFrame.transform.localPosition = new Vector3(_Size / 2 - 0.5f, -_Size / 2 + 0.5f, 0);
+        m_TerrainMask.localScale = new Vector3(_Size, _Size, 1);
+        m_TerrainMask.transform.localPosition = new Vector3(_Size / 2 - 0.5f, -_Size / 2 + 0.5f, 0);
 
         // <><><><><> Above ground terrain
 
@@ -377,6 +384,48 @@ public class Terrain : MonoBehaviour
                     }
                 }
             }
+        }
+
+        // <><><><><> Objects
+
+        m_ObjectSpriteRenderers = new List<SpriteRenderer>();
+        m_UndergroundObjectSpriteRenderers = new List<SpriteRenderer>();
+
+        List<MapObject> _Objects = m_GameSettings.Map.Objects;
+
+        for (int i = 0; i < _Objects.Count; i++)
+        {
+            StartCoroutine(LoadAsset(_Objects[i]));
+        }
+    }
+
+    IEnumerator LoadAsset(MapObject a_Object)
+    {
+        SpriteRenderer _Renderer = Instantiate(m_ObjectSpritePrefab, m_ObjectSpriteParent);
+
+        _Renderer.gameObject.name = a_Object.Template.Name;
+        _Renderer.sortingOrder = 3;
+
+        _Renderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
+
+        string _Name = $"TerrainObjects/{a_Object.Template.Name}.bmp";
+
+        var _Operation = Addressables.LoadAssetAsync<Sprite>(_Name);
+
+        while (!_Operation.IsDone)
+        {
+            yield return null;
+        }
+
+        _Renderer.sprite = _Operation.Result;
+
+        if (a_Object.IsUnderground)
+        {
+            m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+        }
+        else
+        {
+            m_ObjectSpriteRenderers.Add(_Renderer);
         }
     }
 }

@@ -228,7 +228,7 @@ LOSS CONDITION
 
 --- Time expires
 
-2 bytes     Time limit
+2 bytes     Time limit in days
 
 ---
 
@@ -390,3 +390,151 @@ TERRAIN
             00001000 = Flip river sprite on Y axis
             00010000 = Flip road sprite on X axis
             00100000 = Flip road sprite on Y axis
+
+OBJECTS
+
+4 bytes     Object Count
+
+--- Repeated based on Object Count
+
+4 bytes     Length of object name
+n bytes     File name where n is the above length
+6 bytes     Passability?
+6 bytes     Actions?
+2 bytes     Landscape?
+2 bytes     LandEditGroups?
+4 bytes     Object Type
+            5, 65, 66, 67, 68, 69                   = Artifact
+            6                                       = Pandora's Box
+            17, 20, 42                              = Dwelling
+            26                                      = Event
+            33, 219                                 = Garrison
+            34, 70, 62                              = Hero
+            36                                      = Grail
+            53                                      = Mine
+            54, 71, 72, 73, 74, 75, 162, 163, 164   = Monster
+            76, 79                                  = Resource
+            81                                      = Scientist? Scholar?
+            83                                      = Prophet? Seer?
+            87                                      = Shipyard
+            88, 89, 99                              = Shrine
+            91, 59                                  = Sign
+            93                                      = Spell
+            98, 77                                  = Town
+            113                                     = Witch's Hut
+            215                                     = Question Guard?
+            216                                     = General Dwelling
+            217                                     = Level Dwelling
+            218                                     = Town Dwelling
+            220                                     = Abandoned Mine
+
+4 bytes     Mine Type?
+1 byte      Object Group?
+1 byte      Is Overlay?
+16 bytes    Unknown
+
+---
+
+4 bytes     Object Data Count
+
+--- Repeated based on Object Data Count
+
+1 byte      X Coord of object
+1 byte      Y Coord of object
+1 byte      Is object underground?
+4 bytes     Object Index, determines which object from the above loop this data refers to
+5 bytes     Unknown
+
+--- If the indexed Object Type is 5, 65, 66, 67, 68, 69
+
+---
+
+--- If the indexed Object Type is 6
+
+---
+
+--- If the indexed Object Type is 17, 20, 42
+
+---
+
+--- If the indexed Object Type is 26
+
+---
+
+--- If the indexed Object Type is 33, 219
+
+---
+
+--- If the indexed Object Type is 34, 70, 62
+
+---
+
+--- If the indexed Object Type is 36
+
+---
+
+--- If the indexed Object Type is 53
+
+---
+
+--- If the indexed Object Type is 54, 71, 72, 73, 74, 75, 162, 163, 164
+
+---
+
+--- If the indexed Object Type is 76, 79
+
+---
+
+--- If the indexed Object Type is 81
+
+---
+
+--- If the indexed Object Type is 83
+
+---
+
+--- If the indexed Object Type is 87
+
+---
+
+--- If the indexed Object Type is 88, 89, 90
+
+---
+
+--- If the indexed Object Type is 91, 59
+
+---
+
+--- If the indexed Object Type is 93
+
+---
+
+--- If the indexed Object Type is 98, 77
+
+---
+
+--- If the indexed Object Type is 113
+
+---
+
+--- If the indexed Object Type is 215
+
+---
+
+--- If the indexed Object Type is 216
+
+---
+
+--- If the indexed Object Type is 217
+
+---
+
+--- If the indexed Object Type is 218
+
+---
+
+--- If the indexed Object Type is 220
+
+---
+
+---

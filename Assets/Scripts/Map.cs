@@ -26,6 +26,96 @@ public class PlayerInfo
     public List<string> HeroNames;
 }
 
+public enum MapObjectType
+{
+    Artifact,
+    PandorasBox,
+    Dwelling,
+    Event,
+    Garrison,
+    Hero,
+    Grail,
+    Monster,
+    Resource,
+    Scientist,
+    Seer,
+    Shrine,
+    Sign,
+    Spell,
+    Town,
+    WitchsHut,
+    QuestionGuard,
+    GeneralDwelling,
+    LevelDwelling,
+    TownDwelling,
+    AbandonedMine,
+    Unknown
+}
+
+[Serializable]
+public class MapObjectTemplate
+{
+    public string Name;
+    public int MineType;
+
+    public MapObjectType Type;
+    public int TypeDebug;
+}
+
+[Serializable]
+public class MapObject
+{
+    public MapObjectTemplate Template;
+
+    public byte XPos;
+    public byte YPos;
+    public bool IsUnderground;
+
+    public MapObjectMonster Monster;
+    public MapObjectTown Town;
+    public uint DwellingOwner;
+}
+
+[Serializable]
+public class MapObjectMonster
+{
+    public int Type;
+    public int Count;
+    public byte Mood;
+    public bool IsTreasureOrText;
+    public string Text;
+    public int Wood;
+    public int Mercury;
+    public int Ore;
+    public int Sulfur;
+    public int Crystal;
+    public int Gem;
+    public int Gold;
+    public short ArtifactID;
+    public bool NeverRun;
+    public bool DontGrow;
+}
+
+[Serializable]
+public class MapObjectTown
+{
+    public byte Owner;
+    public bool IsNamed;
+    public string Name;
+    public bool IsGuarded;
+    public List<MonsterStack> Guards;
+    public bool IsGroupFormation;
+    public bool HasCustomBuildings;
+    public bool HasFort;
+}
+
+[Serializable]
+public class MonsterStack
+{
+    public ushort ID;
+    public ushort Amount;
+}
+
 [Serializable]
 public class TerrainTile
 {
@@ -66,4 +156,6 @@ public class Map : ScriptableObject
 
     public List<TerrainTile> Terrain;
     public List<TerrainTile> UndergroundTerrain;
+
+    public List<MapObject> Objects;
 }
