@@ -36455,13 +36455,16 @@ MonoBehaviour:
   UndergroundTerrain: []
   Objects:
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 43
     YPos: 34
     IsUnderground: 0
+    SortOrder: 1
     Monster:
       Type: 0
       Count: 0
@@ -36489,13 +36492,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 40
     IsUnderground: 0
+    SortOrder: 2
     Monster:
       Type: 0
       Count: 0
@@ -36523,13 +36529,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 38
     YPos: 51
     IsUnderground: 0
+    SortOrder: 4
     Monster:
       Type: 0
       Count: 0
@@ -36557,13 +36566,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 30
     YPos: 44
     IsUnderground: 0
+    SortOrder: 3
     Monster:
       Type: 0
       Count: 0
@@ -36591,13 +36603,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 6
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0

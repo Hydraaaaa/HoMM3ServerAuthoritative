@@ -163462,13 +163462,16 @@ MonoBehaviour:
     Mirrored: 0
   Objects:
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163496,13 +163499,16 @@ MonoBehaviour:
       HasFort: 1
     DwellingOwner: 0
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 95
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163530,13 +163536,16 @@ MonoBehaviour:
       HasFort: 1
     DwellingOwner: 0
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 99
     YPos: 91
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163564,13 +163573,16 @@ MonoBehaviour:
       HasFort: 1
     DwellingOwner: 0
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 17
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163598,13 +163610,16 @@ MonoBehaviour:
       HasFort: 1
     DwellingOwner: 0
   - Template:
-      Name: AvTCave
+      Name: avtcave
       MineType: 0
       Type: 21
       TypeDebug: 103
+      Landscape: 0
+      IsOverlay: 0
     XPos: 51
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163632,13 +163647,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmonx0
+      Name: avwmonx0
       MineType: 9
       Type: 7
       TypeDebug: 54
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 1453593711
       Count: 0
@@ -163666,13 +163684,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 100
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163700,13 +163721,16 @@ MonoBehaviour:
       HasFort: 1
     DwellingOwner: 0
   - Template:
-      Name: AvTCave
+      Name: avtcave
       MineType: 0
       Type: 21
       TypeDebug: 103
+      Landscape: 0
+      IsOverlay: 0
     XPos: 39
     YPos: 78
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163734,13 +163758,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163768,13 +163795,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163802,13 +163832,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLct3g0
+      Name: avlct3g0
       MineType: 0
       Type: 21
       TypeDebug: 118
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163836,13 +163869,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR5
+      Name: avlautr5
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 74
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163870,13 +163906,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 74
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163908,9 +163947,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 46
     YPos: 72
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163938,13 +163980,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 46
     YPos: 73
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -163972,13 +164017,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn0
+      Name: avlmtgn0
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 35
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164006,13 +164054,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 37
     YPos: 74
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164040,13 +164091,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 38
     YPos: 73
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164074,13 +164128,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 36
     YPos: 74
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164108,13 +164165,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR3
+      Name: avlpntr3
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 35
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164142,13 +164202,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn1
+      Name: avlmtgn1
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 74
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164176,13 +164239,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 44
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164210,13 +164276,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn1
+      Name: avlmtgn1
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 82
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164244,13 +164313,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 43
     YPos: 82
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164278,13 +164350,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR3
+      Name: avlautr3
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 80
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164312,13 +164387,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164346,13 +164424,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 38
     YPos: 83
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164380,13 +164461,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn0
+      Name: avlmtgn0
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 37
     YPos: 83
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164414,13 +164498,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 33
     YPos: 82
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164448,13 +164535,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 81
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164482,13 +164572,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 82
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164516,13 +164609,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 33
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164550,13 +164646,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 77
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164584,13 +164683,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn2
+      Name: avlmtgn2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 78
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164618,13 +164720,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 81
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164652,13 +164757,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 37
     YPos: 73
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164686,13 +164794,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 75
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164720,13 +164831,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 34
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164754,13 +164868,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164788,13 +164905,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLautr7
+      Name: avlautr7
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 80
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164822,13 +164942,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSPTR4
+      Name: avlsptr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 77
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164856,13 +164979,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSPTR5
+      Name: avlsptr5
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164890,13 +165016,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmonx0
+      Name: avwmonx0
       MineType: 9
       Type: 7
       TypeDebug: 54
+      Landscape: 0
+      IsOverlay: 0
     XPos: 38
     YPos: 79
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 1453593712
       Count: 0
@@ -164928,9 +165057,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 27
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164962,9 +165094,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -164996,9 +165131,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165030,9 +165168,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165064,9 +165205,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165098,9 +165242,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165132,9 +165279,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 54
     YPos: 28
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165166,9 +165316,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 55
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165200,9 +165353,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165234,9 +165390,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 52
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165268,9 +165427,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165302,9 +165464,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 52
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165336,9 +165501,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 57
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165370,9 +165538,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 54
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165404,9 +165575,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 55
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165438,9 +165612,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 56
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165472,9 +165649,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 58
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165506,9 +165686,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 58
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165540,9 +165723,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 54
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165574,9 +165760,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165608,9 +165797,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 55
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165638,13 +165830,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 52
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165676,9 +165871,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 44
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165710,9 +165908,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165740,13 +165941,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165778,9 +165982,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 51
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165812,9 +166019,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165842,13 +166052,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 46
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165876,13 +166089,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 51
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165910,13 +166126,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165944,13 +166163,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -165978,13 +166200,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 56
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166016,9 +166241,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 208
+      Landscape: 0
+      IsOverlay: 0
     XPos: 41
     YPos: 73
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166050,9 +166278,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 208
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 77
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166084,9 +166315,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 208
+      Landscape: 0
+      IsOverlay: 0
     XPos: 40
     YPos: 76
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166114,13 +166348,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXl2sh0
+      Name: avxl2sh0
       MineType: 0
       Type: 11
       TypeDebug: 89
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 78
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166148,13 +166385,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXeyem0
+      Name: avxeyem0
       MineType: 0
       Type: 21
       TypeDebug: 27
+      Landscape: 0
+      IsOverlay: 0
     XPos: 48
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166182,13 +166422,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXeyem0
+      Name: avxeyem0
       MineType: 0
       Type: 21
       TypeDebug: 27
+      Landscape: 0
+      IsOverlay: 0
     XPos: 36
     YPos: 78
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166216,13 +166459,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 65
     YPos: 58
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166250,13 +166496,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 74
     YPos: 51
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166284,13 +166533,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 73
     YPos: 52
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166318,13 +166570,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 69
     YPos: 56
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166352,13 +166607,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 66
     YPos: 63
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166386,13 +166644,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 68
     YPos: 65
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166420,13 +166681,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds2
+      Name: avlmtds2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 72
     YPos: 65
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166454,13 +166718,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 73
     YPos: 62
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166488,13 +166755,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 65
     YPos: 62
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166526,9 +166796,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 206
+      Landscape: 0
+      IsOverlay: 0
     XPos: 68
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166556,13 +166829,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 74
     YPos: 61
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166590,13 +166866,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 74
     YPos: 53
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166624,13 +166903,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 74
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166658,13 +166940,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 75
     YPos: 59
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166692,13 +166977,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 75
     YPos: 57
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166726,13 +167014,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 75
     YPos: 57
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166760,13 +167051,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtds3
+      Name: avlmtds3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 74
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166794,13 +167088,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLplm20
+      Name: avlplm20
       MineType: 0
       Type: 21
       TypeDebug: 155
+      Landscape: 0
+      IsOverlay: 0
     XPos: 75
     YPos: 58
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166832,9 +167129,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 206
+      Landscape: 0
+      IsOverlay: 0
     XPos: 76
     YPos: 57
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166866,9 +167166,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 206
+      Landscape: 0
+      IsOverlay: 0
     XPos: 75
     YPos: 59
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166900,9 +167203,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 206
+      Landscape: 0
+      IsOverlay: 0
     XPos: 76
     YPos: 58
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166930,13 +167236,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 71
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166964,13 +167273,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLmtds2
+      Name: avlmtds2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 71
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -166998,13 +167310,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 73
     YPos: 57
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167032,13 +167347,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVGmonk0
+      Name: avgmonk0
       MineType: 35
       Type: 2
       TypeDebug: 17
+      Landscape: 0
+      IsOverlay: 0
     XPos: 67
     YPos: 57
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167066,13 +167384,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLmtds4
+      Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 66
     YPos: 62
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167100,13 +167421,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AvTCave
+      Name: avtcave
       MineType: 0
       Type: 21
       TypeDebug: 103
+      Landscape: 0
+      IsOverlay: 0
     XPos: 70
     YPos: 60
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167138,9 +167462,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 206
+      Landscape: 0
+      IsOverlay: 0
     XPos: 73
     YPos: 62
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167168,13 +167495,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmonx0
+      Name: avwmonx0
       MineType: 9
       Type: 7
       TypeDebug: 54
+      Landscape: 0
+      IsOverlay: 0
     XPos: 69
     YPos: 61
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 1453593713
       Count: 0
@@ -167202,13 +167532,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMordr0
+      Name: avmordr0
       MineType: 2
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 18
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167236,13 +167569,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 22
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167270,13 +167606,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167304,13 +167643,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167338,13 +167680,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167372,13 +167717,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167406,13 +167754,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167440,13 +167791,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 16
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167474,13 +167828,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167508,13 +167865,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167542,13 +167902,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167576,13 +167939,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167610,13 +167976,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167644,13 +168013,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLp2sn0
+      Name: avlp2sn0
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167678,13 +168050,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs1sn0
+      Name: avls1sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 6
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167712,13 +168087,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167746,13 +168124,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167780,13 +168161,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 18
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167814,13 +168198,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167848,13 +168235,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167882,13 +168272,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 0
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167916,13 +168309,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167950,13 +168346,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLr2sn0
+      Name: avlr2sn0
       MineType: 0
       Type: 21
       TypeDebug: 147
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 13
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -167988,9 +168387,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 14
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168018,13 +168420,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR3
+      Name: avlsntr3
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168052,13 +168457,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168086,13 +168494,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 22
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168120,13 +168531,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR5
+      Name: avlsntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 22
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168154,13 +168568,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR5
+      Name: avlsntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168188,13 +168605,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs3sn0
+      Name: avls3sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 14
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168222,13 +168642,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AvLRG02
+      Name: avlrg02
       MineType: 0
       Type: 21
       TypeDebug: 147
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168256,13 +168679,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AvLRG06
+      Name: avlrg06
       MineType: 0
       Type: 21
       TypeDebug: 147
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168290,13 +168716,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 16
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168324,13 +168753,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168358,13 +168790,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn7
+      Name: avlddsn7
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 28
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168392,13 +168827,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn5
+      Name: avlddsn5
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168426,13 +168864,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn3
+      Name: avlddsn3
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168460,13 +168901,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 28
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168494,13 +168938,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168532,9 +168979,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 6
     YPos: 3
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168566,9 +169016,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168600,9 +169053,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 5
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168634,9 +169090,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 6
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168664,13 +169123,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168698,13 +169160,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 6
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168732,13 +169197,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168766,13 +169234,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168800,13 +169271,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168834,13 +169308,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168868,13 +169345,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLddsn7
+      Name: avlddsn7
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 30
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168902,13 +169382,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn5
+      Name: avlddsn5
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168936,13 +169419,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn5
+      Name: avlddsn5
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -168970,13 +169456,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLd9sn0
+      Name: avld9sn0
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 25
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169004,13 +169493,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn5
+      Name: avlddsn5
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169038,13 +169530,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169072,13 +169567,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR3
+      Name: avlautr3
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169110,9 +169608,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169140,13 +169641,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169174,13 +169678,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn2
+      Name: avlddsn2
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169208,13 +169715,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169242,13 +169752,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLd9sn0
+      Name: avld9sn0
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 29
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169276,13 +169789,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLd9sn0
+      Name: avld9sn0
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 18
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169310,13 +169826,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169344,13 +169863,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 27
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169378,13 +169900,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169412,13 +169937,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 26
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169446,13 +169974,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 26
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169480,13 +170011,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169514,13 +170048,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169548,13 +170085,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169586,9 +170126,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 5
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169620,9 +170163,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 5
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169650,13 +170196,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169684,13 +170233,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn3
+      Name: avlddsn3
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169718,13 +170270,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR5
+      Name: avlpntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169752,13 +170307,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR5
+      Name: avlpntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169786,13 +170344,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 3
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169820,13 +170381,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 25
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169858,9 +170422,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 3
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169892,9 +170459,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 6
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169922,13 +170492,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR5
+      Name: avlpntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169956,13 +170529,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 29
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -169994,9 +170570,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170028,9 +170607,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170062,9 +170644,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170096,9 +170681,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 17
     YPos: 3
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170126,13 +170714,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 17
     YPos: 6
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170160,13 +170751,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 16
     YPos: 7
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170194,13 +170788,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs1sn0
+      Name: avls1sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170228,13 +170825,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs3sn0
+      Name: avls3sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170266,9 +170866,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170300,9 +170903,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 17
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170334,9 +170940,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170368,9 +170977,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170402,9 +171014,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170436,9 +171051,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170470,9 +171088,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170500,13 +171121,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR3
+      Name: avlpntr3
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170534,13 +171158,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170568,13 +171195,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR3
+      Name: avlautr3
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 30
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170606,9 +171236,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170640,9 +171273,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170670,13 +171306,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 25
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170704,13 +171343,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170738,13 +171380,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170772,13 +171417,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170810,9 +171458,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170844,9 +171495,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 16
     YPos: 13
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170878,9 +171532,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170908,13 +171565,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 13
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170942,13 +171602,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMcrdr0
+      Name: avmcrdr0
       MineType: 4
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -170976,13 +171639,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMalcs0
+      Name: avmalcs0
       MineType: 1
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 24
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171010,13 +171676,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMgedr0
+      Name: avmgedr0
       MineType: 5
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171044,13 +171713,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171078,13 +171750,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR5
+      Name: avlsntr5
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171112,13 +171787,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 20
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171146,13 +171824,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMgodr0
+      Name: avmgodr0
       MineType: 6
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171184,9 +171865,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171214,13 +171898,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 14
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171248,13 +171935,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171282,13 +171972,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 7
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171320,9 +172013,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171354,9 +172050,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 13
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171388,9 +172087,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 14
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171418,13 +172120,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171452,13 +172157,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171486,13 +172194,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLp1sn0
+      Name: avlp1sn0
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171520,13 +172231,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMlean0
+      Name: avmlean0
       MineType: 0
       Type: 21
       TypeDebug: 39
+      Landscape: 0
+      IsOverlay: 0
     XPos: 15
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171554,13 +172268,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVCinfx0
+      Name: avcinfx0
       MineType: 3
       Type: 14
       TypeDebug: 98
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 12
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171588,13 +172305,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo4
+      Name: avlmtvo4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 46
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171622,13 +172342,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 49
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171656,13 +172379,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo4
+      Name: avlmtvo4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 47
     YPos: 10
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171690,13 +172416,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171724,13 +172453,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 50
     YPos: 12
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171758,13 +172490,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo4
+      Name: avlmtvo4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 45
     YPos: 12
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171792,13 +172527,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 2
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171826,13 +172564,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLsntr7
+      Name: avlsntr7
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171860,13 +172601,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 12
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171894,13 +172638,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171928,13 +172675,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 13
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171962,13 +172712,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 11
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -171996,13 +172749,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn3
+      Name: avlddsn3
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 18
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172030,13 +172786,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLflk20
+      Name: avlflk20
       MineType: 0
       Type: 21
       TypeDebug: 121
+      Landscape: 0
+      IsOverlay: 0
     XPos: 26
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172064,13 +172823,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLfl2d0
+      Name: avlfl2d0
       MineType: 0
       Type: 21
       TypeDebug: 120
+      Landscape: 0
+      IsOverlay: 0
     XPos: 26
     YPos: 29
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172098,13 +172860,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR4
+      Name: avlautr4
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 25
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172132,13 +172897,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLfl4d0
+      Name: avlfl4d0
       MineType: 0
       Type: 21
       TypeDebug: 120
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172166,13 +172934,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLddsn5
+      Name: avlddsn5
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172200,13 +172971,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR3
+      Name: avlautr3
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172234,13 +173008,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLfl8d0
+      Name: avlfl8d0
       MineType: 0
       Type: 21
       TypeDebug: 120
+      Landscape: 0
+      IsOverlay: 0
     XPos: 32
     YPos: 23
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172268,13 +173045,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLfl7d0
+      Name: avlfl7d0
       MineType: 0
       Type: 21
       TypeDebug: 120
+      Landscape: 0
+      IsOverlay: 0
     XPos: 31
     YPos: 28
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172302,13 +173082,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLct5d0
+      Name: avlct5d0
       MineType: 0
       Type: 21
       TypeDebug: 118
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 5
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172336,13 +173119,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 13
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172370,13 +173156,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 14
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172404,13 +173193,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLAUTR3
+      Name: avlautr3
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172442,9 +173234,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 12
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 18
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172472,13 +173267,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXeyem0
+      Name: avxeyem0
       MineType: 0
       Type: 21
       TypeDebug: 27
+      Landscape: 0
+      IsOverlay: 0
     XPos: 68
     YPos: 59
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172506,13 +173304,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 53
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172540,13 +173341,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn1
+      Name: avlmtsn1
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 17
     YPos: 52
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172574,13 +173378,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMordr0
+      Name: avmordr0
       MineType: 2
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 53
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172608,13 +173415,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMswsn0
+      Name: avmswsn0
       MineType: 0
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172642,13 +173452,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172676,13 +173489,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 53
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172710,13 +173526,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 11
     YPos: 53
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172744,13 +173563,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 52
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172778,13 +173600,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172812,13 +173637,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172846,13 +173674,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172880,13 +173711,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 54
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172914,13 +173748,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLp2sn0
+      Name: avlp2sn0
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172948,13 +173785,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLp1sn0
+      Name: avlp1sn0
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 6
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -172982,13 +173822,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMalch0
+      Name: avmalch0
       MineType: 1
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 36
     YPos: 55
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173016,13 +173859,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMgedr0
+      Name: avmgedr0
       MineType: 5
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 64
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173050,13 +173896,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMordr0
+      Name: avmordr0
       MineType: 2
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 99
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173084,13 +173933,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMswsn0
+      Name: avmswsn0
       MineType: 0
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 101
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173122,9 +173974,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 8
     YPos: 72
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173156,9 +174011,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 71
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173190,9 +174048,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 71
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173220,13 +174081,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMsulf0
+      Name: avmsulf0
       MineType: 3
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 28
     YPos: 106
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173254,13 +174118,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMalch0
+      Name: avmalch0
       MineType: 1
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 30
     YPos: 95
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173288,13 +174155,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMgodr0
+      Name: avmgodr0
       MineType: 6
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 81
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173322,13 +174192,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMorsn0
+      Name: avmorsn0
       MineType: 2
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173356,13 +174229,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMsulf0
+      Name: avmsulf0
       MineType: 3
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 71
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173390,13 +174266,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMgelv0
+      Name: avmgelv0
       MineType: 5
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 107
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173424,13 +174303,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMsawd0
+      Name: avmsawd0
       MineType: 0
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173458,13 +174340,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVCranx0
+      Name: avcranx0
       MineType: 0
       Type: 14
       TypeDebug: 77
+      Landscape: 0
+      IsOverlay: 0
     XPos: 94
     YPos: 50
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173496,9 +174381,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 81
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173530,9 +174418,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 83
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173560,13 +174451,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 103
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173598,9 +174492,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173632,9 +174529,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173666,9 +174566,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 87
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173700,9 +174603,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 97
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173734,9 +174640,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 96
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173768,9 +174677,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 88
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173798,13 +174710,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 95
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173832,13 +174747,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 89
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173866,13 +174784,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 89
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173900,13 +174821,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR2
+      Name: avlpntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173938,9 +174862,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 95
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -173972,9 +174899,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174002,13 +174932,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR1
+      Name: avlpntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174036,13 +174969,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 94
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174070,13 +175006,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 79
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174108,9 +175047,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 87
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174138,13 +175080,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 82
     YPos: 38
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174172,13 +175117,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn4
+      Name: avlmtsn4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 82
     YPos: 40
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174206,13 +175154,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMsawg0
+      Name: avmsawg0
       MineType: 0
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 87
     YPos: 45
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174240,13 +175191,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLmtgr3
+      Name: avlmtgr3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 84
     YPos: 50
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174274,13 +175228,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR3
+      Name: avlpntr3
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 85
     YPos: 45
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174308,13 +175265,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR4
+      Name: avlpntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 88
     YPos: 45
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174342,13 +175302,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLPNTR0
+      Name: avlpntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 43
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174376,13 +175339,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 87
     YPos: 46
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174410,13 +175376,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 46
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174444,13 +175413,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 100
     YPos: 51
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174478,13 +175450,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 99
     YPos: 51
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174516,9 +175491,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 208
+      Landscape: 0
+      IsOverlay: 0
     XPos: 104
     YPos: 31
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174546,13 +175524,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMorsn0
+      Name: avmorsn0
       MineType: 2
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 105
     YPos: 87
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174580,13 +175561,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMswsn0
+      Name: avmswsn0
       MineType: 0
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 91
     YPos: 96
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174614,13 +175598,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLSNTR2
+      Name: avlsntr2
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 96
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174648,13 +175635,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 88
     YPos: 95
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174682,13 +175672,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 89
     YPos: 97
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174716,13 +175709,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 97
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174750,13 +175746,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMgesn0
+      Name: avmgesn0
       MineType: 5
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 101
     YPos: 77
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174788,9 +175787,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 87
     YPos: 79
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174822,9 +175824,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 89
     YPos: 78
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174856,9 +175861,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 80
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174886,13 +175894,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMcrdr0
+      Name: avmcrdr0
       MineType: 4
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 88
     YPos: 79
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174924,9 +175935,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174954,13 +175968,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMgodr0
+      Name: avmgodr0
       MineType: 6
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 98
     YPos: 36
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -174988,13 +176005,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AvLStm3
+      Name: avlstm3
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 85
     YPos: 46
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175022,13 +176042,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AvLStm2
+      Name: avlstm2
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 84
     YPos: 46
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175056,13 +176079,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMsulf0
+      Name: avmsulf0
       MineType: 3
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 105
     YPos: 65
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175090,13 +176116,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVXshyd0
+      Name: avxshyd0
       MineType: 0
       Type: 2
       TypeDebug: 87
+      Landscape: 0
+      IsOverlay: 0
     XPos: 80
     YPos: 69
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175124,13 +176153,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMcrys0
+      Name: avmcrys0
       MineType: 4
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 85
     YPos: 59
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175158,13 +176190,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVMalcs0
+      Name: avmalcs0
       MineType: 1
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 80
     YPos: 37
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175192,13 +176227,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVLmtgn3
+      Name: avlmtgn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 59
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175226,13 +176264,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175260,13 +176301,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTwood0
+      Name: avtwood0
       MineType: 0
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 101
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175294,13 +176338,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AvLStm2
+      Name: avlstm2
       MineType: 0
       Type: 21
       TypeDebug: 153
+      Landscape: 0
+      IsOverlay: 0
     XPos: 99
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175328,13 +176375,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 86
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175362,13 +176412,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTore0
+      Name: avtore0
       MineType: 2
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 85
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175396,13 +176449,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 104
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175430,13 +176486,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 108
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175464,13 +176523,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLlv250
+      Name: avllv250
       MineType: 0
       Type: 21
       TypeDebug: 127
+      Landscape: 0
+      IsOverlay: 0
     XPos: 102
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175498,13 +176560,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 95
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175532,13 +176597,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 94
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175566,13 +176634,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo4
+      Name: avlmtvo4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 88
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175600,13 +176671,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo3
+      Name: avlmtvo3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 92
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175634,13 +176708,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtvo6
+      Name: avlmtvo6
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 90
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175668,13 +176745,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMwndd0
+      Name: avmwndd0
       MineType: 0
       Type: 21
       TypeDebug: 112
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 17
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175702,13 +176782,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVArnd1
+      Name: avarnd1
       MineType: 0
       Type: 0
       TypeDebug: 66
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 15
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175736,13 +176819,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon1
+      Name: avwmon1
       MineType: 0
       Type: 7
       TypeDebug: 72
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 16
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104674
       Count: 0
@@ -175770,13 +176856,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLsntr6
+      Name: avlsntr6
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 1
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175804,13 +176893,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMwwsn0
+      Name: avmwwsn0
       MineType: 0
       Type: 21
       TypeDebug: 109
+      Landscape: 0
+      IsOverlay: 0
     XPos: 2
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175838,13 +176930,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR0
+      Name: avlsntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175872,13 +176967,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs2sn0
+      Name: avls2sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 7
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175906,13 +177004,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR1
+      Name: avlsntr1
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175940,13 +177041,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMlean0
+      Name: avmlean0
       MineType: 0
       Type: 21
       TypeDebug: 39
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -175974,13 +177078,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR4
+      Name: avlsntr4
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 8
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176008,13 +177115,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLs2sn0
+      Name: avls2sn0
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Landscape: 0
+      IsOverlay: 0
     XPos: 1
     YPos: 7
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176042,13 +177152,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVArnd1
+      Name: avarnd1
       MineType: 0
       Type: 0
       TypeDebug: 66
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176076,13 +177189,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon3
+      Name: avwmon3
       MineType: 0
       Type: 7
       TypeDebug: 74
+      Landscape: 0
+      IsOverlay: 0
     XPos: 20
     YPos: 2
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104672
       Count: 0
@@ -176110,13 +177226,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon2
+      Name: avwmon2
       MineType: 0
       Type: 7
       TypeDebug: 73
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104670
       Count: 0
@@ -176148,9 +177267,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 22
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176182,9 +177304,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 5
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176212,13 +177337,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 2
     YPos: 20
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176246,13 +177374,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 20
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176280,13 +177411,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTrndm0
+      Name: avtrndm0
       MineType: 0
       Type: 8
       TypeDebug: 76
+      Landscape: 0
+      IsOverlay: 0
     XPos: 4
     YPos: 20
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176318,9 +177452,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 207
+      Landscape: 0
+      IsOverlay: 0
     XPos: 3
     YPos: 21
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176348,13 +177485,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVMsulf0
+      Name: avmsulf0
       MineType: 3
       Type: 2
       TypeDebug: 53
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 30
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176382,13 +177522,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 255
   - Template:
-      Name: AVWmon3
+      Name: avwmon3
       MineType: 0
       Type: 7
       TypeDebug: 74
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 32
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104669
       Count: 0
@@ -176416,13 +177559,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 9
     YPos: 31
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176450,13 +177596,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 10
     YPos: 31
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176484,13 +177633,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLr8sn0
+      Name: avlr8sn0
       MineType: 0
       Type: 21
       TypeDebug: 147
+      Landscape: 0
+      IsOverlay: 0
     XPos: 0
     YPos: 5
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176518,13 +177670,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 27
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176552,13 +177707,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLmtsn3
+      Name: avlmtsn3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176586,13 +177744,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon2
+      Name: avwmon2
       MineType: 0
       Type: 7
       TypeDebug: 73
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104666
       Count: 0
@@ -176620,13 +177781,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176654,13 +177818,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVSwtch0
+      Name: avswtch0
       MineType: 0
       Type: 15
       TypeDebug: 113
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 19
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176688,13 +177855,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 27
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176722,13 +177892,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 19
     YPos: 26
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176756,13 +177929,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVSaxis0
+      Name: avsaxis0
       MineType: 0
       Type: 21
       TypeDebug: 61
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 27
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176790,13 +177966,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVXhutm0
+      Name: avxhutm0
       MineType: 0
       Type: 21
       TypeDebug: 37
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 33
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176824,13 +178003,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTgold0
+      Name: avtgold0
       MineType: 6
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176858,13 +178040,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon2
+      Name: avwmon2
       MineType: 0
       Type: 7
       TypeDebug: 73
+      Landscape: 0
+      IsOverlay: 0
     XPos: 24
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104664
       Count: 0
@@ -176892,13 +178077,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTgold0
+      Name: avtgold0
       MineType: 6
       Type: 8
       TypeDebug: 79
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 34
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176926,13 +178114,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVTchst0
+      Name: avtchst0
       MineType: 0
       Type: 21
       TypeDebug: 101
+      Landscape: 0
+      IsOverlay: 0
     XPos: 23
     YPos: 35
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -176960,13 +178151,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmon1
+      Name: avwmon1
       MineType: 0
       Type: 7
       TypeDebug: 72
+      Landscape: 0
+      IsOverlay: 0
     XPos: 18
     YPos: 25
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: -652104663
       Count: 0
@@ -176998,9 +178192,12 @@ MonoBehaviour:
       MineType: 0
       Type: 18
       TypeDebug: 217
+      Landscape: 0
+      IsOverlay: 0
     XPos: 27
     YPos: 4
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0

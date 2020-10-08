@@ -18315,13 +18315,16 @@ MonoBehaviour:
     Mirrored: 0
   Objects:
   - Template:
-      Name: AvTCave
+      Name: avtcave
       MineType: 0
       Type: 21
       TypeDebug: 103
+      Landscape: 0
+      IsOverlay: 0
     XPos: 22
     YPos: 9
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0
@@ -18349,13 +18352,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVZevnt0
+      Name: avzevnt0
       MineType: 0
       Type: 3
       TypeDebug: 26
+      Landscape: 0
+      IsOverlay: 0
     XPos: 21
     YPos: 10
     IsUnderground: 0
+    SortOrder: 1
     Monster:
       Type: 0
       Count: 0

@@ -55,8 +55,6 @@
 			}
 
 			sampler2D _MainTex;
-			sampler2D _AlphaTex;
-			float _AlphaSplitEnabled;
 			fixed4 _PlayerColor;
 
 			fixed4 SampleSpriteTexture (float2 uv)

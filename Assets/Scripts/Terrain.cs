@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Playables;
+using UnityEngine.ResourceManagement.ResourceLocations;
 
 public class Terrain : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Terrain : MonoBehaviour
     [SerializeField] SpriteRenderer m_TerrainFrame = null;
     [SerializeField] Transform m_TerrainMask = null;
     [SerializeField] SpriteRenderer m_ObjectSpritePrefab = null;
+    [SerializeField] SpriteRenderer m_ShadowSpritePrefab = null;
 
     [Space]
 
@@ -22,6 +25,7 @@ public class Terrain : MonoBehaviour
     [SerializeField] Transform m_RiverSpriteParent = null;
     [SerializeField] Transform m_RoadSpriteParent = null;
     [SerializeField] Transform m_ObjectSpriteParent = null;
+    [SerializeField] Transform m_ShadowSpriteParent = null;
     
     [Space]
 
@@ -29,6 +33,7 @@ public class Terrain : MonoBehaviour
     [SerializeField] Transform m_UndergroundRiverSpriteParent = null;
     [SerializeField] Transform m_UndergroundRoadSpriteParent = null;
     [SerializeField] Transform m_UndergroundObjectSpriteParent = null;
+    [SerializeField] Transform m_UndergroundShadowSpriteParent = null;
 
 
     [Space]
@@ -127,6 +132,8 @@ public class Terrain : MonoBehaviour
 
                 SpriteRenderer _Sprite = Instantiate(m_TerrainSpritePrefab, new Vector2(x, -y), Quaternion.identity, m_TerrainSpriteParent);
 
+                _Sprite.sortingOrder = -32768;
+
                 if (_Terrain[_Index].TerrainType < m_TerrainSprites.Count)
                 {
                     if (_Terrain[_Index].TerrainSpriteID < m_TerrainSprites[_Terrain[_Index].TerrainType].Count)
@@ -197,7 +204,7 @@ public class Terrain : MonoBehaviour
 
 
                     _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RiverSpriteID}";
-                    _Sprite.sortingOrder = 1;
+                    _Sprite.sortingOrder = -32767;
 
                     m_RiverSpriteRenderers.Add(_Sprite);
                 }
@@ -239,7 +246,7 @@ public class Terrain : MonoBehaviour
 
 
                     _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RoadSpriteID}";
-                    _Sprite.sortingOrder = 2;
+                    _Sprite.sortingOrder = -32766;
 
                     m_RoadSpriteRenderers.Add(_Sprite);
                 }
@@ -336,7 +343,7 @@ public class Terrain : MonoBehaviour
 
 
                         _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RiverSpriteID}";
-                        _Sprite.sortingOrder = 1;
+                        _Sprite.sortingOrder = -32767;
 
                         m_UndergroundRiverSpriteRenderers.Add(_Sprite);
                     }
@@ -378,7 +385,7 @@ public class Terrain : MonoBehaviour
 
 
                         _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RoadSpriteID}";
-                        _Sprite.sortingOrder = 2;
+                        _Sprite.sortingOrder = -32766;
 
                         m_UndergroundRoadSpriteRenderers.Add(_Sprite);
                     }
@@ -404,28 +411,98 @@ public class Terrain : MonoBehaviour
         SpriteRenderer _Renderer = Instantiate(m_ObjectSpritePrefab, m_ObjectSpriteParent);
 
         _Renderer.gameObject.name = a_Object.Template.Name;
-        _Renderer.sortingOrder = 3;
 
         _Renderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
+        _Renderer.sortingOrder = -32767 + a_Object.SortOrder;
+        _Renderer.sortingLayerName = "TerrainObjects";
 
-        string _Name = $"TerrainObjects/{a_Object.Template.Name}.bmp";
+        SpriteRenderer _ShadowRenderer = Instantiate(m_ShadowSpritePrefab, m_ShadowSpriteParent);
 
-        var _Operation = Addressables.LoadAssetAsync<Sprite>(_Name);
+        _ShadowRenderer.gameObject.name = a_Object.Template.Name;
 
-        while (!_Operation.IsDone)
+        _ShadowRenderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
+        _ShadowRenderer.sortingLayerName = "TerrainShadows";
+
+        // Is this asset animated?
+        string _Name = $"TerrainObjectAnimations/{a_Object.Template.Name}.anim";
+
+        var _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
+
+        yield return _AnimOperation;
+
+        if (_AnimOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
         {
-            yield return null;
-        }
+            Debug.Log($"!! CheckAnim Success {_Name}");
+            // This asset is animated, load animations
+            _Renderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
+            _Renderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
+            _Renderer.GetComponent<SimpleAnimation>().Play();
 
-        _Renderer.sprite = _Operation.Result;
+            if (a_Object.IsUnderground)
+            {
+                m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+            }
+            else
+            {
+                m_ObjectSpriteRenderers.Add(_Renderer);
+            }
 
-        if (a_Object.IsUnderground)
-        {
-            m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+            _Name = $"TerrainObjectShadowAnimations/{a_Object.Template.Name}.anim";
+
+            _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
+
+            yield return _AnimOperation;
+
+            _ShadowRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
+            _ShadowRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
+            _ShadowRenderer.GetComponent<SimpleAnimation>().Play();
+
+            if (a_Object.IsUnderground)
+            {
+                m_UndergroundObjectSpriteRenderers.Add(_ShadowRenderer);
+            }
+            else
+            {
+                m_ObjectSpriteRenderers.Add(_ShadowRenderer);
+            }
         }
         else
         {
-            m_ObjectSpriteRenderers.Add(_Renderer);
+            Debug.Log($"!! CheckAnim Failed {_Name}");
+            // This asset isn't animated
+            _Name = $"TerrainObjects/{a_Object.Template.Name}.bmp";
+
+            var _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
+
+            yield return _SpriteOperation;
+
+            _Renderer.sprite = _SpriteOperation.Result;
+
+            if (a_Object.IsUnderground)
+            {
+                m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+            }
+            else
+            {
+                m_ObjectSpriteRenderers.Add(_Renderer);
+            }
+
+            _Name = $"TerrainObjectShadows/{a_Object.Template.Name}.bmp";
+
+            _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
+
+            yield return _SpriteOperation;
+
+            _ShadowRenderer.sprite = _SpriteOperation.Result;
+
+            if (a_Object.IsUnderground)
+            {
+                m_UndergroundObjectSpriteRenderers.Add(_ShadowRenderer);
+            }
+            else
+            {
+                m_ObjectSpriteRenderers.Add(_ShadowRenderer);
+            }
         }
     }
 }

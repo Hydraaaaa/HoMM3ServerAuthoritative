@@ -60,6 +60,9 @@ public class MapObjectTemplate
 
     public MapObjectType Type;
     public int TypeDebug;
+
+    public ushort Landscape;
+    public bool IsOverlay;
 }
 
 [Serializable]
@@ -70,6 +73,7 @@ public class MapObject
     public byte XPos;
     public byte YPos;
     public bool IsUnderground;
+    public int SortOrder;
 
     public MapObjectMonster Monster;
     public MapObjectTown Town;

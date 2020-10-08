@@ -145319,13 +145319,16 @@ MonoBehaviour:
   UndergroundTerrain: []
   Objects:
   - Template:
-      Name: AVCinfx0
+      Name: avcinfx0
       MineType: 3
       Type: 14
       TypeDebug: 98
+      Landscape: 0
+      IsOverlay: 0
     XPos: 107
     YPos: 5
     IsUnderground: 0
+    SortOrder: 1
     Monster:
       Type: 0
       Count: 0
@@ -145353,13 +145356,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVLSNTR0
+      Name: avlsntr0
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Landscape: 0
+      IsOverlay: 0
     XPos: 99
     YPos: 111
     IsUnderground: 1
+    SortOrder: 2
     Monster:
       Type: 0
       Count: 0
@@ -145387,13 +145393,16 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: AVWmrnd0
+      Name: avwmrnd0
       MineType: 0
       Type: 7
       TypeDebug: 71
+      Landscape: 0
+      IsOverlay: 0
     XPos: 0
     YPos: 0
     IsUnderground: 0
+    SortOrder: 0
     Monster:
       Type: 0
       Count: 0

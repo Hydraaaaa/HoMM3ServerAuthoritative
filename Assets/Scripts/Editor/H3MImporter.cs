@@ -917,7 +917,7 @@ public class H3MImporter : EditorWindow
                 _CurrentByte += 4;
 
                 _Object.Name = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _StringLength);
-                _Object.Name = _Object.Name.Substring(0, _Object.Name.Length - 4);
+                _Object.Name = _Object.Name.Substring(0, _Object.Name.Length - 4).ToLower();
                 _CurrentByte += _StringLength;
 
                 // 6 bytes - Passability?
@@ -942,12 +942,10 @@ public class H3MImporter : EditorWindow
                     case 67:
                     case 68:
                     case 69:
-                        Debug.Log($"Artifact");
                         _Object.Type = MapObjectType.Artifact;
                         break;
 
                     case 6:
-                        Debug.Log($"PandorasBox");
                         _Object.Type = MapObjectType.PandorasBox;
                         break;
 
@@ -955,30 +953,25 @@ public class H3MImporter : EditorWindow
                     case 20:
                     case 42:
                     case 87:
-                        Debug.Log($"Dwelling");
                         _Object.Type = MapObjectType.Dwelling;
                         break;
 
                     case 26:
-                        Debug.Log($"Event");
                         _Object.Type = MapObjectType.Event;
                         break;
 
                     case 33:
                     case 219:
-                        Debug.Log($"Garrison");
                         _Object.Type = MapObjectType.Garrison;
                         break;
 
                     case 34:
                     case 70:
                     case 62:
-                        Debug.Log($"Hero");
                         _Object.Type = MapObjectType.Hero;
                         break;
 
                     case 36:
-                        Debug.Log($"Grail");
                         _Object.Type = MapObjectType.Grail;
                         break;
 
@@ -990,7 +983,6 @@ public class H3MImporter : EditorWindow
                             Debug.LogError($"CODE RED @@@@@@@@@@@@@@@@@@@@@@@@@@");
                         }
 
-                        Debug.Log($"Mine");
                         _Object.Type = MapObjectType.Dwelling;
                         break;
 
@@ -1003,77 +995,63 @@ public class H3MImporter : EditorWindow
                     case 162:
                     case 163:
                     case 164:
-                        Debug.Log($"Monster");
                         _Object.Type = MapObjectType.Monster;
                         break;
                     
                     case 76:
                     case 79:
-                        Debug.Log($"Resource");
                         _Object.Type = MapObjectType.Resource;
                         break;
 
                     case 81:
-                        Debug.Log($"Scientist");
                         _Object.Type = MapObjectType.Scientist;
                         break;
 
                     case 83:
-                        Debug.Log($"Seer");
                         _Object.Type = MapObjectType.Seer;
                         break;
 
                     case 88:
                     case 89:
                     case 99:
-                        Debug.Log($"Shrine");
                         _Object.Type = MapObjectType.Shrine;
                         break;
 
                     case 91:
                     case 59:
-                        Debug.Log($"Sign");
                         _Object.Type = MapObjectType.Sign;
                         break;
 
                     case 93:
-                        Debug.Log($"Spell");
                         _Object.Type = MapObjectType.Spell;
                         break;
 
                     case 98:
                     case 77:
-                        Debug.Log($"Town");
                         _Object.Type = MapObjectType.Town;
                         break;
 
                     case 113:
-                        Debug.Log($"WitchsHut");
                         _Object.Type = MapObjectType.WitchsHut;
                         break;
 
                     case 215:
-                        Debug.Log($"QuestionGuard");
                         _Object.Type = MapObjectType.QuestionGuard;
                         break;
 
                     case 216:
-                        Debug.Log($"GeneralDwelling");
                         _Object.Type = MapObjectType.GeneralDwelling;
                         break;
 
                     case 217:
-                        Debug.Log($"LevelDwelling");
                         _Object.Type = MapObjectType.LevelDwelling;
                         break;
 
                     case 218:
-                        Debug.Log($"TownDwelling");
                         _Object.Type = MapObjectType.TownDwelling;
                         break;
 
                     case 220:
-                        Debug.Log($"AbandonedMine");
                         _Object.Type = MapObjectType.AbandonedMine;
                         break;
 
@@ -1117,7 +1095,7 @@ public class H3MImporter : EditorWindow
                 MapObject _Object = new MapObject();
                 _Object.Template = _ObjectTemplates[_ObjectBaseIndex];
 
-                Debug.Log($"!! Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}");
+                Debug.Log($"!! Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
 
                 _Object.XPos = _XPos;
                 _Object.YPos = _YPos;
@@ -1479,6 +1457,20 @@ public class H3MImporter : EditorWindow
                 }
 
                 a_Map.Objects.Add(_Object);
+            }
+
+            List<(MapObject, int)> _Objects = new List<(MapObject, int)>();
+
+            for (int i = 0; i < a_Map.Objects.Count; i++)
+            {
+                _Objects.Add((a_Map.Objects[i], i + a_Map.Objects[i].YPos * a_Map.Objects.Count));
+            }
+
+            _Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item2).ToList();
+
+            for (int i = 0; i < _Objects.Count; i++)
+            {
+                _Objects[i].Item1.SortOrder = i;
             }
         }
         catch (Exception e)
