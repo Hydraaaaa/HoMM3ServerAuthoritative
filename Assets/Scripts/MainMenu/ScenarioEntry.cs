@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScenarioEntry : MonoBehaviour
 {
     public ScenarioList ScenarioList { get; set; }
-    public Map Map { get; private set; }
+    public Scenario Scenario { get; private set; }
     public Text NameText => m_NameText;
     public Text SizeText => m_SizeText;
     [SerializeField] Text m_NameText = null;
@@ -23,15 +23,15 @@ public class ScenarioEntry : MonoBehaviour
     [SerializeField] Sprite m_ABSprite = null;
     [SerializeField] Sprite m_SODSprite = null;
 
-    public void SetMap(Map a_Map)
+    public void SetScenario(Scenario a_Scenario)
     {
-        Map = a_Map;
+        Scenario = a_Scenario;
 
-        if (a_Map != null)
+        if (a_Scenario != null)
         {
-            m_NameText.text = a_Map.Name;
+            m_NameText.text = a_Scenario.Name;
 
-            switch (a_Map.Size)
+            switch (a_Scenario.Size)
             {
                 case 36: m_SizeText.text = "S"; break;
                 case 72: m_SizeText.text = "M"; break;
@@ -42,11 +42,11 @@ public class ScenarioEntry : MonoBehaviour
 
             m_VersionImage.gameObject.SetActive(true);
 
-            if (a_Map.Version == Map.RESTORATION_OF_ERATHIA)
+            if (a_Scenario.Version == Scenario.RESTORATION_OF_ERATHIA)
             {
                 m_VersionImage.sprite = m_ROESprite;
             }
-            else if (a_Map.Version == Map.ARMAGEDDONS_BLADE)
+            else if (a_Scenario.Version == Scenario.ARMAGEDDONS_BLADE)
             {
                 m_VersionImage.sprite = m_ABSprite;
             }
@@ -55,11 +55,11 @@ public class ScenarioEntry : MonoBehaviour
                 m_VersionImage.sprite = m_SODSprite;
             }
 
-            m_PlayerCountText.text = a_Map.ComputerCount + "/" + a_Map.PlayerCount;
+            m_PlayerCountText.text = a_Scenario.ComputerCount + "/" + a_Scenario.PlayerCount;
 
             m_WinCondition.gameObject.SetActive(true);
 
-            switch (a_Map.WinCondition)
+            switch (a_Scenario.WinCondition)
             {
                 case 255: m_WinCondition.sprite = ScenarioList.NormalWinSprite; break;
                 case 0: m_WinCondition.sprite = ScenarioList.AcquireArtifactSprite; break;
@@ -77,7 +77,7 @@ public class ScenarioEntry : MonoBehaviour
 
             m_LossCondition.gameObject.SetActive(true);
 
-            switch (a_Map.LossCondition)
+            switch (a_Scenario.LossCondition)
             {
                 case 255: m_LossCondition.sprite = ScenarioList.NormalLossSprite; break;
                 case 0: m_LossCondition.sprite = ScenarioList.LoseTownSprite; break;
@@ -111,9 +111,9 @@ public class ScenarioEntry : MonoBehaviour
         }
     }
     
-    public void SetSelected(Map a_Map)
+    public void SetSelected(Scenario a_Scenario)
     {
-        if (a_Map == Map)
+        if (a_Scenario == Scenario)
         {
             m_NameText.color = m_SelectedColor;
             m_SizeText.color = m_SelectedColor;
@@ -129,6 +129,6 @@ public class ScenarioEntry : MonoBehaviour
 
     public void OnClick()
     {
-        ScenarioList.EntryClicked(Map);
+        ScenarioList.EntryClicked(Scenario);
     }
 }

@@ -38,12 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Terrain
+    uniqueID: 3806570327
     locked: 0
-  - name: TerrainShadows
+  - name: MapShadows
     uniqueID: 2132590017
     locked: 0
-  - name: TerrainObjects
+  - name: MapObjects
     uniqueID: 2066176373
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0

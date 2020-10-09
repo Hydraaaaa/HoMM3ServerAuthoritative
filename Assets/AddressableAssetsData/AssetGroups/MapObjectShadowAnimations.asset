@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: TerrainObjectShadows
+  m_Name: MapObjectShadowAnimations
   m_EditorClassIdentifier: 
-  m_GroupName: TerrainObjectShadows
+  m_GroupName: MapObjectShadowAnimations
   m_Data:
     m_SerializedData: []
-  m_GUID: 7cf28bd1cc6aa4c4baf87edea189aa68
+  m_GUID: 5b0ce8fccf189114392a37019c9f799b
   m_SerializeEntries:
-  - m_GUID: 4129a01d2cedb594dafe663d4453d1d1
-    m_Address: TerrainObjectShadows
+  - m_GUID: 8a0f92a1dabad68429cf2566e986d466
+    m_Address: MapObjectShadowAnimations
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 102900000, guid: 4129a01d2cedb594dafe663d4453d1d1, type: 3}
-    m_TargetAsset: {fileID: 102900000, guid: 4129a01d2cedb594dafe663d4453d1d1, type: 3}
+    m_MainAsset: {fileID: 102900000, guid: 8a0f92a1dabad68429cf2566e986d466, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 8a0f92a1dabad68429cf2566e986d466, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e7f721e768e71c94aa09c1afb6fd013f, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 385e81bcd0a3e924894fc4b3aa78e069, type: 2}
-    - {fileID: 11400000, guid: 7f123f19d946b6b40958a87232ce5b4a, type: 2}
+    - {fileID: 11400000, guid: 3301b731e6bd5814c8740a9b007a37b2, type: 2}
+    - {fileID: 11400000, guid: 89f5c94e3b313c94898314e233b44b18, type: 2}

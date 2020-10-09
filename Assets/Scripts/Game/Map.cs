@@ -5,7 +5,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.Playables;
 using UnityEngine.ResourceManagement.ResourceLocations;
 
-public class Terrain : MonoBehaviour
+public class Map : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings = null;
     [SerializeField] SpriteRenderer m_TerrainSpritePrefab = null;
@@ -101,13 +101,13 @@ public class Terrain : MonoBehaviour
         m_RoadSprites.Add(m_GravelRoadSprites);
         m_RoadSprites.Add(m_CobbleRoadSprites);
 
-        if (m_GameSettings.Map.Version != Map.SHADOW_OF_DEATH)
+        if (m_GameSettings.Scenario.Version != Scenario.SHADOW_OF_DEATH)
         {
-            Debug.Log($"!! This map isn't SoD, not supported yet");
+            Debug.Log($"This map isn't SoD, not supported yet");
             return;
         }
 
-        int _Size = m_GameSettings.Map.Size;
+        int _Size = m_GameSettings.Scenario.Size;
 
         m_TerrainFrame.size = new Vector2(_Size + 2, _Size + 2);
         m_TerrainFrame.transform.localPosition = new Vector3(_Size / 2 - 0.5f, -_Size / 2 + 0.5f, 0);
@@ -116,7 +116,7 @@ public class Terrain : MonoBehaviour
 
         // <><><><><> Above ground terrain
 
-        List<TerrainTile> _Terrain = m_GameSettings.Map.Terrain;
+        List<TerrainTile> _Terrain = m_GameSettings.Scenario.Terrain;
 
         m_TerrainSpriteRenderers = new List<SpriteRenderer>(_Terrain.Capacity);
         m_RiverSpriteRenderers = new List<SpriteRenderer>();
@@ -142,12 +142,12 @@ public class Terrain : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log($"!! Failed ID {_Terrain[_Index].TerrainSpriteID}");
+                        Debug.Log($"Failed ID {_Terrain[_Index].TerrainSpriteID}");
                     }
                 }
                 else
                 {
-                    Debug.Log($"!! Failed Type {_Terrain[_Index].TerrainType}");
+                    Debug.Log($"Failed Type {_Terrain[_Index].TerrainType}");
                 }
 
                 if ((int)(_Terrain[_Index].Mirrored & 3) == 3)
@@ -164,6 +164,7 @@ public class Terrain : MonoBehaviour
                 }
 
                 _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID}";
+                _Sprite.sortingLayerName = "Terrain";
 
                 m_TerrainSpriteRenderers.Add(_Sprite);
 
@@ -181,12 +182,12 @@ public class Terrain : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log($"!! River Failed ID {_Terrain[_Index].RiverSpriteID}");
+                            Debug.Log($"River Failed ID {_Terrain[_Index].RiverSpriteID}");
                         }
                     }
                     else
                     {
-                        Debug.Log($"!! River Failed Type {_Terrain[_Index].RiverSpriteID}");
+                        Debug.Log($"River Failed Type {_Terrain[_Index].RiverSpriteID}");
                     }
 
                     if ((int)(_Terrain[_Index].Mirrored & 12) == 12)
@@ -204,7 +205,8 @@ public class Terrain : MonoBehaviour
 
 
                     _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RiverSpriteID}";
-                    _Sprite.sortingOrder = -32767;
+                    _Sprite.sortingOrder = 1;
+                    _Sprite.sortingLayerName = "Terrain";
 
                     m_RiverSpriteRenderers.Add(_Sprite);
                 }
@@ -223,12 +225,12 @@ public class Terrain : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log($"!! Road Failed ID {_Terrain[_Index].RoadSpriteID}");
+                            Debug.Log($"Road Failed ID {_Terrain[_Index].RoadSpriteID}");
                         }
                     }
                     else
                     {
-                        Debug.Log($"!! Road Failed Type {_Terrain[_Index].RoadSpriteID}");
+                        Debug.Log($"Road Failed Type {_Terrain[_Index].RoadSpriteID}");
                     }
 
                     if ((int)(_Terrain[_Index].Mirrored & 48) == 48)
@@ -246,18 +248,19 @@ public class Terrain : MonoBehaviour
 
 
                     _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RoadSpriteID}";
-                    _Sprite.sortingOrder = -32766;
+                    _Sprite.sortingOrder = 2;
+                    _Sprite.sortingLayerName = "Terrain";
 
                     m_RoadSpriteRenderers.Add(_Sprite);
                 }
             }
         }
 
-        if (m_GameSettings.Map.HasUnderground)
+        if (m_GameSettings.Scenario.HasUnderground)
         {
             // <><><><><> Underground Terrain
 
-            List<TerrainTile> _UndergroundTerrain = m_GameSettings.Map.UndergroundTerrain;
+            List<TerrainTile> _UndergroundTerrain = m_GameSettings.Scenario.UndergroundTerrain;
 
             m_UndergroundTerrainSpriteRenderers = new List<SpriteRenderer>(_UndergroundTerrain.Capacity);
             m_UndergroundRiverSpriteRenderers = new List<SpriteRenderer>();
@@ -281,12 +284,12 @@ public class Terrain : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log($"!! Failed ID {_UndergroundTerrain[_Index].TerrainSpriteID}");
+                            Debug.Log($"Failed ID {_UndergroundTerrain[_Index].TerrainSpriteID}");
                         }
                     }
                     else
                     {
-                        Debug.Log($"!! Failed Type {_UndergroundTerrain[_Index].TerrainType}");
+                        Debug.Log($"Failed Type {_UndergroundTerrain[_Index].TerrainType}");
                     }
 
                     if ((int)(_UndergroundTerrain[_Index].Mirrored & 3) == 3)
@@ -303,6 +306,7 @@ public class Terrain : MonoBehaviour
                     }
 
                     _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].TerrainSpriteID}";
+                    _Sprite.sortingLayerName = "Terrain";
 
                     m_UndergroundTerrainSpriteRenderers.Add(_Sprite);
 
@@ -320,12 +324,12 @@ public class Terrain : MonoBehaviour
                             }
                             else
                             {
-                                Debug.Log($"!! River Failed ID {_UndergroundTerrain[_Index].RiverSpriteID}");
+                                Debug.Log($"River Failed ID {_UndergroundTerrain[_Index].RiverSpriteID}");
                             }
                         }
                         else
                         {
-                            Debug.Log($"!! River Failed Type {_UndergroundTerrain[_Index].RiverSpriteID}");
+                            Debug.Log($"River Failed Type {_UndergroundTerrain[_Index].RiverSpriteID}");
                         }
 
                         if ((int)(_UndergroundTerrain[_Index].Mirrored & 12) == 12)
@@ -343,7 +347,8 @@ public class Terrain : MonoBehaviour
 
 
                         _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RiverSpriteID}";
-                        _Sprite.sortingOrder = -32767;
+                        _Sprite.sortingOrder = 1;
+                        _Sprite.sortingLayerName = "Terrain";
 
                         m_UndergroundRiverSpriteRenderers.Add(_Sprite);
                     }
@@ -362,12 +367,12 @@ public class Terrain : MonoBehaviour
                             }
                             else
                             {
-                                Debug.Log($"!! Road Failed ID {_UndergroundTerrain[_Index].RoadSpriteID}");
+                                Debug.Log($"Road Failed ID {_UndergroundTerrain[_Index].RoadSpriteID}");
                             }
                         }
                         else
                         {
-                            Debug.Log($"!! Road Failed Type {_UndergroundTerrain[_Index].RoadSpriteID}");
+                            Debug.Log($"Road Failed Type {_UndergroundTerrain[_Index].RoadSpriteID}");
                         }
 
                         if ((int)(_UndergroundTerrain[_Index].Mirrored & 48) == 48)
@@ -385,7 +390,8 @@ public class Terrain : MonoBehaviour
 
 
                         _Sprite.name = $"{_Sprite.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RoadSpriteID}";
-                        _Sprite.sortingOrder = -32766;
+                        _Sprite.sortingOrder = 2;
+                        _Sprite.sortingLayerName = "Terrain";
 
                         m_UndergroundRoadSpriteRenderers.Add(_Sprite);
                     }
@@ -398,7 +404,7 @@ public class Terrain : MonoBehaviour
         m_ObjectSpriteRenderers = new List<SpriteRenderer>();
         m_UndergroundObjectSpriteRenderers = new List<SpriteRenderer>();
 
-        List<MapObject> _Objects = m_GameSettings.Map.Objects;
+        List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
 
         for (int i = 0; i < _Objects.Count; i++)
         {
@@ -406,7 +412,7 @@ public class Terrain : MonoBehaviour
         }
     }
 
-    IEnumerator LoadAsset(MapObject a_Object)
+    IEnumerator LoadAsset(ScenarioObject a_Object)
     {
         SpriteRenderer _Renderer = Instantiate(m_ObjectSpritePrefab, m_ObjectSpriteParent);
 
@@ -414,17 +420,17 @@ public class Terrain : MonoBehaviour
 
         _Renderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
         _Renderer.sortingOrder = -32767 + a_Object.SortOrder;
-        _Renderer.sortingLayerName = "TerrainObjects";
+        _Renderer.sortingLayerName = "MapObjects";
 
         SpriteRenderer _ShadowRenderer = Instantiate(m_ShadowSpritePrefab, m_ShadowSpriteParent);
 
         _ShadowRenderer.gameObject.name = a_Object.Template.Name;
 
         _ShadowRenderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
-        _ShadowRenderer.sortingLayerName = "TerrainShadows";
+        _ShadowRenderer.sortingLayerName = "MapShadows";
 
         // Is this asset animated?
-        string _Name = $"TerrainObjectAnimations/{a_Object.Template.Name}.anim";
+        string _Name = $"MapObjectAnimations/{a_Object.Template.Name}.anim";
 
         var _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
 
@@ -432,7 +438,6 @@ public class Terrain : MonoBehaviour
 
         if (_AnimOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
         {
-            Debug.Log($"!! CheckAnim Success {_Name}");
             // This asset is animated, load animations
             _Renderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
             _Renderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
@@ -447,7 +452,7 @@ public class Terrain : MonoBehaviour
                 m_ObjectSpriteRenderers.Add(_Renderer);
             }
 
-            _Name = $"TerrainObjectShadowAnimations/{a_Object.Template.Name}.anim";
+            _Name = $"MapObjectShadowAnimations/{a_Object.Template.Name}.anim";
 
             _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
 
@@ -468,9 +473,8 @@ public class Terrain : MonoBehaviour
         }
         else
         {
-            Debug.Log($"!! CheckAnim Failed {_Name}");
             // This asset isn't animated
-            _Name = $"TerrainObjects/{a_Object.Template.Name}.bmp";
+            _Name = $"MapObjects/{a_Object.Template.Name}.bmp";
 
             var _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
 
@@ -487,7 +491,7 @@ public class Terrain : MonoBehaviour
                 m_ObjectSpriteRenderers.Add(_Renderer);
             }
 
-            _Name = $"TerrainObjectShadows/{a_Object.Template.Name}.bmp";
+            _Name = $"MapObjectShadows/{a_Object.Template.Name}.bmp";
 
             _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
 

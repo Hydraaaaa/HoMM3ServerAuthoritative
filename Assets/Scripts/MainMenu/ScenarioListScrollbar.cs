@@ -96,7 +96,7 @@ public class ScenarioListScrollbar : MonoBehaviour
 
     public void UpdateScrollSegments()
     {
-        m_ScrollSegments = Mathf.Max(m_ScenarioList.CurrentMaps.Count - m_ScenarioList.ScenarioEntries.Count, 0);
+        m_ScrollSegments = Mathf.Max(m_ScenarioList.CurrentScenarios.Count - m_ScenarioList.ScenarioEntries.Count, 0);
         m_SegmentLength = m_ScrollLength / m_ScrollSegments;
     }
 }

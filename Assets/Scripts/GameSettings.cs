@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameSettings : ScriptableObject
 {
-    public Map Map;
+    public Scenario Scenario;
     public int Rating;
     public int LocalPlayerIndex = 0;
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScenarioSettings : MonoBehaviour
 {
-    Map m_Map;
+    Scenario m_Scenario;
 
     [SerializeField] GameSettings m_GameSettings = null;
     [SerializeField] ScenarioSettingsPlayer[] m_Players = null;
@@ -13,13 +13,13 @@ public class ScenarioSettings : MonoBehaviour
     [SerializeField] Image[] m_EnemiesFlags = null;
     [SerializeField] Sprite[] m_FlagSprites = null;
 
-    public void UpdateSettings(Map a_Map)
+    public void UpdateSettings(Scenario a_Scenario)
     {
-        m_Map = a_Map;
+        m_Scenario = a_Scenario;
 
         for (int i = 0; i < 8; i++)
         {
-            if (a_Map.PlayerInfo[i].HumanPlayable)
+            if (a_Scenario.PlayerInfo[i].HumanPlayable)
             {
                 m_GameSettings.LocalPlayerIndex = i;
                 break;
@@ -36,10 +36,10 @@ public class ScenarioSettings : MonoBehaviour
 
         for (int i = 0; i < 8; i++)
         {
-            if (a_Map.PlayerInfo[i].ComputerPlayable)
+            if (a_Scenario.PlayerInfo[i].ComputerPlayable)
             {
                 m_Players[_CurrentPlayer].gameObject.SetActive(true);
-                m_Players[_CurrentPlayer].Initialize(i, a_Map.PlayerInfo[i]);
+                m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i]);
 
                 _CurrentPlayer++;
             }
@@ -55,18 +55,18 @@ public class ScenarioSettings : MonoBehaviour
 
     void UpdateFlags()
     {
-        byte _Team = m_Map.PlayerInfo[m_GameSettings.LocalPlayerIndex].Team;
+        byte _Team = m_Scenario.PlayerInfo[m_GameSettings.LocalPlayerIndex].Team;
 
         int _AlliesIndex = 0;
         int _EnemiesIndex = 0;
 
-        if (m_Map.HasTeams)
+        if (m_Scenario.HasTeams)
         {
             for (int i = 0; i < 8; i++)
             {
-                if (m_Map.PlayerInfo[i].ComputerPlayable)
+                if (m_Scenario.PlayerInfo[i].ComputerPlayable)
                 {
-                    if (m_Map.PlayerInfo[i].Team == _Team)
+                    if (m_Scenario.PlayerInfo[i].Team == _Team)
                     {
                         m_AlliesFlags[_AlliesIndex].gameObject.SetActive(true);
                         m_AlliesFlags[_AlliesIndex].sprite = m_FlagSprites[i];
@@ -85,7 +85,7 @@ public class ScenarioSettings : MonoBehaviour
         {
             for (int i = 0; i < 8; i++)
             {
-                if (m_Map.PlayerInfo[i].ComputerPlayable)
+                if (m_Scenario.PlayerInfo[i].ComputerPlayable)
                 {
                     if (i == m_GameSettings.LocalPlayerIndex)
                     {

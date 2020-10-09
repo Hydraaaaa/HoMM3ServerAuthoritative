@@ -26,7 +26,7 @@ public class PlayerInfo
     public List<string> HeroNames;
 }
 
-public enum MapObjectType
+public enum ScenarioObjectType
 {
     Artifact,
     PandorasBox,
@@ -53,12 +53,12 @@ public enum MapObjectType
 }
 
 [Serializable]
-public class MapObjectTemplate
+public class ScenarioObjectTemplate
 {
     public string Name;
     public int MineType;
 
-    public MapObjectType Type;
+    public ScenarioObjectType Type;
     public int TypeDebug;
 
     public ushort Landscape;
@@ -66,22 +66,22 @@ public class MapObjectTemplate
 }
 
 [Serializable]
-public class MapObject
+public class ScenarioObject
 {
-    public MapObjectTemplate Template;
+    public ScenarioObjectTemplate Template;
 
     public byte XPos;
     public byte YPos;
     public bool IsUnderground;
     public int SortOrder;
 
-    public MapObjectMonster Monster;
-    public MapObjectTown Town;
+    public ScenarioObjectMonster Monster;
+    public ScenarioObjectTown Town;
     public uint DwellingOwner;
 }
 
 [Serializable]
-public class MapObjectMonster
+public class ScenarioObjectMonster
 {
     public int Type;
     public int Count;
@@ -101,7 +101,7 @@ public class MapObjectMonster
 }
 
 [Serializable]
-public class MapObjectTown
+public class ScenarioObjectTown
 {
     public byte Owner;
     public bool IsNamed;
@@ -132,7 +132,7 @@ public class TerrainTile
     public byte Mirrored;
 }
 
-public class Map : ScriptableObject
+public class Scenario : ScriptableObject
 {
     public const int RESTORATION_OF_ERATHIA = 0x0E;
     public const int ARMAGEDDONS_BLADE = 0x15;
@@ -161,5 +161,5 @@ public class Map : ScriptableObject
     public List<TerrainTile> Terrain;
     public List<TerrainTile> UndergroundTerrain;
 
-    public List<MapObject> Objects;
+    public List<ScenarioObject> Objects;
 }

@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class ScenarioList : MonoBehaviour
 {
-    public List<Map> Maps => m_Maps;
-    public List<Map> CurrentMaps => m_CurrentMaps;
+    public List<Scenario> Scenarios => m_Scenarios;
+    public List<Scenario> CurrentScenarios => m_CurrentScenarios;
     public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
 
     [SerializeField] GameSettings m_GameSettings = null;
-    [SerializeField] List<Map> m_Maps = null;
+    [SerializeField] List<Scenario> m_Scenarios = null;
     [SerializeField] List<ScenarioEntry> m_ScenarioEntries = null;
     [SerializeField] Text m_DetailsName = null;
     [SerializeField] Text m_DetailsDescription = null;
@@ -68,8 +68,8 @@ public class ScenarioList : MonoBehaviour
     [SerializeField] Sprite m_LoseHeroSprite = null;
     [SerializeField] Sprite m_TimeExpiresSprite = null;
 
-    List<Map> m_CurrentMaps;
-    Map m_SelectedMap;
+    List<Scenario> m_CurrentScenarios;
+    Scenario m_SelectedScenario;
 
     public int ListOffset { get; private set; }
 
@@ -93,15 +93,15 @@ public class ScenarioList : MonoBehaviour
             m_ScenarioEntries[i].ScenarioList = this;
         }
 
-        m_CurrentMaps = m_Maps;
+        m_CurrentScenarios = m_Scenarios;
 
         VersionSort();
 
         PopulateScenarioEntries(0);
 
-        if (m_CurrentMaps.Count > 0)
+        if (m_CurrentScenarios.Count > 0)
         {
-            EntryClicked(m_CurrentMaps[0]);
+            EntryClicked(m_CurrentScenarios[0]);
         }
     }
 
@@ -119,34 +119,34 @@ public class ScenarioList : MonoBehaviour
     
     public void PopulateScenarioEntries(int a_Offset)
     {
-        a_Offset = Mathf.Clamp(a_Offset, 0, m_CurrentMaps.Count - m_ScenarioEntries.Count);
+        a_Offset = Mathf.Clamp(a_Offset, 0, m_CurrentScenarios.Count - m_ScenarioEntries.Count);
 
         ListOffset = a_Offset;
 
-        int _EntriesToPopulate = Mathf.Min(m_ScenarioEntries.Count, m_CurrentMaps.Count - a_Offset);
+        int _EntriesToPopulate = Mathf.Min(m_ScenarioEntries.Count, m_CurrentScenarios.Count - a_Offset);
 
         for (int i = 0; i < _EntriesToPopulate; i++)
         {
-            m_ScenarioEntries[i].SetMap(m_CurrentMaps[i + a_Offset]);
-            m_ScenarioEntries[i].SetSelected(m_SelectedMap);
+            m_ScenarioEntries[i].SetScenario(m_CurrentScenarios[i + a_Offset]);
+            m_ScenarioEntries[i].SetSelected(m_SelectedScenario);
         }
 
         for (int i = _EntriesToPopulate; i < m_ScenarioEntries.Count; i++)
         {
-            m_ScenarioEntries[i].SetMap(null);
+            m_ScenarioEntries[i].SetScenario(null);
         }
     }
 
-    public void EntryClicked(Map a_Map)
+    public void EntryClicked(Scenario a_Scenario)
     {
-        m_SelectedMap = a_Map;
+        m_SelectedScenario = a_Scenario;
 
-        m_GameSettings.Map = a_Map;
+        m_GameSettings.Scenario = a_Scenario;
 
-        m_DetailsName.text = a_Map.Name;
-        m_DetailsDescription.text = a_Map.Description;
+        m_DetailsName.text = a_Scenario.Name;
+        m_DetailsDescription.text = a_Scenario.Description;
 
-        switch (a_Map.WinCondition)
+        switch (a_Scenario.WinCondition)
         {
             case 255:
                 m_DetailsWinCondition.text = "Defeat All Enemies";
@@ -209,7 +209,7 @@ public class ScenarioList : MonoBehaviour
                 break;
         }
 
-        switch (a_Map.LossCondition)
+        switch (a_Scenario.LossCondition)
         {
             case 255:
                 m_DetailsLossCondition.text = "Lose All Your Towns and Heroes";
@@ -232,7 +232,7 @@ public class ScenarioList : MonoBehaviour
                 break;
         }
 
-        switch (a_Map.Difficulty)
+        switch (a_Scenario.Difficulty)
         {
             case 0: m_DetailsDiff.text = "Easy"; break;
             case 1: m_DetailsDiff.text = "Normal"; break;
@@ -244,10 +244,10 @@ public class ScenarioList : MonoBehaviour
 
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
-            m_ScenarioEntries[i].SetSelected(m_SelectedMap);
+            m_ScenarioEntries[i].SetSelected(m_SelectedScenario);
         }
 
-        switch (a_Map.Size)
+        switch (a_Scenario.Size)
         {
             case 36: m_DetailsSizeImage.sprite = m_SmallSprite; break;
             case 72: m_DetailsSizeImage.sprite = m_MedSprite; break;
@@ -255,7 +255,7 @@ public class ScenarioList : MonoBehaviour
             case 144: m_DetailsSizeImage.sprite = m_XLSprite; break;
         }
 
-        m_ScenarioSettings.UpdateSettings(a_Map);
+        m_ScenarioSettings.UpdateSettings(a_Scenario);
     }
 
     public void ScrollUpPressed()
@@ -272,15 +272,15 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.Name)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.Name).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.Name).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Name).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.Name).ToList();
 
             m_SortType = SortType.Name;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -290,15 +290,15 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.Size)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.Size).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.Size).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Size).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.Size).ToList();
 
             m_SortType = SortType.Size;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -308,17 +308,17 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.Version)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.Name).ToList();
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.Version).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.Name).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.Version).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Name).ToList();
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.Version).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.Name).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.Version).ToList();
 
             m_SortType = SortType.Version;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -328,17 +328,17 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.PlayerCount)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.PlayerCount).ToList();
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => a_Map.ComputerCount).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.PlayerCount).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => a_Scenario.ComputerCount).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.PlayerCount).ToList();
-            m_Maps = m_Maps.OrderBy((a_Map) => a_Map.ComputerCount).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.PlayerCount).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => a_Scenario.ComputerCount).ToList();
 
             m_SortType = SortType.PlayerCount;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -348,15 +348,15 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.WinCondition)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => (byte)(a_Map.WinCondition + 1)).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => (byte)(a_Scenario.WinCondition + 1)).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => (byte)(a_Map.WinCondition + 1)).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => (byte)(a_Scenario.WinCondition + 1)).ToList();
 
             m_SortType = SortType.WinCondition;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -366,15 +366,15 @@ public class ScenarioList : MonoBehaviour
     {
         if (m_SortType != SortType.LossCondition)
         {
-            m_CurrentMaps = m_CurrentMaps.OrderBy((a_Map) => (byte)(a_Map.LossCondition + 1)).ToList();
+            m_CurrentScenarios = m_CurrentScenarios.OrderBy((a_Scenario) => (byte)(a_Scenario.LossCondition + 1)).ToList();
 
-            m_Maps = m_Maps.OrderBy((a_Map) => (byte)(a_Map.LossCondition + 1)).ToList();
+            m_Scenarios = m_Scenarios.OrderBy((a_Scenario) => (byte)(a_Scenario.LossCondition + 1)).ToList();
 
             m_SortType = SortType.LossCondition;
         }
         else
         {
-            m_CurrentMaps.Reverse();
+            m_CurrentScenarios.Reverse();
         }
 
         PopulateScenarioEntries(0);
@@ -382,7 +382,7 @@ public class ScenarioList : MonoBehaviour
 
     public void SmallFilter()
     {
-        m_CurrentMaps = m_Maps.Where((a_Map) => a_Map.Size == 36).ToList();
+        m_CurrentScenarios = m_Scenarios.Where((a_Scenario) => a_Scenario.Size == 36).ToList();
 
         m_Scrollbar.UpdateScrollSegments();
 
@@ -391,7 +391,7 @@ public class ScenarioList : MonoBehaviour
 
     public void MedFilter()
     {
-        m_CurrentMaps = m_Maps.Where((a_Map) => a_Map.Size == 72).ToList();
+        m_CurrentScenarios = m_Scenarios.Where((a_Scenario) => a_Scenario.Size == 72).ToList();
 
         m_Scrollbar.UpdateScrollSegments();
 
@@ -400,7 +400,7 @@ public class ScenarioList : MonoBehaviour
 
     public void LargeFilter()
     {
-        m_CurrentMaps = m_Maps.Where((a_Map) => a_Map.Size == 108).ToList();
+        m_CurrentScenarios = m_Scenarios.Where((a_Scenario) => a_Scenario.Size == 108).ToList();
 
         m_Scrollbar.UpdateScrollSegments();
 
@@ -409,7 +409,7 @@ public class ScenarioList : MonoBehaviour
     
     public void XLFilter()
     {
-        m_CurrentMaps = m_Maps.Where((a_Map) => a_Map.Size == 144).ToList();
+        m_CurrentScenarios = m_Scenarios.Where((a_Scenario) => a_Scenario.Size == 144).ToList();
 
         m_Scrollbar.UpdateScrollSegments();
 
@@ -418,7 +418,7 @@ public class ScenarioList : MonoBehaviour
 
     public void AllFilter()
     {
-        m_CurrentMaps = m_Maps;
+        m_CurrentScenarios = m_Scenarios;
 
         m_Scrollbar.UpdateScrollSegments();
 

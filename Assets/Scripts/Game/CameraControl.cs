@@ -55,8 +55,8 @@ public class CameraControl : MonoBehaviour
                 _Position.y += m_PanSpeed * Time.deltaTime;
             }
 
-            _Position.x = Mathf.Clamp(_Position.x, -0.5f, m_GameSettings.Map.Size - 0.5f);
-            _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Map.Size - 0.5f, 0.5f);
+            _Position.x = Mathf.Clamp(_Position.x, -0.5f, m_GameSettings.Scenario.Size - 0.5f);
+            _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Scenario.Size - 0.5f, 0.5f);
 
             transform.position = _Position;
         }

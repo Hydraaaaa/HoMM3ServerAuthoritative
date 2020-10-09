@@ -79,10 +79,10 @@ public class H3MImporter : EditorWindow
 
         for (int i = 0; i < _InputFiles.Count; i++)
         {
-            Map _Map = ScriptableObject.CreateInstance<Map>();
+            Scenario _Scenario = ScriptableObject.CreateInstance<Scenario>();
 
             int _Length = _InputFiles[i].Length - 4 - _StartIndex;
-            _Map.name = _InputFiles[i].Substring(_StartIndex, _Length);
+            _Scenario.name = _InputFiles[i].Substring(_StartIndex, _Length);
 
             List<byte> _BytesList = new List<byte>();
 
@@ -104,43 +104,43 @@ public class H3MImporter : EditorWindow
                 }
             }
 
-            // <><><><><> Basic Map Data
+            // <><><><><> Basic Scenario Data
 
             byte[] _Bytes = _BytesList.ToArray();
 
-            _Map.Version = BitConverter.ToInt32(_Bytes, 0);
+            _Scenario.Version = BitConverter.ToInt32(_Bytes, 0);
 
-            switch (_Map.Version)
+            switch (_Scenario.Version)
             {
-                case Map.RESTORATION_OF_ERATHIA: ReadRoE(ref _Map, _Bytes); break;
-                case Map.ARMAGEDDONS_BLADE: ReadAB(ref _Map, _Bytes); break;
-                case Map.SHADOW_OF_DEATH: ReadSoD(ref _Map, _Bytes); break;
+                case Scenario.RESTORATION_OF_ERATHIA: ReadRoE(ref _Scenario, _Bytes); break;
+                case Scenario.ARMAGEDDONS_BLADE: ReadAB(ref _Scenario, _Bytes); break;
+                case Scenario.SHADOW_OF_DEATH: ReadSoD(ref _Scenario, _Bytes); break;
             }
 
             int _ComputerCount = 0;
             int _PlayerCount = 0;
 
-            for (int j = 0; j < _Map.PlayerInfo.Count; j++)
+            for (int j = 0; j < _Scenario.PlayerInfo.Count; j++)
             {
-                if (_Map.PlayerInfo[j].ComputerPlayable)
+                if (_Scenario.PlayerInfo[j].ComputerPlayable)
                 {
                     _ComputerCount++;
                 }
 
-                if (_Map.PlayerInfo[j].HumanPlayable)
+                if (_Scenario.PlayerInfo[j].HumanPlayable)
                 {
                     _PlayerCount++;
                 }
             }
 
-            _Map.PlayerCount = _PlayerCount;
-            _Map.ComputerCount = _ComputerCount;
+            _Scenario.PlayerCount = _PlayerCount;
+            _Scenario.ComputerCount = _ComputerCount;
             
-            AssetDatabase.CreateAsset(_Map, "Assets/" + m_OutputFolder + _Map.name + ".asset");
+            AssetDatabase.CreateAsset(_Scenario, "Assets/" + m_OutputFolder + _Scenario.name + ".asset");
         }
     }
 
-    void ReadRoE(ref Map a_Map, Byte[] a_Bytes)
+    void ReadRoE(ref Scenario a_Scenario, Byte[] a_Bytes)
     {
         try
         {
@@ -150,11 +150,11 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1; // Skip unknown byte
 
-            a_Map.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+            a_Scenario.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
 
             _CurrentByte += 4;
 
-            a_Map.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+            a_Scenario.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
             _CurrentByte += 1;
 
@@ -163,7 +163,7 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Name = Encoding.UTF8.GetString(a_Bytes, 14, _NameLength);
+            a_Scenario.Name = Encoding.UTF8.GetString(a_Bytes, 14, _NameLength);
 
             _CurrentByte += _NameLength;
 
@@ -171,22 +171,22 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _DescLength);
+            a_Scenario.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _DescLength);
 
             _CurrentByte += _DescLength;
 
-            a_Map.Difficulty = a_Bytes[_CurrentByte];
+            a_Scenario.Difficulty = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
             // <><><><><> Player Specs
 
-            a_Map.PlayerInfo = new List<PlayerInfo>(8);
+            a_Scenario.PlayerInfo = new List<PlayerInfo>(8);
 
             for (int j = 0; j < 8; j++)
             {
                 PlayerInfo _PlayerInfo = new PlayerInfo();
-                a_Map.PlayerInfo.Add(_PlayerInfo);
+                a_Scenario.PlayerInfo.Add(_PlayerInfo);
 
                 _PlayerInfo.HumanPlayable = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
@@ -245,11 +245,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Win Condition
 
-            a_Map.WinCondition = a_Bytes[_CurrentByte];
+            a_Scenario.WinCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.WinCondition)
+            switch (a_Scenario.WinCondition)
             {
                 case 0: _CurrentByte += 4; break;
                 case 1: _CurrentByte += 8; break;
@@ -266,11 +266,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Loss Condition
 
-            a_Map.LossCondition = a_Bytes[_CurrentByte];
+            a_Scenario.LossCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.LossCondition)
+            switch (a_Scenario.LossCondition)
             {
                 case 0: _CurrentByte += 3; break;
                 case 1: _CurrentByte += 3; break;
@@ -283,44 +283,44 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1;
 
-            a_Map.HasTeams = false;
+            a_Scenario.HasTeams = false;
 
             if (_NumberOfTeams > 0)
             {
-                byte _Team = a_Map.PlayerInfo[0].Team;
+                byte _Team = a_Scenario.PlayerInfo[0].Team;
 
                 for (int i = 0; i < 8; i++)
                 {
-                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+                    a_Scenario.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable)
                     {
-                        _Team = a_Map.PlayerInfo[i].Team;
+                        _Team = a_Scenario.PlayerInfo[i].Team;
                         break;
                     }
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
-                        a_Map.PlayerInfo[i].Team != _Team)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
+                        a_Scenario.PlayerInfo[i].Team != _Team)
                     {
-                        a_Map.HasTeams = true;
+                        a_Scenario.HasTeams = true;
                     }
                 }
             }
         }
         catch (Exception e)
         {
-            Debug.LogError($"Conversion of RoE map '{a_Map.Name}' failed\n{e}");
+            Debug.LogError($"Conversion of RoE map '{a_Scenario.Name}' failed\n{e}");
         }
     }
-    void ReadAB(ref Map a_Map, Byte[] a_Bytes)
+    void ReadAB(ref Scenario a_Scenario, Byte[] a_Bytes)
     {
         try
         {
@@ -330,11 +330,11 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1; // Skip unknown byte
 
-            a_Map.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+            a_Scenario.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
 
             _CurrentByte += 4;
 
-            a_Map.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+            a_Scenario.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
             _CurrentByte += 1;
 
@@ -343,7 +343,7 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Name = Encoding.UTF8.GetString(a_Bytes, 14, _NameLength);
+            a_Scenario.Name = Encoding.UTF8.GetString(a_Bytes, 14, _NameLength);
 
             _CurrentByte += _NameLength;
 
@@ -351,11 +351,11 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _DescLength);
+            a_Scenario.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _DescLength);
 
             _CurrentByte += _DescLength;
 
-            a_Map.Difficulty = a_Bytes[_CurrentByte];
+            a_Scenario.Difficulty = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
@@ -363,12 +363,12 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Player Specs
 
-            a_Map.PlayerInfo = new List<PlayerInfo>(8);
+            a_Scenario.PlayerInfo = new List<PlayerInfo>(8);
 
             for (int j = 0; j < 8; j++)
             {
                 PlayerInfo _PlayerInfo = new PlayerInfo();
-                a_Map.PlayerInfo.Add(_PlayerInfo);
+                a_Scenario.PlayerInfo.Add(_PlayerInfo);
 
                 _PlayerInfo.HumanPlayable = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
@@ -460,11 +460,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Win Condition
 
-            a_Map.WinCondition = a_Bytes[_CurrentByte];
+            a_Scenario.WinCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.WinCondition)
+            switch (a_Scenario.WinCondition)
             {
                 case 0: _CurrentByte += 4; break;
                 case 1: _CurrentByte += 8; break;
@@ -481,11 +481,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Loss Condition
 
-            a_Map.LossCondition = a_Bytes[_CurrentByte];
+            a_Scenario.LossCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.LossCondition)
+            switch (a_Scenario.LossCondition)
             {
                 case 0: _CurrentByte += 3; break;
                 case 1: _CurrentByte += 3; break;
@@ -498,45 +498,45 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1;
 
-            a_Map.HasTeams = false;
+            a_Scenario.HasTeams = false;
 
             if (_NumberOfTeams > 0)
             {
-                byte _Team = a_Map.PlayerInfo[0].Team;
+                byte _Team = a_Scenario.PlayerInfo[0].Team;
 
                 for (int i = 0; i < 8; i++)
                 {
-                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+                    a_Scenario.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable)
                     {
-                        _Team = a_Map.PlayerInfo[i].Team;
+                        _Team = a_Scenario.PlayerInfo[i].Team;
                         break;
                     }
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
-                        a_Map.PlayerInfo[i].Team != _Team)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
+                        a_Scenario.PlayerInfo[i].Team != _Team)
                     {
-                        a_Map.HasTeams = true;
+                        a_Scenario.HasTeams = true;
                     }
                 }
             }
         }
         catch (Exception e)
         {
-            Debug.LogError($"Conversion of AB map '{a_Map.Name}' failed\n{e}");
+            Debug.LogError($"Conversion of AB map '{a_Scenario.Name}' failed\n{e}");
         }
     }
 
-    void ReadSoD(ref Map a_Map, Byte[] a_Bytes)
+    void ReadSoD(ref Scenario a_Scenario, Byte[] a_Bytes)
     {
         try
         {
@@ -548,11 +548,11 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1; // Skip unknown byte
 
-            a_Map.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+            a_Scenario.Size = BitConverter.ToInt32(a_Bytes, _CurrentByte);
 
             _CurrentByte += 4;
 
-            a_Map.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+            a_Scenario.HasUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
             _CurrentByte += 1;
 
@@ -561,7 +561,7 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Name = Encoding.UTF8.GetString(a_Bytes, 14, _StringLength);
+            a_Scenario.Name = Encoding.UTF8.GetString(a_Bytes, 14, _StringLength);
 
             _CurrentByte += _StringLength;
 
@@ -569,11 +569,11 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 4;
 
-            a_Map.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _StringLength);
+            a_Scenario.Description = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _StringLength);
 
             _CurrentByte += _StringLength;
 
-            a_Map.Difficulty = a_Bytes[_CurrentByte];
+            a_Scenario.Difficulty = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
@@ -581,12 +581,12 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Player Specs
 
-            a_Map.PlayerInfo = new List<PlayerInfo>(8);
+            a_Scenario.PlayerInfo = new List<PlayerInfo>(8);
 
             for (int j = 0; j < 8; j++)
             {
                 PlayerInfo _PlayerInfo = new PlayerInfo();
-                a_Map.PlayerInfo.Add(_PlayerInfo);
+                a_Scenario.PlayerInfo.Add(_PlayerInfo);
 
                 _PlayerInfo.HumanPlayable = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
 
@@ -684,11 +684,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Win Condition
 
-            a_Map.WinCondition = a_Bytes[_CurrentByte];
+            a_Scenario.WinCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.WinCondition)
+            switch (a_Scenario.WinCondition)
             {
                 case 0: _CurrentByte += 4; break;
                 case 1: _CurrentByte += 8; break;
@@ -705,11 +705,11 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> Loss Condition
 
-            a_Map.LossCondition = a_Bytes[_CurrentByte];
+            a_Scenario.LossCondition = a_Bytes[_CurrentByte];
 
             _CurrentByte += 1;
 
-            switch (a_Map.LossCondition)
+            switch (a_Scenario.LossCondition)
             {
                 case 0: _CurrentByte += 3; break;
                 case 1: _CurrentByte += 3; break;
@@ -722,34 +722,34 @@ public class H3MImporter : EditorWindow
 
             _CurrentByte += 1;
 
-            a_Map.HasTeams = false;
+            a_Scenario.HasTeams = false;
 
             if (_NumberOfTeams > 0)
             {
-                byte _Team = a_Map.PlayerInfo[0].Team;
+                byte _Team = a_Scenario.PlayerInfo[0].Team;
 
                 for (int i = 0; i < 8; i++)
                 {
-                    a_Map.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
+                    a_Scenario.PlayerInfo[i].Team = a_Bytes[_CurrentByte];
 
                     _CurrentByte += 1;
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable)
                     {
-                        _Team = a_Map.PlayerInfo[i].Team;
+                        _Team = a_Scenario.PlayerInfo[i].Team;
                         break;
                     }
                 }
                 
                 for (int i = 0; i < 8; i++)
                 {
-                    if (a_Map.PlayerInfo[i].ComputerPlayable &&
-                        a_Map.PlayerInfo[i].Team != _Team)
+                    if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
+                        a_Scenario.PlayerInfo[i].Team != _Team)
                     {
-                        a_Map.HasTeams = true;
+                        a_Scenario.HasTeams = true;
                     }
                 }
             }
@@ -859,9 +859,9 @@ public class H3MImporter : EditorWindow
 
             // <><><><><> TERRAIN
 
-            a_Map.Terrain = new List<TerrainTile>(a_Map.Size * a_Map.Size);
+            a_Scenario.Terrain = new List<TerrainTile>(a_Scenario.Size * a_Scenario.Size);
 
-            for (int i = 0; i < a_Map.Terrain.Capacity; i++)
+            for (int i = 0; i < a_Scenario.Terrain.Capacity; i++)
             {
                 TerrainTile _Tile = new TerrainTile();
 
@@ -875,14 +875,14 @@ public class H3MImporter : EditorWindow
 
                 _CurrentByte += 7;
 
-                a_Map.Terrain.Add(_Tile);
+                a_Scenario.Terrain.Add(_Tile);
             }
 
-            if (a_Map.HasUnderground)
+            if (a_Scenario.HasUnderground)
             {
-                a_Map.UndergroundTerrain = new List<TerrainTile>(a_Map.Size * a_Map.Size);
+                a_Scenario.UndergroundTerrain = new List<TerrainTile>(a_Scenario.Size * a_Scenario.Size);
 
-                for (int i = 0; i < a_Map.UndergroundTerrain.Capacity; i++)
+                for (int i = 0; i < a_Scenario.UndergroundTerrain.Capacity; i++)
                 {
                     TerrainTile _Tile = new TerrainTile();
 
@@ -896,7 +896,7 @@ public class H3MImporter : EditorWindow
 
                     _CurrentByte += 7;
 
-                    a_Map.UndergroundTerrain.Add(_Tile);
+                    a_Scenario.UndergroundTerrain.Add(_Tile);
                 }
             }
 
@@ -905,13 +905,11 @@ public class H3MImporter : EditorWindow
             int _ObjectCount = BitConverter.ToInt32(a_Bytes, _CurrentByte);
             _CurrentByte += 4;
 
-            List<MapObjectTemplate> _ObjectTemplates = new List<MapObjectTemplate>();
-
-            //a_Map.Objects = new List<MapObject>(_ObjectCount);
+            List<ScenarioObjectTemplate> _ObjectTemplates = new List<ScenarioObjectTemplate>();
 
             for (int i = 0; i < _ObjectCount; i++)
             {
-                MapObjectTemplate _Object = new MapObjectTemplate();
+                ScenarioObjectTemplate _Object = new ScenarioObjectTemplate();
 
                 _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                 _CurrentByte += 4;
@@ -942,37 +940,37 @@ public class H3MImporter : EditorWindow
                     case 67:
                     case 68:
                     case 69:
-                        _Object.Type = MapObjectType.Artifact;
+                        _Object.Type = ScenarioObjectType.Artifact;
                         break;
 
                     case 6:
-                        _Object.Type = MapObjectType.PandorasBox;
+                        _Object.Type = ScenarioObjectType.PandorasBox;
                         break;
 
                     case 17:
                     case 20:
                     case 42:
                     case 87:
-                        _Object.Type = MapObjectType.Dwelling;
+                        _Object.Type = ScenarioObjectType.Dwelling;
                         break;
 
                     case 26:
-                        _Object.Type = MapObjectType.Event;
+                        _Object.Type = ScenarioObjectType.Event;
                         break;
 
                     case 33:
                     case 219:
-                        _Object.Type = MapObjectType.Garrison;
+                        _Object.Type = ScenarioObjectType.Garrison;
                         break;
 
                     case 34:
                     case 70:
                     case 62:
-                        _Object.Type = MapObjectType.Hero;
+                        _Object.Type = ScenarioObjectType.Hero;
                         break;
 
                     case 36:
-                        _Object.Type = MapObjectType.Grail;
+                        _Object.Type = ScenarioObjectType.Grail;
                         break;
 
                     case 53: // Mine
@@ -983,7 +981,7 @@ public class H3MImporter : EditorWindow
                             Debug.LogError($"CODE RED @@@@@@@@@@@@@@@@@@@@@@@@@@");
                         }
 
-                        _Object.Type = MapObjectType.Dwelling;
+                        _Object.Type = ScenarioObjectType.Dwelling;
                         break;
 
                     case 54:
@@ -995,68 +993,68 @@ public class H3MImporter : EditorWindow
                     case 162:
                     case 163:
                     case 164:
-                        _Object.Type = MapObjectType.Monster;
+                        _Object.Type = ScenarioObjectType.Monster;
                         break;
                     
                     case 76:
                     case 79:
-                        _Object.Type = MapObjectType.Resource;
+                        _Object.Type = ScenarioObjectType.Resource;
                         break;
 
                     case 81:
-                        _Object.Type = MapObjectType.Scientist;
+                        _Object.Type = ScenarioObjectType.Scientist;
                         break;
 
                     case 83:
-                        _Object.Type = MapObjectType.Seer;
+                        _Object.Type = ScenarioObjectType.Seer;
                         break;
 
                     case 88:
                     case 89:
                     case 99:
-                        _Object.Type = MapObjectType.Shrine;
+                        _Object.Type = ScenarioObjectType.Shrine;
                         break;
 
                     case 91:
                     case 59:
-                        _Object.Type = MapObjectType.Sign;
+                        _Object.Type = ScenarioObjectType.Sign;
                         break;
 
                     case 93:
-                        _Object.Type = MapObjectType.Spell;
+                        _Object.Type = ScenarioObjectType.Spell;
                         break;
 
                     case 98:
                     case 77:
-                        _Object.Type = MapObjectType.Town;
+                        _Object.Type = ScenarioObjectType.Town;
                         break;
 
                     case 113:
-                        _Object.Type = MapObjectType.WitchsHut;
+                        _Object.Type = ScenarioObjectType.WitchsHut;
                         break;
 
                     case 215:
-                        _Object.Type = MapObjectType.QuestionGuard;
+                        _Object.Type = ScenarioObjectType.QuestionGuard;
                         break;
 
                     case 216:
-                        _Object.Type = MapObjectType.GeneralDwelling;
+                        _Object.Type = ScenarioObjectType.GeneralDwelling;
                         break;
 
                     case 217:
-                        _Object.Type = MapObjectType.LevelDwelling;
+                        _Object.Type = ScenarioObjectType.LevelDwelling;
                         break;
 
                     case 218:
-                        _Object.Type = MapObjectType.TownDwelling;
+                        _Object.Type = ScenarioObjectType.TownDwelling;
                         break;
 
                     case 220:
-                        _Object.Type = MapObjectType.AbandonedMine;
+                        _Object.Type = ScenarioObjectType.AbandonedMine;
                         break;
 
                     default:
-                        _Object.Type = MapObjectType.Unknown;
+                        _Object.Type = ScenarioObjectType.Unknown;
                         break;
                 }
                 // 1 byte - Object Group?
@@ -1070,7 +1068,7 @@ public class H3MImporter : EditorWindow
             int _ObjectDataCount = BitConverter.ToInt32(a_Bytes, _CurrentByte);
             _CurrentByte += 4;
 
-            a_Map.Objects = new List<MapObject>();
+            a_Scenario.Objects = new List<ScenarioObject>();
 
             for (int i = 0; i < _ObjectDataCount; i++)
             {
@@ -1087,15 +1085,15 @@ public class H3MImporter : EditorWindow
 
                 if (_ObjectBaseIndex > _ObjectTemplates.Count)
                 {
-                    Debug.Log($"!! Position: {_CurrentByte.ToString("X")}");
-                    Debug.Log($"!! Index out of range: {_ObjectBaseIndex} - Position: {_XPos}, {_YPos}, {_IsUnderground}");
+                    Debug.Log($"Position: {_CurrentByte.ToString("X")}");
+                    Debug.Log($"Index out of range: {_ObjectBaseIndex} - Position: {_XPos}, {_YPos}, {_IsUnderground}");
                     break;
                 }
 
-                MapObject _Object = new MapObject();
+                ScenarioObject _Object = new ScenarioObject();
                 _Object.Template = _ObjectTemplates[_ObjectBaseIndex];
 
-                Debug.Log($"!! Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
+                Debug.Log($"Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
 
                 _Object.XPos = _XPos;
                 _Object.YPos = _YPos;
@@ -1103,7 +1101,7 @@ public class H3MImporter : EditorWindow
 
                 switch (_Object.Template.Type)
                 {
-                    case MapObjectType.Artifact:
+                    case ScenarioObjectType.Artifact:
                         bool _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                         _CurrentByte += 1;
 
@@ -1123,13 +1121,13 @@ public class H3MImporter : EditorWindow
                         }
                         break;
 
-                    case MapObjectType.Dwelling:
+                    case ScenarioObjectType.Dwelling:
                         _Object.DwellingOwner = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         break;
 
-                    case MapObjectType.Monster:
-                        _Object.Monster = new MapObjectMonster();
+                    case ScenarioObjectType.Monster:
+                        _Object.Monster = new ScenarioObjectMonster();
 
                         _Object.Monster.Type = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
@@ -1178,7 +1176,7 @@ public class H3MImporter : EditorWindow
 
                         break;
 
-                    case MapObjectType.Resource:
+                    case ScenarioObjectType.Resource:
                         _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                         _CurrentByte += 1;
 
@@ -1202,7 +1200,7 @@ public class H3MImporter : EditorWindow
 
                         break;
 
-                    case MapObjectType.Seer:
+                    case ScenarioObjectType.Seer:
                         byte _Quest = a_Bytes[_CurrentByte];
                         _CurrentByte += 1;
 
@@ -1313,19 +1311,19 @@ public class H3MImporter : EditorWindow
 
                         break;
 
-                    case MapObjectType.Shrine:
+                    case ScenarioObjectType.Shrine:
                         _CurrentByte += 4; // Spell, TODO
                         break;
 
-                    case MapObjectType.Sign:
+                    case ScenarioObjectType.Sign:
                         _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         _CurrentByte += _StringLength;
                         _CurrentByte += 4; // Unknown Bytes
                         break;
 
-                    case MapObjectType.Town:
-                        _Object.Town = new MapObjectTown();
+                    case ScenarioObjectType.Town:
+                        _Object.Town = new ScenarioObjectTown();
 
                         _CurrentByte += 4; // Unknown Bytes
 
@@ -1389,11 +1387,11 @@ public class H3MImporter : EditorWindow
 
                         break;
 
-                    case MapObjectType.WitchsHut:
+                    case ScenarioObjectType.WitchsHut:
                         _CurrentByte += 4;
                         break;
 
-                    case MapObjectType.QuestionGuard:
+                    case ScenarioObjectType.QuestionGuard:
                         _Quest = a_Bytes[_CurrentByte];
                         _CurrentByte += 1;
 
@@ -1456,14 +1454,14 @@ public class H3MImporter : EditorWindow
                         break;
                 }
 
-                a_Map.Objects.Add(_Object);
+                a_Scenario.Objects.Add(_Object);
             }
 
-            List<(MapObject, int)> _Objects = new List<(MapObject, int)>();
+            List<(ScenarioObject, int)> _Objects = new List<(ScenarioObject, int)>();
 
-            for (int i = 0; i < a_Map.Objects.Count; i++)
+            for (int i = 0; i < a_Scenario.Objects.Count; i++)
             {
-                _Objects.Add((a_Map.Objects[i], i + a_Map.Objects[i].YPos * a_Map.Objects.Count));
+                _Objects.Add((a_Scenario.Objects[i], i + a_Scenario.Objects[i].YPos * a_Scenario.Objects.Count));
             }
 
             _Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item2).ToList();
@@ -1475,7 +1473,7 @@ public class H3MImporter : EditorWindow
         }
         catch (Exception e)
         {
-            Debug.LogError($"Conversion of SoD map '{a_Map.Name}' failed\n{e}");
+            Debug.LogError($"Conversion of SoD map '{a_Scenario.Name}' failed\n{e}");
         }
     }
 }
