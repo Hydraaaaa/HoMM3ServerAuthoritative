@@ -11,8 +11,8 @@ public class Map : MonoBehaviour
     [SerializeField] SpriteRenderer m_TerrainSpritePrefab = null;
     [SerializeField] SpriteRenderer m_TerrainFrame = null;
     [SerializeField] Transform m_TerrainMask = null;
-    [SerializeField] SpriteRenderer m_ObjectSpritePrefab = null;
-    [SerializeField] SpriteRenderer m_ShadowSpritePrefab = null;
+    [SerializeField] MapObject m_MapObjectPrefab = null;
+    [SerializeField] MapShadowObject m_ShadowObjectPrefab = null;
 
     [Space]
 
@@ -414,20 +414,12 @@ public class Map : MonoBehaviour
 
     IEnumerator LoadAsset(ScenarioObject a_Object)
     {
-        SpriteRenderer _Renderer = Instantiate(m_ObjectSpritePrefab, m_ObjectSpriteParent);
+        MapObject _MapObject = Instantiate(m_MapObjectPrefab, m_ObjectSpriteParent);
 
-        _Renderer.gameObject.name = a_Object.Template.Name;
+        MapShadowObject _ShadowObject = Instantiate(m_ShadowObjectPrefab, m_ShadowSpriteParent);
 
-        _Renderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
-        _Renderer.sortingOrder = -32767 + a_Object.SortOrder;
-        _Renderer.sortingLayerName = "MapObjects";
-
-        SpriteRenderer _ShadowRenderer = Instantiate(m_ShadowSpritePrefab, m_ShadowSpriteParent);
-
-        _ShadowRenderer.gameObject.name = a_Object.Template.Name;
-
-        _ShadowRenderer.transform.position = new Vector3(a_Object.XPos + 0.5f, -a_Object.YPos - 0.5f, 0);
-        _ShadowRenderer.sortingLayerName = "MapShadows";
+        _MapObject.Initialize(a_Object, _ShadowObject);
+        _ShadowObject.Initialize(_MapObject);
 
         // Is this asset animated?
         string _Name = $"MapObjectAnimations/{a_Object.Template.Name}.anim";
@@ -439,17 +431,17 @@ public class Map : MonoBehaviour
         if (_AnimOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
         {
             // This asset is animated, load animations
-            _Renderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
-            _Renderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
-            _Renderer.GetComponent<SimpleAnimation>().Play();
+            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
+            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
+            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
 
             if (a_Object.IsUnderground)
             {
-                m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+                m_UndergroundObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
             }
             else
             {
-                m_ObjectSpriteRenderers.Add(_Renderer);
+                m_ObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
             }
 
             _Name = $"MapObjectShadowAnimations/{a_Object.Template.Name}.anim";
@@ -458,17 +450,17 @@ public class Map : MonoBehaviour
 
             yield return _AnimOperation;
 
-            _ShadowRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
-            _ShadowRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
-            _ShadowRenderer.GetComponent<SimpleAnimation>().Play();
+            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
+            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
+            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
 
             if (a_Object.IsUnderground)
             {
-                m_UndergroundObjectSpriteRenderers.Add(_ShadowRenderer);
+                m_UndergroundObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
             }
             else
             {
-                m_ObjectSpriteRenderers.Add(_ShadowRenderer);
+                m_ObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
             }
         }
         else
@@ -480,15 +472,20 @@ public class Map : MonoBehaviour
 
             yield return _SpriteOperation;
 
-            _Renderer.sprite = _SpriteOperation.Result;
+            if (_SpriteOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
+            {
+                Debug.Log($"!! Missing {a_Object.Template.Name} at ({a_Object.XPos}, {a_Object.YPos})");
+            }
+
+            _MapObject.SpriteRenderer.sprite = _SpriteOperation.Result;
 
             if (a_Object.IsUnderground)
             {
-                m_UndergroundObjectSpriteRenderers.Add(_Renderer);
+                m_UndergroundObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
             }
             else
             {
-                m_ObjectSpriteRenderers.Add(_Renderer);
+                m_ObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
             }
 
             _Name = $"MapObjectShadows/{a_Object.Template.Name}.bmp";
@@ -497,15 +494,15 @@ public class Map : MonoBehaviour
 
             yield return _SpriteOperation;
 
-            _ShadowRenderer.sprite = _SpriteOperation.Result;
+            _ShadowObject.SpriteRenderer.sprite = _SpriteOperation.Result;
 
             if (a_Object.IsUnderground)
             {
-                m_UndergroundObjectSpriteRenderers.Add(_ShadowRenderer);
+                m_UndergroundObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
             }
             else
             {
-                m_ObjectSpriteRenderers.Add(_ShadowRenderer);
+                m_ObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
             }
         }
     }

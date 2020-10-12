@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2286810684168684882}
   - component: {fileID: 2477518503117780360}
   - component: {fileID: -6667084985725317072}
+  - component: {fileID: 866260558977849879}
   m_Layer: 0
   m_Name: MapObject
   m_TagString: Untagged
@@ -123,3 +124,18 @@ MonoBehaviour:
   - clip: {fileID: 0}
     name: Default
     defaultState: 1
+--- !u!114 &866260558977849879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8126470414105273570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b017e4c019251f8429e455bb874219d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpriteRenderer: {fileID: 2286810684168684882}
+  m_Animation: {fileID: -6667084985725317072}
+  m_PlayerColors: {fileID: 11400000, guid: 9dd4db9ca7f37e944998a2515a8f9bda, type: 2}

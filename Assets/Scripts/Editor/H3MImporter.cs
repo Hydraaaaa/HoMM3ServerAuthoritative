@@ -1002,7 +1002,7 @@ public class H3MImporter : EditorWindow
                         break;
 
                     case 81:
-                        _Object.Type = ScenarioObjectType.Scientist;
+                        _Object.Type = ScenarioObjectType.Scholar;
                         break;
 
                     case 83:

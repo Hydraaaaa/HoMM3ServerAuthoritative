@@ -23,4 +23,5 @@ public class PlayerColors : ScriptableObject
     }
 
     public PlayerElements[] Elements;
+    public Color[] Colors;
 }

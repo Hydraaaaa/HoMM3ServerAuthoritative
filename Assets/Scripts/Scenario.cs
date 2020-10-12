@@ -37,7 +37,7 @@ public enum ScenarioObjectType
     Grail,
     Monster,
     Resource,
-    Scientist,
+    Scholar,
     Seer,
     Shrine,
     Sign,

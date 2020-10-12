@@ -22,7 +22,7 @@ public class GameScreenScaler : MonoBehaviour
 
         m_Camera.pixelRect = new Rect(m_PaddingLeft, m_PaddingBottom, _Width, _Height);
 
-        if (Screen.height >= 666)
+        if (Screen.height >= 664)
         {
             m_Sidebar.SetActive(true);
             m_SidebarSmall.SetActive(false);

@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 544584112}
   - component: {fileID: 544584113}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,9 +486,9 @@ MonoBehaviour:
     type: 3}
   m_TerrainFrame: {fileID: 836344038}
   m_TerrainMask: {fileID: 1078446455}
-  m_ObjectSpritePrefab: {fileID: 2286810684168684882, guid: fe2a121d12fea6342aaac6e13b85726f,
+  m_MapObjectPrefab: {fileID: 866260558977849879, guid: fe2a121d12fea6342aaac6e13b85726f,
     type: 3}
-  m_ShadowSpritePrefab: {fileID: 6709282617133852856, guid: 4bdc507220893e14aa99ec919b70c488,
+  m_ShadowObjectPrefab: {fileID: -2725442899062352785, guid: 4bdc507220893e14aa99ec919b70c488,
     type: 3}
   m_TerrainRoot: {fileID: 989251728}
   m_UndergroundTerrainRoot: {fileID: 1858009423}
