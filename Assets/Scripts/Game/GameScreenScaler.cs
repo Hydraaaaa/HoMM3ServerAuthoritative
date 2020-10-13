@@ -15,8 +15,6 @@ public class GameScreenScaler : MonoBehaviour
 
     void Update()
     {
-        m_Camera.orthographicSize = Screen.height / 64.0f;
-
         float _Width = Screen.width - m_PaddingLeft - m_PaddingRight;
         float _Height = Screen.height - m_PaddingBottom - m_PaddingTop;
 
@@ -32,5 +30,7 @@ public class GameScreenScaler : MonoBehaviour
             m_Sidebar.SetActive(false);
             m_SidebarSmall.SetActive(true);
         }
+
+        m_Camera.orthographicSize = _Height / 64.0f;
     }
 }
