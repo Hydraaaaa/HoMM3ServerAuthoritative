@@ -1452,6 +1452,18 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4;
                         _CurrentByte += _StringLength;
                         break;
+
+                    case ScenarioObjectType.LevelDwelling:
+                        _CurrentByte += 4; // Owner
+                        int _Unknown = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                        _CurrentByte += 4;
+
+                        if (_Unknown == 0)
+                        {
+                            _CurrentByte += 2; // Towns
+                        }
+
+                        break;
                 }
 
                 a_Scenario.Objects.Add(_Object);
