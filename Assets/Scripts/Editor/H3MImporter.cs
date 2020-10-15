@@ -1126,6 +1126,105 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4;
                         break;
 
+                    case ScenarioObjectType.Hero:
+                        _CurrentByte += 4;
+                        _CurrentByte += 1;
+                        _CurrentByte += 1;
+
+                        bool _HasCustomName = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomName)
+                        {
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+                        }
+
+                        bool _HasCustomExp = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomExp)
+                        {
+                            _CurrentByte += 4;
+                        }
+
+                        bool _HasCustomPortrait = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomPortrait)
+                        {
+                            _CurrentByte += 1;
+                        }
+
+                        bool _HasCustomSecondarySkills = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomSecondarySkills)
+                        {
+                            int _SecondarySkillCount = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+
+                            _CurrentByte += _SecondarySkillCount * 2;
+                        }
+
+                        bool _HasCustomArmy = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomArmy)
+                        {
+                            _CurrentByte += 28;
+                        }
+
+                        _CurrentByte += 1; // Monster formation
+
+                        bool _HasCustomArtifacts = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomArtifacts)
+                        {
+                            _CurrentByte += 38;
+
+                            short _UnequippedArtifactCount = BitConverter.ToInt16(a_Bytes, _CurrentByte);
+                            _CurrentByte += 2;
+
+                            _CurrentByte += _UnequippedArtifactCount * 2;
+                        }
+
+                        _CurrentByte += 1; // Zone Radius?
+
+                        bool _HasCustomBiography = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomBiography)
+                        {
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+                        }
+
+                        _CurrentByte += 1; // Gender
+
+                        bool _HasCustomSpells = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasCustomSpells)
+                        {
+                            _CurrentByte += 9;
+                        }
+
+                        bool _hasCustomPrimarySkills = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_hasCustomPrimarySkills)
+                        {
+                            _CurrentByte += 4;
+                        }
+
+                        _CurrentByte += 16;
+
+                        break;
+
                     case ScenarioObjectType.Monster:
                         _Object.Monster = new ScenarioObjectMonster();
 
