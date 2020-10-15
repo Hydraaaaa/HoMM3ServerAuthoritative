@@ -1425,6 +1425,28 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4; // Unknown Bytes
                         break;
 
+                    case ScenarioObjectType.Spell:
+                        _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasMessage)
+                        {
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+
+                            bool _HasGuards = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                            _CurrentByte += 1;
+
+                            if (_HasGuards)
+                            {
+                                _CurrentByte += 28;
+                            }
+                        }
+
+                        _CurrentByte += 4;
+                        break;
+
                     case ScenarioObjectType.Town:
                         _Object.Town = new ScenarioObjectTown();
 
@@ -1556,7 +1578,7 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += _StringLength;
                         break;
 
-                    case ScenarioObjectType.LevelDwelling:
+                    case ScenarioObjectType.GeneralDwelling:
                         _CurrentByte += 4; // Owner
                         int _Unknown = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
@@ -1566,6 +1588,29 @@ public class H3MImporter : EditorWindow
                             _CurrentByte += 2; // Towns
                         }
 
+                        _CurrentByte += 2;
+
+                        break;
+
+                    case ScenarioObjectType.LevelDwelling:
+                        _CurrentByte += 4; // Owner
+                        _Unknown = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                        _CurrentByte += 4;
+
+                        if (_Unknown == 0)
+                        {
+                            _CurrentByte += 2; // Towns
+                        }
+
+                        break;
+                    
+                    case ScenarioObjectType.TownDwelling:
+                        _CurrentByte += 4; // Owner
+                        _CurrentByte += 2;
+                        break;
+                    
+                    case ScenarioObjectType.AbandonedMine:
+                        _CurrentByte += 4;
                         break;
                 }
 
