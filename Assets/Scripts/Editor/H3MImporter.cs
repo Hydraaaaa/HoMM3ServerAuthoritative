@@ -1126,6 +1126,10 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4;
                         break;
 
+                    case ScenarioObjectType.Garrison:
+                        _CurrentByte += 41;
+                        break;
+
                     case ScenarioObjectType.Hero:
                         _CurrentByte += 4;
                         _CurrentByte += 1;
