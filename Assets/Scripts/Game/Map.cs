@@ -65,12 +65,12 @@ public class Map : MonoBehaviour
     List<SpriteRenderer> m_TerrainSpriteRenderers;
     List<SpriteRenderer> m_RiverSpriteRenderers;
     List<SpriteRenderer> m_RoadSpriteRenderers;
-    List<SpriteRenderer> m_ObjectSpriteRenderers;
+    List<MapObject> m_Objects;
 
     List<SpriteRenderer> m_UndergroundTerrainSpriteRenderers;
     List<SpriteRenderer> m_UndergroundRiverSpriteRenderers;
     List<SpriteRenderer> m_UndergroundRoadSpriteRenderers;
-    List<SpriteRenderer> m_UndergroundObjectSpriteRenderers;
+    List<MapObject> m_UndergroundObjects;
 
     List<List<Sprite>> m_TerrainSprites;
     List<List<Sprite>> m_RiverSprites;
@@ -401,8 +401,8 @@ public class Map : MonoBehaviour
 
         // <><><><><> Objects
 
-        m_ObjectSpriteRenderers = new List<SpriteRenderer>();
-        m_UndergroundObjectSpriteRenderers = new List<SpriteRenderer>();
+        m_Objects = new List<MapObject>();
+        m_UndergroundObjects = new List<MapObject>();
 
         List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
 
@@ -421,6 +421,17 @@ public class Map : MonoBehaviour
         _MapObject.Initialize(a_Object, _ShadowObject);
         _ShadowObject.Initialize(_MapObject);
 
+        if (a_Object.IsUnderground)
+        {
+            m_UndergroundObjects.Add(_MapObject);
+            _MapObject.transform.parent = m_UndergroundObjectSpriteParent;
+            _ShadowObject.transform.parent = m_UndergroundShadowSpriteParent;
+        }
+        else
+        {
+            m_Objects.Add(_MapObject);
+        }
+
         // Is this asset animated?
         string _Name = $"MapObjectAnimations/{a_Object.Template.Name}.anim";
 
@@ -435,15 +446,6 @@ public class Map : MonoBehaviour
             _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
             _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
 
-            if (a_Object.IsUnderground)
-            {
-                m_UndergroundObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
-            }
-            else
-            {
-                m_ObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
-            }
-
             _Name = $"MapObjectShadowAnimations/{a_Object.Template.Name}.anim";
 
             _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
@@ -453,15 +455,6 @@ public class Map : MonoBehaviour
             _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
             _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
             _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
-
-            if (a_Object.IsUnderground)
-            {
-                m_UndergroundObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
-            }
-            else
-            {
-                m_ObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
-            }
         }
         else
         {
@@ -479,15 +472,6 @@ public class Map : MonoBehaviour
 
             _MapObject.SpriteRenderer.sprite = _SpriteOperation.Result;
 
-            if (a_Object.IsUnderground)
-            {
-                m_UndergroundObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
-            }
-            else
-            {
-                m_ObjectSpriteRenderers.Add(_MapObject.SpriteRenderer);
-            }
-
             _Name = $"MapObjectShadows/{a_Object.Template.Name}.bmp";
 
             _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
@@ -495,15 +479,6 @@ public class Map : MonoBehaviour
             yield return _SpriteOperation;
 
             _ShadowObject.SpriteRenderer.sprite = _SpriteOperation.Result;
-
-            if (a_Object.IsUnderground)
-            {
-                m_UndergroundObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
-            }
-            else
-            {
-                m_ObjectSpriteRenderers.Add(_ShadowObject.SpriteRenderer);
-            }
         }
     }
 }
