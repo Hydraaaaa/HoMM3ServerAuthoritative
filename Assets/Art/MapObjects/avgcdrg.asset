@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
+  m_Name: avgcdrg
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 21300000, guid: d072560f7390bc746a889acb31f8b3f1, type: 3}
+  m_ShadowSprite: {fileID: 21300000, guid: 9f776b1e33773a1448bf1c6e608438fd, type: 3}
+  m_Animation: {fileID: 0}
+  m_ShadowAnimation: {fileID: 0}
