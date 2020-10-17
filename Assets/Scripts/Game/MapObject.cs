@@ -22,6 +22,8 @@ public class MapObject : MonoBehaviour
     protected ScenarioObject m_ScenarioObject;
     protected MapShadowObject m_Shadow;
 
+    public byte[] Collision;
+
     public void Initialize(ScenarioObject a_ScenarioObject, MapShadowObject a_Shadow)
     {
         m_ScenarioObject = a_ScenarioObject;
@@ -32,6 +34,8 @@ public class MapObject : MonoBehaviour
         transform.position = new Vector3(a_ScenarioObject.XPos + 0.5f, -a_ScenarioObject.YPos - 0.5f, 0);
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
         m_SpriteRenderer.sortingLayerName = "MapObjects";
+
+        Collision = a_ScenarioObject.Template.Passability;
 
         switch (a_ScenarioObject.Template.Type)
         {

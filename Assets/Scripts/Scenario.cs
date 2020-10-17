@@ -61,8 +61,11 @@ public class ScenarioObjectTemplate
     public ScenarioObjectType Type;
     public int TypeDebug;
 
+    public byte[] Passability;
+    public byte[] Interactability;
+
     public ushort Landscape;
-    public bool IsOverlay;
+    public bool IsLowPrioritySortOrder;
 }
 
 [Serializable]

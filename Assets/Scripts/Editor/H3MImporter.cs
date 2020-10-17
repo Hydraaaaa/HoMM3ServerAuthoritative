@@ -918,11 +918,29 @@ public class H3MImporter : EditorWindow
                 _Object.Name = _Object.Name.Substring(0, _Object.Name.Length - 4).ToLower();
                 _CurrentByte += _StringLength;
 
-                // 6 bytes - Passability?
-                // 6 bytes - Actions?
+                _Object.Passability = new byte[6];
+                _Object.Passability[0] = a_Bytes[_CurrentByte];
+                _Object.Passability[1] = a_Bytes[_CurrentByte + 1];
+                _Object.Passability[2] = a_Bytes[_CurrentByte + 2];
+                _Object.Passability[3] = a_Bytes[_CurrentByte + 3];
+                _Object.Passability[4] = a_Bytes[_CurrentByte + 4];
+                _Object.Passability[5] = a_Bytes[_CurrentByte + 5];
+
+                _CurrentByte += 6;
+
+                _Object.Interactability = new byte[6];
+                _Object.Interactability[0] = a_Bytes[_CurrentByte];
+                _Object.Interactability[1] = a_Bytes[_CurrentByte + 1];
+                _Object.Interactability[2] = a_Bytes[_CurrentByte + 2];
+                _Object.Interactability[3] = a_Bytes[_CurrentByte + 3];
+                _Object.Interactability[4] = a_Bytes[_CurrentByte + 4];
+                _Object.Interactability[5] = a_Bytes[_CurrentByte + 5];
+
+                _CurrentByte += 6;
+
                 // 2 bytes - Landscape?
                 // 2 bytes - LandEditGroups?
-                _CurrentByte += 16;
+                _CurrentByte += 4;
 
                 int _Type = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                 _Object.TypeDebug = _Type;
@@ -1057,10 +1075,15 @@ public class H3MImporter : EditorWindow
                         _Object.Type = ScenarioObjectType.Unknown;
                         break;
                 }
+
                 // 1 byte - Object Group?
-                // 1 byte - Is Overlay?
+                _CurrentByte += 1;
+
+                _Object.IsLowPrioritySortOrder = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                _CurrentByte += 1;
+
                 // 16 bytes - Unknown
-                _CurrentByte += 18;
+                _CurrentByte += 16;
 
                 _ObjectTemplates.Add(_Object);
             }
@@ -1621,10 +1644,137 @@ public class H3MImporter : EditorWindow
 
             for (int i = 0; i < a_Scenario.Objects.Count; i++)
             {
-                _Objects.Add((a_Scenario.Objects[i], i + a_Scenario.Objects[i].YPos * a_Scenario.Objects.Count));
+                _Objects.Add((a_Scenario.Objects[i], i));
             }
 
-            _Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item2).ToList();
+            _Objects.Sort((a, b) =>
+            {
+                if (a.Item1.Template.IsLowPrioritySortOrder)
+                {
+                    if (b.Item1.Template.IsLowPrioritySortOrder)
+                    {
+                        if (a.Item2 > b.Item2)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return -1;
+                        }
+                    }
+                    else
+                    {
+                        return -1;
+                    }
+                }
+                else if (b.Item1.Template.IsLowPrioritySortOrder)
+                {
+                    return 1;
+                }
+                else
+                {
+                    if (a.Item1.YPos > b.Item1.YPos)
+                    {
+                        return 1;
+                    }
+                    else if (a.Item1.YPos < b.Item1.YPos)
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        int _XDifference = Mathf.Abs(a.Item1.XPos - b.Item1.XPos);
+                        if (_XDifference > 8)
+                        {
+                            if (a.Item2 > b.Item2)
+                            {
+                                return 1;
+                            }
+                            else
+                            {
+                                return -1;
+                            }
+                        }
+                        else
+                        {
+                            bool _AIsLeftmost = true;
+
+                            ScenarioObject _LeftmostObject = a.Item1;
+                            ScenarioObject _RightmostObject = b.Item1;
+
+                            if (a.Item1.XPos > b.Item1.XPos)
+                            {
+                                _AIsLeftmost = false;
+                                _LeftmostObject = b.Item1;
+                                _RightmostObject = a.Item1;
+                            }
+
+
+                            for (int x = _XDifference; x < 8; x++)
+                            {
+                                byte _BitwiseIndex = (byte)Mathf.Pow(2, x);
+
+                                int _LeftmostCollisionIndex = 0;
+                                int _RightmostCollisionIndex = 0;
+
+                                for (int y = 5; y > 2; y--)
+                                {
+                                    if (!((_LeftmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex) ||
+                                        !((_LeftmostObject.Template.Interactability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    {
+                                        _LeftmostCollisionIndex = y;
+                                    }
+
+                                    if (!((_RightmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex) ||
+                                        !((_RightmostObject.Template.Interactability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    {
+                                        _RightmostCollisionIndex = y;
+                                    }
+                                }
+
+                                if (_LeftmostCollisionIndex != 0 &&
+                                    _RightmostCollisionIndex != 0)
+                                {
+                                    if (_LeftmostCollisionIndex > _RightmostCollisionIndex)
+                                    {
+                                        if (_AIsLeftmost)
+                                        {
+                                            return 1;
+                                        }
+                                        else
+                                        {
+                                            return -1;
+                                        }
+                                    }
+                                    else if (_LeftmostCollisionIndex > _RightmostCollisionIndex)
+                                    {
+                                        if (_AIsLeftmost)
+                                        {
+                                            return -1;
+                                        }
+                                        else
+                                        {
+                                            return 1;
+                                        }
+                                    }
+                                }
+                            }
+
+                            if (a.Item2 > b.Item2)
+                            {
+                                return 1;
+                            }
+                            else
+                            {
+                                return -1;
+                            }
+                        }
+                    }
+                }
+            });
+
+            //_Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item2).ToList();
+            //_Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item1.Template.IsLowPrioritySortOrder).ToList();
 
             for (int i = 0; i < _Objects.Count; i++)
             {
