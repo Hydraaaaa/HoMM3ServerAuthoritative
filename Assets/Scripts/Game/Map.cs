@@ -442,14 +442,20 @@ public class Map : MonoBehaviour
             _MapObject.Animation.AddClip(_Operation.Result.Animation, "Default");
             _MapObject.Animation.clip = _Operation.Result.Animation;
             _MapObject.Animation.Play();
+        }
+        else
+        {
+            _MapObject.SpriteRenderer.sprite = _Operation.Result.Sprite;
+        }
 
+        if (_Operation.Result.ShadowAnimation != null)
+        {
             _ShadowObject.Animation.AddClip(_Operation.Result.ShadowAnimation, "Default");
             _ShadowObject.Animation.clip = _Operation.Result.ShadowAnimation;
             _ShadowObject.Animation.Play();
         }
         else
         {
-            _MapObject.SpriteRenderer.sprite = _Operation.Result.Sprite;
             _ShadowObject.SpriteRenderer.sprite = _Operation.Result.ShadowSprite;
         }
     }
