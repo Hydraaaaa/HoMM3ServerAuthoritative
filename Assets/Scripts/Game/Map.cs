@@ -436,6 +436,11 @@ public class Map : MonoBehaviour
 
         yield return _Operation;
 
+        if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
+        {
+            yield break;
+        }
+
         if (_Operation.Result.Animation != null)
         {
             // This asset is animated, load animations
