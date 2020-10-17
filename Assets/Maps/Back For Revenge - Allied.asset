@@ -145323,8 +145323,10 @@ MonoBehaviour:
       MineType: 3
       Type: 14
       TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 107
     YPos: 5
     IsUnderground: 0
@@ -145360,8 +145362,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 137
+      Passability: ffffffffff7f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 99
     YPos: 111
     IsUnderground: 1
@@ -145397,8 +145401,10 @@ MonoBehaviour:
       MineType: 0
       Type: 7
       TypeDebug: 71
+      Passability: ffffffffff7f
+      Interactability: 000000000080
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 0
     YPos: 0
     IsUnderground: 0

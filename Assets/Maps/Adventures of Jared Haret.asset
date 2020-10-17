@@ -18319,8 +18319,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 103
+      Passability: ffffffffbf1f
+      Interactability: 000000000040
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 22
     YPos: 9
     IsUnderground: 0
@@ -18356,8 +18358,10 @@ MonoBehaviour:
       MineType: 0
       Type: 3
       TypeDebug: 26
+      Passability: ffffffffff7f
+      Interactability: 000000000080
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 21
     YPos: 10
     IsUnderground: 0

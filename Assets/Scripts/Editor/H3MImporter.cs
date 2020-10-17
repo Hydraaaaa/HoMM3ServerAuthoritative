@@ -1719,14 +1719,12 @@ public class H3MImporter : EditorWindow
 
                                 for (int y = 5; y > 2; y--)
                                 {
-                                    if (!((_LeftmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex) ||
-                                        !((_LeftmostObject.Template.Interactability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    if (!((_LeftmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex))
                                     {
                                         _LeftmostCollisionIndex = y;
                                     }
 
-                                    if (!((_RightmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex) ||
-                                        !((_RightmostObject.Template.Interactability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    if (!((_RightmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex))
                                     {
                                         _RightmostCollisionIndex = y;
                                     }
@@ -1772,9 +1770,6 @@ public class H3MImporter : EditorWindow
                     }
                 }
             });
-
-            //_Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item2).ToList();
-            //_Objects = _Objects.OrderBy((a_Pair) => a_Pair.Item1.Template.IsLowPrioritySortOrder).ToList();
 
             for (int i = 0; i < _Objects.Count; i++)
             {

@@ -81823,12 +81823,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 51
     IsUnderground: 0
-    SortOrder: 117
+    SortOrder: 119
     Monster:
       Type: 0
       Count: 0
@@ -81860,12 +81862,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 28
     YPos: 45
     IsUnderground: 0
-    SortOrder: 100
+    SortOrder: 103
     Monster:
       Type: 0
       Count: 0
@@ -81897,12 +81901,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 27
     YPos: 46
     IsUnderground: 0
-    SortOrder: 105
+    SortOrder: 107
     Monster:
       Type: 0
       Count: 0
@@ -81934,12 +81940,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 25
     YPos: 47
     IsUnderground: 0
-    SortOrder: 108
+    SortOrder: 110
     Monster:
       Type: 0
       Count: 0
@@ -81971,12 +81979,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 42
     IsUnderground: 0
-    SortOrder: 91
+    SortOrder: 94
     Monster:
       Type: 0
       Count: 0
@@ -82008,12 +82018,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 28
     YPos: 41
     IsUnderground: 0
-    SortOrder: 87
+    SortOrder: 90
     Monster:
       Type: 0
       Count: 0
@@ -82045,10 +82057,51 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 26
     YPos: 39
+    IsUnderground: 0
+    SortOrder: 86
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 38
     IsUnderground: 0
     SortOrder: 83
     Monster:
@@ -82082,49 +82135,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 36
-    YPos: 38
-    IsUnderground: 0
-    SortOrder: 80
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw1
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 25
     YPos: 41
     IsUnderground: 0
-    SortOrder: 88
+    SortOrder: 91
     Monster:
       Type: 0
       Count: 0
@@ -82156,12 +82174,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 24
     YPos: 45
     IsUnderground: 0
-    SortOrder: 101
+    SortOrder: 104
     Monster:
       Type: 0
       Count: 0
@@ -82193,12 +82213,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 42
     YPos: 37
     IsUnderground: 0
-    SortOrder: 74
+    SortOrder: 77
     Monster:
       Type: 0
       Count: 0
@@ -82230,12 +82252,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 42
     YPos: 41
     IsUnderground: 0
-    SortOrder: 89
+    SortOrder: 92
     Monster:
       Type: 0
       Count: 0
@@ -82267,12 +82291,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 24
     YPos: 47
     IsUnderground: 0
-    SortOrder: 109
+    SortOrder: 111
     Monster:
       Type: 0
       Count: 0
@@ -82304,12 +82330,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 30
     YPos: 53
     IsUnderground: 0
-    SortOrder: 127
+    SortOrder: 129
     Monster:
       Type: 0
       Count: 0
@@ -82341,12 +82369,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 54
     IsUnderground: 0
-    SortOrder: 134
+    SortOrder: 135
     Monster:
       Type: 0
       Count: 0
@@ -82378,157 +82408,11 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 30
-    YPos: 56
-    IsUnderground: 0
-    SortOrder: 141
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 28
-    YPos: 58
-    IsUnderground: 0
-    SortOrder: 148
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 29
-    YPos: 60
-    IsUnderground: 0
-    SortOrder: 158
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 33
-    YPos: 59
-    IsUnderground: 0
-    SortOrder: 153
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 36
     YPos: 56
     IsUnderground: 0
     SortOrder: 142
@@ -82563,12 +82447,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 38
-    YPos: 54
+      IsLowPrioritySortOrder: 0
+    XPos: 28
+    YPos: 58
     IsUnderground: 0
-    SortOrder: 135
+    SortOrder: 149
     Monster:
       Type: 0
       Count: 0
@@ -82600,345 +82486,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 37
-    YPos: 51
+      IsLowPrioritySortOrder: 0
+    XPos: 29
+    YPos: 60
     IsUnderground: 0
-    SortOrder: 118
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw1
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 36
-    YPos: 51
-    IsUnderground: 0
-    SortOrder: 119
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw1
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 53
-    YPos: 53
-    IsUnderground: 0
-    SortOrder: 128
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw1
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 62
-    YPos: 55
-    IsUnderground: 0
-    SortOrder: 138
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 59
-    YPos: 53
-    IsUnderground: 0
-    SortOrder: 129
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 59
-    YPos: 49
-    IsUnderground: 0
-    SortOrder: 114
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 58
-    YPos: 51
-    IsUnderground: 0
-    SortOrder: 120
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 50
-    YPos: 51
-    IsUnderground: 0
-    SortOrder: 121
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 49
-    YPos: 53
-    IsUnderground: 0
-    SortOrder: 130
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 47
-    YPos: 54
-    IsUnderground: 0
-    SortOrder: 136
+    SortOrder: 159
     Monster:
       Type: 0
       Count: 0
@@ -82970,12 +82525,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 47
-    YPos: 55
+      IsLowPrioritySortOrder: 0
+    XPos: 33
+    YPos: 59
     IsUnderground: 0
-    SortOrder: 139
+    SortOrder: 154
     Monster:
       Type: 0
       Count: 0
@@ -83003,16 +82560,18 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: avlswmp4
+      Name: avlmtsw2
       MineType: 0
       Type: 21
-      TypeDebug: 155
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 39
-    YPos: 47
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 56
     IsUnderground: 0
-    SortOrder: 110
+    SortOrder: 143
     Monster:
       Type: 0
       Count: 0
@@ -83040,16 +82599,18 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: avlswmp4
+      Name: avlmtsw2
       MineType: 0
       Type: 21
-      TypeDebug: 155
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 38
-    YPos: 46
+    YPos: 54
     IsUnderground: 0
-    SortOrder: 106
+    SortOrder: 136
     Monster:
       Type: 0
       Count: 0
@@ -83077,90 +82638,18 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: avllk2s0
+      Name: avlmtsw4
       MineType: 0
       Type: 21
-      TypeDebug: 126
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 39
-    YPos: 45
+      IsLowPrioritySortOrder: 0
+    XPos: 37
+    YPos: 51
     IsUnderground: 0
-    SortOrder: 102
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlswmp4
-      MineType: 0
-      Type: 21
-      TypeDebug: 155
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 34
-    YPos: 38
-    IsUnderground: 0
-    SortOrder: 81
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlswmp0
-      MineType: 0
-      Type: 21
-      TypeDebug: 155
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 29
-    YPos: 35
-    IsUnderground: 0
-    SortOrder: 68
+    SortOrder: 120
     Monster:
       Type: 0
       Count: 0
@@ -83192,12 +82681,599 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 50
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 51
+    IsUnderground: 0
+    SortOrder: 121
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 53
+    YPos: 53
+    IsUnderground: 0
+    SortOrder: 130
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 62
+    YPos: 55
+    IsUnderground: 0
+    SortOrder: 139
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 59
+    YPos: 53
+    IsUnderground: 0
+    SortOrder: 131
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 59
+    YPos: 49
+    IsUnderground: 0
+    SortOrder: 116
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 58
     YPos: 51
     IsUnderground: 0
     SortOrder: 122
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 50
+    YPos: 51
+    IsUnderground: 0
+    SortOrder: 123
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 49
+    YPos: 53
+    IsUnderground: 0
+    SortOrder: 132
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 47
+    YPos: 54
+    IsUnderground: 0
+    SortOrder: 137
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 47
+    YPos: 55
+    IsUnderground: 0
+    SortOrder: 140
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlswmp4
+      MineType: 0
+      Type: 21
+      TypeDebug: 155
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 39
+    YPos: 47
+    IsUnderground: 0
+    SortOrder: 112
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlswmp4
+      MineType: 0
+      Type: 21
+      TypeDebug: 155
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 38
+    YPos: 46
+    IsUnderground: 0
+    SortOrder: 108
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avllk2s0
+      MineType: 0
+      Type: 21
+      TypeDebug: 126
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 39
+    YPos: 45
+    IsUnderground: 0
+    SortOrder: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlswmp4
+      MineType: 0
+      Type: 21
+      TypeDebug: 155
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 38
+    IsUnderground: 0
+    SortOrder: 84
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlswmp0
+      MineType: 0
+      Type: 21
+      TypeDebug: 155
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 29
+    YPos: 35
+    IsUnderground: 0
+    SortOrder: 71
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 50
+    YPos: 51
+    IsUnderground: 0
+    SortOrder: 124
     Monster:
       Type: 0
       Count: 0
@@ -83229,8 +83305,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 68
     YPos: 70
     IsUnderground: 0
@@ -83266,8 +83344,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 69
     IsUnderground: 0
@@ -83303,8 +83383,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 72
     YPos: 67
     IsUnderground: 0
@@ -83340,8 +83422,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 73
     YPos: 66
     IsUnderground: 0
@@ -83377,8 +83461,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 73
     YPos: 67
     IsUnderground: 0
@@ -83414,8 +83500,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 65
     IsUnderground: 0
@@ -83451,8 +83539,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 75
     YPos: 66
     IsUnderground: 0
@@ -83488,8 +83578,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 76
     YPos: 64
     IsUnderground: 0
@@ -83525,8 +83617,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 81
     YPos: 68
     IsUnderground: 0
@@ -83562,8 +83656,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 79
     YPos: 67
     IsUnderground: 0
@@ -83599,12 +83695,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 7
     YPos: 53
     IsUnderground: 0
-    SortOrder: 131
+    SortOrder: 133
     Monster:
       Type: 0
       Count: 0
@@ -83636,12 +83734,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 6
     YPos: 47
     IsUnderground: 0
-    SortOrder: 111
+    SortOrder: 113
     Monster:
       Type: 0
       Count: 0
@@ -83673,12 +83773,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 7
     YPos: 47
     IsUnderground: 0
-    SortOrder: 112
+    SortOrder: 114
     Monster:
       Type: 0
       Count: 0
@@ -83710,12 +83812,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 5
     YPos: 44
     IsUnderground: 0
-    SortOrder: 98
+    SortOrder: 101
     Monster:
       Type: 0
       Count: 0
@@ -83747,12 +83851,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 10
     YPos: 51
     IsUnderground: 0
-    SortOrder: 123
+    SortOrder: 125
     Monster:
       Type: 0
       Count: 0
@@ -83784,8 +83890,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 16
     YPos: 73
     IsUnderground: 0
@@ -83821,8 +83929,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 16
     YPos: 75
     IsUnderground: 0
@@ -83858,8 +83968,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 16
     YPos: 78
     IsUnderground: 0
@@ -83895,8 +84007,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 18
     YPos: 80
     IsUnderground: 0
@@ -83932,8 +84046,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 14
     YPos: 83
     IsUnderground: 0
@@ -83969,8 +84085,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 13
     YPos: 85
     IsUnderground: 0
@@ -84006,8 +84124,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 6
     YPos: 87
     IsUnderground: 0
@@ -84043,8 +84163,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 2
     YPos: 87
     IsUnderground: 0
@@ -84080,8 +84202,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 2
     YPos: 86
     IsUnderground: 0
@@ -84117,8 +84241,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 3
     YPos: 85
     IsUnderground: 0
@@ -84154,8 +84280,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 9
     YPos: 87
     IsUnderground: 0
@@ -84191,12 +84319,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 8
     YPos: 21
     IsUnderground: 0
-    SortOrder: 29
+    SortOrder: 32
     Monster:
       Type: 0
       Count: 0
@@ -84228,12 +84358,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 13
     YPos: 28
     IsUnderground: 0
-    SortOrder: 58
+    SortOrder: 61
     Monster:
       Type: 0
       Count: 0
@@ -84265,12 +84397,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 16
     YPos: 30
     IsUnderground: 0
-    SortOrder: 60
+    SortOrder: 63
     Monster:
       Type: 0
       Count: 0
@@ -84302,12 +84436,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 20
     YPos: 31
     IsUnderground: 0
-    SortOrder: 62
+    SortOrder: 65
     Monster:
       Type: 0
       Count: 0
@@ -84339,12 +84475,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 15
     YPos: 31
     IsUnderground: 0
-    SortOrder: 63
+    SortOrder: 66
     Monster:
       Type: 0
       Count: 0
@@ -84376,12 +84514,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 10
     YPos: 57
     IsUnderground: 0
-    SortOrder: 144
+    SortOrder: 145
     Monster:
       Type: 0
       Count: 0
@@ -84413,12 +84553,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 11
     YPos: 51
     IsUnderground: 0
-    SortOrder: 124
+    SortOrder: 126
     Monster:
       Type: 0
       Count: 0
@@ -84450,12 +84592,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 10
     YPos: 59
     IsUnderground: 0
-    SortOrder: 154
+    SortOrder: 155
     Monster:
       Type: 0
       Count: 0
@@ -84487,8 +84631,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 158
+      Passability: ffffffffff3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 75
     YPos: 69
     IsUnderground: 0
@@ -84524,8 +84670,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 66
     YPos: 72
     IsUnderground: 0
@@ -84561,8 +84709,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 65
     YPos: 73
     IsUnderground: 0
@@ -84598,8 +84748,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 64
     YPos: 74
     IsUnderground: 0
@@ -84635,8 +84787,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 64
     YPos: 75
     IsUnderground: 0
@@ -84672,8 +84826,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 158
+      Passability: ffffffffff1f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 67
     YPos: 72
     IsUnderground: 0
@@ -84709,8 +84865,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 65
     YPos: 76
     IsUnderground: 0
@@ -84746,8 +84904,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 70
     YPos: 71
     IsUnderground: 0
@@ -84783,8 +84943,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 63
     YPos: 77
     IsUnderground: 0
@@ -84820,8 +84982,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 78
     IsUnderground: 0
@@ -84857,8 +85021,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 61
     YPos: 79
     IsUnderground: 0
@@ -84894,8 +85060,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 59
     YPos: 80
     IsUnderground: 0
@@ -84931,8 +85099,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 58
     YPos: 81
     IsUnderground: 0
@@ -84968,8 +85138,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 54
     YPos: 81
     IsUnderground: 0
@@ -85005,8 +85177,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 53
     YPos: 81
     IsUnderground: 0
@@ -85042,8 +85216,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 54
     YPos: 82
     IsUnderground: 0
@@ -85079,8 +85255,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 55
     YPos: 83
     IsUnderground: 0
@@ -85116,8 +85294,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 52
     YPos: 82
     IsUnderground: 0
@@ -85153,8 +85333,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 55
     YPos: 84
     IsUnderground: 0
@@ -85190,8 +85372,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 51
     YPos: 84
     IsUnderground: 0
@@ -85227,8 +85411,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 47
     YPos: 84
     IsUnderground: 0
@@ -85264,8 +85450,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 47
     YPos: 85
     IsUnderground: 0
@@ -85301,8 +85489,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 45
     YPos: 85
     IsUnderground: 0
@@ -85338,8 +85528,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 44
     YPos: 87
     IsUnderground: 0
@@ -85375,8 +85567,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 46
     YPos: 89
     IsUnderground: 0
@@ -85412,8 +85606,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 48
     YPos: 88
     IsUnderground: 0
@@ -85449,8 +85645,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 50
     YPos: 90
     IsUnderground: 0
@@ -85486,8 +85684,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 48
     YPos: 89
     IsUnderground: 0
@@ -85523,8 +85723,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 52
     YPos: 90
     IsUnderground: 0
@@ -85560,8 +85762,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 56
     YPos: 90
     IsUnderground: 0
@@ -85597,8 +85801,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 57
     YPos: 90
     IsUnderground: 0
@@ -85634,8 +85840,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 158
+      Passability: ffffffffff3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 56
     YPos: 88
     IsUnderground: 0
@@ -85671,8 +85879,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 59
     YPos: 90
     IsUnderground: 0
@@ -85708,8 +85918,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 89
     IsUnderground: 0
@@ -85745,8 +85957,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 61
     YPos: 88
     IsUnderground: 0
@@ -85782,8 +85996,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 67
     YPos: 86
     IsUnderground: 0
@@ -85819,8 +86035,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 65
     YPos: 87
     IsUnderground: 0
@@ -85856,8 +86074,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 67
     YPos: 86
     IsUnderground: 0
@@ -85893,8 +86113,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 68
     YPos: 84
     IsUnderground: 0
@@ -85930,8 +86152,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 70
     YPos: 82
     IsUnderground: 0
@@ -85967,8 +86191,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 82
     IsUnderground: 0
@@ -86004,8 +86230,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 81
     IsUnderground: 0
@@ -86041,8 +86269,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 76
     YPos: 78
     IsUnderground: 0
@@ -86078,8 +86308,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 75
     YPos: 77
     IsUnderground: 0
@@ -86115,8 +86347,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 78
     YPos: 76
     IsUnderground: 0
@@ -86152,8 +86386,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 78
     YPos: 74
     IsUnderground: 0
@@ -86189,12 +86425,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 53
     YPos: 20
     IsUnderground: 0
-    SortOrder: 23
+    SortOrder: 26
     Monster:
       Type: 0
       Count: 0
@@ -86226,12 +86464,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 52
     YPos: 21
     IsUnderground: 0
-    SortOrder: 30
+    SortOrder: 33
     Monster:
       Type: 0
       Count: 0
@@ -86263,12 +86503,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 51
     YPos: 22
     IsUnderground: 0
-    SortOrder: 34
+    SortOrder: 37
     Monster:
       Type: 0
       Count: 0
@@ -86300,8 +86542,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 67
     YPos: 76
     IsUnderground: 0
@@ -86337,8 +86581,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 80
     IsUnderground: 0
@@ -86374,12 +86620,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 54
     YPos: 19
     IsUnderground: 0
-    SortOrder: 19
+    SortOrder: 22
     Monster:
       Type: 0
       Count: 0
@@ -86411,12 +86659,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 51
     YPos: 23
     IsUnderground: 0
-    SortOrder: 38
+    SortOrder: 41
     Monster:
       Type: 0
       Count: 0
@@ -86448,12 +86698,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 63
     YPos: 20
     IsUnderground: 0
-    SortOrder: 24
+    SortOrder: 27
     Monster:
       Type: 0
       Count: 0
@@ -86485,12 +86737,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 20
     IsUnderground: 0
-    SortOrder: 25
+    SortOrder: 28
     Monster:
       Type: 0
       Count: 0
@@ -86522,12 +86776,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 58
     YPos: 21
     IsUnderground: 0
-    SortOrder: 31
+    SortOrder: 34
     Monster:
       Type: 0
       Count: 0
@@ -86559,12 +86815,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 53
     YPos: 21
     IsUnderground: 0
-    SortOrder: 32
+    SortOrder: 35
     Monster:
       Type: 0
       Count: 0
@@ -86596,12 +86854,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 62
     YPos: 14
     IsUnderground: 0
-    SortOrder: 7
+    SortOrder: 10
     Monster:
       Type: 0
       Count: 0
@@ -86633,12 +86893,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 65
     YPos: 13
     IsUnderground: 0
-    SortOrder: 3
+    SortOrder: 6
     Monster:
       Type: 0
       Count: 0
@@ -86670,12 +86932,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 4
     YPos: 17
     IsUnderground: 0
-    SortOrder: 13
+    SortOrder: 16
     Monster:
       Type: 0
       Count: 0
@@ -86707,12 +86971,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 1
     YPos: 23
     IsUnderground: 0
-    SortOrder: 39
+    SortOrder: 42
     Monster:
       Type: 0
       Count: 0
@@ -86744,12 +87010,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Passability: ffffff9f1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 1
     YPos: 27
     IsUnderground: 0
-    SortOrder: 54
+    SortOrder: 57
     Monster:
       Type: 0
       Count: 0
@@ -86781,8 +87049,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Passability: ffffffffff7f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 0
     YPos: 79
     IsUnderground: 0
@@ -86818,8 +87088,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 135
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 6
     YPos: 67
     IsUnderground: 0
@@ -86855,12 +87127,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 24
     YPos: 33
     IsUnderground: 0
-    SortOrder: 65
+    SortOrder: 68
     Monster:
       Type: 0
       Count: 0
@@ -86892,10 +87166,51 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 25
     YPos: 32
+    IsUnderground: 0
+    SortOrder: 67
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 28
+    YPos: 30
     IsUnderground: 0
     SortOrder: 64
     Monster:
@@ -86925,53 +87240,18 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
-      Name: avlmtds2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 28
-    YPos: 30
-    IsUnderground: 0
-    SortOrder: 61
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
       Name: avlmtds4
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 28
     IsUnderground: 0
-    SortOrder: 59
+    SortOrder: 62
     Monster:
       Type: 0
       Count: 0
@@ -87003,12 +87283,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 27
     IsUnderground: 0
-    SortOrder: 55
+    SortOrder: 58
     Monster:
       Type: 0
       Count: 0
@@ -87040,12 +87322,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 30
     YPos: 26
     IsUnderground: 0
-    SortOrder: 51
+    SortOrder: 54
     Monster:
       Type: 0
       Count: 0
@@ -87077,12 +87361,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 30
     YPos: 24
     IsUnderground: 0
-    SortOrder: 44
+    SortOrder: 47
     Monster:
       Type: 0
       Count: 0
@@ -87114,12 +87400,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 30
     YPos: 23
     IsUnderground: 0
-    SortOrder: 40
+    SortOrder: 43
     Monster:
       Type: 0
       Count: 0
@@ -87151,12 +87439,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 29
     YPos: 25
     IsUnderground: 0
-    SortOrder: 46
+    SortOrder: 49
     Monster:
       Type: 0
       Count: 0
@@ -87188,12 +87478,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 45
     YPos: 58
     IsUnderground: 0
-    SortOrder: 149
+    SortOrder: 150
     Monster:
       Type: 0
       Count: 0
@@ -87225,12 +87517,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 43
     YPos: 60
     IsUnderground: 0
-    SortOrder: 159
+    SortOrder: 160
     Monster:
       Type: 0
       Count: 0
@@ -87262,12 +87556,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 46
     YPos: 62
     IsUnderground: 0
-    SortOrder: 167
+    SortOrder: 168
     Monster:
       Type: 0
       Count: 0
@@ -87299,12 +87595,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 44
     YPos: 59
     IsUnderground: 0
-    SortOrder: 155
+    SortOrder: 156
     Monster:
       Type: 0
       Count: 0
@@ -87336,8 +87634,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 48
     YPos: 63
     IsUnderground: 0
@@ -87373,8 +87673,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 49
     YPos: 64
     IsUnderground: 0
@@ -87410,12 +87712,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 73
     YPos: 34
     IsUnderground: 0
-    SortOrder: 66
+    SortOrder: 69
     Monster:
       Type: 0
       Count: 0
@@ -87447,12 +87751,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 75
     YPos: 37
     IsUnderground: 0
-    SortOrder: 75
+    SortOrder: 78
     Monster:
       Type: 0
       Count: 0
@@ -87484,12 +87790,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 39
     IsUnderground: 0
-    SortOrder: 84
+    SortOrder: 87
     Monster:
       Type: 0
       Count: 0
@@ -87521,12 +87829,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 72
     YPos: 37
     IsUnderground: 0
-    SortOrder: 76
+    SortOrder: 79
     Monster:
       Type: 0
       Count: 0
@@ -87558,12 +87868,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 41
     IsUnderground: 0
-    SortOrder: 90
+    SortOrder: 93
     Monster:
       Type: 0
       Count: 0
@@ -87595,47 +87907,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 47
-    IsUnderground: 0
-    SortOrder: 113
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtrf2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 70
-    YPos: 49
     IsUnderground: 0
     SortOrder: 115
     Monster:
@@ -87665,16 +87942,57 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
+      Name: avlmtrf2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 70
+    YPos: 49
+    IsUnderground: 0
+    SortOrder: 118
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
       Name: avlmtrf1
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 51
     IsUnderground: 0
-    SortOrder: 125
+    SortOrder: 127
     Monster:
       Type: 0
       Count: 0
@@ -87706,12 +88024,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 69
     YPos: 45
     IsUnderground: 0
-    SortOrder: 103
+    SortOrder: 105
     Monster:
       Type: 0
       Count: 0
@@ -87743,12 +88063,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 66
     YPos: 43
     IsUnderground: 0
-    SortOrder: 93
+    SortOrder: 96
     Monster:
       Type: 0
       Count: 0
@@ -87780,12 +88102,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 65
     YPos: 44
     IsUnderground: 0
-    SortOrder: 99
+    SortOrder: 102
     Monster:
       Type: 0
       Count: 0
@@ -87817,12 +88141,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 70
     YPos: 43
     IsUnderground: 0
-    SortOrder: 94
+    SortOrder: 97
     Monster:
       Type: 0
       Count: 0
@@ -87854,12 +88180,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 68
     YPos: 46
     IsUnderground: 0
-    SortOrder: 107
+    SortOrder: 109
     Monster:
       Type: 0
       Count: 0
@@ -87891,12 +88219,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 72
     YPos: 53
     IsUnderground: 0
-    SortOrder: 132
+    SortOrder: 134
     Monster:
       Type: 0
       Count: 0
@@ -87928,12 +88258,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 56
     IsUnderground: 0
-    SortOrder: 143
+    SortOrder: 144
     Monster:
       Type: 0
       Count: 0
@@ -87965,12 +88297,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 74
     YPos: 58
     IsUnderground: 0
-    SortOrder: 150
+    SortOrder: 151
     Monster:
       Type: 0
       Count: 0
@@ -88002,12 +88336,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 72
     YPos: 61
     IsUnderground: 0
-    SortOrder: 163
+    SortOrder: 164
     Monster:
       Type: 0
       Count: 0
@@ -88039,8 +88375,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 64
     IsUnderground: 0
@@ -88076,8 +88414,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 70
     YPos: 67
     IsUnderground: 0
@@ -88113,8 +88453,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 68
     YPos: 63
     IsUnderground: 0
@@ -88150,12 +88492,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 69
     YPos: 62
     IsUnderground: 0
-    SortOrder: 168
+    SortOrder: 169
     Monster:
       Type: 0
       Count: 0
@@ -88187,12 +88531,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 54
     YPos: 55
     IsUnderground: 0
-    SortOrder: 140
+    SortOrder: 141
     Monster:
       Type: 0
       Count: 0
@@ -88224,12 +88570,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 56
     YPos: 57
     IsUnderground: 0
-    SortOrder: 145
+    SortOrder: 146
     Monster:
       Type: 0
       Count: 0
@@ -88261,12 +88609,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 155
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 48
     YPos: 45
     IsUnderground: 0
-    SortOrder: 104
+    SortOrder: 106
     Monster:
       Type: 0
       Count: 0
@@ -88298,12 +88648,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 57
     YPos: 36
     IsUnderground: 0
-    SortOrder: 71
+    SortOrder: 74
     Monster:
       Type: 0
       Count: 0
@@ -88335,12 +88687,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 35
     IsUnderground: 0
-    SortOrder: 69
+    SortOrder: 72
     Monster:
       Type: 0
       Count: 0
@@ -88372,12 +88726,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 63
     YPos: 35
     IsUnderground: 0
-    SortOrder: 70
+    SortOrder: 73
     Monster:
       Type: 0
       Count: 0
@@ -88409,8 +88765,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 60
     YPos: 65
     IsUnderground: 0
@@ -88446,8 +88804,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 61
     YPos: 63
     IsUnderground: 0
@@ -88483,12 +88843,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 57
     YPos: 49
     IsUnderground: 0
-    SortOrder: 116
+    SortOrder: 117
     Monster:
       Type: 0
       Count: 0
@@ -88520,12 +88882,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 13
     YPos: 59
     IsUnderground: 0
-    SortOrder: 156
+    SortOrder: 157
     Monster:
       Type: 0
       Count: 0
@@ -88557,12 +88921,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 13
     YPos: 57
     IsUnderground: 0
-    SortOrder: 146
+    SortOrder: 147
     Monster:
       Type: 0
       Count: 0
@@ -88594,12 +88960,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 15
     YPos: 58
     IsUnderground: 0
-    SortOrder: 151
+    SortOrder: 152
     Monster:
       Type: 0
       Count: 0
@@ -88631,12 +88999,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 56
     YPos: 22
     IsUnderground: 0
-    SortOrder: 35
+    SortOrder: 38
     Monster:
       Type: 0
       Count: 0
@@ -88668,12 +89038,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 158
+      Passability: ffffffffff1f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 53
     YPos: 23
     IsUnderground: 0
-    SortOrder: 41
+    SortOrder: 44
     Monster:
       Type: 0
       Count: 0
@@ -88705,12 +89077,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 158
+      Passability: ffffffff8f8f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 55
     YPos: 23
     IsUnderground: 0
-    SortOrder: 42
+    SortOrder: 45
     Monster:
       Type: 0
       Count: 0
@@ -88742,12 +89116,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 55
     YPos: 18
     IsUnderground: 0
-    SortOrder: 16
+    SortOrder: 19
     Monster:
       Type: 0
       Count: 0
@@ -88779,12 +89155,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 58
     YPos: 17
     IsUnderground: 0
-    SortOrder: 14
+    SortOrder: 17
     Monster:
       Type: 0
       Count: 0
@@ -88816,12 +89194,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 59
     YPos: 15
     IsUnderground: 0
-    SortOrder: 10
+    SortOrder: 13
     Monster:
       Type: 0
       Count: 0
@@ -88853,12 +89233,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 66
     YPos: 12
     IsUnderground: 0
-    SortOrder: 0
+    SortOrder: 3
     Monster:
       Type: 0
       Count: 0
@@ -88890,269 +89272,12 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 62
     YPos: 21
-    IsUnderground: 0
-    SortOrder: 33
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 64
-    YPos: 19
-    IsUnderground: 0
-    SortOrder: 20
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 65
-    YPos: 19
-    IsUnderground: 0
-    SortOrder: 21
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 68
-    YPos: 19
-    IsUnderground: 0
-    SortOrder: 22
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 69
-    YPos: 20
-    IsUnderground: 0
-    SortOrder: 26
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 88
-    YPos: 20
-    IsUnderground: 0
-    SortOrder: 27
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 71
-    YPos: 20
-    IsUnderground: 0
-    SortOrder: 28
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 73
-    YPos: 22
     IsUnderground: 0
     SortOrder: 36
     Monster:
@@ -89186,12 +89311,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 70
-    YPos: 12
+      IsLowPrioritySortOrder: 0
+    XPos: 64
+    YPos: 19
     IsUnderground: 0
-    SortOrder: 1
+    SortOrder: 23
     Monster:
       Type: 0
       Count: 0
@@ -89223,123 +89350,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 71
-    YPos: 13
+      IsLowPrioritySortOrder: 0
+    XPos: 65
+    YPos: 19
     IsUnderground: 0
-    SortOrder: 4
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 73
-    YPos: 13
-    IsUnderground: 0
-    SortOrder: 5
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 74
-    YPos: 12
-    IsUnderground: 0
-    SortOrder: 2
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 76
-    YPos: 13
-    IsUnderground: 0
-    SortOrder: 6
+    SortOrder: 24
     Monster:
       Type: 0
       Count: 0
@@ -89371,12 +89389,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 80
-    YPos: 14
+      IsLowPrioritySortOrder: 0
+    XPos: 68
+    YPos: 19
     IsUnderground: 0
-    SortOrder: 8
+    SortOrder: 25
     Monster:
       Type: 0
       Count: 0
@@ -89408,10 +89428,363 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 69
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 29
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 88
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 30
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 71
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 31
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 73
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 39
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 70
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 4
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 71
+    YPos: 13
+    IsUnderground: 0
+    SortOrder: 7
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 73
+    YPos: 13
+    IsUnderground: 0
+    SortOrder: 8
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 74
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 5
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 76
+    YPos: 13
+    IsUnderground: 0
+    SortOrder: 9
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
     XPos: 80
-    YPos: 15
+    YPos: 14
     IsUnderground: 0
     SortOrder: 11
     Monster:
@@ -89445,12 +89818,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 82
-    YPos: 17
+      IsLowPrioritySortOrder: 0
+    XPos: 80
+    YPos: 15
     IsUnderground: 0
-    SortOrder: 15
+    SortOrder: 14
     Monster:
       Type: 0
       Count: 0
@@ -89482,12 +89857,53 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 82
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 18
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
     XPos: 76
     YPos: 23
     IsUnderground: 0
-    SortOrder: 43
+    SortOrder: 46
     Monster:
       Type: 0
       Count: 0
@@ -89519,12 +89935,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 75
     YPos: 22
     IsUnderground: 0
-    SortOrder: 37
+    SortOrder: 40
     Monster:
       Type: 0
       Count: 0
@@ -89556,12 +89974,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 77
     YPos: 25
     IsUnderground: 0
-    SortOrder: 47
+    SortOrder: 50
     Monster:
       Type: 0
       Count: 0
@@ -89593,10 +90013,207 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 81
     YPos: 26
+    IsUnderground: 0
+    SortOrder: 55
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 83
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 51
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 84
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 20
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 80
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 48
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 81
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 21
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtvo4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 84
+    YPos: 25
     IsUnderground: 0
     SortOrder: 52
     Monster:
@@ -89630,197 +90247,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
-    XPos: 83
-    YPos: 25
-    IsUnderground: 0
-    SortOrder: 48
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 84
-    YPos: 18
-    IsUnderground: 0
-    SortOrder: 17
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 80
-    YPos: 24
-    IsUnderground: 0
-    SortOrder: 45
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 81
-    YPos: 18
-    IsUnderground: 0
-    SortOrder: 18
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 84
-    YPos: 25
-    IsUnderground: 0
-    SortOrder: 49
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtvo4
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 79
     YPos: 27
     IsUnderground: 0
-    SortOrder: 56
+    SortOrder: 59
     Monster:
       Type: 0
       Count: 0
@@ -89852,12 +90286,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff8f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 87
     YPos: 25
     IsUnderground: 0
-    SortOrder: 50
+    SortOrder: 53
     Monster:
       Type: 0
       Count: 0
@@ -89889,12 +90325,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 81
     YPos: 27
     IsUnderground: 0
-    SortOrder: 57
+    SortOrder: 60
     Monster:
       Type: 0
       Count: 0
@@ -89926,12 +90364,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 83
     YPos: 26
     IsUnderground: 0
-    SortOrder: 53
+    SortOrder: 56
     Monster:
       Type: 0
       Count: 0
@@ -89963,12 +90403,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 71
     YPos: 54
     IsUnderground: 0
-    SortOrder: 137
+    SortOrder: 138
     Monster:
       Type: 0
       Count: 0
@@ -90000,8 +90442,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 94
     YPos: 77
     IsUnderground: 0
@@ -90037,8 +90481,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 100
     YPos: 75
     IsUnderground: 0
@@ -90074,8 +90520,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 99
     YPos: 73
     IsUnderground: 0
@@ -90111,8 +90559,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 107
     YPos: 72
     IsUnderground: 0
@@ -90148,8 +90598,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 108
     YPos: 70
     IsUnderground: 0
@@ -90185,12 +90637,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 150
+      Passability: ffffffff0f07
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 1
     XPos: 101
     YPos: 53
     IsUnderground: 0
-    SortOrder: 133
+    SortOrder: 1
     Monster:
       Type: 0
       Count: 0
@@ -90222,8 +90676,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 119
+      Passability: ffffff3f1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 107
     YPos: 83
     IsUnderground: 0
@@ -90259,83 +90715,11 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 93
-    YPos: 60
-    IsUnderground: 0
-    SortOrder: 160
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw2
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 96
-    YPos: 58
-    IsUnderground: 0
-    SortOrder: 152
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 95
     YPos: 60
     IsUnderground: 0
     SortOrder: 161
@@ -90366,16 +90750,96 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
+      Name: avlmtsw2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 96
+    YPos: 58
+    IsUnderground: 0
+    SortOrder: 153
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
       Name: avlmtsw3
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 95
+    YPos: 60
+    IsUnderground: 0
+    SortOrder: 162
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsw3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
     XPos: 96
     YPos: 59
     IsUnderground: 0
-    SortOrder: 157
+    SortOrder: 158
     Monster:
       Type: 0
       Count: 0
@@ -90407,46 +90871,11 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 98
-    YPos: 61
-    IsUnderground: 0
-    SortOrder: 164
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avlmtsw3
-      MineType: 0
-      Type: 21
-      TypeDebug: 134
-      Landscape: 0
-      IsOverlay: 0
-    XPos: 99
     YPos: 61
     IsUnderground: 0
     SortOrder: 165
@@ -90477,16 +90906,57 @@ MonoBehaviour:
       HasFort: 0
     DwellingOwner: 0
   - Template:
+      Name: avlmtsw3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 99
+    YPos: 61
+    IsUnderground: 0
+    SortOrder: 166
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
       Name: avlmtsw2
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 107
     YPos: 34
     IsUnderground: 0
-    SortOrder: 67
+    SortOrder: 70
     Monster:
       Type: 0
       Count: 0
@@ -90518,12 +90988,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 104
     YPos: 36
     IsUnderground: 0
-    SortOrder: 72
+    SortOrder: 75
     Monster:
       Type: 0
       Count: 0
@@ -90555,12 +91027,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 101
     YPos: 37
     IsUnderground: 0
-    SortOrder: 77
+    SortOrder: 80
     Monster:
       Type: 0
       Count: 0
@@ -90592,12 +91066,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 101
     YPos: 40
     IsUnderground: 0
-    SortOrder: 86
+    SortOrder: 89
     Monster:
       Type: 0
       Count: 0
@@ -90629,12 +91105,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 105
     YPos: 37
     IsUnderground: 0
-    SortOrder: 78
+    SortOrder: 81
     Monster:
       Type: 0
       Count: 0
@@ -90666,12 +91144,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 103
     YPos: 42
     IsUnderground: 0
-    SortOrder: 92
+    SortOrder: 95
     Monster:
       Type: 0
       Count: 0
@@ -90703,12 +91183,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 102
     YPos: 38
     IsUnderground: 0
-    SortOrder: 82
+    SortOrder: 85
     Monster:
       Type: 0
       Count: 0
@@ -90740,12 +91222,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 102
     YPos: 43
     IsUnderground: 0
-    SortOrder: 95
+    SortOrder: 98
     Monster:
       Type: 0
       Count: 0
@@ -90777,12 +91261,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 105
     YPos: 43
     IsUnderground: 0
-    SortOrder: 96
+    SortOrder: 99
     Monster:
       Type: 0
       Count: 0
@@ -90814,12 +91300,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 155
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 108
     YPos: 14
     IsUnderground: 0
-    SortOrder: 9
+    SortOrder: 12
     Monster:
       Type: 0
       Count: 0
@@ -90851,12 +91339,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 81
     YPos: 15
     IsUnderground: 0
-    SortOrder: 12
+    SortOrder: 15
     Monster:
       Type: 0
       Count: 0
@@ -90888,8 +91378,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 40
     YPos: 68
     IsUnderground: 0
@@ -90925,8 +91417,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 36
     YPos: 69
     IsUnderground: 0
@@ -90962,8 +91456,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 37
     YPos: 69
     IsUnderground: 0
@@ -90999,8 +91495,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 33
     YPos: 70
     IsUnderground: 0
@@ -91036,12 +91534,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 126
+      Passability: ffffffff0f0f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 1
     XPos: 38
     YPos: 62
     IsUnderground: 0
-    SortOrder: 169
+    SortOrder: 2
     Monster:
       Type: 0
       Count: 0
@@ -91073,8 +91573,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 38
     YPos: 69
     IsUnderground: 0
@@ -91110,8 +91612,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 31
     YPos: 71
     IsUnderground: 0
@@ -91147,8 +91651,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 32
     YPos: 70
     IsUnderground: 0
@@ -91184,8 +91690,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 35
     YPos: 67
     IsUnderground: 0
@@ -91221,8 +91729,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 21
     YPos: 70
     IsUnderground: 0
@@ -91258,8 +91768,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 22
     YPos: 68
     IsUnderground: 0
@@ -91295,8 +91807,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 20
     YPos: 71
     IsUnderground: 0
@@ -91332,8 +91846,10 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 24
     YPos: 66
     IsUnderground: 0
@@ -91369,12 +91885,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 7
     YPos: 37
     IsUnderground: 0
-    SortOrder: 79
+    SortOrder: 82
     Monster:
       Type: 0
       Count: 0
@@ -91406,12 +91924,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 9
     YPos: 39
     IsUnderground: 0
-    SortOrder: 85
+    SortOrder: 88
     Monster:
       Type: 0
       Count: 0
@@ -91443,12 +91963,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 147
+      Passability: ffffffffff3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 64
     YPos: 57
     IsUnderground: 0
-    SortOrder: 147
+    SortOrder: 148
     Monster:
       Type: 0
       Count: 0
@@ -91480,12 +92002,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 17
     YPos: 52
     IsUnderground: 0
-    SortOrder: 126
+    SortOrder: 128
     Monster:
       Type: 0
       Count: 0
@@ -91517,12 +92041,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 91
     YPos: 61
     IsUnderground: 0
-    SortOrder: 166
+    SortOrder: 167
     Monster:
       Type: 0
       Count: 0
@@ -91554,12 +92080,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 88
     YPos: 60
     IsUnderground: 0
-    SortOrder: 162
+    SortOrder: 163
     Monster:
       Type: 0
       Count: 0
@@ -91591,12 +92119,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 39
     YPos: 36
     IsUnderground: 0
-    SortOrder: 73
+    SortOrder: 76
     Monster:
       Type: 0
       Count: 0
@@ -91628,12 +92158,14 @@ MonoBehaviour:
       MineType: 0
       Type: 21
       TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 28
     YPos: 43
     IsUnderground: 0
-    SortOrder: 97
+    SortOrder: 100
     Monster:
       Type: 0
       Count: 0
@@ -91665,8 +92197,10 @@ MonoBehaviour:
       MineType: 7
       Type: 14
       TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
       Landscape: 0
-      IsOverlay: 0
+      IsLowPrioritySortOrder: 0
     XPos: 107
     YPos: 73
     IsUnderground: 0
