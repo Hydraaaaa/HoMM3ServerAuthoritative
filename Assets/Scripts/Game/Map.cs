@@ -432,53 +432,25 @@ public class Map : MonoBehaviour
             m_Objects.Add(_MapObject);
         }
 
-        // Is this asset animated?
-        string _Name = $"MapObjectAnimations/{a_Object.Template.Name}.anim";
+        var _Operation = Addressables.LoadAssetAsync<ScenarioObjectVisualData>($"MapObjects/{a_Object.Template.Name}.asset");
 
-        var _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
+        yield return _Operation;
 
-        yield return _AnimOperation;
-
-        if (_AnimOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
+        if (_Operation.Result.Animation != null)
         {
             // This asset is animated, load animations
-            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
-            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
-            _MapObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
+            _MapObject.Animation.AddClip(_Operation.Result.Animation, "Default");
+            _MapObject.Animation.clip = _Operation.Result.Animation;
+            _MapObject.Animation.Play();
 
-            _Name = $"MapObjectShadowAnimations/{a_Object.Template.Name}.anim";
-
-            _AnimOperation = Addressables.LoadAssetAsync<AnimationClip>(_Name);
-
-            yield return _AnimOperation;
-
-            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().AddClip(_AnimOperation.Result, "Default");
-            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().clip = _AnimOperation.Result;
-            _ShadowObject.SpriteRenderer.GetComponent<SimpleAnimation>().Play();
+            _ShadowObject.Animation.AddClip(_Operation.Result.ShadowAnimation, "Default");
+            _ShadowObject.Animation.clip = _Operation.Result.ShadowAnimation;
+            _ShadowObject.Animation.Play();
         }
         else
         {
-            // This asset isn't animated
-            _Name = $"MapObjects/{a_Object.Template.Name}.bmp";
-
-            var _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
-
-            yield return _SpriteOperation;
-
-            if (_SpriteOperation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
-            {
-                Debug.Log($"!! Missing {a_Object.Template.Name} at ({a_Object.XPos}, {a_Object.YPos})");
-            }
-
-            _MapObject.SpriteRenderer.sprite = _SpriteOperation.Result;
-
-            _Name = $"MapObjectShadows/{a_Object.Template.Name}.bmp";
-
-            _SpriteOperation = Addressables.LoadAssetAsync<Sprite>(_Name);
-
-            yield return _SpriteOperation;
-
-            _ShadowObject.SpriteRenderer.sprite = _SpriteOperation.Result;
+            _MapObject.SpriteRenderer.sprite = _Operation.Result.Sprite;
+            _ShadowObject.SpriteRenderer.sprite = _Operation.Result.ShadowSprite;
         }
     }
 }
