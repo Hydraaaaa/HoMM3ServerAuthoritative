@@ -1712,21 +1712,46 @@ public class H3MImporter : EditorWindow
 
                             for (int x = _XDifference; x < 8; x++)
                             {
-                                byte _BitwiseIndex = (byte)Mathf.Pow(2, x);
+                                byte _LeftmostBitwiseIndex;
+                                byte _RightmostBitwiseIndex;
+
+                                if (x + _XDifference == 0)
+                                {
+                                    _LeftmostBitwiseIndex = 1;
+                                }
+                                else
+                                {
+                                    _LeftmostBitwiseIndex = (byte)Mathf.Pow(2, x + _XDifference);
+                                }
+
+                                if (x == 0)
+                                {
+                                    _RightmostBitwiseIndex = 1;
+                                }
+                                else
+                                {
+                                    _RightmostBitwiseIndex = (byte)Mathf.Pow(2, x);
+                                }
 
                                 int _LeftmostCollisionIndex = 0;
                                 int _RightmostCollisionIndex = 0;
 
                                 for (int y = 5; y > 2; y--)
                                 {
-                                    if (!((_LeftmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    if (_LeftmostCollisionIndex == 0)
                                     {
-                                        _LeftmostCollisionIndex = y;
+                                        if (!((_LeftmostObject.Template.Passability[y] & _LeftmostBitwiseIndex) == _LeftmostBitwiseIndex))
+                                        {
+                                            _LeftmostCollisionIndex = y;
+                                        }
                                     }
 
-                                    if (!((_RightmostObject.Template.Passability[y] & _BitwiseIndex) == _BitwiseIndex))
+                                    if (_RightmostCollisionIndex == 0)
                                     {
-                                        _RightmostCollisionIndex = y;
+                                        if (!((_RightmostObject.Template.Passability[y] & _RightmostBitwiseIndex) == _RightmostBitwiseIndex))
+                                        {
+                                            _RightmostCollisionIndex = y;
+                                        }
                                     }
                                 }
 
@@ -1744,7 +1769,7 @@ public class H3MImporter : EditorWindow
                                             return -1;
                                         }
                                     }
-                                    else if (_LeftmostCollisionIndex > _RightmostCollisionIndex)
+                                    else if (_LeftmostCollisionIndex < _RightmostCollisionIndex)
                                     {
                                         if (_AIsLeftmost)
                                         {
