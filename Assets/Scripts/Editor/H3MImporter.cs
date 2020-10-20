@@ -10,6 +10,22 @@ using System;
 
 public class H3MImporter : EditorWindow
 {
+    // Data structure used during importing to assist in determining draw order
+    class ScenarioObjectSortData
+    {
+        public ScenarioObject Object;
+        public int FileOrder;
+
+        // Children meaning objects that need to render below this one
+        public List<ScenarioObjectSortData> Children = new List<ScenarioObjectSortData>();
+
+        public ScenarioObjectSortData(ScenarioObject a_Object, int a_FileOrder)
+        {
+            Object = a_Object;
+            FileOrder = a_FileOrder;
+        }
+    }
+
     string m_InputFolder;
     string m_OutputFolder;
     bool m_Overwrite;
@@ -1116,7 +1132,7 @@ public class H3MImporter : EditorWindow
                 ScenarioObject _Object = new ScenarioObject();
                 _Object.Template = _ObjectTemplates[_ObjectBaseIndex];
 
-                Debug.Log($"Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
+                //Debug.Log($"Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
 
                 _Object.XPos = _XPos;
                 _Object.YPos = _YPos;
@@ -1640,165 +1656,248 @@ public class H3MImporter : EditorWindow
                 a_Scenario.Objects.Add(_Object);
             }
 
-            List<(ScenarioObject, int)> _Objects = new List<(ScenarioObject, int)>();
+            // <><><><><> SORTING OBJECTS
+
+            // Sort order priority is complicated
+            // Some objects are oddly shaped and will go above their Y pos in certain columns
+            // At those points, an object on the same Y pos, but displaying on their source Y pos should display in front
+            // This is determined by looking at the colliders of the objects
+            // However, because this is a collision check, and not a convenient numerical check, it makes sorting these objects very complex
+            // If an object is rendered above a bunch of objects, but is determined to be rendered below one specific object,
+            // the system then needs to shift all of the other objects this object is above, below the object this object is below
+
+            // The system implemented here first creates a list of objects, along with references to all the objects that need to be rendered below each object
+            // Then, the objects are sorted in an insertion style sort, where when an object is placed, all of its referenced objects are then placed below it
+            // If one of its referenced objects is already placed, and is rendering above the object, it will recursively put all of those objects below this object
+
+            // For the sorting, to prevent always being object count squared operations, the list is sorted by Y value,
+            // and each set of collision checks is only done among the elements of the list in that Y range
+
+            // KNOWN ISSUES
+            // Some objects don't adhere to the regular sort order behaviour, and simply use the file order
+            // Need to figure out if this is determined by any of the values stored in objects
+            // There are cases of circular referencing, where 3 sprites think they're on top of one and below the other, causing infinite loops
+            // The real game seems to split sprites up in this case, so part of the sprite displays on top, and part doesn't
+
+            List<ScenarioObjectSortData> _ObjectSortData = new List<ScenarioObjectSortData>();
 
             for (int i = 0; i < a_Scenario.Objects.Count; i++)
             {
-                _Objects.Add((a_Scenario.Objects[i], i));
+                if (!a_Scenario.Objects[i].Template.IsLowPrioritySortOrder)
+                {
+                    _ObjectSortData.Add(new ScenarioObjectSortData(a_Scenario.Objects[i], i));
+                }
             }
 
-            _Objects.Sort((a, b) =>
+            _ObjectSortData = _ObjectSortData.OrderBy((a_Object) => a_Object.Object.YPos).ToList();
+
+            if (_ObjectSortData.Count > 0)
             {
-                if (a.Item1.Template.IsLowPrioritySortOrder)
+                int _HigherBound = 0;
+                int _ListCount = _ObjectSortData.Count;
+
+                bool _ReachedEnd = false;
+
+                while (!_ReachedEnd)
                 {
-                    if (b.Item1.Template.IsLowPrioritySortOrder)
+                    int _LowerBound = _HigherBound;
+                    int _CurrentY = _ObjectSortData[_LowerBound].Object.YPos;
+
+                    // Determine the range of objects that share the same Y object
+                    while (_ObjectSortData[_HigherBound].Object.YPos == _CurrentY)
                     {
-                        if (a.Item2 > b.Item2)
+                        _HigherBound++;
+
+                        if (_ListCount == _HigherBound)
                         {
-                            return 1;
+                            _ReachedEnd = true;
+                            break;
                         }
-                        else
+                    }
+
+                    bool CheckIsAbove(ScenarioObjectSortData a_Object, ScenarioObjectSortData a_OtherObject)
+                    {
+                        if (a_Object == a_OtherObject)
                         {
-                            return -1;
+                            return false;
                         }
-                    }
-                    else
-                    {
-                        return -1;
-                    }
-                }
-                else if (b.Item1.Template.IsLowPrioritySortOrder)
-                {
-                    return 1;
-                }
-                else
-                {
-                    if (a.Item1.YPos > b.Item1.YPos)
-                    {
-                        return 1;
-                    }
-                    else if (a.Item1.YPos < b.Item1.YPos)
-                    {
-                        return -1;
-                    }
-                    else
-                    {
-                        int _XDifference = Mathf.Abs(a.Item1.XPos - b.Item1.XPos);
-                        if (_XDifference > 8)
+
+                        int _XDifference = Mathf.Abs(a_Object.Object.XPos - a_OtherObject.Object.XPos);
+
+                        if (_XDifference > 7)
                         {
-                            if (a.Item2 > b.Item2)
+                            return false;
+                        }
+
+                        bool _ObjectsShareColumns = false;
+
+                        bool _ObjectIsLeftmost = true;
+
+                        ScenarioObject _LeftmostObject = a_Object.Object;
+                        ScenarioObject _RightmostObject = a_OtherObject.Object;
+
+                        if (a_Object.Object.XPos > a_OtherObject.Object.XPos)
+                        {
+                            _ObjectIsLeftmost = false;
+                            _LeftmostObject = a_OtherObject.Object;
+                            _RightmostObject = a_Object.Object;
+                        }
+
+                        for (int x = _XDifference; x < 8; x++)
+                        {
+                            byte _LeftmostBitwiseIndex;
+                            byte _RightmostBitwiseIndex;
+
+                            if (x + _XDifference == 0)
                             {
-                                return 1;
+                                _LeftmostBitwiseIndex = 1;
                             }
                             else
                             {
-                                return -1;
-                            }
-                        }
-                        else
-                        {
-                            bool _AIsLeftmost = true;
-
-                            ScenarioObject _LeftmostObject = a.Item1;
-                            ScenarioObject _RightmostObject = b.Item1;
-
-                            if (a.Item1.XPos > b.Item1.XPos)
-                            {
-                                _AIsLeftmost = false;
-                                _LeftmostObject = b.Item1;
-                                _RightmostObject = a.Item1;
+                                _LeftmostBitwiseIndex = (byte)Mathf.Pow(2, x + _XDifference);
                             }
 
-
-                            for (int x = _XDifference; x < 8; x++)
+                            if (x == 0)
                             {
-                                byte _LeftmostBitwiseIndex;
-                                byte _RightmostBitwiseIndex;
-
-                                if (x + _XDifference == 0)
-                                {
-                                    _LeftmostBitwiseIndex = 1;
-                                }
-                                else
-                                {
-                                    _LeftmostBitwiseIndex = (byte)Mathf.Pow(2, x + _XDifference);
-                                }
-
-                                if (x == 0)
-                                {
-                                    _RightmostBitwiseIndex = 1;
-                                }
-                                else
-                                {
-                                    _RightmostBitwiseIndex = (byte)Mathf.Pow(2, x);
-                                }
-
-                                int _LeftmostCollisionIndex = 0;
-                                int _RightmostCollisionIndex = 0;
-
-                                for (int y = 5; y > 2; y--)
-                                {
-                                    if (_LeftmostCollisionIndex == 0)
-                                    {
-                                        if (!((_LeftmostObject.Template.Passability[y] & _LeftmostBitwiseIndex) == _LeftmostBitwiseIndex))
-                                        {
-                                            _LeftmostCollisionIndex = y;
-                                        }
-                                    }
-
-                                    if (_RightmostCollisionIndex == 0)
-                                    {
-                                        if (!((_RightmostObject.Template.Passability[y] & _RightmostBitwiseIndex) == _RightmostBitwiseIndex))
-                                        {
-                                            _RightmostCollisionIndex = y;
-                                        }
-                                    }
-                                }
-
-                                if (_LeftmostCollisionIndex != 0 &&
-                                    _RightmostCollisionIndex != 0)
-                                {
-                                    if (_LeftmostCollisionIndex > _RightmostCollisionIndex)
-                                    {
-                                        if (_AIsLeftmost)
-                                        {
-                                            return 1;
-                                        }
-                                        else
-                                        {
-                                            return -1;
-                                        }
-                                    }
-                                    else if (_LeftmostCollisionIndex < _RightmostCollisionIndex)
-                                    {
-                                        if (_AIsLeftmost)
-                                        {
-                                            return -1;
-                                        }
-                                        else
-                                        {
-                                            return 1;
-                                        }
-                                    }
-                                }
-                            }
-
-                            if (a.Item2 > b.Item2)
-                            {
-                                return 1;
+                                _RightmostBitwiseIndex = 1;
                             }
                             else
                             {
-                                return -1;
+                                _RightmostBitwiseIndex = (byte)Mathf.Pow(2, x);
+                            }
+
+                            int _LeftmostCollisionIndex = 0;
+                            int _RightmostCollisionIndex = 0;
+
+                            for (int y = 5; y > 2; y--)
+                            {
+                                if (_LeftmostCollisionIndex == 0)
+                                {
+                                    if (!((_LeftmostObject.Template.Passability[y] & _LeftmostBitwiseIndex) == _LeftmostBitwiseIndex))
+                                    {
+                                        _LeftmostCollisionIndex = y;
+                                    }
+                                }
+
+                                if (_RightmostCollisionIndex == 0)
+                                {
+                                    if (!((_RightmostObject.Template.Passability[y] & _RightmostBitwiseIndex) == _RightmostBitwiseIndex))
+                                    {
+                                        _RightmostCollisionIndex = y;
+                                    }
+                                }
+                            }
+
+                            if (_LeftmostCollisionIndex != 0 &&
+                                _RightmostCollisionIndex != 0)
+                            {
+                                _ObjectsShareColumns = true;
+                                if (_LeftmostCollisionIndex > _RightmostCollisionIndex)
+                                {
+                                    if (_ObjectIsLeftmost)
+                                    {
+                                        return true;
+                                    }
+                                    else
+                                    {
+                                        return false;
+                                    }
+                                }
+                                else if (_LeftmostCollisionIndex < _RightmostCollisionIndex)
+                                {
+                                    if (_ObjectIsLeftmost)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+
+                        if (!_ObjectsShareColumns)
+                        {
+                            return false;
+                        }
+
+                        if (a_Object.FileOrder > a_OtherObject.FileOrder)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+
+                    // Determine children
+                    for (int i = _LowerBound; i < _HigherBound; i++)
+                    {
+                        ScenarioObjectSortData _Object = _ObjectSortData[i];
+
+                        for (int j = _LowerBound; j < _HigherBound; j++)
+                        {
+                            if (CheckIsAbove(_Object, _ObjectSortData[j]))
+                            {
+                                _Object.Children.Add(_ObjectSortData[j]);
                             }
                         }
                     }
                 }
-            });
+            }
 
-            for (int i = 0; i < _Objects.Count; i++)
+            // Sort based on children
+            void MoveChildrenBelow(ScenarioObjectSortData a_Object, int a_Recursion)
             {
-                _Objects[i].Item1.SortOrder = i;
+                if (a_Recursion > 4)
+                {
+                    return;
+                }
+
+                for (int i = 0; i < a_Object.Children.Count; i++)
+                {
+                    int _ObjectIndex = _ObjectSortData.IndexOf(a_Object);
+                    int _ChildIndex = _ObjectSortData.IndexOf(a_Object.Children[i]);
+                    if (_ChildIndex > _ObjectIndex)
+                    {
+                        _ObjectSortData.RemoveAt(_ChildIndex);
+                        _ObjectSortData.Insert(_ObjectIndex, a_Object.Children[i]);
+                        MoveChildrenBelow(a_Object.Children[i], a_Recursion + 1);
+                    }
+                }
+            }
+
+            for (int i = 0; i < _ObjectSortData.Count; i++)
+            {
+                MoveChildrenBelow(_ObjectSortData[i], 0);
+            }
+
+            List<(ScenarioObject Object, int FileOrder)> _LowPriorityObjects = new List<(ScenarioObject, int)>();
+
+            for (int i = 0; i < a_Scenario.Objects.Count; i++)
+            {
+                if (a_Scenario.Objects[i].Template.IsLowPrioritySortOrder)
+                {
+                    _LowPriorityObjects.Add((a_Scenario.Objects[i], i));
+                }
+            }
+
+            _LowPriorityObjects = _LowPriorityObjects.OrderBy((a_Object) => a_Object.FileOrder).ToList();
+
+            // Apply sort order
+            int _CurrentSortOrder = 0;
+
+            for (; _CurrentSortOrder < _LowPriorityObjects.Count; _CurrentSortOrder++)
+            {
+                _LowPriorityObjects[_CurrentSortOrder].Object.SortOrder = _CurrentSortOrder;
+            }
+
+            for (int i = 0; i < _ObjectSortData.Count; i++)
+            {
+                _ObjectSortData[i].Object.SortOrder = _CurrentSortOrder;
+                _CurrentSortOrder++;
             }
         }
         catch (Exception e)
