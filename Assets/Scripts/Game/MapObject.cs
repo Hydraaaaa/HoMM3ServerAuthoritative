@@ -31,7 +31,15 @@ public class MapObject : MonoBehaviour
 
         transform.position = new Vector3(a_ScenarioObject.XPos + 0.5f, -a_ScenarioObject.YPos - 0.5f, 0);
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
-        m_SpriteRenderer.sortingLayerName = "MapObjects";
+
+        if (a_ScenarioObject.Template.IsLowPrioritySortOrder)
+        {
+            m_SpriteRenderer.sortingLayerName = "MapLowPriorityObjects";
+        }
+        else
+        {
+            m_SpriteRenderer.sortingLayerName = "MapObjects";
+        }
 
         switch (a_ScenarioObject.Template.Type)
         {

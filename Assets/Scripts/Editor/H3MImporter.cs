@@ -1890,17 +1890,14 @@ public class H3MImporter : EditorWindow
                 _LowPriorityObjects = _LowPriorityObjects.OrderBy((a_Object) => a_Object.FileOrder).ToList();
 
                 // Apply sort order
-                int _CurrentSortOrder = 0;
-
-                for (; _CurrentSortOrder < _LowPriorityObjects.Count; _CurrentSortOrder++)
+                for (int i = 0; i < _LowPriorityObjects.Count; i++)
                 {
-                    _LowPriorityObjects[_CurrentSortOrder].Object.SortOrder = _CurrentSortOrder;
+                    _LowPriorityObjects[i].Object.SortOrder = i;
                 }
 
                 for (int i = 0; i < _ObjectSortData.Count; i++)
                 {
-                    _ObjectSortData[i].Object.SortOrder = _CurrentSortOrder;
-                    _CurrentSortOrder++;
+                    _ObjectSortData[i].Object.SortOrder = i;
                 }
             }
 
