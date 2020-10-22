@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
+  m_Name: avsuniv0
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 21300000, guid: aafaa5105a8a3534495b7b9ea78b567e, type: 3}
+  m_ShadowSprite: {fileID: 21300000, guid: cee12bf8f13b60f42bbd6d7a08c4d5c2, type: 3}
+  m_Animation: {fileID: 0}
+  m_ShadowAnimation: {fileID: 0}
