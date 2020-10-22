@@ -1045,6 +1045,7 @@ public class H3MImporter : EditorWindow
 
                     case 88:
                     case 89:
+                    case 90:
                     case 99:
                         _Object.Type = ScenarioObjectType.Shrine;
                         break;
@@ -1157,6 +1158,8 @@ public class H3MImporter : EditorWindow
                             {
                                 _CurrentByte += 28;
                             }
+
+                            _CurrentByte += 4; // Unknown Bytes
                         }
                         break;
 
