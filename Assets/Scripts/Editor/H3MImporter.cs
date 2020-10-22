@@ -1162,11 +1162,119 @@ public class H3MImporter : EditorWindow
                             _CurrentByte += 4; // Unknown Bytes
                         }
                         break;
+                    
+                    case ScenarioObjectType.PandorasBox:
+                    {
+                        _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasMessage)
+                        {
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+
+                            bool _HasGuards = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                            _CurrentByte += 1;
+
+                            if (_HasGuards)
+                            {
+                                _CurrentByte += 28;
+                            }
+
+                            _CurrentByte += 4; // Unknown Bytes
+                        }
+
+                        _CurrentByte += 4; // Exp
+                        _CurrentByte += 4; // SpellPoints
+                        _CurrentByte += 1; // Morale
+                        _CurrentByte += 1; // Luck
+
+                        _CurrentByte += 28; // Resources
+
+                        _CurrentByte += 4; // Primary Skills
+
+                        byte _SecondarySkillCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+
+                        _CurrentByte += _SecondarySkillCount * 2;
+
+                        byte _ArtifactCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _ArtifactCount * 2;
+
+                        byte _SpellCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _SpellCount;
+
+                        byte _MonsterCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _MonsterCount * 4;
+
+                        _CurrentByte += 8; // Unknown Bytes
+
+                        break;
+                    }
 
                     case ScenarioObjectType.Dwelling:
                         _Object.DwellingOwner = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         break;
+                    
+                    case ScenarioObjectType.Event:
+                    {
+                        _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _CurrentByte += 1;
+
+                        if (_HasMessage)
+                        {
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+
+                            bool _HasGuards = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                            _CurrentByte += 1;
+
+                            if (_HasGuards)
+                            {
+                                _CurrentByte += 28;
+                            }
+
+                            _CurrentByte += 4; // Unknown Bytes
+                        }
+
+                        _CurrentByte += 4; // Exp
+                        _CurrentByte += 4; // SpellPoints
+                        _CurrentByte += 1; // Morale
+                        _CurrentByte += 1; // Luck
+
+                        _CurrentByte += 28; // Resources
+
+                        _CurrentByte += 4; // Primary Skills
+
+                        byte _SecondarySkillCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+
+                        _CurrentByte += _SecondarySkillCount * 2;
+
+                        byte _ArtifactCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _ArtifactCount * 2;
+
+                        byte _SpellCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _SpellCount;
+
+                        byte _MonsterCount = a_Bytes[_CurrentByte];
+                        _CurrentByte += 1;
+                        _CurrentByte += _MonsterCount * 4;
+
+                        _CurrentByte += 8; // Unknown Bytes
+
+                        _CurrentByte += 7;
+
+                        break;
+                    }
 
                     case ScenarioObjectType.Garrison:
                         _CurrentByte += 41;
@@ -1271,6 +1379,10 @@ public class H3MImporter : EditorWindow
 
                         break;
 
+                    case ScenarioObjectType.Grail:
+                        _CurrentByte += 4;
+                        break;
+
                     case ScenarioObjectType.Monster:
                         _Object.Monster = new ScenarioObjectMonster();
 
@@ -1343,6 +1455,10 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4;
                         _CurrentByte += 4; // Unknown Bytes
 
+                        break;
+                    
+                    case ScenarioObjectType.Scholar:
+                        _CurrentByte += 8;
                         break;
 
                     case ScenarioObjectType.Seer:
