@@ -12,7 +12,9 @@ public class Dwelling : MonoBehaviour
 
         uint _ColorIndex = a_Object.ScenarioObject.DwellingOwner;
 
-        if (_ColorIndex == 255)
+        // Seems there are cases where _ColorIndex isn't 255, so doing this sweeping check
+        // Not sure if the different values above 7 mean anything
+        if (_ColorIndex > 8)
         {
             _ColorIndex = 8;
         }
