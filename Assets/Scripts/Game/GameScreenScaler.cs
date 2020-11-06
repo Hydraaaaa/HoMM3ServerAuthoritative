@@ -18,6 +18,11 @@ public class GameScreenScaler : MonoBehaviour
         float _Width = Screen.width - m_PaddingLeft - m_PaddingRight;
         float _Height = Screen.height - m_PaddingBottom - m_PaddingTop;
 
+        if (_Height % 2 == 1)
+        {
+            _Height += 1;
+        }
+
         m_Camera.pixelRect = new Rect(m_PaddingLeft, m_PaddingBottom, _Width, _Height);
 
         if (Screen.height >= 664)

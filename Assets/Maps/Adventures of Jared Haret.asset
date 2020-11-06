@@ -18326,7 +18326,7 @@ MonoBehaviour:
     XPos: 22
     YPos: 9
     IsUnderground: 0
-    SortOrder: 0
+    SortOrder: 40
     Monster:
       Type: 0
       Count: 0
@@ -18365,7 +18365,6754 @@ MonoBehaviour:
     XPos: 21
     YPos: 10
     IsUnderground: 0
+    SortOrder: 45
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 19
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 17
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 26
+    YPos: 6
+    IsUnderground: 0
+    SortOrder: 23
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 18
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 19
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 18
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 28
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 9
+    IsUnderground: 0
+    SortOrder: 39
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxshyd0
+      MineType: 0
+      Type: 2
+      TypeDebug: 87
+      Passability: ffffffffff1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 27
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 33
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 255
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 10
+    IsUnderground: 0
+    SortOrder: 46
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 25
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 52
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 13
+    IsUnderground: 0
+    SortOrder: 57
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 27
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 53
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 19
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 54
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 18
+    YPos: 10
+    IsUnderground: 0
+    SortOrder: 47
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtds4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 18
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 34
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avaflot0
+      MineType: 0
+      Type: 21
+      TypeDebug: 29
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 29
+    YPos: 3
+    IsUnderground: 0
+    SortOrder: 10
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlref20
+      MineType: 0
+      Type: 21
+      TypeDebug: 161
+      Passability: ffffff9f1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 18
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlref40
+      MineType: 0
+      Type: 21
+      TypeDebug: 161
+      Passability: ffffffff7f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 32
+    YPos: 7
+    IsUnderground: 0
     SortOrder: 1
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlklp10
+      MineType: 0
+      Type: 21
+      TypeDebug: 125
+      Passability: ffffffffffff
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 32
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 2
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 78
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 32
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 83
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 30
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 94
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 37
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 89
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 95
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 21
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 100
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 18
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 96
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 84
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 16
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 97
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 79
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 71
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 65
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 11
+    IsUnderground: 0
+    SortOrder: 49
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 55
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 15
+    IsUnderground: 0
+    SortOrder: 59
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 9
+    IsUnderground: 0
+    SortOrder: 41
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlca110
+      MineType: 0
+      Type: 21
+      TypeDebug: 116
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 19
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 20
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlca120
+      MineType: 0
+      Type: 21
+      TypeDebug: 116
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 29
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 20
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 21
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 6
+    IsUnderground: 0
+    SortOrder: 24
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 2
+    IsUnderground: 0
+    SortOrder: 6
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 4
+    IsUnderground: 0
+    SortOrder: 14
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 2
+    IsUnderground: 0
+    SortOrder: 7
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 6
+    IsUnderground: 0
+    SortOrder: 25
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 31
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 6
+    YPos: 11
+    IsUnderground: 0
+    SortOrder: 50
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 35
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 15
+    IsUnderground: 0
+    SortOrder: 61
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 12
+    IsUnderground: 0
+    SortOrder: 56
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 108
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 10
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 80
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 16
+    IsUnderground: 0
+    SortOrder: 62
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 27
+    IsUnderground: 0
+    SortOrder: 115
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 9
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 101
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 29
+    IsUnderground: 0
+    SortOrder: 123
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 129
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 141
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 98
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 36
+    IsUnderground: 0
+    SortOrder: 159
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 142
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 6
+    YPos: 36
+    IsUnderground: 0
+    SortOrder: 160
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 29
+    IsUnderground: 0
+    SortOrder: 124
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn5
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 102
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 31
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 103
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avld9sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 31
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 90
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 33
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 91
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 15
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 143
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 22
+    YPos: 30
+    IsUnderground: 0
+    SortOrder: 126
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 130
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 144
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 34
+    IsUnderground: 0
+    SortOrder: 152
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff0f07c7
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 35
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 131
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn6
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffff9f1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 36
+    IsUnderground: 0
+    SortOrder: 161
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlflk10
+      MineType: 0
+      Type: 21
+      TypeDebug: 121
+      Passability: ffffffff0707
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 29
+    YPos: 29
+    IsUnderground: 0
+    SortOrder: 3
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 31
+    YPos: 36
+    IsUnderground: 0
+    SortOrder: 162
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 9
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 109
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlflk30
+      MineType: 0
+      Type: 21
+      TypeDebug: 121
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 5
+    YPos: 3
+    IsUnderground: 0
+    SortOrder: 4
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn6
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 9
+    YPos: 6
+    IsUnderground: 0
+    SortOrder: 26
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwmagx0
+      MineType: 35
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 8
+    YPos: 4
+    IsUnderground: 0
+    SortOrder: 15
+    Monster:
+      Type: 49081550
+      Count: 60
+      Mood: 4
+      IsTreasureOrText: 1
+      Text: The wizards proclaim, "Tumlac says no one shall pass, especially you."
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: -1
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxwlsn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 49
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 5
+    IsUnderground: 0
+    SortOrder: 22
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 9
+    IsUnderground: 0
+    SortOrder: 42
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn5
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 10
+    IsUnderground: 0
+    SortOrder: 48
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmswsn0
+      MineType: 0
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffff3f0f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 21
+    YPos: 34
+    IsUnderground: 0
+    SortOrder: 153
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avlmtsn1
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffff87071f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 104
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ah04_e
+      MineType: 4
+      Type: 5
+      TypeDebug: 34
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 72
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avggrem0
+      MineType: 43
+      Type: 2
+      TypeDebug: 17
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 16
+    IsUnderground: 0
+    SortOrder: 63
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avggarg0
+      MineType: 17
+      Type: 2
+      TypeDebug: 17
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 7
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 66
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avggolm0
+      MineType: 1
+      Type: 2
+      TypeDebug: 20
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 81
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 92
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmswsn0
+      MineType: 0
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffff3f0f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 2
+    IsUnderground: 0
+    SortOrder: 8
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 1
+    IsUnderground: 0
+    SortOrder: 2
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 2
+    IsUnderground: 0
+    SortOrder: 9
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn6
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 6
+    YPos: 0
+    IsUnderground: 0
+    SortOrder: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmorsn0
+      MineType: 2
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffff1f1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 8
+    YPos: 2
+    IsUnderground: 0
+    SortOrder: 5
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 6
+    YPos: 1
+    IsUnderground: 0
+    SortOrder: 3
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlo2sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 136
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 8
+    YPos: 0
+    IsUnderground: 0
+    SortOrder: 6
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlr1sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 9
+    YPos: 3
+    IsUnderground: 0
+    SortOrder: 11
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 8
+    YPos: 0
+    IsUnderground: 0
+    SortOrder: 1
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 10
+    YPos: 1
+    IsUnderground: 0
+    SortOrder: 4
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmgosn0
+      MineType: 6
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffffff1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 86
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 85
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlr2sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 36
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 30
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avzevnt0
+      MineType: 0
+      Type: 3
+      TypeDebug: 26
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 7
+    IsUnderground: 0
+    SortOrder: 32
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmgesn0
+      MineType: 5
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffff1f1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 19
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 7
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avmsulf0
+      MineType: 3
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffffff1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 17
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 105
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avmcrsn0
+      MineType: 4
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffffff1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 23
+    IsUnderground: 0
+    SortOrder: 99
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avwdrax0
+      MineType: 27
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 32
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 135
+    Monster:
+      Type: 49081552
+      Count: 12
+      Mood: 4
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ava0030
+      MineType: 30
+      Type: 0
+      TypeDebug: 5
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 35
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 132
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 133
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 35
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 136
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtgold0
+      MineType: 6
+      Type: 8
+      TypeDebug: 79
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 137
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 35
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 145
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 34
+    IsUnderground: 0
+    SortOrder: 154
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtgems0
+      MineType: 5
+      Type: 8
+      TypeDebug: 79
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 34
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 146
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 33
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 138
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 33
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 147
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 26
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 110
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 30
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 106
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn4
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 30
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 111
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 25
+    YPos: 26
+    IsUnderground: 0
+    SortOrder: 114
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avzevnt0
+      MineType: 0
+      Type: 3
+      TypeDebug: 26
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 27
+    YPos: 24
+    IsUnderground: 0
+    SortOrder: 107
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmalcs0
+      MineType: 1
+      Type: 2
+      TypeDebug: 53
+      Passability: ffffffffff1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 34
+    IsUnderground: 0
+    SortOrder: 155
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avgwatr0
+      MineType: 47
+      Type: 2
+      TypeDebug: 17
+      Passability: ffffffffbf1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 24
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 67
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 255
+  - Template:
+      Name: avgwatr0
+      MineType: 47
+      Type: 2
+      TypeDebug: 17
+      Passability: ffffffffbf1f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 33
+    YPos: 3
+    IsUnderground: 0
+    SortOrder: 12
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 255
+  - Template:
+      Name: avgrefg0
+      MineType: 0
+      Type: 21
+      TypeDebug: 78
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 9
+    IsUnderground: 0
+    SortOrder: 43
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlsntr4
+      MineType: 0
+      Type: 21
+      TypeDebug: 137
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 21
+    YPos: 28
+    IsUnderground: 0
+    SortOrder: 118
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn2
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffff9f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 36
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 112
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlp1sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 153
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 3
+    YPos: 3
+    IsUnderground: 0
+    SortOrder: 13
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwnagx0
+      MineType: 39
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 31
+    YPos: 28
+    IsUnderground: 0
+    SortOrder: 119
+    Monster:
+      Type: 49081553
+      Count: 30
+      Mood: 4
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avzevnt0
+      MineType: 0
+      Type: 3
+      TypeDebug: 26
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 25
+    YPos: 9
+    IsUnderground: 0
+    SortOrder: 44
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 134
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avsaxis0
+      MineType: 0
+      Type: 21
+      TypeDebug: 61
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 148
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmwndd0
+      MineType: 0
+      Type: 21
+      TypeDebug: 112
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 28
+    IsUnderground: 0
+    SortOrder: 120
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn3
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff1f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 15
+    IsUnderground: 0
+    SortOrder: 60
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlflk30
+      MineType: 0
+      Type: 21
+      TypeDebug: 121
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 7
+    YPos: 31
+    IsUnderground: 0
+    SortOrder: 8
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwgeni0
+      MineType: 36
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 22
+    IsUnderground: 0
+    SortOrder: 93
+    Monster:
+      Type: 49081554
+      Count: 25
+      Mood: 4
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avawrek0
+      MineType: 0
+      Type: 21
+      TypeDebug: 85
+      Passability: ffffffffff3f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 73
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxbnk30
+      MineType: 2
+      Type: 21
+      TypeDebug: 16
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 68
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: adcfra
+      MineType: 0
+      Type: 21
+      TypeDebug: 12
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 74
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlklp10
+      MineType: 0
+      Type: 21
+      TypeDebug: 125
+      Passability: ffffffffffff
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 18
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 9
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlref30
+      MineType: 0
+      Type: 21
+      TypeDebug: 161
+      Passability: ffffffff3f3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 16
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 10
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlrk1w0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 13
+    IsUnderground: 0
+    SortOrder: 58
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avaflot0
+      MineType: 0
+      Type: 21
+      TypeDebug: 29
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 30
+    YPos: 1
+    IsUnderground: 0
+    SortOrder: 5
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlrk4w0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 12
+    YPos: 6
+    IsUnderground: 0
+    SortOrder: 27
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlyuc30
+      MineType: 0
+      Type: 21
+      TypeDebug: 155
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 18
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 37
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avgmonk0
+      MineType: 35
+      Type: 2
+      TypeDebug: 17
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 27
+    YPos: 30
+    IsUnderground: 0
+    SortOrder: 127
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 2
+  - Template:
+      Name: avmwwsn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 109
+      Passability: ffffffffff1f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 16
+    YPos: 28
+    IsUnderground: 0
+    SortOrder: 121
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avsgzbo0
+      MineType: 0
+      Type: 21
+      TypeDebug: 100
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 11
+    YPos: 30
+    IsUnderground: 0
+    SortOrder: 128
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avgrefg0
+      MineType: 0
+      Type: 21
+      TypeDebug: 78
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 9
+    YPos: 11
+    IsUnderground: 0
+    SortOrder: 51
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ah04_e
+      MineType: 4
+      Type: 5
+      TypeDebug: 34
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 7
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 139
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwgarg0
+      MineType: 30
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 35
+    IsUnderground: 0
+    SortOrder: 156
+    Monster:
+      Type: 49081556
+      Count: 70
+      Mood: 4
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxcfsn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 12
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 14
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 149
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avls3sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 150
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 16
+    YPos: 35
+    IsUnderground: 0
+    SortOrder: 157
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwgarg0
+      MineType: 30
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 27
+    IsUnderground: 0
+    SortOrder: 116
+    Monster:
+      Type: 49081557
+      Count: 70
+      Mood: 4
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 1
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avls2sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 150
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 21
+    YPos: 27
+    IsUnderground: 0
+    SortOrder: 117
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlo1sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 136
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 1
+    XPos: 1
+    YPos: 26
+    IsUnderground: 0
+    SortOrder: 11
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlddsn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 119
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 1
+    YPos: 28
+    IsUnderground: 0
+    SortOrder: 122
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avstmpl0
+      MineType: 0
+      Type: 21
+      TypeDebug: 96
+      Passability: ffffffffff3f
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 8
+    YPos: 25
+    IsUnderground: 0
+    SortOrder: 113
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlr6sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 27
+    YPos: 32
+    IsUnderground: 0
+    SortOrder: 140
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwelmw0
+      MineType: 115
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 23
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 75
+    Monster:
+      Type: 49081558
+      Count: 10
+      Mood: 3
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avwelmw0
+      MineType: 115
+      Type: 7
+      TypeDebug: 54
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 32
+    YPos: 4
+    IsUnderground: 0
+    SortOrder: 16
+    Monster:
+      Type: 49081559
+      Count: 8
+      Mood: 3
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 1
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxccht0
+      MineType: 0
+      Type: 21
+      TypeDebug: 82
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 30
+    YPos: 16
+    IsUnderground: 0
+    SortOrder: 64
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxccht0
+      MineType: 0
+      Type: 21
+      TypeDebug: 82
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 28
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 69
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avsschm0
+      MineType: 0
+      Type: 21
+      TypeDebug: 47
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 88
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlmtsn6
+      MineType: 0
+      Type: 21
+      TypeDebug: 134
+      Passability: ffffffff3f9f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 21
+    IsUnderground: 0
+    SortOrder: 87
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 20
+    IsUnderground: 0
+    SortOrder: 82
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 8
+    YPos: 18
+    IsUnderground: 0
+    SortOrder: 76
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avtchst0
+      MineType: 0
+      Type: 21
+      TypeDebug: 101
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 0
+    YPos: 17
+    IsUnderground: 0
+    SortOrder: 70
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlr6sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff3f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 7
+    YPos: 35
+    IsUnderground: 0
+    SortOrder: 158
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avlr1sn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 147
+      Passability: ffffffffff7f
+      Interactability: 000000000000
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 8
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 150
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avmlean0
+      MineType: 0
+      Type: 21
+      TypeDebug: 39
+      Passability: ffffffffff3f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 25
+    YPos: 33
+    IsUnderground: 0
+    SortOrder: 151
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avxcfsn0
+      MineType: 0
+      Type: 21
+      TypeDebug: 12
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 4
+    YPos: 8
+    IsUnderground: 0
+    SortOrder: 38
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avswtch0
+      MineType: 0
+      Type: 15
+      TypeDebug: 113
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 2
+    YPos: 29
+    IsUnderground: 0
+    SortOrder: 125
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ava0001
+      MineType: 0
+      Type: 13
+      TypeDebug: 93
+      Passability: ffffffffff7f
+      Interactability: 000000000080
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    XPos: 5
+    YPos: 19
+    IsUnderground: 0
+    SortOrder: 77
     Monster:
       Type: 0
       Count: 0

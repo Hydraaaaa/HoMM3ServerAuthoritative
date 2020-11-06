@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GameSettings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
-  m_TerrainSpritePrefab: {fileID: 3763445086808081101, guid: a67d8de3c3414df48a64f06cbb37aeb6,
+  m_TileObjectPrefab: {fileID: 6564493930803764532, guid: a67d8de3c3414df48a64f06cbb37aeb6,
     type: 3}
   m_TerrainFrame: {fileID: 836344038}
   m_TerrainMask: {fileID: 1078446455}
@@ -492,16 +492,16 @@ MonoBehaviour:
     type: 3}
   m_TerrainRoot: {fileID: 989251728}
   m_UndergroundTerrainRoot: {fileID: 1858009423}
-  m_TerrainSpriteParent: {fileID: 89495613}
-  m_RiverSpriteParent: {fileID: 72953004}
-  m_RoadSpriteParent: {fileID: 635900129}
-  m_ObjectSpriteParent: {fileID: 2021916575}
-  m_ShadowSpriteParent: {fileID: 1910320518}
-  m_UndergroundTerrainSpriteParent: {fileID: 313627167}
-  m_UndergroundRiverSpriteParent: {fileID: 1355087446}
-  m_UndergroundRoadSpriteParent: {fileID: 1439226116}
-  m_UndergroundObjectSpriteParent: {fileID: 1592522018}
-  m_UndergroundShadowSpriteParent: {fileID: 692646858}
+  m_TerrainTileObjectParent: {fileID: 89495613}
+  m_RiverTileObjectParent: {fileID: 72953004}
+  m_RoadTileObjectParent: {fileID: 635900129}
+  m_MapObjectParent: {fileID: 2021916575}
+  m_ShadowObjectParent: {fileID: 1910320518}
+  m_UndergroundTerrainTileObjectParent: {fileID: 313627167}
+  m_UndergroundRiverTileObjectParent: {fileID: 1355087446}
+  m_UndergroundRoadTileObjectParent: {fileID: 1439226116}
+  m_UndergroundMapObjectParent: {fileID: 1592522018}
+  m_UndergroundShadowObjectParent: {fileID: 692646858}
   m_DirtSprites:
   - {fileID: 21300000, guid: 3c14c143263003f4a97cb5c2cff08830, type: 3}
   - {fileID: 21300000, guid: 2e6ee1e1439bd844d8f6ab5d9d40a82b, type: 3}
@@ -1138,6 +1138,40 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 00d6772b525e1e74f83848ec14931604, type: 3}
   - {fileID: 21300000, guid: 542f27323c29dbd449637728a71b1440, type: 3}
   - {fileID: 21300000, guid: 5d21abb49c6a04547a5758ed5c75272a, type: 3}
+  m_WaterAnimations:
+  - {fileID: 7400000, guid: d47e5812e806dbb49a8bf9b87fbe5e9d, type: 2}
+  - {fileID: 7400000, guid: a504cb8fc5612ae4f9d39f1c4f23c8d6, type: 2}
+  - {fileID: 7400000, guid: 4920e5f5827380f4dbd0e5524a70f7c8, type: 2}
+  - {fileID: 7400000, guid: 0291a0a5ea33a8b438aa6305c3e0f8ad, type: 2}
+  - {fileID: 7400000, guid: d64fa1f4fba9525419bf0a22a2134b98, type: 2}
+  - {fileID: 7400000, guid: 0c728cc288a229d4dbe131b729a94b7c, type: 2}
+  - {fileID: 7400000, guid: 8a31e71998ba84c42b7efce21416167b, type: 2}
+  - {fileID: 7400000, guid: c579b786155368d42a5cbf97b3417ac4, type: 2}
+  - {fileID: 7400000, guid: cc11fe47dd850f648a63cb66fe189ac7, type: 2}
+  - {fileID: 7400000, guid: 3365ca90ee26d2c4491df2d9fea503b7, type: 2}
+  - {fileID: 7400000, guid: f484aab2bbf5a6a49a13f6b4c4866016, type: 2}
+  - {fileID: 7400000, guid: 48df6b33d5a8d5b43b829996df31285c, type: 2}
+  - {fileID: 7400000, guid: 5eb15e85d47605543bb3c043843113aa, type: 2}
+  - {fileID: 7400000, guid: 516d3fd08ffe5d54eaa3800b51345c74, type: 2}
+  - {fileID: 7400000, guid: 8ed85975412d32947a1c47ba65dfda60, type: 2}
+  - {fileID: 7400000, guid: b502bf363da596549be21b4747699906, type: 2}
+  - {fileID: 7400000, guid: 1150065270acbc74a8f23aa606dbd2f2, type: 2}
+  - {fileID: 7400000, guid: 0319291b683344f4e9f85ef18561a2ce, type: 2}
+  - {fileID: 7400000, guid: 70523bf7aa15cdb46995520b57047f25, type: 2}
+  - {fileID: 7400000, guid: 6a4559bc510ac9d45a3f93e8de461ae4, type: 2}
+  - {fileID: 0}
+  - {fileID: 7400000, guid: e8aa2a0fbe427704488aa128d99cf351, type: 2}
+  - {fileID: 7400000, guid: 9ac090cceb706fa4a8d43151c09472c8, type: 2}
+  - {fileID: 7400000, guid: 5fa56531fe744d44aa3d876d763edfa7, type: 2}
+  - {fileID: 7400000, guid: 9bf85725e0c4d2047a453273255e5049, type: 2}
+  - {fileID: 7400000, guid: 2bdd0a62d8b54a74fbd013b30b7996e1, type: 2}
+  - {fileID: 7400000, guid: effde2b17b4a4634790637ef87a37181, type: 2}
+  - {fileID: 7400000, guid: 0e014a2893f6f6043b7ce94aa56c7a35, type: 2}
+  - {fileID: 7400000, guid: 8fc24844ff940a443a5d4e50363ed1a4, type: 2}
+  - {fileID: 7400000, guid: 3be374b7473fd0e4694fca06de9442a1, type: 2}
+  - {fileID: 7400000, guid: 8c6665e97acc90f4c984a397c7f7bd60, type: 2}
+  - {fileID: 7400000, guid: c390dc3581b7c1244b05883ce9543476, type: 2}
+  - {fileID: 7400000, guid: 56801e0f192831a43a4c82f5334df213, type: 2}
   m_ClearRiverSprites:
   - {fileID: 21300000, guid: b52af18b94df98544a3d0d1dafd9103a, type: 3}
   - {fileID: 21300000, guid: 8d578bf594cac8b4292cf9a4f833e11d, type: 3}
@@ -1194,6 +1228,34 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c46dbcb552337ee49b1e366e3cb00472, type: 3}
   - {fileID: 21300000, guid: df971c66e4240d649a2d9ca90ad25b94, type: 3}
   - {fileID: 21300000, guid: 3145ccac76cf89c4ab800d222032c931, type: 3}
+  m_ClearRiverAnimations:
+  - {fileID: 7400000, guid: 808b26557a635ad46820a9a9236e4daa, type: 2}
+  - {fileID: 7400000, guid: 71a47f04d70ab79499a2263e94cf77ac, type: 2}
+  - {fileID: 7400000, guid: 70fe6d570c056b0429041c33fa35ad24, type: 2}
+  - {fileID: 7400000, guid: ce6c926f5fb4b144a97301a3b49c7fc7, type: 2}
+  - {fileID: 7400000, guid: 998c495b46e47744e86677fef9f4fdc0, type: 2}
+  - {fileID: 7400000, guid: 767c99c6f9427e64482a5782bb2fefea, type: 2}
+  - {fileID: 7400000, guid: 2dddb0a51497fb24ab5973c0bd4bcb5b, type: 2}
+  - {fileID: 7400000, guid: 5295a9d4aed48244f965f80237a6ebc4, type: 2}
+  - {fileID: 7400000, guid: 8a06821b5907493458d6e90983e11897, type: 2}
+  - {fileID: 7400000, guid: 7357617c6913fae46bca168210dca2db, type: 2}
+  - {fileID: 7400000, guid: d940e5e43edf0344c8be71f775c63f0c, type: 2}
+  - {fileID: 7400000, guid: b20aa36583255624cbade9918bb09a4a, type: 2}
+  - {fileID: 7400000, guid: f9edc859daf0ba14884a514bc52803eb, type: 2}
+  m_LavaRiverAnimations:
+  - {fileID: 7400000, guid: db684f4fad8332741a9bb6b052dac302, type: 2}
+  - {fileID: 7400000, guid: 2af7fe8f4a3da16499df8f73578b7d0d, type: 2}
+  - {fileID: 7400000, guid: 11bd0107da5dcf3408e2582ac2ebe721, type: 2}
+  - {fileID: 7400000, guid: 3e3aec05b28cc854d99fa00ce63e4fb0, type: 2}
+  - {fileID: 7400000, guid: 680cf7f7cffad694c9df1dff30fda61c, type: 2}
+  - {fileID: 7400000, guid: dbe52a6e472b36c4085f2a01314f72d7, type: 2}
+  - {fileID: 7400000, guid: e2b8627b1596eca4b8f93fcd6895926a, type: 2}
+  - {fileID: 7400000, guid: 00574d359678aee4bb30089ea8966cd4, type: 2}
+  - {fileID: 7400000, guid: 597be11396833aa48a6c28940f2afa3f, type: 2}
+  - {fileID: 7400000, guid: 350db6cf8959abf409b97be5a02ff675, type: 2}
+  - {fileID: 7400000, guid: da2707acc52a7d24494e39458ba9bd7a, type: 2}
+  - {fileID: 7400000, guid: 08193d8b6df3637498529e5bb48a3f8b, type: 2}
+  - {fileID: 7400000, guid: 22d1da70accd967488c265d2723f2798, type: 2}
   m_DirtRoadSprites:
   - {fileID: 21300000, guid: 1cbe02989cbef1f469f12643a50df86a, type: 3}
   - {fileID: 21300000, guid: 2789de61eef5d4040ae7e755f389d404, type: 3}
