@@ -36,8 +36,8 @@ public class H3MImporter : EditorWindow
         H3MImporter window = (H3MImporter)EditorWindow.GetWindow(typeof(H3MImporter));
         window.Show();
 
-        window.m_InputFolder = "../Maps/";
-        window.m_OutputFolder = "Maps/";
+        window.m_InputFolder = "../Scenarios/";
+        window.m_OutputFolder = "Scenarios/";
         window.m_Overwrite = true;
     }
 
