@@ -143,7 +143,7 @@ public class Map : MonoBehaviour
 
                 // <><><><><> Terrain Tile
 
-                TerrainTileObject _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity, m_TerrainTileObjectParent);
+                TerrainTileObject _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity);
 
                 _TileObject.Renderer.sortingOrder = -32768;
 
@@ -182,13 +182,15 @@ public class Map : MonoBehaviour
 
                 _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID}";
 
+                _TileObject.transform.SetParent(m_TerrainTileObjectParent);
+
                 m_TerrainTileObjects.Add(_TileObject);
 
                 // <><><><><> River Tile
 
                 if (_Terrain[_Index].RiverType != 0)
                 {
-                    _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity, m_RiverTileObjectParent);
+                    _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity);
 
                     if (_Terrain[_Index].RiverType - 1 < m_RiverSprites.Count)
                     {
@@ -239,6 +241,8 @@ public class Map : MonoBehaviour
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RiverSpriteID}";
 
+                    _TileObject.transform.SetParent(m_RiverTileObjectParent);
+
                     m_RiverTileObjects.Add(_TileObject);
                 }
 
@@ -246,7 +250,7 @@ public class Map : MonoBehaviour
 
                 if (_Terrain[_Index].RoadType != 0)
                 {
-                    _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y - 0.5f), Quaternion.identity, m_RoadTileObjectParent);
+                    _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y - 0.5f), Quaternion.identity);
 
                     if (_Terrain[_Index].RoadType - 1 < m_RoadSprites.Count)
                     {
@@ -271,6 +275,8 @@ public class Map : MonoBehaviour
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RoadSpriteID}";
 
+                    _TileObject.transform.SetParent(m_RoadTileObjectParent);
+
                     m_RoadTileObjects.Add(_TileObject);
                 }
             }
@@ -294,7 +300,7 @@ public class Map : MonoBehaviour
 
                     // <><><><><> Terrain Tile
 
-                    TerrainTileObject _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity, m_UndergroundTerrainTileObjectParent);
+                    TerrainTileObject _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity);
 
                     _TileObject.Renderer.sortingOrder = -32768;
 
@@ -302,14 +308,14 @@ public class Map : MonoBehaviour
                     {
                         if (_UndergroundTerrain[_Index].TerrainType == WATER_TILE_INDEX)
                         {
-                            if (m_WaterAnimations[_Terrain[_Index].TerrainSpriteID] != null)
+                            if (m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID] != null)
                             {
                                 _TileObject.Animation.AddClip(m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID], "Default");
                                 _TileObject.Animation.clip = m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID];
                                 _TileObject.Animation.Play();
                             }
                         }
-                        else if (_UndergroundTerrain[_Index].TerrainSpriteID < m_TerrainSprites[_Terrain[_Index].TerrainType].Count)
+                        else if (_UndergroundTerrain[_Index].TerrainSpriteID < m_TerrainSprites[_UndergroundTerrain[_Index].TerrainType].Count)
                         {
                             _TileObject.Renderer.sprite = m_TerrainSprites[_UndergroundTerrain[_Index].TerrainType][_UndergroundTerrain[_Index].TerrainSpriteID];
                         }
@@ -324,10 +330,12 @@ public class Map : MonoBehaviour
                     }
 
                     _TileObject.Renderer.sortingLayerName = "Terrain";
-                    _TileObject.Renderer.flipX = (_Terrain[_Index].Mirrored & 1) == 1;
-                    _TileObject.Renderer.flipY = (_Terrain[_Index].Mirrored & 2) == 2;
+                    _TileObject.Renderer.flipX = (_UndergroundTerrain[_Index].Mirrored & 1) == 1;
+                    _TileObject.Renderer.flipY = (_UndergroundTerrain[_Index].Mirrored & 2) == 2;
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].TerrainSpriteID}";
+
+                    _TileObject.transform.SetParent(m_UndergroundTerrainTileObjectParent);
 
                     m_UndergroundTerrainTileObjects.Add(_TileObject);
 
@@ -335,49 +343,51 @@ public class Map : MonoBehaviour
 
                     if (_UndergroundTerrain[_Index].RiverType != 0)
                     {
-                        _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity, m_UndergroundRiverTileObjectParent);
+                        _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y), Quaternion.identity);
 
-                        if (_Terrain[_Index].RiverType == CLEAR_RIVER_INDEX)
+                        if (_UndergroundTerrain[_Index].RiverType == CLEAR_RIVER_INDEX)
                         {
-                            if (m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID] != null)
+                            if (m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID] != null)
                             {
-                                _TileObject.Animation.AddClip(m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID];
+                                _TileObject.Animation.AddClip(m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID], "Default");
+                                _TileObject.Animation.clip = m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID];
                                 _TileObject.Animation.Play();
                             }
                             else
                             {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_Terrain[_Index].RiverType - 1][_Terrain[_Index].RiverSpriteID];
+                                _TileObject.Renderer.sprite = m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1][_UndergroundTerrain[_Index].RiverSpriteID];
                             }
                         }
-                        else if (_Terrain[_Index].RiverType == LAVA_RIVER_INDEX)
+                        else if (_UndergroundTerrain[_Index].RiverType == LAVA_RIVER_INDEX)
                         {
-                            if (m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID] != null)
+                            if (m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID] != null)
                             {
-                                _TileObject.Animation.AddClip(m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID];
+                                _TileObject.Animation.AddClip(m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID], "Default");
+                                _TileObject.Animation.clip = m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID];
                                 _TileObject.Animation.Play();
                             }
                             else
                             {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_Terrain[_Index].RiverType - 1][_Terrain[_Index].RiverSpriteID];
+                                _TileObject.Renderer.sprite = m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1][_UndergroundTerrain[_Index].RiverSpriteID];
                             }
                         }
-                        else if (_Terrain[_Index].RiverSpriteID < m_RiverSprites[_Terrain[_Index].RiverType - 1].Count)
+                        else if (_UndergroundTerrain[_Index].RiverSpriteID < m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1].Count)
                         {
-                            _TileObject.Renderer.sprite = m_RiverSprites[_Terrain[_Index].RiverType - 1][_Terrain[_Index].RiverSpriteID];
+                            _TileObject.Renderer.sprite = m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1][_UndergroundTerrain[_Index].RiverSpriteID];
                         }
                         else
                         {
-                            Debug.Log($"River Failed ID {_Terrain[_Index].RiverSpriteID}");
+                            Debug.Log($"River Failed ID {_UndergroundTerrain[_Index].RiverSpriteID}");
                         }
 
                         _TileObject.Renderer.sortingOrder = 1;
                         _TileObject.Renderer.sortingLayerName = "Terrain";
-                        _TileObject.Renderer.flipX = (_Terrain[_Index].Mirrored & 4) == 4;
-                        _TileObject.Renderer.flipY = (_Terrain[_Index].Mirrored & 8) == 8;
+                        _TileObject.Renderer.flipX = (_UndergroundTerrain[_Index].Mirrored & 4) == 4;
+                        _TileObject.Renderer.flipY = (_UndergroundTerrain[_Index].Mirrored & 8) == 8;
 
                         _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RiverSpriteID}";
+
+                        _TileObject.transform.SetParent(m_UndergroundRiverTileObjectParent);
 
                         m_UndergroundRiverTileObjects.Add(_TileObject);
                     }
@@ -386,7 +396,7 @@ public class Map : MonoBehaviour
 
                     if (_UndergroundTerrain[_Index].RoadType != 0)
                     {
-                        _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y - 0.5f), Quaternion.identity, m_UndergroundRoadTileObjectParent);
+                        _TileObject = Instantiate(m_TileObjectPrefab, new Vector2(x, -y - 0.5f), Quaternion.identity);
 
                         if (_UndergroundTerrain[_Index].RoadType - 1 < m_RoadSprites.Count)
                         {
@@ -406,10 +416,12 @@ public class Map : MonoBehaviour
 
                         _TileObject.Renderer.sortingOrder = 2;
                         _TileObject.Renderer.sortingLayerName = "Terrain";
-                        _TileObject.Renderer.flipX = (_Terrain[_Index].Mirrored & 16) == 16;
-                        _TileObject.Renderer.flipY = (_Terrain[_Index].Mirrored & 32) == 32;
+                        _TileObject.Renderer.flipX = (_UndergroundTerrain[_Index].Mirrored & 16) == 16;
+                        _TileObject.Renderer.flipY = (_UndergroundTerrain[_Index].Mirrored & 32) == 32;
 
                         _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RoadSpriteID}";
+
+                        _TileObject.transform.SetParent(m_UndergroundRoadTileObjectParent);
 
                         m_UndergroundRoadTileObjects.Add(_TileObject);
                     }
