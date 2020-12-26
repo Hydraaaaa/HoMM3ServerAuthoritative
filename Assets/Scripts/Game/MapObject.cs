@@ -16,6 +16,11 @@ public class MapObject : MonoBehaviour
 
     [SerializeField] protected PlayerColors m_PlayerColors = null;
 
+    [SerializeField] protected int m_X = 0;
+    [SerializeField] protected int m_Y = 0;
+    [SerializeField] protected byte[] m_Collision;
+    [SerializeField] protected byte[] m_Interaction;
+
     public ScenarioObject ScenarioObject => m_ScenarioObject;
     public MapShadowObject Shadow => m_Shadow;
 
@@ -24,12 +29,17 @@ public class MapObject : MonoBehaviour
 
     public void Initialize(ScenarioObject a_ScenarioObject, MapShadowObject a_Shadow)
     {
+        m_X = a_ScenarioObject.PosX;
+        m_Y = a_ScenarioObject.PosY;
+        m_Collision = a_ScenarioObject.Template.Passability;
+        m_Interaction = a_ScenarioObject.Template.Interactability;
+
         m_ScenarioObject = a_ScenarioObject;
         m_Shadow = a_Shadow;
 
         gameObject.name = a_ScenarioObject.Template.Name;
 
-        transform.position = new Vector3(a_ScenarioObject.XPos + 0.5f, -a_ScenarioObject.YPos - 0.5f, 0);
+        transform.position = new Vector3(a_ScenarioObject.PosX + 0.5f, -a_ScenarioObject.PosY - 0.5f, 0);
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
 
         if (a_ScenarioObject.Template.IsLowPrioritySortOrder)

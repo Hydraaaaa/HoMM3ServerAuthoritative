@@ -18,7 +18,7 @@ public class MapShadowObject : MonoBehaviour
 
         gameObject.name = a_Parent.ScenarioObject.Template.Name;
 
-        transform.position = new Vector3(a_Parent.ScenarioObject.XPos + 0.5f, -a_Parent.ScenarioObject.YPos - 0.5f, 0);
+        transform.position = new Vector3(a_Parent.ScenarioObject.PosX + 0.5f, -a_Parent.ScenarioObject.PosY - 0.5f, 0);
         m_SpriteRenderer.sortingLayerName = "MapShadows";
     }
 }

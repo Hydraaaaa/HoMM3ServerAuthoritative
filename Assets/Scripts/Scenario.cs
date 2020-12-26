@@ -73,8 +73,8 @@ public class ScenarioObject
 {
     public ScenarioObjectTemplate Template;
 
-    public byte XPos;
-    public byte YPos;
+    public byte PosX;
+    public byte PosY;
     public bool IsUnderground;
     public int SortOrder;
 

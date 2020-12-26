@@ -69,6 +69,14 @@
 				{
 					color = _PlayerColor;
 				}
+				else if (all(color.rgb == fixed3(1, 0, 1)))
+				{
+					color = fixed4(0, 0, 0, 0);
+				}
+				else if (all(color.rgb == fixed3(1, 0.5882352941176471, 1)))
+				{
+					color = fixed4(0, 0, 0, 0);
+				}
 
 				return color;
 			}

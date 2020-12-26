@@ -6,10 +6,6 @@ public class CameraControl : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings = null;
 
-    [Space]
-
-    [SerializeField] float m_PanSpeed = 1.0f;
-
     bool m_Active;
 
     float m_MoveCooldown = 0.07f;

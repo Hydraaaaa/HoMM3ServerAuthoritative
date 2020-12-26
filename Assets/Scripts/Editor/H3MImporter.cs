@@ -1110,10 +1110,11 @@ public class H3MImporter : EditorWindow
 
             a_Scenario.Objects = new List<ScenarioObject>();
 
+            Debug.Log($"!! Object Count: {_ObjectDataCount}");
             for (int i = 0; i < _ObjectDataCount; i++)
             {
-                byte _XPos = a_Bytes[_CurrentByte];
-                byte _YPos = a_Bytes[_CurrentByte + 1];
+                byte _PosX = a_Bytes[_CurrentByte];
+                byte _PosY = a_Bytes[_CurrentByte + 1];
                 bool _IsUnderground = BitConverter.ToBoolean(a_Bytes, _CurrentByte + 2);
                 _CurrentByte += 3;
 
@@ -1122,21 +1123,29 @@ public class H3MImporter : EditorWindow
 
                 _CurrentByte += 5; // Unknown Bytes
 
-
                 if (_ObjectBaseIndex > _ObjectTemplates.Count)
                 {
+                    if (_ObjectBaseIndex == 3584)
+                    {
+                        _CurrentByte += 20;
+                    }
+
                     Debug.Log($"Position: {_CurrentByte.ToString("X")}");
-                    Debug.Log($"Index out of range: {_ObjectBaseIndex} - Position: {_XPos}, {_YPos}, {_IsUnderground}");
+                    Debug.Log($"Index out of range: {_ObjectBaseIndex} - Position: {_PosX}, {_PosY}, {_IsUnderground}");
+                    Debug.Log($"{i}/{_ObjectDataCount}");
                     break;
+                    //continue;
                 }
 
                 ScenarioObject _Object = new ScenarioObject();
                 _Object.Template = _ObjectTemplates[_ObjectBaseIndex];
 
+                //Debug.Log($"!! {_Object.Template.Name} TypeDebug: {_Object.Template.TypeDebug}");
+
                 //Debug.Log($"Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
 
-                _Object.XPos = _XPos;
-                _Object.YPos = _YPos;
+                _Object.PosX = _PosX;
+                _Object.PosY = _PosY;
                 _Object.IsUnderground = _IsUnderground;
 
                 switch (_Object.Template.Type)
@@ -1653,6 +1662,7 @@ public class H3MImporter : EditorWindow
 
                         if (_Object.Town.HasCustomBuildings)
                         {
+                            Debug.Log($"!! Town Has Custom Buildings");
                             _CurrentByte += 12;
                         }
                         else
@@ -1811,7 +1821,7 @@ public class H3MImporter : EditorWindow
                     }
                 }
 
-                _ObjectSortData = _ObjectSortData.OrderBy((a_Object) => a_Object.Object.YPos).ToList();
+                _ObjectSortData = _ObjectSortData.OrderBy((a_Object) => a_Object.Object.PosY).ToList();
 
                 if (_ObjectSortData.Count > 0)
                 {
@@ -1823,10 +1833,10 @@ public class H3MImporter : EditorWindow
                     while (!_ReachedEnd)
                     {
                         int _LowerBound = _HigherBound;
-                        int _CurrentY = _ObjectSortData[_LowerBound].Object.YPos;
+                        int _CurrentY = _ObjectSortData[_LowerBound].Object.PosY;
 
                         // Determine the range of objects that share the same Y object
-                        while (_ObjectSortData[_HigherBound].Object.YPos == _CurrentY)
+                        while (_ObjectSortData[_HigherBound].Object.PosY == _CurrentY)
                         {
                             _HigherBound++;
 
@@ -1844,7 +1854,7 @@ public class H3MImporter : EditorWindow
                                 return false;
                             }
 
-                            int _XDifference = Mathf.Abs(a_Object.Object.XPos - a_OtherObject.Object.XPos);
+                            int _XDifference = Mathf.Abs(a_Object.Object.PosX - a_OtherObject.Object.PosX);
 
                             if (_XDifference > 7)
                             {
@@ -1858,7 +1868,7 @@ public class H3MImporter : EditorWindow
                             ScenarioObject _LeftmostObject = a_Object.Object;
                             ScenarioObject _RightmostObject = a_OtherObject.Object;
 
-                            if (a_Object.Object.XPos > a_OtherObject.Object.XPos)
+                            if (a_Object.Object.PosX > a_OtherObject.Object.PosX)
                             {
                                 _ObjectIsLeftmost = false;
                                 _LeftmostObject = a_OtherObject.Object;

@@ -17,6 +17,7 @@ public class Map : MonoBehaviour
     [SerializeField] Transform m_TerrainMask = null;
     [SerializeField] MapObject m_MapObjectPrefab = null;
     [SerializeField] MapShadowObject m_ShadowObjectPrefab = null;
+    [SerializeField] Pathfinding m_Pathfinding = null;
 
     [Space]
 
@@ -440,6 +441,8 @@ public class Map : MonoBehaviour
         {
             StartCoroutine(LoadAsset(_Objects[i]));
         }
+
+        m_Pathfinding.Generate(m_GameSettings.Scenario);
     }
 
     IEnumerator LoadAsset(ScenarioObject a_Object)
