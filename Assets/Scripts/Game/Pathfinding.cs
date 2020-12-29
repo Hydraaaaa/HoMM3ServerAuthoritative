@@ -28,53 +28,53 @@ public class Pathfinding : MonoBehaviour
     public List<Node> m_OverworldNodes;
     public List<Node> m_UndergroundNodes;
 
-    void OnDrawGizmos()
-    {
-        if (Application.isPlaying)
-        {
-            for (int i = 0; i < m_OverworldNodes.Count; i++)
-            {
-                if (m_OverworldNodes[i].BlockingObjects.Count == 0 ||
-                    m_OverworldNodes[i].InteractionObjects.Count > 0)
-                {
-                    for (int j = 0; j < m_OverworldNodes[i].Pathways.Count; j++)
-                    {
-                        Node _DestinationNode = m_OverworldNodes[i].Pathways[j].Node;
+    //void OnDrawGizmos()
+    //{
+        //if (Application.isPlaying)
+        //{
+            //for (int i = 0; i < m_OverworldNodes.Count; i++)
+            //{
+                //if (m_OverworldNodes[i].BlockingObjects.Count == 0 ||
+                    //m_OverworldNodes[i].InteractionObjects.Count > 0)
+                //{
+                    //for (int j = 0; j < m_OverworldNodes[i].Pathways.Count; j++)
+                    //{
+                        //Node _DestinationNode = m_OverworldNodes[i].Pathways[j].Node;
 
-                        if (_DestinationNode.InteractionObjects.Count > 0 ||
-                            m_OverworldNodes[i].InteractionObjects.Count > 0)
-                        {
-                            Gizmos.color = Color.yellow;
-                        }
-                        else
-                        {
-                            Gizmos.color = Color.white;
-                        }
+                        //if (_DestinationNode.InteractionObjects.Count > 0 ||
+                            //m_OverworldNodes[i].InteractionObjects.Count > 0)
+                        //{
+                            //Gizmos.color = Color.yellow;
+                        //}
+                        //else
+                        //{
+                            //Gizmos.color = Color.white;
+                        //}
 
-                        if (_DestinationNode.BlockingObjects.Count == 0 ||
-                            _DestinationNode.InteractionObjects.Count > 0)
-                        {
-                            if (m_Scenario.Terrain[i].TerrainType == 8)
-                            {
-                                if (m_Scenario.Terrain[_DestinationNode.PosX + _DestinationNode.PosY * m_Scenario.Size].TerrainType == 8)
-                                {
+                        //if (_DestinationNode.BlockingObjects.Count == 0 ||
+                            //_DestinationNode.InteractionObjects.Count > 0)
+                        //{
+                            //if (m_Scenario.Terrain[i].TerrainType == 8)
+                            //{
+                                //if (m_Scenario.Terrain[_DestinationNode.PosX + _DestinationNode.PosY * m_Scenario.Size].TerrainType == 8)
+                                //{
 
-                                    Gizmos.DrawLine(new Vector3(m_OverworldNodes[i].PosX, -m_OverworldNodes[i].PosY), new Vector3(_DestinationNode.PosX, -_DestinationNode.PosY));
-                                }
-                            }
-                            else
-                            {
-                                if (m_Scenario.Terrain[_DestinationNode.PosX + _DestinationNode.PosY * m_Scenario.Size].TerrainType != 8)
-                                {
-                                    Gizmos.DrawLine(new Vector3(m_OverworldNodes[i].PosX, -m_OverworldNodes[i].PosY), new Vector3(_DestinationNode.PosX, -_DestinationNode.PosY));
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+                                    //Gizmos.DrawLine(new Vector3(m_OverworldNodes[i].PosX, -m_OverworldNodes[i].PosY), new Vector3(_DestinationNode.PosX, -_DestinationNode.PosY));
+                                //}
+                            //}
+                            //else
+                            //{
+                                //if (m_Scenario.Terrain[_DestinationNode.PosX + _DestinationNode.PosY * m_Scenario.Size].TerrainType != 8)
+                                //{
+                                    //Gizmos.DrawLine(new Vector3(m_OverworldNodes[i].PosX, -m_OverworldNodes[i].PosY), new Vector3(_DestinationNode.PosX, -_DestinationNode.PosY));
+                                //}
+                            //}
+                        //}
+                    //}
+                //}
+            //}
+        //}
+    //}
 
     public void Generate(Scenario a_Scenario)
     {

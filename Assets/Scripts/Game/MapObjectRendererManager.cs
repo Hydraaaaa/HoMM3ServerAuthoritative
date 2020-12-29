@@ -20,6 +20,8 @@ public class MapObjectRendererManager : MonoBehaviour
 
     [SerializeField] Transform m_Camera;
 
+    int _PreviousFrame = 0;
+
     void Awake()
     {
         s_Instance = this;
@@ -35,17 +37,22 @@ public class MapObjectRendererManager : MonoBehaviour
 
         int _Frame = Mathf.FloorToInt(Time.time * 5.5f);
 
-        for (int i = 0; i < s_Renderers.Count; i++)
+        if (_Frame != _PreviousFrame)
         {
-            MapObjectRenderer _Animation = s_Renderers[i];
-            Transform _Transform = _Animation.transform;
-            
-            if (_Transform.position.x >= _MinBounds.x &&
-                _Transform.position.y >= _MinBounds.y &&
-                _Transform.position.x <= _MaxBounds.x &&
-                _Transform.position.y <= _MaxBounds.y)
+            _PreviousFrame = _Frame;
+
+            for (int i = 0; i < s_Renderers.Count; i++)
             {
-                _Animation.Animate(_Frame);
+                MapObjectRenderer _Animation = s_Renderers[i];
+                Vector3 _Position = _Animation.transform.position;
+
+                if (_Position.x >= _MinBounds.x &&
+                    _Position.y >= _MinBounds.y &&
+                    _Position.x <= _MaxBounds.x &&
+                    _Position.y <= _MaxBounds.y)
+                {
+                    _Animation.Animate(_Frame);
+                }
             }
         }
     }

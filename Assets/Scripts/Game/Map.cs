@@ -100,6 +100,9 @@ public class Map : MonoBehaviour
 
     void Awake()
     {
+        Physics.autoSimulation = false;
+        Physics2D.simulationMode = SimulationMode2D.Script;
+
         m_TerrainSprites = new List<List<Sprite>>();
         m_TerrainSprites.Add(m_DirtSprites);
         m_TerrainSprites.Add(m_SandSprites);
