@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avgcent0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: a5e7353b6b17b05438dc535d0c1c705f, type: 3}
-  m_ShadowSprite: {fileID: 21300000, guid: ac2c1a04155bc5f48888c4e2887eec9b, type: 3}
-  m_Animation: {fileID: 0}
-  m_ShadowAnimation: {fileID: 0}
+  m_Sprites: []
+  m_ShadowSprites: []
