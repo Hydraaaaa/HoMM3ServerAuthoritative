@@ -12,5 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: muddelt4
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: f83191ffa340958468a03e5527ffedd9, type: 3}
+  - {fileID: 21300000, guid: 3f0530cf4fdc1af47898cb3c91d57382, type: 3}
+  - {fileID: 21300000, guid: 0d175ea13898d7044a8b68c147bd8129, type: 3}
+  - {fileID: 21300000, guid: 7c25ed2844f28774ba7d225688b5242e, type: 3}
+  - {fileID: 21300000, guid: 3bc34dc53393f314a85f56c3e5b00400, type: 3}
+  - {fileID: 21300000, guid: 267a76150c413624faea6013bed406c9, type: 3}
+  - {fileID: 21300000, guid: 10d8c5c3aa0f03d49b8b7402507a6db3, type: 3}
+  - {fileID: 21300000, guid: 0f18a538f5907d14dbfc9b588e3a80a1, type: 3}
+  - {fileID: 21300000, guid: 1ba2ce33a53782a4e91e71e5025d68dd, type: 3}
+  - {fileID: 21300000, guid: 6b018a6b5d0c0d342bfff1ff9b571e6b, type: 3}
+  - {fileID: 21300000, guid: 8d08561fd43aa214fbf18e68de6943f5, type: 3}
+  - {fileID: 21300000, guid: c5157b745aa77e746918ebb946461da2, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 9639b7e88fc7438438ffe668570cd148, type: 3}
+  - {fileID: 21300000, guid: 5da19ad03dd8a774e803e3bef5cac421, type: 3}
+  - {fileID: 21300000, guid: 35faa61356511d94d839b846079f84bb, type: 3}
+  - {fileID: 21300000, guid: 225014b9d6366af4686714ea469dbb38, type: 3}
+  - {fileID: 21300000, guid: 40fb95c6bf3d5994f80a3e6db609d897, type: 3}
+  - {fileID: 21300000, guid: dcd5df0d10c162b4292aed7a6d01e97c, type: 3}
+  - {fileID: 21300000, guid: 815e022f7e8f5c645b4b748af63ddee5, type: 3}
+  - {fileID: 21300000, guid: 737293b2c6018204f9d4c36a1fa7e833, type: 3}
+  - {fileID: 21300000, guid: d345362067bf5914bb741953f41097c5, type: 3}
+  - {fileID: 21300000, guid: 1177c9edc67d65f42a426a8f70baf428, type: 3}
+  - {fileID: 21300000, guid: 66bbcf47c77499140ac0fb370100d2cf, type: 3}
+  - {fileID: 21300000, guid: cadc1773fb9274e42b0e20607a2f5225, type: 3}

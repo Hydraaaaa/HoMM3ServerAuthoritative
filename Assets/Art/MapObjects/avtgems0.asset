@@ -12,5 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avtgems0
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 00ee4ae5b388c9d4e90bab2f7c97a5c0, type: 3}
+  - {fileID: 21300000, guid: 74ea1badd714e5f4999e5fd81ed5fad5, type: 3}
+  - {fileID: 21300000, guid: 878eb7c03c9fd3640b17a544869eac9b, type: 3}
+  - {fileID: 21300000, guid: 64b9c28e67974594f8348e54e797fb64, type: 3}
+  - {fileID: 21300000, guid: 625e006e1ef9f6948814f5df5fb444da, type: 3}
+  - {fileID: 21300000, guid: 3da3715f8ad2b9345928ff0ebd6f3c92, type: 3}
+  - {fileID: 21300000, guid: cc0c433c2f3253846915b9864284ae0e, type: 3}
+  - {fileID: 21300000, guid: e9f8969c66cd5074e8a4cd39a905ce04, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: bbf678c1d929f05408e7419ea9c9400f, type: 3}
+  - {fileID: 21300000, guid: 55a80b8c5e2780c40bae0104bd71b232, type: 3}
+  - {fileID: 21300000, guid: ea82490d7ad3f8a458c358d0d301ade8, type: 3}
+  - {fileID: 21300000, guid: 5c644d0b86cf12f44aeb06d72e8b2ff2, type: 3}
+  - {fileID: 21300000, guid: 99ed62e3ffb66554ab42f8dd3c08faa8, type: 3}
+  - {fileID: 21300000, guid: ca0828e50c3107445a6e4b5bd1d1ba20, type: 3}
+  - {fileID: 21300000, guid: 0f20ffc21cce066498efae00e4ee5f68, type: 3}
+  - {fileID: 21300000, guid: bdf99afb8786e5a46b86f611c620e03b, type: 3}

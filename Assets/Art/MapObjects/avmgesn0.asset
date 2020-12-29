@@ -12,5 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avmgesn0
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: b286b83978335b84f9bfd97592911613, type: 3}
+  - {fileID: 21300000, guid: 14603249b9dd8084db29bfe4f7e3a36a, type: 3}
+  - {fileID: 21300000, guid: e26c7a9bb0398064e9480ca16ba65130, type: 3}
+  - {fileID: 21300000, guid: cdcc18d9c965d2e4c9222c37c62168b4, type: 3}
+  - {fileID: 21300000, guid: fb3e0b5ebb8b89949bcd69d87cfe6743, type: 3}
+  - {fileID: 21300000, guid: 4c89eb1f65e2035488e748569d04f738, type: 3}
+  - {fileID: 21300000, guid: 58af250659b9eb24ba9b0defa44b01a5, type: 3}
+  - {fileID: 21300000, guid: 431b2a31c91917b40a3d1a19196afc55, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: ffabbeaff1200ed48a14144310204e05, type: 3}
+  - {fileID: 21300000, guid: 0939dacad66eea444bf70cc9af62ec94, type: 3}
+  - {fileID: 21300000, guid: d40cb5b6a2549114ea67eb7fb8d078c1, type: 3}
+  - {fileID: 21300000, guid: 832129a4bd2544949ba5f5d7629678d9, type: 3}
+  - {fileID: 21300000, guid: 60549ce9471ec4047aeb051a6a0ac349, type: 3}
+  - {fileID: 21300000, guid: 30b5dc06b1424b145ae7cbf26b2c04ab, type: 3}
+  - {fileID: 21300000, guid: 82c566659d3fca44f85db0fbb6548c82, type: 3}
+  - {fileID: 21300000, guid: 0452ef80a77b3f844be618e065ee19fe, type: 3}

@@ -12,5 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avxmp3
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: fa0d2c4f8e446e04bacaa3b4191aaa4f, type: 3}
+  - {fileID: 21300000, guid: b4dda700d37eec84988158f0c5c63de4, type: 3}
+  - {fileID: 21300000, guid: 866fed933b654c74ca3d8f422baad422, type: 3}
+  - {fileID: 21300000, guid: dd200c945f42c9a40a4a5686d756b9e1, type: 3}
+  - {fileID: 21300000, guid: ede2535f19de00f4c9093cd7bc45595f, type: 3}
+  - {fileID: 21300000, guid: bc39777aa166e234f8c808f75f42e945, type: 3}
+  - {fileID: 21300000, guid: 7f72cefce51c6494389be642f9788c3c, type: 3}
+  - {fileID: 21300000, guid: e9ff9bac46c4b7e469df0751b636ee6d, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 9bc5da7c96fd29e48929df9988af4e96, type: 3}
+  - {fileID: 21300000, guid: c65c43364d3943f419b4cd3417891178, type: 3}
+  - {fileID: 21300000, guid: 23215744bc361d64f8a9d74829321111, type: 3}
+  - {fileID: 21300000, guid: 3eb87dd3383c4fd4890e09eab510eb83, type: 3}
+  - {fileID: 21300000, guid: 159e9bc9d2c95cf40b3bbfd3e155d29a, type: 3}
+  - {fileID: 21300000, guid: 8a0806a1ff28a4244829941efae36750, type: 3}
+  - {fileID: 21300000, guid: f93d5081f59bd8241b369ad28681590e, type: 3}
+  - {fileID: 21300000, guid: c7465e552cbf8dc4ca6423d95aca234a, type: 3}

@@ -12,5 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: lavdelt1
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 604b9d1b93c92f74c82e5ce65305da41, type: 3}
+  - {fileID: 21300000, guid: ee32d13fa6e7e87428777c504aab7ca9, type: 3}
+  - {fileID: 21300000, guid: ef086f1be4c79e8488284a9619e56b9b, type: 3}
+  - {fileID: 21300000, guid: e63892538217bbb4f91532f8257999f1, type: 3}
+  - {fileID: 21300000, guid: eed0896ad319ad94f9bac643d1d3add4, type: 3}
+  - {fileID: 21300000, guid: 41dd3fe3db0982041bda98a780e7a838, type: 3}
+  - {fileID: 21300000, guid: dbffac47ae100774784ccc507b444cb7, type: 3}
+  - {fileID: 21300000, guid: 7e0d13d17a61e534d85a11a88365e68e, type: 3}
+  - {fileID: 21300000, guid: f766597a9e1ae994ca5dd52655cdc6a6, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: f4e4f383d8699494495a81697167f801, type: 3}
+  - {fileID: 21300000, guid: 2858690dd3ac2d346afd2b48a1b0f852, type: 3}
+  - {fileID: 21300000, guid: c256efc63b7392f4bb713f8f1fd08eac, type: 3}
+  - {fileID: 21300000, guid: 8e74c8369d795db419b80d7f1c6b1249, type: 3}
+  - {fileID: 21300000, guid: 8684639aaed651845bdb79858137f382, type: 3}
+  - {fileID: 21300000, guid: a130739351150344588bc73cdebb865d, type: 3}
+  - {fileID: 21300000, guid: bdf5474a5d8642d4d9aa8c523e693ead, type: 3}
+  - {fileID: 21300000, guid: e249245d473f0a34194ee3ecc06b11a5, type: 3}
+  - {fileID: 21300000, guid: 3b30bd356e9d87741bfe81c907d40a10, type: 3}
