@@ -5,8 +5,8 @@ using UnityEngine;
 public class TerrainTileObject : MonoBehaviour
 {
     public SpriteRenderer Renderer => m_Renderer;
-    public SimpleAnimation Animation => m_Animation;
+    public MapObjectRenderer AnimationRenderer => m_AnimationRenderer;
 
     [SerializeField] SpriteRenderer m_Renderer = null;
-    [SerializeField] SimpleAnimation m_Animation = null;
+    [SerializeField] MapObjectRenderer m_AnimationRenderer = null;
 }

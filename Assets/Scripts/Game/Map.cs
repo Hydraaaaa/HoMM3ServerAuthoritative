@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -7,6 +8,13 @@ using UnityEngine.ResourceManagement.ResourceLocations;
 
 public class Map : MonoBehaviour
 {
+    [Serializable]
+    public class SpriteArrayContainer
+    {
+        [NonReorderable]
+        public Sprite[] Array;
+    }
+
     const int WATER_TILE_INDEX = 8;
     const int CLEAR_RIVER_INDEX = 1;
     const int LAVA_RIVER_INDEX = 4;
@@ -51,24 +59,24 @@ public class Map : MonoBehaviour
     [SerializeField] List<Sprite> m_RoughSprites = null;
     [SerializeField] List<Sprite> m_SubterraneanSprites = null;
     [SerializeField] List<Sprite> m_LavaSprites = null;
-    [SerializeField] List<Sprite> m_WaterSprites = null;
     [SerializeField] List<Sprite> m_RockSprites = null;
 
     [Space]
 
-    [SerializeField] List<AnimationClip> m_WaterAnimations = null;
+    [NonReorderable]
+    [SerializeField] List<SpriteArrayContainer> m_WaterAnimations = null;
 
     [Space]
 
-    [SerializeField] List<Sprite> m_ClearRiverSprites = null;
     [SerializeField] List<Sprite> m_IcyRiverSprites = null;
     [SerializeField] List<Sprite> m_MuddyRiverSprites = null;
-    [SerializeField] List<Sprite> m_LavaRiverSprites = null;
     
     [Space]
 
-    [SerializeField] List<AnimationClip> m_ClearRiverAnimations = null;
-    [SerializeField] List<AnimationClip> m_LavaRiverAnimations = null;
+    [NonReorderable]
+    [SerializeField] List<SpriteArrayContainer> m_ClearRiverAnimations = null;
+    [NonReorderable]
+    [SerializeField] List<SpriteArrayContainer> m_LavaRiverAnimations = null;
 
     [Space]
 
@@ -101,14 +109,14 @@ public class Map : MonoBehaviour
         m_TerrainSprites.Add(m_RoughSprites);
         m_TerrainSprites.Add(m_SubterraneanSprites);
         m_TerrainSprites.Add(m_LavaSprites);
-        m_TerrainSprites.Add(m_WaterSprites);
+        m_TerrainSprites.Add(new List<Sprite>());
         m_TerrainSprites.Add(m_RockSprites);
 
         m_RiverSprites = new List<List<Sprite>>();
-        m_RiverSprites.Add(m_ClearRiverSprites);
+        m_RiverSprites.Add(new List<Sprite>());
         m_RiverSprites.Add(m_IcyRiverSprites);
         m_RiverSprites.Add(m_MuddyRiverSprites);
-        m_RiverSprites.Add(m_LavaRiverSprites);
+        m_RiverSprites.Add(new List<Sprite>());
 
         m_RoadSprites = new List<List<Sprite>>();
         m_RoadSprites.Add(m_DirtRoadSprites);
@@ -152,16 +160,7 @@ public class Map : MonoBehaviour
                 {
                     if (_Terrain[_Index].TerrainType == WATER_TILE_INDEX)
                     {
-                        if (m_WaterAnimations[_Terrain[_Index].TerrainSpriteID] != null)
-                        {
-                            _TileObject.Animation.AddClip(m_WaterAnimations[_Terrain[_Index].TerrainSpriteID], "Default");
-                            _TileObject.Animation.clip = m_WaterAnimations[_Terrain[_Index].TerrainSpriteID];
-                            _TileObject.Animation.Play();
-                        }
-                        else
-                        {
-                            _TileObject.Renderer.sprite = m_TerrainSprites[_Terrain[_Index].TerrainType][_Terrain[_Index].TerrainSpriteID];
-                        }
+                        _TileObject.AnimationRenderer.SetSprites(m_WaterAnimations[_Terrain[_Index].TerrainSpriteID].Array);
                     }
                     else if (_Terrain[_Index].TerrainSpriteID < m_TerrainSprites[_Terrain[_Index].TerrainType].Count)
                     {
@@ -197,29 +196,11 @@ public class Map : MonoBehaviour
                     {
                         if (_Terrain[_Index].RiverType == CLEAR_RIVER_INDEX)
                         {
-                            if (m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID] != null)
-                            {
-                                _TileObject.Animation.AddClip(m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID];
-                                _TileObject.Animation.Play();
-                            }
-                            else
-                            {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_Terrain[_Index].RiverType - 1][_Terrain[_Index].RiverSpriteID];
-                            }
+                            _TileObject.AnimationRenderer.SetSprites(m_ClearRiverAnimations[_Terrain[_Index].RiverSpriteID].Array);
                         }
                         else if (_Terrain[_Index].RiverType == LAVA_RIVER_INDEX)
                         {
-                            if (m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID] != null)
-                            {
-                                _TileObject.Animation.AddClip(m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID];
-                                _TileObject.Animation.Play();
-                            }
-                            else
-                            {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_Terrain[_Index].RiverType - 1][_Terrain[_Index].RiverSpriteID];
-                            }
+                            _TileObject.AnimationRenderer.SetSprites(m_LavaRiverAnimations[_Terrain[_Index].RiverSpriteID].Array);
                         }
                         else if (_Terrain[_Index].RiverSpriteID < m_RiverSprites[_Terrain[_Index].RiverType - 1].Count)
                         {
@@ -311,9 +292,7 @@ public class Map : MonoBehaviour
                         {
                             if (m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID] != null)
                             {
-                                _TileObject.Animation.AddClip(m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID], "Default");
-                                _TileObject.Animation.clip = m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID];
-                                _TileObject.Animation.Play();
+                                _TileObject.AnimationRenderer.SetSprites(m_WaterAnimations[_UndergroundTerrain[_Index].TerrainSpriteID].Array);
                             }
                         }
                         else if (_UndergroundTerrain[_Index].TerrainSpriteID < m_TerrainSprites[_UndergroundTerrain[_Index].TerrainType].Count)
@@ -348,29 +327,11 @@ public class Map : MonoBehaviour
 
                         if (_UndergroundTerrain[_Index].RiverType == CLEAR_RIVER_INDEX)
                         {
-                            if (m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID] != null)
-                            {
-                                _TileObject.Animation.AddClip(m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID];
-                                _TileObject.Animation.Play();
-                            }
-                            else
-                            {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1][_UndergroundTerrain[_Index].RiverSpriteID];
-                            }
+                            _TileObject.AnimationRenderer.SetSprites(m_ClearRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID].Array);
                         }
                         else if (_UndergroundTerrain[_Index].RiverType == LAVA_RIVER_INDEX)
                         {
-                            if (m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID] != null)
-                            {
-                                _TileObject.Animation.AddClip(m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID], "Default");
-                                _TileObject.Animation.clip = m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID];
-                                _TileObject.Animation.Play();
-                            }
-                            else
-                            {
-                                _TileObject.Renderer.sprite = m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1][_UndergroundTerrain[_Index].RiverSpriteID];
-                            }
+                            _TileObject.AnimationRenderer.SetSprites(m_LavaRiverAnimations[_UndergroundTerrain[_Index].RiverSpriteID].Array);
                         }
                         else if (_UndergroundTerrain[_Index].RiverSpriteID < m_RiverSprites[_UndergroundTerrain[_Index].RiverType - 1].Count)
                         {
@@ -475,27 +436,18 @@ public class Map : MonoBehaviour
             yield break;
         }
 
-        if (_Operation.Result.Animation != null)
+        _MapObject.Renderer.SetSprites(_Operation.Result.Sprites);
+
+        if (_Operation.Result.Sprites.Length == 0)
         {
-            // This asset is animated, load animations
-            _MapObject.Animation.AddClip(_Operation.Result.Animation, "Default");
-            _MapObject.Animation.clip = _Operation.Result.Animation;
-            _MapObject.Animation.Play();
-        }
-        else
-        {
-            _MapObject.SpriteRenderer.sprite = _Operation.Result.Sprite;
+            Debug.Log($"!! FAILED - {_Operation.Result.name}");
         }
 
-        if (_Operation.Result.ShadowAnimation != null)
+        _ShadowObject.Renderer.SetSprites(_Operation.Result.ShadowSprites);
+
+        if (_Operation.Result.Sprites.Length == 0)
         {
-            _ShadowObject.Animation.AddClip(_Operation.Result.ShadowAnimation, "Default");
-            _ShadowObject.Animation.clip = _Operation.Result.ShadowAnimation;
-            _ShadowObject.Animation.Play();
-        }
-        else
-        {
-            _ShadowObject.SpriteRenderer.sprite = _Operation.Result.ShadowSprite;
+            Debug.Log($"!! SHADOW - {_Operation.Result.name}");
         }
     }
 }

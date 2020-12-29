@@ -5,13 +5,9 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ScenarioObjectVisualData : ScriptableObject
 {
-    public Sprite Sprite => m_Sprite;
-    public Sprite ShadowSprite => m_ShadowSprite;
-    public AnimationClip Animation => m_Animation;
-    public AnimationClip ShadowAnimation => m_ShadowAnimation;
+    public Sprite[] Sprites => m_Sprites;
+    public Sprite[] ShadowSprites => m_ShadowSprites;
 
-    [SerializeField] Sprite m_Sprite = null;
-    [SerializeField] Sprite m_ShadowSprite = null;
-    [SerializeField] AnimationClip m_Animation = null;
-    [SerializeField] AnimationClip m_ShadowAnimation = null;
+    [SerializeField] public Sprite[] m_Sprites = null;
+    [SerializeField] public Sprite[] m_ShadowSprites = null;
 }

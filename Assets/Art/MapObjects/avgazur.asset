@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avgazur
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: d82e4e2f176a29f4eb21a4b865e7bfc1, type: 3}
-  m_ShadowSprite: {fileID: 21300000, guid: 2ab6683aaf4f71542898db4867ffd062, type: 3}
-  m_Animation: {fileID: 0}
-  m_ShadowAnimation: {fileID: 0}
+  m_Sprites:
+  - {fileID: 21300000, guid: d82e4e2f176a29f4eb21a4b865e7bfc1, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 2ab6683aaf4f71542898db4867ffd062, type: 3}

@@ -5,12 +5,12 @@ using UnityEngine;
 public class MapObject : MonoBehaviour
 {
     public SpriteRenderer SpriteRenderer => m_SpriteRenderer;
-    public SimpleAnimation Animation => m_Animation;
+    public MapObjectRenderer Renderer => m_Renderer;
 
     public PlayerColors PlayerColors => m_PlayerColors;
 
     [SerializeField] protected SpriteRenderer m_SpriteRenderer = null;
-    [SerializeField] protected SimpleAnimation m_Animation = null;
+    [SerializeField] protected MapObjectRenderer m_Renderer = null;
 
     [Space]
 

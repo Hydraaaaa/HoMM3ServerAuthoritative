@@ -5,10 +5,10 @@ using UnityEngine;
 public class MapShadowObject : MonoBehaviour
 {
     public SpriteRenderer SpriteRenderer => m_SpriteRenderer;
-    public SimpleAnimation Animation => m_Animation;
+    public MapObjectRenderer Renderer => m_Renderer;
 
     [SerializeField] protected SpriteRenderer m_SpriteRenderer = null;
-    [SerializeField] protected SimpleAnimation m_Animation = null;
+    [SerializeField] protected MapObjectRenderer m_Renderer = null;
 
     protected MapObject m_Parent;
 

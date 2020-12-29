@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avg2elw
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
-  m_ShadowSprite: {fileID: 0}
-  m_Animation: {fileID: 7400000, guid: 5bc57e950f3ad2c41904e35ad648f235, type: 2}
-  m_ShadowAnimation: {fileID: 7400000, guid: cae29af07fd3bfc4297bb25cb423d8f1, type: 2}
+  m_Sprites:
+  - {fileID: 21300000, guid: dba19dc04ef2c7b40ae1f2b8cfeaeb84, type: 3}
+  - {fileID: 21300000, guid: bf56ae26b13defd44973021cea2835a5, type: 3}
+  - {fileID: 21300000, guid: e1823b382593cd24e93d1c79303d1d63, type: 3}
+  - {fileID: 21300000, guid: 800e0e8da7eb13545bcf0a4f198754e5, type: 3}
+  - {fileID: 21300000, guid: ba2cfa1535d472c4683f578139832476, type: 3}
+  - {fileID: 21300000, guid: fd353f3d9aa1c9646b31e6c74791e40c, type: 3}
+  - {fileID: 21300000, guid: 308434801d9011d4bac2d1e3d7b8712c, type: 3}
+  - {fileID: 21300000, guid: bc9fbba8ac7586445bb3c486c618328c, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 451cea39e5cfaa949a8aee87ebded643, type: 3}
+  - {fileID: 21300000, guid: 9f93a1213c69715418516a5fd3d6ea88, type: 3}
+  - {fileID: 21300000, guid: 0f969fc3c01511747a3b040f7b4cf7f4, type: 3}
+  - {fileID: 21300000, guid: 23b3e3ae3a7c490438e0bc39c5354214, type: 3}
+  - {fileID: 21300000, guid: c3dae1e9aa60f3f4380316be34d3b44b, type: 3}
+  - {fileID: 21300000, guid: 518e677d9ece144439fff6e134d8e799, type: 3}
+  - {fileID: 21300000, guid: ad3bcc48aad47df4181deaf1d9dbfe84, type: 3}
+  - {fileID: 21300000, guid: 28cb235ac49b07549b2079627fd54d23, type: 3}

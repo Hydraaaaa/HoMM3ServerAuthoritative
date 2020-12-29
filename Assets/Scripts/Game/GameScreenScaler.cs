@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class GameScreenScaler : MonoBehaviour
 {
+    public const int VIEWPORT_PADDING_TOP = 8;
+    public const int VIEWPORT_PADDING_BOTTOM = 48;
+    public const int VIEWPORT_PADDING_LEFT = 8;
+    public const int VIEWPORT_PADDING_RIGHT = 200;
     [SerializeField] Camera m_Camera = null;
     [SerializeField] GameObject m_Sidebar = null;
     [SerializeField] GameObject m_SidebarSmall = null;
 
-    [SerializeField] int m_PaddingTop = 0;
-    [SerializeField] int m_PaddingBottom = 0;
-    [SerializeField] int m_PaddingLeft = 0;
-    [SerializeField] int m_PaddingRight = 0;
-
     void Update()
     {
-        float _Width = Screen.width - m_PaddingLeft - m_PaddingRight;
-        float _Height = Screen.height - m_PaddingBottom - m_PaddingTop;
+        float _Width = Screen.width - VIEWPORT_PADDING_LEFT - VIEWPORT_PADDING_RIGHT;
+        float _Height = Screen.height - VIEWPORT_PADDING_TOP - VIEWPORT_PADDING_BOTTOM;
 
         if (_Height % 2 == 1)
         {
             _Height += 1;
         }
 
-        m_Camera.pixelRect = new Rect(m_PaddingLeft, m_PaddingBottom, _Width, _Height);
+        m_Camera.pixelRect = new Rect(VIEWPORT_PADDING_LEFT, VIEWPORT_PADDING_BOTTOM, _Width, _Height);
 
         if (Screen.height >= 664)
         {

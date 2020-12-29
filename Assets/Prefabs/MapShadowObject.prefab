@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3398939445777129918}
   - component: {fileID: 6709282617133852856}
-  - component: {fileID: 2521909470896989076}
-  - component: {fileID: -6994913805401072780}
   - component: {fileID: -2725442899062352785}
+  - component: {fileID: 5339977529892727807}
   m_Layer: 0
   m_Name: MapShadowObject
   m_TagString: Untagged
@@ -49,6 +48,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -84,46 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2521909470896989076
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3631958505645230344}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-6994913805401072780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3631958505645230344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3759e2aae0f7b9a47bb98fc64bf3c543, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingMode: 0
-  m_WrapMode: 0
-  m_Clip: {fileID: 0}
-  m_States:
-  - clip: {fileID: 0}
-    name: Default
-    defaultState: 1
 --- !u!114 &-2725442899062352785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,4 +97,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SpriteRenderer: {fileID: 6709282617133852856}
-  m_Animation: {fileID: -6994913805401072780}
+  m_Renderer: {fileID: 5339977529892727807}
+--- !u!114 &5339977529892727807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631958505645230344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1ed0eea5e690f4a9521e09fd346b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpriteRenderer: {fileID: 6709282617133852856}
