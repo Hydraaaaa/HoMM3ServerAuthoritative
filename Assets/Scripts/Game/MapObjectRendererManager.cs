@@ -31,7 +31,7 @@ public class MapObjectRendererManager : MonoBehaviour
         int _ScreenHeight = Screen.height - GameScreenScaler.VIEWPORT_PADDING_TOP - GameScreenScaler.VIEWPORT_PADDING_BOTTOM;
 
         Vector2Int _MinBounds = new Vector2Int((int)m_Camera.transform.position.x - Mathf.CeilToInt(_ScreenWidth / 64), (int)m_Camera.transform.position.y - Mathf.CeilToInt(_ScreenHeight / 64) - 1);
-        Vector2Int _MaxBounds = new Vector2Int((int)m_Camera.transform.position.x + Mathf.CeilToInt(_ScreenWidth / 64) + 1, (int)m_Camera.transform.position.y + Mathf.CeilToInt(_ScreenHeight / 64));
+        Vector2Int _MaxBounds = new Vector2Int((int)m_Camera.transform.position.x + Mathf.CeilToInt(_ScreenWidth / 64) + 3, (int)m_Camera.transform.position.y + Mathf.CeilToInt(_ScreenHeight / 64));
 
         int _Frame = Mathf.FloorToInt(Time.time * 5.5f);
 
