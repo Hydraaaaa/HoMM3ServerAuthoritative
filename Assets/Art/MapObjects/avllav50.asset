@@ -12,5 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avllav50
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 95900e27fcfd6b04d932a5f2d20eaa9b, type: 3}
+  - {fileID: 21300000, guid: e67b73d17cfd05b4d9b200c129a4c5a5, type: 3}
+  - {fileID: 21300000, guid: 6964b241d120c0d48a3e5290c87ca585, type: 3}
+  - {fileID: 21300000, guid: 6a7eb6f5b26ee164bb7f696906a34b6a, type: 3}
+  - {fileID: 21300000, guid: ee2ee2284e13a5845af9e5e885e30ada, type: 3}
+  - {fileID: 21300000, guid: ad64cbcb48607fb42a07c6ecefc5e4db, type: 3}
+  - {fileID: 21300000, guid: 0284dd4f02ccf2043b6937cb96748aaf, type: 3}
+  - {fileID: 21300000, guid: 423d3ab825a1aad499a84a9869060fe8, type: 3}
+  - {fileID: 21300000, guid: 323ac3e501216b34d8e36490bd3793d0, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 07bcd8f92aa8b9648a1c6df72823e6f8, type: 3}
+  - {fileID: 21300000, guid: 57ee0b04c5ccc0f4ea64895567b2081a, type: 3}
+  - {fileID: 21300000, guid: 1691de36e23981d4aaf66bfc875497b7, type: 3}
+  - {fileID: 21300000, guid: a09f021e4bc8f7443be454834122e8a9, type: 3}
+  - {fileID: 21300000, guid: 424b2e93fb36b2441aea32fcf899e2db, type: 3}
+  - {fileID: 21300000, guid: e0326147bd39cbc4db2b73d29bee3867, type: 3}
+  - {fileID: 21300000, guid: d540066bd674e294d9191e27108bf83d, type: 3}
+  - {fileID: 21300000, guid: b81278333c80ab4439edfe1ac8dd6f2d, type: 3}
+  - {fileID: 21300000, guid: 630f92422b2b4644f884dea1f2bf3f4f, type: 3}

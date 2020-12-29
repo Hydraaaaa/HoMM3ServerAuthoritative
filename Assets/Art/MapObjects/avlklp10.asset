@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avlklp10
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 2fb94910608aa454f88aef295c4b6e20, type: 3}
+  - {fileID: 21300000, guid: fe66463cdb35aa944a98ca49ec9d3f36, type: 3}
+  - {fileID: 21300000, guid: b216950a454e5d841afa43acbd37076e, type: 3}
+  - {fileID: 21300000, guid: 7fa7de7d7ff1ce647825e4d68184ce2c, type: 3}
+  - {fileID: 21300000, guid: 4ca2759de35634543a2786204a74403a, type: 3}
+  - {fileID: 21300000, guid: 761de5960a83631449fdc591b3e00914, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: deb1f71e1d4f63f478c1709abfe1a449, type: 3}
+  - {fileID: 21300000, guid: c527017ca1b342048a3b78e5969ed6d1, type: 3}
+  - {fileID: 21300000, guid: ad6b42bd6b652434184e722578622deb, type: 3}
+  - {fileID: 21300000, guid: 093d51bf6bf966c41af735b7d726511e, type: 3}
+  - {fileID: 21300000, guid: 0b2eab46de13e3b4bb82997a303af152, type: 3}
+  - {fileID: 21300000, guid: 7f021d9986f8bfe41ad1f28deb5c3775, type: 3}
