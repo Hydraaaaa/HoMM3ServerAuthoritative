@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avcinfx0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: aad9e330d529b45409da59d9017f532d, type: 3}
-  m_ShadowSprite: {fileID: 21300000, guid: a1e065d8d9909234e90ca0fcca765db6, type: 3}
-  m_Animation: {fileID: 0}
-  m_ShadowAnimation: {fileID: 0}
+  m_Sprites: []
+  m_ShadowSprites: []

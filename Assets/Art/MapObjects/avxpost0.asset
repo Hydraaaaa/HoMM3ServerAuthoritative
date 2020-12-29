@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avxpost0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
-  m_ShadowSprite: {fileID: 0}
-  m_Animation: {fileID: 7400000, guid: 6f96c65138fb4af43bc6d475bafb6cdd, type: 2}
-  m_ShadowAnimation: {fileID: 7400000, guid: 74b2c9e588ddd2c4f86ae03807fe1a38, type: 2}
+  m_Sprites: []
+  m_ShadowSprites: []

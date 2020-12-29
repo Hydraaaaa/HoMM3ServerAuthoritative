@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avsbuoy0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
-  m_ShadowSprite: {fileID: 0}
-  m_Animation: {fileID: 7400000, guid: f11c5ace8d2f1214c9aedc84246714a0, type: 2}
-  m_ShadowAnimation: {fileID: 7400000, guid: f034505866ded8143b2075f6467a1b6c, type: 2}
+  m_Sprites: []
+  m_ShadowSprites: []

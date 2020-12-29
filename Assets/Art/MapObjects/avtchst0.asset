@@ -12,8 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avtchst0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
-  m_ShadowSprite: {fileID: 21300000, guid: 8d1eb668ec7df40488d67be05ce754cc, type: 3}
-  m_Animation: {fileID: 7400000, guid: 010d929615100a945b7f1d9f62d33468, type: 2}
-  m_ShadowAnimation: {fileID: 0}
-  m_IsLowerSortOrderPriority: 0
+  m_Sprites: []
+  m_ShadowSprites: []
