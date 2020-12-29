@@ -12,5 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avlvol50
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: ca1086d2bc5723a488bd844137f02bfd, type: 3}
+  - {fileID: 21300000, guid: 5f714d9997f25534397c2e967cb6f9f9, type: 3}
+  - {fileID: 21300000, guid: 7bfba1d504ab7d94b80acc3d4df5a714, type: 3}
+  - {fileID: 21300000, guid: 80431a501d0a1284483acb1441e69331, type: 3}
+  - {fileID: 21300000, guid: 7e1405c9ae2790241a0e14e6f089717c, type: 3}
+  - {fileID: 21300000, guid: 0da5200e188bba649be071fbd437353c, type: 3}
+  - {fileID: 21300000, guid: 2358aea185e834441b67e41da3e21ca2, type: 3}
+  - {fileID: 21300000, guid: 7339175563e3c7746a0ee8dddef0febd, type: 3}
+  - {fileID: 21300000, guid: 99821a2543a181845b78c16414cd8bfa, type: 3}
+  - {fileID: 21300000, guid: d3ab74f537b24b646a2cab925f87f4d1, type: 3}
+  - {fileID: 21300000, guid: 42fef47069ede07489b56505dc0bff0c, type: 3}
+  - {fileID: 21300000, guid: 81812a008888c3d488893814cd6ef2a1, type: 3}
+  - {fileID: 21300000, guid: 5f022319e21bc73438fc053e935c1830, type: 3}
+  - {fileID: 21300000, guid: a70842c0ec64adc4e8d95ad155b07e3e, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 8c361cf4dc9ead243b527719d5377c53, type: 3}
+  - {fileID: 21300000, guid: 41503416358618e49bd68b7868c3012d, type: 3}
+  - {fileID: 21300000, guid: 2e985d13f54556140a62d08d92ef1a4c, type: 3}
+  - {fileID: 21300000, guid: e14eca14ebe44a74582bb6fcd4fa2b0f, type: 3}
+  - {fileID: 21300000, guid: d47b893699cb3d84eb699a51b747135e, type: 3}
+  - {fileID: 21300000, guid: 88719dfe9cd523749b76b30f96560b8f, type: 3}
+  - {fileID: 21300000, guid: 46bf7d85e7aeb524895586fca414d173, type: 3}
+  - {fileID: 21300000, guid: f4812e43e329449438986e101d48e68b, type: 3}
+  - {fileID: 21300000, guid: 565bec035a8c2884ebcf0146d5697d27, type: 3}
+  - {fileID: 21300000, guid: 3deb21d473e8a0d419fbb7c2e9967acb, type: 3}
+  - {fileID: 21300000, guid: 0dc7e7cf4409833489a8e1926206d24b, type: 3}
+  - {fileID: 21300000, guid: 42c4299193483f549a8e45db47895536, type: 3}
+  - {fileID: 21300000, guid: 9c470d406b9f6a2438be2dc75138c3d5, type: 3}
+  - {fileID: 21300000, guid: 6d9e7b5a3dc307a4b9bee6df52fe608e, type: 3}
