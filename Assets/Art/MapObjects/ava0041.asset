@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: ava0041
   m_EditorClassIdentifier: 
-  m_Sprites: []
-  m_ShadowSprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: fb588d6b9fd977e41aa54a8c6a340cfb, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 16f7df86983eb2a4a8ab1b313f8ecfde, type: 3}
