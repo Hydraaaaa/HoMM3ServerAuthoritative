@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
   m_Name: avlr2sn0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: dd55f0f49c3ee4c48a32d5e523e82d03, type: 3}
-  m_ShadowSprite: {fileID: 21300000, guid: ed866c9cc157b944ba40ff966b3e86a1, type: 3}
-  m_Animation: {fileID: 0}
-  m_ShadowAnimation: {fileID: 0}
+  m_Sprites:
+  - {fileID: 21300000, guid: dd55f0f49c3ee4c48a32d5e523e82d03, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: ed866c9cc157b944ba40ff966b3e86a1, type: 3}
