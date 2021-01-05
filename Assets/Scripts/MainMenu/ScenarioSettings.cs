@@ -40,10 +40,13 @@ public class ScenarioSettings : MonoBehaviour
             {
                 m_Players[_CurrentPlayer].gameObject.SetActive(true);
                 m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i]);
+                m_Players[_CurrentPlayer].SetName("Computer");
 
                 _CurrentPlayer++;
             }
         }
+
+        m_Players[m_GameSettings.LocalPlayerIndex].SetName("Player");
 
         for (int i = _CurrentPlayer; i < 8; i++)
         {
@@ -106,11 +109,11 @@ public class ScenarioSettings : MonoBehaviour
 
     public void FlagPressed(ScenarioSettingsPlayer a_Player)
     {
-        // TODO: Set local player text as Computer
+        m_Players[m_GameSettings.LocalPlayerIndex].SetName("Computer");
 
         m_GameSettings.LocalPlayerIndex = a_Player.PlayerIndex;
 
-        // TODO: Set new local player text as Player
+        m_Players[m_GameSettings.LocalPlayerIndex].SetName("Player");
 
         UpdateFlags();
     }

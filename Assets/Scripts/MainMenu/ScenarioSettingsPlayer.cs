@@ -11,6 +11,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] ScenarioSettings m_ScenarioSettings = null;
     [SerializeField] Image m_BackgroundImage = null;
     [SerializeField] Button m_FlagButton = null;
+    [SerializeField] Text m_NameText = null;
 
     [Space]
 
@@ -35,6 +36,11 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_FlagButton.spriteState = _State;
 
         m_FlagButton.gameObject.SetActive(a_PlayerInfo.HumanPlayable);
+    }
+
+    public void SetName(string a_Name)
+    {
+        m_NameText.text = a_Name;
     }
 
     public void FlagPressed()
