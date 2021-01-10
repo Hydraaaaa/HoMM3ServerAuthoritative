@@ -12,6 +12,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] Image m_BackgroundImage = null;
     [SerializeField] Button m_FlagButton = null;
     [SerializeField] Text m_NameText = null;
+    [SerializeField] Text m_HumanOrCPUText = null;
 
     [Space]
 
@@ -36,6 +37,25 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_FlagButton.spriteState = _State;
 
         m_FlagButton.gameObject.SetActive(a_PlayerInfo.HumanPlayable);
+
+        if (a_PlayerInfo.HumanPlayable)
+        {
+            m_HumanOrCPUText.text = "Human or CPU";
+            m_HumanOrCPUText.rectTransform.anchoredPosition = new Vector2
+            (
+                m_HumanOrCPUText.rectTransform.anchoredPosition.x,
+                -23
+            );
+        }
+        else
+        {
+            m_HumanOrCPUText.text = "CPU";
+            m_HumanOrCPUText.rectTransform.anchoredPosition = new Vector2
+            (
+                m_HumanOrCPUText.rectTransform.anchoredPosition.x,
+                -22
+            );
+        }
     }
 
     public void SetName(string a_Name)
