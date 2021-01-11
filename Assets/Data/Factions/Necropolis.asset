@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
+  m_Name: Necropolis
+  m_EditorClassIdentifier: 
+  m_TownSprite: {fileID: 21300000, guid: 379999744aa2bf344a43fa59dea58d45, type: 3}
+  m_TownBuiltSprite: {fileID: 21300000, guid: 0ba6be3b791df6448956650bdf256a5e, type: 3}
+  m_TownNoFortSprite: {fileID: 21300000, guid: 7ea7724b8a73dc1458d4dfff9ae64b04, type: 3}
+  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: da9267488bd4ab84e83f9e5ba9eebb8a,
+    type: 3}
+  m_Heroes:
+  - {fileID: 11400000, guid: 268e890045f251e42a86b1e6ab8dd7b0, type: 2}
+  - {fileID: 11400000, guid: 712b824649dbfbb4f99e7c3f93dd3be6, type: 2}
+  - {fileID: 11400000, guid: 5715289703b62e14aa987d735d625a30, type: 2}
+  - {fileID: 11400000, guid: 8cffb822be34d844995ef61dcf0d8b1b, type: 2}
+  - {fileID: 11400000, guid: ce60e58821e8b8b498243774f90787d6, type: 2}
+  - {fileID: 11400000, guid: a192bba1aa932f44c8ab447e50a4db66, type: 2}
+  - {fileID: 11400000, guid: af84d3d0d5de07d4e843d7ce6d47cb42, type: 2}
+  - {fileID: 11400000, guid: e48e0adeba12d254fb7ac44d3b4ea511, type: 2}
+  - {fileID: 11400000, guid: b3972eb0526dc7b42be00eb39f0948b7, type: 2}
+  - {fileID: 11400000, guid: a3a351918e5790145a0e6f84c1f458ca, type: 2}
+  - {fileID: 11400000, guid: a4ff63ccb9c991f4a8dceee57fd29d2f, type: 2}
+  - {fileID: 11400000, guid: 356b2139dee4cfd48bcf73c8f56f87af, type: 2}
+  - {fileID: 11400000, guid: 40a159be5bdbc7b49882dee12ae0edd7, type: 2}
+  - {fileID: 11400000, guid: b63ebd6a519cefe4da9d388331af1800, type: 2}
+  - {fileID: 11400000, guid: 4f244a74446781b4fa0919fc3a4fc0a9, type: 2}
+  - {fileID: 11400000, guid: 28a5a6aa7284fdd4282cbca089f684ab, type: 2}

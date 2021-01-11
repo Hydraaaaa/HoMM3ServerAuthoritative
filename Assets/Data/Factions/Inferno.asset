@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
+  m_Name: Inferno
+  m_EditorClassIdentifier: 
+  m_TownSprite: {fileID: 21300000, guid: 24ab4bd00629653468b361b3ee820de5, type: 3}
+  m_TownBuiltSprite: {fileID: 21300000, guid: 09cccef2ef87f924bbe0a90ba9dd69f6, type: 3}
+  m_TownNoFortSprite: {fileID: 21300000, guid: 208166d679b07b345856127c472a03cf, type: 3}
+  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 71a603a5b72bd6a42b9e377989c238db,
+    type: 3}
+  m_Heroes:
+  - {fileID: 11400000, guid: f47bb18bf4f6e65499dba1eb842cf1cf, type: 2}
+  - {fileID: 11400000, guid: f7f57d3593a1b8f4ca247a56b870c5fc, type: 2}
+  - {fileID: 11400000, guid: 97de4de14b6aaad48ae4197bc6684e66, type: 2}
+  - {fileID: 11400000, guid: 480f41bb966afc143b4c931650f5e940, type: 2}
+  - {fileID: 11400000, guid: e68c3574ea0da0f4fb72bfdacca9caab, type: 2}
+  - {fileID: 11400000, guid: 8a8793766d8b1e446bcce0d5fc01c506, type: 2}
+  - {fileID: 11400000, guid: c0cbea8c5c5f6974eab89fc97eb65f25, type: 2}
+  - {fileID: 11400000, guid: bb0f0d1dbe9192b449de4c4d639fa291, type: 2}
+  - {fileID: 11400000, guid: c84a5cd3f726c154abf3659a4e20ddc2, type: 2}
+  - {fileID: 11400000, guid: ab4a206029ec9b84f813c02a6751d035, type: 2}
+  - {fileID: 11400000, guid: 0a0f5c2d835d28c4ea8e57cc6392b179, type: 2}
+  - {fileID: 11400000, guid: 21d874373a847fa4e895d46d5b22a562, type: 2}
+  - {fileID: 11400000, guid: 342443bcd6ca1fc41aefd64468cce1f9, type: 2}
+  - {fileID: 11400000, guid: 72b2a8d466f51804fb2f50c5df8d3261, type: 2}
+  - {fileID: 11400000, guid: aaf6e9a04f8138248835541e7106e493, type: 2}
+  - {fileID: 11400000, guid: 492897ed8f855b243ac3fbc150a6cd93, type: 2}

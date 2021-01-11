@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
+  m_Name: Castle
+  m_EditorClassIdentifier: 
+  m_TownSprite: {fileID: 21300000, guid: b9e72415c9da6f04383b1ac8cc07c837, type: 3}
+  m_TownBuiltSprite: {fileID: 21300000, guid: d3ee94fee826d8d4ebf9b8000b844fde, type: 3}
+  m_TownNoFortSprite: {fileID: 21300000, guid: 2eb9c601cffe90649aa04fed2c5cae45, type: 3}
+  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 008ea7ff066cd7b4482b332e09baaca6,
+    type: 3}
+  m_Heroes:
+  - {fileID: 11400000, guid: 808a9a49e80a77d4e81df4343fb483a9, type: 2}
+  - {fileID: 11400000, guid: 96383b7521dfae2429b9826fb3a1bc5b, type: 2}
+  - {fileID: 11400000, guid: 041d4e4708d2d3e46819438c5fe1b257, type: 2}
+  - {fileID: 11400000, guid: 70ee5c07c899f01469e19fa1b50951a0, type: 2}
+  - {fileID: 11400000, guid: 5a46b31331ac1414eb7a3154570dc7d9, type: 2}
+  - {fileID: 11400000, guid: b10557b13b711da439a4116385cbc7b9, type: 2}
+  - {fileID: 11400000, guid: 916be7318a93df945b1931bb9d76e112, type: 2}
+  - {fileID: 11400000, guid: 8af951b8bb47d8d42ab4339a6aff50f1, type: 2}
+  - {fileID: 11400000, guid: a6080404052d8c3478d673806e810bae, type: 2}
+  - {fileID: 11400000, guid: bc57b6a48c3d706458e02a7e0874e347, type: 2}
+  - {fileID: 11400000, guid: 278a07f594485db44927efb5d0615083, type: 2}
+  - {fileID: 11400000, guid: 98fa8adf9dfa4a7498e608b666b4eefa, type: 2}
+  - {fileID: 11400000, guid: ff025c147717c98469c28071bd395f03, type: 2}
+  - {fileID: 11400000, guid: 625468869df72ef4a9bf678b420c82f2, type: 2}
+  - {fileID: 11400000, guid: 4fde95771a80ee246bda6b87eb730c47, type: 2}
+  - {fileID: 11400000, guid: 581f93810ab32c942898c136a8313c00, type: 2}

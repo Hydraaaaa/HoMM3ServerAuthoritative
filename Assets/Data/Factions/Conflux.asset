@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
+  m_Name: Conflux
+  m_EditorClassIdentifier: 
+  m_TownSprite: {fileID: 21300000, guid: 92a4072b7998b2f40bebd419746029c5, type: 3}
+  m_TownBuiltSprite: {fileID: 21300000, guid: 7c1cae178e95f484f80c45ee8d870f40, type: 3}
+  m_TownNoFortSprite: {fileID: 21300000, guid: 67447edb36f99d84d98b32db8f617a1e, type: 3}
+  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: aa57edbf5ef716f45993457d47d233f4,
+    type: 3}
+  m_Heroes:
+  - {fileID: 11400000, guid: 262ea28327e170a4ab440712e2fa039f, type: 2}
+  - {fileID: 11400000, guid: 6c51478660407f0499c50915daa31e06, type: 2}
+  - {fileID: 11400000, guid: e04477d32c4917b4fb18280a200c2326, type: 2}
+  - {fileID: 11400000, guid: 775d3d427d9ff0b4d90e401d057f809a, type: 2}
+  - {fileID: 11400000, guid: 8801e4ef07ef5e741a5d975c7360c3d9, type: 2}
+  - {fileID: 11400000, guid: bbe91acc79ff2bc4899c353452a9c6e4, type: 2}
+  - {fileID: 11400000, guid: 2303febbefee2624f9d5c0dcef5cebc3, type: 2}
+  - {fileID: 11400000, guid: a83943b4d1a62c34fb0f6e065fe6874f, type: 2}
+  - {fileID: 11400000, guid: 9c5d7f02e6119674e87b5c2111d5f309, type: 2}
+  - {fileID: 11400000, guid: 41650befe362470498fa1ee6a1f31042, type: 2}
+  - {fileID: 11400000, guid: a7c0ed34f9bf0ea4ea9930ebc648eb66, type: 2}
+  - {fileID: 11400000, guid: 60944fd092c6bf7439590bc7a1ba2522, type: 2}
+  - {fileID: 11400000, guid: 62b8b53390e727941bdfbd5af75d70e2, type: 2}
+  - {fileID: 11400000, guid: 16b1c95fc46e278418e3d3f978579ea5, type: 2}
+  - {fileID: 11400000, guid: 56b965ac8168f6543a85f4f7e0f2e0a6, type: 2}
+  - {fileID: 11400000, guid: e813881ec599f0644a9b764cc65948d7, type: 2}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
+  m_Name: Rampart
+  m_EditorClassIdentifier: 
+  m_TownSprite: {fileID: 21300000, guid: befd6d3e81a7165478a49b684f36d325, type: 3}
+  m_TownBuiltSprite: {fileID: 21300000, guid: 7a7594e1b9d67d94ba4b55162a03a4f4, type: 3}
+  m_TownNoFortSprite: {fileID: 21300000, guid: 25eb643e7de3efa4a95b762ccceaac6c, type: 3}
+  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 441462f8e4760074ca3a1aa1d978b5dc,
+    type: 3}
+  m_Heroes:
+  - {fileID: 11400000, guid: 105f90354b69f714fb5659b8df13b1a1, type: 2}
+  - {fileID: 11400000, guid: a3fe3eb00ae9cf945bf8dabd995f776b, type: 2}
+  - {fileID: 11400000, guid: ef1a00867a56f824d9b6bc7f3579a7a4, type: 2}
+  - {fileID: 11400000, guid: 937d3f9d90e526e48b7f70a0794e1486, type: 2}
+  - {fileID: 11400000, guid: 34705d363ce38544b88c3cd1b7baa7bd, type: 2}
+  - {fileID: 11400000, guid: d20775d30f1006c468e5b8c190128155, type: 2}
+  - {fileID: 11400000, guid: 98ea2538a2053ab4e996e456c6576ef5, type: 2}
+  - {fileID: 11400000, guid: c1dbaa92474cabf4bb59f718692504aa, type: 2}
+  - {fileID: 11400000, guid: e22658503ef061a47a4c749e714c3895, type: 2}
+  - {fileID: 11400000, guid: cb1e0971b6731074e839fb9030c520e3, type: 2}
+  - {fileID: 11400000, guid: e694ae18d7b8b9d4886994ff7d3cdf6b, type: 2}
+  - {fileID: 11400000, guid: f2217adc94a1773429438e4ac103cb61, type: 2}
+  - {fileID: 11400000, guid: 232c0b67406b5bc4abf49282ca53e5d3, type: 2}
+  - {fileID: 11400000, guid: 5c43b8239ff36ac469343c0a075056e1, type: 2}
+  - {fileID: 11400000, guid: c747bff1fbc4a4a45b58a9b1c72e44b9, type: 2}
+  - {fileID: 11400000, guid: c5cbf6001a7062b4091e3e6cc9549967, type: 2}
