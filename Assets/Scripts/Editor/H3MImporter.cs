@@ -150,7 +150,7 @@ public class H3MImporter : EditorWindow
 
             _Scenario.PlayerCount = _PlayerCount;
             _Scenario.ComputerCount = _ComputerCount;
-            
+
             AssetDatabase.CreateAsset(_Scenario, "Assets/" + m_OutputFolder + _Scenario.name + ".asset");
         }
     }
@@ -310,7 +310,7 @@ public class H3MImporter : EditorWindow
 
                     _CurrentByte += 1;
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable)
@@ -319,7 +319,7 @@ public class H3MImporter : EditorWindow
                         break;
                     }
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
@@ -525,7 +525,7 @@ public class H3MImporter : EditorWindow
 
                     _CurrentByte += 1;
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable)
@@ -534,7 +534,7 @@ public class H3MImporter : EditorWindow
                         break;
                     }
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
@@ -749,7 +749,7 @@ public class H3MImporter : EditorWindow
 
                     _CurrentByte += 1;
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable)
@@ -758,7 +758,7 @@ public class H3MImporter : EditorWindow
                         break;
                     }
                 }
-                
+
                 for (int i = 0; i < 8; i++)
                 {
                     if (a_Scenario.PlayerInfo[i].ComputerPlayable &&
@@ -778,7 +778,7 @@ public class H3MImporter : EditorWindow
             for (int i = 0; i < _Count; i++)
             {
                 _CurrentByte += 2;
-                
+
                 _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                 _CurrentByte += 4;
 
@@ -1028,7 +1028,7 @@ public class H3MImporter : EditorWindow
                     case 164:
                         _Object.Type = ScenarioObjectType.Monster;
                         break;
-                    
+
                     case 76:
                     case 79:
                         _Object.Type = ScenarioObjectType.Resource;
@@ -1170,7 +1170,7 @@ public class H3MImporter : EditorWindow
                             _CurrentByte += 4; // Unknown Bytes
                         }
                         break;
-                    
+
                     case ScenarioObjectType.PandorasBox:
                     {
                         _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
@@ -1228,7 +1228,7 @@ public class H3MImporter : EditorWindow
                         _Object.DwellingOwner = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         break;
-                    
+
                     case ScenarioObjectType.Event:
                     {
                         _HasMessage = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
@@ -1464,7 +1464,7 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 4; // Unknown Bytes
 
                         break;
-                    
+
                     case ScenarioObjectType.Scholar:
                         _CurrentByte += 8;
                         break;
@@ -1478,7 +1478,7 @@ public class H3MImporter : EditorWindow
                             case 1:
                                 _CurrentByte += 4;
                                 break;
-                            
+
                             case 2:
                                 _CurrentByte += 4;
                                 break;
@@ -1692,7 +1692,7 @@ public class H3MImporter : EditorWindow
                             case 1:
                                 _CurrentByte += 4;
                                 break;
-                            
+
                             case 2:
                                 _CurrentByte += 4;
                                 break;
@@ -1770,12 +1770,12 @@ public class H3MImporter : EditorWindow
                         }
 
                         break;
-                    
+
                     case ScenarioObjectType.TownDwelling:
                         _CurrentByte += 4; // Owner
                         _CurrentByte += 2;
                         break;
-                    
+
                     case ScenarioObjectType.AbandonedMine:
                         _CurrentByte += 4;
                         break;
@@ -1805,7 +1805,8 @@ public class H3MImporter : EditorWindow
             // Some objects don't adhere to the regular sort order behaviour, and simply use the file order
             // Need to figure out if this is determined by any of the values stored in objects
             // There are cases of circular referencing, where 3 sprites think they're on top of one and below the other, causing infinite loops
-            // The real game seems to split sprites up in this case, so part of the sprite displays on top, and part doesn't
+            // The original game seems to split sprites up in this case, so part of the sprite displays on top, and part doesn't
+            // Currently, we just break out of the loop if it goes through too many iterations
 
             // This function is called once for above ground, and once for underground if present
             void SortObjects(List<ScenarioObject> a_Objects)

@@ -86,7 +86,7 @@ Red, Blue, Tan, Green, Orange, Purple, Teal, Pink
 
 ---
 
-1 byte      Random hero  
+1 byte      Random hero
 1 byte      Hero type
 
             255 = Random
@@ -100,7 +100,7 @@ Red, Blue, Tan, Green, Orange, Purple, Teal, Pink
             6 = Christian
             7 = Tyris
             144 = Sir Mullich
-            
+
             TODO
             8 (0x8)   = Cleric
             20 (0x14) = Ranger

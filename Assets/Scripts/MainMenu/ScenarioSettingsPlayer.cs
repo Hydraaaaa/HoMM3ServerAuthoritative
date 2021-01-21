@@ -51,6 +51,10 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     int m_CurrentHeroIndex;
     int m_CurrentBonusIndex;
 
+    bool m_IsTownChoosable;
+
+    List<Faction> m_AvailableTowns;
+
     public void Initialize(int a_Index, PlayerInfo a_PlayerInfo)
     {
         PlayerIndex = a_Index;
@@ -87,11 +91,52 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             );
         }
 
-        m_CurrentTownIndex = -1;
+        if (a_PlayerInfo.IsTownChoosable)
+        {
+            m_IsTownChoosable = true;
+            m_CurrentTownIndex = -1;
+
+            m_AvailableTowns = m_Factions.Factions;
+        }
+        else
+        {
+            if (a_PlayerInfo.MainTownType != 255)
+            {
+                m_IsTownChoosable = false;
+                m_CurrentTownIndex = a_PlayerInfo.MainTownType;
+
+                m_AvailableTowns = m_Factions.Factions;
+            }
+            else
+            {
+                m_IsTownChoosable = true;
+                m_CurrentTownIndex = -1;
+
+                m_AvailableTowns = new List<Faction>();
+
+                int _BitwiseIndex = 1;
+
+                for (int i = 0; i < m_Factions.Factions.Count; i++)
+                {
+                    if ((a_PlayerInfo.AllowedTowns & _BitwiseIndex) == _BitwiseIndex)
+                    {
+                        m_AvailableTowns.Add(m_Factions.Factions[i]);
+                    }
+
+                    _BitwiseIndex *= 2;
+                }
+            }
+        }
+
+        m_TownLeft.gameObject.SetActive(m_IsTownChoosable);
+        m_TownRight.gameObject.SetActive(m_IsTownChoosable);
+
         m_CurrentHeroIndex = -1;
+        m_CurrentBonusIndex = 0;
 
         UpdateTownSprite();
         UpdateHeroSprite();
+        UpdateBonusSprite();
     }
 
     public void SetName(string a_Name)
@@ -111,7 +156,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         if (m_CurrentTownIndex < -1)
         {
-            m_CurrentTownIndex = m_Factions.Factions.Count - 1;
+            m_CurrentTownIndex = m_AvailableTowns.Count - 1;
         }
 
         m_CurrentHeroIndex = -1;
@@ -124,7 +169,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     {
         m_CurrentTownIndex++;
 
-        if (m_CurrentTownIndex > m_Factions.Factions.Count - 1)
+        if (m_CurrentTownIndex > m_AvailableTowns.Count - 1)
         {
             m_CurrentTownIndex = -1;
         }
@@ -147,8 +192,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            m_TownImage.sprite = m_Factions.Factions[m_CurrentTownIndex].TownSprite;
-            m_TownText.text = m_Factions.Factions[m_CurrentTownIndex].name;
+            m_TownImage.sprite = m_AvailableTowns[m_CurrentTownIndex].TownSprite;
+            m_TownText.text = m_AvailableTowns[m_CurrentTownIndex].name;
         }
     }
 
@@ -158,7 +203,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         if (m_CurrentHeroIndex < -1)
         {
-            m_CurrentHeroIndex = m_Factions.Factions[m_CurrentTownIndex].Heroes.Count - 1;
+            m_CurrentHeroIndex = m_AvailableTowns[m_CurrentTownIndex].Heroes.Count - 1;
         }
 
         UpdateHeroSprite();
@@ -168,7 +213,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     {
         m_CurrentHeroIndex++;
 
-        if (m_CurrentHeroIndex > m_Factions.Factions[m_CurrentTownIndex].Heroes.Count - 1)
+        if (m_CurrentHeroIndex > m_AvailableTowns[m_CurrentTownIndex].Heroes.Count - 1)
         {
             m_CurrentHeroIndex = -1;
         }
@@ -185,8 +230,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            m_HeroImage.sprite = m_Factions.Factions[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].Portrait;
-            m_HeroText.text = m_Factions.Factions[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].name;
+            m_HeroImage.sprite = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].Portrait;
+            m_HeroText.text = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].name;
         }
     }
 
