@@ -65,7 +65,7 @@
 				{
 					color = fixed4(0, 0, 0, 0.5);
 				}
-				else if (all(color.rg == fixed2(1, 0)))
+				else if (all(color.r == 1 && color.g == 0))
 				{
 					color = fixed4(0, 0, 0, 0.255);
 				}
