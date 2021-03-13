@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 1393183932019969724}
   - component: {fileID: 7377219488334766905}
   m_Layer: 5
-  m_Name: BonusLeft
+  m_Name: StartingBonusLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -905,7 +905,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9169938963082010553}
         m_TargetAssemblyTypeName: ScenarioSettingsPlayer, Assembly-CSharp
-        m_MethodName: BonusLeftPressed
+        m_MethodName: StartingBonusLeftPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1032,10 +1032,10 @@ MonoBehaviour:
   m_HeroText: {fileID: 4722467040584515698}
   m_HeroLeft: {fileID: 4671339555141070793}
   m_HeroRight: {fileID: 7144030282264355281}
-  m_BonusImage: {fileID: 8067840777719964360}
-  m_BonusText: {fileID: 2232178529342565090}
-  m_BonusLeft: {fileID: 1393183932019969724}
-  m_BonusRight: {fileID: 1386397546111926115}
+  m_StartingBonusImage: {fileID: 8067840777719964360}
+  m_StartingBonusText: {fileID: 2232178529342565090}
+  m_StartingBonusLeft: {fileID: 1393183932019969724}
+  m_StartingBonusRight: {fileID: 1386397546111926115}
   m_BackgroundSprites:
   - {fileID: 21300000, guid: 25a006da500b4004f87a93edf0169d6f, type: 3}
   - {fileID: 21300000, guid: eeaa1080df36aae4d9f971bf1b0b55d8, type: 3}
@@ -1074,15 +1074,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 357bd54f2f0e9d548916269f0fe12a24, type: 3}
   m_RandomTownSprite: {fileID: 21300000, guid: c04d087c5782f544cb76324973882b7a, type: 3}
   m_RandomHeroSprite: {fileID: 21300000, guid: 9e2041cd4f2083a43b856d9f838d571a, type: 3}
-  m_BonusSprites:
-  - Name: Random
-    Sprite: {fileID: 21300000, guid: 5222c653b0564904a89cfab84eaab0de, type: 3}
-  - Name: Artifact
-    Sprite: {fileID: 21300000, guid: 4acf12e6015f56945809d59a6deef91e, type: 3}
-  - Name: Gold
-    Sprite: {fileID: 21300000, guid: 4c9da81d3eb47584da2e26d93f63e70a, type: 3}
-  - Name: Resource
-    Sprite: {fileID: 21300000, guid: 8ff40b8ec8c7d7641a489c6329f4a381, type: 3}
+  m_RandomStartingBonusSprite: {fileID: 21300000, guid: 5222c653b0564904a89cfab84eaab0de,
+    type: 3}
+  m_StartingBonuses: {fileID: 11400000, guid: ba948242935f55c459057ec1bd761be3, type: 2}
 --- !u!1 &5490966117033756736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,7 +1089,7 @@ GameObject:
   - component: {fileID: 5664992592162786276}
   - component: {fileID: 8067840777719964360}
   m_Layer: 5
-  m_Name: BonusImage
+  m_Name: StartingBonusImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1165,7 @@ GameObject:
   - component: {fileID: 1386397546111926115}
   - component: {fileID: 4922864715152754280}
   m_Layer: 5
-  m_Name: BonusRight
+  m_Name: StartingBonusRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1280,7 +1274,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9169938963082010553}
         m_TargetAssemblyTypeName: ScenarioSettingsPlayer, Assembly-CSharp
-        m_MethodName: BonusRightPressed
+        m_MethodName: StartingBonusRightPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1646,7 +1640,7 @@ GameObject:
   - component: {fileID: 535183176377024002}
   - component: {fileID: 2232178529342565090}
   m_Layer: 5
-  m_Name: BonusText
+  m_Name: StartingBonusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

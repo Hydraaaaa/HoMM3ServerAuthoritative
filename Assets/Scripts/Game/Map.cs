@@ -39,7 +39,7 @@ public class Map : MonoBehaviour
     [SerializeField] Transform m_RoadTileObjectParent = null;
     [SerializeField] Transform m_MapObjectParent = null;
     [SerializeField] Transform m_ShadowObjectParent = null;
-    
+
     [Space]
 
     [SerializeField] Transform m_UndergroundTerrainTileObjectParent = null;
@@ -70,7 +70,7 @@ public class Map : MonoBehaviour
 
     [SerializeField] List<Sprite> m_IcyRiverSprites = null;
     [SerializeField] List<Sprite> m_MuddyRiverSprites = null;
-    
+
     [Space]
 
     [NonReorderable]
@@ -429,28 +429,31 @@ public class Map : MonoBehaviour
             m_Objects.Add(_MapObject);
         }
 
-        var _Operation = Addressables.LoadAssetAsync<ScenarioObjectVisualData>($"MapObjects/{a_Object.Template.Name}.asset");
-
-        yield return _Operation;
-
-        if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
+        if (a_Object.Template.Type != ScenarioObjectType.Monster)
         {
-            Debug.Log(a_Object.Template.Name);
-            yield break;
-        }
+            var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{a_Object.Template.Name}.asset");
 
-        _MapObject.Renderer.SetSprites(_Operation.Result.Sprites);
+            yield return _Operation;
 
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! FAILED - {_Operation.Result.name}");
-        }
+            if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
+            {
+                Debug.Log(a_Object.Template.Name);
+                yield break;
+            }
 
-        _ShadowObject.Renderer.SetSprites(_Operation.Result.ShadowSprites);
+            _MapObject.Renderer.SetSprites(_Operation.Result.Sprites);
 
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! SHADOW - {_Operation.Result.name}");
+            if (_Operation.Result.Sprites.Length == 0)
+            {
+                Debug.Log($"!! FAILED - {_Operation.Result.name}");
+            }
+
+            _ShadowObject.Renderer.SetSprites(_Operation.Result.ShadowSprites);
+
+            if (_Operation.Result.Sprites.Length == 0)
+            {
+                Debug.Log($"!! SHADOW - {_Operation.Result.name}");
+            }
         }
     }
 }

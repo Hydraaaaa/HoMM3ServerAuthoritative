@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80ed0e52c5768741b35a8680dd6395d, type: 3}
+  m_Name: avlllk10
+  m_EditorClassIdentifier: 
+  m_Sprites:
+  - {fileID: 21300000, guid: a198860845f58ec409265d1a630c43e9, type: 3}
+  - {fileID: 21300000, guid: e5d4bb4622c5fe540b4481f545537a06, type: 3}
+  - {fileID: 21300000, guid: 33f169a82dc78544a9d6dc35d7574055, type: 3}
+  - {fileID: 21300000, guid: 1653e76a11a867548b406445e6749965, type: 3}
+  - {fileID: 21300000, guid: e321cf63cb64ac647a8ea2d38a6154e9, type: 3}
+  - {fileID: 21300000, guid: 94131756e5a9e5a4793d8e3f79573ec1, type: 3}
+  - {fileID: 21300000, guid: 1db059dcd2103304a9336f044620f487, type: 3}
+  - {fileID: 21300000, guid: 52ebfe852828e5242add84c5a649d16a, type: 3}
+  - {fileID: 21300000, guid: 5bbe741fa35b54a42a81bbd308a24d2b, type: 3}
+  m_ShadowSprites:
+  - {fileID: 21300000, guid: 30c4735bd14acee4ca41e2ae1d90aea9, type: 3}
+  - {fileID: 21300000, guid: 00793fecf2e75574ca8039a5777cd65c, type: 3}
+  - {fileID: 21300000, guid: d1f6617fda27ece4da5051d4a61ec17f, type: 3}
+  - {fileID: 21300000, guid: 4ff7378b17024af4ea61fd2bdef0cae1, type: 3}
+  - {fileID: 21300000, guid: e80f0ff1a0ed27a4bb3046fb47e5c38b, type: 3}
+  - {fileID: 21300000, guid: 56b6b868fd3671444be300fbca644c77, type: 3}
+  - {fileID: 21300000, guid: 03d0398deea079d44a544dcd8a15017e, type: 3}
+  - {fileID: 21300000, guid: 1b62bfd2c2b32e54da0108da20a63559, type: 3}
+  - {fileID: 21300000, guid: 923c87a25f525934290505d2d13b7e7e, type: 3}

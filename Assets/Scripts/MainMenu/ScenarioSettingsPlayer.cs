@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,13 +6,6 @@ using UnityEngine.UI;
 
 public class ScenarioSettingsPlayer : MonoBehaviour
 {
-    [Serializable]
-    class BonusContainer
-    {
-        public string Name;
-        public Sprite Sprite;
-    }
-
     public int PlayerIndex { get; private set; }
 
     [SerializeField] ScenarioSettings m_ScenarioSettings = null;
@@ -32,10 +24,10 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] Text m_HeroText = null;
     [SerializeField] Image m_HeroLeft = null;
     [SerializeField] Image m_HeroRight = null;
-    [SerializeField] Image m_BonusImage = null;
-    [SerializeField] Text m_BonusText = null;
-    [SerializeField] Image m_BonusLeft = null;
-    [SerializeField] Image m_BonusRight = null;
+    [SerializeField] Image m_StartingBonusImage = null;
+    [SerializeField] Text m_StartingBonusText = null;
+    [SerializeField] Image m_StartingBonusLeft = null;
+    [SerializeField] Image m_StartingBonusRight = null;
 
     [Space]
 
@@ -45,13 +37,17 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] Sprite[] m_FlagPressedSprites = null;
     [SerializeField] Sprite m_RandomTownSprite = null;
     [SerializeField] Sprite m_RandomHeroSprite = null;
-    [SerializeField] BonusContainer[] m_BonusSprites = null;
+    [SerializeField] Sprite m_RandomStartingBonusSprite = null;
+    [SerializeField] StartingBonusList m_StartingBonuses = null;
 
     int m_CurrentTownIndex;
     int m_CurrentHeroIndex;
-    int m_CurrentBonusIndex;
+    int m_CurrentStartingBonusIndex;
 
     bool m_IsTownChoosable;
+
+    bool m_IsPlayer;
+    bool m_IsLocalPlayer;
 
     List<Faction> m_AvailableTowns;
 
@@ -132,16 +128,27 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_TownRight.gameObject.SetActive(m_IsTownChoosable);
 
         m_CurrentHeroIndex = -1;
-        m_CurrentBonusIndex = 0;
+        m_CurrentStartingBonusIndex = -1;
 
         UpdateTownSprite();
         UpdateHeroSprite();
-        UpdateBonusSprite();
+        UpdateStartingBonusSprite();
     }
 
     public void SetName(string a_Name)
     {
         m_NameText.text = a_Name;
+
+        if (m_NameText.text == "Computer")
+        {
+            m_IsPlayer = false;
+            m_IsLocalPlayer = false;
+        }
+        else
+        {
+            m_IsPlayer = true;
+            m_IsLocalPlayer = true;
+        }
     }
 
     public void FlagPressed()
@@ -235,33 +242,75 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
     }
 
-    public void BonusLeftPressed()
+    public void StartingBonusLeftPressed()
     {
-        m_CurrentBonusIndex--;
+        m_CurrentStartingBonusIndex--;
 
-        if (m_CurrentBonusIndex < 0)
+        if (m_CurrentStartingBonusIndex < 0)
         {
-            m_CurrentBonusIndex = m_BonusSprites.Length - 1;
+            m_CurrentStartingBonusIndex = m_StartingBonuses.StartingBonuses.Count - 1;
         }
 
-        UpdateBonusSprite();
+        UpdateStartingBonusSprite();
     }
 
-    public void BonusRightPressed()
+    public void StartingBonusRightPressed()
     {
-        m_CurrentBonusIndex++;
+        m_CurrentStartingBonusIndex++;
 
-        if (m_CurrentBonusIndex > m_BonusSprites.Length - 1)
+        if (m_CurrentStartingBonusIndex > m_StartingBonuses.StartingBonuses.Count - 1)
         {
-            m_CurrentBonusIndex = 0;
+            m_CurrentStartingBonusIndex = -1;
         }
 
-        UpdateBonusSprite();
+        UpdateStartingBonusSprite();
     }
 
-    void UpdateBonusSprite()
+    void UpdateStartingBonusSprite()
     {
-        m_BonusImage.sprite = m_BonusSprites[m_CurrentBonusIndex].Sprite;
-        m_BonusText.text = m_BonusSprites[m_CurrentBonusIndex].Name;
+        if (m_CurrentStartingBonusIndex == -1)
+        {
+            m_StartingBonusImage.sprite = m_RandomStartingBonusSprite;
+            m_StartingBonusText.text = "Random";
+        }
+        else
+        {
+            m_StartingBonusImage.sprite = m_StartingBonuses.StartingBonuses[m_CurrentStartingBonusIndex].Sprite;
+            m_StartingBonusText.text = m_StartingBonuses.StartingBonuses[m_CurrentStartingBonusIndex].name;
+        }
+    }
+
+    public GameSettings.Player GetGameSettings()
+    {
+        GameSettings.Player _Player = new GameSettings.Player();
+
+        _Player.IsPlayer = m_IsPlayer;
+        _Player.IsLocalPlayer = m_IsLocalPlayer;
+
+        if (m_CurrentTownIndex != -1)
+        {
+            _Player.Faction = m_AvailableTowns[m_CurrentTownIndex];
+        }
+        else
+        {
+            _Player.Faction = m_AvailableTowns[Random.Range(0, m_AvailableTowns.Count)];
+        }
+
+        if (m_CurrentHeroIndex != -1)
+        {
+            _Player.Hero = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex];
+        }
+        else
+        {
+            //_Player.Hero = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex];
+            // Need to ensure no duplicates
+        }
+
+        if (m_CurrentStartingBonusIndex != -1)
+        {
+            _Player.StartingBonus = m_StartingBonuses.StartingBonuses[m_CurrentStartingBonusIndex];
+        }
+
+        return _Player;
     }
 }

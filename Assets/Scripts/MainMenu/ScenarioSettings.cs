@@ -8,10 +8,16 @@ public class ScenarioSettings : MonoBehaviour
     Scenario m_Scenario;
 
     [SerializeField] GameSettings m_GameSettings = null;
+    [SerializeField] ScenarioInfo m_ScenarioInfo = null;
     [SerializeField] ScenarioSettingsPlayer[] m_Players = null;
     [SerializeField] Image[] m_AlliesFlags = null;
     [SerializeField] Image[] m_EnemiesFlags = null;
     [SerializeField] Sprite[] m_FlagSprites = null;
+
+    void Awake()
+    {
+        m_ScenarioInfo.OnGameStart += OnGameStart;
+    }
 
     public void UpdateSettings(Scenario a_Scenario)
     {
@@ -116,5 +122,15 @@ public class ScenarioSettings : MonoBehaviour
         m_Players[m_GameSettings.LocalPlayerIndex].SetName("Player");
 
         UpdateFlags();
+    }
+
+    void OnGameStart()
+    {
+        m_GameSettings.Players.Clear();
+
+        for (int i = 0; i < m_Scenario.PlayerCount; i++)
+        {
+            m_GameSettings.Players.Add(m_Players[i].GetGameSettings());
+        }
     }
 }

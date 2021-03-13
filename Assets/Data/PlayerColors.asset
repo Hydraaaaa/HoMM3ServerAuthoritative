@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d221968e4b7ef1e45b0c70c1493ea8eb, type: 3}
+  m_Name: PlayerColors
+  m_EditorClassIdentifier: 
+  Elements:
+  - Sidebar: {fileID: 21300000, guid: 3e82a331f97ae1c43b190d52bfe282a2, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 7d46aab05a43b9942b7ba70677787bff, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: c0837545413e60042b4cda2997b21f53, type: 3}
+    BorderTop: {fileID: 21300000, guid: 5a1436c7fd2399d44b7a085e01f62381, type: 3}
+    BorderLeft: {fileID: 21300000, guid: 3e60cb978969a0640b4839c5468251d6, type: 3}
+    BorderRight: {fileID: 21300000, guid: 97cccc5248d0ae14a98b55d5cefec03c, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: 14301402cb67e2d4eb217aa036fa06c4, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 6ec811d85a36e1247b3fd4d699f3c88a,
+      type: 3}
+    Resources: {fileID: 21300000, guid: 74322fec3ab5a8342876d13efeacf111, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: 61ae1099a34f2944f914b18d4fb55098, type: 3}
+    Date: {fileID: 21300000, guid: f172fadf272f4064490eeb52a1de3704, type: 3}
+  - Sidebar: {fileID: 21300000, guid: 0be67831e02c3a34caeb7e7d83ccd4ba, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 07e2d7c97481a2945a838e7730ef2c36, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: c084c623335274d4289fd68a26067f76, type: 3}
+    BorderTop: {fileID: 21300000, guid: 74026d3b9c0d9e94688c008c7ce63eea, type: 3}
+    BorderLeft: {fileID: 21300000, guid: 911b86165c132be479ef1bfc6e98265d, type: 3}
+    BorderRight: {fileID: 21300000, guid: 424268b3c0afdb04dad5ffcd372d510d, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: e9a5d964491dd4f49befadb286ca9077, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 68195749de51186488b1c25598af758d,
+      type: 3}
+    Resources: {fileID: 21300000, guid: c15aa2ef61d664447945414a15ccd6b1, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: f7ce5dab5041d2646a8119d613a3c02e, type: 3}
+    Date: {fileID: 21300000, guid: 4bdbe04c6a840a041b184f95b37d373f, type: 3}
+  - Sidebar: {fileID: 21300000, guid: e1890fb76575f114fbc5afe2971741d3, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 26634e7587287d64db7a2b69846a0b54, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: 86244fe6a4822a6488f224d9f10d1e63, type: 3}
+    BorderTop: {fileID: 21300000, guid: 66d1647b21cbf074db99740b7dd8a002, type: 3}
+    BorderLeft: {fileID: 21300000, guid: fe67f2db26f852b4db1abbe41d29cdc4, type: 3}
+    BorderRight: {fileID: 21300000, guid: ca51953e4caf2dc40965744cb91c0709, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: 128010f560e2c914fbe3038f6928da4a, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 3f3c7e2d39d119c4b951819c8d89b978,
+      type: 3}
+    Resources: {fileID: 21300000, guid: f475ddda4e7dd0e40bdc32bc81f45145, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: 15e60ad60b24f7842b0616851b3b0a07, type: 3}
+    Date: {fileID: 21300000, guid: e3b46e6923107cb4887c9c7c74c811b2, type: 3}
+  - Sidebar: {fileID: 21300000, guid: 8f524531434b7024baedb45c3037ea16, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 9dfbb43924de12541a5bea4fad7f1c83, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: 54b7373c7cf4c2f40815c79a128c0994, type: 3}
+    BorderTop: {fileID: 21300000, guid: 6b0eb2fc2ca5380459f90e101ba53707, type: 3}
+    BorderLeft: {fileID: 21300000, guid: 532661bb872301c4da2a98fb5cef92cb, type: 3}
+    BorderRight: {fileID: 21300000, guid: 1af12e6c874464d4dbb1e54b9edbce1f, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: eedac83efa55d1c4db932202afc483c2, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: a223e8fb14033e54584179a46992f055,
+      type: 3}
+    Resources: {fileID: 21300000, guid: 73a0ac8ff7c1a4547a96402b5a9a7520, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: a9eb23f38cf47ba4cb800ff9ef8af801, type: 3}
+    Date: {fileID: 21300000, guid: 40549e731301cb747b89d08dc127a704, type: 3}
+  - Sidebar: {fileID: 21300000, guid: 75fd16efc2c94d74e9687a86bc389d1a, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 8b802f8f2e8fa4d469b4b14fde37bdf5, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: 69b8b5ef9d59ee34f968caa01d58a8a1, type: 3}
+    BorderTop: {fileID: 21300000, guid: 44e030f5909f6d640945905a8de2ff8b, type: 3}
+    BorderLeft: {fileID: 21300000, guid: 4fbebe81529efc74a97f36b756068310, type: 3}
+    BorderRight: {fileID: 21300000, guid: 8863970dcd812384fa4303a53aaf9894, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: c25ce8a19cfeaa845b0539d36b57e15b, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 4e8f5566ced3d2644b06e0c5413282af,
+      type: 3}
+    Resources: {fileID: 21300000, guid: 0384ccba9d5ea6b4ca6e5c81151ecac2, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: 2410603824002e24d8823e4d611161cc, type: 3}
+    Date: {fileID: 21300000, guid: 7de2a32d4b351754981a2f7442d221e9, type: 3}
+  - Sidebar: {fileID: 21300000, guid: dc5ecbd211064a54e98885e143e1dc48, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 4eba6da219fef1a4a9dc6b1b913bd991, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: 8bce5205d7a61e442871fae7c7a5f072, type: 3}
+    BorderTop: {fileID: 21300000, guid: bd297c2788ac92a42bb6f690ae635c9e, type: 3}
+    BorderLeft: {fileID: 21300000, guid: b8a07911c7a61e3418fc24dde95c9458, type: 3}
+    BorderRight: {fileID: 21300000, guid: a90e7b5aa0c4d7741bc61727af9b8428, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: e38b048ea1700f64f8706d25e0078292, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: f164ac3076f91c64ca2de9b69fcf3752,
+      type: 3}
+    Resources: {fileID: 21300000, guid: a3a2afb1ad6737f4cbc19f9d0b6e4822, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: c65000b4bf7e20543b30b39414efe1b3, type: 3}
+    Date: {fileID: 21300000, guid: f62f3874b052b0b46b77b68382f3f0e2, type: 3}
+  - Sidebar: {fileID: 21300000, guid: 6df0b20218d9ace46b5ed900c062138f, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 648f22778ffd76048a4c712c7a50c060, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: 0765c72586a39ec4fa4a80f298d5179e, type: 3}
+    BorderTop: {fileID: 21300000, guid: 9f5d36688ad26f444b20656f5a009984, type: 3}
+    BorderLeft: {fileID: 21300000, guid: b47bda3985af0ba4bac26e777eaf01aa, type: 3}
+    BorderRight: {fileID: 21300000, guid: 775be9c1e6e96414cbdd5501b0fc1cb1, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: 630d055086470a843919dae4ce74c1e1, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 82bc07ec088e68442a82641986b8c34f,
+      type: 3}
+    Resources: {fileID: 21300000, guid: 5e11e620c4db6ea40a23aa3541562fb0, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: 46e15afe9650e1a4dbbe8cc49a1154be, type: 3}
+    Date: {fileID: 21300000, guid: 28c528054cd62e4438097760a5c7f029, type: 3}
+  - Sidebar: {fileID: 21300000, guid: 2e3713556449aa946a8be035bbd2d6df, type: 3}
+    SidebarSmall: {fileID: 21300000, guid: 54ad4da4d9bcf9b42b6f9dfb3ce6b17e, type: 3}
+    BorderTopLeft: {fileID: 21300000, guid: a12982b2a912ac340bbdaf6164d1ac22, type: 3}
+    BorderTop: {fileID: 21300000, guid: 2c4e83115fa29b7469291e955c331670, type: 3}
+    BorderLeft: {fileID: 21300000, guid: a42b45178a03947479b232355781d135, type: 3}
+    BorderRight: {fileID: 21300000, guid: da62f92c3608e0747a249aa101b4724e, type: 3}
+    BorderBottomLeft: {fileID: 21300000, guid: ee9c04421d9aecf489ceaf3ec1c941f0, type: 3}
+    BorderBottomRight: {fileID: 21300000, guid: 51474f476335db94fb7cba687db0c535,
+      type: 3}
+    Resources: {fileID: 21300000, guid: 2875cfbb7c34ddb488f8f00dea25be48, type: 3}
+    BottomBarFill: {fileID: 21300000, guid: 325d99fd94509954f98d2a4427f44de2, type: 3}
+    Date: {fileID: 21300000, guid: 0c20dae777a5ee84b8ceda9c2e4e4613, type: 3}
+  Colors:
+  - {r: 0.972549, g: 0, b: 0, a: 1}
+  - {r: 0.1882353, g: 0.3137255, b: 0.972549, a: 1}
+  - {r: 0.59607846, g: 0.45490196, b: 0.3137255, a: 1}
+  - {r: 0.2509804, g: 0.5803922, b: 0.15686275, a: 1}
+  - {r: 0.972549, g: 0.5019608, b: 0, a: 1}
+  - {r: 0.53333336, g: 0.17254902, b: 0.627451, a: 1}
+  - {r: 0.03137255, g: 0.59607846, b: 0.627451, a: 1}
+  - {r: 0.7529412, g: 0.47058824, b: 0.53333336, a: 1}
+  - {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}

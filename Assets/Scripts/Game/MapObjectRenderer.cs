@@ -10,12 +10,19 @@ public class MapObjectRenderer : MonoBehaviour
 
     bool m_Active = false;
 
+    int m_Offset = 0;
+
     void OnDestroy()
     {
         if (m_Active)
         {
             MapObjectRendererManager.RemoveObject(this);
         }
+    }
+
+    public void SetOffset(int a_Offset)
+    {
+        m_Offset = a_Offset;
     }
 
     public void SetSprites(Sprite[] a_Sprites)
@@ -55,6 +62,6 @@ public class MapObjectRenderer : MonoBehaviour
 
     public void Animate(int a_Frame)
     {
-        m_SpriteRenderer.sprite = m_Sprites[a_Frame % m_Sprites.Length];
+        m_SpriteRenderer.sprite = m_Sprites[(a_Frame + m_Offset) % m_Sprites.Length];
     }
 }

@@ -99,6 +99,8 @@ MonoBehaviour:
   m_SpriteRenderer: {fileID: 2286810684168684882}
   m_Renderer: {fileID: 8270222893829764056}
   m_PlayerColors: {fileID: 11400000, guid: 9dd4db9ca7f37e944998a2515a8f9bda, type: 2}
+  m_Factions: {fileID: 11400000, guid: f779de61b32f0ac40b587326b7f17bf0, type: 2}
+  m_Monsters: {fileID: 11400000, guid: fd84d199089183043880849ee2e8f414, type: 2}
   m_X: 0
   m_Y: 0
   m_Collision: 

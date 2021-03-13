@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,6 +28,8 @@ public class ScenarioInfo : MonoBehaviour
     Sprite m_HardSprite;
     Sprite m_ExpertSprite;
     Sprite m_ImpossibleSprite;
+
+    public Action OnGameStart;
 
     void Awake()
     {
@@ -95,6 +98,8 @@ public class ScenarioInfo : MonoBehaviour
 
     public void BeginPressed()
     {
+        OnGameStart?.Invoke();
+
         SceneManager.LoadScene("Game");
     }
 }

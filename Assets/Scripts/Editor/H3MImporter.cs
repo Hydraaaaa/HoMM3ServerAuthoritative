@@ -36,7 +36,7 @@ public class H3MImporter : EditorWindow
         window.Show();
 
         window.m_InputFolder = "../Scenarios/";
-        window.m_OutputFolder = "Scenarios/";
+        window.m_OutputFolder = "Data/Scenarios/";
         window.m_Overwrite = true;
     }
 
@@ -1109,7 +1109,6 @@ public class H3MImporter : EditorWindow
 
             a_Scenario.Objects = new List<ScenarioObject>();
 
-            Debug.Log($"!! Object Count: {_ObjectDataCount}");
             for (int i = 0; i < _ObjectDataCount; i++)
             {
                 byte _PosX = a_Bytes[_CurrentByte];
@@ -1129,19 +1128,11 @@ public class H3MImporter : EditorWindow
                         _CurrentByte += 20;
                     }
 
-                    Debug.Log($"Position: {_CurrentByte.ToString("X")}");
-                    Debug.Log($"Index out of range: {_ObjectBaseIndex} - Position: {_PosX}, {_PosY}, {_IsUnderground}");
-                    Debug.Log($"{i}/{_ObjectDataCount}");
                     break;
-                    //continue;
                 }
 
                 ScenarioObject _Object = new ScenarioObject();
                 _Object.Template = _ObjectTemplates[_ObjectBaseIndex];
-
-                //Debug.Log($"!! {_Object.Template.Name} TypeDebug: {_Object.Template.TypeDebug}");
-
-                //Debug.Log($"Object Base: {_Object.Template.Name} - {_ObjectBaseIndex} - {_Object.Template.Type}/{_Object.Template.TypeDebug} - {_CurrentByte.ToString("X")} - {i}/{_ObjectDataCount}");
 
                 _Object.PosX = _PosX;
                 _Object.PosY = _PosY;
@@ -1661,7 +1652,6 @@ public class H3MImporter : EditorWindow
 
                         if (_Object.Town.HasCustomBuildings)
                         {
-                            Debug.Log($"!! Town Has Custom Buildings");
                             _CurrentByte += 12;
                         }
                         else
@@ -1807,6 +1797,10 @@ public class H3MImporter : EditorWindow
             // There are cases of circular referencing, where 3 sprites think they're on top of one and below the other, causing infinite loops
             // The original game seems to split sprites up in this case, so part of the sprite displays on top, and part doesn't
             // Currently, we just break out of the loop if it goes through too many iterations
+
+            // MAJOR BUG
+            // Currently objects are only sorted on the same Y layer
+            // It is actually possible that an object on a higher Y layer displays on top, due to sharing Y pos in relevant columns, and being placed after
 
             // This function is called once for above ground, and once for underground if present
             void SortObjects(List<ScenarioObject> a_Objects)
