@@ -10,6 +10,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     [SerializeField] ScenarioSettings m_ScenarioSettings = null;
     [SerializeField] FactionList m_Factions = null;
+    [SerializeField] HeroList m_Heroes = null;
     [SerializeField] Image m_BackgroundImage = null;
     [SerializeField] Button m_FlagButton = null;
     [SerializeField] Text m_NameText = null;
@@ -38,13 +39,19 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] Sprite m_RandomTownSprite = null;
     [SerializeField] Sprite m_RandomHeroSprite = null;
     [SerializeField] Sprite m_RandomStartingBonusSprite = null;
+    [SerializeField] Sprite m_NoHeroSprite = null;
     [SerializeField] StartingBonusList m_StartingBonuses = null;
 
     int m_CurrentTownIndex;
     int m_CurrentHeroIndex;
     int m_CurrentStartingBonusIndex;
 
+
     bool m_IsTownChoosable;
+    bool m_GenerateHeroAtMainTown;
+    bool m_IsHeroRandom;
+
+    Hero m_CustomHero;
 
     bool m_IsPlayer;
     bool m_IsLocalPlayer;
@@ -87,6 +94,9 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             );
         }
 
+        m_GenerateHeroAtMainTown = a_PlayerInfo.GenerateHeroAtMainTown;
+        m_IsHeroRandom = a_PlayerInfo.IsMainHeroRandom;
+
         if (a_PlayerInfo.IsTownChoosable)
         {
             m_IsTownChoosable = true;
@@ -96,7 +106,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            if (a_PlayerInfo.MainTownType != 255)
+            if (a_PlayerInfo.MainTownType != 255 && a_PlayerInfo.HasMainTown)
             {
                 m_IsTownChoosable = false;
                 m_CurrentTownIndex = a_PlayerInfo.MainTownType;
@@ -106,7 +116,6 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             else
             {
                 m_IsTownChoosable = true;
-                m_CurrentTownIndex = -1;
 
                 m_AvailableTowns = new List<Faction>();
 
@@ -121,11 +130,52 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
                     _BitwiseIndex *= 2;
                 }
+
+                if (m_AvailableTowns.Count > 1)
+                {
+                    m_CurrentTownIndex = -1;
+                }
+                else
+                {
+                    m_CurrentTownIndex = 0;
+                }
             }
         }
 
-        m_TownLeft.gameObject.SetActive(m_IsTownChoosable);
-        m_TownRight.gameObject.SetActive(m_IsTownChoosable);
+        m_CustomHero = null;
+
+        if (!a_PlayerInfo.IsMainHeroRandom)
+        {
+            if (a_PlayerInfo.MainHeroPortrait == 255 || a_PlayerInfo.MainHeroType == 255)
+            {
+                m_HeroText.text = "None";
+                m_HeroImage.sprite = m_NoHeroSprite;
+            }
+            else
+            {
+                m_HeroText.text = a_PlayerInfo.MainHeroName;
+                m_HeroImage.sprite = m_Heroes.Heroes[a_PlayerInfo.MainHeroPortrait].Portrait;
+
+                m_CustomHero = ScriptableObject.CreateInstance<Hero>();
+                m_CustomHero.Portrait = m_Heroes.Heroes[a_PlayerInfo.MainHeroPortrait].Portrait;
+
+                if (a_PlayerInfo.MainHeroName != "")
+                {
+                    m_CustomHero.name = a_PlayerInfo.MainHeroName;
+                }
+                else
+                {
+                    m_CustomHero.name = m_Heroes.Heroes[a_PlayerInfo.MainHeroType].name;
+                }
+                // TODO: Custom Hero ID probably needs to pipe through primary/secondary abilities
+            }
+        }
+
+        m_TownLeft.gameObject.SetActive(m_IsTownChoosable && m_AvailableTowns.Count > 1);
+        m_TownRight.gameObject.SetActive(m_IsTownChoosable && m_AvailableTowns.Count > 1);
+
+        m_HeroLeft.gameObject.SetActive(m_IsHeroRandom || m_GenerateHeroAtMainTown);
+        m_HeroRight.gameObject.SetActive(m_IsHeroRandom || m_GenerateHeroAtMainTown);
 
         m_CurrentHeroIndex = -1;
         m_CurrentStartingBonusIndex = -1;
@@ -189,8 +239,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     void UpdateTownSprite()
     {
-        m_HeroLeft.gameObject.SetActive(m_CurrentTownIndex != -1);
-        m_HeroRight.gameObject.SetActive(m_CurrentTownIndex != -1);
+        m_HeroLeft.gameObject.SetActive(m_CurrentTownIndex != -1 && (m_IsHeroRandom || m_GenerateHeroAtMainTown));
+        m_HeroRight.gameObject.SetActive(m_CurrentTownIndex != -1 && (m_IsHeroRandom || m_GenerateHeroAtMainTown));
 
         if (m_CurrentTownIndex == -1)
         {
@@ -230,15 +280,36 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     void UpdateHeroSprite()
     {
-        if (m_CurrentHeroIndex == -1)
+        if (m_GenerateHeroAtMainTown || m_IsHeroRandom)
         {
-            m_HeroImage.sprite = m_RandomHeroSprite;
-            m_HeroText.text = "Random";
+            if (m_CurrentHeroIndex == -1)
+            {
+                m_HeroImage.sprite = m_RandomHeroSprite;
+                m_HeroText.text = "Random";
+            }
+            else
+            {
+                m_HeroImage.sprite = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].Portrait;
+                m_HeroText.text = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].name;
+            }
         }
         else
         {
-            m_HeroImage.sprite = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].Portrait;
-            m_HeroText.text = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].name;
+            if (m_CurrentTownIndex == -1)
+            {
+                m_HeroImage.sprite = m_RandomHeroSprite;
+                m_HeroText.text = "Random";
+            }
+            else if (m_CustomHero != null)
+            {
+                m_HeroText.text = m_CustomHero.name;
+                m_HeroImage.sprite = m_CustomHero.Portrait;
+            }
+            else
+            {
+                m_HeroText.text = "None";
+                m_HeroImage.sprite = m_NoHeroSprite;
+            }
         }
     }
 
@@ -302,8 +373,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            //_Player.Hero = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex];
-            // Need to ensure no duplicates
+            _Player.Hero = null;
         }
 
         if (m_CurrentStartingBonusIndex != -1)

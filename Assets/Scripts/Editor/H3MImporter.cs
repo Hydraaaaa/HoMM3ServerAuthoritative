@@ -664,7 +664,9 @@ public class H3MImporter : EditorWindow
 
                 if (_PlayerInfo.MainHeroType != 255)
                 {
-                    _CurrentByte += 1; // Skip hero portrait
+                    _PlayerInfo.MainHeroPortrait = a_Bytes[_CurrentByte];
+
+                    _CurrentByte += 1;
 
                     _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
 
@@ -681,11 +683,14 @@ public class H3MImporter : EditorWindow
 
                 _CurrentByte += 4;
 
+                _PlayerInfo.HeroPortraits = new List<byte>();
                 _PlayerInfo.HeroNames = new List<string>();
 
                 for (int k = 0; k < _HeroCount; k++)
                 {
-                    _CurrentByte += 1; // Skip hero portrait
+                    _PlayerInfo.HeroPortraits.Add(a_Bytes[_CurrentByte]);
+
+                    _CurrentByte += 1;
 
                     _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
 
@@ -770,26 +775,49 @@ public class H3MImporter : EditorWindow
             }
 
             // <><><><><> Unsupported Junk (for now)
-            _CurrentByte += 24;
+            a_Scenario.FreeHeroes = new byte[20];
+
+            for (int i = 0; i < 20; i++)
+            {
+                a_Scenario.FreeHeroes[i] = a_Bytes[_CurrentByte + i];
+            }
+
+            _CurrentByte += 20;
+            _CurrentByte += 4;
 
             int _Count = a_Bytes[_CurrentByte];
             _CurrentByte += 1;
 
+            a_Scenario.HeroInfo = new List<HeroInfo>();
+
             for (int i = 0; i < _Count; i++)
             {
-                _CurrentByte += 2;
+                HeroInfo _Info = new HeroInfo();
+
+                _Info.ID = a_Bytes[_CurrentByte];
+
+                _CurrentByte += 1;
+
+                _Info.Portrait = a_Bytes[_CurrentByte];
+
+                _CurrentByte += 1;
 
                 _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                 _CurrentByte += 4;
 
+                _Info.Name = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _StringLength);
                 _CurrentByte += _StringLength;
+
+                _Info.Players = a_Bytes[_CurrentByte];
                 _CurrentByte += 1;
+
+                a_Scenario.HeroInfo.Add(_Info);
             }
 
-            _CurrentByte += 31;
-            _CurrentByte += 18;
-            _CurrentByte += 9;
-            _CurrentByte += 4;
+            _CurrentByte += 31; // Junk
+            _CurrentByte += 18; // Artifacts
+            _CurrentByte += 9;  // Spells
+            _CurrentByte += 4;  // Secondary Skills
 
             _Count = BitConverter.ToInt32(a_Bytes, _CurrentByte);
             _CurrentByte += 4;

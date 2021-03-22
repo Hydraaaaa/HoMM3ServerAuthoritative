@@ -36,8 +36,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -53,8 +55,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -70,8 +74,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -87,8 +93,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -104,8 +112,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -121,8 +131,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -138,8 +150,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -155,14 +169,402 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   PlayerCount: 6
   ComputerCount: 6
   WinCondition: 255
   LossCondition: 255
   HasTeams: 0
+  FreeHeroes: 0000ffffffffffff0000ffffffffffff00000000
+  HeroInfo:
+  - ID: 16
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 17
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 18
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 19
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 20
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 21
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 22
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 23
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 24
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 25
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 26
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 27
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 28
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 29
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 30
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 31
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 32
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 33
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 34
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 35
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 36
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 37
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 38
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 39
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 40
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 41
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 42
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 43
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 44
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 45
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 46
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 47
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 48
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 49
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 50
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 51
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 52
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 53
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 54
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 55
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 56
+    Portrait: 255
+    Name: 
+    Players: 212
+  - ID: 57
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 58
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 59
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 60
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 61
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 62
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 63
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 80
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 81
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 82
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 83
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 84
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 85
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 86
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 87
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 88
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 89
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 90
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 91
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 92
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 93
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 94
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 95
+    Portrait: 255
+    Name: 
+    Players: 226
+  - ID: 96
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 97
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 98
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 99
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 100
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 101
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 102
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 103
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 104
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 105
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 106
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 107
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 108
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 109
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 110
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 111
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 112
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 113
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 114
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 115
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 116
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 117
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 118
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 119
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 120
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 121
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 122
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 123
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 124
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 125
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 126
+    Portrait: 255
+    Name: 
+    Players: 201
+  - ID: 127
+    Portrait: 255
+    Name: 
+    Players: 201
   Terrain:
   - TerrainType: 0
     TerrainSpriteID: 28

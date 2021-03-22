@@ -8141,7 +8141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1479563158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8213,6 +8213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GameSettings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
+  m_ScenarioInfo: {fileID: 829687799}
   m_Players:
   - {fileID: 339171242}
   - {fileID: 1770680431}
@@ -10675,6 +10676,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 19f42323fbe9be34ea36c343019a48df, type: 2}
   - {fileID: 11400000, guid: f60c2c406c82d8248a51b954ad9a4b9c, type: 2}
   - {fileID: 11400000, guid: f77b1242a4c30994d8442e370373cc13, type: 2}
+  - {fileID: 11400000, guid: 1800d3da23167c14b9358936c38ddfd0, type: 2}
   - {fileID: 11400000, guid: 442f37005e9a64b4cae9a5b3656d4aad, type: 2}
   - {fileID: 11400000, guid: 8fbd6b91a2476754286f461fd17ce93c, type: 2}
   - {fileID: 11400000, guid: 650caa0199cb517419c8b5b83871b9a2, type: 2}

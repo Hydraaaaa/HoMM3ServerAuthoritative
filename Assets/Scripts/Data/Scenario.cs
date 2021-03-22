@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,9 +20,11 @@ public class PlayerInfo
     public bool GenerateHeroAtMainTown;
     public bool IsMainHeroRandom;
     public byte MainHeroType;
+    public byte MainHeroPortrait;
     public string MainHeroName;
     public byte Team;
 
+    public List<byte> HeroPortraits;
     public List<string> HeroNames;
 }
 
@@ -135,6 +137,17 @@ public class TerrainTile
     public byte Mirrored;
 }
 
+[Serializable]
+public class HeroInfo
+{
+    public byte ID;
+    public byte Portrait;
+    public string Name;
+
+    // Which players can choose this hero
+    public byte Players;
+}
+
 public class Scenario : ScriptableObject
 {
     public const int RESTORATION_OF_ERATHIA = 0x0E;
@@ -160,6 +173,10 @@ public class Scenario : ScriptableObject
     public byte LossCondition;
 
     public bool HasTeams;
+
+    public byte[] FreeHeroes; // What is this?
+
+    public List<HeroInfo> HeroInfo;
 
     public List<TerrainTile> Terrain;
     public List<TerrainTile> UndergroundTerrain;

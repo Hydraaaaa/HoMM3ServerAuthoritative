@@ -34,8 +34,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -51,8 +53,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -68,8 +72,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -85,8 +91,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -102,8 +110,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -119,8 +129,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -136,8 +148,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -153,14 +167,18 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   PlayerCount: 2
   ComputerCount: 3
   WinCondition: 0
   LossCondition: 255
   HasTeams: 0
+  FreeHeroes: 
+  HeroInfo: []
   Terrain: []
   UndergroundTerrain: []
   Objects: []

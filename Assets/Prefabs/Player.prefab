@@ -1020,6 +1020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ScenarioSettings: {fileID: 0}
   m_Factions: {fileID: 11400000, guid: f779de61b32f0ac40b587326b7f17bf0, type: 2}
+  m_Heroes: {fileID: 11400000, guid: d18e544ba2e1ffc49bd8bb688c9dbedf, type: 2}
   m_BackgroundImage: {fileID: 2016252735411102154}
   m_FlagButton: {fileID: 116974154664967945}
   m_NameText: {fileID: 2078582399176370854}
@@ -1076,6 +1077,7 @@ MonoBehaviour:
   m_RandomHeroSprite: {fileID: 21300000, guid: 9e2041cd4f2083a43b856d9f838d571a, type: 3}
   m_RandomStartingBonusSprite: {fileID: 21300000, guid: 5222c653b0564904a89cfab84eaab0de,
     type: 3}
+  m_NoHeroSprite: {fileID: 21300000, guid: 661f9a62995d05f4ea30988e4d9da3ca, type: 3}
   m_StartingBonuses: {fileID: 11400000, guid: ba948242935f55c459057ec1bd761be3, type: 2}
 --- !u!1 &5490966117033756736
 GameObject:

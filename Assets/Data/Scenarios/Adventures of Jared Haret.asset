@@ -34,8 +34,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 2
+    MainHeroPortrait: 0
     MainHeroName: Jared Haret
     Team: 0
+    HeroPortraits: 02
     HeroNames:
     - Jared Haret
   - HumanPlayable: 0
@@ -52,8 +54,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 85
+    MainHeroPortrait: 255
     MainHeroName: 
     Team: 0
+    HeroPortraits: 5055
     HeroNames:
     - Lothelen
     - 
@@ -71,8 +75,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 33
+    MainHeroPortrait: 255
     MainHeroName: Thenith
     Team: 0
+    HeroPortraits: 21222c
     HeroNames:
     - Thenith
     - 
@@ -91,8 +97,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -108,8 +116,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -125,8 +135,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -142,8 +154,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -159,14 +173,18 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   PlayerCount: 1
   ComputerCount: 3
   WinCondition: 6
   LossCondition: 1
   HasTeams: 0
+  FreeHeroes: ebfffffff9efffffffffdeffffffffffffff0100
+  HeroInfo: []
   Terrain:
   - TerrainType: 3
     TerrainSpriteID: 54

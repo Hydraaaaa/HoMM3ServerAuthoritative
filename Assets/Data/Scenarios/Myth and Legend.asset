@@ -36,8 +36,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 3
+    MainHeroPortrait: 0
     MainHeroName: Tyndareus
     Team: 255
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -53,8 +55,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 94
+    MainHeroPortrait: 0
     MainHeroName: Hephaestus
     Team: 255
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -70,8 +74,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 68
+    MainHeroPortrait: 0
     MainHeroName: "Erebus\x01\x01"
     Team: 255
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -87,8 +93,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 13
+    MainHeroPortrait: 0
     MainHeroName: "Artemis\x01\x01"
     Team: 255
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -104,8 +112,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 23
+    MainHeroPortrait: 0
     MainHeroName: "Amphritrite\x01\x01"
     Team: 239
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -121,8 +131,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 83
+    MainHeroPortrait: 0
     MainHeroName: "Ion\x01\x01"
     Team: 247
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -138,8 +150,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 4
+    MainHeroPortrait: 0
     MainHeroName: "Hercules\x01\x01\x02\x02"
     Team: 183
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -155,14 +169,18 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 21
+    MainHeroPortrait: 0
     MainHeroName: Cupid
     Team: 183
+    HeroPortraits: 
     HeroNames: []
   PlayerCount: 5
   ComputerCount: 8
   WinCondition: 0
   LossCondition: 0
   HasTeams: 1
+  FreeHeroes: 
+  HeroInfo: []
   Terrain: []
   UndergroundTerrain: []
   Objects: []

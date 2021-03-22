@@ -36,8 +36,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -53,8 +55,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -70,8 +74,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 49
+    MainHeroPortrait: 255
     MainHeroName: 
     Team: 1
+    HeroPortraits: 303136
     HeroNames:
     - 
     - 
@@ -90,8 +96,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 1
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 1
@@ -107,8 +115,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 2
+    MainHeroPortrait: 255
     MainHeroName: 
     Team: 2
+    HeroPortraits: 02050c
     HeroNames:
     - 
     - 
@@ -127,8 +137,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -144,8 +156,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 0
     ComputerPlayable: 0
@@ -161,14 +175,18 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   PlayerCount: 3
   ComputerCount: 5
   WinCondition: 255
   LossCondition: 255
   HasTeams: 1
+  FreeHeroes: cbefffffffffbcfffffffffffffffffffeff0100
+  HeroInfo: []
   Terrain:
   - TerrainType: 8
     TerrainSpriteID: 32

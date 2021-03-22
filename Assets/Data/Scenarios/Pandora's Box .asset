@@ -36,8 +36,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -53,8 +55,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 144
+    MainHeroPortrait: 0
     MainHeroName: Hercules
     Team: 0
+    HeroPortraits: 
     HeroNames:
     - "Perseus\uFFFD\b"
     - "Hercules\x01\x01"
@@ -72,8 +76,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 1
+    MainHeroPortrait: 0
     MainHeroName: Paris
     Team: 0
+    HeroPortraits: 
     HeroNames:
     - "Paris\a\x05"
     - "Poena\x01\x01"
@@ -91,8 +97,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 91
+    MainHeroPortrait: 0
     MainHeroName: Abaris
     Team: 0
+    HeroPortraits: 
     HeroNames:
     - "Laocoon[\x06"
     - Abaris
@@ -110,8 +118,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -127,8 +137,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 12
+    MainHeroPortrait: 0
     MainHeroName: Theseus
     Team: 0
+    HeroPortraits: 
     HeroNames:
     - "Erechtheus\f\a"
     - Theseus
@@ -146,8 +158,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 255
+    MainHeroPortrait: 0
     MainHeroName: 
     Team: 0
+    HeroPortraits: 
     HeroNames: []
   - HumanPlayable: 1
     ComputerPlayable: 1
@@ -163,8 +177,10 @@ MonoBehaviour:
     GenerateHeroAtMainTown: 0
     IsMainHeroRandom: 0
     MainHeroType: 23
+    MainHeroPortrait: 0
     MainHeroName: Aeneas
     Team: 0
+    HeroPortraits: 
     HeroNames:
     - "Aeneas\x1F\x04"
     - "Eros\x06"
@@ -173,6 +189,8 @@ MonoBehaviour:
   WinCondition: 6
   LossCondition: 2
   HasTeams: 0
+  FreeHeroes: 
+  HeroInfo: []
   Terrain: []
   UndergroundTerrain: []
   Objects: []
