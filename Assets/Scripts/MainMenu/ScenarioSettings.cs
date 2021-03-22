@@ -45,7 +45,7 @@ public class ScenarioSettings : MonoBehaviour
             if (a_Scenario.PlayerInfo[i].ComputerPlayable)
             {
                 m_Players[_CurrentPlayer].gameObject.SetActive(true);
-                m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i]);
+                m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i], a_Scenario.HeroInfo);
                 m_Players[_CurrentPlayer].SetName("Computer");
 
                 _CurrentPlayer++;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -57,10 +58,13 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     bool m_IsLocalPlayer;
 
     List<Faction> m_AvailableTowns;
+    List<Hero> m_AvailableHeroes;
+    List<HeroInfo> m_HeroInfo;
 
-    public void Initialize(int a_Index, PlayerInfo a_PlayerInfo)
+    public void Initialize(int a_Index, PlayerInfo a_PlayerInfo, List<HeroInfo> a_HeroInfo)
     {
         PlayerIndex = a_Index;
+        m_HeroInfo = a_HeroInfo;
 
         m_BackgroundImage.sprite = m_BackgroundSprites[a_Index];
 
@@ -181,7 +185,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_CurrentStartingBonusIndex = -1;
 
         UpdateTownSprite();
-        UpdateHeroSprite();
+        UpdateHeroList();
         UpdateStartingBonusSprite();
     }
 
@@ -207,6 +211,32 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
+    void UpdateHeroList()
+    {
+        if (m_CurrentTownIndex == -1)
+        {
+            UpdateHeroSprite();
+            return;
+        }
+
+        m_AvailableHeroes = new List<Hero>(m_AvailableTowns[m_CurrentTownIndex].Heroes);
+
+        int _BitwiseIndex = 1 << PlayerIndex;
+
+        for (int i = m_AvailableHeroes.Count - 1; i >= 0; i--)
+        {
+            HeroInfo _HeroInfo = m_HeroInfo.FirstOrDefault((a_Hero) => a_Hero.ID == m_AvailableHeroes[i].ID);
+
+            if (_HeroInfo != null &&
+               (_HeroInfo.Players & _BitwiseIndex) == 0)
+            {
+                m_AvailableHeroes.RemoveAt(i);
+            }
+        }
+
+        UpdateHeroSprite();
+    }
+
     public void TownLeftPressed()
     {
         m_CurrentTownIndex--;
@@ -219,7 +249,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_CurrentHeroIndex = -1;
 
         UpdateTownSprite();
-        UpdateHeroSprite();
+        UpdateHeroList();
     }
 
     public void TownRightPressed()
@@ -234,7 +264,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_CurrentHeroIndex = -1;
 
         UpdateTownSprite();
-        UpdateHeroSprite();
+        UpdateHeroList();
     }
 
     void UpdateTownSprite()
@@ -260,7 +290,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         if (m_CurrentHeroIndex < -1)
         {
-            m_CurrentHeroIndex = m_AvailableTowns[m_CurrentTownIndex].Heroes.Count - 1;
+            m_CurrentHeroIndex = m_AvailableHeroes.Count - 1;
         }
 
         UpdateHeroSprite();
@@ -270,7 +300,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     {
         m_CurrentHeroIndex++;
 
-        if (m_CurrentHeroIndex > m_AvailableTowns[m_CurrentTownIndex].Heroes.Count - 1)
+        if (m_CurrentHeroIndex > m_AvailableHeroes.Count - 1)
         {
             m_CurrentHeroIndex = -1;
         }
@@ -289,8 +319,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             }
             else
             {
-                m_HeroImage.sprite = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].Portrait;
-                m_HeroText.text = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex].name;
+                m_HeroImage.sprite = m_AvailableHeroes[m_CurrentHeroIndex].Portrait;
+                m_HeroText.text = m_AvailableHeroes[m_CurrentHeroIndex].name;
             }
         }
         else

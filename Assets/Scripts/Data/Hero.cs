@@ -1,9 +1,10 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [CreateAssetMenu]
 public class Hero : ScriptableObject
 {
-    [FormerlySerializedAs("m_Portrait")]
+    public int ID => m_ID;
+
+    [SerializeField] int m_ID;
     public Sprite Portrait;
 }
