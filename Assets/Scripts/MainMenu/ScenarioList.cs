@@ -116,10 +116,17 @@ public class ScenarioList : MonoBehaviour
             PopulateScenarioEntries(ListOffset + 1);
         }
     }
-    
+
     public void PopulateScenarioEntries(int a_Offset)
     {
-        a_Offset = Mathf.Clamp(a_Offset, 0, m_CurrentScenarios.Count - m_ScenarioEntries.Count);
+        if (m_CurrentScenarios.Count >= m_ScenarioEntries.Count)
+        {
+            a_Offset = Mathf.Clamp(a_Offset, 0, m_CurrentScenarios.Count - m_ScenarioEntries.Count);
+        }
+        else
+        {
+            a_Offset = 0;
+        }
 
         ListOffset = a_Offset;
 
@@ -406,7 +413,7 @@ public class ScenarioList : MonoBehaviour
 
         PopulateScenarioEntries(0);
     }
-    
+
     public void XLFilter()
     {
         m_CurrentScenarios = m_Scenarios.Where((a_Scenario) => a_Scenario.Size == 144).ToList();
