@@ -325,12 +325,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            if (m_CurrentTownIndex == -1)
-            {
-                m_HeroImage.sprite = m_RandomHeroSprite;
-                m_HeroText.text = "Random";
-            }
-            else if (m_CustomHero != null)
+            if (m_CustomHero != null)
             {
                 m_HeroText.text = m_CustomHero.name;
                 m_HeroImage.sprite = m_CustomHero.Portrait;
