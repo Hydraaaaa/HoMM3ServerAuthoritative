@@ -10,7 +10,7 @@ public class Faction : ScriptableObject
     public Sprite TownNoFortSprite => m_TownNoFortSprite;
     public Sprite TownNoFortBuiltSprite => m_TownNoFortBuiltSprite;
 
-    public List<Hero> Heroes => m_Heroes;
+    public List<HeroContainer> Heroes => m_Heroes;
 
     [SerializeField] Sprite m_TownSprite;
     [SerializeField] Sprite m_TownBuiltSprite;
@@ -20,5 +20,5 @@ public class Faction : ScriptableObject
 
     [Space]
 
-    [SerializeField] List<Hero> m_Heroes;
+    [SerializeField] List<HeroContainer> m_Heroes;
 }

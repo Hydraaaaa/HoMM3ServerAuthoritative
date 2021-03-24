@@ -38,6 +38,8 @@ public class ScenarioSettings : MonoBehaviour
             m_EnemiesFlags[i].gameObject.SetActive(false);
         }
 
+        HeroPool.Initialize(m_Scenario.HeroInfo);
+
         int _CurrentPlayer = 0;
 
         for (int i = 0; i < 8; i++)
@@ -45,12 +47,14 @@ public class ScenarioSettings : MonoBehaviour
             if (a_Scenario.PlayerInfo[i].ComputerPlayable)
             {
                 m_Players[_CurrentPlayer].gameObject.SetActive(true);
-                m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i], a_Scenario.HeroInfo);
+                m_Players[_CurrentPlayer].Initialize(i, a_Scenario.PlayerInfo[i]);
                 m_Players[_CurrentPlayer].SetName("Computer");
 
                 _CurrentPlayer++;
             }
         }
+
+        UpdateHeroLists();
 
         m_Players[m_GameSettings.LocalPlayerIndex].SetName("Player");
 
@@ -131,6 +135,17 @@ public class ScenarioSettings : MonoBehaviour
         for (int i = 0; i < m_Scenario.PlayerCount; i++)
         {
             m_GameSettings.Players.Add(m_Players[i].GetGameSettings());
+        }
+    }
+
+    public void UpdateHeroLists(int a_CallingPlayer = -1)
+    {
+        for (int i = 0; i < m_Players.Length; i++)
+        {
+            if (i != a_CallingPlayer)
+            {
+                m_Players[i].UpdateHeroList();
+            }
         }
     }
 }

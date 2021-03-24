@@ -28,8 +28,6 @@ public class ScenarioSettingsPlayer : MonoBehaviour
     [SerializeField] Image m_HeroRight = null;
     [SerializeField] Image m_StartingBonusImage = null;
     [SerializeField] Text m_StartingBonusText = null;
-    [SerializeField] Image m_StartingBonusLeft = null;
-    [SerializeField] Image m_StartingBonusRight = null;
 
     [Space]
 
@@ -59,12 +57,10 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     List<Faction> m_AvailableTowns;
     List<Hero> m_AvailableHeroes;
-    List<HeroInfo> m_HeroInfo;
 
-    public void Initialize(int a_Index, PlayerInfo a_PlayerInfo, List<HeroInfo> a_HeroInfo)
+    public void Initialize(int a_Index, PlayerInfo a_PlayerInfo)
     {
         PlayerIndex = a_Index;
-        m_HeroInfo = a_HeroInfo;
 
         m_BackgroundImage.sprite = m_BackgroundSprites[a_Index];
 
@@ -157,20 +153,29 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             }
             else
             {
-                m_HeroText.text = a_PlayerInfo.MainHeroName;
-                m_HeroImage.sprite = m_Heroes.Heroes[a_PlayerInfo.MainHeroPortrait].Portrait;
+                Hero _BaseHero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_PlayerInfo.MainHeroType).Hero;
+                Hero _PortraitHero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_PlayerInfo.MainHeroPortrait).Hero;
 
-                m_CustomHero = ScriptableObject.CreateInstance<Hero>();
-                m_CustomHero.Portrait = m_Heroes.Heroes[a_PlayerInfo.MainHeroPortrait].Portrait;
+                m_HeroText.text = a_PlayerInfo.MainHeroName;
+                m_HeroImage.sprite = _PortraitHero.Portrait;
+
+                m_CustomHero = new Hero();
 
                 if (a_PlayerInfo.MainHeroName != "")
                 {
-                    m_CustomHero.name = a_PlayerInfo.MainHeroName;
+                    m_CustomHero.Name = a_PlayerInfo.MainHeroName;
                 }
                 else
                 {
-                    m_CustomHero.name = m_Heroes.Heroes[a_PlayerInfo.MainHeroType].name;
+                    m_CustomHero.Name = _BaseHero.Name;
                 }
+
+                m_CustomHero.ID = a_PlayerInfo.MainHeroType;
+                m_CustomHero.Faction = _BaseHero.Faction;
+                m_CustomHero.Portrait = _PortraitHero.Portrait;
+
+                HeroPool.ClaimHero(_BaseHero);
+
                 // TODO: Custom Hero ID probably needs to pipe through primary/secondary abilities
             }
         }
@@ -181,11 +186,16 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         m_HeroLeft.gameObject.SetActive(m_IsHeroRandom || m_GenerateHeroAtMainTown);
         m_HeroRight.gameObject.SetActive(m_IsHeroRandom || m_GenerateHeroAtMainTown);
 
-        m_CurrentHeroIndex = -1;
         m_CurrentStartingBonusIndex = -1;
+        m_CurrentHeroIndex = -1;
+
+        if (m_CurrentTownIndex != -1)
+        {
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+        }
 
         UpdateTownSprite();
-        UpdateHeroList();
+        UpdateHeroSprite();
         UpdateStartingBonusSprite();
     }
 
@@ -211,27 +221,44 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
-    void UpdateHeroList()
+    void RenewHeroList()
     {
+        if (m_CurrentHeroIndex != -1 && m_AvailableHeroes != null)
+        {
+            HeroPool.FreeHero(m_AvailableHeroes[m_CurrentHeroIndex]);
+            m_ScenarioSettings.UpdateHeroLists(PlayerIndex);
+        }
+
+        m_CurrentHeroIndex = -1;
+
         if (m_CurrentTownIndex == -1)
         {
             UpdateHeroSprite();
             return;
         }
 
-        m_AvailableHeroes = new List<Hero>(m_AvailableTowns[m_CurrentTownIndex].Heroes);
+        m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
 
-        int _BitwiseIndex = 1 << PlayerIndex;
+        UpdateHeroSprite();
+    }
 
-        for (int i = m_AvailableHeroes.Count - 1; i >= 0; i--)
+    public void UpdateHeroList()
+    {
+        if (m_CurrentHeroIndex != -1 && m_AvailableHeroes != null)
         {
-            HeroInfo _HeroInfo = m_HeroInfo.FirstOrDefault((a_Hero) => a_Hero.ID == m_AvailableHeroes[i].ID);
+            Hero _CurrentHero = m_AvailableHeroes[m_CurrentHeroIndex];
 
-            if (_HeroInfo != null &&
-               (_HeroInfo.Players & _BitwiseIndex) == 0)
-            {
-                m_AvailableHeroes.RemoveAt(i);
-            }
+            HeroPool.FreeHero(_CurrentHero);
+
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+
+            HeroPool.ClaimHero(_CurrentHero);
+
+            m_CurrentHeroIndex = m_AvailableHeroes.IndexOf(_CurrentHero);
+        }
+        else if (m_CurrentTownIndex != -1)
+        {
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
         }
 
         UpdateHeroSprite();
@@ -246,10 +273,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             m_CurrentTownIndex = m_AvailableTowns.Count - 1;
         }
 
-        m_CurrentHeroIndex = -1;
-
         UpdateTownSprite();
-        UpdateHeroList();
+        RenewHeroList();
     }
 
     public void TownRightPressed()
@@ -261,10 +286,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             m_CurrentTownIndex = -1;
         }
 
-        m_CurrentHeroIndex = -1;
-
         UpdateTownSprite();
-        UpdateHeroList();
+        RenewHeroList();
     }
 
     void UpdateTownSprite()
@@ -286,6 +309,11 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
     public void HeroLeftPressed()
     {
+        if (m_CurrentHeroIndex != -1)
+        {
+            HeroPool.FreeHero(m_AvailableHeroes[m_CurrentHeroIndex]);
+        }
+
         m_CurrentHeroIndex--;
 
         if (m_CurrentHeroIndex < -1)
@@ -293,18 +321,34 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             m_CurrentHeroIndex = m_AvailableHeroes.Count - 1;
         }
 
+        if (m_CurrentHeroIndex != -1)
+        {
+            HeroPool.ClaimHero(m_AvailableHeroes[m_CurrentHeroIndex]);
+        }
+
+        m_ScenarioSettings.UpdateHeroLists(PlayerIndex);
         UpdateHeroSprite();
     }
 
     public void HeroRightPressed()
     {
+        if (m_CurrentHeroIndex != -1)
+        {
+            HeroPool.FreeHero(m_AvailableHeroes[m_CurrentHeroIndex]);
+        }
+
         m_CurrentHeroIndex++;
 
         if (m_CurrentHeroIndex > m_AvailableHeroes.Count - 1)
         {
             m_CurrentHeroIndex = -1;
         }
+        else
+        {
+            HeroPool.ClaimHero(m_AvailableHeroes[m_CurrentHeroIndex]);
+        }
 
+        m_ScenarioSettings.UpdateHeroLists(PlayerIndex);
         UpdateHeroSprite();
     }
 
@@ -320,14 +364,14 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             else
             {
                 m_HeroImage.sprite = m_AvailableHeroes[m_CurrentHeroIndex].Portrait;
-                m_HeroText.text = m_AvailableHeroes[m_CurrentHeroIndex].name;
+                m_HeroText.text = m_AvailableHeroes[m_CurrentHeroIndex].Name;
             }
         }
         else
         {
             if (m_CustomHero != null)
             {
-                m_HeroText.text = m_CustomHero.name;
+                m_HeroText.text = m_CustomHero.Name;
                 m_HeroImage.sprite = m_CustomHero.Portrait;
             }
             else
@@ -394,7 +438,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         if (m_CurrentHeroIndex != -1)
         {
-            _Player.Hero = m_AvailableTowns[m_CurrentTownIndex].Heroes[m_CurrentHeroIndex];
+            _Player.Hero = m_AvailableHeroes[m_CurrentHeroIndex];
         }
         else
         {
