@@ -54,14 +54,14 @@ public class ScenarioSettings : MonoBehaviour
             }
         }
 
-        UpdateHeroLists();
-
         m_Players[m_GameSettings.LocalPlayerIndex].SetName("Player");
 
         for (int i = _CurrentPlayer; i < 8; i++)
         {
             m_Players[i].gameObject.SetActive(false);
         }
+
+        UpdateHeroLists();
 
         UpdateFlags();
     }

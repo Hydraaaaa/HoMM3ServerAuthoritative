@@ -191,7 +191,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         if (m_CurrentTownIndex != -1)
         {
-            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex]);
         }
 
         UpdateTownSprite();
@@ -237,7 +237,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             return;
         }
 
-        m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+        m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex]);
 
         UpdateHeroSprite();
     }
@@ -250,15 +250,15 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
             HeroPool.FreeHero(_CurrentHero);
 
-            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex]);
 
             HeroPool.ClaimHero(_CurrentHero);
 
             m_CurrentHeroIndex = m_AvailableHeroes.IndexOf(_CurrentHero);
         }
-        else if (m_CurrentTownIndex != -1)
+        else if (m_CurrentTownIndex != -1 && m_AvailableTowns.Count > 0)
         {
-            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_Factions.Factions[m_CurrentTownIndex]);
+            m_AvailableHeroes = HeroPool.GetFactionHeroes(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex]);
         }
 
         UpdateHeroSprite();
