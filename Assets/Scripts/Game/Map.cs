@@ -19,6 +19,8 @@ public class Map : MonoBehaviour
     const int CLEAR_RIVER_INDEX = 1;
     const int LAVA_RIVER_INDEX = 4;
 
+    public GameSettings GameSettings => m_GameSettings;
+
     [SerializeField] GameSettings m_GameSettings = null;
     [SerializeField] TerrainTileObject m_TileObjectPrefab = null;
     [SerializeField] SpriteRenderer m_TerrainFrame = null;
@@ -415,7 +417,7 @@ public class Map : MonoBehaviour
 
         MapShadowObject _ShadowObject = Instantiate(m_ShadowObjectPrefab, m_ShadowObjectParent);
 
-        _MapObject.Initialize(a_Object, _ShadowObject);
+        _MapObject.Initialize(a_Object, _ShadowObject, this);
         _ShadowObject.Initialize(_MapObject);
 
         if (a_Object.IsUnderground)
@@ -429,7 +431,8 @@ public class Map : MonoBehaviour
             m_Objects.Add(_MapObject);
         }
 
-        if (a_Object.Template.Type != ScenarioObjectType.Monster)
+        if (a_Object.Template.Type != ScenarioObjectType.Monster &&
+            a_Object.Template.Type != ScenarioObjectType.Town)
         {
             var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{a_Object.Template.Name}.asset");
 

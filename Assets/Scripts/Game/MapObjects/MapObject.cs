@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MapObject : MonoBehaviour
 {
+    public Map Map { get; private set; }
+    public ScenarioObject ScenarioObject { get; private set; }
+    public MapShadowObject Shadow { get; private set; }
+
     public SpriteRenderer SpriteRenderer => m_SpriteRenderer;
     public MapObjectRenderer Renderer => m_Renderer;
 
@@ -11,36 +15,31 @@ public class MapObject : MonoBehaviour
     public FactionList Factions => m_Factions;
     public MonsterList Monsters => m_Monsters;
 
-    [SerializeField] protected SpriteRenderer m_SpriteRenderer = null;
-    [SerializeField] protected MapObjectRenderer m_Renderer = null;
+    [SerializeField] SpriteRenderer m_SpriteRenderer = null;
+    [SerializeField] MapObjectRenderer m_Renderer = null;
 
     [Space]
 
-    [SerializeField] protected PlayerColors m_PlayerColors = null;
-    [SerializeField] protected FactionList m_Factions = null;
-    [SerializeField] protected MonsterList m_Monsters = null;
-    [SerializeField] protected MapObjectVisualData m_Resources = null;
+    [SerializeField] PlayerColors m_PlayerColors = null;
+    [SerializeField] FactionList m_Factions = null;
+    [SerializeField] MonsterList m_Monsters = null;
+    [SerializeField] MapObjectVisualData m_Resources = null;
 
-    [SerializeField] protected int m_X = 0;
-    [SerializeField] protected int m_Y = 0;
-    [SerializeField] protected byte[] m_Collision;
-    [SerializeField] protected byte[] m_Interaction;
+    [SerializeField] int m_X = 0;
+    [SerializeField] int m_Y = 0;
+    [SerializeField] byte[] m_Collision;
+    [SerializeField] byte[] m_Interaction;
 
-    public ScenarioObject ScenarioObject => m_ScenarioObject;
-    public MapShadowObject Shadow => m_Shadow;
-
-    protected ScenarioObject m_ScenarioObject;
-    protected MapShadowObject m_Shadow;
-
-    public void Initialize(ScenarioObject a_ScenarioObject, MapShadowObject a_Shadow)
+    public void Initialize(ScenarioObject a_ScenarioObject, MapShadowObject a_Shadow, Map a_Map)
     {
         m_X = a_ScenarioObject.PosX;
         m_Y = a_ScenarioObject.PosY;
         m_Collision = a_ScenarioObject.Template.Passability;
         m_Interaction = a_ScenarioObject.Template.Interactability;
 
-        m_ScenarioObject = a_ScenarioObject;
-        m_Shadow = a_Shadow;
+        ScenarioObject = a_ScenarioObject;
+        Shadow = a_Shadow;
+        Map = a_Map;
 
         gameObject.name = a_ScenarioObject.Template.Name;
 
@@ -74,6 +73,12 @@ public class MapObject : MonoBehaviour
                 MonsterMapObject _Monster = gameObject.AddComponent<MonsterMapObject>();
 
                 _Monster.Initialize(this);
+                break;
+
+            case ScenarioObjectType.Resource:
+                ResourceMapObject _Resource = gameObject.AddComponent<ResourceMapObject>();
+
+                _Resource.Initialize(this);
                 break;
         }
     }

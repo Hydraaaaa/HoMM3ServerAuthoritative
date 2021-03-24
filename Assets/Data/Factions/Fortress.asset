@@ -17,6 +17,11 @@ MonoBehaviour:
   m_TownNoFortSprite: {fileID: 21300000, guid: 617c2c87d6613f143ab5fbb6bb2b4f49, type: 3}
   m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 9dc6e5eb26dcc694b953b8b15d4af982,
     type: 3}
+  m_MapVisualData: {fileID: 11400000, guid: 318ff1f8f3abcdd4988bdd0da3c874f5, type: 2}
+  m_MapVisualDataCapitol: {fileID: 11400000, guid: 5cd61baa23cb6414092488b15b73577a,
+    type: 2}
+  m_MapVisualDataNoFort: {fileID: 11400000, guid: 5d80c7a4f5eb111468e2407eede5d3e6,
+    type: 2}
   m_Heroes:
   - {fileID: 11400000, guid: 8eeb3ded8988daf4c840eb721deb443c, type: 2}
   - {fileID: 11400000, guid: 712ac6df941b21c4bb8d32afd049e43a, type: 2}
