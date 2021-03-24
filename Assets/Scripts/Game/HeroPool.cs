@@ -115,19 +115,17 @@ public class HeroPool : MonoBehaviour
 
     public static void ClaimHero(Hero a_Hero)
     {
-        Debug.Log($"!! Claim Hero {a_Hero.Name} - {a_Hero.ID}");
         Hero _AvailableHero = s_Instance.m_AvailableHeroes.First((a_AvailableHero) => a_AvailableHero.ID == a_Hero.ID);
         s_Instance.m_AvailableHeroes.Remove(_AvailableHero);
     }
 
     public static void FreeHero(Hero a_Hero)
     {
-        Debug.Log($"!! Free Hero {a_Hero.Name} - {a_Hero.ID}");
         Hero _AvailableHero = s_Instance.m_AvailableHeroes.FirstOrDefault((a_AvailableHero) => a_AvailableHero.ID == a_Hero.ID);
 
         if (_AvailableHero != null)
         {
-            Debug.LogWarning($"!! ATTEMPTED TO FREE A FREED HERO");
+            Debug.LogWarning("ATTEMPTED TO FREE A FREED HERO");
         }
         else
         {
