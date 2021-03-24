@@ -142,7 +142,8 @@ public class ScenarioSettings : MonoBehaviour
     {
         for (int i = 0; i < m_Players.Length; i++)
         {
-            if (i != a_CallingPlayer)
+            if (i != a_CallingPlayer &&
+                m_Players[i].gameObject.activeSelf)
             {
                 m_Players[i].UpdateHeroList();
             }
