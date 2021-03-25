@@ -40,7 +40,6 @@ public class Map : MonoBehaviour
     [SerializeField] Transform m_RiverTileObjectParent = null;
     [SerializeField] Transform m_RoadTileObjectParent = null;
     [SerializeField] Transform m_MapObjectParent = null;
-    [SerializeField] Transform m_ShadowObjectParent = null;
 
     [Space]
 
@@ -48,7 +47,6 @@ public class Map : MonoBehaviour
     [SerializeField] Transform m_UndergroundRiverTileObjectParent = null;
     [SerializeField] Transform m_UndergroundRoadTileObjectParent = null;
     [SerializeField] Transform m_UndergroundMapObjectParent = null;
-    [SerializeField] Transform m_UndergroundShadowObjectParent = null;
 
 
     [Space]
@@ -415,7 +413,7 @@ public class Map : MonoBehaviour
     {
         MapObject _MapObject = Instantiate(m_MapObjectPrefab, m_MapObjectParent);
 
-        MapShadowObject _ShadowObject = Instantiate(m_ShadowObjectPrefab, m_ShadowObjectParent);
+        MapShadowObject _ShadowObject = Instantiate(m_ShadowObjectPrefab, _MapObject.transform);
 
         _MapObject.Initialize(a_Object, _ShadowObject, this);
         _ShadowObject.Initialize(_MapObject);
@@ -424,7 +422,7 @@ public class Map : MonoBehaviour
         {
             m_UndergroundObjects.Add(_MapObject);
             _MapObject.transform.parent = m_UndergroundMapObjectParent;
-            _ShadowObject.transform.parent = m_UndergroundShadowObjectParent;
+            _ShadowObject.transform.parent = _MapObject.transform;
         }
         else
         {

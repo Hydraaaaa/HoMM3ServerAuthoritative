@@ -548,12 +548,10 @@ MonoBehaviour:
   m_RiverTileObjectParent: {fileID: 72953004}
   m_RoadTileObjectParent: {fileID: 635900129}
   m_MapObjectParent: {fileID: 2021916575}
-  m_ShadowObjectParent: {fileID: 1910320518}
   m_UndergroundTerrainTileObjectParent: {fileID: 313627167}
   m_UndergroundRiverTileObjectParent: {fileID: 1355087446}
   m_UndergroundRoadTileObjectParent: {fileID: 1439226116}
   m_UndergroundMapObjectParent: {fileID: 1592522018}
-  m_UndergroundShadowObjectParent: {fileID: 692646858}
   m_DirtSprites:
   - {fileID: 21300000, guid: 3c14c143263003f4a97cb5c2cff08830, type: 3}
   - {fileID: 21300000, guid: 2e6ee1e1439bd844d8f6ab5d9d40a82b, type: 3}
@@ -2065,36 +2063,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688984008}
   m_CullTransparentMesh: 0
---- !u!1 &692646857
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 692646858}
-  m_Layer: 0
-  m_Name: Shadows
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &692646858
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692646857}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1858009423}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821472069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2326,6 @@ Transform:
   - {fileID: 72953004}
   - {fileID: 635900129}
   - {fileID: 2021916575}
-  - {fileID: 1910320518}
   m_Father: {fileID: 544584112}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3679,38 +3646,7 @@ Transform:
   - {fileID: 1355087446}
   - {fileID: 1439226116}
   - {fileID: 1592522018}
-  - {fileID: 692646858}
   m_Father: {fileID: 544584112}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1910320517
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1910320518}
-  m_Layer: 0
-  m_Name: Shadows
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1910320518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910320517}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 989251728}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1913253501
