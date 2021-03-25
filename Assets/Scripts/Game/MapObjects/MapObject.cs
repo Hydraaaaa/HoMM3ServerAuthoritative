@@ -23,7 +23,6 @@ public class MapObject : MonoBehaviour
     [SerializeField] PlayerColors m_PlayerColors = null;
     [SerializeField] FactionList m_Factions = null;
     [SerializeField] MonsterList m_Monsters = null;
-    [SerializeField] MapObjectVisualData m_Resources = null;
 
     [SerializeField] int m_X = 0;
     [SerializeField] int m_Y = 0;
