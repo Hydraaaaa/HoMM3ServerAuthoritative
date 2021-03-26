@@ -144,7 +144,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         m_CustomHero = null;
 
-        if (!a_PlayerInfo.IsMainHeroRandom)
+        if (!m_IsHeroRandom && !m_GenerateHeroAtMainTown)
         {
             if (a_PlayerInfo.MainHeroPortrait == 255 || a_PlayerInfo.MainHeroType == 255)
             {
@@ -436,18 +436,29 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             _Player.Faction = m_AvailableTowns[Random.Range(0, m_AvailableTowns.Count)];
         }
 
-        if (m_CurrentHeroIndex != -1)
+        if (m_GenerateHeroAtMainTown || m_IsHeroRandom)
         {
-            _Player.Hero = m_AvailableHeroes[m_CurrentHeroIndex];
+            if (m_CurrentHeroIndex != -1)
+            {
+                _Player.Hero = m_AvailableHeroes[m_CurrentHeroIndex];
+            }
+            else
+            {
+                _Player.Hero = HeroPool.GetRandomHero(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex]);
+            }
         }
         else
         {
-            _Player.Hero = null;
+            _Player.Hero = m_CustomHero;
         }
 
         if (m_CurrentStartingBonusIndex != -1)
         {
             _Player.StartingBonus = m_StartingBonuses.StartingBonuses[m_CurrentStartingBonusIndex];
+        }
+        else
+        {
+            _Player.StartingBonus = m_StartingBonuses.StartingBonuses[Random.Range(0, m_StartingBonuses.StartingBonuses.Count)];
         }
 
         return _Player;

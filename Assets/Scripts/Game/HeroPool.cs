@@ -42,10 +42,14 @@ public class HeroPool : MonoBehaviour
 
             if (_HeroInfo != null)
             {
-                if ((_HeroInfo.ID & 1 << a_PlayerID) == a_PlayerID)
+                if ((_HeroInfo.Players & 1 << a_PlayerID) != 0)
                 {
                     _Heroes.Add(s_Instance.m_AvailableHeroes[i]);
                 }
+            }
+            else
+            {
+                _Heroes.Add(s_Instance.m_AvailableHeroes[i]);
             }
         }
 
@@ -63,16 +67,20 @@ public class HeroPool : MonoBehaviour
 
         for (int i = 0; i < s_Instance.m_AvailableHeroes.Count; i++)
         {
-            if (a_Faction.Heroes.Any((a_HeroContainer) => a_HeroContainer.Hero.ID == s_Instance.m_AvailableHeroes[i].ID))
+            if (s_Instance.m_AvailableHeroes[i].Faction == a_Faction)
             {
                 HeroInfo _HeroInfo = s_Instance.m_HeroInfo.FirstOrDefault((a_HeroInfo) => a_HeroInfo.ID == s_Instance.m_AvailableHeroes[i].ID);
 
                 if (_HeroInfo != null)
                 {
-                    if ((_HeroInfo.ID & 1 << a_PlayerID) == a_PlayerID)
+                    if ((_HeroInfo.Players & 1 << a_PlayerID) != 0)
                     {
                         _Heroes.Add(s_Instance.m_AvailableHeroes[i]);
                     }
+                }
+                else
+                {
+                    _Heroes.Add(s_Instance.m_AvailableHeroes[i]);
                 }
             }
         }

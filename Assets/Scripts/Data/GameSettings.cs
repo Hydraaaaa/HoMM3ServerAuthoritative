@@ -13,7 +13,7 @@ public class GameSettings : ScriptableObject
         public bool IsLocalPlayer;
 
         public Faction Faction;
-        public Hero Hero;
+        [SerializeReference] public Hero Hero;
         public StartingBonus StartingBonus;
     }
 
