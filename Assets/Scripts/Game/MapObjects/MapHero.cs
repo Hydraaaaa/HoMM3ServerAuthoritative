@@ -22,11 +22,15 @@ public class MapHero : MonoBehaviour
 
     int m_Direction = DIRECTION_E;
 
-    public void Initialize(Hero a_Hero, int a_PosX, int a_PosY)
+    bool m_IsUnderground;
+
+    public void Initialize(Hero a_Hero, int a_PosX, int a_PosY, bool a_IsUnderground)
     {
         Hero = a_Hero;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
+
+        m_IsUnderground = a_IsUnderground;
 
         Initialize();
     }

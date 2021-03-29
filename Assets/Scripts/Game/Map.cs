@@ -460,10 +460,21 @@ public class Map : MonoBehaviour
         {
             if (m_GameSettings.Scenario.PlayerInfo[i].GenerateHeroAtMainTown)
             {
-                // Spawn map object at main town coordinates
                 MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
 
-                _Hero.Initialize(m_GameSettings.Players[i].Hero, m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord, m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord);
+                // Spawn map object at main town coordinates
+                if (m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground)
+                {
+                    _Hero.transform.parent = m_UndergroundMapObjectParent;
+                }
+
+                _Hero.Initialize
+                (
+                    m_GameSettings.Players[i].Hero,
+                    m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord,
+                    m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
+                    m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground
+                );
             }
         }
 
