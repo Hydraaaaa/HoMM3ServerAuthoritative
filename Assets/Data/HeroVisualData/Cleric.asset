@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Cleric
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: f3120f6e33f6dcd4a827c6a9d49896b8, type: 3}
+  - {fileID: 21300000, guid: ea3d8bfae64aae048b9276e32325bf3d, type: 3}
+  - {fileID: 21300000, guid: 89c7ad5cbec8a634ba67e864b226ab98, type: 3}
+  - {fileID: 21300000, guid: ea3d8bfae64aae048b9276e32325bf3d, type: 3}
+  - {fileID: 21300000, guid: f3120f6e33f6dcd4a827c6a9d49896b8, type: 3}
+  - {fileID: 21300000, guid: a6df48b6720abbb4a9708ce3764974fc, type: 3}
+  - {fileID: 21300000, guid: 0e18279524e48154f8bf6d0023b56bb6, type: 3}
+  - {fileID: 21300000, guid: a6df48b6720abbb4a9708ce3764974fc, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: f3120f6e33f6dcd4a827c6a9d49896b8, type: 3}
+  - {fileID: 21300000, guid: ea3d8bfae64aae048b9276e32325bf3d, type: 3}
+  - {fileID: 21300000, guid: 89c7ad5cbec8a634ba67e864b226ab98, type: 3}
+  - {fileID: 21300000, guid: ea3d8bfae64aae048b9276e32325bf3d, type: 3}
+  - {fileID: 21300000, guid: f3120f6e33f6dcd4a827c6a9d49896b8, type: 3}
+  - {fileID: 21300000, guid: a6df48b6720abbb4a9708ce3764974fc, type: 3}
+  - {fileID: 21300000, guid: 0e18279524e48154f8bf6d0023b56bb6, type: 3}
+  - {fileID: 21300000, guid: a6df48b6720abbb4a9708ce3764974fc, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Mephala
   m_EditorClassIdentifier: 
-  ID: 16
-  Portrait: {fileID: 21300000, guid: dac57b4e3d21f2748962f3468f311028, type: 3}
+  m_Hero:
+    Name: Mephala
+    ID: 16
+    Faction: {fileID: 11400000, guid: 6c79b3c2649566e438e3ef24e69b1085, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: ebffba6e14e8a0b4ea1139ede816c99d, type: 2}
+    Portrait: {fileID: 21300000, guid: dac57b4e3d21f2748962f3468f311028, type: 3}

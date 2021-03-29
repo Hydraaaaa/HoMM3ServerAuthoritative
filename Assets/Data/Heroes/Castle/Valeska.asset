@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Valeska
   m_EditorClassIdentifier: 
-  ID: 1
-  Portrait: {fileID: 21300000, guid: cd83df55630dc4f4997ac9cc12cdd63f, type: 3}
+  m_Hero:
+    Name: Valeska
+    ID: 1
+    Faction: {fileID: 11400000, guid: d2370daaec787c64c804676b44e40365, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: b4b1a202d33ee56488c339961399267d, type: 2}
+    Portrait: {fileID: 21300000, guid: cd83df55630dc4f4997ac9cc12cdd63f, type: 3}

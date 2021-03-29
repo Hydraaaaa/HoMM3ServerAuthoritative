@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Alchemist
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: 1b3dbe84dc34f934ebaf8b6d3d28fad8, type: 3}
+  - {fileID: 21300000, guid: 14ec0a7a06dd3c44a8f7af50acd9caec, type: 3}
+  - {fileID: 21300000, guid: 023c472a580a131418ef650281eacbc7, type: 3}
+  - {fileID: 21300000, guid: 14ec0a7a06dd3c44a8f7af50acd9caec, type: 3}
+  - {fileID: 21300000, guid: 1b3dbe84dc34f934ebaf8b6d3d28fad8, type: 3}
+  - {fileID: 21300000, guid: 157db99324b78094f9d9857ed5f18119, type: 3}
+  - {fileID: 21300000, guid: 98e22d544f8ed844a92bf4604d16dd90, type: 3}
+  - {fileID: 21300000, guid: 157db99324b78094f9d9857ed5f18119, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: 1b3dbe84dc34f934ebaf8b6d3d28fad8, type: 3}
+  - {fileID: 21300000, guid: 14ec0a7a06dd3c44a8f7af50acd9caec, type: 3}
+  - {fileID: 21300000, guid: 023c472a580a131418ef650281eacbc7, type: 3}
+  - {fileID: 21300000, guid: 14ec0a7a06dd3c44a8f7af50acd9caec, type: 3}
+  - {fileID: 21300000, guid: 1b3dbe84dc34f934ebaf8b6d3d28fad8, type: 3}
+  - {fileID: 21300000, guid: 157db99324b78094f9d9857ed5f18119, type: 3}
+  - {fileID: 21300000, guid: 98e22d544f8ed844a92bf4604d16dd90, type: 3}
+  - {fileID: 21300000, guid: 157db99324b78094f9d9857ed5f18119, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

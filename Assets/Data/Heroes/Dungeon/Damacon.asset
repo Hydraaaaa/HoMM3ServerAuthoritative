@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Damacon
   m_EditorClassIdentifier: 
-  ID: 84
-  Portrait: {fileID: 21300000, guid: 8c4c3955e452c0a4bbab5b9e082623a6, type: 3}
+  m_Hero:
+    Name: Damacon
+    ID: 84
+    Faction: {fileID: 11400000, guid: e787d03739f647343b129ce3c2b724d2, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: db755a18d0a906d4eb3c158d925c1a77, type: 2}
+    Portrait: {fileID: 21300000, guid: 8c4c3955e452c0a4bbab5b9e082623a6, type: 3}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Wizard
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: c5107f377c1ff5e4aab93572eb640059, type: 3}
+  - {fileID: 21300000, guid: c9df0dc5a44a4944f8fcddd3d2944d37, type: 3}
+  - {fileID: 21300000, guid: 2641d7f7018c617449b5dea3636d37f2, type: 3}
+  - {fileID: 21300000, guid: c9df0dc5a44a4944f8fcddd3d2944d37, type: 3}
+  - {fileID: 21300000, guid: c5107f377c1ff5e4aab93572eb640059, type: 3}
+  - {fileID: 21300000, guid: 2aa95d8f6beb24e41be1d48c10b0469a, type: 3}
+  - {fileID: 21300000, guid: 22ee616d87425a34cbe9d701c7f2435f, type: 3}
+  - {fileID: 21300000, guid: 2aa95d8f6beb24e41be1d48c10b0469a, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: c5107f377c1ff5e4aab93572eb640059, type: 3}
+  - {fileID: 21300000, guid: c9df0dc5a44a4944f8fcddd3d2944d37, type: 3}
+  - {fileID: 21300000, guid: 2641d7f7018c617449b5dea3636d37f2, type: 3}
+  - {fileID: 21300000, guid: c9df0dc5a44a4944f8fcddd3d2944d37, type: 3}
+  - {fileID: 21300000, guid: c5107f377c1ff5e4aab93572eb640059, type: 3}
+  - {fileID: 21300000, guid: 2aa95d8f6beb24e41be1d48c10b0469a, type: 3}
+  - {fileID: 21300000, guid: 22ee616d87425a34cbe9d701c7f2435f, type: 3}
+  - {fileID: 21300000, guid: 2aa95d8f6beb24e41be1d48c10b0469a, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Planeswalker
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: 028f374f2ce593b40b1676217b7b9b63, type: 3}
+  - {fileID: 21300000, guid: f2412ef5353005a438e8c4c7cd20dfd5, type: 3}
+  - {fileID: 21300000, guid: ceff96845b79fd949a2ee98797301766, type: 3}
+  - {fileID: 21300000, guid: f2412ef5353005a438e8c4c7cd20dfd5, type: 3}
+  - {fileID: 21300000, guid: 028f374f2ce593b40b1676217b7b9b63, type: 3}
+  - {fileID: 21300000, guid: 4a4990e08f9c61d4fb447cbcd258bb28, type: 3}
+  - {fileID: 21300000, guid: 24c9cbe9ce87053449b512670092a04b, type: 3}
+  - {fileID: 21300000, guid: 4a4990e08f9c61d4fb447cbcd258bb28, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: 028f374f2ce593b40b1676217b7b9b63, type: 3}
+  - {fileID: 21300000, guid: f2412ef5353005a438e8c4c7cd20dfd5, type: 3}
+  - {fileID: 21300000, guid: ceff96845b79fd949a2ee98797301766, type: 3}
+  - {fileID: 21300000, guid: f2412ef5353005a438e8c4c7cd20dfd5, type: 3}
+  - {fileID: 21300000, guid: 028f374f2ce593b40b1676217b7b9b63, type: 3}
+  - {fileID: 21300000, guid: 4a4990e08f9c61d4fb447cbcd258bb28, type: 3}
+  - {fileID: 21300000, guid: 24c9cbe9ce87053449b512670092a04b, type: 3}
+  - {fileID: 21300000, guid: 4a4990e08f9c61d4fb447cbcd258bb28, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

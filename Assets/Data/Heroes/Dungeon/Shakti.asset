@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Shakti
   m_EditorClassIdentifier: 
-  ID: 87
-  Portrait: {fileID: 21300000, guid: d854cc7d2b4737841bff9fa49ac51ac3, type: 3}
+  m_Hero:
+    Name: Shakti
+    ID: 87
+    Faction: {fileID: 11400000, guid: e787d03739f647343b129ce3c2b724d2, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: db755a18d0a906d4eb3c158d925c1a77, type: 2}
+    Portrait: {fileID: 21300000, guid: d854cc7d2b4737841bff9fa49ac51ac3, type: 3}

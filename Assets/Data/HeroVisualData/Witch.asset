@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Witch
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: a82ed37a546e3c042819dcd7c34baaf3, type: 3}
+  - {fileID: 21300000, guid: f118cb252b70a78408abe5728d25e91c, type: 3}
+  - {fileID: 21300000, guid: 46e874ad918983f49ae81c944dc86ba7, type: 3}
+  - {fileID: 21300000, guid: f118cb252b70a78408abe5728d25e91c, type: 3}
+  - {fileID: 21300000, guid: a82ed37a546e3c042819dcd7c34baaf3, type: 3}
+  - {fileID: 21300000, guid: 024c2f8f9a6b5e7418fffd8aac5b6a08, type: 3}
+  - {fileID: 21300000, guid: 3e193d75094357e4e866f3b4719d9166, type: 3}
+  - {fileID: 21300000, guid: 024c2f8f9a6b5e7418fffd8aac5b6a08, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: a82ed37a546e3c042819dcd7c34baaf3, type: 3}
+  - {fileID: 21300000, guid: f118cb252b70a78408abe5728d25e91c, type: 3}
+  - {fileID: 21300000, guid: 46e874ad918983f49ae81c944dc86ba7, type: 3}
+  - {fileID: 21300000, guid: f118cb252b70a78408abe5728d25e91c, type: 3}
+  - {fileID: 21300000, guid: a82ed37a546e3c042819dcd7c34baaf3, type: 3}
+  - {fileID: 21300000, guid: 024c2f8f9a6b5e7418fffd8aac5b6a08, type: 3}
+  - {fileID: 21300000, guid: 3e193d75094357e4e866f3b4719d9166, type: 3}
+  - {fileID: 21300000, guid: 024c2f8f9a6b5e7418fffd8aac5b6a08, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Moandor
   m_EditorClassIdentifier: 
-  ID: 66
-  Portrait: {fileID: 21300000, guid: eb651891f726a3d4fa551c8808a8e9ae, type: 3}
+  m_Hero:
+    Name: Moandor
+    ID: 66
+    Faction: {fileID: 11400000, guid: baa9cdb2d4a6f3e499069a0067a23b7c, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: a44a709b95567b746a00c3eac775a66f, type: 2}
+    Portrait: {fileID: 21300000, guid: eb651891f726a3d4fa551c8808a8e9ae, type: 3}

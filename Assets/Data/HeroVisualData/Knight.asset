@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Knight
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: 867bbfe0ad0ab88428940244eea56d85, type: 3}
+  - {fileID: 21300000, guid: a4df6c052479b4546a4058af771ce6d5, type: 3}
+  - {fileID: 21300000, guid: f7b048d7daec03643abfa71b518354b2, type: 3}
+  - {fileID: 21300000, guid: a4df6c052479b4546a4058af771ce6d5, type: 3}
+  - {fileID: 21300000, guid: 867bbfe0ad0ab88428940244eea56d85, type: 3}
+  - {fileID: 21300000, guid: b8a39a96d84277741b58ef0e2d7a9a8a, type: 3}
+  - {fileID: 21300000, guid: 2ce2b2d636012b346a4bb741c16ab522, type: 3}
+  - {fileID: 21300000, guid: b8a39a96d84277741b58ef0e2d7a9a8a, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: 867bbfe0ad0ab88428940244eea56d85, type: 3}
+  - {fileID: 21300000, guid: a4df6c052479b4546a4058af771ce6d5, type: 3}
+  - {fileID: 21300000, guid: f7b048d7daec03643abfa71b518354b2, type: 3}
+  - {fileID: 21300000, guid: a4df6c052479b4546a4058af771ce6d5, type: 3}
+  - {fileID: 21300000, guid: 867bbfe0ad0ab88428940244eea56d85, type: 3}
+  - {fileID: 21300000, guid: b8a39a96d84277741b58ef0e2d7a9a8a, type: 3}
+  - {fileID: 21300000, guid: 2ce2b2d636012b346a4bb741c16ab522, type: 3}
+  - {fileID: 21300000, guid: b8a39a96d84277741b58ef0e2d7a9a8a, type: 3}
+  m_MovingSprites:
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  m_ShadowMovingSprites:
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  m_FlagIdleSprites:
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  m_FlagMovingSprites:
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []
+  - Array: []

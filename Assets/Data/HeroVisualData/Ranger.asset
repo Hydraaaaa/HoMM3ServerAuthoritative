@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9238189de425b3444813ff975cfec4c8, type: 3}
+  m_Name: Ranger
+  m_EditorClassIdentifier: 
+  m_IdleSprites:
+  - {fileID: 21300000, guid: e9f228bc2bf9f41468cacfc5de097a92, type: 3}
+  - {fileID: 21300000, guid: ff84a41196c295546ba57cbdf9693f6c, type: 3}
+  - {fileID: 21300000, guid: 7c40ede3099597943a4ea33ecd78f5f6, type: 3}
+  - {fileID: 21300000, guid: ff84a41196c295546ba57cbdf9693f6c, type: 3}
+  - {fileID: 21300000, guid: e9f228bc2bf9f41468cacfc5de097a92, type: 3}
+  - {fileID: 21300000, guid: 56de2d1d741a2874d975da6cf984ad42, type: 3}
+  - {fileID: 21300000, guid: a433febc43370784d89ee076eeff58ef, type: 3}
+  - {fileID: 21300000, guid: 56de2d1d741a2874d975da6cf984ad42, type: 3}
+  m_ShadowIdleSprites:
+  - {fileID: 21300000, guid: e9f228bc2bf9f41468cacfc5de097a92, type: 3}
+  - {fileID: 21300000, guid: ff84a41196c295546ba57cbdf9693f6c, type: 3}
+  - {fileID: 21300000, guid: 7c40ede3099597943a4ea33ecd78f5f6, type: 3}
+  - {fileID: 21300000, guid: ff84a41196c295546ba57cbdf9693f6c, type: 3}
+  - {fileID: 21300000, guid: e9f228bc2bf9f41468cacfc5de097a92, type: 3}
+  - {fileID: 21300000, guid: 56de2d1d741a2874d975da6cf984ad42, type: 3}
+  - {fileID: 21300000, guid: a433febc43370784d89ee076eeff58ef, type: 3}
+  - {fileID: 21300000, guid: 56de2d1d741a2874d975da6cf984ad42, type: 3}
+  m_MovingSprites: []
+  m_ShadowMovingSprites: []
+  m_FlagIdleSprites: []
+  m_FlagMovingSprites: []

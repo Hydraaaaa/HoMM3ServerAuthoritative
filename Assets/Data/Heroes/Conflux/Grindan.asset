@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Grindan
   m_EditorClassIdentifier: 
-  ID: 143
-  Portrait: {fileID: 21300000, guid: d44a838441988f4449e720ad8a7b7db8, type: 3}
+  m_Hero:
+    Name: Grindan
+    ID: 143
+    Faction: {fileID: 11400000, guid: 0f66b6701a734b34bb53001531afb553, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 55e9e88eccbf05b4788ddd11a18ba03e, type: 2}
+    Portrait: {fileID: 21300000, guid: d44a838441988f4449e720ad8a7b7db8, type: 3}

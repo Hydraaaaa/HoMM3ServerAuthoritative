@@ -2,19 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.Playables;
-using UnityEngine.ResourceManagement.ResourceLocations;
 
 public class Map : MonoBehaviour
 {
-    [Serializable]
-    public class SpriteArrayContainer
-    {
-        [NonReorderable]
-        public Sprite[] Array;
-    }
-
     const int WATER_TILE_INDEX = 8;
     const int CLEAR_RIVER_INDEX = 1;
     const int LAVA_RIVER_INDEX = 4;
@@ -26,7 +16,11 @@ public class Map : MonoBehaviour
     [SerializeField] SpriteRenderer m_TerrainFrame = null;
     [SerializeField] Transform m_TerrainMask = null;
     [SerializeField] MapObject m_MapObjectPrefab = null;
-    [SerializeField] MapShadowObject m_ShadowObjectPrefab = null;
+    [SerializeField] MapHero m_MapHeroPrefab = null;
+    [SerializeField] MapDwelling m_MapDwellingPrefab = null;
+    [SerializeField] MapTown m_MapTownPrefab = null;
+    [SerializeField] MapResource m_MapResourcePrefab = null;
+    [SerializeField] MapMonster m_MapMonsterPrefab = null;
     [SerializeField] Pathfinding m_Pathfinding = null;
 
     [Space]
@@ -87,12 +81,12 @@ public class Map : MonoBehaviour
     List<TerrainTileObject> m_TerrainTileObjects;
     List<TerrainTileObject> m_RiverTileObjects;
     List<TerrainTileObject> m_RoadTileObjects;
-    List<MapObject> m_Objects;
+    List<GameObject> m_Objects;
 
     List<TerrainTileObject> m_UndergroundTerrainTileObjects;
     List<TerrainTileObject> m_UndergroundRiverTileObjects;
     List<TerrainTileObject> m_UndergroundRoadTileObjects;
-    List<MapObject> m_UndergroundObjects;
+    List<GameObject> m_UndergroundObjects;
 
     List<List<Sprite>> m_TerrainSprites;
     List<List<Sprite>> m_RiverSprites;
@@ -396,65 +390,83 @@ public class Map : MonoBehaviour
 
         // <><><><><> Objects
 
-        m_Objects = new List<MapObject>();
-        m_UndergroundObjects = new List<MapObject>();
+        m_Objects = new List<GameObject>();
+        m_UndergroundObjects = new List<GameObject>();
 
         List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
 
+        // Load map objects
         for (int i = 0; i < _Objects.Count; i++)
         {
-            StartCoroutine(LoadAsset(_Objects[i]));
+            ScenarioObject _Object = _Objects[i];
+
+            GameObject _MapObject;
+
+            switch (_Object.Template.Type)
+            {
+                case ScenarioObjectType.Hero:
+                    MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
+                    _Hero.Initialize(_Object);
+                    _MapObject = _Hero.gameObject;
+                    break;
+
+                case ScenarioObjectType.Resource:
+                    MapResource _Resource = Instantiate(m_MapResourcePrefab, m_MapObjectParent);
+                    _Resource.Initialize(_Object);
+                    _MapObject = _Resource.gameObject;
+                    break;
+
+                case ScenarioObjectType.Dwelling:
+                    MapDwelling _Dwelling = Instantiate(m_MapDwellingPrefab, m_MapObjectParent);
+                    _Dwelling.Initialize(_Object);
+                    _MapObject = _Dwelling.gameObject;
+                    break;
+
+                case ScenarioObjectType.Town:
+                    MapTown _Town = Instantiate(m_MapTownPrefab, m_MapObjectParent);
+                    _Town.Initialize(_Object);
+                    _MapObject = _Town.gameObject;
+                    break;
+
+                case ScenarioObjectType.Monster:
+                    MapMonster _Monster = Instantiate(m_MapMonsterPrefab, m_MapObjectParent);
+                    _Monster.Initialize(_Object);
+                    _MapObject = _Monster.gameObject;
+                    break;
+
+                default:
+                    MapObject _Obj = Instantiate(m_MapObjectPrefab, m_MapObjectParent);
+                    _Obj.Initialize(_Object);
+                    _MapObject = _Obj.gameObject;
+                    break;
+
+            }
+
+            _MapObject.transform.position = new Vector3(_Object.PosX + 0.5f, -_Object.PosY - 0.5f, 0);
+
+            if (_Object.IsUnderground)
+            {
+                m_UndergroundObjects.Add(_MapObject);
+                _MapObject.transform.parent = m_UndergroundMapObjectParent;
+            }
+            else
+            {
+                m_Objects.Add(_MapObject);
+            }
+        }
+
+        // Spawn starting heroes
+        for (int i = 0; i < m_GameSettings.Players.Count; i++)
+        {
+            if (m_GameSettings.Scenario.PlayerInfo[i].GenerateHeroAtMainTown)
+            {
+                // Spawn map object at main town coordinates
+                MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
+
+                _Hero.Initialize(m_GameSettings.Players[i].Hero, m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord, m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord);
+            }
         }
 
         m_Pathfinding.Generate(m_GameSettings.Scenario);
-    }
-
-    IEnumerator LoadAsset(ScenarioObject a_Object)
-    {
-        MapObject _MapObject = Instantiate(m_MapObjectPrefab, m_MapObjectParent);
-
-        MapShadowObject _ShadowObject = Instantiate(m_ShadowObjectPrefab, _MapObject.transform);
-
-        _MapObject.Initialize(a_Object, _ShadowObject, this);
-        _ShadowObject.Initialize(_MapObject);
-
-        if (a_Object.IsUnderground)
-        {
-            m_UndergroundObjects.Add(_MapObject);
-            _MapObject.transform.parent = m_UndergroundMapObjectParent;
-            _ShadowObject.transform.parent = _MapObject.transform;
-        }
-        else
-        {
-            m_Objects.Add(_MapObject);
-        }
-
-        if (a_Object.Template.Type != ScenarioObjectType.Monster &&
-            a_Object.Template.Type != ScenarioObjectType.Town)
-        {
-            var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{a_Object.Template.Name}.asset");
-
-            yield return _Operation;
-
-            if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
-            {
-                Debug.Log(a_Object.Template.Name);
-                yield break;
-            }
-
-            _MapObject.Renderer.SetSprites(_Operation.Result.Sprites);
-
-            if (_Operation.Result.Sprites.Length == 0)
-            {
-                Debug.Log($"!! FAILED - {_Operation.Result.name}");
-            }
-
-            _ShadowObject.Renderer.SetSprites(_Operation.Result.ShadowSprites);
-
-            if (_Operation.Result.Sprites.Length == 0)
-            {
-                Debug.Log($"!! SHADOW - {_Operation.Result.name}");
-            }
-        }
     }
 }

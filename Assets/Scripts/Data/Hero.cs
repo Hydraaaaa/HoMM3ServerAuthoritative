@@ -7,6 +7,7 @@ public class Hero
     public string Name;
     public int ID;
     public Faction Faction;
+    public HeroVisualData HeroVisualData;
 
     public Sprite Portrait;
 
@@ -23,6 +24,7 @@ public class Hero
         Name = a_Copy.Name;
         ID = a_Copy.ID;
         Faction = a_Copy.Faction;
+        HeroVisualData = a_Copy.HeroVisualData;
         Portrait = a_Copy.Portrait;
     }
 }

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Rissa
   m_EditorClassIdentifier: 
-  ID: 38
-  Portrait: {fileID: 21300000, guid: 985b8fdef99de0a449a5c3176db49649, type: 3}
+  m_Hero:
+    Name: Rissa
+    ID: 38
+    Faction: {fileID: 11400000, guid: 1d052303901cf5542b2ae246f4aea0a1, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: ac1aec1c93c3c4d4699e607c2a43c25a, type: 2}
+    Portrait: {fileID: 21300000, guid: 985b8fdef99de0a449a5c3176db49649, type: 3}

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Ayden
   m_EditorClassIdentifier: 
-  ID: 56
-  Portrait: {fileID: 21300000, guid: cceb462889058134788e2e94f9e0e5a8, type: 3}
+  m_Hero:
+    Name: Ayden
+    ID: 56
+    Faction: {fileID: 11400000, guid: 9e373e4c651696e49b7806a265ad7e07, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: d87d4fac0827efe4c80bac4ae4bd82aa, type: 2}
+    Portrait: {fileID: 21300000, guid: cceb462889058134788e2e94f9e0e5a8, type: 3}

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Caitlin
   m_EditorClassIdentifier: 
-  ID: 15
-  Portrait: {fileID: 21300000, guid: 262cc6a913abc30418cc212ba327a6a9, type: 3}
+  m_Hero:
+    Name: Caitlin
+    ID: 15
+    Faction: {fileID: 11400000, guid: d2370daaec787c64c804676b44e40365, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 19c0753fbfcc33f4397f4c77cfd31297, type: 2}
+    Portrait: {fileID: 21300000, guid: 262cc6a913abc30418cc212ba327a6a9, type: 3}

@@ -539,7 +539,15 @@ MonoBehaviour:
   m_TerrainMask: {fileID: 1078446455}
   m_MapObjectPrefab: {fileID: 866260558977849879, guid: fe2a121d12fea6342aaac6e13b85726f,
     type: 3}
-  m_ShadowObjectPrefab: {fileID: -2725442899062352785, guid: 4bdc507220893e14aa99ec919b70c488,
+  m_MapHeroPrefab: {fileID: -8987992503019053265, guid: 1740d8664f2e86e488ad5b364e411bdf,
+    type: 3}
+  m_MapDwellingPrefab: {fileID: 3639490253395179790, guid: 2bb1b849297096b40b446f839a2eb1da,
+    type: 3}
+  m_MapTownPrefab: {fileID: -668750147321573498, guid: 141a69fb784410241a4fabe2f44ab90c,
+    type: 3}
+  m_MapResourcePrefab: {fileID: -1521633988062041986, guid: 6640d7d8f75217142bc9a9efaf331826,
+    type: 3}
+  m_MapMonsterPrefab: {fileID: 9117767346770914542, guid: e0b2522ad98b041458abe3e06a842b63,
     type: 3}
   m_Pathfinding: {fileID: 544584114}
   m_TerrainRoot: {fileID: 989251728}

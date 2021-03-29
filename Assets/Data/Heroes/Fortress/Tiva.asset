@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Tiva
   m_EditorClassIdentifier: 
-  ID: 127
-  Portrait: {fileID: 21300000, guid: adeb91e83693c214987b76f15f4b3ce7, type: 3}
+  m_Hero:
+    Name: Tiva
+    ID: 127
+    Faction: {fileID: 11400000, guid: 3bf1083f62ea53d4792afa54a3a87564, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 03ab367a4c06d554d92cbfcb94fe98ab, type: 2}
+    Portrait: {fileID: 21300000, guid: adeb91e83693c214987b76f15f4b3ce7, type: 3}

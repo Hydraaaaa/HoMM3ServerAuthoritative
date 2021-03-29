@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
+  m_Name: Lord Haart
+  m_EditorClassIdentifier: 
+  m_Hero:
+    Name: Lord Haart
+    ID: 4
+    Faction: {fileID: 11400000, guid: d2370daaec787c64c804676b44e40365, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: b4b1a202d33ee56488c339961399267d, type: 2}
+    Portrait: {fileID: 21300000, guid: 775a72a03067c50459cbc5e4e3316c87, type: 3}

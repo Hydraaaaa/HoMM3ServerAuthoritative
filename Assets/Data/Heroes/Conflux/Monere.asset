@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Monere
   m_EditorClassIdentifier: 
-  ID: 132
-  Portrait: {fileID: 21300000, guid: fce26c26e3069e64c88fd442dd5bc08c, type: 3}
+  m_Hero:
+    Name: Monere
+    ID: 132
+    Faction: {fileID: 11400000, guid: 0f66b6701a734b34bb53001531afb553, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 0bc99c570e7177241841dacb7c7a8577, type: 2}
+    Portrait: {fileID: 21300000, guid: fce26c26e3069e64c88fd442dd5bc08c, type: 3}

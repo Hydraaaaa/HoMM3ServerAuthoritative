@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Pasis
   m_EditorClassIdentifier: 
-  ID: 128
-  Portrait: {fileID: 21300000, guid: feef0c8ed3780db45af371c1817acab7, type: 3}
+  m_Hero:
+    Name: Pasis
+    ID: 128
+    Faction: {fileID: 11400000, guid: 0f66b6701a734b34bb53001531afb553, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 0bc99c570e7177241841dacb7c7a8577, type: 2}
+    Portrait: {fileID: 21300000, guid: feef0c8ed3780db45af371c1817acab7, type: 3}

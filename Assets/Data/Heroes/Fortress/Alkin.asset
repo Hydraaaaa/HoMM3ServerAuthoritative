@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Alkin
   m_EditorClassIdentifier: 
-  ID: 116
-  Portrait: {fileID: 21300000, guid: 6c86d61d0f2cfb749a9f48555a0b698c, type: 3}
+  m_Hero:
+    Name: Alkin
+    ID: 116
+    Faction: {fileID: 11400000, guid: 3bf1083f62ea53d4792afa54a3a87564, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 37ca18e3536b2344f91d7347cc424610, type: 2}
+    Portrait: {fileID: 21300000, guid: 6c86d61d0f2cfb749a9f48555a0b698c, type: 3}

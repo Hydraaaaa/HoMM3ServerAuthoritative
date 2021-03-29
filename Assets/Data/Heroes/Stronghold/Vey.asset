@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55dcf336f6fdc3d4bb0071f4be482561, type: 3}
   m_Name: Vey
   m_EditorClassIdentifier: 
-  ID: 105
-  Portrait: {fileID: 21300000, guid: ec60e965b27958c4592da51a7c816566, type: 3}
+  m_Hero:
+    Name: Vey
+    ID: 105
+    Faction: {fileID: 11400000, guid: 4eac02cbaf9e2e447b0cb7929e5e3c50, type: 2}
+    HeroVisualData: {fileID: 11400000, guid: 8ea0f9a3e9b58c8499bb0cc17aedc4e9, type: 2}
+    Portrait: {fileID: 21300000, guid: ec60e965b27958c4592da51a7c816566, type: 3}
