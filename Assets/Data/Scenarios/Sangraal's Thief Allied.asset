@@ -178,7 +178,7 @@ MonoBehaviour:
   WinCondition: 4
   LossCondition: 255
   HasTeams: 1
-  FreeHeroes: eff7fffffffffffffef7ffffffffffff00000000
+  AvailableHeroes: eff7fffffffffffffef7ffffffffffff00000000
   HeroInfo: []
   Terrain:
   - TerrainType: 2

@@ -774,12 +774,11 @@ public class H3MImporter : EditorWindow
                 }
             }
 
-            // <><><><><> Unsupported Junk (for now)
-            a_Scenario.FreeHeroes = new byte[20];
+            a_Scenario.AvailableHeroes = new byte[20];
 
             for (int i = 0; i < 20; i++)
             {
-                a_Scenario.FreeHeroes[i] = a_Bytes[_CurrentByte + i];
+                a_Scenario.AvailableHeroes[i] = a_Bytes[_CurrentByte + i];
             }
 
             _CurrentByte += 20;

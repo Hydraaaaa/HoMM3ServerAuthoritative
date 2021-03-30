@@ -38,7 +38,7 @@ public class ScenarioSettings : MonoBehaviour
             m_EnemiesFlags[i].gameObject.SetActive(false);
         }
 
-        HeroPool.Initialize(m_Scenario.HeroInfo);
+        HeroPool.Initialize(m_Scenario.HeroInfo, m_Scenario.AvailableHeroes);
 
         int _CurrentPlayer = 0;
 

@@ -179,7 +179,7 @@ MonoBehaviour:
   WinCondition: 255
   LossCondition: 255
   HasTeams: 0
-  FreeHeroes: 0000ffffffffffff0000ffffffffffff00000000
+  AvailableHeroes: 0000ffffffffffff0000ffffffffffff00000000
   HeroInfo:
   - ID: 16
     Portrait: 255

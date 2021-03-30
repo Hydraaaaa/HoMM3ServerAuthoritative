@@ -19,11 +19,13 @@ public class HeroPool : MonoBehaviour
     [SerializeField] FactionList m_Factions;
 
     List<HeroInfo> m_HeroInfo;
+    byte[] m_AvailableStartingHeroes;
     List<Hero> m_AvailableHeroes;
 
-    public static void Initialize(List<HeroInfo> a_HeroInfo)
+    public static void Initialize(List<HeroInfo> a_HeroInfo, byte[] a_AvailableStartingHeroes)
     {
         s_Instance.m_HeroInfo = a_HeroInfo;
+        s_Instance.m_AvailableStartingHeroes = a_AvailableStartingHeroes;
         s_Instance.m_AvailableHeroes = new List<Hero>(s_Instance.m_Heroes.Heroes.Count);
 
         for (int i = 0; i < s_Instance.m_Heroes.Heroes.Count; i++)
@@ -32,7 +34,7 @@ public class HeroPool : MonoBehaviour
         }
     }
 
-    public static Hero GetRandomHero(int a_PlayerID)
+    public static Hero GetRandomHero(int a_PlayerID, bool a_IsPregame)
     {
         List<Hero> _Heroes = new List<Hero>();
 
@@ -53,6 +55,17 @@ public class HeroPool : MonoBehaviour
             }
         }
 
+        for (int i = _Heroes.Count - 1; i >= 0; i--)
+        {
+            int _Index = _Heroes[i].ID / 8;
+            int _Bit = _Heroes[i].ID % 8;
+
+            if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+            {
+                _Heroes.RemoveAt(i);
+            }
+        }
+
         if (_Heroes.Count == 0)
         {
             return null;
@@ -61,7 +74,7 @@ public class HeroPool : MonoBehaviour
         return _Heroes[Random.Range(0, _Heroes.Count)];
     }
 
-    public static Hero GetRandomHero(int a_PlayerID, Faction a_Faction)
+    public static Hero GetRandomHero(int a_PlayerID, Faction a_Faction, bool a_IsPregame)
     {
         List<Hero> _Heroes = new List<Hero>();
 
@@ -85,6 +98,17 @@ public class HeroPool : MonoBehaviour
             }
         }
 
+        for (int i = _Heroes.Count - 1; i >= 0; i--)
+        {
+            int _Index = _Heroes[i].ID / 8;
+            int _Bit = _Heroes[i].ID % 8;
+
+            if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+            {
+                _Heroes.RemoveAt(i);
+            }
+        }
+
         if (_Heroes.Count == 0)
         {
             return null;
@@ -93,7 +117,7 @@ public class HeroPool : MonoBehaviour
         return _Heroes[Random.Range(0, _Heroes.Count)];
     }
 
-    public static List<Hero> GetFactionHeroes(int a_PlayerID, Faction a_Faction)
+    public static List<Hero> GetFactionHeroes(int a_PlayerID, Faction a_Faction, bool a_IsPregame = false)
     {
         List<Hero> _Heroes = new List<Hero>(a_Faction.Heroes.Select((a_Hero) => a_Hero.Hero).ToList());
 
@@ -112,6 +136,20 @@ public class HeroPool : MonoBehaviour
             if (_HeroInfo != null)
             {
                 if ((_HeroInfo.Players & 1 << a_PlayerID) == 0)
+                {
+                    _Heroes.RemoveAt(i);
+                }
+            }
+        }
+
+        if (a_IsPregame)
+        {
+            for (int i = _Heroes.Count - 1; i >= 0; i--)
+            {
+                int _Index = _Heroes[i].ID / 8;
+                int _Bit = _Heroes[i].ID % 8;
+
+                if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
                 {
                     _Heroes.RemoveAt(i);
                 }

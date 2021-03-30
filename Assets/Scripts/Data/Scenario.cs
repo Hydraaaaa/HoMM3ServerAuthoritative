@@ -174,7 +174,9 @@ public class Scenario : ScriptableObject
 
     public bool HasTeams;
 
-    public byte[] FreeHeroes; // What is this?
+    // Available Heroes
+    // If a hero is already present on the map, they won't be available here
+    public byte[] AvailableHeroes;
 
     public List<HeroInfo> HeroInfo;
 
