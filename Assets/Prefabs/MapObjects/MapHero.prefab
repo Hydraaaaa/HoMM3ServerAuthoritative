@@ -298,6 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7059243216695515092}
   - component: {fileID: -8987992503019053265}
+  - component: {fileID: 7359231849620459010}
   m_Layer: 0
   m_Name: MapHero
   m_TagString: Untagged
@@ -337,3 +338,16 @@ MonoBehaviour:
   m_HeroRenderer: {fileID: 7182491388362948343}
   m_HeroShadowRenderer: {fileID: 3861410168938928362}
   m_FlagRenderer: {fileID: 8767879007887385102}
+  m_DynamicObstacle: {fileID: 7359231849620459010}
+--- !u!114 &7359231849620459010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987850202313555810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b299bacbc7996f4ea079a010f20089b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

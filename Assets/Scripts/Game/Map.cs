@@ -179,7 +179,7 @@ public class Map : MonoBehaviour
 
                 _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].TerrainSpriteID}";
 
-                _TileObject.transform.SetParent(m_TerrainTileObjectParent);
+                _TileObject.transform.parent = m_TerrainTileObjectParent;
 
                 m_TerrainTileObjects.Add(_TileObject);
 
@@ -220,7 +220,7 @@ public class Map : MonoBehaviour
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RiverSpriteID}";
 
-                    _TileObject.transform.SetParent(m_RiverTileObjectParent);
+                    _TileObject.transform.parent = m_RiverTileObjectParent;
 
                     m_RiverTileObjects.Add(_TileObject);
                 }
@@ -254,7 +254,7 @@ public class Map : MonoBehaviour
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_Terrain[_Index].RoadSpriteID}";
 
-                    _TileObject.transform.SetParent(m_RoadTileObjectParent);
+                    _TileObject.transform.parent = m_RoadTileObjectParent;
 
                     m_RoadTileObjects.Add(_TileObject);
                 }
@@ -312,7 +312,7 @@ public class Map : MonoBehaviour
 
                     _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].TerrainSpriteID}";
 
-                    _TileObject.transform.SetParent(m_UndergroundTerrainTileObjectParent);
+                    _TileObject.transform.parent = m_UndergroundTerrainTileObjectParent;
 
                     m_UndergroundTerrainTileObjects.Add(_TileObject);
 
@@ -346,7 +346,7 @@ public class Map : MonoBehaviour
 
                         _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RiverSpriteID}";
 
-                        _TileObject.transform.SetParent(m_UndergroundRiverTileObjectParent);
+                        _TileObject.transform.parent = m_UndergroundRiverTileObjectParent;
 
                         m_UndergroundRiverTileObjects.Add(_TileObject);
                     }
@@ -380,7 +380,7 @@ public class Map : MonoBehaviour
 
                         _TileObject.name = $"{_TileObject.Renderer.sprite.name}  Pos {_Index}  ID {_UndergroundTerrain[_Index].RoadSpriteID}";
 
-                        _TileObject.transform.SetParent(m_UndergroundRoadTileObjectParent);
+                        _TileObject.transform.parent = m_UndergroundRoadTileObjectParent;
 
                         m_UndergroundRoadTileObjects.Add(_TileObject);
                     }
@@ -394,26 +394,29 @@ public class Map : MonoBehaviour
         m_UndergroundObjects = new List<GameObject>();
 
         List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
+        List<GameObject> _MapObjects = new List<GameObject>(_Objects.Count);
+        Dictionary<ScenarioObject, DynamicMapObstacle> _DynamicObstacles = new Dictionary<ScenarioObject, DynamicMapObstacle>();
 
         // Load map objects
         for (int i = 0; i < _Objects.Count; i++)
         {
             ScenarioObject _Object = _Objects[i];
-
             GameObject _MapObject;
 
             switch (_Object.Template.Type)
             {
                 case ScenarioObjectType.Hero:
                     MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
-                    _Hero.Initialize(_Object);
+                    _Hero.Initialize(_Object, m_Pathfinding);
                     _MapObject = _Hero.gameObject;
+                    _DynamicObstacles.Add(_Object, _Hero.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Resource:
                     MapResource _Resource = Instantiate(m_MapResourcePrefab, m_MapObjectParent);
-                    _Resource.Initialize(_Object);
+                    _Resource.Initialize(_Object, m_Pathfinding);
                     _MapObject = _Resource.gameObject;
+                    _DynamicObstacles.Add(_Object, _Resource.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Dwelling:
@@ -430,8 +433,9 @@ public class Map : MonoBehaviour
 
                 case ScenarioObjectType.Monster:
                     MapMonster _Monster = Instantiate(m_MapMonsterPrefab, m_MapObjectParent);
-                    _Monster.Initialize(_Object);
+                    _Monster.Initialize(_Object, m_Pathfinding);
                     _MapObject = _Monster.gameObject;
+                    _DynamicObstacles.Add(_Object, _Monster.DynamicObstacle);
                     break;
 
                 default:
@@ -453,7 +457,11 @@ public class Map : MonoBehaviour
             {
                 m_Objects.Add(_MapObject);
             }
+
+            _MapObjects.Add(_MapObject);
         }
+
+        m_Pathfinding.Generate(m_GameSettings.Scenario, _MapObjects, _DynamicObstacles);
 
         // Spawn starting heroes
         for (int i = 0; i < m_GameSettings.Players.Count; i++)
@@ -473,11 +481,10 @@ public class Map : MonoBehaviour
                     m_GameSettings.Players[i].Hero,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
-                    m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground
+                    m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground,
+                    m_Pathfinding
                 );
             }
         }
-
-        m_Pathfinding.Generate(m_GameSettings.Scenario);
     }
 }

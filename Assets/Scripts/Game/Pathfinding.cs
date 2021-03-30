@@ -17,16 +17,16 @@ public class Pathfinding : MonoBehaviour
 
         public Node ParentNode;
 
-        public List<ScenarioObject> BlockingObjects = new List<ScenarioObject>();
-        public List<ScenarioObject> InteractionObjects = new List<ScenarioObject>();
+        public List<GameObject> BlockingObjects = new List<GameObject>();
+        public List<GameObject> InteractionObjects = new List<GameObject>();
 
         public List<(Node Node, int Cost)> Pathways = new List<(Node, int)>();
     }
 
     Scenario m_Scenario;
 
-    public List<Node> m_OverworldNodes;
-    public List<Node> m_UndergroundNodes;
+    List<Node> m_OverworldNodes;
+    List<Node> m_UndergroundNodes;
 
     //void OnDrawGizmos()
     //{
@@ -58,7 +58,6 @@ public class Pathfinding : MonoBehaviour
                             //{
                                 //if (m_Scenario.Terrain[_DestinationNode.PosX + _DestinationNode.PosY * m_Scenario.Size].TerrainType == 8)
                                 //{
-
                                     //Gizmos.DrawLine(new Vector3(m_OverworldNodes[i].PosX, -m_OverworldNodes[i].PosY), new Vector3(_DestinationNode.PosX, -_DestinationNode.PosY));
                                 //}
                             //}
@@ -76,7 +75,7 @@ public class Pathfinding : MonoBehaviour
         //}
     //}
 
-    public void Generate(Scenario a_Scenario)
+    public void Generate(Scenario a_Scenario, List<GameObject> a_MapObjects, Dictionary<ScenarioObject, DynamicMapObstacle> a_DynamicObstacles)
     {
         m_Scenario = a_Scenario;
 
@@ -89,15 +88,26 @@ public class Pathfinding : MonoBehaviour
 
         for (int i = 0; i < a_Scenario.Objects.Count; i++)
         {
-            if (!a_Scenario.Objects[i].IsUnderground)
+            List<Node> _Nodes;
+
+            if (a_Scenario.Objects[i].IsUnderground)
             {
-                for (int y = 0; y < 6; y++)
+                _Nodes = m_UndergroundNodes;
+            }
+            else
+            {
+                _Nodes = m_OverworldNodes;
+            }
+
+            for (int y = 0; y < 6; y++)
+            {
+                if (a_Scenario.Objects[i].Template.Passability[y] != 0)
                 {
-                    if (a_Scenario.Objects[i].Template.Passability[y] != 0)
+                    for (int j = 0; j < 8; j++)
                     {
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 1) == 0)
+                        if ((a_Scenario.Objects[i].Template.Passability[y] & (1 << j)) == 0)
                         {
-                            int _X = a_Scenario.Objects[i].PosX - 7;
+                            int _X = a_Scenario.Objects[i].PosX - (7 - j);
                             int _Y = a_Scenario.Objects[i].PosY + y - 5;
 
                             if (_X >= 0 &&
@@ -105,114 +115,28 @@ public class Pathfinding : MonoBehaviour
                                 _X < a_Scenario.Size &&
                                 _Y < a_Scenario.Size)
                             {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
+                                Node _Node = _Nodes[_X + _Y * a_Scenario.Size];
 
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 2) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 6;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 4) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 5;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 8) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 4;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 16) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 3;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 32) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 2;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 64) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 1;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Passability[y] & 128) == 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].BlockingObjects.Add(a_Scenario.Objects[i]);
+                                if (a_DynamicObstacles.ContainsKey(a_Scenario.Objects[i]))
+                                {
+                                    a_DynamicObstacles[a_Scenario.Objects[i]].AddBlockedNode(_Node);
+                                }
+                                else
+                                {
+                                    _Node.BlockingObjects.Add(a_MapObjects[i]);
+                                }
                             }
                         }
                     }
+                }
 
-                    if (a_Scenario.Objects[i].Template.Interactability[y] != 255)
+                if (a_Scenario.Objects[i].Template.Interactability[y] != 255)
+                {
+                    for (int j = 0; j < 8; j++)
                     {
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 1) != 0)
+                        if ((a_Scenario.Objects[i].Template.Interactability[y] & (1 << j)) != 0)
                         {
-                            int _X = a_Scenario.Objects[i].PosX - 7;
+                            int _X = a_Scenario.Objects[i].PosX - (7 - j);
                             int _Y = a_Scenario.Objects[i].PosY + y - 5;
 
                             if (_X >= 0 &&
@@ -220,105 +144,16 @@ public class Pathfinding : MonoBehaviour
                                 _X < a_Scenario.Size &&
                                 _Y < a_Scenario.Size)
                             {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
+                                Node _Node = _Nodes[_X + _Y * a_Scenario.Size];
 
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 2) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 6;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 4) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 5;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 8) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 4;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 16) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 3;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 32) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 2;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 64) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX - 1;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
-                            }
-                        }
-
-                        if ((a_Scenario.Objects[i].Template.Interactability[y] & 128) != 0)
-                        {
-                            int _X = a_Scenario.Objects[i].PosX;
-                            int _Y = a_Scenario.Objects[i].PosY + y - 5;
-
-                            if (_X >= 0 &&
-                                _Y >= 0 &&
-                                _X < a_Scenario.Size &&
-                                _Y < a_Scenario.Size)
-                            {
-                                m_OverworldNodes[_X + _Y * a_Scenario.Size].InteractionObjects.Add(a_Scenario.Objects[i]);
+                                if (a_DynamicObstacles.ContainsKey(a_Scenario.Objects[i]))
+                                {
+                                    a_DynamicObstacles[a_Scenario.Objects[i]].AddInteractedNode(_Node);
+                                }
+                                else
+                                {
+                                    _Node.InteractionObjects.Add(a_MapObjects[i]);
+                                }
                             }
                         }
                     }
@@ -377,7 +212,7 @@ public class Pathfinding : MonoBehaviour
                         GetPathwayCost(_Index, (x - 1) + y * a_ScenarioSize, a_Terrain, false))
                     );
                 }
-                
+
                 if (x < a_ScenarioSize - 1)
                 {
                     if (y > 0)
@@ -588,5 +423,17 @@ public class Pathfinding : MonoBehaviour
         _OutputPath.Reverse();
 
         return _OutputPath;
+    }
+
+    public Node GetNode(int a_PosX, int a_PosY, bool a_IsUnderground)
+    {
+        if (a_IsUnderground)
+        {
+            return m_UndergroundNodes[a_PosX + a_PosY * m_Scenario.Size];
+        }
+        else
+        {
+            return m_OverworldNodes[a_PosX + a_PosY * m_Scenario.Size];
+        }
     }
 }

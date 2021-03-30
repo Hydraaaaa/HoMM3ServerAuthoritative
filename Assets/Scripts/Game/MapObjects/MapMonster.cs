@@ -7,13 +7,16 @@ public class MapMonster : MonoBehaviour
 {
     public Monster Monster { get; private set; }
 
+    public DynamicMapObstacle DynamicObstacle => m_DynamicObstacle;
+
     [SerializeField] MonsterList m_Monsters;
 
     [SerializeField] MapObjectRenderer m_Renderer;
     [SerializeField] MapObjectRenderer m_ShadowRenderer;
     [SerializeField] SpriteRenderer m_SpriteRenderer;
+    [SerializeField] DynamicMapObstacle m_DynamicObstacle;
 
-    public void Initialize(ScenarioObject a_ScenarioObject)
+    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
     {
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
 
@@ -76,6 +79,8 @@ public class MapMonster : MonoBehaviour
         m_Renderer.SetOffset(_Offset);
         m_ShadowRenderer.SetSprites(Monster.MapVisualData.m_ShadowSprites);
         m_ShadowRenderer.SetOffset(_Offset);
+
+        m_DynamicObstacle.Initialize(a_Pathfinding);
 
         gameObject.name = Monster.name;
     }

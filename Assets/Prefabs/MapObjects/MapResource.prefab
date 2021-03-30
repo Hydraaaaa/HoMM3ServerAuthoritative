@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 2286810684168684882}
   - component: {fileID: 8270222893829764056}
   - component: {fileID: -1521633988062041986}
+  - component: {fileID: -1983810066348741805}
   m_Layer: 0
   m_Name: MapResource
   m_TagString: Untagged
@@ -209,4 +210,17 @@ MonoBehaviour:
   m_Renderer: {fileID: 8270222893829764056}
   m_ShadowRenderer: {fileID: 3381493339859648557}
   m_SpriteRenderer: {fileID: 2286810684168684882}
+  m_DynamicObstacle: {fileID: -1983810066348741805}
   m_Resources: {fileID: 11400000, guid: babdf84402b10f648a7abf0aca35d920, type: 2}
+--- !u!114 &-1983810066348741805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8126470414105273570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b299bacbc7996f4ea079a010f20089b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

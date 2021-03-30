@@ -7,13 +7,16 @@ public class MapResource : MonoBehaviour
 {
     public MapObjectVisualData Resource { get; private set; }
 
+    public DynamicMapObstacle DynamicObstacle => m_DynamicObstacle;
+
     [SerializeField] MapObjectRenderer m_Renderer;
     [SerializeField] MapObjectRenderer m_ShadowRenderer;
     [SerializeField] SpriteRenderer m_SpriteRenderer;
+    [SerializeField] DynamicMapObstacle m_DynamicObstacle;
 
     [SerializeField] ResourceList m_Resources;
 
-    public void Initialize(ScenarioObject a_ScenarioObject)
+    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
     {
         gameObject.name = a_ScenarioObject.Template.Name;
 
@@ -56,5 +59,7 @@ public class MapResource : MonoBehaviour
 
         m_Renderer.SetSprites(Resource.m_Sprites);
         m_ShadowRenderer.SetSprites(Resource.m_ShadowSprites);
+
+        m_DynamicObstacle.Initialize(a_Pathfinding);
     }
 }
