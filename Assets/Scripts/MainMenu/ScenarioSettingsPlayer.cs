@@ -444,7 +444,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             }
             else
             {
-                _Player.Hero = HeroPool.GetRandomHero(PlayerIndex, m_AvailableTowns[m_CurrentTownIndex], true);
+                _Player.Hero = HeroPool.GetRandomHero(PlayerIndex, _Player.Faction, true);
             }
         }
         else
