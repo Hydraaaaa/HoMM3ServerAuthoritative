@@ -12,5 +12,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f9b34234a6d164495ec35ec0458b93, type: 3}
   m_Name: Purple
   m_EditorClassIdentifier: 
-  m_IdleSprites: []
-  m_MovingSprites: []
+  m_IdleSprites:
+  - {fileID: 21300000, guid: 2a798c86925a5b74888dfbf389dece14, type: 3}
+  - {fileID: 21300000, guid: 56aa01e5bff80c94995bacde0f9fce51, type: 3}
+  - {fileID: 21300000, guid: 98e0444c1ee161c479e732726c0ef9ec, type: 3}
+  - {fileID: 21300000, guid: 0a067a8bac66b04448789eed6442da9f, type: 3}
+  - {fileID: 21300000, guid: f7069b1ec626dbd4b8636fd0fe506ddf, type: 3}
+  - {fileID: 21300000, guid: 63ed9c30e2df5e34ba00ddaa90f1f2b6, type: 3}
+  - {fileID: 21300000, guid: faa1bdecb0f579040b97fcade4964470, type: 3}
+  - {fileID: 21300000, guid: 239cf143793ff274aa393b2ae3c8a93c, type: 3}
+  m_IdleOffsets:
+  - {x: 0.09375, y: -0.21875}
+  - {x: 0.21875, y: -0.21875}
+  - {x: 0.25, y: -0.21875}
+  - {x: 0.21875, y: -0.21875}
+  - {x: 0.09375, y: -0.21875}
+  - {x: -0.125, y: -0.21875}
+  - {x: -0.28125, y: -0.21875}
+  - {x: -0.125, y: -0.21875}
+  m_MovingSprites:
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}
+  - Sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    Offset: {x: 0, y: 0}

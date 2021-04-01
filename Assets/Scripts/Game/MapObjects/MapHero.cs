@@ -32,10 +32,10 @@ public class MapHero : MonoBehaviour
     public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding)
     {
         Hero = a_Hero;
+        PlayerIndex = a_PlayerIndex;
+        IsUnderground = a_IsUnderground;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
-
-        IsUnderground = a_IsUnderground;
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
         m_DynamicObstacle.AddInteractedNode(a_PosX, a_PosY, a_IsUnderground);
