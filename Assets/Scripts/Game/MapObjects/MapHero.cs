@@ -15,25 +15,27 @@ public class MapHero : MonoBehaviour
     const int DIRECTION_NE = 7;
 
     public Hero Hero { get; private set; }
+    public int PlayerIndex { get; private set; }
+    public bool IsUnderground { get; private set; }
 
     public DynamicMapObstacle DynamicObstacle => m_DynamicObstacle;
 
     [SerializeField] SpriteRenderer m_HeroRenderer;
     [SerializeField] SpriteRenderer m_HeroShadowRenderer;
-    [SerializeField] SpriteRenderer m_FlagRenderer;
+    [SerializeField] MapObjectRenderer m_FlagRenderer;
+    [SerializeField] SpriteRenderer m_FlagSpriteRenderer;
     [SerializeField] DynamicMapObstacle m_DynamicObstacle;
+    [SerializeField] PlayerColors m_PlayerColors;
 
     int m_Direction = DIRECTION_E;
 
-    bool m_IsUnderground;
-
-    public void Initialize(Hero a_Hero, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding)
+    public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding)
     {
         Hero = a_Hero;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
 
-        m_IsUnderground = a_IsUnderground;
+        IsUnderground = a_IsUnderground;
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
         m_DynamicObstacle.AddInteractedNode(a_PosX, a_PosY, a_IsUnderground);
@@ -43,7 +45,7 @@ public class MapHero : MonoBehaviour
 
     public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
     {
-        // TODO: Determine which hero this object is
+        //a_ScenarioObject.
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
 
@@ -54,5 +56,10 @@ public class MapHero : MonoBehaviour
         gameObject.name = Hero.Name;
         m_HeroRenderer.sprite = Hero.HeroVisualData.IdleSprites[0];
         m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowIdleSprites[0];
+
+        HeroFlagVisualData _FlagData = m_PlayerColors.Flags[PlayerIndex];
+
+        m_FlagRenderer.SetSprites(_FlagData.IdleSprites);
+        m_FlagRenderer.transform.localPosition = new Vector3(1 + _FlagData.IdleOffsets[m_Direction].x, _FlagData.IdleOffsets[m_Direction].y, 0);
     }
 }

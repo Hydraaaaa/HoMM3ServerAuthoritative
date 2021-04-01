@@ -23,5 +23,6 @@ public class PlayerColors : ScriptableObject
     }
 
     public PlayerElements[] Elements;
+    public HeroFlagVisualData[] Flags;
     public Color[] Colors;
 }

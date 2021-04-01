@@ -337,8 +337,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HeroRenderer: {fileID: 7182491388362948343}
   m_HeroShadowRenderer: {fileID: 3861410168938928362}
-  m_FlagRenderer: {fileID: 8767879007887385102}
+  m_FlagRenderer: {fileID: 5224247894748619211}
+  m_FlagSpriteRenderer: {fileID: 8767879007887385102}
   m_DynamicObstacle: {fileID: 7359231849620459010}
+  m_PlayerColors: {fileID: 11400000, guid: 9dd4db9ca7f37e944998a2515a8f9bda, type: 2}
 --- !u!114 &7359231849620459010
 MonoBehaviour:
   m_ObjectHideFlags: 0
