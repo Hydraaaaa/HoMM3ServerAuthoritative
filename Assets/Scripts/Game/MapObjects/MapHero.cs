@@ -17,6 +17,7 @@ public class MapHero : MonoBehaviour
     public Hero Hero { get; private set; }
     public int PlayerIndex { get; private set; }
     public bool IsUnderground { get; private set; }
+    public bool IsPrison { get; private set; }
 
     public DynamicMapObstacle DynamicObstacle => m_DynamicObstacle;
 
@@ -26,6 +27,9 @@ public class MapHero : MonoBehaviour
     [SerializeField] SpriteRenderer m_FlagSpriteRenderer;
     [SerializeField] DynamicMapObstacle m_DynamicObstacle;
     [SerializeField] PlayerColors m_PlayerColors;
+    [SerializeField] HeroList m_Heroes;
+    [SerializeField] GameSettings m_GameSettings;
+    [SerializeField] MapObjectVisualData m_PrisonVisualData;
 
     int m_Direction = DIRECTION_E;
 
@@ -45,7 +49,54 @@ public class MapHero : MonoBehaviour
 
     public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
     {
-        //a_ScenarioObject.
+        PlayerIndex = a_ScenarioObject.Hero.PlayerIndex;
+
+        if (a_ScenarioObject.Template.Name == "avxprsn0")
+        {
+            IsPrison = true;
+        }
+
+        Hero _BaseHero;
+
+        if (a_ScenarioObject.Hero.ID != 255)
+        {
+            _BaseHero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_ScenarioObject.Hero.ID).Hero;
+        }
+        else
+        {
+            _BaseHero = HeroPool.GetRandomHero(PlayerIndex, m_GameSettings.Players.First((a_Player) => a_Player.Index == PlayerIndex).Faction, true);
+
+            if (_BaseHero == null)
+            {
+                _BaseHero = HeroPool.GetRandomHero(PlayerIndex, true);
+            }
+        }
+
+        Hero = new Hero();
+
+        Hero.ID = _BaseHero.ID;
+        Hero.Faction = _BaseHero.Faction;
+        Hero.HeroVisualData = _BaseHero.HeroVisualData;
+
+        if (a_ScenarioObject.Hero.Name != "")
+        {
+            Hero.Name = a_ScenarioObject.Hero.Name;
+        }
+        else
+        {
+            Hero.Name = _BaseHero.Name;
+        }
+
+        if (a_ScenarioObject.Hero.Portrait != 255)
+        {
+            Hero.Portrait = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_ScenarioObject.Hero.Portrait).Hero.Portrait;
+        }
+        else
+        {
+            Hero.Portrait = _BaseHero.Portrait;
+        }
+
+        HeroPool.ClaimHero(Hero);
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
 
@@ -54,12 +105,21 @@ public class MapHero : MonoBehaviour
     void Initialize()
     {
         gameObject.name = Hero.Name;
-        m_HeroRenderer.sprite = Hero.HeroVisualData.IdleSprites[0];
-        m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowIdleSprites[0];
 
-        HeroFlagVisualData _FlagData = m_PlayerColors.Flags[PlayerIndex];
+        if (!IsPrison)
+        {
+            m_HeroRenderer.sprite = Hero.HeroVisualData.IdleSprites[0];
+            m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowIdleSprites[0];
 
-        m_FlagRenderer.SetSprites(_FlagData.IdleSprites);
-        m_FlagRenderer.transform.localPosition = new Vector3(1 + _FlagData.IdleOffsets[m_Direction].x, _FlagData.IdleOffsets[m_Direction].y, 0);
+            HeroFlagVisualData _FlagData = m_PlayerColors.Flags[PlayerIndex];
+
+            m_FlagRenderer.SetSprites(_FlagData.IdleSprites);
+            m_FlagRenderer.transform.localPosition = new Vector3(_FlagData.IdleOffsets[m_Direction].x, _FlagData.IdleOffsets[m_Direction].y, 0);
+        }
+        else
+        {
+            m_HeroRenderer.sprite = m_PrisonVisualData.m_Sprites[0];
+            m_HeroShadowRenderer.sprite = m_PrisonVisualData.m_ShadowSprites[0];
+        }
     }
 }

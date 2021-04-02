@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MapTown : MonoBehaviour
@@ -33,7 +34,7 @@ public class MapTown : MonoBehaviour
             case "avcrand0":
                 if (_ColorIndex != 8)
                 {
-                    Faction = m_GameSettings.Players[_ColorIndex].Faction;
+                    Faction = m_GameSettings.Players.First(a_Player => a_Player.Index == _ColorIndex).Faction;
                 }
                 else
                 {

@@ -82,6 +82,7 @@ public class ScenarioObject
 
     public ScenarioObjectMonster Monster;
     public ScenarioObjectTown Town;
+    public ScenarioObjectHero Hero;
     public uint DwellingOwner;
 }
 
@@ -116,6 +117,15 @@ public class ScenarioObjectTown
     public bool IsGroupFormation;
     public bool HasCustomBuildings;
     public bool HasFort;
+}
+
+[Serializable]
+public class ScenarioObjectHero
+{
+    public byte PlayerIndex;
+    public byte ID;
+    public string Name = "";
+    public byte Portrait;
 }
 
 [Serializable]

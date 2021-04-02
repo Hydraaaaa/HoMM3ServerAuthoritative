@@ -479,7 +479,7 @@ public class Map : MonoBehaviour
                 _Hero.Initialize
                 (
                     m_GameSettings.Players[i].Hero,
-                    i,
+                    m_GameSettings.Players[i].Index,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground,

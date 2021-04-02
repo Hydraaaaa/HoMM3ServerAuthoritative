@@ -34,7 +34,7 @@ public class HeroPool : MonoBehaviour
         }
     }
 
-    public static Hero GetRandomHero(int a_PlayerID, bool a_IsPregame)
+    public static Hero GetRandomHero(int a_PlayerID, bool a_IsPregame = false)
     {
         List<Hero> _Heroes = new List<Hero>();
 
@@ -74,7 +74,7 @@ public class HeroPool : MonoBehaviour
         return _Heroes[Random.Range(0, _Heroes.Count)];
     }
 
-    public static Hero GetRandomHero(int a_PlayerID, Faction a_Faction, bool a_IsPregame)
+    public static Hero GetRandomHero(int a_PlayerID, Faction a_Faction, bool a_IsPregame = false)
     {
         List<Hero> _Heroes = new List<Hero>();
 

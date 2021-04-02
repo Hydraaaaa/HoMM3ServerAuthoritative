@@ -132,7 +132,7 @@ public class ScenarioSettings : MonoBehaviour
     {
         m_GameSettings.Players.Clear();
 
-        for (int i = 0; i < m_Scenario.PlayerCount; i++)
+        for (int i = 0; i < m_Scenario.ComputerCount; i++)
         {
             m_GameSettings.Players.Add(m_Players[i].GetGameSettings());
         }

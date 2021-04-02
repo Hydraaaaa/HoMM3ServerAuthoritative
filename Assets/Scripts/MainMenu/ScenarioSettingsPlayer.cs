@@ -426,6 +426,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
         _Player.IsPlayer = m_IsPlayer;
         _Player.IsLocalPlayer = m_IsLocalPlayer;
+        _Player.Index = PlayerIndex;
 
         if (m_CurrentTownIndex != -1)
         {

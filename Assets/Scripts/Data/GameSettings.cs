@@ -11,6 +11,7 @@ public class GameSettings : ScriptableObject
     {
         public bool IsPlayer;
         public bool IsLocalPlayer;
+        public int Index;
 
         public Faction Faction;
         [SerializeReference] public Hero Hero;

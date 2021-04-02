@@ -1307,8 +1307,14 @@ public class H3MImporter : EditorWindow
                         break;
 
                     case ScenarioObjectType.Hero:
+                        _Object.Hero = new ScenarioObjectHero();
+
                         _CurrentByte += 4;
+
+                        _Object.Hero.PlayerIndex = a_Bytes[_CurrentByte];
                         _CurrentByte += 1;
+
+                        _Object.Hero.ID = a_Bytes[_CurrentByte];
                         _CurrentByte += 1;
 
                         bool _HasCustomName = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
@@ -1318,6 +1324,7 @@ public class H3MImporter : EditorWindow
                         {
                             _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                             _CurrentByte += 4;
+                            _Object.Hero.Name = Encoding.UTF8.GetString(a_Bytes, _CurrentByte, _StringLength);
                             _CurrentByte += _StringLength;
                         }
 
@@ -1334,7 +1341,12 @@ public class H3MImporter : EditorWindow
 
                         if (_HasCustomPortrait)
                         {
+                            _Object.Hero.Portrait = a_Bytes[_CurrentByte];
                             _CurrentByte += 1;
+                        }
+                        else
+                        {
+                            _Object.Hero.Portrait = 255;
                         }
 
                         bool _HasCustomSecondarySkills = BitConverter.ToBoolean(a_Bytes, _CurrentByte);

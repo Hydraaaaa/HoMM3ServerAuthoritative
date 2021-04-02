@@ -69,11 +69,11 @@ public class MapMonster : MonoBehaviour
                 break;
 
             default:
-                Monster = m_Monsters.Monsters.FirstOrDefault((a_Monster) => a_Monster.Type == a_ScenarioObject.Monster.Type);
+                Monster = m_Monsters.Monsters.FirstOrDefault((a_Monster) => a_Monster.MapVisualData.name == a_ScenarioObject.Template.Name);
                 break;
         }
 
-        int _Offset = Random.Range(0, 100);
+        int _Offset = Random.Range(0, Monster.MapVisualData.m_Sprites.Length);
 
         m_Renderer.SetSprites(Monster.MapVisualData.m_Sprites);
         m_Renderer.SetOffset(_Offset);
