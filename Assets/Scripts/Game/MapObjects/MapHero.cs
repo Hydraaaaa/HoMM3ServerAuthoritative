@@ -58,17 +58,26 @@ public class MapHero : MonoBehaviour
 
         Hero _BaseHero;
 
+        bool _ClaimedMainHero = false;
+
         if (a_ScenarioObject.Hero.ID != 255)
         {
             _BaseHero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_ScenarioObject.Hero.ID).Hero;
         }
         else
         {
-            _BaseHero = HeroPool.GetRandomHero(PlayerIndex, m_GameSettings.Players.First((a_Player) => a_Player.Index == PlayerIndex).Faction, true);
+            GameSettings.Player _Player = m_GameSettings.Players.First((a_Player) => a_Player.Index == PlayerIndex);
 
-            if (_BaseHero == null)
+            if (m_GameSettings.Scenario.PlayerInfo[PlayerIndex].IsMainHeroRandom &&
+                _Player.SetMapHero)
             {
-                _BaseHero = HeroPool.GetRandomHero(PlayerIndex, true);
+                _BaseHero = _Player.Hero;
+                _Player.SetMapHero = false;
+                _ClaimedMainHero = true;
+            }
+            else
+            {
+                _BaseHero = HeroPool.GetRandomHero(PlayerIndex, m_GameSettings.Players.First((a_Player) => a_Player.Index == PlayerIndex).Faction, true);
             }
         }
 
@@ -96,7 +105,10 @@ public class MapHero : MonoBehaviour
             Hero.Portrait = _BaseHero.Portrait;
         }
 
-        HeroPool.ClaimHero(Hero);
+        if (!_ClaimedMainHero)
+        {
+            HeroPool.ClaimHero(Hero);
+        }
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
 

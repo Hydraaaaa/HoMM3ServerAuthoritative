@@ -466,19 +466,32 @@ public class Map : MonoBehaviour
         // Spawn starting heroes
         for (int i = 0; i < m_GameSettings.Players.Count; i++)
         {
-            if (m_GameSettings.Scenario.PlayerInfo[i].GenerateHeroAtMainTown)
+            PlayerInfo _PlayerInfo = m_GameSettings.Scenario.PlayerInfo[i];
+            if (_PlayerInfo.GenerateHeroAtMainTown)
             {
-                MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
+                MapHero _MapHero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
 
                 // Spawn map object at main town coordinates
-                if (m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground)
+                if (_PlayerInfo.IsMainTownUnderground)
                 {
-                    _Hero.transform.parent = m_UndergroundMapObjectParent;
+                    _MapHero.transform.parent = m_UndergroundMapObjectParent;
                 }
 
-                _Hero.Initialize
+                Hero _Hero;
+
+                if (_PlayerInfo.IsMainHeroRandom)
+                {
+                    _Hero = HeroPool.GetRandomHero(m_GameSettings.Players[i].Index, m_GameSettings.Players[i].Faction, true);
+                    HeroPool.ClaimHero(_Hero);
+                }
+                else
+                {
+                    _Hero = m_GameSettings.Players[i].Hero;
+                }
+
+                _MapHero.Initialize
                 (
-                    m_GameSettings.Players[i].Hero,
+                    _Hero,
                     m_GameSettings.Players[i].Index,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord + 1,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,

@@ -427,6 +427,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         _Player.IsPlayer = m_IsPlayer;
         _Player.IsLocalPlayer = m_IsLocalPlayer;
         _Player.Index = PlayerIndex;
+        _Player.SetMapHero = m_IsHeroRandom;
 
         if (m_CurrentTownIndex != -1)
         {
@@ -446,6 +447,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             else
             {
                 _Player.Hero = HeroPool.GetRandomHero(PlayerIndex, _Player.Faction, true);
+                HeroPool.ClaimHero(_Player.Hero);
             }
         }
         else

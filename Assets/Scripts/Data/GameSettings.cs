@@ -13,6 +13,10 @@ public class GameSettings : ScriptableObject
         public bool IsLocalPlayer;
         public int Index;
 
+        // If a hero has been selected, but the hero isn't generated at the main town
+        // This flag will tell random heroes to prioritize being set as the player's main hero
+        public bool SetMapHero;
+
         public Faction Faction;
         [SerializeReference] public Hero Hero;
         public StartingBonus StartingBonus;

@@ -55,14 +55,17 @@ public class HeroPool : MonoBehaviour
             }
         }
 
-        for (int i = _Heroes.Count - 1; i >= 0; i--)
+        if (a_IsPregame)
         {
-            int _Index = _Heroes[i].ID / 8;
-            int _Bit = _Heroes[i].ID % 8;
-
-            if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+            for (int i = _Heroes.Count - 1; i >= 0; i--)
             {
-                _Heroes.RemoveAt(i);
+                int _Index = _Heroes[i].ID / 8;
+                int _Bit = _Heroes[i].ID % 8;
+
+                if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+                {
+                    _Heroes.RemoveAt(i);
+                }
             }
         }
 
@@ -98,20 +101,23 @@ public class HeroPool : MonoBehaviour
             }
         }
 
-        for (int i = _Heroes.Count - 1; i >= 0; i--)
+        if (a_IsPregame)
         {
-            int _Index = _Heroes[i].ID / 8;
-            int _Bit = _Heroes[i].ID % 8;
-
-            if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+            for (int i = _Heroes.Count - 1; i >= 0; i--)
             {
-                _Heroes.RemoveAt(i);
+                int _Index = _Heroes[i].ID / 8;
+                int _Bit = _Heroes[i].ID % 8;
+
+                if ((s_Instance.m_AvailableStartingHeroes[_Index] & 1 << _Bit) == 0)
+                {
+                    _Heroes.RemoveAt(i);
+                }
             }
         }
 
         if (_Heroes.Count == 0)
         {
-            return null;
+            return GetRandomHero(a_PlayerID, a_IsPregame);
         }
 
         return _Heroes[Random.Range(0, _Heroes.Count)];
