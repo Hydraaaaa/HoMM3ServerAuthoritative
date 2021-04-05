@@ -145374,6 +145374,11 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
     DwellingOwner: 0
   - Template:
       Name: avlsntr0
@@ -145413,6 +145418,11 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
     DwellingOwner: 0
   - Template:
       Name: avwmrnd0
@@ -145452,4 +145462,9 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
     DwellingOwner: 0
