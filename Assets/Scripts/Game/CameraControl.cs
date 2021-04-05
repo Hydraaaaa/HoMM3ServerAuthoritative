@@ -82,8 +82,8 @@ public class CameraControl : MonoBehaviour
                 {
                     m_CurrentMoveCooldown += m_MoveCooldown;
 
-                    _Position.x = Mathf.Clamp(_Position.x, -0.5f, m_GameSettings.Scenario.Size - 0.5f);
-                    _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Scenario.Size - 0.5f, 0.5f);
+                    _Position.x = Mathf.Clamp(_Position.x, 0, m_GameSettings.Scenario.Size - 1);
+                    _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Scenario.Size + 1, 0);
 
                     transform.position = _Position;
                 }
