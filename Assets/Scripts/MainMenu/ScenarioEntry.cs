@@ -29,7 +29,14 @@ public class ScenarioEntry : MonoBehaviour
 
         if (a_Scenario != null)
         {
-            m_NameText.text = a_Scenario.Name;
+            if (a_Scenario.Name != "")
+            {
+                m_NameText.text = a_Scenario.Name;
+            }
+            else
+            {
+                m_NameText.text = "Unnamed";
+            }
 
             switch (a_Scenario.Size)
             {

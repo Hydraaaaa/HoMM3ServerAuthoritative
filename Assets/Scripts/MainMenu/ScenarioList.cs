@@ -150,7 +150,15 @@ public class ScenarioList : MonoBehaviour
 
         m_GameSettings.Scenario = a_Scenario;
 
-        m_DetailsName.text = a_Scenario.Name;
+        if (a_Scenario.Name != "")
+        {
+            m_DetailsName.text = a_Scenario.Name;
+        }
+        else
+        {
+            m_DetailsName.text = "Unnamed";
+        }
+
         m_DetailsDescription.text = a_Scenario.Description;
 
         switch (a_Scenario.WinCondition)
