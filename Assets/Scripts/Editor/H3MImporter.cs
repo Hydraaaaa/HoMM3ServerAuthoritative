@@ -1072,7 +1072,6 @@ public class H3MImporter : EditorWindow
                     case 88:
                     case 89:
                     case 90:
-                    case 99:
                         _Object.Type = ScenarioObjectType.Shrine;
                         break;
 
@@ -1150,11 +1149,6 @@ public class H3MImporter : EditorWindow
 
                 if (_ObjectBaseIndex > _ObjectTemplates.Count)
                 {
-                    if (_ObjectBaseIndex == 3584)
-                    {
-                        _CurrentByte += 20;
-                    }
-
                     break;
                 }
 
