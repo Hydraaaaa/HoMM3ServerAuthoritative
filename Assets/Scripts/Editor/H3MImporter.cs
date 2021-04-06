@@ -1704,6 +1704,33 @@ public class H3MImporter : EditorWindow
                         uint _EventQuantity = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
 
+                        for (int j = 0; j < _EventQuantity; j++)
+                        {
+                            // Event name
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+
+                            // Event text
+                            _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
+                            _CurrentByte += 4;
+                            _CurrentByte += _StringLength;
+
+                            // Resources
+                            _CurrentByte += 28;
+
+                            // Players Affected
+                            _CurrentByte += 3;
+
+                            // Other
+                            _CurrentByte += 2;
+                            _CurrentByte += 2;
+                            _CurrentByte += 16;
+                            _CurrentByte += 6;
+                            _CurrentByte += 14;
+                            _CurrentByte += 4;
+                        }
+
                         _CurrentByte += 4; // Unknown Bytes
 
                         break;
