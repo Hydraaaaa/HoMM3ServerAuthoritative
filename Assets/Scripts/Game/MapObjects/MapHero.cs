@@ -46,7 +46,7 @@ public class MapHero : MapObjectBase
 
     Dictionary<int, Pathfinding.PrecomputedNode> m_PathableArea;
 
-    int m_TargetNodeIndex;
+    int m_TargetNodeIndex = -1;
 
     List<SpriteRenderer> m_PathNodes = new List<SpriteRenderer>();
     List<SpriteRenderer> m_PathShadowNodes = new List<SpriteRenderer>();
