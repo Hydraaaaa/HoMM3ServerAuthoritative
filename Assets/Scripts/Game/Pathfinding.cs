@@ -351,6 +351,10 @@ public class Pathfinding : MonoBehaviour
 
         Node _CurrentNode = null;
 
+        // The first node is an interactable, which would normally block the path
+        // This flag prevents that
+        bool _FirstNode = true;
+
         while (_OpenList.Count > 0)
         {
             // Could this be optimized to keep track of index and RemoveAt?
@@ -367,6 +371,14 @@ public class Pathfinding : MonoBehaviour
             _OpenList.Remove(_CurrentNode);
             _ClosedList.Add(_CurrentNode);
 
+            if (_CurrentNode.InteractionObjects.Count > 0 &&
+                !_FirstNode)
+            {
+                continue;
+            }
+
+            _FirstNode = false;
+
             for (int i = 0; i < _CurrentNode.Pathways.Count; i++)
             {
                 Node _PathwayNode = _CurrentNode.Pathways[i].Node;
@@ -374,7 +386,6 @@ public class Pathfinding : MonoBehaviour
                 if (_ClosedList.Contains(_PathwayNode) ||
                     _PathwayNode.BlockingObjects.Count > 0 &&
                     _PathwayNode.InteractionObjects.Count == 0 ||
-                    _PathwayNode.InteractionObjects.Count > 0 &&
                     (_CurrentNode.Tile.TerrainType == 8 ||
                      _PathwayNode.Tile.TerrainType == 8) &&
                     _PathwayNode.Tile.TerrainType != _CurrentNode.Tile.TerrainType)
