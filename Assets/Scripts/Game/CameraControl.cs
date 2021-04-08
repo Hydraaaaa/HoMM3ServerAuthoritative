@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings = null;
+    [SerializeField] OwnedHeroes m_OwnedHeroes = null;
 
     bool m_Active;
 
@@ -24,6 +25,8 @@ public class CameraControl : MonoBehaviour
             Mathf.Round(transform.position.y),
             transform.position.z
         );
+
+        m_OwnedHeroes.OnHeroSelected += OnHeroSelected;
     }
 
     void Update()
@@ -89,5 +92,15 @@ public class CameraControl : MonoBehaviour
                 }
             }
         }
+    }
+
+    void OnHeroSelected(MapHero a_Hero, int a_Index)
+    {
+        transform.position = new Vector3
+        (
+            a_Hero.transform.position.x - 1.5f,
+            a_Hero.transform.position.y + 0.5f,
+            transform.position.z
+        );
     }
 }

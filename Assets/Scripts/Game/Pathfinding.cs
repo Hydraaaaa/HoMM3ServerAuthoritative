@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Pathfinding : MonoBehaviour
 {
+    // Incremented when the pathfinding area changes at all
+    // Allows objects to keep track of if they're looking at the up-to-date grid
+    public static int PathfindingVersion;
+
     public class Node
     {
         public int PosX;
         public int PosY;
 
-        public int GCost;
-        public int HCost;
-        public int FCost { get { return GCost + HCost; } }
+        public int Cost;
 
         public TerrainTile Tile;
 
@@ -21,6 +23,23 @@ public class Pathfinding : MonoBehaviour
         public List<GameObject> InteractionObjects = new List<GameObject>();
 
         public List<(Node Node, int Cost)> Pathways = new List<(Node, int)>();
+    }
+
+    public class PrecomputedNode
+    {
+        public readonly int PosX;
+        public readonly int PosY;
+        public readonly int Cost;
+
+        public readonly PrecomputedNode Parent;
+
+        public PrecomputedNode(int a_PosX, int a_PosY, int a_Cost, PrecomputedNode a_Parent)
+        {
+            PosX = a_PosX;
+            PosY = a_PosY;
+            Cost = a_Cost;
+            Parent = a_Parent;
+        }
     }
 
     Scenario m_Scenario;
@@ -77,6 +96,8 @@ public class Pathfinding : MonoBehaviour
 
     public void Generate(Scenario a_Scenario, List<GameObject> a_MapObjects, Dictionary<ScenarioObject, DynamicMapObstacle> a_DynamicObstacles)
     {
+        PathfindingVersion = 0;
+
         m_Scenario = a_Scenario;
 
         m_OverworldNodes = GeneratePathways(a_Scenario.Size, a_Scenario.Terrain);
@@ -303,36 +324,32 @@ public class Pathfinding : MonoBehaviour
         }
     }
 
-    public List<Node> GetPath(Vector2Int a_StartPos, Vector2Int a_EndPos, bool a_IsUnderground = false)
+    public Dictionary<int, PrecomputedNode> GetPathableArea(Vector2Int a_StartPos, bool a_IsUnderground = false)
     {
         int a_StartIndex = a_StartPos.x + Mathf.Abs(a_StartPos.y) * m_Scenario.Size;
-        int a_EndIndex = a_EndPos.x + Mathf.Abs(a_EndPos.y) * m_Scenario.Size;
 
         Node _StartNode;
-        Node _EndNode;
 
         if (!a_IsUnderground)
         {
             _StartNode = m_OverworldNodes[a_StartIndex];
-            _EndNode = m_OverworldNodes[a_EndIndex];
         }
         else
         {
             _StartNode = m_UndergroundNodes[a_StartIndex];
-            _EndNode = m_UndergroundNodes[a_EndIndex];
         }
 
         List<Node> _OpenList = new List<Node>();
         HashSet<Node> _ClosedList = new HashSet<Node>();
+        Dictionary<Node, PrecomputedNode> _PrecomputedNodes = new Dictionary<Node, PrecomputedNode>();
 
         _OpenList.Add(_StartNode);
+        _PrecomputedNodes.Add(_StartNode, new PrecomputedNode(_StartNode.PosX, _StartNode.PosY, 0, null));
 
         // Added this myself, does he address this later?
-        _StartNode.GCost = 0;
+        _StartNode.Cost = 0;
 
         Node _CurrentNode = null;
-
-        bool _Success = false;
 
         while (_OpenList.Count > 0)
         {
@@ -341,10 +358,7 @@ public class Pathfinding : MonoBehaviour
 
             for (int i = 1; i < _OpenList.Count; i++)
             {
-                if (_OpenList[i].FCost < _CurrentNode.FCost ||
-
-                    _OpenList[i].FCost == _CurrentNode.FCost &&
-                    _OpenList[i].HCost < _CurrentNode.HCost)
+                if (_OpenList[i].Cost < _CurrentNode.Cost)
                 {
                     _CurrentNode = _OpenList[i];
                 }
@@ -352,12 +366,6 @@ public class Pathfinding : MonoBehaviour
 
             _OpenList.Remove(_CurrentNode);
             _ClosedList.Add(_CurrentNode);
-
-            if (_CurrentNode == _EndNode)
-            {
-                _Success = true;
-                break;
-            }
 
             for (int i = 0; i < _CurrentNode.Pathways.Count; i++)
             {
@@ -367,7 +375,6 @@ public class Pathfinding : MonoBehaviour
                     _PathwayNode.BlockingObjects.Count > 0 &&
                     _PathwayNode.InteractionObjects.Count == 0 ||
                     _PathwayNode.InteractionObjects.Count > 0 &&
-                    _PathwayNode != _EndNode ||
                     (_CurrentNode.Tile.TerrainType == 8 ||
                      _PathwayNode.Tile.TerrainType == 8) &&
                     _PathwayNode.Tile.TerrainType != _CurrentNode.Tile.TerrainType)
@@ -375,54 +382,31 @@ public class Pathfinding : MonoBehaviour
                     continue;
                 }
 
-                int _NewMovementCost = _CurrentNode.GCost + _CurrentNode.Pathways[i].Cost;
-                if (_NewMovementCost < _PathwayNode.GCost ||
+                int _NewMovementCost = _CurrentNode.Cost + _CurrentNode.Pathways[i].Cost;
+                if (_NewMovementCost < _PathwayNode.Cost ||
                     !_OpenList.Contains(_PathwayNode))
                 {
-                    _PathwayNode.GCost = _NewMovementCost;
-
-                    int _HCost;
-
-                    int _HeuristicX = Mathf.Abs(_PathwayNode.PosX - _EndNode.PosX);
-                    int _HeuristicY = Mathf.Abs(_PathwayNode.PosX - _EndNode.PosX);
-
-                    if (_HeuristicX > _HeuristicY)
-                    {
-                        _HCost = 70 * _HeuristicY + 50 * (_HeuristicX - _HeuristicY);
-                    }
-                    else
-                    {
-                        _HCost = 70 * _HeuristicX + 50 * (_HeuristicY - _HeuristicX);
-                    }
-
-                    _PathwayNode.HCost = _HCost;
+                    _PathwayNode.Cost = _NewMovementCost;
 
                     _PathwayNode.ParentNode = _CurrentNode;
 
                     if (!_OpenList.Contains(_PathwayNode))
                     {
                         _OpenList.Add(_PathwayNode);
+                        _PrecomputedNodes.Add(_PathwayNode, new PrecomputedNode(_PathwayNode.PosX, _PathwayNode.PosY, _PathwayNode.Cost, _PrecomputedNodes[_CurrentNode]));
                     }
                 }
             }
         }
 
-        if (!_Success)
+        Dictionary<int, PrecomputedNode> _OutputNodes = new Dictionary<int, PrecomputedNode>();
+
+        foreach (var _NodePair in _PrecomputedNodes)
         {
-            return null;
+            _OutputNodes.Add(_NodePair.Key.PosX + _NodePair.Key.PosY * m_Scenario.Size, _NodePair.Value);
         }
 
-        List<Node> _OutputPath = new List<Node>();
-
-        while (_CurrentNode != _StartNode)
-        {
-            _OutputPath.Add(_CurrentNode);
-            _CurrentNode = _CurrentNode.ParentNode;
-        }
-
-        _OutputPath.Reverse();
-
-        return _OutputPath;
+        return _OutputNodes;
     }
 
     public Node GetNode(int a_PosX, int a_PosY, bool a_IsUnderground)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-public class MapResource : MonoBehaviour
+public class MapResource : MapObjectBase
 {
     public MapObjectVisualData Resource { get; private set; }
 

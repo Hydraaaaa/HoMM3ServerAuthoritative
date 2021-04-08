@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-public class MapDwelling : MonoBehaviour
+public class MapDwelling : MapObjectBase
 {
     [SerializeField] MapObjectRenderer m_Renderer;
     [SerializeField] MapObjectRenderer m_ShadowRenderer;

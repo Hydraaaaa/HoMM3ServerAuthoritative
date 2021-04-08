@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
 
-public class MapObject : MonoBehaviour
+public class MapObject : MapObjectBase
 {
     public SpriteRenderer SpriteRenderer => m_SpriteRenderer;
     public MapObjectRenderer Renderer => m_Renderer;

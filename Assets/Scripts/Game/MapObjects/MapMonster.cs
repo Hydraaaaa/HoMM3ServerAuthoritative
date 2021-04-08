@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class MapMonster : MonoBehaviour
+public class MapMonster : MapObjectBase
 {
     public Monster Monster { get; private set; }
 

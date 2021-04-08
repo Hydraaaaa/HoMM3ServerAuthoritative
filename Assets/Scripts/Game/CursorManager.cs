@@ -17,9 +17,11 @@ public class CursorManager : MonoBehaviour
 
     public static void SetCursor(Sprite a_Cursor, Vector2 a_Offset = default(Vector2))
     {
+        s_Instance.m_Offset = new Vector3(a_Offset.x, a_Offset.y, 0);
+
         s_Instance.m_Cursor.sprite = a_Cursor;
         s_Instance.m_Cursor.rectTransform.sizeDelta = new Vector2(a_Cursor.rect.width, a_Cursor.rect.height);
-        s_Instance.m_Offset = new Vector3(a_Offset.x, a_Offset.y, 0);
+        s_Instance.m_Cursor.rectTransform.anchoredPosition = Input.mousePosition + s_Instance.m_Offset;
     }
 
     public static void ResetCursor()

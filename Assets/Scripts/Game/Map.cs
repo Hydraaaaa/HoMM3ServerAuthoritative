@@ -22,6 +22,7 @@ public class Map : MonoBehaviour
     [SerializeField] MapResource m_MapResourcePrefab = null;
     [SerializeField] MapMonster m_MapMonsterPrefab = null;
     [SerializeField] Pathfinding m_Pathfinding = null;
+    [SerializeField] OwnedHeroes m_OwnedHeroes = null;
 
     [Space]
 
@@ -92,11 +93,8 @@ public class Map : MonoBehaviour
     List<List<Sprite>> m_RiverSprites;
     List<List<Sprite>> m_RoadSprites;
 
-    void Awake()
+    void Start()
     {
-        Physics.autoSimulation = false;
-        Physics2D.simulationMode = SimulationMode2D.Script;
-
         m_TerrainSprites = new List<List<Sprite>>();
         m_TerrainSprites.Add(m_DirtSprites);
         m_TerrainSprites.Add(m_SandSprites);
@@ -401,64 +399,74 @@ public class Map : MonoBehaviour
         for (int i = 0; i < _Objects.Count; i++)
         {
             ScenarioObject _Object = _Objects[i];
-            GameObject _MapObject;
+            MapObjectBase _MapObject;
 
             switch (_Object.Template.Type)
             {
                 case ScenarioObjectType.Hero:
                     MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
-                    _Hero.Initialize(_Object, m_Pathfinding);
-                    _MapObject = _Hero.gameObject;
+                    _Hero.Initialize(_Object, m_Pathfinding, m_OwnedHeroes);
+                    _MapObject = _Hero;
                     _DynamicObstacles.Add(_Object, _Hero.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Resource:
                     MapResource _Resource = Instantiate(m_MapResourcePrefab, m_MapObjectParent);
                     _Resource.Initialize(_Object, m_Pathfinding);
-                    _MapObject = _Resource.gameObject;
+                    _MapObject = _Resource;
                     _DynamicObstacles.Add(_Object, _Resource.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Dwelling:
                     MapDwelling _Dwelling = Instantiate(m_MapDwellingPrefab, m_MapObjectParent);
                     _Dwelling.Initialize(_Object);
-                    _MapObject = _Dwelling.gameObject;
+                    _MapObject = _Dwelling;
                     break;
 
                 case ScenarioObjectType.Town:
                     MapTown _Town = Instantiate(m_MapTownPrefab, m_MapObjectParent);
                     _Town.Initialize(_Object);
-                    _MapObject = _Town.gameObject;
+                    _MapObject = _Town;
                     break;
 
                 case ScenarioObjectType.Monster:
                     MapMonster _Monster = Instantiate(m_MapMonsterPrefab, m_MapObjectParent);
                     _Monster.Initialize(_Object, m_Pathfinding);
-                    _MapObject = _Monster.gameObject;
+                    _MapObject = _Monster;
                     _DynamicObstacles.Add(_Object, _Monster.DynamicObstacle);
                     break;
 
                 default:
                     MapObject _Obj = Instantiate(m_MapObjectPrefab, m_MapObjectParent);
                     _Obj.Initialize(_Object);
-                    _MapObject = _Obj.gameObject;
+                    _MapObject = _Obj;
                     break;
 
             }
 
             _MapObject.transform.position = new Vector3(_Object.PosX + 0.5f, -_Object.PosY - 0.5f, 0);
+            _MapObject.MouseCollision = new byte[6];
+            _MapObject.MouseCollision[0] = (byte)(~_Object.Template.Passability[0] | _Object.Template.Interactability[0]);
+            _MapObject.MouseCollision[1] = (byte)(~_Object.Template.Passability[1] | _Object.Template.Interactability[1]);
+            _MapObject.MouseCollision[2] = (byte)(~_Object.Template.Passability[2] | _Object.Template.Interactability[2]);
+            _MapObject.MouseCollision[3] = (byte)(~_Object.Template.Passability[3] | _Object.Template.Interactability[3]);
+            _MapObject.MouseCollision[4] = (byte)(~_Object.Template.Passability[4] | _Object.Template.Interactability[4]);
+            _MapObject.MouseCollision[5] = (byte)(~_Object.Template.Passability[5] | _Object.Template.Interactability[5]);
+
+            _MapObject.InteractionCollision = _Object.Template.Interactability;
+
 
             if (_Object.IsUnderground)
             {
-                m_UndergroundObjects.Add(_MapObject);
+                m_UndergroundObjects.Add(_MapObject.gameObject);
                 _MapObject.transform.parent = m_UndergroundMapObjectParent;
             }
             else
             {
-                m_Objects.Add(_MapObject);
+                m_Objects.Add(_MapObject.gameObject);
             }
 
-            _MapObjects.Add(_MapObject);
+            _MapObjects.Add(_MapObject.gameObject);
         }
 
         m_Pathfinding.Generate(m_GameSettings.Scenario, _MapObjects, _DynamicObstacles);
@@ -496,9 +504,17 @@ public class Map : MonoBehaviour
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord + 1,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground,
-                    m_Pathfinding
+                    m_Pathfinding,
+                    m_OwnedHeroes
                 );
             }
+        }
+
+        List<MapHero> _OwnedHeroes = m_OwnedHeroes.GetHeroes();
+
+        if (_OwnedHeroes.Count > 0)
+        {
+            m_OwnedHeroes.SelectHero(_OwnedHeroes[0]);
         }
     }
 }
