@@ -62,6 +62,8 @@ public class OwnedHeroes : MonoBehaviour
             return;
         }
 
+        SelectedHero?.OnDeselected();
+
         SelectedHero = a_Hero;
 
         OnHeroSelected?.Invoke(a_Hero, m_Heroes.IndexOf(a_Hero));
