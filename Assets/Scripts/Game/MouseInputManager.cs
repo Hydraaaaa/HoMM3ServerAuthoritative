@@ -57,91 +57,123 @@ public class MouseInputManager : MonoBehaviour
             {
                 MapHero _SelectedHero = m_OwnedHeroes.SelectedHero;
 
-                m_PreviousWorldMouseCoords = _WorldMouseCoords;
-                m_UpdateCursor = false;
-
-                Collider2D[] _Colliders = Physics2D.OverlapPointAll(_WorldMousePos);
-
-                m_Objects = new List<MapObjectBase>();
-
-                for (int i = 0; i < _Colliders.Length; i++)
+                if (_SelectedHero != null)
                 {
-                    MapObjectBase _Object = _Colliders[i].GetComponent<MapObjectBase>();
+                    m_PreviousWorldMouseCoords = _WorldMouseCoords;
+                    m_UpdateCursor = false;
 
-                    if (_WorldMousePos.x % 1 == 0.5f)
+                    Collider2D[] _Colliders = Physics2D.OverlapPointAll(_WorldMousePos);
+
+                    m_Objects = new List<MapObjectBase>();
+
+                    for (int i = 0; i < _Colliders.Length; i++)
                     {
-                        _WorldMousePos.x += 0.01f;
-                    }
+                        MapObjectBase _Object = _Colliders[i].GetComponent<MapObjectBase>();
 
-                    if (_WorldMousePos.y % 1 == -0.5f)
-                    {
-                        _WorldMousePos.y -= 0.01f;
-                    }
-
-                    int _XIndex = 7 - Mathf.FloorToInt(_Object.transform.position.x - _WorldMousePos.x);
-                    int _YIndex = 5 - Mathf.FloorToInt(_WorldMousePos.y - _Object.transform.position.y);
-
-                    if (_XIndex < 0 ||
-                        _XIndex > 7 ||
-                        _YIndex < 0 ||
-                        _YIndex > 5)
-                    {
-                        continue;
-                    }
-
-                    if ((_Object.MouseCollision[_YIndex] & 1 << _XIndex) != 0)
-                    {
-                        m_Objects.Add(_Object);
-                    }
-                }
-
-                bool _CursorSelected = false;
-
-                int _TurnCost = _SelectedHero.GetPathingTurnCost(_WorldMouseCoords.x, _WorldMouseCoords.y);
-
-                for (int i = 0; i < m_Objects.Count; i++)
-                {
-                    MapHero _Hero = m_Objects[i] as MapHero;
-
-                    if (_Hero != null)
-                    {
-                        if (_SelectedHero == _Hero ||
-                            _SelectedHero == null)
+                        if (_WorldMousePos.x % 1 == 0.5f)
                         {
-                            CursorManager.SetCursor(m_HeroCursor, new Vector2(-12, 10));
-                        }
-                        else
-                        {
-                            switch (_TurnCost)
-                            {
-                                case 0: CursorManager.ResetCursor(); break;
-                                case 1: CursorManager.SetCursor(m_TradeCursor, new Vector2(-8, 9)); break;
-                                case 2: CursorManager.SetCursor(m_TradeCursor2, new Vector2(-8, 9)); break;
-                                case 3: CursorManager.SetCursor(m_TradeCursor3, new Vector2(-8, 9)); break;
-                                default: CursorManager.SetCursor(m_TradeCursor4, new Vector2(-8, 9)); break;
-                            }
+                            _WorldMousePos.x += 0.01f;
                         }
 
-                        _CursorSelected = true;
+                        if (_WorldMousePos.y % 1 == -0.5f)
+                        {
+                            _WorldMousePos.y -= 0.01f;
+                        }
 
-                        break;
+                        int _XIndex = 7 - Mathf.FloorToInt(_Object.transform.position.x - _WorldMousePos.x);
+                        int _YIndex = 5 - Mathf.FloorToInt(_WorldMousePos.y - _Object.transform.position.y);
+
+                        if (_XIndex < 0 ||
+                            _XIndex > 7 ||
+                            _YIndex < 0 ||
+                            _YIndex > 5)
+                        {
+                            continue;
+                        }
+
+                        if ((_Object.MouseCollision[_YIndex] & 1 << _XIndex) != 0)
+                        {
+                            m_Objects.Add(_Object);
+                        }
                     }
-                }
 
-                if (!_CursorSelected)
-                {
+                    bool _CursorSelected = false;
+
+                    int _TurnCost = _SelectedHero.GetPathingTurnCost(_WorldMouseCoords.x, _WorldMouseCoords.y);
+
                     for (int i = 0; i < m_Objects.Count; i++)
                     {
-                        MapTown _Town = m_Objects[i] as MapTown;
+                        MapHero _Hero = m_Objects[i] as MapHero;
 
-                        if (_Town != null)
+                        if (_Hero != null)
                         {
-                            int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(m_Objects[i].transform.position.x - _WorldMousePos.x), 0, 7);
-                            int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - m_Objects[i].transform.position.y), 0, 5);
+                            if (_SelectedHero == _Hero ||
+                                _SelectedHero == null)
+                            {
+                                CursorManager.SetCursor(m_HeroCursor, new Vector2(-12, 10));
+                            }
+                            else
+                            {
+                                switch (_TurnCost)
+                                {
+                                    case 0: CursorManager.ResetCursor(); break;
+                                    case 1: CursorManager.SetCursor(m_TradeCursor, new Vector2(-8, 9)); break;
+                                    case 2: CursorManager.SetCursor(m_TradeCursor2, new Vector2(-8, 9)); break;
+                                    case 3: CursorManager.SetCursor(m_TradeCursor3, new Vector2(-8, 9)); break;
+                                    default: CursorManager.SetCursor(m_TradeCursor4, new Vector2(-8, 9)); break;
+                                }
+                            }
 
-                            if (_SelectedHero != null &&
-                                _XIndex == 5 &&
-                                _YIndex == 5)
+                            _CursorSelected = true;
+
+                            break;
+                        }
+                    }
+
+                    if (!_CursorSelected)
+                    {
+                        for (int i = 0; i < m_Objects.Count; i++)
+                        {
+                            MapTown _Town = m_Objects[i] as MapTown;
+
+                            if (_Town != null)
+                            {
+                                int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(m_Objects[i].transform.position.x - _WorldMousePos.x), 0, 7);
+                                int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - m_Objects[i].transform.position.y), 0, 5);
+
+                                if (_SelectedHero != null &&
+                                    _XIndex == 5 &&
+                                    _YIndex == 5)
+                                {
+                                    switch (_TurnCost)
+                                    {
+                                        case 0: CursorManager.ResetCursor(); break;
+                                        case 1: CursorManager.SetCursor(m_InteractCursor, new Vector2(-14, 15)); break;
+                                        case 2: CursorManager.SetCursor(m_InteractCursor2, new Vector2(-14, 15)); break;
+                                        case 3: CursorManager.SetCursor(m_InteractCursor3, new Vector2(-14, 15)); break;
+                                        default: CursorManager.SetCursor(m_InteractCursor4, new Vector2(-14, 15)); break;
+                                    }
+                                }
+                                else
+                                {
+                                    CursorManager.SetCursor(m_CastleCursor, new Vector2(-12, 12));
+                                }
+
+                                _CursorSelected = true;
+
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!_CursorSelected)
+                    {
+                        if (m_Objects.Count > 0)
+                        {
+                            int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(m_Objects[0].transform.position.x - _WorldMousePos.x), 0, 7);
+                            int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - m_Objects[0].transform.position.y), 0, 5);
+
+                            if ((m_Objects[0].InteractionCollision[_YIndex] & 1 << _XIndex) != 0)
                             {
                                 switch (_TurnCost)
                                 {
@@ -151,27 +183,15 @@ public class MouseInputManager : MonoBehaviour
                                     case 3: CursorManager.SetCursor(m_InteractCursor3, new Vector2(-14, 15)); break;
                                     default: CursorManager.SetCursor(m_InteractCursor4, new Vector2(-14, 15)); break;
                                 }
-                            }
-                            else
-                            {
-                                CursorManager.SetCursor(m_CastleCursor, new Vector2(-12, 12));
-                            }
 
-                            _CursorSelected = true;
-
-                            break;
+                                _CursorSelected = true;
+                            }
                         }
                     }
-                }
 
-                if (!_CursorSelected)
-                {
-                    if (m_Objects.Count > 0)
+                    if (!_CursorSelected)
                     {
-                        int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(m_Objects[0].transform.position.x - _WorldMousePos.x), 0, 7);
-                        int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - m_Objects[0].transform.position.y), 0, 5);
-
-                        if ((m_Objects[0].InteractionCollision[_YIndex] & 1 << _XIndex) != 0)
+                        if (_SelectedHero.GetTargetDestination() == _WorldMouseCoords)
                         {
                             switch (_TurnCost)
                             {
@@ -181,36 +201,23 @@ public class MouseInputManager : MonoBehaviour
                                 case 3: CursorManager.SetCursor(m_InteractCursor3, new Vector2(-14, 15)); break;
                                 default: CursorManager.SetCursor(m_InteractCursor4, new Vector2(-14, 15)); break;
                             }
-
-                            _CursorSelected = true;
+                        }
+                        else
+                        {
+                            switch (_TurnCost)
+                            {
+                                case 0: CursorManager.ResetCursor(); break;
+                                case 1: CursorManager.SetCursor(m_MoveCursor, new Vector2(-15, 13)); break;
+                                case 2: CursorManager.SetCursor(m_MoveCursor2, new Vector2(-15, 13)); break;
+                                case 3: CursorManager.SetCursor(m_MoveCursor3, new Vector2(-15, 13)); break;
+                                default: CursorManager.SetCursor(m_MoveCursor4, new Vector2(-15, 13)); break;
+                            }
                         }
                     }
                 }
-
-                if (!_CursorSelected)
+                else
                 {
-                    if (_SelectedHero.GetTargetDestination() == _WorldMouseCoords)
-                    {
-                        switch (_TurnCost)
-                        {
-                            case 0: CursorManager.ResetCursor(); break;
-                            case 1: CursorManager.SetCursor(m_InteractCursor, new Vector2(-14, 15)); break;
-                            case 2: CursorManager.SetCursor(m_InteractCursor2, new Vector2(-14, 15)); break;
-                            case 3: CursorManager.SetCursor(m_InteractCursor3, new Vector2(-14, 15)); break;
-                            default: CursorManager.SetCursor(m_InteractCursor4, new Vector2(-14, 15)); break;
-                        }
-                    }
-                    else
-                    {
-                        switch (_TurnCost)
-                        {
-                            case 0: CursorManager.ResetCursor(); break;
-                            case 1: CursorManager.SetCursor(m_MoveCursor, new Vector2(-15, 13)); break;
-                            case 2: CursorManager.SetCursor(m_MoveCursor2, new Vector2(-15, 13)); break;
-                            case 3: CursorManager.SetCursor(m_MoveCursor3, new Vector2(-15, 13)); break;
-                            default: CursorManager.SetCursor(m_MoveCursor4, new Vector2(-15, 13)); break;
-                        }
-                    }
+                    CursorManager.ResetCursor();
                 }
             }
 
