@@ -19,6 +19,8 @@ public class DynamicMapObstacle : MonoBehaviour
         m_BlockedNodes.Add(a_Node);
 
         a_Node.BlockingObjects.Add(gameObject);
+
+        m_Pathfinding.PathfindingVersion++;
     }
 
     public void AddBlockedNode(int a_PosX, int a_PosY, bool a_IsUnderground)
@@ -28,6 +30,8 @@ public class DynamicMapObstacle : MonoBehaviour
         m_BlockedNodes.Add(_Node);
 
         _Node.BlockingObjects.Add(gameObject);
+
+        m_Pathfinding.PathfindingVersion++;
     }
 
     public void AddInteractedNode(Pathfinding.Node a_Node)
@@ -35,6 +39,8 @@ public class DynamicMapObstacle : MonoBehaviour
         m_InteractedNodes.Add(a_Node);
 
         a_Node.InteractionObjects.Add(gameObject);
+
+        m_Pathfinding.PathfindingVersion++;
     }
 
     public void AddInteractedNode(int a_PosX, int a_PosY, bool a_IsUnderground)
@@ -44,6 +50,8 @@ public class DynamicMapObstacle : MonoBehaviour
         m_InteractedNodes.Add(_Node);
 
         _Node.InteractionObjects.Add(gameObject);
+
+        m_Pathfinding.PathfindingVersion++;
     }
 
     public void ClearNodes()
@@ -60,5 +68,7 @@ public class DynamicMapObstacle : MonoBehaviour
 
         m_BlockedNodes = new List<Pathfinding.Node>();
         m_InteractedNodes = new List<Pathfinding.Node>();
+
+        m_Pathfinding.PathfindingVersion++;
     }
 }

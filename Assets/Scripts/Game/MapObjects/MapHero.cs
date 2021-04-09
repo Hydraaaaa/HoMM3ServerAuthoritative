@@ -46,10 +46,16 @@ public class MapHero : MapObjectBase
 
     Dictionary<int, Pathfinding.PrecomputedNode> m_PathableArea;
 
+    List<Pathfinding.PrecomputedNode> m_Path = new List<Pathfinding.PrecomputedNode>();
+
     int m_TargetNodeIndex = -1;
 
     List<SpriteRenderer> m_PathNodes = new List<SpriteRenderer>();
-    List<SpriteRenderer> m_PathShadowNodes = new List<SpriteRenderer>();
+    List<SpriteRenderer> m_PathNodeShadows = new List<SpriteRenderer>();
+
+    public bool IsMoving { get; private set; }
+
+    Vector2Int m_PathfindingPos;
 
     public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding, OwnedHeroes a_OwnedHeroes)
     {
@@ -77,6 +83,7 @@ public class MapHero : MapObjectBase
         m_OwnedHeroes = a_OwnedHeroes;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
+        m_PathfindingPos = new Vector2Int(a_PosX - 1, a_PosY);
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
         m_DynamicObstacle.AddInteractedNode(a_PosX, a_PosY, a_IsUnderground);
@@ -152,6 +159,8 @@ public class MapHero : MapObjectBase
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
 
+        m_PathfindingPos = new Vector2Int(a_ScenarioObject.PosX - 1, a_ScenarioObject.PosY);
+
         Initialize();
     }
 
@@ -185,9 +194,9 @@ public class MapHero : MapObjectBase
 
     public void OnSelected()
     {
-        if (m_LocalPathfindingVersion != Pathfinding.PathfindingVersion)
+        if (m_LocalPathfindingVersion != m_Pathfinding.PathfindingVersion)
         {
-            m_PathableArea = m_Pathfinding.GetPathableArea(new Vector2Int((int)transform.position.x - 1, (int)transform.position.y), IsUnderground);
+            m_PathableArea = m_Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
 
             GeneratePath(m_TargetNodeIndex);
         }
@@ -196,7 +205,7 @@ public class MapHero : MapObjectBase
             for (int i = 0; i < m_PathNodes.Count; i++)
             {
                 m_PathNodes[i].gameObject.SetActive(true);
-                m_PathShadowNodes[i].gameObject.SetActive(true);
+                m_PathNodeShadows[i].gameObject.SetActive(true);
             }
         }
     }
@@ -206,7 +215,7 @@ public class MapHero : MapObjectBase
         for (int i = 0; i < m_PathNodes.Count; i++)
         {
             m_PathNodes[i].gameObject.SetActive(false);
-            m_PathShadowNodes[i].gameObject.SetActive(false);
+            m_PathNodeShadows[i].gameObject.SetActive(false);
         }
     }
 
@@ -240,19 +249,195 @@ public class MapHero : MapObjectBase
 
     public void OnLeftClick(int a_XPos, int a_YPos, List<MapObjectBase> a_Objects)
     {
-        int _Index = a_XPos + a_YPos * m_GameSettings.Scenario.Size;
-
-        if (_Index != m_TargetNodeIndex)
+        if (IsMoving)
         {
-            if (m_PathableArea.ContainsKey(_Index))
+            IsMoving = false;
+        }
+        else
+        {
+            int _Index = a_XPos + a_YPos * m_GameSettings.Scenario.Size;
+
+            if (_Index != m_TargetNodeIndex)
             {
-                GeneratePath(_Index);
+                if (m_PathableArea.ContainsKey(_Index))
+                {
+                    GeneratePath(_Index);
+                }
+            }
+            else if (_Index != -1)
+            {
+                StartCoroutine(Move());
             }
         }
-        else if (_Index != -1)
+    }
+
+    IEnumerator Move()
+    {
+        if (m_Path.Count == 0)
         {
-            // Move
+            yield break;
         }
+
+        IsMoving = true;
+
+        m_FlagRenderer.enabled = false;
+
+        HeroFlagVisualData _FlagData = m_PlayerColors.Flags[PlayerIndex];
+
+        m_DynamicObstacle.ClearNodes();
+
+        Pathfinding.PrecomputedNode _Node = m_Path[0];
+
+        Destroy(m_PathNodes[0]);
+        Destroy(m_PathNodeShadows[0]);
+
+        m_PathNodes.RemoveAt(0);
+        m_PathNodeShadows.RemoveAt(0);
+
+        int _AnimationIndex = 0;
+        int _Frame = 0;
+
+        Vector3 _MovementDirection;
+
+        void SetDirection()
+        {
+            _MovementDirection = new Vector3
+            (
+                m_Path[0].PosX - m_PathfindingPos.x,
+                -(m_Path[0].PosY - m_PathfindingPos.y),
+                0
+            ) / 4;
+
+            if (_MovementDirection.x > 0)
+            {
+                if (_MovementDirection.y > 0)
+                {
+                    m_Direction = DIRECTION_NE;
+                }
+                else if (_MovementDirection.y < 0)
+                {
+                    m_Direction = DIRECTION_SE;
+                }
+                else
+                {
+                    m_Direction = DIRECTION_E;
+                }
+            }
+            else if (_MovementDirection.x < 0)
+            {
+                if (_MovementDirection.y > 0)
+                {
+                    m_Direction = DIRECTION_NW;
+                }
+                else if (_MovementDirection.y < 0)
+                {
+                    m_Direction = DIRECTION_SW;
+                }
+                else
+                {
+                    m_Direction = DIRECTION_W;
+                }
+            }
+            else if (_MovementDirection.y > 0)
+            {
+                m_Direction = DIRECTION_N;
+            }
+            else
+            {
+                m_Direction = DIRECTION_S;
+            }
+        }
+
+        SetDirection();
+
+        // We don't check IsMoving here, because when cancelled, we still want to finish walking to the next tile
+        while (true)
+        {
+            if (_Frame == 4)
+            {
+                _Frame = 0;
+
+                m_PathfindingPos = new Vector2Int(_Node.PosX, _Node.PosY);
+                m_Path.RemoveAt(0);
+
+                if (m_Path.Count == 0 ||
+                    !IsMoving)
+                {
+                    break;
+                }
+
+                Destroy(m_PathNodes[0]);
+                Destroy(m_PathNodeShadows[0]);
+
+                m_PathNodes.RemoveAt(0);
+                m_PathNodeShadows.RemoveAt(0);
+
+                _Node = m_Path[0];
+
+                SetDirection();
+            }
+
+            m_HeroRenderer.sprite = Hero.HeroVisualData.MovingSprites[m_Direction].Array[_AnimationIndex];
+            m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowMovingSprites[m_Direction].Array[_AnimationIndex];
+            m_FlagSpriteRenderer.sprite = _FlagData.MovingSprites[m_Direction].Sprites[_AnimationIndex];
+
+            m_HeroRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+            m_HeroShadowRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+            m_FlagSpriteRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+
+            if (m_HeroRenderer.flipX)
+            {
+                m_HeroRenderer.transform.localPosition = new Vector3(-3, 0, 0);
+                m_HeroShadowRenderer.transform.localPosition = new Vector3(-3, 0, 0);
+                m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + _FlagData.MovingSprites[m_Direction].Offset;
+            }
+            else
+            {
+                m_HeroRenderer.transform.localPosition = Vector3.zero;
+                m_HeroShadowRenderer.transform.localPosition = Vector3.zero;
+                m_FlagSpriteRenderer.transform.localPosition = _FlagData.MovingSprites[m_Direction].Offset;
+            }
+
+            transform.position += _MovementDirection;
+
+            yield return new WaitForSeconds(0.05f);
+
+            _AnimationIndex++;
+            _Frame++;
+
+            if (_AnimationIndex == 8)
+            {
+                _AnimationIndex = 0;
+            }
+        }
+
+        m_FlagRenderer.enabled = true;
+
+        m_HeroRenderer.sprite = Hero.HeroVisualData.MovingSprites[m_Direction].Array[_AnimationIndex];
+        m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowMovingSprites[m_Direction].Array[_AnimationIndex];
+
+        m_HeroRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+        m_HeroShadowRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+        m_FlagSpriteRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
+
+        if (m_HeroRenderer.flipX)
+        {
+            m_HeroRenderer.transform.localPosition = new Vector3(-3, 0, 0);
+            m_HeroShadowRenderer.transform.localPosition = new Vector3(-3, 0, 0);
+            m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + _FlagData.IdleOffsets[m_Direction];
+        }
+        else
+        {
+            m_HeroRenderer.transform.localPosition = Vector3.zero;
+            m_HeroShadowRenderer.transform.localPosition = Vector3.zero;
+            m_FlagSpriteRenderer.transform.localPosition = _FlagData.IdleOffsets[m_Direction];
+        }
+
+        m_DynamicObstacle.AddInteractedNode(m_Pathfinding.GetNode(m_PathfindingPos, IsUnderground));
+
+        m_PathableArea = m_Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
+
+        IsMoving = false;
     }
 
     void GeneratePath(int a_Index)
@@ -260,11 +445,11 @@ public class MapHero : MapObjectBase
         for (int i = 0; i < m_PathNodes.Count; i++)
         {
             Destroy(m_PathNodes[i].gameObject);
-            Destroy(m_PathShadowNodes[i].gameObject);
+            Destroy(m_PathNodeShadows[i].gameObject);
         }
 
         m_PathNodes.Clear();
-        m_PathShadowNodes.Clear();
+        m_PathNodeShadows.Clear();
 
         if (!m_PathableArea.ContainsKey(a_Index))
         {
@@ -272,242 +457,259 @@ public class MapHero : MapObjectBase
             return;
         }
 
-        Pathfinding.PrecomputedNode _PreviousNode = null;
-        Pathfinding.PrecomputedNode _Node = m_PathableArea[a_Index];
+        Pathfinding.PrecomputedNode _CurrentNode = m_PathableArea[a_Index];
 
-        while (_Node.Parent != null)
+        m_Path.Clear();
+
+        while (_CurrentNode.Parent != null)
         {
-            Vector3 _Position = new Vector3(_Node.PosX, -_Node.PosY, 0);
-            SpriteRenderer _NodeVisual = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity);
-            SpriteRenderer _NodeShadowVisual = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity);
+            m_Path.Add(_CurrentNode);
 
-            if (_PreviousNode == null)
-            {
-                _NodeVisual.sprite = m_PathSprites[0];
-                _NodeShadowVisual.sprite = m_PathSprites[0];
+            _CurrentNode = _CurrentNode.Parent;
+        }
 
-                m_PathNodes.Add(_NodeVisual);
-                m_PathShadowNodes.Add(_NodeShadowVisual);
+        m_Path.Reverse();
 
-                _PreviousNode = _Node;
-                _Node = _Node.Parent;
+        for (int i = 0; i < m_Path.Count; i++)
+        {
+            Vector3 _Position = new Vector3(m_Path[i].PosX, -m_Path[i].PosY, 0);
+            SpriteRenderer _Node = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity);
+            SpriteRenderer _NodeShadow = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity);
 
-                continue;
-            }
+            Vector2Int _PreviousNodePos;
+            Vector2Int _NextNodePos;
 
-            Vector2Int _PreviousNodePos = new Vector2Int(_PreviousNode.PosX - _Node.PosX, _PreviousNode.PosY - _Node.PosY);
-            Vector2Int _NextNodePos = new Vector2Int(_Node.Parent.PosX - _Node.PosX, _Node.Parent.PosY - _Node.PosY);
-
-            if (_PreviousNodePos.x == -1 &&
-                _PreviousNodePos.y == -1)
+            if (i > 0)
             {
-                if (_NextNodePos.x == 1 &&
-                    _NextNodePos.y == 1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[16];
-                    _NodeShadowVisual.sprite = m_PathSprites[16];
-                }
-                else
-                {
-                    if (_NextNodePos.x == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[8];
-                        _NodeShadowVisual.sprite = m_PathSprites[8];
-                    }
-                    else if (_NextNodePos.y == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[24];
-                        _NodeShadowVisual.sprite = m_PathSprites[24];
-                    }
-                    else if (_NextNodePos.x == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[24];
-                        _NodeShadowVisual.sprite = m_PathSprites[24];
-                    }
-                    else
-                    {
-                        _NodeVisual.sprite = m_PathSprites[8];
-                        _NodeShadowVisual.sprite = m_PathSprites[8];
-                    }
-                }
-            }
-            else if (_PreviousNodePos.x == 1 &&
-                     _PreviousNodePos.y == 1)
-            {
-                if (_NextNodePos.x == -1 &&
-                    _NextNodePos.y == -1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[12];
-                    _NodeShadowVisual.sprite = m_PathSprites[12];
-                }
-                else
-                {
-                    if (_NextNodePos.x == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[4];
-                        _NodeShadowVisual.sprite = m_PathSprites[4];
-                    }
-                    else if (_NextNodePos.y == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[20];
-                        _NodeShadowVisual.sprite = m_PathSprites[20];
-                    }
-                    else if (_NextNodePos.x == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[20];
-                        _NodeShadowVisual.sprite = m_PathSprites[20];
-                    }
-                    else
-                    {
-                        _NodeVisual.sprite = m_PathSprites[4];
-                        _NodeShadowVisual.sprite = m_PathSprites[4];
-                    }
-                }
-            }
-            else if (_PreviousNodePos.x == -1 &&
-                     _PreviousNodePos.y == 1)
-            {
-                if (_NextNodePos.x == 1 &&
-                    _NextNodePos.y == -1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[14];
-                    _NodeShadowVisual.sprite = m_PathSprites[14];
-                }
-                else
-                {
-                    if (_NextNodePos.x == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[22];
-                        _NodeShadowVisual.sprite = m_PathSprites[22];
-                    }
-                    else if (_NextNodePos.y == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[6];
-                        _NodeShadowVisual.sprite = m_PathSprites[6];
-                    }
-                    else if (_NextNodePos.x == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[6];
-                        _NodeShadowVisual.sprite = m_PathSprites[6];
-                    }
-                    else
-                    {
-                        _NodeVisual.sprite = m_PathSprites[22];
-                        _NodeShadowVisual.sprite = m_PathSprites[22];
-                    }
-                }
-            }
-            else if (_PreviousNodePos.x == 1 &&
-                     _PreviousNodePos.y == -1)
-            {
-                if (_NextNodePos.x == -1 &&
-                    _NextNodePos.y == 1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[10];
-                    _NodeShadowVisual.sprite = m_PathSprites[10];
-                }
-                else
-                {
-                    if (_NextNodePos.x == 1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[18];
-                        _NodeShadowVisual.sprite = m_PathSprites[18];
-                    }
-                    else if (_NextNodePos.y == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[2];
-                        _NodeShadowVisual.sprite = m_PathSprites[2];
-                    }
-                    else if (_NextNodePos.x == -1)
-                    {
-                        _NodeVisual.sprite = m_PathSprites[2];
-                        _NodeShadowVisual.sprite = m_PathSprites[2];
-                    }
-                    else
-                    {
-                        _NodeVisual.sprite = m_PathSprites[18];
-                        _NodeShadowVisual.sprite = m_PathSprites[18];
-                    }
-                }
-            }
-            else if (_PreviousNodePos.x == 1)
-            {
-                if (_NextNodePos.y == 1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[19];
-                    _NodeShadowVisual.sprite = m_PathSprites[19];
-                }
-                else if (_NextNodePos.y == -1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[3];
-                    _NodeShadowVisual.sprite = m_PathSprites[3];
-                }
-                else
-                {
-                    _NodeVisual.sprite = m_PathSprites[11];
-                    _NodeShadowVisual.sprite = m_PathSprites[11];
-                }
-            }
-            else if (_PreviousNodePos.x == -1)
-            {
-                if (_NextNodePos.y == 1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[7];
-                    _NodeShadowVisual.sprite = m_PathSprites[7];
-                }
-                else if (_NextNodePos.y == -1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[23];
-                    _NodeShadowVisual.sprite = m_PathSprites[23];
-                }
-                else
-                {
-                    _NodeVisual.sprite = m_PathSprites[15];
-                    _NodeShadowVisual.sprite = m_PathSprites[15];
-                }
-            }
-            else if (_PreviousNodePos.y == 1)
-            {
-                if (_NextNodePos.x == 1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[5];
-                    _NodeShadowVisual.sprite = m_PathSprites[5];
-                }
-                else if (_NextNodePos.x == -1)
-                {
-                    _NodeVisual.sprite = m_PathSprites[21];
-                    _NodeShadowVisual.sprite = m_PathSprites[21];
-                }
-                else
-                {
-                    _NodeVisual.sprite = m_PathSprites[13];
-                    _NodeShadowVisual.sprite = m_PathSprites[13];
-                }
+                _PreviousNodePos = new Vector2Int(m_Path[i - 1].PosX, m_Path[i - 1].PosY);
             }
             else
             {
-                if (_NextNodePos.x == 1)
+                _PreviousNodePos = m_PathfindingPos;
+                _PreviousNodePos.x = Mathf.Abs(_PreviousNodePos.x);
+                _PreviousNodePos.y = Mathf.Abs(_PreviousNodePos.y);
+            }
+
+            _PreviousNodePos -= new Vector2Int(m_Path[i].PosX, m_Path[i].PosY);
+
+            if (i == m_Path.Count - 1)
+            {
+                _Node.sprite = m_PathSprites[0];
+                _NodeShadow.sprite = m_PathSprites[0];
+            }
+            else
+            {
+                _NextNodePos = new Vector2Int(m_Path[i + 1].PosX, m_Path[i + 1].PosY);
+                _NextNodePos -= new Vector2Int(m_Path[i].PosX, m_Path[i].PosY);
+
+                if (_NextNodePos.x == -1 &&
+                    _NextNodePos.y == -1)
                 {
-                    _NodeVisual.sprite = m_PathSprites[17];
-                    _NodeShadowVisual.sprite = m_PathSprites[17];
+                    if (_PreviousNodePos.x == 1 &&
+                        _PreviousNodePos.y == 1)
+                    {
+                        _Node.sprite = m_PathSprites[16];
+                        _NodeShadow.sprite = m_PathSprites[16];
+                    }
+                    else
+                    {
+                        if (_PreviousNodePos.x == -1)
+                        {
+                            _Node.sprite = m_PathSprites[8];
+                            _NodeShadow.sprite = m_PathSprites[8];
+                        }
+                        else if (_PreviousNodePos.y == -1)
+                        {
+                            _Node.sprite = m_PathSprites[24];
+                            _NodeShadow.sprite = m_PathSprites[24];
+                        }
+                        else if (_PreviousNodePos.x == 1)
+                        {
+                            _Node.sprite = m_PathSprites[24];
+                            _NodeShadow.sprite = m_PathSprites[24];
+                        }
+                        else
+                        {
+                            _Node.sprite = m_PathSprites[8];
+                            _NodeShadow.sprite = m_PathSprites[8];
+                        }
+                    }
+                }
+                else if (_NextNodePos.x == 1 &&
+                         _NextNodePos.y == 1)
+                {
+                    if (_PreviousNodePos.x == -1 &&
+                        _PreviousNodePos.y == -1)
+                    {
+                        _Node.sprite = m_PathSprites[12];
+                        _NodeShadow.sprite = m_PathSprites[12];
+                    }
+                    else
+                    {
+                        if (_PreviousNodePos.x == 1)
+                        {
+                            _Node.sprite = m_PathSprites[4];
+                            _NodeShadow.sprite = m_PathSprites[4];
+                        }
+                        else if (_PreviousNodePos.y == 1)
+                        {
+                            _Node.sprite = m_PathSprites[20];
+                            _NodeShadow.sprite = m_PathSprites[20];
+                        }
+                        else if (_PreviousNodePos.x == -1)
+                        {
+                            _Node.sprite = m_PathSprites[20];
+                            _NodeShadow.sprite = m_PathSprites[20];
+                        }
+                        else
+                        {
+                            _Node.sprite = m_PathSprites[4];
+                            _NodeShadow.sprite = m_PathSprites[4];
+                        }
+                    }
+                }
+                else if (_NextNodePos.x == -1 &&
+                         _NextNodePos.y == 1)
+                {
+                    if (_PreviousNodePos.x == 1 &&
+                        _PreviousNodePos.y == -1)
+                    {
+                        _Node.sprite = m_PathSprites[14];
+                        _NodeShadow.sprite = m_PathSprites[14];
+                    }
+                    else
+                    {
+                        if (_PreviousNodePos.x == -1)
+                        {
+                            _Node.sprite = m_PathSprites[22];
+                            _NodeShadow.sprite = m_PathSprites[22];
+                        }
+                        else if (_PreviousNodePos.y == 1)
+                        {
+                            _Node.sprite = m_PathSprites[6];
+                            _NodeShadow.sprite = m_PathSprites[6];
+                        }
+                        else if (_PreviousNodePos.x == 1)
+                        {
+                            _Node.sprite = m_PathSprites[6];
+                            _NodeShadow.sprite = m_PathSprites[6];
+                        }
+                        else
+                        {
+                            _Node.sprite = m_PathSprites[22];
+                            _NodeShadow.sprite = m_PathSprites[22];
+                        }
+                    }
+                }
+                else if (_NextNodePos.x == 1 &&
+                         _NextNodePos.y == -1)
+                {
+                    if (_PreviousNodePos.x == -1 &&
+                        _PreviousNodePos.y == 1)
+                    {
+                        _Node.sprite = m_PathSprites[10];
+                        _NodeShadow.sprite = m_PathSprites[10];
+                    }
+                    else
+                    {
+                        if (_PreviousNodePos.x == 1)
+                        {
+                            _Node.sprite = m_PathSprites[18];
+                            _NodeShadow.sprite = m_PathSprites[18];
+                        }
+                        else if (_PreviousNodePos.y == -1)
+                        {
+                            _Node.sprite = m_PathSprites[2];
+                            _NodeShadow.sprite = m_PathSprites[2];
+                        }
+                        else if (_PreviousNodePos.x == -1)
+                        {
+                            _Node.sprite = m_PathSprites[2];
+                            _NodeShadow.sprite = m_PathSprites[2];
+                        }
+                        else
+                        {
+                            _Node.sprite = m_PathSprites[18];
+                            _NodeShadow.sprite = m_PathSprites[18];
+                        }
+                    }
+                }
+                else if (_NextNodePos.x == 1)
+                {
+                    if (_PreviousNodePos.y == 1)
+                    {
+                        _Node.sprite = m_PathSprites[19];
+                        _NodeShadow.sprite = m_PathSprites[19];
+                    }
+                    else if (_PreviousNodePos.y == -1)
+                    {
+                        _Node.sprite = m_PathSprites[3];
+                        _NodeShadow.sprite = m_PathSprites[3];
+                    }
+                    else
+                    {
+                        _Node.sprite = m_PathSprites[11];
+                        _NodeShadow.sprite = m_PathSprites[11];
+                    }
                 }
                 else if (_NextNodePos.x == -1)
                 {
-                    _NodeVisual.sprite = m_PathSprites[1];
-                    _NodeShadowVisual.sprite = m_PathSprites[1];
+                    if (_PreviousNodePos.y == 1)
+                    {
+                        _Node.sprite = m_PathSprites[7];
+                        _NodeShadow.sprite = m_PathSprites[7];
+                    }
+                    else if (_PreviousNodePos.y == -1)
+                    {
+                        _Node.sprite = m_PathSprites[23];
+                        _NodeShadow.sprite = m_PathSprites[23];
+                    }
+                    else
+                    {
+                        _Node.sprite = m_PathSprites[15];
+                        _NodeShadow.sprite = m_PathSprites[15];
+                    }
+                }
+                else if (_NextNodePos.y == 1)
+                {
+                    if (_PreviousNodePos.x == 1)
+                    {
+                        _Node.sprite = m_PathSprites[5];
+                        _NodeShadow.sprite = m_PathSprites[5];
+                    }
+                    else if (_PreviousNodePos.x == -1)
+                    {
+                        _Node.sprite = m_PathSprites[21];
+                        _NodeShadow.sprite = m_PathSprites[21];
+                    }
+                    else
+                    {
+                        _Node.sprite = m_PathSprites[13];
+                        _NodeShadow.sprite = m_PathSprites[13];
+                    }
                 }
                 else
                 {
-                    _NodeVisual.sprite = m_PathSprites[9];
-                    _NodeShadowVisual.sprite = m_PathSprites[9];
+                    if (_PreviousNodePos.x == 1)
+                    {
+                        _Node.sprite = m_PathSprites[17];
+                        _NodeShadow.sprite = m_PathSprites[17];
+                    }
+                    else if (_PreviousNodePos.x == -1)
+                    {
+                        _Node.sprite = m_PathSprites[1];
+                        _NodeShadow.sprite = m_PathSprites[1];
+                    }
+                    else
+                    {
+                        _Node.sprite = m_PathSprites[9];
+                        _NodeShadow.sprite = m_PathSprites[9];
+                    }
                 }
             }
 
-            m_PathNodes.Add(_NodeVisual);
-            m_PathShadowNodes.Add(_NodeShadowVisual);
-
-            _PreviousNode = _Node;
-            _Node = _Node.Parent;
+            m_PathNodes.Add(_Node);
+            m_PathNodeShadows.Add(_NodeShadow);
         }
 
         m_TargetNodeIndex = a_Index;

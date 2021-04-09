@@ -43,54 +43,72 @@ public class CameraControl : MonoBehaviour
             m_Active = true;
         }
 
-        if (m_Active)
+        if (!(m_OwnedHeroes.SelectedHero != null &&
+            m_OwnedHeroes.SelectedHero.IsMoving))
         {
-            bool _IsMoving = false;
-
-            Vector3 _Position = transform.position;
-
-            if (Input.mousePosition.x <= 2)
+            if (m_Active)
             {
-                _Position.x -= 2;
-                _IsMoving = true;
-            }
-            else if (Input.mousePosition.x >= Screen.width - 3)
-            {
-                _Position.x += 2;
-                _IsMoving = true;
-            }
+                bool _IsMoving = false;
 
-            if (Input.mousePosition.y <= 2)
-            {
-                _Position.y -= 2;
-                _IsMoving = true;
-            }
-            else if (Input.mousePosition.y >= Screen.height - 3)
-            {
-                _Position.y += 2;
-                _IsMoving = true;
-            }
+                Vector3 _Position = transform.position;
 
-            m_IsMoving = _IsMoving;
-
-            if (!m_IsMoving)
-            {
-                m_CurrentMoveCooldown = 0;
-            }
-            else
-            {
-                m_CurrentMoveCooldown -= Time.deltaTime;
-
-                if (m_CurrentMoveCooldown <= 0)
+                if (Input.mousePosition.x <= 2)
                 {
-                    m_CurrentMoveCooldown += m_MoveCooldown;
+                    _Position.x -= 2;
+                    _IsMoving = true;
+                }
+                else if (Input.mousePosition.x >= Screen.width - 3)
+                {
+                    _Position.x += 2;
+                    _IsMoving = true;
+                }
 
-                    _Position.x = Mathf.Clamp(_Position.x, 0, m_GameSettings.Scenario.Size - 1);
-                    _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Scenario.Size + 1, 0);
+                if (Input.mousePosition.y <= 2)
+                {
+                    _Position.y -= 2;
+                    _IsMoving = true;
+                }
+                else if (Input.mousePosition.y >= Screen.height - 3)
+                {
+                    _Position.y += 2;
+                    _IsMoving = true;
+                }
 
-                    transform.position = _Position;
+                m_IsMoving = _IsMoving;
+
+                if (!m_IsMoving)
+                {
+                    m_CurrentMoveCooldown = 0;
+                }
+                else
+                {
+                    m_CurrentMoveCooldown -= Time.deltaTime;
+
+                    if (m_CurrentMoveCooldown <= 0)
+                    {
+                        m_CurrentMoveCooldown += m_MoveCooldown;
+
+                        _Position.x = Mathf.Clamp(_Position.x, 0, m_GameSettings.Scenario.Size - 1);
+                        _Position.y = Mathf.Clamp(_Position.y, -m_GameSettings.Scenario.Size + 1, 0);
+
+                        transform.position = _Position;
+                    }
                 }
             }
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (m_OwnedHeroes.SelectedHero != null &&
+            m_OwnedHeroes.SelectedHero.IsMoving)
+        {
+            transform.position = new Vector3
+            (
+                m_OwnedHeroes.SelectedHero.transform.position.x - 1.5f,
+                m_OwnedHeroes.SelectedHero.transform.position.y + 0.5f,
+                transform.position.z
+            );
         }
     }
 

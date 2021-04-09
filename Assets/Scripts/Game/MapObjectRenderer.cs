@@ -12,7 +12,15 @@ public class MapObjectRenderer : MonoBehaviour
 
     int m_Offset = 0;
 
-    void OnDestroy()
+    void OnEnable()
+    {
+        if (m_Active)
+        {
+            MapObjectRendererManager.AddObject(this);
+        }
+    }
+
+    void OnDisable()
     {
         if (m_Active)
         {

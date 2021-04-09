@@ -6,7 +6,7 @@ public class Pathfinding : MonoBehaviour
 {
     // Incremented when the pathfinding area changes at all
     // Allows objects to keep track of if they're looking at the up-to-date grid
-    public static int PathfindingVersion;
+    public int PathfindingVersion;
 
     public class Node
     {
@@ -418,6 +418,11 @@ public class Pathfinding : MonoBehaviour
         }
 
         return _OutputNodes;
+    }
+
+    public Node GetNode(Vector2Int a_Pos, bool a_IsUnderground)
+    {
+        return GetNode(a_Pos.x, a_Pos.y, a_IsUnderground);
     }
 
     public Node GetNode(int a_PosX, int a_PosY, bool a_IsUnderground)
