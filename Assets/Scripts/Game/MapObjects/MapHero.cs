@@ -90,7 +90,7 @@ public class MapHero : MapObjectBase
         m_PathfindingPos = new Vector2Int(a_PosX - 1, a_PosY);
 
         m_DynamicObstacle.Initialize(a_Pathfinding);
-        m_DynamicObstacle.AddInteractedNode(a_PosX, a_PosY, a_IsUnderground);
+        m_DynamicObstacle.AddInteractedNode(m_PathfindingPos.x, m_PathfindingPos.y, a_IsUnderground);
 
         Initialize();
     }
