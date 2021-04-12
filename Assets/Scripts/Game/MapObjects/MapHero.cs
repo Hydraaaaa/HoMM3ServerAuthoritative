@@ -55,6 +55,10 @@ public class MapHero : MapObjectBase
 
     public bool IsMoving { get; private set; }
 
+    // Separate flag from IsMoving, because movement doesn't immediately stop when cancelled early
+    // Camera needs to keep following until it stops for good
+    bool m_StopMovement = false;
+
     Vector2Int m_PathfindingPos;
 
     public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding, OwnedHeroes a_OwnedHeroes)
@@ -251,7 +255,7 @@ public class MapHero : MapObjectBase
     {
         if (IsMoving)
         {
-            IsMoving = false;
+            m_StopMovement = true;
         }
         else
         {
@@ -277,6 +281,8 @@ public class MapHero : MapObjectBase
         {
             yield break;
         }
+
+        m_StopMovement = false;
 
         IsMoving = true;
 
@@ -361,7 +367,7 @@ public class MapHero : MapObjectBase
                 m_Path.RemoveAt(0);
 
                 if (m_Path.Count == 0 ||
-                    !IsMoving)
+                    m_StopMovement)
                 {
                     break;
                 }
