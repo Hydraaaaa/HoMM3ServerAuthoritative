@@ -12,8 +12,8 @@ public class HeroListUI : MonoBehaviour
 
     [SerializeField] List<Image> m_ImagesSmall;
     [SerializeField] GameObject m_SelectedBorderSmall;
-    [SerializeField] GameObject m_UpArrow;
-    [SerializeField] GameObject m_DownArrow;
+    [SerializeField] Button m_UpArrow;
+    [SerializeField] Button m_DownArrow;
 
     MapHero m_SelectedHero;
 
@@ -32,6 +32,8 @@ public class HeroListUI : MonoBehaviour
 
         m_Images[_HeroCount - 1].sprite = a_Hero.Hero.Portrait;
         m_Images[_HeroCount - 1].gameObject.SetActive(true);
+
+        UpdateSmallHeroDisplay();
     }
 
     void OnHeroRemoved(MapHero a_Hero)
@@ -53,6 +55,8 @@ public class HeroListUI : MonoBehaviour
         {
             m_Images[i].gameObject.SetActive(false);
         }
+
+        UpdateSmallHeroDisplay();
     }
 
     void OnHeroSelected(MapHero a_Hero, int a_Index)
@@ -60,17 +64,62 @@ public class HeroListUI : MonoBehaviour
         m_SelectedHero = a_Hero;
 
         m_SelectedBorder.SetActive(true);
+
         m_SelectedBorder.transform.position = m_Images[a_Index].transform.position;
+
+        if (a_Index >= m_SmallIndex + 5)
+        {
+            m_SmallIndex = 3;
+            UpdateSmallHeroDisplay();
+        }
+        else if (a_Index < m_SmallIndex)
+        {
+            m_SmallIndex = a_Index;
+            UpdateSmallHeroDisplay();
+        }
+
+        m_SelectedBorderSmall.SetActive(true);
+
+        m_SelectedBorderSmall.transform.position = m_ImagesSmall[a_Index - m_SmallIndex].transform.position;
     }
 
     public void UpArrowPressed()
     {
-
+        if (m_SmallIndex > 0)
+        {
+            m_SmallIndex -= 1;
+            UpdateSmallHeroDisplay();
+        }
     }
 
     public void DownArrowPressed()
     {
+        if (m_OwnedHeroes.GetHeroCount() > m_SmallIndex + 5)
+        {
+            m_SmallIndex += 1;
+            UpdateSmallHeroDisplay();
+        }
+    }
 
+    void UpdateSmallHeroDisplay()
+    {
+        List<MapHero> _Heroes = m_OwnedHeroes.GetHeroes();
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (i < _Heroes.Count)
+            {
+                m_ImagesSmall[i].sprite = _Heroes[i + m_SmallIndex].Hero.Portrait;
+                m_ImagesSmall[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                m_ImagesSmall[i].gameObject.SetActive(false);
+            }
+        }
+
+        m_UpArrow.interactable = m_SmallIndex != 0;
+        m_DownArrow.interactable = m_SmallIndex < _Heroes.Count - 5;
     }
 
     public void HeroPressed(int a_Index)
