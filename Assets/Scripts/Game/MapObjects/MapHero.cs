@@ -413,8 +413,8 @@ public class MapHero : MapObjectBase
 
         m_FlagRenderer.enabled = true;
 
-        m_HeroRenderer.sprite = Hero.HeroVisualData.MovingSprites[m_Direction].Array[_AnimationIndex];
-        m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowMovingSprites[m_Direction].Array[_AnimationIndex];
+        m_HeroRenderer.sprite = Hero.HeroVisualData.IdleSprites[m_Direction];
+        m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowIdleSprites[m_Direction];
 
         m_HeroRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
         m_HeroShadowRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];

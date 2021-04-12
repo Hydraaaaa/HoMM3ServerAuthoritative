@@ -17,6 +17,7 @@ public class MapObjectRenderer : MonoBehaviour
         if (m_Active)
         {
             MapObjectRendererManager.AddObject(this);
+            m_SpriteRenderer.sprite = m_Sprites[(MapObjectRendererManager.CurrentFrame + m_Offset) % m_Sprites.Length];
         }
     }
 
@@ -57,14 +58,21 @@ public class MapObjectRenderer : MonoBehaviour
 
         m_Sprites = a_Sprites;
 
-        if (m_Sprites != null &&
-            m_Sprites.Length > 0)
+        if (!m_Active)
         {
-            m_SpriteRenderer.sprite = m_Sprites[0];
+            if (m_Sprites != null &&
+                m_Sprites.Length > 0)
+            {
+                m_SpriteRenderer.sprite = m_Sprites[0];
+            }
+            else
+            {
+                m_SpriteRenderer.sprite = null;
+            }
         }
         else
         {
-            m_SpriteRenderer.sprite = null;
+            m_SpriteRenderer.sprite = m_Sprites[(MapObjectRendererManager.CurrentFrame + m_Offset) % m_Sprites.Length];
         }
     }
 
