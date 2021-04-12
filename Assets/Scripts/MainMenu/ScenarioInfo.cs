@@ -7,21 +7,21 @@ using UnityEngine.UI;
 
 public class ScenarioInfo : MonoBehaviour
 {
-    [SerializeField] GameSettings m_Settings = null;
-    [SerializeField] Text m_RatingText = null;
-    [SerializeField] Button m_EasyButton = null;
-    [SerializeField] Button m_NormalButton = null;
-    [SerializeField] Button m_HardButton = null;
-    [SerializeField] Button m_ExpertButton = null;
-    [SerializeField] Button m_ImpossibleButton = null;
+    [SerializeField] GameSettings m_Settings;
+    [SerializeField] Text m_RatingText;
+    [SerializeField] Button m_EasyButton;
+    [SerializeField] Button m_NormalButton;
+    [SerializeField] Button m_HardButton;
+    [SerializeField] Button m_ExpertButton;
+    [SerializeField] Button m_ImpossibleButton;
 
     [Space]
 
-    [SerializeField] Sprite m_EasySelectedSprite = null;
-    [SerializeField] Sprite m_NormalSelectedSprite = null;
-    [SerializeField] Sprite m_HardSelectedSprite = null;
-    [SerializeField] Sprite m_ExpertSelectedSprite = null;
-    [SerializeField] Sprite m_ImpossibleSelectedSprite = null;
+    [SerializeField] Sprite m_EasySelectedSprite;
+    [SerializeField] Sprite m_NormalSelectedSprite;
+    [SerializeField] Sprite m_HardSelectedSprite;
+    [SerializeField] Sprite m_ExpertSelectedSprite;
+    [SerializeField] Sprite m_ImpossibleSelectedSprite;
 
     Sprite m_EasySprite;
     Sprite m_NormalSprite;

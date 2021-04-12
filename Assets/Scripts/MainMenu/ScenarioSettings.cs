@@ -7,12 +7,12 @@ public class ScenarioSettings : MonoBehaviour
 {
     Scenario m_Scenario;
 
-    [SerializeField] GameSettings m_GameSettings = null;
-    [SerializeField] ScenarioInfo m_ScenarioInfo = null;
-    [SerializeField] ScenarioSettingsPlayer[] m_Players = null;
-    [SerializeField] Image[] m_AlliesFlags = null;
-    [SerializeField] Image[] m_EnemiesFlags = null;
-    [SerializeField] Sprite[] m_FlagSprites = null;
+    [SerializeField] GameSettings m_GameSettings;
+    [SerializeField] ScenarioInfo m_ScenarioInfo;
+    [SerializeField] ScenarioSettingsPlayer[] m_Players;
+    [SerializeField] Image[] m_AlliesFlags;
+    [SerializeField] Image[] m_EnemiesFlags;
+    [SerializeField] Sprite[] m_FlagSprites;
 
     void Awake()
     {

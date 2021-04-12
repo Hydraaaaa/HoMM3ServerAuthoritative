@@ -9,37 +9,37 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 {
     public int PlayerIndex { get; private set; }
 
-    [SerializeField] ScenarioSettings m_ScenarioSettings = null;
-    [SerializeField] FactionList m_Factions = null;
-    [SerializeField] HeroList m_Heroes = null;
-    [SerializeField] Image m_BackgroundImage = null;
-    [SerializeField] Button m_FlagButton = null;
-    [SerializeField] Text m_NameText = null;
-    [SerializeField] Text m_HumanOrCPUText = null;
+    [SerializeField] ScenarioSettings m_ScenarioSettings;
+    [SerializeField] FactionList m_Factions;
+    [SerializeField] HeroList m_Heroes;
+    [SerializeField] Image m_BackgroundImage;
+    [SerializeField] Button m_FlagButton;
+    [SerializeField] Text m_NameText;
+    [SerializeField] Text m_HumanOrCPUText;
 
-    [SerializeField] Image m_TownImage = null;
-    [SerializeField] Text m_TownText = null;
-    [SerializeField] Image m_TownLeft = null;
-    [SerializeField] Image m_TownRight = null;
+    [SerializeField] Image m_TownImage;
+    [SerializeField] Text m_TownText;
+    [SerializeField] Image m_TownLeft;
+    [SerializeField] Image m_TownRight;
 
-    [SerializeField] Image m_HeroImage = null;
-    [SerializeField] Text m_HeroText = null;
-    [SerializeField] Image m_HeroLeft = null;
-    [SerializeField] Image m_HeroRight = null;
-    [SerializeField] Image m_StartingBonusImage = null;
-    [SerializeField] Text m_StartingBonusText = null;
+    [SerializeField] Image m_HeroImage;
+    [SerializeField] Text m_HeroText;
+    [SerializeField] Image m_HeroLeft;
+    [SerializeField] Image m_HeroRight;
+    [SerializeField] Image m_StartingBonusImage;
+    [SerializeField] Text m_StartingBonusText;
 
     [Space]
 
-    [SerializeField] Sprite[] m_BackgroundSprites = null;
-    [SerializeField] Sprite[] m_FlagSprites = null;
-    [SerializeField] Sprite[] m_FlagHoverSprites = null;
-    [SerializeField] Sprite[] m_FlagPressedSprites = null;
-    [SerializeField] Sprite m_RandomTownSprite = null;
-    [SerializeField] Sprite m_RandomHeroSprite = null;
-    [SerializeField] Sprite m_RandomStartingBonusSprite = null;
-    [SerializeField] Sprite m_NoHeroSprite = null;
-    [SerializeField] StartingBonusList m_StartingBonuses = null;
+    [SerializeField] Sprite[] m_BackgroundSprites;
+    [SerializeField] Sprite[] m_FlagSprites;
+    [SerializeField] Sprite[] m_FlagHoverSprites;
+    [SerializeField] Sprite[] m_FlagPressedSprites;
+    [SerializeField] Sprite m_RandomTownSprite;
+    [SerializeField] Sprite m_RandomHeroSprite;
+    [SerializeField] Sprite m_RandomStartingBonusSprite;
+    [SerializeField] Sprite m_NoHeroSprite;
+    [SerializeField] StartingBonusList m_StartingBonuses;
 
     int m_CurrentTownIndex;
     int m_CurrentHeroIndex;

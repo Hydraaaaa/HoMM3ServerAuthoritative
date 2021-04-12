@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
-    [SerializeField] GameObject m_ScenarioScreen = null;
-    [SerializeField] GameObject m_ScenarioList = null;
-    [SerializeField] GameObject m_ScenarioSettings = null;
-    [SerializeField] Image m_ScenarioArt = null;
-    [SerializeField] Sprite[] m_ScenarioArtSprites = null;
-    [SerializeField] GameObject[] m_DisabledForLoadGame = null;
-    [SerializeField] GameObject[] m_EnabledForLoadGame = null;
-    [SerializeField] EventSystem m_EventSystem = null;
-    [SerializeField] Button m_BackButton = null;
-    [SerializeField] RectTransform m_CenterAnchor = null;
+    [SerializeField] GameObject m_ScenarioScreen;
+    [SerializeField] GameObject m_ScenarioList;
+    [SerializeField] GameObject m_ScenarioSettings;
+    [SerializeField] Image m_ScenarioArt;
+    [SerializeField] Sprite[] m_ScenarioArtSprites;
+    [SerializeField] GameObject[] m_DisabledForLoadGame;
+    [SerializeField] GameObject[] m_EnabledForLoadGame;
+    [SerializeField] EventSystem m_EventSystem;
+    [SerializeField] Button m_BackButton;
+    [SerializeField] RectTransform m_CenterAnchor;
 
     void Update()
     {

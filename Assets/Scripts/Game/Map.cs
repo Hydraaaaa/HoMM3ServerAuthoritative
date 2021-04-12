@@ -11,73 +11,73 @@ public class Map : MonoBehaviour
 
     public GameSettings GameSettings => m_GameSettings;
 
-    [SerializeField] GameSettings m_GameSettings = null;
-    [SerializeField] TerrainTileObject m_TileObjectPrefab = null;
-    [SerializeField] SpriteRenderer m_TerrainFrame = null;
-    [SerializeField] Transform m_TerrainMask = null;
-    [SerializeField] MapObject m_MapObjectPrefab = null;
-    [SerializeField] MapHero m_MapHeroPrefab = null;
-    [SerializeField] MapDwelling m_MapDwellingPrefab = null;
-    [SerializeField] MapTown m_MapTownPrefab = null;
-    [SerializeField] MapResource m_MapResourcePrefab = null;
-    [SerializeField] MapMonster m_MapMonsterPrefab = null;
-    [SerializeField] Pathfinding m_Pathfinding = null;
-    [SerializeField] OwnedHeroes m_OwnedHeroes = null;
+    [SerializeField] GameSettings m_GameSettings;
+    [SerializeField] TerrainTileObject m_TileObjectPrefab;
+    [SerializeField] SpriteRenderer m_TerrainFrame;
+    [SerializeField] Transform m_TerrainMask;
+    [SerializeField] MapObject m_MapObjectPrefab;
+    [SerializeField] MapHero m_MapHeroPrefab;
+    [SerializeField] MapDwelling m_MapDwellingPrefab;
+    [SerializeField] MapTown m_MapTownPrefab;
+    [SerializeField] MapResource m_MapResourcePrefab;
+    [SerializeField] MapMonster m_MapMonsterPrefab;
+    [SerializeField] Pathfinding m_Pathfinding;
+    [SerializeField] OwnedHeroes m_OwnedHeroes;
 
     [Space]
 
-    [SerializeField] Transform m_TerrainRoot = null;
-    [SerializeField] Transform m_UndergroundTerrainRoot = null;
+    [SerializeField] Transform m_TerrainRoot;
+    [SerializeField] Transform m_UndergroundTerrainRoot;
 
     [Space]
 
-    [SerializeField] Transform m_TerrainTileObjectParent = null;
-    [SerializeField] Transform m_RiverTileObjectParent = null;
-    [SerializeField] Transform m_RoadTileObjectParent = null;
-    [SerializeField] Transform m_MapObjectParent = null;
+    [SerializeField] Transform m_TerrainTileObjectParent;
+    [SerializeField] Transform m_RiverTileObjectParent;
+    [SerializeField] Transform m_RoadTileObjectParent;
+    [SerializeField] Transform m_MapObjectParent;
 
     [Space]
 
-    [SerializeField] Transform m_UndergroundTerrainTileObjectParent = null;
-    [SerializeField] Transform m_UndergroundRiverTileObjectParent = null;
-    [SerializeField] Transform m_UndergroundRoadTileObjectParent = null;
-    [SerializeField] Transform m_UndergroundMapObjectParent = null;
+    [SerializeField] Transform m_UndergroundTerrainTileObjectParent;
+    [SerializeField] Transform m_UndergroundRiverTileObjectParent;
+    [SerializeField] Transform m_UndergroundRoadTileObjectParent;
+    [SerializeField] Transform m_UndergroundMapObjectParent;
 
 
     [Space]
 
-    [SerializeField] List<Sprite> m_DirtSprites = null;
-    [SerializeField] List<Sprite> m_SandSprites = null;
-    [SerializeField] List<Sprite> m_GrassSprites = null;
-    [SerializeField] List<Sprite> m_SnowSprites = null;
-    [SerializeField] List<Sprite> m_SwampSprites = null;
-    [SerializeField] List<Sprite> m_RoughSprites = null;
-    [SerializeField] List<Sprite> m_SubterraneanSprites = null;
-    [SerializeField] List<Sprite> m_LavaSprites = null;
-    [SerializeField] List<Sprite> m_RockSprites = null;
-
-    [Space]
-
-    [NonReorderable]
-    [SerializeField] List<SpriteArrayContainer> m_WaterAnimations = null;
-
-    [Space]
-
-    [SerializeField] List<Sprite> m_IcyRiverSprites = null;
-    [SerializeField] List<Sprite> m_MuddyRiverSprites = null;
+    [SerializeField] List<Sprite> m_DirtSprites;
+    [SerializeField] List<Sprite> m_SandSprites;
+    [SerializeField] List<Sprite> m_GrassSprites;
+    [SerializeField] List<Sprite> m_SnowSprites;
+    [SerializeField] List<Sprite> m_SwampSprites;
+    [SerializeField] List<Sprite> m_RoughSprites;
+    [SerializeField] List<Sprite> m_SubterraneanSprites;
+    [SerializeField] List<Sprite> m_LavaSprites;
+    [SerializeField] List<Sprite> m_RockSprites;
 
     [Space]
 
     [NonReorderable]
-    [SerializeField] List<SpriteArrayContainer> m_ClearRiverAnimations = null;
-    [NonReorderable]
-    [SerializeField] List<SpriteArrayContainer> m_LavaRiverAnimations = null;
+    [SerializeField] List<SpriteArrayContainer> m_WaterAnimations;
 
     [Space]
 
-    [SerializeField] List<Sprite> m_DirtRoadSprites = null;
-    [SerializeField] List<Sprite> m_GravelRoadSprites = null;
-    [SerializeField] List<Sprite> m_CobbleRoadSprites = null;
+    [SerializeField] List<Sprite> m_IcyRiverSprites;
+    [SerializeField] List<Sprite> m_MuddyRiverSprites;
+
+    [Space]
+
+    [NonReorderable]
+    [SerializeField] List<SpriteArrayContainer> m_ClearRiverAnimations;
+    [NonReorderable]
+    [SerializeField] List<SpriteArrayContainer> m_LavaRiverAnimations;
+
+    [Space]
+
+    [SerializeField] List<Sprite> m_DirtRoadSprites;
+    [SerializeField] List<Sprite> m_GravelRoadSprites;
+    [SerializeField] List<Sprite> m_CobbleRoadSprites;
 
     List<TerrainTileObject> m_TerrainTileObjects;
     List<TerrainTileObject> m_RiverTileObjects;

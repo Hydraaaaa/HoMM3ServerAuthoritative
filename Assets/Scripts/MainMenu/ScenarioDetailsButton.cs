@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ScenarioDetailsButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    [SerializeField] RectTransform m_PressTransform = null;
+    [SerializeField] RectTransform m_PressTransform;
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {

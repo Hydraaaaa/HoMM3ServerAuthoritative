@@ -9,19 +9,19 @@ public class ScenarioEntry : MonoBehaviour
     public Scenario Scenario { get; private set; }
     public Text NameText => m_NameText;
     public Text SizeText => m_SizeText;
-    [SerializeField] Text m_NameText = null;
-    [SerializeField] Text m_SizeText = null;
-    [SerializeField] Text m_PlayerCountText = null;
-    [SerializeField] Image m_VersionImage = null;
-    [SerializeField] Image m_WinCondition = null;
-    [SerializeField] Image m_LossCondition = null;
+    [SerializeField] Text m_NameText;
+    [SerializeField] Text m_SizeText;
+    [SerializeField] Text m_PlayerCountText;
+    [SerializeField] Image m_VersionImage;
+    [SerializeField] Image m_WinCondition;
+    [SerializeField] Image m_LossCondition;
     [SerializeField] Color m_SelectedColor = Color.yellow;
 
     [Space]
 
-    [SerializeField] Sprite m_ROESprite = null;
-    [SerializeField] Sprite m_ABSprite = null;
-    [SerializeField] Sprite m_SODSprite = null;
+    [SerializeField] Sprite m_ROESprite;
+    [SerializeField] Sprite m_ABSprite;
+    [SerializeField] Sprite m_SODSprite;
 
     public void SetScenario(Scenario a_Scenario)
     {

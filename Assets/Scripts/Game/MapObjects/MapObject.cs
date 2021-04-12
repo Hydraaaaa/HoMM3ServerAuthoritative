@@ -15,16 +15,16 @@ public class MapObject : MapObjectBase
     public MonsterList Monsters => m_Monsters;
     public HeroList Heroes => m_Heroes;
 
-    [SerializeField] SpriteRenderer m_SpriteRenderer = null;
-    [SerializeField] MapObjectRenderer m_Renderer = null;
-    [SerializeField] MapObjectRenderer m_ShadowRenderer = null;
+    [SerializeField] SpriteRenderer m_SpriteRenderer;
+    [SerializeField] MapObjectRenderer m_Renderer;
+    [SerializeField] MapObjectRenderer m_ShadowRenderer;
 
     [Space]
 
-    [SerializeField] PlayerColors m_PlayerColors = null;
-    [SerializeField] FactionList m_Factions = null;
-    [SerializeField] MonsterList m_Monsters = null;
-    [SerializeField] HeroList m_Heroes = null;
+    [SerializeField] PlayerColors m_PlayerColors;
+    [SerializeField] FactionList m_Factions;
+    [SerializeField] MonsterList m_Monsters;
+    [SerializeField] HeroList m_Heroes;
 
     public void Initialize(ScenarioObject a_ScenarioObject)
     {

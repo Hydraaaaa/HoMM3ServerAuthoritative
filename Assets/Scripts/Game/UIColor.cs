@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class UIColor : MonoBehaviour
 {
-    [SerializeField] GameSettings m_Settings = null;
-    [SerializeField] PlayerColors m_Colors = null;
+    [SerializeField] GameSettings m_Settings;
+    [SerializeField] PlayerColors m_Colors;
 
     [Space]
 
-    [SerializeField] Image m_Sidebar = null;
-    [SerializeField] Image m_SidebarSmall = null;
-    [SerializeField] Image m_BorderTopLeft = null;
-    [SerializeField] Image m_BorderTop = null;
-    [SerializeField] Image m_BorderLeft = null;
-    [SerializeField] Image m_BorderRight = null;
-    [SerializeField] Image m_BorderBottomLeft = null;
-    [SerializeField] Image m_BorderBottomRight = null;
-    [SerializeField] Image m_Resources = null;
-    [SerializeField] Image m_BottomBarFill = null;
-    [SerializeField] Image m_Date = null;
+    [SerializeField] Image m_Sidebar;
+    [SerializeField] Image m_SidebarSmall;
+    [SerializeField] Image m_BorderTopLeft;
+    [SerializeField] Image m_BorderTop;
+    [SerializeField] Image m_BorderLeft;
+    [SerializeField] Image m_BorderRight;
+    [SerializeField] Image m_BorderBottomLeft;
+    [SerializeField] Image m_BorderBottomRight;
+    [SerializeField] Image m_Resources;
+    [SerializeField] Image m_BottomBarFill;
+    [SerializeField] Image m_Date;
 
     void Awake()
     {

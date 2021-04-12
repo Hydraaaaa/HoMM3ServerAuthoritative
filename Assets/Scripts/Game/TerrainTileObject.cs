@@ -7,6 +7,6 @@ public class TerrainTileObject : MonoBehaviour
     public SpriteRenderer Renderer => m_Renderer;
     public MapObjectRenderer AnimationRenderer => m_AnimationRenderer;
 
-    [SerializeField] SpriteRenderer m_Renderer = null;
-    [SerializeField] MapObjectRenderer m_AnimationRenderer = null;
+    [SerializeField] SpriteRenderer m_Renderer;
+    [SerializeField] MapObjectRenderer m_AnimationRenderer;
 }

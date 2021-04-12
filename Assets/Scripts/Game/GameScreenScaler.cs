@@ -8,9 +8,9 @@ public class GameScreenScaler : MonoBehaviour
     public const int VIEWPORT_PADDING_BOTTOM = 48;
     public const int VIEWPORT_PADDING_LEFT = 8;
     public const int VIEWPORT_PADDING_RIGHT = 200;
-    [SerializeField] Camera m_Camera = null;
-    [SerializeField] GameObject m_Sidebar = null;
-    [SerializeField] GameObject m_SidebarSmall = null;
+    [SerializeField] Camera m_Camera;
+    [SerializeField] GameObject m_Sidebar;
+    [SerializeField] GameObject m_SidebarSmall;
 
     void Update()
     {

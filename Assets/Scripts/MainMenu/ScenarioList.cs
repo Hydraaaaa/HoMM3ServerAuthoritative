@@ -10,23 +10,23 @@ public class ScenarioList : MonoBehaviour
     public List<Scenario> CurrentScenarios => m_CurrentScenarios;
     public List<ScenarioEntry> ScenarioEntries => m_ScenarioEntries;
 
-    [SerializeField] GameSettings m_GameSettings = null;
-    [SerializeField] List<Scenario> m_Scenarios = null;
-    [SerializeField] List<ScenarioEntry> m_ScenarioEntries = null;
-    [SerializeField] Text m_DetailsName = null;
-    [SerializeField] Text m_DetailsDescription = null;
-    [SerializeField] Image m_DetailsWinConditionImage = null;
-    [SerializeField] Text m_DetailsWinCondition = null;
-    [SerializeField] Image m_DetailsLossConditionImage = null;
-    [SerializeField] Text m_DetailsLossCondition = null;
-    [SerializeField] Text m_DetailsDiff = null;
-    [SerializeField] Image m_DetailsSizeImage = null;
-    [SerializeField] Sprite m_SmallSprite = null;
-    [SerializeField] Sprite m_MedSprite = null;
-    [SerializeField] Sprite m_LargeSprite = null;
-    [SerializeField] Sprite m_XLSprite = null;
-    [SerializeField] ScenarioSettings m_ScenarioSettings = null;
-    [SerializeField] ScenarioListScrollbar m_Scrollbar = null;
+    [SerializeField] GameSettings m_GameSettings;
+    [SerializeField] List<Scenario> m_Scenarios;
+    [SerializeField] List<ScenarioEntry> m_ScenarioEntries;
+    [SerializeField] Text m_DetailsName;
+    [SerializeField] Text m_DetailsDescription;
+    [SerializeField] Image m_DetailsWinConditionImage;
+    [SerializeField] Text m_DetailsWinCondition;
+    [SerializeField] Image m_DetailsLossConditionImage;
+    [SerializeField] Text m_DetailsLossCondition;
+    [SerializeField] Text m_DetailsDiff;
+    [SerializeField] Image m_DetailsSizeImage;
+    [SerializeField] Sprite m_SmallSprite;
+    [SerializeField] Sprite m_MedSprite;
+    [SerializeField] Sprite m_LargeSprite;
+    [SerializeField] Sprite m_XLSprite;
+    [SerializeField] ScenarioSettings m_ScenarioSettings;
+    [SerializeField] ScenarioListScrollbar m_Scrollbar;
 
     public Sprite NormalWinSprite => m_NormalWinSprite;
     public Sprite AcquireArtifactSprite => m_AcquireArtifactSprite;
@@ -43,18 +43,18 @@ public class ScenarioList : MonoBehaviour
 
     [Space]
 
-    [SerializeField] Sprite m_NormalWinSprite = null;
-    [SerializeField] Sprite m_AcquireArtifactSprite = null;
-    [SerializeField] Sprite m_CreaturesSprite = null;
-    [SerializeField] Sprite m_ResourcesSprite = null;
-    [SerializeField] Sprite m_UpgradeTownSprite = null;
-    [SerializeField] Sprite m_BuildGrailSprite = null;
-    [SerializeField] Sprite m_DefeatHeroSprite = null;
-    [SerializeField] Sprite m_CaptureTownSprite = null;
-    [SerializeField] Sprite m_DefeatMonsterSprite = null;
-    [SerializeField] Sprite m_DwellingsSprite = null;
-    [SerializeField] Sprite m_MinesSprite = null;
-    [SerializeField] Sprite m_TransportSprite = null;
+    [SerializeField] Sprite m_NormalWinSprite;
+    [SerializeField] Sprite m_AcquireArtifactSprite;
+    [SerializeField] Sprite m_CreaturesSprite;
+    [SerializeField] Sprite m_ResourcesSprite;
+    [SerializeField] Sprite m_UpgradeTownSprite;
+    [SerializeField] Sprite m_BuildGrailSprite;
+    [SerializeField] Sprite m_DefeatHeroSprite;
+    [SerializeField] Sprite m_CaptureTownSprite;
+    [SerializeField] Sprite m_DefeatMonsterSprite;
+    [SerializeField] Sprite m_DwellingsSprite;
+    [SerializeField] Sprite m_MinesSprite;
+    [SerializeField] Sprite m_TransportSprite;
 
     public Sprite NormalLossSprite => m_NormalLossSprite;
     public Sprite LoseTownSprite => m_LoseTownSprite;
@@ -63,10 +63,10 @@ public class ScenarioList : MonoBehaviour
 
     [Space]
 
-    [SerializeField] Sprite m_NormalLossSprite = null;
-    [SerializeField] Sprite m_LoseTownSprite = null;
-    [SerializeField] Sprite m_LoseHeroSprite = null;
-    [SerializeField] Sprite m_TimeExpiresSprite = null;
+    [SerializeField] Sprite m_NormalLossSprite;
+    [SerializeField] Sprite m_LoseTownSprite;
+    [SerializeField] Sprite m_LoseHeroSprite;
+    [SerializeField] Sprite m_TimeExpiresSprite;
 
     List<Scenario> m_CurrentScenarios;
     Scenario m_SelectedScenario;
@@ -91,6 +91,14 @@ public class ScenarioList : MonoBehaviour
         for (int i = 0; i < m_ScenarioEntries.Count; i++)
         {
             m_ScenarioEntries[i].ScenarioList = this;
+        }
+
+        for (int i = m_Scenarios.Count - 1; i >= 0; i--)
+        {
+            if (m_Scenarios[i].Version != Scenario.SHADOW_OF_DEATH)
+            {
+                m_Scenarios.RemoveAt(i);
+            }
         }
 
         m_CurrentScenarios = m_Scenarios;
