@@ -180,7 +180,7 @@ public class MapHero : MapObjectBase
             HeroFlagVisualData _FlagData = m_PlayerColors.Flags[PlayerIndex];
 
             m_FlagRenderer.SetSprites(_FlagData.IdleSprites);
-            m_FlagRenderer.transform.localPosition = new Vector3(_FlagData.IdleOffsets[m_Direction].x, _FlagData.IdleOffsets[m_Direction].y, 0);
+            m_FlagRenderer.transform.localPosition = new Vector3(Hero.HeroVisualData.IdleFlagOffsets[m_Direction].x, Hero.HeroVisualData.IdleFlagOffsets[m_Direction].y, 0);
         }
         else
         {
@@ -385,7 +385,7 @@ public class MapHero : MapObjectBase
 
             m_HeroRenderer.sprite = Hero.HeroVisualData.MovingSprites[m_Direction].Array[_AnimationIndex];
             m_HeroShadowRenderer.sprite = Hero.HeroVisualData.ShadowMovingSprites[m_Direction].Array[_AnimationIndex];
-            m_FlagSpriteRenderer.sprite = _FlagData.MovingSprites[m_Direction].Sprites[_AnimationIndex];
+            m_FlagSpriteRenderer.sprite = _FlagData.MovingSprites[m_Direction].Array[_AnimationIndex];
 
             m_HeroRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
             m_HeroShadowRenderer.flipX = HeroVisualData.SPRITES_FLIPPED[m_Direction];
@@ -395,13 +395,13 @@ public class MapHero : MapObjectBase
             {
                 m_HeroRenderer.transform.localPosition = new Vector3(-3, 0, 0);
                 m_HeroShadowRenderer.transform.localPosition = new Vector3(-3, 0, 0);
-                m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + _FlagData.MovingSprites[m_Direction].Offset;
+                m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + Hero.HeroVisualData.MovingFlagOffsets[m_Direction];
             }
             else
             {
                 m_HeroRenderer.transform.localPosition = Vector3.zero;
                 m_HeroShadowRenderer.transform.localPosition = Vector3.zero;
-                m_FlagSpriteRenderer.transform.localPosition = _FlagData.MovingSprites[m_Direction].Offset;
+                m_FlagSpriteRenderer.transform.localPosition = Hero.HeroVisualData.MovingFlagOffsets[m_Direction];
             }
 
             transform.position += _MovementDirection;
@@ -430,13 +430,13 @@ public class MapHero : MapObjectBase
         {
             m_HeroRenderer.transform.localPosition = new Vector3(-3, 0, 0);
             m_HeroShadowRenderer.transform.localPosition = new Vector3(-3, 0, 0);
-            m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + _FlagData.IdleOffsets[m_Direction];
+            m_FlagSpriteRenderer.transform.localPosition = new Vector2(-3, 0) + Hero.HeroVisualData.IdleFlagOffsets[m_Direction];
         }
         else
         {
             m_HeroRenderer.transform.localPosition = Vector3.zero;
             m_HeroShadowRenderer.transform.localPosition = Vector3.zero;
-            m_FlagSpriteRenderer.transform.localPosition = _FlagData.IdleOffsets[m_Direction];
+            m_FlagSpriteRenderer.transform.localPosition = Hero.HeroVisualData.IdleFlagOffsets[m_Direction];
         }
 
         m_DynamicObstacle.AddInteractedNode(m_Pathfinding.GetNode(m_PathfindingPos, IsUnderground));

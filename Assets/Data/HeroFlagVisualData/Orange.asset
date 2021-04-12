@@ -21,17 +21,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bd2978df7535f22458a640ff8b9b297f, type: 3}
   - {fileID: 21300000, guid: aa095cbf2f2261e49973ec942005e271, type: 3}
   - {fileID: 21300000, guid: 34cab84499c0826469168a8a2c9d65a3, type: 3}
-  m_IdleOffsets:
-  - {x: 0.09375, y: -0.21875}
-  - {x: 0.21875, y: -0.21875}
-  - {x: 0.25, y: -0.21875}
-  - {x: -0.21875, y: -0.21875}
-  - {x: -0.09375, y: -0.21875}
-  - {x: 0.125, y: -0.21875}
-  - {x: -0.28125, y: -0.21875}
-  - {x: -0.125, y: -0.21875}
   m_MovingSprites:
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: a3f4ac7045e48914fa8fd0c2852575ec, type: 3}
     - {fileID: 21300000, guid: 16421e6a9b27a614da4680e056dff213, type: 3}
     - {fileID: 21300000, guid: 662768f8eb1b4c04d9f1707accbae028, type: 3}
@@ -40,8 +31,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: bd2978df7535f22458a640ff8b9b297f, type: 3}
     - {fileID: 21300000, guid: aa095cbf2f2261e49973ec942005e271, type: 3}
     - {fileID: 21300000, guid: 34cab84499c0826469168a8a2c9d65a3, type: 3}
-    Offset: {x: 0.09375, y: -0.21875}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: 379c6c7f1adca954c958a2f546d3a18f, type: 3}
     - {fileID: 21300000, guid: 95d85f7862b90a2449a77875cb881fe1, type: 3}
     - {fileID: 21300000, guid: 6ea47254797f9504bb22cf4f474372fa, type: 3}
@@ -50,8 +40,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 9229a2c902b9c354ebe4da39d584be7d, type: 3}
     - {fileID: 21300000, guid: 6a6b93d6604766547960fa2de4da888e, type: 3}
     - {fileID: 21300000, guid: 6b56a24847c2524439867af555f30271, type: 3}
-    Offset: {x: 0.375, y: -0.09375}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: 2d2a8423d4bb82948a8e3dabb5f7b0cc, type: 3}
     - {fileID: 21300000, guid: 00d5e0f8f11b0bc438c0c21b886af7ec, type: 3}
     - {fileID: 21300000, guid: 714f07323e63aaf4b9ae7c895856c06b, type: 3}
@@ -60,8 +49,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: cb7338089793ece41aae578f535eefb7, type: 3}
     - {fileID: 21300000, guid: 03631a9ede1ceab4da0458f55ab391ce, type: 3}
     - {fileID: 21300000, guid: f0839047702dc454b80aa6b122c6860f, type: 3}
-    Offset: {x: 0.25, y: -0.09375}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: 379c6c7f1adca954c958a2f546d3a18f, type: 3}
     - {fileID: 21300000, guid: 95d85f7862b90a2449a77875cb881fe1, type: 3}
     - {fileID: 21300000, guid: 6ea47254797f9504bb22cf4f474372fa, type: 3}
@@ -70,8 +58,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 9229a2c902b9c354ebe4da39d584be7d, type: 3}
     - {fileID: 21300000, guid: 6a6b93d6604766547960fa2de4da888e, type: 3}
     - {fileID: 21300000, guid: 6b56a24847c2524439867af555f30271, type: 3}
-    Offset: {x: -0.375, y: -0.09375}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: a3f4ac7045e48914fa8fd0c2852575ec, type: 3}
     - {fileID: 21300000, guid: 16421e6a9b27a614da4680e056dff213, type: 3}
     - {fileID: 21300000, guid: 662768f8eb1b4c04d9f1707accbae028, type: 3}
@@ -80,8 +67,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: bd2978df7535f22458a640ff8b9b297f, type: 3}
     - {fileID: 21300000, guid: aa095cbf2f2261e49973ec942005e271, type: 3}
     - {fileID: 21300000, guid: 34cab84499c0826469168a8a2c9d65a3, type: 3}
-    Offset: {x: -0.09375, y: -0.21875}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: d074721eee2478541882c20fee702547, type: 3}
     - {fileID: 21300000, guid: f678b8a2b27d6584b8e9a74657b4968a, type: 3}
     - {fileID: 21300000, guid: a1dec4f7f70037e44bf129a7a763371d, type: 3}
@@ -90,8 +76,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8cf2bf3e605169f429f723934aaf947b, type: 3}
     - {fileID: 21300000, guid: 1332876651364b94d84438ba0de1e188, type: 3}
     - {fileID: 21300000, guid: 6ad24474231862445bda6e2ce3c8b35f, type: 3}
-    Offset: {x: 0.125, y: -0.21875}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: 204484810a02bae45b7162522059819b, type: 3}
     - {fileID: 21300000, guid: 90a63e310ba62e543bb8835866328d7d, type: 3}
     - {fileID: 21300000, guid: 9289f270cc6d0174b831c43d3194cacb, type: 3}
@@ -100,8 +85,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: b667f2226074d8a4eb5d4e0dbe3c857f, type: 3}
     - {fileID: 21300000, guid: 140a11f2f57e9574ab6d066d217fe381, type: 3}
     - {fileID: 21300000, guid: b55d8513130d6654a956cf4f8b3927e2, type: 3}
-    Offset: {x: -0.28125, y: -0.21875}
-  - Sprites:
+  - Array:
     - {fileID: 21300000, guid: d074721eee2478541882c20fee702547, type: 3}
     - {fileID: 21300000, guid: f678b8a2b27d6584b8e9a74657b4968a, type: 3}
     - {fileID: 21300000, guid: a1dec4f7f70037e44bf129a7a763371d, type: 3}
@@ -110,4 +94,3 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8cf2bf3e605169f429f723934aaf947b, type: 3}
     - {fileID: 21300000, guid: 1332876651364b94d84438ba0de1e188, type: 3}
     - {fileID: 21300000, guid: 6ad24474231862445bda6e2ce3c8b35f, type: 3}
-    Offset: {x: -0.125, y: -0.21875}
