@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Game Settings")]
 public class GameSettings : ScriptableObject
 {
     [Serializable]

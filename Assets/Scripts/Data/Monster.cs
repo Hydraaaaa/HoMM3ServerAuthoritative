@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Monster")]
 public class Monster : ScriptableObject
 {
     public int Tier => m_Tier;

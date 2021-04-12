@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Faction List")]
 public class FactionList : ScriptableObject
 {
     public List<Faction> Factions => m_Factions;

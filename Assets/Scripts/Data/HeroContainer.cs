@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Hero Container")]
 public class HeroContainer : ScriptableObject
 {
     public Hero Hero => m_Hero;

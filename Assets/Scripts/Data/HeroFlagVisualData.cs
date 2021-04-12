@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Hero Flag Visual Data")]
 public class HeroFlagVisualData : ScriptableObject
 {
     public Sprite[] IdleSprites => m_IdleSprites;

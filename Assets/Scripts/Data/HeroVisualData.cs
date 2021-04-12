@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Hero Visual Data")]
 public class HeroVisualData : ScriptableObject
 {
     public static readonly bool[] SPRITES_FLIPPED = { false, false, false, true, true, true, false, false };

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "Heroes 3/Faction")]
 public class Faction : ScriptableObject
 {
     public Sprite TownSprite => m_TownSprite;
