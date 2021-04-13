@@ -557,9 +557,8 @@ public class H3MImporter : EditorWindow
         {
             int _StringLength;
 
-            int _CurrentByte = 0;
-
-            _CurrentByte += 4;
+            // Offset by 4 from the earlier version read
+            int _CurrentByte = 4;
 
             _CurrentByte += 1; // Skip unknown byte
 
@@ -774,6 +773,8 @@ public class H3MImporter : EditorWindow
                 }
             }
 
+            // <><><><><> Pregame available heroes
+
             a_Scenario.AvailableHeroes = new byte[20];
 
             for (int i = 0; i < 20; i++)
@@ -837,12 +838,12 @@ public class H3MImporter : EditorWindow
                 bool _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                 _CurrentByte += 1;
 
-                if (_Bool)
+                if (_Bool) // Unknown Bool 1
                 {
                     _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                     _CurrentByte += 1;
 
-                    if (_Bool)
+                    if (_Bool) // Unknown Bool 2
                     {
                         _CurrentByte += 4;
                     }
@@ -850,7 +851,7 @@ public class H3MImporter : EditorWindow
                     _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                     _CurrentByte += 1;
 
-                    if (_Bool)
+                    if (_Bool) // Unknown Bool 3
                     {
                         _Count = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
@@ -860,7 +861,7 @@ public class H3MImporter : EditorWindow
                     _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                     _CurrentByte += 1;
 
-                    if (_Bool)
+                    if (_Bool) // Unknown Bool 4
                     {
                         _CurrentByte += 38;
 
@@ -872,19 +873,19 @@ public class H3MImporter : EditorWindow
                     _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                     _CurrentByte += 1;
 
-                    if (_Bool)
+                    if (_Bool) // Unknown Bool 5
                     {
                         _StringLength = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         _CurrentByte += _StringLength;
                     }
 
-                    _CurrentByte += 1;
+                    _CurrentByte += 1; // Unknown Byte
 
                     _Bool = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                     _CurrentByte += 1;
 
-                    if (_Bool)
+                    if (_Bool) // Unknown Bool 6
                     {
                         _CurrentByte += 9;
                     }
