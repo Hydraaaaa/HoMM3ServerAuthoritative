@@ -23,6 +23,13 @@ public class MapTown : MapObjectBase
 
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
 
+        PlayerIndex = a_ScenarioObject.Town.Owner;
+
+        if (PlayerIndex == 255)
+        {
+            PlayerIndex = 8;
+        }
+
         switch (a_ScenarioObject.Template.Name)
         {
             case "avcranx0":
@@ -93,13 +100,7 @@ public class MapTown : MapObjectBase
                 break;
         }
 
-        PlayerIndex = a_ScenarioObject.Town.Owner;
-
-        if (PlayerIndex == 255)
-        {
-            PlayerIndex = 8;
-        }
-        else if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
+        if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
         {
             m_LocalOwnership.AddTown(this);
         }
