@@ -53,17 +53,6 @@ public class MapObject : MapObjectBase
         }
 
         Renderer.SetSprites(_Operation.Result.Sprites);
-
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! FAILED - {_Operation.Result.name}");
-        }
-
         ShadowRenderer.SetSprites(_Operation.Result.ShadowSprites);
-
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! SHADOW - {_Operation.Result.name}");
-        }
     }
 }

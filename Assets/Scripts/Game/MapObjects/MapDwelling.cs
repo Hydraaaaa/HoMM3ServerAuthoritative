@@ -18,8 +18,7 @@ public class MapDwelling : MapObjectBase
 
         uint _ColorIndex = a_ScenarioObject.DwellingOwner;
 
-        // Seems there are cases where _ColorIndex isn't 255, so doing this sweeping check
-        // Not sure if the different values above 7 mean anything
+        // Seems neutral objects can represent multiple different values
         if (_ColorIndex > 8)
         {
             _ColorIndex = 8;
@@ -43,17 +42,5 @@ public class MapDwelling : MapObjectBase
         }
 
         m_Renderer.SetSprites(_Operation.Result.Sprites);
-
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! FAILED - {_Operation.Result.name}");
-        }
-
-        m_ShadowRenderer.SetSprites(_Operation.Result.ShadowSprites);
-
-        if (_Operation.Result.Sprites.Length == 0)
-        {
-            Debug.Log($"!! SHADOW - {_Operation.Result.name}");
-        }
     }
 }

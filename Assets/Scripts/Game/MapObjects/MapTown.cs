@@ -25,6 +25,7 @@ public class MapTown : MapObjectBase
 
         PlayerIndex = a_ScenarioObject.Town.Owner;
 
+        // Neutral objects are 255
         if (PlayerIndex == 255)
         {
             PlayerIndex = 8;
