@@ -5,20 +5,22 @@ using UnityEngine;
 public class DynamicMapObstacle : MonoBehaviour
 {
     Pathfinding m_Pathfinding;
+    MapObjectBase m_Object;
 
     List<Pathfinding.Node> m_BlockedNodes = new List<Pathfinding.Node>();
     List<Pathfinding.Node> m_InteractedNodes = new List<Pathfinding.Node>();
 
-    public void Initialize(Pathfinding a_Pathfinding)
+    public void Initialize(Pathfinding a_Pathfinding, MapObjectBase a_Object)
     {
         m_Pathfinding = a_Pathfinding;
+        m_Object = a_Object;
     }
 
     public void AddBlockedNode(Pathfinding.Node a_Node)
     {
         m_BlockedNodes.Add(a_Node);
 
-        a_Node.BlockingObjects.Add(gameObject);
+        a_Node.BlockingObjects.Add(m_Object);
 
         m_Pathfinding.PathfindingVersion++;
     }
@@ -29,7 +31,7 @@ public class DynamicMapObstacle : MonoBehaviour
 
         m_BlockedNodes.Add(_Node);
 
-        _Node.BlockingObjects.Add(gameObject);
+        _Node.BlockingObjects.Add(m_Object);
 
         m_Pathfinding.PathfindingVersion++;
     }
@@ -38,7 +40,7 @@ public class DynamicMapObstacle : MonoBehaviour
     {
         m_InteractedNodes.Add(a_Node);
 
-        a_Node.InteractionObjects.Add(gameObject);
+        a_Node.InteractionObjects.Add(m_Object);
 
         m_Pathfinding.PathfindingVersion++;
     }
@@ -49,7 +51,7 @@ public class DynamicMapObstacle : MonoBehaviour
 
         m_InteractedNodes.Add(_Node);
 
-        _Node.InteractionObjects.Add(gameObject);
+        _Node.InteractionObjects.Add(m_Object);
 
         m_Pathfinding.PathfindingVersion++;
     }
@@ -58,12 +60,12 @@ public class DynamicMapObstacle : MonoBehaviour
     {
         for (int i = 0; i < m_BlockedNodes.Count; i++)
         {
-            m_BlockedNodes[i].BlockingObjects.Remove(gameObject);
+            m_BlockedNodes[i].BlockingObjects.Remove(m_Object);
         }
 
         for (int i = 0; i < m_InteractedNodes.Count; i++)
         {
-            m_InteractedNodes[i].InteractionObjects.Remove(gameObject);
+            m_InteractedNodes[i].InteractionObjects.Remove(m_Object);
         }
 
         m_BlockedNodes = new List<Pathfinding.Node>();

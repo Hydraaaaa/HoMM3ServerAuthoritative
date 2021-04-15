@@ -6,6 +6,7 @@ using UnityEngine;
 public class MapTown : MapObjectBase
 {
     public Faction Faction { get; private set; }
+    public int PlayerIndex { get; private set; }
 
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] MapObjectRenderer m_Renderer;
@@ -14,27 +15,22 @@ public class MapTown : MapObjectBase
     [SerializeField] PlayerColors m_PlayerColors;
     [SerializeField] FactionList m_Factions;
 
-    public void Initialize(ScenarioObject a_ScenarioObject)
+    LocalOwnership m_LocalOwnership;
+
+    public void Initialize(ScenarioObject a_ScenarioObject, LocalOwnership a_LocalOwnership)
     {
+        m_LocalOwnership = a_LocalOwnership;
+
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
-
-        int _ColorIndex = a_ScenarioObject.Town.Owner;
-
-        if (_ColorIndex == 255)
-        {
-            _ColorIndex = 8;
-        }
-
-        m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[_ColorIndex]);
 
         switch (a_ScenarioObject.Template.Name)
         {
             case "avcranx0":
             case "avcranz0":
             case "avcrand0":
-                if (_ColorIndex != 8)
+                if (PlayerIndex != 8)
                 {
-                    Faction = m_GameSettings.Players.First(a_Player => a_Player.Index == _ColorIndex).Faction;
+                    Faction = m_GameSettings.Players.First(a_Player => a_Player.Index == PlayerIndex).Faction;
                 }
                 else
                 {
@@ -96,6 +92,19 @@ public class MapTown : MapObjectBase
                 Faction = m_Factions.Factions[8];
                 break;
         }
+
+        PlayerIndex = a_ScenarioObject.Town.Owner;
+
+        if (PlayerIndex == 255)
+        {
+            PlayerIndex = 8;
+        }
+        else if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
+        {
+            m_LocalOwnership.AddTown(this);
+        }
+
+        m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[PlayerIndex]);
 
         // TODO: Check buildings to determine if there's a fort or capitol
 

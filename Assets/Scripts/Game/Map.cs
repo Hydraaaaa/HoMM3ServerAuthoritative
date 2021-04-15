@@ -22,7 +22,7 @@ public class Map : MonoBehaviour
     [SerializeField] MapResource m_MapResourcePrefab;
     [SerializeField] MapMonster m_MapMonsterPrefab;
     [SerializeField] Pathfinding m_Pathfinding;
-    [SerializeField] OwnedHeroes m_OwnedHeroes;
+    [SerializeField] LocalOwnership m_LocalOwnership;
 
     [Space]
 
@@ -392,7 +392,7 @@ public class Map : MonoBehaviour
         m_UndergroundObjects = new List<GameObject>();
 
         List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
-        List<GameObject> _MapObjects = new List<GameObject>(_Objects.Count);
+        List<MapObjectBase> _MapObjects = new List<MapObjectBase>(_Objects.Count);
         Dictionary<ScenarioObject, DynamicMapObstacle> _DynamicObstacles = new Dictionary<ScenarioObject, DynamicMapObstacle>();
 
         // Load map objects
@@ -405,7 +405,7 @@ public class Map : MonoBehaviour
             {
                 case ScenarioObjectType.Hero:
                     MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
-                    _Hero.Initialize(_Object, m_Pathfinding, m_OwnedHeroes);
+                    _Hero.Initialize(_Object, m_Pathfinding, m_LocalOwnership);
                     _MapObject = _Hero;
                     _DynamicObstacles.Add(_Object, _Hero.DynamicObstacle);
                     break;
@@ -425,7 +425,7 @@ public class Map : MonoBehaviour
 
                 case ScenarioObjectType.Town:
                     MapTown _Town = Instantiate(m_MapTownPrefab, m_MapObjectParent);
-                    _Town.Initialize(_Object);
+                    _Town.Initialize(_Object, m_LocalOwnership);
                     _MapObject = _Town;
                     break;
 
@@ -466,7 +466,7 @@ public class Map : MonoBehaviour
                 m_Objects.Add(_MapObject.gameObject);
             }
 
-            _MapObjects.Add(_MapObject.gameObject);
+            _MapObjects.Add(_MapObject);
         }
 
         m_Pathfinding.Generate(m_GameSettings.Scenario, _MapObjects, _DynamicObstacles);
@@ -505,16 +505,16 @@ public class Map : MonoBehaviour
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground,
                     m_Pathfinding,
-                    m_OwnedHeroes
+                    m_LocalOwnership
                 );
             }
         }
 
-        List<MapHero> _OwnedHeroes = m_OwnedHeroes.GetHeroes();
+        List<MapHero> _LocalOwnership = m_LocalOwnership.GetHeroes();
 
-        if (_OwnedHeroes.Count > 0)
+        if (_LocalOwnership.Count > 0)
         {
-            m_OwnedHeroes.SelectHero(_OwnedHeroes[0]);
+            m_LocalOwnership.SelectHero(_LocalOwnership[0]);
         }
     }
 }

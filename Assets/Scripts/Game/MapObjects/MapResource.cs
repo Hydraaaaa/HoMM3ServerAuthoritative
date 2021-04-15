@@ -60,6 +60,6 @@ public class MapResource : MapObjectBase
         m_Renderer.SetSprites(Resource.m_Sprites);
         m_ShadowRenderer.SetSprites(Resource.m_ShadowSprites);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding);
+        m_DynamicObstacle.Initialize(a_Pathfinding, this);
     }
 }

@@ -38,7 +38,7 @@ public class MapHero : MapObjectBase
     [SerializeField] Sprite[] m_PathSprites;
 
     Pathfinding m_Pathfinding;
-    OwnedHeroes m_OwnedHeroes;
+    LocalOwnership m_LocalOwnership;
 
     int m_Direction = DIRECTION_E;
 
@@ -61,7 +61,7 @@ public class MapHero : MapObjectBase
 
     Vector2Int m_PathfindingPos;
 
-    public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding, OwnedHeroes a_OwnedHeroes)
+    public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding, LocalOwnership a_LocalOwnership)
     {
         MouseCollision = new byte[6];
         MouseCollision[0] = 0b00000000;
@@ -84,23 +84,23 @@ public class MapHero : MapObjectBase
         IsUnderground = a_IsUnderground;
 
         m_Pathfinding = a_Pathfinding;
-        m_OwnedHeroes = a_OwnedHeroes;
+        m_LocalOwnership = a_LocalOwnership;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
         m_PathfindingPos = new Vector2Int(a_PosX - 1, a_PosY);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding);
+        m_DynamicObstacle.Initialize(a_Pathfinding, this);
         m_DynamicObstacle.AddInteractedNode(m_PathfindingPos.x, m_PathfindingPos.y, a_IsUnderground);
 
         Initialize();
     }
 
-    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding, OwnedHeroes a_OwnedHeroes)
+    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding, LocalOwnership a_LocalOwnership)
     {
         PlayerIndex = a_ScenarioObject.Hero.PlayerIndex;
 
         m_Pathfinding = a_Pathfinding;
-        m_OwnedHeroes = a_OwnedHeroes;
+        m_LocalOwnership = a_LocalOwnership;
 
         if (a_ScenarioObject.Template.Name == "avxprsn0")
         {
@@ -161,7 +161,7 @@ public class MapHero : MapObjectBase
             HeroPool.ClaimHero(Hero);
         }
 
-        m_DynamicObstacle.Initialize(a_Pathfinding);
+        m_DynamicObstacle.Initialize(a_Pathfinding, this);
 
         m_PathfindingPos = new Vector2Int(a_ScenarioObject.PosX - 1, a_ScenarioObject.PosY);
 
@@ -190,7 +190,7 @@ public class MapHero : MapObjectBase
 
         if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
         {
-            m_OwnedHeroes.AddHero(this);
+            m_LocalOwnership.AddHero(this);
         }
 
         m_LocalPathfindingVersion = -1;
@@ -251,7 +251,7 @@ public class MapHero : MapObjectBase
         return new Vector2Int(-1, -1);
     }
 
-    public void OnLeftClick(int a_XPos, int a_YPos, List<MapObjectBase> a_Objects)
+    public void OnLeftClick(int a_XPos, int a_YPos, MapObjectBase a_Object)
     {
         if (IsMoving)
         {

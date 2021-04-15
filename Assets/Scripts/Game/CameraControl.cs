@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings;
-    [SerializeField] OwnedHeroes m_OwnedHeroes;
+    [SerializeField] LocalOwnership m_LocalOwnership;
 
     bool m_Active;
 
@@ -26,7 +26,8 @@ public class CameraControl : MonoBehaviour
             transform.position.z
         );
 
-        m_OwnedHeroes.OnHeroSelected += OnHeroSelected;
+        m_LocalOwnership.OnHeroSelected += OnHeroSelected;
+        m_LocalOwnership.OnTownSelected += OnTownSelected;
     }
 
     void Update()
@@ -43,8 +44,8 @@ public class CameraControl : MonoBehaviour
             m_Active = true;
         }
 
-        if (!(m_OwnedHeroes.SelectedHero != null &&
-            m_OwnedHeroes.SelectedHero.IsMoving))
+        if (!(m_LocalOwnership.SelectedHero != null &&
+            m_LocalOwnership.SelectedHero.IsMoving))
         {
             if (m_Active)
             {
@@ -100,13 +101,13 @@ public class CameraControl : MonoBehaviour
 
     void LateUpdate()
     {
-        if (m_OwnedHeroes.SelectedHero != null &&
-            m_OwnedHeroes.SelectedHero.IsMoving)
+        if (m_LocalOwnership.SelectedHero != null &&
+            m_LocalOwnership.SelectedHero.IsMoving)
         {
             transform.position = new Vector3
             (
-                m_OwnedHeroes.SelectedHero.transform.position.x - 1.5f,
-                m_OwnedHeroes.SelectedHero.transform.position.y + 0.5f,
+                m_LocalOwnership.SelectedHero.transform.position.x - 1.5f,
+                m_LocalOwnership.SelectedHero.transform.position.y + 0.5f,
                 transform.position.z
             );
         }
@@ -118,6 +119,16 @@ public class CameraControl : MonoBehaviour
         (
             a_Hero.transform.position.x - 1.5f,
             a_Hero.transform.position.y + 0.5f,
+            transform.position.z
+        );
+    }
+
+    void OnTownSelected(MapTown a_Town, int a_Index)
+    {
+        transform.position = new Vector3
+        (
+            a_Town.transform.position.x - 2.5f,
+            a_Town.transform.position.y + 0.5f,
             transform.position.z
         );
     }

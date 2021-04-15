@@ -19,8 +19,8 @@ public class Pathfinding : MonoBehaviour
 
         public Node ParentNode;
 
-        public List<GameObject> BlockingObjects = new List<GameObject>();
-        public List<GameObject> InteractionObjects = new List<GameObject>();
+        public List<MapObjectBase> BlockingObjects = new List<MapObjectBase>();
+        public List<MapObjectBase> InteractionObjects = new List<MapObjectBase>();
 
         public List<(Node Node, int Cost)> Pathways = new List<(Node, int)>();
     }
@@ -94,7 +94,7 @@ public class Pathfinding : MonoBehaviour
         //}
     //}
 
-    public void Generate(Scenario a_Scenario, List<GameObject> a_MapObjects, Dictionary<ScenarioObject, DynamicMapObstacle> a_DynamicObstacles)
+    public void Generate(Scenario a_Scenario, List<MapObjectBase> a_MapObjects, Dictionary<ScenarioObject, DynamicMapObstacle> a_DynamicObstacles)
     {
         PathfindingVersion = 0;
 

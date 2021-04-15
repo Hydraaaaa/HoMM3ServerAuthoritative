@@ -80,7 +80,7 @@ public class MapMonster : MapObjectBase
         m_ShadowRenderer.SetSprites(Monster.MapVisualData.m_ShadowSprites);
         m_ShadowRenderer.SetOffset(_Offset);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding);
+        m_DynamicObstacle.Initialize(a_Pathfinding, this);
 
         gameObject.name = Monster.name;
     }
