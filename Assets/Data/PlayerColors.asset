@@ -25,6 +25,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 74322fec3ab5a8342876d13efeacf111, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 61ae1099a34f2944f914b18d4fb55098, type: 3}
     Date: {fileID: 21300000, guid: f172fadf272f4064490eeb52a1de3704, type: 3}
+    HeroCard: {fileID: 21300000, guid: 591107182abcd5e489e60bb2a8281ec2, type: 3}
     NextHero: {fileID: 21300000, guid: 149cf3db131090f4189cf77720787d1a, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 2d6688cb5ba653549bb484392e735086, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: 2bc44970565e4f945aa14c6f323a3860,
@@ -108,6 +109,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: c15aa2ef61d664447945414a15ccd6b1, type: 3}
     BottomBarFill: {fileID: 21300000, guid: f7ce5dab5041d2646a8119d613a3c02e, type: 3}
     Date: {fileID: 21300000, guid: 4bdbe04c6a840a041b184f95b37d373f, type: 3}
+    HeroCard: {fileID: 21300000, guid: 558ce250aa703c9408d8aefa9c9483d3, type: 3}
     NextHero: {fileID: 21300000, guid: ca431bb86f3c25d44a4bf3aac1403df7, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 68008360825f25c42acf50884bdab318, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: b5467de08cd561d4b97095c002a3d0a8,
@@ -191,6 +193,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: f475ddda4e7dd0e40bdc32bc81f45145, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 15e60ad60b24f7842b0616851b3b0a07, type: 3}
     Date: {fileID: 21300000, guid: e3b46e6923107cb4887c9c7c74c811b2, type: 3}
+    HeroCard: {fileID: 21300000, guid: a182496bc3702d047b8c0715e6a8cd2c, type: 3}
     NextHero: {fileID: 21300000, guid: a232f63dc3d472344a80cf8e2f965aab, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: a1ac8486312739f428442b46d033967b, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: f7dc6c3f0db924748a04150829b9d83f,
@@ -274,6 +277,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 73a0ac8ff7c1a4547a96402b5a9a7520, type: 3}
     BottomBarFill: {fileID: 21300000, guid: a9eb23f38cf47ba4cb800ff9ef8af801, type: 3}
     Date: {fileID: 21300000, guid: 40549e731301cb747b89d08dc127a704, type: 3}
+    HeroCard: {fileID: 21300000, guid: da394095c8e2a184fb61d5ef5ce10b58, type: 3}
     NextHero: {fileID: 21300000, guid: d28197ee49be07c43a0f141a224f6836, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 5f606d6daef7e0f4d982ef227fa43b85, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: 5e5e4ea164496194ba5a897c9ac39517,
@@ -357,6 +361,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 0384ccba9d5ea6b4ca6e5c81151ecac2, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 2410603824002e24d8823e4d611161cc, type: 3}
     Date: {fileID: 21300000, guid: 7de2a32d4b351754981a2f7442d221e9, type: 3}
+    HeroCard: {fileID: 21300000, guid: 411969d4e1d80fb43803cd93917b7776, type: 3}
     NextHero: {fileID: 21300000, guid: c283425b25e057f4089daba20acd6af3, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 7bafb707b23a244468ee6e2bf00fff88, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: 1dc847aa7522cd64ba9115535e0ca589,
@@ -440,6 +445,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: a3a2afb1ad6737f4cbc19f9d0b6e4822, type: 3}
     BottomBarFill: {fileID: 21300000, guid: c65000b4bf7e20543b30b39414efe1b3, type: 3}
     Date: {fileID: 21300000, guid: f62f3874b052b0b46b77b68382f3f0e2, type: 3}
+    HeroCard: {fileID: 21300000, guid: cb60a02e5c766ec47aaf7a9532f271ea, type: 3}
     NextHero: {fileID: 21300000, guid: 32d69e7da04d80446941074745d99922, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 7ff76524cfcd86f4aa07ae954f2f381c, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: f5daa3cde42e1bf449606f5199e72daf,
@@ -523,6 +529,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 5e11e620c4db6ea40a23aa3541562fb0, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 46e15afe9650e1a4dbbe8cc49a1154be, type: 3}
     Date: {fileID: 21300000, guid: 28c528054cd62e4438097760a5c7f029, type: 3}
+    HeroCard: {fileID: 21300000, guid: e2479bb7f2b01c94faa6922516c118b2, type: 3}
     NextHero: {fileID: 21300000, guid: 38c371dad079117418b96af4f0958221, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 6d3c09e64f80c3e42b6a18a2cc2095c9, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: 6e16b9526087186468a4b28b14a3521b,
@@ -606,6 +613,7 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 2875cfbb7c34ddb488f8f00dea25be48, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 325d99fd94509954f98d2a4427f44de2, type: 3}
     Date: {fileID: 21300000, guid: 0c20dae777a5ee84b8ceda9c2e4e4613, type: 3}
+    HeroCard: {fileID: 21300000, guid: 97d2f34497fd6f1438c4c81e7522575b, type: 3}
     NextHero: {fileID: 21300000, guid: e3d5ab7fad3ac0949804482d2e8d4f2e, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: d287db050e68e1145866407a087b1116, type: 3}
     NextHeroHighlighted: {fileID: 21300000, guid: ec9df91f8620cd941885e12238aa0e6c,
