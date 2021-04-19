@@ -59,6 +59,14 @@ public class PlayerColors : ScriptableObject
         public Sprite SystemOptions;
         public Sprite SystemOptionsPressed;
         public Sprite SystemOptionsDisabled;
+        public Sprite ViewWorld;
+        public Sprite ViewWorldPressed;
+        public Sprite ReplayOpponentTurn;
+        public Sprite ReplayOpponentTurnPressed;
+        public Sprite ViewPuzzle;
+        public Sprite ViewPuzzlePressed;
+        public Sprite Dig;
+        public Sprite DigPressed;
     }
 
     public PlayerElements[] Elements;
