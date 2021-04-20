@@ -37,41 +37,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: fdafca9724b7424488d31568a566f94f,
       type: 3}
-    Underground: {fileID: 21300000, guid: 05d05a3693f1fc844996e54e63601ed7, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: 3d49fa189c071d9458d158dd82ba6d29,
+    Underground: {fileID: 21300000, guid: 5d92dfdcd8a97b546bff265c4430e23f, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 5377cf1c76a01544ab2ae4658e96e9f9,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: ac4c653e999dbe1469bf24a3662c97aa,
+    UndergroundDisabled: {fileID: 21300000, guid: a0f1389d3b1d32d4dae799b15f3d02cf,
       type: 3}
-    Overworld: {fileID: 21300000, guid: 708709946923b614b9614f9ff0c31bb9, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: 4ea14db01586e13479897d3a0f30a0dd, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: c5900becce1f97242b1b0408caf19931,
+    Overworld: {fileID: 21300000, guid: 05d05a3693f1fc844996e54e63601ed7, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: 3d49fa189c071d9458d158dd82ba6d29, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: ac4c653e999dbe1469bf24a3662c97aa,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: f48dd7a52b79718459a3aa86f0f19242, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: 8752c71b0262b17449eaa308038aa9a0, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: 004779f446b5b314fbf26c5b0797711c, type: 3}
-    SleepHero: {fileID: 21300000, guid: c5861629eca5c2647984a35320755bda, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: a2f303c6c7268344fbf5dd15b04df877, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: e478588fbc61ffe4dad48ea71084be31,
+    QuestLog: {fileID: 21300000, guid: 708709946923b614b9614f9ff0c31bb9, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: 4ea14db01586e13479897d3a0f30a0dd, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: c5900becce1f97242b1b0408caf19931, type: 3}
+    SleepHero: {fileID: 21300000, guid: f48dd7a52b79718459a3aa86f0f19242, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: 8752c71b0262b17449eaa308038aa9a0, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: 004779f446b5b314fbf26c5b0797711c,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: ace20f68031e47b459f99aca3b89e3bc, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 8dfda6fcd03c05144886e64c7d69d13f, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: 4240da306bbd80c4794c228fc844ff53, type: 3}
-    MoveHero: {fileID: 21300000, guid: bc40c1c7d0611724f9daf1287a3c07dc, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: ce784efb3bb6c3f43a0421d66f30c31a, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: baa7a880dbaaed844b6309fba793bba3, type: 3}
-    Spellbook: {fileID: 21300000, guid: 12c95ba5462e4e84c9c760e9154b6823, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: b7b153c458af09d46a9f60e43199fa60, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: bbbcb2d104b1c9a4e936616eed857e5e,
+    WakeHero: {fileID: 21300000, guid: b54904aa60d20c843b7e7399093895d6, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: def3776bb6f282044973393b0ab28691, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: 6f781a1855114dd498c523064f5ad2d2, type: 3}
+    MoveHero: {fileID: 21300000, guid: c5861629eca5c2647984a35320755bda, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: a2f303c6c7268344fbf5dd15b04df877, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: e478588fbc61ffe4dad48ea71084be31, type: 3}
+    Spellbook: {fileID: 21300000, guid: ace20f68031e47b459f99aca3b89e3bc, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 8dfda6fcd03c05144886e64c7d69d13f, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: 4240da306bbd80c4794c228fc844ff53,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: 5d92dfdcd8a97b546bff265c4430e23f, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 5377cf1c76a01544ab2ae4658e96e9f9,
+    AdventureOptions: {fileID: 21300000, guid: bc40c1c7d0611724f9daf1287a3c07dc, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: ce784efb3bb6c3f43a0421d66f30c31a,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: a0f1389d3b1d32d4dae799b15f3d02cf,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: baa7a880dbaaed844b6309fba793bba3,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: b54904aa60d20c843b7e7399093895d6, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: def3776bb6f282044973393b0ab28691,
+    SystemOptions: {fileID: 21300000, guid: 12c95ba5462e4e84c9c760e9154b6823, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: b7b153c458af09d46a9f60e43199fa60,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: 6f781a1855114dd498c523064f5ad2d2,
+    SystemOptionsDisabled: {fileID: 21300000, guid: bbbcb2d104b1c9a4e936616eed857e5e,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: 641cf9c9c559fd04491eca7b3f1af2a5, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 0dd0f5f6f48979c45a7a125e42ceeb64, type: 3}
@@ -108,41 +108,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: 8e2822443c273fb449d0b37dcefd863b,
       type: 3}
-    Underground: {fileID: 21300000, guid: 017d82354fa345e46b271e509d04db1a, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: c6fedb9b69f54f94aab4b7cbc126e56d,
+    Underground: {fileID: 21300000, guid: 65f942c846d418d428a7c6595d67bf3d, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 84ea77bfd1fe03b4d941022ff46b7d98,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: eb0530f756452c148828622892c35a10,
+    UndergroundDisabled: {fileID: 21300000, guid: 5e9a7648a0e58f946a503d0363ada2aa,
       type: 3}
-    Overworld: {fileID: 21300000, guid: 710d32b9506c6204ba617b16cc461110, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: 9e7f3da4d7c69cb4caeb51b001469717, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 38c4108a45594e2468bfe7c44963f1c8,
+    Overworld: {fileID: 21300000, guid: 017d82354fa345e46b271e509d04db1a, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: c6fedb9b69f54f94aab4b7cbc126e56d, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: eb0530f756452c148828622892c35a10,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: 97fe08c82529fa5428b3f28ce4f48387, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: f6d152f87d76188459b02bc9d5feb1df, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: 63b8781d1cd8a0c409edc86255c518fc, type: 3}
-    SleepHero: {fileID: 21300000, guid: 43328ee41f0d99b44991a64c43191aff, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: 3a7c469cff7497546a65c8cd365b9e1f, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: 4441cd368025eb247a59e61efecff07e,
+    QuestLog: {fileID: 21300000, guid: 710d32b9506c6204ba617b16cc461110, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: 9e7f3da4d7c69cb4caeb51b001469717, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 38c4108a45594e2468bfe7c44963f1c8, type: 3}
+    SleepHero: {fileID: 21300000, guid: 97fe08c82529fa5428b3f28ce4f48387, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: f6d152f87d76188459b02bc9d5feb1df, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: 63b8781d1cd8a0c409edc86255c518fc,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: 2faba31d7cbd21c42a8dab0260223459, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 1e7f09b1426be2a47848e89a4842ba61, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: dd2e03832358cd948926dab713536f97, type: 3}
-    MoveHero: {fileID: 21300000, guid: 0f241cb883db02a43a8f94bb35262cd3, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: 4387a7c73daadaa469f6dd2ad91bbc94, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: cdf6d14b96768b84b949a2655023cd82, type: 3}
-    Spellbook: {fileID: 21300000, guid: 89d2269e044fc0649b225dc3ea39c774, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: f9fa029a583a2c04ba15722b35acc1c6, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: 6d57005394bf15447a3bd6d160533d3b,
+    WakeHero: {fileID: 21300000, guid: 18067e00295706349bd36ebdd24e4bab, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: eb2f1fd7e892f654b853e71b4192e993, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: 1ef2d205a6d4c0645936dd19bdae8b67, type: 3}
+    MoveHero: {fileID: 21300000, guid: 43328ee41f0d99b44991a64c43191aff, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: 3a7c469cff7497546a65c8cd365b9e1f, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: 4441cd368025eb247a59e61efecff07e, type: 3}
+    Spellbook: {fileID: 21300000, guid: 2faba31d7cbd21c42a8dab0260223459, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 1e7f09b1426be2a47848e89a4842ba61, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: dd2e03832358cd948926dab713536f97,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: 65f942c846d418d428a7c6595d67bf3d, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 84ea77bfd1fe03b4d941022ff46b7d98,
+    AdventureOptions: {fileID: 21300000, guid: 0f241cb883db02a43a8f94bb35262cd3, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: 4387a7c73daadaa469f6dd2ad91bbc94,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: 5e9a7648a0e58f946a503d0363ada2aa,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: cdf6d14b96768b84b949a2655023cd82,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 18067e00295706349bd36ebdd24e4bab, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: eb2f1fd7e892f654b853e71b4192e993,
+    SystemOptions: {fileID: 21300000, guid: 89d2269e044fc0649b225dc3ea39c774, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: f9fa029a583a2c04ba15722b35acc1c6,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: 1ef2d205a6d4c0645936dd19bdae8b67,
+    SystemOptionsDisabled: {fileID: 21300000, guid: 6d57005394bf15447a3bd6d160533d3b,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: a2db0f0633cbb844eba7caa60c18b08c, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: b17c0d2d6f680ef478cc22b245cf0685, type: 3}
@@ -179,41 +179,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: f1b3e6a071cdb1040b946ced66180cef,
       type: 3}
-    Underground: {fileID: 21300000, guid: 3b721c4f272b83c408ae6fc5aea2af13, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: 643ffa09995aa0248b148ff3eb8ab9e8,
+    Underground: {fileID: 21300000, guid: 091d9c791e5cd1a40b5e6bfdc20a4e02, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: f35411586fb616a44a36eafaf4541dec,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: 0621a20deb25c8b449aad503c198f6ef,
+    UndergroundDisabled: {fileID: 21300000, guid: 769363a8ecf2fad46af79b23c88d30e5,
       type: 3}
-    Overworld: {fileID: 21300000, guid: f7b465e345fa024438bec6e9b389da7e, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: a02847d7d609aa54cb44d1227d8a3d87, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 1e53e157d651c764a844127a9cab0dc8,
+    Overworld: {fileID: 21300000, guid: 3b721c4f272b83c408ae6fc5aea2af13, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: 643ffa09995aa0248b148ff3eb8ab9e8, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: 0621a20deb25c8b449aad503c198f6ef,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: a29daab7c826bd647bd10a2b215515d9, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: ca92767f464dfa844b478a82a390ac14, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: 2c959ab540645614ea70c583a78d213c, type: 3}
-    SleepHero: {fileID: 21300000, guid: b0b387dbc5f51d145a59a7842a7b6818, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: d9e835202eb5e3043b6da497f3ea41d8, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: f354e76fa55b4b5438ec8aab0743e3ca,
+    QuestLog: {fileID: 21300000, guid: f7b465e345fa024438bec6e9b389da7e, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: a02847d7d609aa54cb44d1227d8a3d87, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 1e53e157d651c764a844127a9cab0dc8, type: 3}
+    SleepHero: {fileID: 21300000, guid: a29daab7c826bd647bd10a2b215515d9, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: ca92767f464dfa844b478a82a390ac14, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: 2c959ab540645614ea70c583a78d213c,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: 1f17ff1e6531b824fb6c4fb24b3d268e, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 5c1c89588586a164181f83c6f4b6e9f1, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: d74ffa2be7113c342a052c472601c46b, type: 3}
-    MoveHero: {fileID: 21300000, guid: 3910683de0ba9314e9ff60bbf4092f6b, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: f0333bcf0ef459a499ef75d82f7c687a, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: 9e5a4bc030c34d44a8294faff8a2b5d8, type: 3}
-    Spellbook: {fileID: 21300000, guid: e54ee3772d98a224e901def48e090ed3, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: 376cf10edc2900c4cacc47a8b2f10e49, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: 3d6c43f61bc2c5140be491f7d0024cb4,
+    WakeHero: {fileID: 21300000, guid: 4fb98e1afe1951348addd551ddbbd404, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: d5043586753c60e408624056e1dce599, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: e69a3a0816cc9fc42b898ab47ef99348, type: 3}
+    MoveHero: {fileID: 21300000, guid: b0b387dbc5f51d145a59a7842a7b6818, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: d9e835202eb5e3043b6da497f3ea41d8, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: f354e76fa55b4b5438ec8aab0743e3ca, type: 3}
+    Spellbook: {fileID: 21300000, guid: 1f17ff1e6531b824fb6c4fb24b3d268e, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 5c1c89588586a164181f83c6f4b6e9f1, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: d74ffa2be7113c342a052c472601c46b,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: 091d9c791e5cd1a40b5e6bfdc20a4e02, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: f35411586fb616a44a36eafaf4541dec,
+    AdventureOptions: {fileID: 21300000, guid: 3910683de0ba9314e9ff60bbf4092f6b, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: f0333bcf0ef459a499ef75d82f7c687a,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: 769363a8ecf2fad46af79b23c88d30e5,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: 9e5a4bc030c34d44a8294faff8a2b5d8,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 4fb98e1afe1951348addd551ddbbd404, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: d5043586753c60e408624056e1dce599,
+    SystemOptions: {fileID: 21300000, guid: e54ee3772d98a224e901def48e090ed3, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: 376cf10edc2900c4cacc47a8b2f10e49,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: e69a3a0816cc9fc42b898ab47ef99348,
+    SystemOptionsDisabled: {fileID: 21300000, guid: 3d6c43f61bc2c5140be491f7d0024cb4,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: 51c3ce7e9c8cfe6418e151a7a282e234, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 5b3d22e5a66dcb84897f17f540f2a2d5, type: 3}
@@ -250,41 +250,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: 54efa40167c4a7d4b98dd21259ac687a,
       type: 3}
-    Underground: {fileID: 21300000, guid: 1d2b89156d94b71418dcaa4129a9b335, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: 26efe019f64a0de47b60f3377a3ed0e4,
+    Underground: {fileID: 21300000, guid: 9993d8d9d73177543851b6730d32812e, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 266443f04b7ea8a47b0b5965e73caa6d,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: 7cfb804202e1de147b3f91869a740c0c,
+    UndergroundDisabled: {fileID: 21300000, guid: 0f4dd64e28bea104b9ebca5c76971917,
       type: 3}
-    Overworld: {fileID: 21300000, guid: 7a9da93e9b97fa8408816a6f0ff0066c, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: edd4544cdc6f94d43b737e5a02e008d1, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 1677775489c61144e968de68e2234b88,
+    Overworld: {fileID: 21300000, guid: 1d2b89156d94b71418dcaa4129a9b335, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: 26efe019f64a0de47b60f3377a3ed0e4, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: 7cfb804202e1de147b3f91869a740c0c,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: 01c8a4d9b4e0ffe4dac65d952a714b8e, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: a3ecb131c1f19cf46b5de7bfc1708aba, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: 722e055cdfe78d14bb342b7b6a1a4f97, type: 3}
-    SleepHero: {fileID: 21300000, guid: b24c0dc3b3b1fe4448c47b48009349cf, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: e34bba83d465a3748824d222ee8cb064, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: 2158353a1a890604f90255db98411c80,
+    QuestLog: {fileID: 21300000, guid: 7a9da93e9b97fa8408816a6f0ff0066c, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: edd4544cdc6f94d43b737e5a02e008d1, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 1677775489c61144e968de68e2234b88, type: 3}
+    SleepHero: {fileID: 21300000, guid: 01c8a4d9b4e0ffe4dac65d952a714b8e, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: a3ecb131c1f19cf46b5de7bfc1708aba, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: 722e055cdfe78d14bb342b7b6a1a4f97,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: ab4dd056d1725f4488288d83c78fbf46, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 7d617cee7c511d54ba763df1e40af91e, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: c500c558d6a17b34083043bb6f107f78, type: 3}
-    MoveHero: {fileID: 21300000, guid: 13a79f80f6a8c2745acb9192d35d8224, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: c62d7ee8a4362a547998d610af53be17, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: 50e2faca5653d50468c15c9e50618e0c, type: 3}
-    Spellbook: {fileID: 21300000, guid: f6539009b29b3bc4d84d7d6caf8e7854, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: f47b06f81d391ff488fb6ff09a2f84fa, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: d43f41cfc04bd004a88f97111a4e8688,
+    WakeHero: {fileID: 21300000, guid: 452e39d5ffb10cf4292e7a07945b70d8, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: e2c33ffdb93bfad469a95121b02dc41d, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: 04ed11c0f0e50204ea7994f3d0cbc593, type: 3}
+    MoveHero: {fileID: 21300000, guid: b24c0dc3b3b1fe4448c47b48009349cf, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: e34bba83d465a3748824d222ee8cb064, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: 2158353a1a890604f90255db98411c80, type: 3}
+    Spellbook: {fileID: 21300000, guid: ab4dd056d1725f4488288d83c78fbf46, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 7d617cee7c511d54ba763df1e40af91e, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: c500c558d6a17b34083043bb6f107f78,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: 9993d8d9d73177543851b6730d32812e, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 266443f04b7ea8a47b0b5965e73caa6d,
+    AdventureOptions: {fileID: 21300000, guid: 13a79f80f6a8c2745acb9192d35d8224, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: c62d7ee8a4362a547998d610af53be17,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: 0f4dd64e28bea104b9ebca5c76971917,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: 50e2faca5653d50468c15c9e50618e0c,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 452e39d5ffb10cf4292e7a07945b70d8, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: e2c33ffdb93bfad469a95121b02dc41d,
+    SystemOptions: {fileID: 21300000, guid: f6539009b29b3bc4d84d7d6caf8e7854, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: f47b06f81d391ff488fb6ff09a2f84fa,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: 04ed11c0f0e50204ea7994f3d0cbc593,
+    SystemOptionsDisabled: {fileID: 21300000, guid: d43f41cfc04bd004a88f97111a4e8688,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: 08683584a66a8034582ece4f7e73fdde, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 43df0ba890cf0e647b20c62c5e2a79e3, type: 3}
@@ -321,41 +321,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: 29c67df5dc5fed5438df8935a6cb9daa,
       type: 3}
-    Underground: {fileID: 21300000, guid: 3459820add9a1a54ab90d0795ec9001d, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: ede673dfe2aed544abdfc1b260033468,
+    Underground: {fileID: 21300000, guid: b039b4ada8da7004c85f675f5c26e518, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: b8cc2516bf7bf8d43a22f2d134c42f18,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: 4a3f23844ccf666458159243aa15ae68,
+    UndergroundDisabled: {fileID: 21300000, guid: 665c8be5a6dc17f4cb3d5acbc48aafde,
       type: 3}
-    Overworld: {fileID: 21300000, guid: f76f527c0afb76048a3d9228b67b87a9, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: 559f5fb26966b404abfccc2329489693, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 82917802a5fa22946bf0421cd83a6033,
+    Overworld: {fileID: 21300000, guid: 3459820add9a1a54ab90d0795ec9001d, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: ede673dfe2aed544abdfc1b260033468, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: 4a3f23844ccf666458159243aa15ae68,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: 4d83c551b723ad44d8cd825e3e315d91, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: 664e779bfd20be04c8dcc799e6dfb684, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: d93ee5c5b36185c4ba83e2177340429c, type: 3}
-    SleepHero: {fileID: 21300000, guid: 770636323ea4b174e85d67cd8936a5ec, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: 6879fb3a5f8791d44b784d9c3ae154fd, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: c1dfd92aab584c247ba51977fa3ac0cc,
+    QuestLog: {fileID: 21300000, guid: f76f527c0afb76048a3d9228b67b87a9, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: 559f5fb26966b404abfccc2329489693, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 82917802a5fa22946bf0421cd83a6033, type: 3}
+    SleepHero: {fileID: 21300000, guid: 4d83c551b723ad44d8cd825e3e315d91, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: 664e779bfd20be04c8dcc799e6dfb684, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: d93ee5c5b36185c4ba83e2177340429c,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: c89df74e14b04a541b2ea6f81466c021, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: bdc689d55f25f1740a2daf8f6e658580, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: cecf566f4899337409a5d247d9eb6d86, type: 3}
-    MoveHero: {fileID: 21300000, guid: b74713aa53f29d046abc6d5a1d51efbd, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: cd6636d551f58704b9e6818ba36e23d3, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: 88187b817515a0f408b3c11f5e2666b8, type: 3}
-    Spellbook: {fileID: 21300000, guid: b0ec2fae8214e84439f80aeca50d6d02, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: f473426bf9321b24aaa1ece3e298933a, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: 9cbba179a96775b4a8b7e1d2e1043163,
+    WakeHero: {fileID: 21300000, guid: f6873bc2f4551c04895abe877b8cbf87, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: cef42e69828c1b84c9a676c552f2411e, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: 21536cc5df17abb42a54558acbdfea9b, type: 3}
+    MoveHero: {fileID: 21300000, guid: 770636323ea4b174e85d67cd8936a5ec, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: 6879fb3a5f8791d44b784d9c3ae154fd, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: c1dfd92aab584c247ba51977fa3ac0cc, type: 3}
+    Spellbook: {fileID: 21300000, guid: c89df74e14b04a541b2ea6f81466c021, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: bdc689d55f25f1740a2daf8f6e658580, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: cecf566f4899337409a5d247d9eb6d86,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: b039b4ada8da7004c85f675f5c26e518, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: b8cc2516bf7bf8d43a22f2d134c42f18,
+    AdventureOptions: {fileID: 21300000, guid: b74713aa53f29d046abc6d5a1d51efbd, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: cd6636d551f58704b9e6818ba36e23d3,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: 665c8be5a6dc17f4cb3d5acbc48aafde,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: 88187b817515a0f408b3c11f5e2666b8,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: f6873bc2f4551c04895abe877b8cbf87, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: cef42e69828c1b84c9a676c552f2411e,
+    SystemOptions: {fileID: 21300000, guid: b0ec2fae8214e84439f80aeca50d6d02, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: f473426bf9321b24aaa1ece3e298933a,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: 21536cc5df17abb42a54558acbdfea9b,
+    SystemOptionsDisabled: {fileID: 21300000, guid: 9cbba179a96775b4a8b7e1d2e1043163,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: e90440068f0ae0c4abb154aea2ff9f6c, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: f408cd35d44e6a34c871732430f8ee77, type: 3}
@@ -392,41 +392,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: b0fb65f4f6171e24b8e234ae2232ca53,
       type: 3}
-    Underground: {fileID: 21300000, guid: 87c4a64ee8c796544a5e2108d90bd907, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: a400c45f8d33251488ebd530a3a0a0d1,
+    Underground: {fileID: 21300000, guid: a319e7e040f83854a9bc12e813c5176b, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 1a3afdda37715f64fb21d3fdc3b41059,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: 9c20cc517ed62a64b9285ad600d6d25b,
+    UndergroundDisabled: {fileID: 21300000, guid: 58ce9b6baf68228468a6dddb563c6b6b,
       type: 3}
-    Overworld: {fileID: 21300000, guid: f0e949c50d0673b43bbdba68dfa3d0ee, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: a06c3cfc87375474fbdf1eceadaffe64, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 84048048b20d8d041b7e31a04e7d929a,
+    Overworld: {fileID: 21300000, guid: 87c4a64ee8c796544a5e2108d90bd907, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: a400c45f8d33251488ebd530a3a0a0d1, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: 9c20cc517ed62a64b9285ad600d6d25b,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: ca4280cae28a24442b241a7380ed524a, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: b17c256773b4a7242b69bbd20a38a002, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: 7298af7f030821b4080c41f329eeefc6, type: 3}
-    SleepHero: {fileID: 21300000, guid: 32b7e862375263b4ba40ce2632307613, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: 8426528167acc9545afc2873608cda24, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: 917a2ccd74d162748a7c3382850d3763,
+    QuestLog: {fileID: 21300000, guid: f0e949c50d0673b43bbdba68dfa3d0ee, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: a06c3cfc87375474fbdf1eceadaffe64, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 84048048b20d8d041b7e31a04e7d929a, type: 3}
+    SleepHero: {fileID: 21300000, guid: ca4280cae28a24442b241a7380ed524a, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: b17c256773b4a7242b69bbd20a38a002, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: 7298af7f030821b4080c41f329eeefc6,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: bcafb3107a848e446a3617cb4150334e, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 40d63ff0b4b77ea4da881308bd44b16d, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: ab1b919986d2d4e4782448e18731cffe, type: 3}
-    MoveHero: {fileID: 21300000, guid: da258f3261a59f04bb6bf1c5ddc34136, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: 6bd0d77c2d2419f49901110337d70488, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: 2056a38bfab803e4b9e2adefec7d9611, type: 3}
-    Spellbook: {fileID: 21300000, guid: 61773451911e4a043863fb1de7a73037, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: 5ff3ba19732c57d48863fa57f44f7b47, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: 4f688cdc0be533843956d1f1b69f57fc,
+    WakeHero: {fileID: 21300000, guid: 413232bb044313a4cb0e10e5302c7e23, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: f98d1a2f6cabbe14ebf094a8e01ef6af, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: 266028933d285a74a85713775463c266, type: 3}
+    MoveHero: {fileID: 21300000, guid: 32b7e862375263b4ba40ce2632307613, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: 8426528167acc9545afc2873608cda24, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: 917a2ccd74d162748a7c3382850d3763, type: 3}
+    Spellbook: {fileID: 21300000, guid: bcafb3107a848e446a3617cb4150334e, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 40d63ff0b4b77ea4da881308bd44b16d, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: ab1b919986d2d4e4782448e18731cffe,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: a319e7e040f83854a9bc12e813c5176b, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 1a3afdda37715f64fb21d3fdc3b41059,
+    AdventureOptions: {fileID: 21300000, guid: da258f3261a59f04bb6bf1c5ddc34136, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: 6bd0d77c2d2419f49901110337d70488,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: 58ce9b6baf68228468a6dddb563c6b6b,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: 2056a38bfab803e4b9e2adefec7d9611,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 413232bb044313a4cb0e10e5302c7e23, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: f98d1a2f6cabbe14ebf094a8e01ef6af,
+    SystemOptions: {fileID: 21300000, guid: 61773451911e4a043863fb1de7a73037, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: 5ff3ba19732c57d48863fa57f44f7b47,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: 266028933d285a74a85713775463c266,
+    SystemOptionsDisabled: {fileID: 21300000, guid: 4f688cdc0be533843956d1f1b69f57fc,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: 44985b2c63fb38b43860e4e58c4d0722, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 7bfd32efa7e229c44ab83eaa8f25a748, type: 3}
@@ -463,41 +463,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: 7ff05eb989a0b674bbad0f0c075ee49e,
       type: 3}
-    Underground: {fileID: 21300000, guid: 98eef608fa9cc40469806642adb0f95d, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: ab2595b660f8b794ab8bf92968167784,
+    Underground: {fileID: 21300000, guid: a9ba5ba68ed985a49aebe159e4e64b14, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 1de529d4555431d44b7e217691fcce10,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: 82bcf6916029be545a93de4795f458df,
+    UndergroundDisabled: {fileID: 21300000, guid: f21cf35827633204a835632327c5ccc9,
       type: 3}
-    Overworld: {fileID: 21300000, guid: f391e5512af7df44e9a229a260b20c7e, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: 0d2e42b6bd28cae4bb71caf59a166f12, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: ac6a6880cc36aea4782eb714b459e39d,
+    Overworld: {fileID: 21300000, guid: 98eef608fa9cc40469806642adb0f95d, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: ab2595b660f8b794ab8bf92968167784, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: 82bcf6916029be545a93de4795f458df,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: 29da3366072ffdb4f923914f6021b85e, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: f6898e921eb0dec47a5b842bfbbd5982, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: f2786c67356d86748b59be29425fe548, type: 3}
-    SleepHero: {fileID: 21300000, guid: 3b2eb6206ab184d4196b23a307aa05e0, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: 05d4784525dc5c440994ff7210ed2f66, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: fafa4af16c6623a41b62600b37bc6cfb,
+    QuestLog: {fileID: 21300000, guid: f391e5512af7df44e9a229a260b20c7e, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: 0d2e42b6bd28cae4bb71caf59a166f12, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: ac6a6880cc36aea4782eb714b459e39d, type: 3}
+    SleepHero: {fileID: 21300000, guid: 29da3366072ffdb4f923914f6021b85e, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: f6898e921eb0dec47a5b842bfbbd5982, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: f2786c67356d86748b59be29425fe548,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: 7245e3a6793e8c3418acc9e291e87f17, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: 6624b34147fc4334db2aaac0c2f9f975, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: bd49c9dedd7746f4cab5ecd58a8d5047, type: 3}
-    MoveHero: {fileID: 21300000, guid: dd56dfa5ed7633b4ca188ac6b47b6d1a, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: 452bb75d3c879634997610161e06bba8, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: 1999fdd3b18b82a479376d6052f5e586, type: 3}
-    Spellbook: {fileID: 21300000, guid: 87faaa096c11aa24388fc1a4de35addd, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: edd58c7e2fabf1345abddd47411c8933, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: cf2bec98b3717374dbbcc18c4ea01785,
+    WakeHero: {fileID: 21300000, guid: 766a34227c771164e9ba871f51584dcb, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: dd189f2fdb3aab24f9f79bcb51b18d72, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: f05c8295ab841bd48b83925490a08f99, type: 3}
+    MoveHero: {fileID: 21300000, guid: 3b2eb6206ab184d4196b23a307aa05e0, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: 05d4784525dc5c440994ff7210ed2f66, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: fafa4af16c6623a41b62600b37bc6cfb, type: 3}
+    Spellbook: {fileID: 21300000, guid: 7245e3a6793e8c3418acc9e291e87f17, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: 6624b34147fc4334db2aaac0c2f9f975, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: bd49c9dedd7746f4cab5ecd58a8d5047,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: a9ba5ba68ed985a49aebe159e4e64b14, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 1de529d4555431d44b7e217691fcce10,
+    AdventureOptions: {fileID: 21300000, guid: dd56dfa5ed7633b4ca188ac6b47b6d1a, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: 452bb75d3c879634997610161e06bba8,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: f21cf35827633204a835632327c5ccc9,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: 1999fdd3b18b82a479376d6052f5e586,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 766a34227c771164e9ba871f51584dcb, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: dd189f2fdb3aab24f9f79bcb51b18d72,
+    SystemOptions: {fileID: 21300000, guid: 87faaa096c11aa24388fc1a4de35addd, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: edd58c7e2fabf1345abddd47411c8933,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: f05c8295ab841bd48b83925490a08f99,
+    SystemOptionsDisabled: {fileID: 21300000, guid: cf2bec98b3717374dbbcc18c4ea01785,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: 1f761fbfad990234a8cb3718ae9c885d, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 2466a1dd8bd9ccd49b2380d4185c416e, type: 3}
@@ -534,41 +534,41 @@ MonoBehaviour:
       type: 3}
     KingdomOverviewDisabled: {fileID: 21300000, guid: d35662f2a1b3d36408c2ef82b1726ff2,
       type: 3}
-    Underground: {fileID: 21300000, guid: d556d5d150375bf4697608f8b1bc2f9e, type: 3}
-    UndergroundPressed: {fileID: 21300000, guid: cddb2e9cafa100f439a714bdea418356,
+    Underground: {fileID: 21300000, guid: fba0ce2203c445341bb6f58db60118aa, type: 3}
+    UndergroundPressed: {fileID: 21300000, guid: 762187608bb973d4cae9e763ca7198be,
       type: 3}
-    UndergroundDisabled: {fileID: 21300000, guid: db58684f9f52f264595a0c4e4c076dc4,
+    UndergroundDisabled: {fileID: 21300000, guid: e85e3fea636d4474d86ab1f4e184a48f,
       type: 3}
-    Overworld: {fileID: 21300000, guid: eb49be28cea72f74dbb72c7463887e1f, type: 3}
-    OverworldPressed: {fileID: 21300000, guid: a05c2359f19b53840b94efb9e4ad21bf, type: 3}
-    OverworldDisabled: {fileID: 21300000, guid: 2a86ceedc34a1f4439b80dfb2d4b47ed,
+    Overworld: {fileID: 21300000, guid: d556d5d150375bf4697608f8b1bc2f9e, type: 3}
+    OverworldPressed: {fileID: 21300000, guid: cddb2e9cafa100f439a714bdea418356, type: 3}
+    OverworldDisabled: {fileID: 21300000, guid: db58684f9f52f264595a0c4e4c076dc4,
       type: 3}
-    QuestLog: {fileID: 21300000, guid: 8c84a2cbe81f1ac43a036d23f7b1288a, type: 3}
-    QuestLogPressed: {fileID: 21300000, guid: 80ebbb0afa25f3149922c57cde60b013, type: 3}
-    QuestLogDisabled: {fileID: 21300000, guid: cad54daca7a2be2438c1f003ba8cdc07, type: 3}
-    SleepHero: {fileID: 21300000, guid: 8080411e0f8e3d640ad1e634b92e0e27, type: 3}
-    SleepHeroPressed: {fileID: 21300000, guid: 8238fcf569919d344bf4369514bf7051, type: 3}
-    SleepHeroDisabled: {fileID: 21300000, guid: 2d0c54e5aba5fbb49aee5f3fefd95b2d,
+    QuestLog: {fileID: 21300000, guid: eb49be28cea72f74dbb72c7463887e1f, type: 3}
+    QuestLogPressed: {fileID: 21300000, guid: a05c2359f19b53840b94efb9e4ad21bf, type: 3}
+    QuestLogDisabled: {fileID: 21300000, guid: 2a86ceedc34a1f4439b80dfb2d4b47ed, type: 3}
+    SleepHero: {fileID: 21300000, guid: 8c84a2cbe81f1ac43a036d23f7b1288a, type: 3}
+    SleepHeroPressed: {fileID: 21300000, guid: 80ebbb0afa25f3149922c57cde60b013, type: 3}
+    SleepHeroDisabled: {fileID: 21300000, guid: cad54daca7a2be2438c1f003ba8cdc07,
       type: 3}
-    WakeHero: {fileID: 21300000, guid: 4360674cbbd5de14b8e20b0ca06eaf18, type: 3}
-    WakeHeroPressed: {fileID: 21300000, guid: c7f8d7682d4521e499b6da63ce8cbdb2, type: 3}
-    WakeHeroDisabled: {fileID: 21300000, guid: 9203320cd1c0673408896e2f8001a9e0, type: 3}
-    MoveHero: {fileID: 21300000, guid: 287fd6a6767e09847970771878feb7d6, type: 3}
-    MoveHeroPressed: {fileID: 21300000, guid: 8777f6c88c5815147accc5a06cb23595, type: 3}
-    MoveHeroDisabled: {fileID: 21300000, guid: df26fefe813824b4c8d4bb7889c88de6, type: 3}
-    Spellbook: {fileID: 21300000, guid: c1e7deb9bda54164db2cd4c0f1dca0a2, type: 3}
-    SpellbookPressed: {fileID: 21300000, guid: 28ff3a048db903146886cdb3c369201c, type: 3}
-    SpellbookDisabled: {fileID: 21300000, guid: 052b01d03e7265a4b80fe80bc24b44b8,
+    WakeHero: {fileID: 21300000, guid: 61e522367a2cc324681ee4e8461090dd, type: 3}
+    WakeHeroPressed: {fileID: 21300000, guid: 07e62e14cd6f53b42b0f55a950120b36, type: 3}
+    WakeHeroDisabled: {fileID: 21300000, guid: c4da308287e478c43b3bae8ffa5f86ea, type: 3}
+    MoveHero: {fileID: 21300000, guid: 8080411e0f8e3d640ad1e634b92e0e27, type: 3}
+    MoveHeroPressed: {fileID: 21300000, guid: 8238fcf569919d344bf4369514bf7051, type: 3}
+    MoveHeroDisabled: {fileID: 21300000, guid: 2d0c54e5aba5fbb49aee5f3fefd95b2d, type: 3}
+    Spellbook: {fileID: 21300000, guid: 4360674cbbd5de14b8e20b0ca06eaf18, type: 3}
+    SpellbookPressed: {fileID: 21300000, guid: c7f8d7682d4521e499b6da63ce8cbdb2, type: 3}
+    SpellbookDisabled: {fileID: 21300000, guid: 9203320cd1c0673408896e2f8001a9e0,
       type: 3}
-    AdventureOptions: {fileID: 21300000, guid: fba0ce2203c445341bb6f58db60118aa, type: 3}
-    AdventureOptionsPressed: {fileID: 21300000, guid: 762187608bb973d4cae9e763ca7198be,
+    AdventureOptions: {fileID: 21300000, guid: 287fd6a6767e09847970771878feb7d6, type: 3}
+    AdventureOptionsPressed: {fileID: 21300000, guid: 8777f6c88c5815147accc5a06cb23595,
       type: 3}
-    AdventureOptionsDisabled: {fileID: 21300000, guid: e85e3fea636d4474d86ab1f4e184a48f,
+    AdventureOptionsDisabled: {fileID: 21300000, guid: df26fefe813824b4c8d4bb7889c88de6,
       type: 3}
-    SystemOptions: {fileID: 21300000, guid: 61e522367a2cc324681ee4e8461090dd, type: 3}
-    SystemOptionsPressed: {fileID: 21300000, guid: 07e62e14cd6f53b42b0f55a950120b36,
+    SystemOptions: {fileID: 21300000, guid: c1e7deb9bda54164db2cd4c0f1dca0a2, type: 3}
+    SystemOptionsPressed: {fileID: 21300000, guid: 28ff3a048db903146886cdb3c369201c,
       type: 3}
-    SystemOptionsDisabled: {fileID: 21300000, guid: c4da308287e478c43b3bae8ffa5f86ea,
+    SystemOptionsDisabled: {fileID: 21300000, guid: 052b01d03e7265a4b80fe80bc24b44b8,
       type: 3}
     ViewWorld: {fileID: 21300000, guid: f32225cb08d34a04c8c2bbb365424440, type: 3}
     ViewWorldPressed: {fileID: 21300000, guid: 542e8f4604978944aaec1cbf7a27b76f, type: 3}

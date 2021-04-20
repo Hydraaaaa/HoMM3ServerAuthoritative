@@ -23,10 +23,11 @@ public class Map : MonoBehaviour
     [SerializeField] MapMonster m_MapMonsterPrefab;
     [SerializeField] Pathfinding m_Pathfinding;
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] GameReferences m_GameReferences;
 
     [Space]
 
-    [SerializeField] Transform m_TerrainRoot;
+    [SerializeField] Transform m_OverworldTerrainRoot;
     [SerializeField] Transform m_UndergroundTerrainRoot;
 
     [Space]
@@ -82,7 +83,7 @@ public class Map : MonoBehaviour
     List<TerrainTileObject> m_TerrainTileObjects;
     List<TerrainTileObject> m_RiverTileObjects;
     List<TerrainTileObject> m_RoadTileObjects;
-    List<GameObject> m_Objects;
+    List<GameObject> m_OverworldObjects;
 
     List<TerrainTileObject> m_UndergroundTerrainTileObjects;
     List<TerrainTileObject> m_UndergroundRiverTileObjects;
@@ -388,7 +389,7 @@ public class Map : MonoBehaviour
 
         // <><><><><> Objects
 
-        m_Objects = new List<GameObject>();
+        m_OverworldObjects = new List<GameObject>();
         m_UndergroundObjects = new List<GameObject>();
 
         List<ScenarioObject> _Objects = m_GameSettings.Scenario.Objects;
@@ -405,40 +406,40 @@ public class Map : MonoBehaviour
             {
                 case ScenarioObjectType.Hero:
                     MapHero _Hero = Instantiate(m_MapHeroPrefab, m_MapObjectParent);
-                    _Hero.Initialize(_Object, m_Pathfinding, m_LocalOwnership);
+                    _Hero.Initialize(_Object, m_GameReferences);
                     _MapObject = _Hero;
                     _DynamicObstacles.Add(_Object, _Hero.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Resource:
                     MapResource _Resource = Instantiate(m_MapResourcePrefab, m_MapObjectParent);
-                    _Resource.Initialize(_Object, m_Pathfinding);
+                    _Resource.Initialize(_Object, m_GameReferences);
                     _MapObject = _Resource;
                     _DynamicObstacles.Add(_Object, _Resource.DynamicObstacle);
                     break;
 
                 case ScenarioObjectType.Dwelling:
                     MapDwelling _Dwelling = Instantiate(m_MapDwellingPrefab, m_MapObjectParent);
-                    _Dwelling.Initialize(_Object);
+                    _Dwelling.Initialize(_Object, m_GameReferences);
                     _MapObject = _Dwelling;
                     break;
 
                 case ScenarioObjectType.Town:
                     MapTown _Town = Instantiate(m_MapTownPrefab, m_MapObjectParent);
-                    _Town.Initialize(_Object, m_LocalOwnership);
+                    _Town.Initialize(_Object, m_GameReferences);
                     _MapObject = _Town;
                     break;
 
                 case ScenarioObjectType.Monster:
                     MapMonster _Monster = Instantiate(m_MapMonsterPrefab, m_MapObjectParent);
-                    _Monster.Initialize(_Object, m_Pathfinding);
+                    _Monster.Initialize(_Object, m_GameReferences);
                     _MapObject = _Monster;
                     _DynamicObstacles.Add(_Object, _Monster.DynamicObstacle);
                     break;
 
                 default:
                     MapObject _Obj = Instantiate(m_MapObjectPrefab, m_MapObjectParent);
-                    _Obj.Initialize(_Object);
+                    _Obj.Initialize(_Object, m_GameReferences);
                     _MapObject = _Obj;
                     break;
 
@@ -463,7 +464,7 @@ public class Map : MonoBehaviour
             }
             else
             {
-                m_Objects.Add(_MapObject.gameObject);
+                m_OverworldObjects.Add(_MapObject.gameObject);
             }
 
             _MapObjects.Add(_MapObject);
@@ -504,8 +505,7 @@ public class Map : MonoBehaviour
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownXCoord + 1,
                     m_GameSettings.Scenario.PlayerInfo[i].MainTownYCoord,
                     m_GameSettings.Scenario.PlayerInfo[i].IsMainTownUnderground,
-                    m_Pathfinding,
-                    m_LocalOwnership
+                    m_GameReferences
                 );
             }
         }
@@ -516,5 +516,11 @@ public class Map : MonoBehaviour
         {
             m_LocalOwnership.SelectHero(_LocalOwnership[0]);
         }
+    }
+
+    public void ShowUnderground(bool a_Show)
+    {
+        m_OverworldTerrainRoot.gameObject.SetActive(!a_Show);
+        m_UndergroundTerrainRoot.gameObject.SetActive(a_Show);
     }
 }

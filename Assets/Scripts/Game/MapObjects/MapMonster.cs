@@ -16,8 +16,10 @@ public class MapMonster : MapObjectBase
     [SerializeField] SpriteRenderer m_SpriteRenderer;
     [SerializeField] DynamicMapObstacle m_DynamicObstacle;
 
-    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
+        m_GameReferences = a_GameReferences;
+
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
 
         switch (a_ScenarioObject.Template.Name)
@@ -80,7 +82,7 @@ public class MapMonster : MapObjectBase
         m_ShadowRenderer.SetSprites(Monster.MapVisualData.m_ShadowSprites);
         m_ShadowRenderer.SetOffset(_Offset);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding, this);
+        m_DynamicObstacle.Initialize(m_GameReferences.Pathfinding, this);
 
         gameObject.name = Monster.name;
     }

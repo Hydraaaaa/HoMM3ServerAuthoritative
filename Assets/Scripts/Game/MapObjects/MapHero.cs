@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +38,7 @@ public class MapHero : MapObjectBase
     [SerializeField] SpriteRenderer m_PathNodeShadowPrefab;
     [SerializeField] Sprite[] m_PathSprites;
 
-    Pathfinding m_Pathfinding;
-    LocalOwnership m_LocalOwnership;
+    GameReferences m_GameReferences;
 
     int m_Direction = DIRECTION_E;
 
@@ -61,7 +61,11 @@ public class MapHero : MapObjectBase
 
     Vector2Int m_PathfindingPos;
 
-    public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, Pathfinding a_Pathfinding, LocalOwnership a_LocalOwnership)
+    public bool HasPath { get; private set; }
+    public event Action OnPathCreated;
+    public event Action OnPathRemoved;
+
+    public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, GameReferences a_GameReferences)
     {
         MouseCollision = new byte[6];
         MouseCollision[0] = 0b00000000;
@@ -83,24 +87,22 @@ public class MapHero : MapObjectBase
         PlayerIndex = a_PlayerIndex;
         IsUnderground = a_IsUnderground;
 
-        m_Pathfinding = a_Pathfinding;
-        m_LocalOwnership = a_LocalOwnership;
+        m_GameReferences = a_GameReferences;
 
         transform.position = new Vector3(a_PosX + 0.5f, -a_PosY - 0.5f, 0);
         m_PathfindingPos = new Vector2Int(a_PosX - 1, a_PosY);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding, this);
+        m_DynamicObstacle.Initialize(m_GameReferences.Pathfinding, this);
         m_DynamicObstacle.AddInteractedNode(m_PathfindingPos.x, m_PathfindingPos.y, a_IsUnderground);
 
         Initialize();
     }
 
-    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding, LocalOwnership a_LocalOwnership)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
         PlayerIndex = a_ScenarioObject.Hero.PlayerIndex;
 
-        m_Pathfinding = a_Pathfinding;
-        m_LocalOwnership = a_LocalOwnership;
+        m_GameReferences = a_GameReferences;
 
         if (a_ScenarioObject.Template.Name == "avxprsn0")
         {
@@ -161,7 +163,7 @@ public class MapHero : MapObjectBase
             HeroPool.ClaimHero(Hero);
         }
 
-        m_DynamicObstacle.Initialize(a_Pathfinding, this);
+        m_DynamicObstacle.Initialize(m_GameReferences.Pathfinding, this);
 
         m_PathfindingPos = new Vector2Int(a_ScenarioObject.PosX - 1, a_ScenarioObject.PosY);
 
@@ -190,7 +192,7 @@ public class MapHero : MapObjectBase
 
         if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
         {
-            m_LocalOwnership.AddHero(this);
+            m_GameReferences.LocalOwnership.AddHero(this);
         }
 
         m_LocalPathfindingVersion = -1;
@@ -198,9 +200,9 @@ public class MapHero : MapObjectBase
 
     public void OnSelected()
     {
-        if (m_LocalPathfindingVersion != m_Pathfinding.PathfindingVersion)
+        if (m_LocalPathfindingVersion != m_GameReferences.Pathfinding.PathfindingVersion)
         {
-            m_PathableArea = m_Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
+            m_PathableArea = m_GameReferences.Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
 
             GeneratePath(m_TargetNodeIndex);
         }
@@ -253,25 +255,18 @@ public class MapHero : MapObjectBase
 
     public void OnLeftClick(int a_XPos, int a_YPos, MapObjectBase a_Object)
     {
-        if (IsMoving)
-        {
-            m_StopMovement = true;
-        }
-        else
-        {
-            int _Index = a_XPos + a_YPos * m_GameSettings.Scenario.Size;
+        int _Index = a_XPos + a_YPos * m_GameSettings.Scenario.Size;
 
-            if (_Index != m_TargetNodeIndex)
+        if (_Index != m_TargetNodeIndex)
+        {
+            if (m_PathableArea.ContainsKey(_Index))
             {
-                if (m_PathableArea.ContainsKey(_Index))
-                {
-                    GeneratePath(_Index);
-                }
+                GeneratePath(_Index);
             }
-            else if (_Index != -1)
-            {
-                StartCoroutine(Move());
-            }
+        }
+        else if (_Index != -1)
+        {
+            StartCoroutine(Move());
         }
     }
 
@@ -302,6 +297,8 @@ public class MapHero : MapObjectBase
 
         int _AnimationIndex = 0;
         int _Frame = 0;
+
+        m_GameReferences.InputBlocker.SetActive(true);
 
         Vector3 _MovementDirection;
 
@@ -417,6 +414,8 @@ public class MapHero : MapObjectBase
             }
         }
 
+        m_GameReferences.InputBlocker.SetActive(false);
+
         m_FlagRenderer.enabled = true;
 
         m_HeroRenderer.sprite = Hero.HeroVisualData.IdleSprites[m_Direction];
@@ -439,9 +438,16 @@ public class MapHero : MapObjectBase
             m_FlagSpriteRenderer.transform.localPosition = Hero.HeroVisualData.IdleFlagOffsets[m_Direction];
         }
 
-        m_DynamicObstacle.AddInteractedNode(m_Pathfinding.GetNode(m_PathfindingPos, IsUnderground));
+        m_DynamicObstacle.AddInteractedNode(m_GameReferences.Pathfinding.GetNode(m_PathfindingPos, IsUnderground));
 
-        m_PathableArea = m_Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
+        m_PathableArea = m_GameReferences.Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
+
+        if (m_Path.Count == 0)
+        {
+            m_TargetNodeIndex = -1;
+            HasPath = false;
+            OnPathRemoved?.Invoke();
+        }
 
         IsMoving = false;
     }
@@ -460,6 +466,8 @@ public class MapHero : MapObjectBase
         if (!m_PathableArea.ContainsKey(a_Index))
         {
             m_TargetNodeIndex = -1;
+            HasPath = false;
+            OnPathRemoved?.Invoke();
             return;
         }
 
@@ -479,8 +487,8 @@ public class MapHero : MapObjectBase
         for (int i = 0; i < m_Path.Count; i++)
         {
             Vector3 _Position = new Vector3(m_Path[i].PosX, -m_Path[i].PosY, 0);
-            SpriteRenderer _Node = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity);
-            SpriteRenderer _NodeShadow = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity);
+            SpriteRenderer _Node = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity, transform);
+            SpriteRenderer _NodeShadow = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity, transform);
 
             Vector2Int _PreviousNodePos;
             Vector2Int _NextNodePos;
@@ -719,5 +727,18 @@ public class MapHero : MapObjectBase
         }
 
         m_TargetNodeIndex = a_Index;
+
+        HasPath = true;
+        OnPathCreated?.Invoke();
+    }
+
+    public void MoveToDestination()
+    {
+        StartCoroutine(Move());
+    }
+
+    public void CancelMovement()
+    {
+        m_StopMovement = true;
     }
 }

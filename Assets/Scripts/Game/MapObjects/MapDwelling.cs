@@ -10,8 +10,10 @@ public class MapDwelling : MapObjectBase
     [SerializeField] SpriteRenderer m_SpriteRenderer;
     [SerializeField] PlayerColors m_PlayerColors;
 
-    public void Initialize(ScenarioObject a_ScenarioObject)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
+        m_GameReferences = a_GameReferences;
+
         gameObject.name = a_ScenarioObject.Template.Name;
 
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
@@ -26,21 +28,19 @@ public class MapDwelling : MapObjectBase
 
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[_ColorIndex]);
 
-        StartCoroutine(LoadVisualData());
-    }
-
-    IEnumerator LoadVisualData()
-    {
         var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{gameObject.name}.asset");
 
-        yield return _Operation;
+        // Synchonously, because underground objects are initially disabled, which break their coroutines
+        MapObjectVisualData _Data = _Operation.WaitForCompletion();
 
         if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
         {
             Debug.Log(gameObject.name);
-            yield break;
         }
-
-        m_Renderer.SetSprites(_Operation.Result.Sprites);
+        else
+        {
+            m_Renderer.SetSprites(_Operation.Result.Sprites);
+            m_ShadowRenderer.SetSprites(_Operation.Result.ShadowSprites);
+        }
     }
 }

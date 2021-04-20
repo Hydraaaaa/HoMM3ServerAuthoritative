@@ -242,7 +242,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 40013054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: WakeHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &72953003
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +396,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 89940905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SpellbookPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &89940905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 115378109}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: KingdomOverviewPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &130221071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1263,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198062841}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: DigPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &198062841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1391,7 +1439,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242839039}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SleepHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &242839039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,7 +1903,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 394519535}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: AdventureOptionsPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &401949652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2129,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 420969946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: EndTurnPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &420969946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,7 +2299,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 459295493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: MoveHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &465926965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,7 +2739,8 @@ MonoBehaviour:
     type: 3}
   m_Pathfinding: {fileID: 544584114}
   m_LocalOwnership: {fileID: 544584116}
-  m_TerrainRoot: {fileID: 989251728}
+  m_GameReferences: {fileID: 616975844}
+  m_OverworldTerrainRoot: {fileID: 989251728}
   m_UndergroundTerrainRoot: {fileID: 1858009423}
   m_TerrainTileObjectParent: {fileID: 89495613}
   m_RiverTileObjectParent: {fileID: 72953004}
@@ -4177,6 +4274,130 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &589215075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589215076}
+  - component: {fileID: 589215078}
+  - component: {fileID: 589215077}
+  m_Layer: 5
+  m_Name: InputBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &589215076
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589215075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487210309}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &589215077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589215075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &589215078
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589215075}
+  m_CullTransparentMesh: 1
+--- !u!1 &616975843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616975845}
+  - component: {fileID: 616975844}
+  m_Layer: 0
+  m_Name: GameReferences
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &616975844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616975843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd62c20b8ac59d419f6b67b3f24cf39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Map: {fileID: 544584113}
+  m_Pathfinding: {fileID: 544584114}
+  m_LocalOwnership: {fileID: 544584116}
+  m_InputBlocker: {fileID: 589215075}
+  m_GameSettings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
+  m_PlayerColors: {fileID: 11400000, guid: 9dd4db9ca7f37e944998a2515a8f9bda, type: 2}
+--- !u!4 &616975845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616975843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &635900128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,7 +4547,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 640616616}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: UndergroundPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &666375258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4615,7 +4848,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 703293230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: OverworldPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &703293230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4905,7 +5150,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 720794377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SleepHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &735187654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,7 +5282,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735187656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: OverworldPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &753190367
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,7 +5546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764508487}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: NextHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &766317866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5491,7 +5772,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774627155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: NextHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &774627155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5915,7 +6208,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 965244582}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: QuestLogPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &971835247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,7 +6302,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 971835250}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: WakeHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &971835250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6178,7 +6495,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989251728}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: OverworldTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6415,7 +6732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1056129551}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: ReplayOpponentTurnPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1056129551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6535,7 +6864,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1065859511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SystemOptionsPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1065859511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7141,7 +7482,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1295212664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: ViewWorldPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1295212664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7291,7 +7644,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1355348594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: QuestLogPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1355348594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8040,7 +8405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1429379878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SpellbookPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1439226115
 GameObject:
   m_ObjectHideFlags: 0
@@ -8208,7 +8585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1471225281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: EndTurnPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1471225281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8376,6 +8765,7 @@ RectTransform:
   - {fileID: 1681216864}
   - {fileID: 514881106}
   - {fileID: 821472070}
+  - {fileID: 589215076}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8473,6 +8863,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GameSettings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
   m_PlayerColors: {fileID: 11400000, guid: 9dd4db9ca7f37e944998a2515a8f9bda, type: 2}
+  m_Map: {fileID: 544584113}
+  m_LocalOwnership: {fileID: 544584116}
   m_KingdomOverviewHighRes: {fileID: 2102360087}
   m_UndergroundHighRes: {fileID: 1729539739}
   m_OverworldHighRes: {fileID: 703293229}
@@ -8485,7 +8877,7 @@ MonoBehaviour:
   m_WakeHeroHighRes: {fileID: 971835249}
   m_MoveHeroHighRes: {fileID: 2038426191}
   m_SpellbookHighRes: {fileID: 89940904}
-  m_AdventureOptionsHighRes: {fileID: 2122427740}
+  m_ScenarioInfoHighRes: {fileID: 2122427740}
   m_SystemOptionsHighRes: {fileID: 1065859510}
   m_NextHeroHighRes: {fileID: 774627154}
   m_EndTurnHighRes: {fileID: 420969945}
@@ -9767,7 +10159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1710860011}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: SystemOptionsPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1722499124
 GameObject:
   m_ObjectHideFlags: 0
@@ -9981,7 +10385,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1729539740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: UndergroundPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1729539740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10101,7 +10517,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1735168734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: ViewPuzzlePressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1735168734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11047,7 +11475,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2038426192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: MoveHeroPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2038426192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11374,7 +11814,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2102360088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: KingdomOverviewPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2102360088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11426,7 +11878,7 @@ GameObject:
   - component: {fileID: 2122427741}
   - component: {fileID: 2122427740}
   m_Layer: 5
-  m_Name: AdventureOptions
+  m_Name: ScenarioInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11494,7 +11946,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2122427741}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1487210312}
+        m_TargetAssemblyTypeName: SidebarButtons, Assembly-CSharp
+        m_MethodName: ScenarioInfoPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2122427741
 MonoBehaviour:
   m_ObjectHideFlags: 0

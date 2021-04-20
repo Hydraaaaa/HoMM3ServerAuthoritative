@@ -26,8 +26,10 @@ public class MapObject : MapObjectBase
     [SerializeField] MonsterList m_Monsters;
     [SerializeField] HeroList m_Heroes;
 
-    public void Initialize(ScenarioObject a_ScenarioObject)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
+        m_GameReferences = a_GameReferences;
+
         gameObject.name = a_ScenarioObject.Template.Name;
 
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
@@ -37,22 +39,19 @@ public class MapObject : MapObjectBase
             m_SpriteRenderer.sortingLayerName = "MapLowPriorityObjects";
         }
 
-        StartCoroutine(LoadVisualData());
-    }
-
-    IEnumerator LoadVisualData()
-    {
         var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{gameObject.name}.asset");
 
-        yield return _Operation;
+        // Synchonously, because underground objects are initially disabled, which break their coroutines
+        MapObjectVisualData _Data = _Operation.WaitForCompletion();
 
         if (_Operation.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Failed)
         {
             Debug.Log(gameObject.name);
-            yield break;
         }
-
-        Renderer.SetSprites(_Operation.Result.Sprites);
-        ShadowRenderer.SetSprites(_Operation.Result.ShadowSprites);
+        else
+        {
+            Renderer.SetSprites(_Operation.Result.Sprites);
+            ShadowRenderer.SetSprites(_Operation.Result.ShadowSprites);
+        }
     }
 }

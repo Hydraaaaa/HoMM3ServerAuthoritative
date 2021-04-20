@@ -15,11 +15,9 @@ public class MapTown : MapObjectBase
     [SerializeField] PlayerColors m_PlayerColors;
     [SerializeField] FactionList m_Factions;
 
-    LocalOwnership m_LocalOwnership;
-
-    public void Initialize(ScenarioObject a_ScenarioObject, LocalOwnership a_LocalOwnership)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
-        m_LocalOwnership = a_LocalOwnership;
+        m_GameReferences = a_GameReferences;
 
         m_SpriteRenderer.sortingOrder = -32767 + a_ScenarioObject.SortOrder;
 
@@ -103,7 +101,7 @@ public class MapTown : MapObjectBase
 
         if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
         {
-            m_LocalOwnership.AddTown(this);
+            m_GameReferences.LocalOwnership.AddTown(this);
         }
 
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[PlayerIndex]);

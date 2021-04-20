@@ -16,7 +16,7 @@ public class MapResource : MapObjectBase
 
     [SerializeField] ResourceList m_Resources;
 
-    public void Initialize(ScenarioObject a_ScenarioObject, Pathfinding a_Pathfinding)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
     {
         gameObject.name = a_ScenarioObject.Template.Name;
 
@@ -60,6 +60,6 @@ public class MapResource : MapObjectBase
         m_Renderer.SetSprites(Resource.m_Sprites);
         m_ShadowRenderer.SetSprites(Resource.m_ShadowSprites);
 
-        m_DynamicObstacle.Initialize(a_Pathfinding, this);
+        m_DynamicObstacle.Initialize(a_GameReferences.Pathfinding, this);
     }
 }

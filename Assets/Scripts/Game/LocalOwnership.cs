@@ -8,6 +8,7 @@ public class LocalOwnership : MonoBehaviour
     public event Action<MapHero> OnHeroAdded;
     public event Action<MapHero> OnHeroRemoved;
     public event Action<MapHero, int> OnHeroSelected;
+    public event Action<MapHero> OnHeroDeselected;
 
     public event Action<MapTown> OnTownAdded;
     public event Action<MapTown> OnTownRemoved;
@@ -77,6 +78,8 @@ public class LocalOwnership : MonoBehaviour
 
         if (SelectedHero == a_Hero)
         {
+            SelectedHero.OnDeselected();
+            OnHeroDeselected?.Invoke(a_Hero);
             SelectedHero = null;
         }
 
@@ -109,7 +112,11 @@ public class LocalOwnership : MonoBehaviour
             return;
         }
 
-        SelectedHero?.OnDeselected();
+        if (SelectedHero != null)
+        {
+            SelectedHero.OnDeselected();
+            OnHeroDeselected?.Invoke(SelectedHero);
+        }
 
         SelectedHero = a_Hero;
         SelectedTown = null;
@@ -127,7 +134,11 @@ public class LocalOwnership : MonoBehaviour
             return;
         }
 
-        SelectedHero?.OnDeselected();
+        if (SelectedHero != null)
+        {
+            SelectedHero.OnDeselected();
+            OnHeroDeselected?.Invoke(SelectedHero);
+        }
 
         SelectedTown = a_Town;
         SelectedHero = null;

@@ -5,6 +5,8 @@ public class SidebarButtons : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] PlayerColors m_PlayerColors;
+    [SerializeField] Map m_Map;
+    [SerializeField] LocalOwnership m_LocalOwnership;
 
     [Header("High Res")]
     [SerializeField] Button m_KingdomOverviewHighRes;
@@ -19,7 +21,7 @@ public class SidebarButtons : MonoBehaviour
     [SerializeField] Button m_WakeHeroHighRes;
     [SerializeField] Button m_MoveHeroHighRes;
     [SerializeField] Button m_SpellbookHighRes;
-    [SerializeField] Button m_AdventureOptionsHighRes;
+    [SerializeField] Button m_ScenarioInfoHighRes;
     [SerializeField] Button m_SystemOptionsHighRes;
     [SerializeField] Button m_NextHeroHighRes;
     [SerializeField] Button m_EndTurnHighRes;
@@ -38,140 +40,282 @@ public class SidebarButtons : MonoBehaviour
     [SerializeField] Button m_NextHeroLowRes;
     [SerializeField] Button m_EndTurnLowRes;
 
+    // Effectively pointless, but this allows us to check for problems in the hero selection events
+    MapHero m_SelectedHero;
+
     void Awake()
     {
-        int PlayerIndex = m_GameSettings.LocalPlayerIndex;
+        PlayerColors.PlayerElements _Elements = m_PlayerColors.Elements[m_GameSettings.LocalPlayerIndex];
 
         SpriteState _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].KingdomOverviewPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].KingdomOverviewDisabled;
+        _SpriteState.pressedSprite = _Elements.KingdomOverviewPressed;
+        _SpriteState.disabledSprite = _Elements.KingdomOverviewDisabled;
 
-        m_KingdomOverviewHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].KingdomOverview;
+        m_KingdomOverviewHighRes.image.sprite = _Elements.KingdomOverview;
         m_KingdomOverviewHighRes.spriteState = _SpriteState;
-        m_KingdomOverviewLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].KingdomOverview;
+        m_KingdomOverviewLowRes.image.sprite = _Elements.KingdomOverview;
         m_KingdomOverviewLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].UndergroundPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].UndergroundDisabled;
+        _SpriteState.pressedSprite = _Elements.UndergroundPressed;
+        _SpriteState.disabledSprite = _Elements.UndergroundDisabled;
 
-        m_UndergroundHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Underground;
+        m_UndergroundHighRes.image.sprite = _Elements.Underground;
         m_UndergroundHighRes.spriteState = _SpriteState;
-        m_UndergroundLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Underground;
+        m_UndergroundLowRes.image.sprite = _Elements.Underground;
         m_UndergroundLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].OverworldPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].OverworldDisabled;
+        _SpriteState.pressedSprite = _Elements.OverworldPressed;
+        _SpriteState.disabledSprite = _Elements.OverworldDisabled;
 
-        m_OverworldHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Overworld;
+        m_OverworldHighRes.image.sprite = _Elements.Overworld;
         m_OverworldHighRes.spriteState = _SpriteState;
-        m_OverworldLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Overworld;
+        m_OverworldLowRes.image.sprite = _Elements.Overworld;
         m_OverworldLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].ViewWorldPressed;
+        _SpriteState.pressedSprite = _Elements.ViewWorldPressed;
 
-        m_ViewWorldHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].ViewWorld;
+        m_ViewWorldHighRes.image.sprite = _Elements.ViewWorld;
         m_ViewWorldHighRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].ReplayOpponentTurnPressed;
+        _SpriteState.pressedSprite = _Elements.ReplayOpponentTurnPressed;
 
-        m_ReplayOpponentTurnHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].ReplayOpponentTurn;
+        m_ReplayOpponentTurnHighRes.image.sprite = _Elements.ReplayOpponentTurn;
         m_ReplayOpponentTurnHighRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].ViewPuzzlePressed;
+        _SpriteState.pressedSprite = _Elements.ViewPuzzlePressed;
 
-        m_ViewPuzzleHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].ViewPuzzle;
+        m_ViewPuzzleHighRes.image.sprite = _Elements.ViewPuzzle;
         m_ViewPuzzleHighRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].DigPressed;
+        _SpriteState.pressedSprite = _Elements.DigPressed;
 
-        m_DigHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Dig;
+        m_DigHighRes.image.sprite = _Elements.Dig;
         m_DigHighRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].QuestLogPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].QuestLogDisabled;
+        _SpriteState.pressedSprite = _Elements.QuestLogPressed;
+        _SpriteState.disabledSprite = _Elements.QuestLogDisabled;
 
-        m_QuestLogHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].QuestLog;
+        m_QuestLogHighRes.image.sprite = _Elements.QuestLog;
         m_QuestLogHighRes.spriteState = _SpriteState;
-        m_QuestLogLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].QuestLog;
+        m_QuestLogLowRes.image.sprite = _Elements.QuestLog;
         m_QuestLogLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].SleepHeroPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].SleepHeroDisabled;
+        _SpriteState.pressedSprite = _Elements.SleepHeroPressed;
+        _SpriteState.disabledSprite = _Elements.SleepHeroDisabled;
 
-        m_SleepHeroHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].SleepHero;
+        m_SleepHeroHighRes.image.sprite = _Elements.SleepHero;
         m_SleepHeroHighRes.spriteState = _SpriteState;
-        m_SleepHeroLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].SleepHero;
+        m_SleepHeroLowRes.image.sprite = _Elements.SleepHero;
         m_SleepHeroLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].WakeHeroPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].WakeHeroDisabled;
+        _SpriteState.pressedSprite = _Elements.WakeHeroPressed;
+        _SpriteState.disabledSprite = _Elements.WakeHeroDisabled;
 
-        m_WakeHeroHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].WakeHero;
+        m_WakeHeroHighRes.image.sprite = _Elements.WakeHero;
         m_WakeHeroHighRes.spriteState = _SpriteState;
-        m_WakeHeroLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].WakeHero;
+        m_WakeHeroLowRes.image.sprite = _Elements.WakeHero;
         m_WakeHeroLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].MoveHeroPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].MoveHeroDisabled;
+        _SpriteState.pressedSprite = _Elements.MoveHeroPressed;
+        _SpriteState.disabledSprite = _Elements.MoveHeroDisabled;
 
-        m_MoveHeroHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].MoveHero;
+        m_MoveHeroHighRes.image.sprite = _Elements.MoveHero;
         m_MoveHeroHighRes.spriteState = _SpriteState;
-        m_MoveHeroLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].MoveHero;
+        m_MoveHeroLowRes.image.sprite = _Elements.MoveHero;
         m_MoveHeroLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].SpellbookPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].SpellbookDisabled;
+        _SpriteState.pressedSprite = _Elements.SpellbookPressed;
+        _SpriteState.disabledSprite = _Elements.SpellbookDisabled;
 
-        m_SpellbookHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Spellbook;
+        m_SpellbookHighRes.image.sprite = _Elements.Spellbook;
         m_SpellbookHighRes.spriteState = _SpriteState;
-        m_SpellbookLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].Spellbook;
+        m_SpellbookLowRes.image.sprite = _Elements.Spellbook;
         m_SpellbookLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].AdventureOptionsPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].AdventureOptionsDisabled;
+        _SpriteState.pressedSprite = _Elements.AdventureOptionsPressed;
+        _SpriteState.disabledSprite = _Elements.AdventureOptionsDisabled;
 
-        m_AdventureOptionsHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].AdventureOptions;
-        m_AdventureOptionsHighRes.spriteState = _SpriteState;
-        m_AdventureOptionsLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].AdventureOptions;
+        m_ScenarioInfoHighRes.image.sprite = _Elements.AdventureOptions;
+        m_ScenarioInfoHighRes.spriteState = _SpriteState;
+        m_AdventureOptionsLowRes.image.sprite = _Elements.AdventureOptions;
         m_AdventureOptionsLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].SystemOptionsPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].SystemOptionsDisabled;
+        _SpriteState.pressedSprite = _Elements.SystemOptionsPressed;
+        _SpriteState.disabledSprite = _Elements.SystemOptionsDisabled;
 
-        m_SystemOptionsHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].SystemOptions;
+        m_SystemOptionsHighRes.image.sprite = _Elements.SystemOptions;
         m_SystemOptionsHighRes.spriteState = _SpriteState;
-        m_SystemOptionsLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].SystemOptions;
+        m_SystemOptionsLowRes.image.sprite = _Elements.SystemOptions;
         m_SystemOptionsLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].NextHeroPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].NextHeroDisabled;
+        _SpriteState.pressedSprite = _Elements.NextHeroPressed;
+        _SpriteState.disabledSprite = _Elements.NextHeroDisabled;
 
-        m_NextHeroHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].NextHero;
+        m_NextHeroHighRes.image.sprite = _Elements.NextHero;
         m_NextHeroHighRes.spriteState = _SpriteState;
-        m_NextHeroLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].NextHero;
+        m_NextHeroLowRes.image.sprite = _Elements.NextHero;
         m_NextHeroLowRes.spriteState = _SpriteState;
 
         _SpriteState = new SpriteState();
-        _SpriteState.pressedSprite = m_PlayerColors.Elements[PlayerIndex].EndTurnPressed;
-        _SpriteState.disabledSprite = m_PlayerColors.Elements[PlayerIndex].EndTurnDisabled;
+        _SpriteState.pressedSprite = _Elements.EndTurnPressed;
+        _SpriteState.disabledSprite = _Elements.EndTurnDisabled;
 
-        m_EndTurnHighRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].EndTurn;
+        m_EndTurnHighRes.image.sprite = _Elements.EndTurn;
         m_EndTurnHighRes.spriteState = _SpriteState;
-        m_EndTurnLowRes.image.sprite = m_PlayerColors.Elements[PlayerIndex].EndTurn;
+        m_EndTurnLowRes.image.sprite = _Elements.EndTurn;
         m_EndTurnLowRes.spriteState = _SpriteState;
+
+        m_LocalOwnership.OnHeroSelected += OnHeroSelected;
+        m_LocalOwnership.OnHeroDeselected += OnHeroDeselected;
+    }
+
+    void OnHeroSelected(MapHero a_Hero, int a_Index)
+    {
+        if (a_Hero.HasPath)
+        {
+            m_MoveHeroHighRes.interactable = true;
+            m_MoveHeroLowRes.interactable = true;
+        }
+
+        a_Hero.OnPathCreated += OnPathCreated;
+        a_Hero.OnPathRemoved += OnPathRemoved;
+
+        m_SelectedHero = a_Hero;
+    }
+
+    void OnHeroDeselected(MapHero a_Hero)
+    {
+        if (a_Hero != m_SelectedHero)
+        {
+            Debug.LogError($"!! EVENTS ARE BROKE");
+        }
+
+        a_Hero.OnPathCreated -= OnPathCreated;
+        a_Hero.OnPathRemoved -= OnPathRemoved;
+
+        m_MoveHeroHighRes.interactable = false;
+        m_MoveHeroLowRes.interactable = false;
+    }
+
+    void OnPathCreated()
+    {
+        m_MoveHeroHighRes.interactable = true;
+        m_MoveHeroLowRes.interactable = true;
+    }
+
+    void OnPathRemoved()
+    {
+        m_MoveHeroHighRes.interactable = false;
+        m_MoveHeroLowRes.interactable = false;
+    }
+
+    public void KingdomOverviewPressed()
+    {
+
+    }
+
+    public void UndergroundPressed()
+    {
+        m_Map.ShowUnderground(true);
+
+        m_OverworldHighRes.gameObject.SetActive(true);
+        m_OverworldLowRes.gameObject.SetActive(true);
+        m_UndergroundHighRes.gameObject.SetActive(false);
+        m_UndergroundLowRes.gameObject.SetActive(false);
+    }
+
+    public void OverworldPressed()
+    {
+        m_Map.ShowUnderground(false);
+
+        m_OverworldHighRes.gameObject.SetActive(false);
+        m_OverworldLowRes.gameObject.SetActive(false);
+        m_UndergroundHighRes.gameObject.SetActive(true);
+        m_UndergroundLowRes.gameObject.SetActive(true);
+    }
+
+    public void ViewWorldPressed()
+    {
+
+    }
+
+    public void ReplayOpponentTurnPressed()
+    {
+
+    }
+
+    public void ViewPuzzlePressed()
+    {
+
+    }
+
+    public void DigPressed()
+    {
+
+    }
+
+    public void QuestLogPressed()
+    {
+        // lol, this is never getting used
+    }
+
+    public void SleepHeroPressed()
+    {
+
+    }
+
+    public void WakeHeroPressed()
+    {
+
+    }
+
+    public void MoveHeroPressed()
+    {
+        // Not doing null checking, because the button should only be interactable if a hero is selected
+        m_LocalOwnership.SelectedHero.MoveToDestination();
+    }
+
+    public void SpellbookPressed()
+    {
+
+    }
+
+    public void AdventureOptionsPressed()
+    {
+
+    }
+
+    public void ScenarioInfoPressed()
+    {
+
+    }
+
+    public void SystemOptionsPressed()
+    {
+
+    }
+
+    public void NextHeroPressed()
+    {
+
+    }
+
+    public void EndTurnPressed()
+    {
+        // Networking, oooo
     }
 }

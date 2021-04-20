@@ -298,11 +298,17 @@ public class MouseInputManager : MonoBehaviour
                 }
                 else if (m_LocalOwnership.SelectedHero != null)
                 {
-                    m_LocalOwnership.SelectedHero?.OnLeftClick(_WorldMouseCoords.x, _WorldMouseCoords.y, m_HoveredObject);
+                    if (m_LocalOwnership.SelectedHero.IsMoving)
+                    {
+                        m_LocalOwnership.SelectedHero.CancelMovement();
+                    }
+                    else
+                    {
+                        m_LocalOwnership.SelectedHero.OnLeftClick(_WorldMouseCoords.x, _WorldMouseCoords.y, m_HoveredObject);
+                    }
                 }
                 else if (m_HoveredHero != null)
                 {
-
                     m_LocalOwnership.SelectHero(m_HoveredHero);
                 }
 
@@ -311,6 +317,17 @@ public class MouseInputManager : MonoBehaviour
         }
         else
         {
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (m_LocalOwnership.SelectedHero != null)
+                {
+                    if (m_LocalOwnership.SelectedHero.IsMoving)
+                    {
+                        m_LocalOwnership.SelectedHero.CancelMovement();
+                    }
+                }
+            }
+
             m_UpdateCursor = true;
             CursorManager.ResetCursor();
         }
