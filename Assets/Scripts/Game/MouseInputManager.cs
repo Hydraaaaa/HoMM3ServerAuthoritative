@@ -181,8 +181,8 @@ public class MouseInputManager : MonoBehaviour
                             {
                                 m_HoveredObject = _Objects[i];
 
-                                int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(_Objects[i].transform.position.x - _WorldMousePos.x), 0, 7);
-                                int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - _Objects[i].transform.position.y), 0, 5);
+                                int _XIndex = 8 - Mathf.Clamp(Mathf.CeilToInt(_Objects[i].transform.position.x - _WorldMousePos.x), 0, 7);
+                                int _YIndex = 6 - Mathf.Clamp(Mathf.CeilToInt(_WorldMousePos.y - _Objects[i].transform.position.y), 0, 5);
 
                                 // If the cursor is specifically on the castle's entrance, horse rear cursor
                                 if (_SelectedHero != null &&
@@ -223,8 +223,8 @@ public class MouseInputManager : MonoBehaviour
                             // If the mouse is on an interaction tile, horse rear cursor
                             if (_Objects.Count > 0)
                             {
-                                int _XIndex = 7 - Mathf.Clamp(Mathf.FloorToInt(_Objects[0].transform.position.x - _WorldMousePos.x), 0, 7);
-                                int _YIndex = 5 - Mathf.Clamp(Mathf.FloorToInt(_WorldMousePos.y - _Objects[0].transform.position.y), 0, 5);
+                                int _XIndex = 8 - Mathf.Clamp(Mathf.CeilToInt(_Objects[0].transform.position.x - _WorldMousePos.x), 0, 7);
+                                int _YIndex = 6 - Mathf.Clamp(Mathf.CeilToInt(_WorldMousePos.y - _Objects[0].transform.position.y), 0, 5);
 
                                 if ((_Objects[0].InteractionCollision[_YIndex] & 1 << _XIndex) != 0)
                                 {
