@@ -2739,6 +2739,7 @@ MonoBehaviour:
     type: 3}
   m_Pathfinding: {fileID: 544584114}
   m_LocalOwnership: {fileID: 544584116}
+  m_SidebarButtons: {fileID: 1487210312}
   m_GameReferences: {fileID: 616975844}
   m_OverworldTerrainRoot: {fileID: 989251728}
   m_UndergroundTerrainRoot: {fileID: 1858009423}
@@ -9772,6 +9773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GameSettings: {fileID: 11400000, guid: cfb906994ecd34b42a19ad33bfdf39cd, type: 2}
   m_LocalOwnership: {fileID: 544584116}
+  m_Map: {fileID: 544584113}
 --- !u!1 &1622098603
 GameObject:
   m_ObjectHideFlags: 0
