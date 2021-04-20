@@ -285,8 +285,12 @@ public class SidebarButtons : MonoBehaviour
 
     public void MoveHeroPressed()
     {
+        MapHero _SelectedHero = m_LocalOwnership.SelectedHero;
+
+        m_Map.ShowUnderground(_SelectedHero.IsUnderground);
+
         // Not doing null checking, because the button should only be interactable if a hero is selected
-        m_LocalOwnership.SelectedHero.MoveToDestination();
+        _SelectedHero.MoveToDestination();
     }
 
     public void SpellbookPressed()
