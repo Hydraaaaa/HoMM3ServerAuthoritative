@@ -487,8 +487,8 @@ public class MapHero : MapObjectBase
         for (int i = 0; i < m_Path.Count; i++)
         {
             Vector3 _Position = new Vector3(m_Path[i].PosX, -m_Path[i].PosY, 0);
-            SpriteRenderer _Node = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity, transform);
-            SpriteRenderer _NodeShadow = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity, transform);
+            SpriteRenderer _Node = Instantiate(m_PathNodePrefab, _Position, Quaternion.identity, transform.parent);
+            SpriteRenderer _NodeShadow = Instantiate(m_PathNodeShadowPrefab, _Position, Quaternion.identity, transform.parent);
 
             Vector2Int _PreviousNodePos;
             Vector2Int _NextNodePos;
