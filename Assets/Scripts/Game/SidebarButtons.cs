@@ -181,6 +181,9 @@ public class SidebarButtons : MonoBehaviour
 
         m_LocalOwnership.OnHeroSelected += OnHeroSelected;
         m_LocalOwnership.OnHeroDeselected += OnHeroDeselected;
+
+        m_UndergroundHighRes.interactable = m_GameSettings.Scenario.HasUnderground;
+        m_UndergroundLowRes.interactable = m_GameSettings.Scenario.HasUnderground;
     }
 
     void OnHeroSelected(MapHero a_Hero, int a_Index)
