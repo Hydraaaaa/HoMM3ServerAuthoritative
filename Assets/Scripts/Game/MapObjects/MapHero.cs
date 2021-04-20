@@ -38,8 +38,6 @@ public class MapHero : MapObjectBase
     [SerializeField] SpriteRenderer m_PathNodeShadowPrefab;
     [SerializeField] Sprite[] m_PathSprites;
 
-    GameReferences m_GameReferences;
-
     int m_Direction = DIRECTION_E;
 
     int m_LocalPathfindingVersion;
