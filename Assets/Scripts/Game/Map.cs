@@ -23,6 +23,7 @@ public class Map : MonoBehaviour
     [SerializeField] MapMonster m_MapMonsterPrefab;
     [SerializeField] Pathfinding m_Pathfinding;
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] SidebarButtons m_SidebarButtons;
     [SerializeField] GameReferences m_GameReferences;
 
     [Space]
@@ -522,5 +523,7 @@ public class Map : MonoBehaviour
     {
         m_OverworldTerrainRoot.gameObject.SetActive(!a_Show);
         m_UndergroundTerrainRoot.gameObject.SetActive(a_Show);
+
+        m_SidebarButtons.SetUndergroundButton(a_Show);
     }
 }

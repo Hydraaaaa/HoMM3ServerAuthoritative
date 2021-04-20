@@ -289,6 +289,11 @@ public class SidebarButtons : MonoBehaviour
 
         m_Map.ShowUnderground(_SelectedHero.IsUnderground);
 
+        m_OverworldHighRes.gameObject.SetActive(_SelectedHero.IsUnderground);
+        m_OverworldLowRes.gameObject.SetActive(_SelectedHero.IsUnderground);
+        m_UndergroundHighRes.gameObject.SetActive(!_SelectedHero.IsUnderground);
+        m_UndergroundLowRes.gameObject.SetActive(!_SelectedHero.IsUnderground);
+
         // Not doing null checking, because the button should only be interactable if a hero is selected
         _SelectedHero.MoveToDestination();
     }
@@ -321,5 +326,13 @@ public class SidebarButtons : MonoBehaviour
     public void EndTurnPressed()
     {
         // Networking, oooo
+    }
+
+    public void SetUndergroundButton(bool a_IsUnderground)
+    {
+        m_OverworldHighRes.gameObject.SetActive(a_IsUnderground);
+        m_OverworldLowRes.gameObject.SetActive(a_IsUnderground);
+        m_UndergroundHighRes.gameObject.SetActive(!a_IsUnderground);
+        m_UndergroundLowRes.gameObject.SetActive(!a_IsUnderground);
     }
 }

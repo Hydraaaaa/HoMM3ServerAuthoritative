@@ -6,6 +6,7 @@ public class CameraControl : MonoBehaviour
 {
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] Map m_Map;
 
     bool m_Active;
 
@@ -115,6 +116,8 @@ public class CameraControl : MonoBehaviour
 
     void OnHeroSelected(MapHero a_Hero, int a_Index)
     {
+        m_Map.ShowUnderground(a_Hero.IsUnderground);
+
         transform.position = new Vector3
         (
             a_Hero.transform.position.x - 1.5f,
@@ -125,6 +128,8 @@ public class CameraControl : MonoBehaviour
 
     void OnTownSelected(MapTown a_Town, int a_Index)
     {
+        m_Map.ShowUnderground(a_Town.IsUnderground);
+
         transform.position = new Vector3
         (
             a_Town.transform.position.x - 2.5f,
