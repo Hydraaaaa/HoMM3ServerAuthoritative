@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -323,7 +324,28 @@ public class SidebarButtons : MonoBehaviour
 
     public void NextHeroPressed()
     {
+        List<MapHero> _Heroes = m_LocalOwnership.GetHeroes();
 
+        if (_Heroes.Count == 0)
+        {
+            return;
+        }
+
+        if (m_LocalOwnership.SelectedHero == null)
+        {
+            m_LocalOwnership.SelectHero(_Heroes[0]);
+        }
+        else
+        {
+            int _Index = _Heroes.IndexOf(m_LocalOwnership.SelectedHero) + 1;
+
+            if (_Index == _Heroes.Count)
+            {
+                _Index = 0;
+            }
+
+            m_LocalOwnership.SelectHero(_Heroes[_Index]);
+        }
     }
 
     public void EndTurnPressed()
