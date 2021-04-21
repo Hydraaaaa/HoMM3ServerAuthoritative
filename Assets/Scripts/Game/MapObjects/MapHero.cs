@@ -19,6 +19,7 @@ public class MapHero : MapObjectBase
     public int PlayerIndex { get; private set; }
     public bool IsUnderground { get; private set; }
     public bool IsPrison { get; private set; }
+    public bool IsAsleep { get; set; }
 
     public DynamicMapObstacle DynamicObstacle => m_DynamicObstacle;
 
@@ -62,6 +63,7 @@ public class MapHero : MapObjectBase
     public bool HasPath { get; private set; }
     public event Action OnPathCreated;
     public event Action OnPathRemoved;
+    public event Action OnStartMovement;
 
     public void Initialize(Hero a_Hero, int a_PlayerIndex, int a_PosX, int a_PosY, bool a_IsUnderground, GameReferences a_GameReferences)
     {
@@ -275,6 +277,8 @@ public class MapHero : MapObjectBase
             yield break;
         }
 
+        IsAsleep = false;
+
         m_StopMovement = false;
 
         IsMoving = true;
@@ -350,6 +354,8 @@ public class MapHero : MapObjectBase
         }
 
         SetDirection();
+
+        OnStartMovement?.Invoke();
 
         // We don't check IsMoving here, because when cancelled, we still want to finish walking to the next tile
         while (true)
@@ -738,5 +744,21 @@ public class MapHero : MapObjectBase
     public void CancelMovement()
     {
         m_StopMovement = true;
+    }
+
+    public void ClearPath()
+    {
+        for (int i = 0; i < m_PathNodes.Count; i++)
+        {
+            Destroy(m_PathNodes[i].gameObject);
+            Destroy(m_PathNodeShadows[i].gameObject);
+        }
+
+        m_PathNodes.Clear();
+        m_PathNodeShadows.Clear();
+
+        m_TargetNodeIndex = -1;
+        HasPath = false;
+        OnPathRemoved?.Invoke();
     }
 }

@@ -182,6 +182,7 @@ public class SidebarButtons : MonoBehaviour
 
         m_LocalOwnership.OnHeroSelected += OnHeroSelected;
         m_LocalOwnership.OnHeroDeselected += OnHeroDeselected;
+        m_LocalOwnership.OnHeroRemoved += OnHeroRemoved;
 
         m_UndergroundHighRes.interactable = m_GameSettings.Scenario.HasUnderground;
         m_UndergroundLowRes.interactable = m_GameSettings.Scenario.HasUnderground;
@@ -197,8 +198,22 @@ public class SidebarButtons : MonoBehaviour
 
         a_Hero.OnPathCreated += OnPathCreated;
         a_Hero.OnPathRemoved += OnPathRemoved;
+        a_Hero.OnStartMovement += OnStartMovement;
 
         m_SelectedHero = a_Hero;
+
+        m_SleepHeroHighRes.interactable = true;
+        m_SleepHeroLowRes.interactable = true;
+        m_WakeHeroHighRes.interactable = true;
+        m_WakeHeroLowRes.interactable = true;
+
+        m_SpellbookHighRes.interactable = true;
+        m_SpellbookLowRes.interactable = true;
+
+        m_SleepHeroHighRes.gameObject.SetActive(!a_Hero.IsAsleep);
+        m_SleepHeroLowRes.gameObject.SetActive(!a_Hero.IsAsleep);
+        m_WakeHeroHighRes.gameObject.SetActive(a_Hero.IsAsleep);
+        m_WakeHeroLowRes.gameObject.SetActive(a_Hero.IsAsleep);
     }
 
     void OnHeroDeselected(MapHero a_Hero)
@@ -210,9 +225,23 @@ public class SidebarButtons : MonoBehaviour
 
         a_Hero.OnPathCreated -= OnPathCreated;
         a_Hero.OnPathRemoved -= OnPathRemoved;
+        a_Hero.OnStartMovement -= OnStartMovement;
 
         m_MoveHeroHighRes.interactable = false;
         m_MoveHeroLowRes.interactable = false;
+
+        m_SleepHeroHighRes.interactable = false;
+        m_SleepHeroLowRes.interactable = false;
+        m_WakeHeroHighRes.interactable = false;
+        m_WakeHeroLowRes.interactable = false;
+
+        m_SpellbookHighRes.interactable = false;
+        m_SpellbookLowRes.interactable = false;
+    }
+
+    void OnHeroRemoved(MapHero a_Hero)
+    {
+        UpdateNextHeroButton();
     }
 
     void OnPathCreated()
@@ -225,6 +254,14 @@ public class SidebarButtons : MonoBehaviour
     {
         m_MoveHeroHighRes.interactable = false;
         m_MoveHeroLowRes.interactable = false;
+    }
+
+    void OnStartMovement()
+    {
+        m_SleepHeroHighRes.gameObject.SetActive(true);
+        m_SleepHeroLowRes.gameObject.SetActive(true);
+        m_WakeHeroHighRes.gameObject.SetActive(false);
+        m_WakeHeroLowRes.gameObject.SetActive(false);
     }
 
     public void KingdomOverviewPressed()
@@ -279,12 +316,39 @@ public class SidebarButtons : MonoBehaviour
 
     public void SleepHeroPressed()
     {
+        MapHero _SelectedHero = m_LocalOwnership.SelectedHero;
 
+        if (_SelectedHero != null)
+        {
+            _SelectedHero.IsAsleep = true;
+        }
+
+        m_SleepHeroHighRes.gameObject.SetActive(false);
+        m_SleepHeroLowRes.gameObject.SetActive(false);
+        m_WakeHeroHighRes.gameObject.SetActive(true);
+        m_WakeHeroLowRes.gameObject.SetActive(true);
+
+        _SelectedHero.ClearPath();
+
+        NextHeroPressed();
+        UpdateNextHeroButton();
     }
 
     public void WakeHeroPressed()
     {
+        MapHero _SelectedHero = m_LocalOwnership.SelectedHero;
 
+        if (_SelectedHero != null)
+        {
+            _SelectedHero.IsAsleep = false;
+        }
+
+        m_SleepHeroHighRes.gameObject.SetActive(true);
+        m_SleepHeroLowRes.gameObject.SetActive(true);
+        m_WakeHeroHighRes.gameObject.SetActive(false);
+        m_WakeHeroLowRes.gameObject.SetActive(false);
+
+        UpdateNextHeroButton();
     }
 
     public void MoveHeroPressed()
@@ -337,14 +401,29 @@ public class SidebarButtons : MonoBehaviour
         }
         else
         {
-            int _Index = _Heroes.IndexOf(m_LocalOwnership.SelectedHero) + 1;
+            int _StartingIndex = _Heroes.IndexOf(m_LocalOwnership.SelectedHero);
+            int _Index = _StartingIndex + 1;
 
             if (_Index == _Heroes.Count)
             {
                 _Index = 0;
             }
 
-            m_LocalOwnership.SelectHero(_Heroes[_Index]);
+            while (_Index != _StartingIndex)
+            {
+                if (!_Heroes[_Index].IsAsleep)
+                {
+                    m_LocalOwnership.SelectHero(_Heroes[_Index]);
+                    break;
+                }
+
+                _Index++;
+
+                if (_Index == _Heroes.Count)
+                {
+                    _Index = 0;
+                }
+            }
         }
     }
 
@@ -359,5 +438,24 @@ public class SidebarButtons : MonoBehaviour
         m_OverworldLowRes.gameObject.SetActive(a_IsUnderground);
         m_UndergroundHighRes.gameObject.SetActive(!a_IsUnderground);
         m_UndergroundLowRes.gameObject.SetActive(!a_IsUnderground);
+    }
+
+    void UpdateNextHeroButton()
+    {
+        List<MapHero> _Heroes = m_LocalOwnership.GetHeroes();
+
+        bool _Show = false;
+
+        for (int i = 0; i < _Heroes.Count; i++)
+        {
+            if (!_Heroes[i].IsAsleep)
+            {
+                _Show = true;
+                break;
+            }
+        }
+
+        m_NextHeroHighRes.interactable = _Show;
+        m_NextHeroLowRes.interactable = _Show;
     }
 }
