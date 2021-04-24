@@ -18,7 +18,7 @@ public class GameSettings : ScriptableObject
         public bool SetMapHero;
 
         public Faction Faction;
-        [SerializeReference] public Hero Hero;
+        public Hero Hero;
         public StartingBonus StartingBonus;
     }
 
