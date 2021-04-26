@@ -26,7 +26,6 @@ public class MapGarrison : MapObjectBase
             _ColorIndex = 8;
         }
 
-        Debug.Log($"!! Garrison");
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[_ColorIndex]);
 
         var _Operation = Addressables.LoadAssetAsync<MapObjectVisualData>($"MapObjects/{gameObject.name}.asset");
