@@ -11,6 +11,7 @@ public class GameScreenScaler : MonoBehaviour
     [SerializeField] Camera m_Camera;
     [SerializeField] GameObject m_Sidebar;
     [SerializeField] GameObject m_SidebarSmall;
+    [SerializeField] RectTransform m_InfoCards;
 
     void Update()
     {
@@ -28,11 +29,13 @@ public class GameScreenScaler : MonoBehaviour
         {
             m_Sidebar.SetActive(true);
             m_SidebarSmall.SetActive(false);
+            m_InfoCards.anchoredPosition = new Vector2(-10, -464);
         }
         else
         {
             m_Sidebar.SetActive(false);
             m_SidebarSmall.SetActive(true);
+            m_InfoCards.anchoredPosition = new Vector2(-10, -400);
         }
 
         m_Camera.orthographicSize = _Height / 64.0f;
