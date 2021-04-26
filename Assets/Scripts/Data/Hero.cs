@@ -9,14 +9,16 @@ public class Hero
     public Faction Faction;
     public HeroVisualData HeroVisualData;
 
-    public Sprite Portrait;
+    public Sprite SmallPortrait;
+    public Sprite LargePortrait;
 
     public Hero()
     {
         Name = "";
         ID = 0;
         Faction = null;
-        Portrait = null;
+        SmallPortrait = null;
+        LargePortrait = null;
     }
 
     public Hero(Hero a_Copy)
@@ -25,6 +27,7 @@ public class Hero
         ID = a_Copy.ID;
         Faction = a_Copy.Faction;
         HeroVisualData = a_Copy.HeroVisualData;
-        Portrait = a_Copy.Portrait;
+        SmallPortrait = a_Copy.SmallPortrait;
+        LargePortrait = a_Copy.LargePortrait;
     }
 }

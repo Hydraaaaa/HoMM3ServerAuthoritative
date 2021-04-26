@@ -17,4 +17,5 @@ MonoBehaviour:
     ID: 122
     Faction: {fileID: 11400000, guid: 3bf1083f62ea53d4792afa54a3a87564, type: 2}
     HeroVisualData: {fileID: 11400000, guid: 03ab367a4c06d554d92cbfcb94fe98ab, type: 2}
-    Portrait: {fileID: 21300000, guid: c59f6e09cacd55248b0e0ac35b5a6112, type: 3}
+    SmallPortrait: {fileID: 21300000, guid: c59f6e09cacd55248b0e0ac35b5a6112, type: 3}
+    LargePortrait: {fileID: 21300000, guid: 0c0787cbbdcab784da940351b6043abe, type: 3}

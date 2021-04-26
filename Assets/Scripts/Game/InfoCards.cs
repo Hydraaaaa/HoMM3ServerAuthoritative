@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InfoCards : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class InfoCards : MonoBehaviour
     [SerializeField] GameObject m_HeroCard;
     [SerializeField] GameObject m_TownCard;
     [SerializeField] GameObject m_InfoCard;
+
+    [SerializeField] Image m_HeroImage;
 
     void Awake()
     {
@@ -25,6 +28,7 @@ public class InfoCards : MonoBehaviour
     void OnHeroSelected(MapHero a_Hero, int a_Index)
     {
         m_HeroCard.SetActive(true);
+        m_HeroImage.sprite = a_Hero.Hero.LargePortrait;
         m_InfoCard.SetActive(false);
     }
 

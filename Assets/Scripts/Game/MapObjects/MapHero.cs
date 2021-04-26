@@ -151,11 +151,14 @@ public class MapHero : MapObjectBase
 
         if (a_ScenarioObject.Hero.Portrait != 255)
         {
-            Hero.Portrait = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_ScenarioObject.Hero.Portrait).Hero.Portrait;
+            Hero _Hero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_ScenarioObject.Hero.Portrait).Hero;
+            Hero.SmallPortrait = _Hero.SmallPortrait;
+            Hero.LargePortrait = _Hero.LargePortrait;
         }
         else
         {
-            Hero.Portrait = _BaseHero.Portrait;
+            Hero.SmallPortrait = _BaseHero.SmallPortrait;
+            Hero.LargePortrait = _BaseHero.LargePortrait;
         }
 
         if (!_ClaimedMainHero)

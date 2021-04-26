@@ -44,7 +44,7 @@ public class OwnershipUI : MonoBehaviour
     {
         int _HeroCount = m_LocalOwnership.GetHeroCount();
 
-        m_HeroImages[_HeroCount - 1].sprite = a_Hero.Hero.Portrait;
+        m_HeroImages[_HeroCount - 1].sprite = a_Hero.Hero.SmallPortrait;
         m_HeroImages[_HeroCount - 1].gameObject.SetActive(true);
 
         UpdateHeroDisplayLowRes();
@@ -56,7 +56,7 @@ public class OwnershipUI : MonoBehaviour
 
         for (int i = 0; i < _Heroes.Count; i++)
         {
-            m_HeroImages[i].sprite = _Heroes[i].Hero.Portrait;
+            m_HeroImages[i].sprite = _Heroes[i].Hero.SmallPortrait;
             m_HeroImages[i].gameObject.SetActive(true);
         }
 
@@ -203,7 +203,7 @@ public class OwnershipUI : MonoBehaviour
         {
             if (i < _Heroes.Count)
             {
-                m_HeroImagesLowRes[i].sprite = _Heroes[i + m_HeroUIIndexLowRes].Hero.Portrait;
+                m_HeroImagesLowRes[i].sprite = _Heroes[i + m_HeroUIIndexLowRes].Hero.SmallPortrait;
                 m_HeroImagesLowRes[i].gameObject.SetActive(true);
             }
             else

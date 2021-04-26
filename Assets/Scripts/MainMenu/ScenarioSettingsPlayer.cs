@@ -157,7 +157,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
                 Hero _PortraitHero = m_Heroes.Heroes.First((a_Hero) => a_Hero.Hero.ID == a_PlayerInfo.MainHeroPortrait).Hero;
 
                 m_HeroText.text = a_PlayerInfo.MainHeroName;
-                m_HeroImage.sprite = _PortraitHero.Portrait;
+                m_HeroImage.sprite = _PortraitHero.SmallPortrait;
 
                 m_CustomHero = new Hero();
 
@@ -172,7 +172,8 @@ public class ScenarioSettingsPlayer : MonoBehaviour
 
                 m_CustomHero.ID = a_PlayerInfo.MainHeroType;
                 m_CustomHero.Faction = _BaseHero.Faction;
-                m_CustomHero.Portrait = _PortraitHero.Portrait;
+                m_CustomHero.SmallPortrait = _PortraitHero.SmallPortrait;
+                m_CustomHero.LargePortrait = _PortraitHero.LargePortrait;
 
                 HeroPool.ClaimHero(_BaseHero);
 
@@ -363,7 +364,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             }
             else
             {
-                m_HeroImage.sprite = m_AvailableHeroes[m_CurrentHeroIndex].Portrait;
+                m_HeroImage.sprite = m_AvailableHeroes[m_CurrentHeroIndex].SmallPortrait;
                 m_HeroText.text = m_AvailableHeroes[m_CurrentHeroIndex].Name;
             }
         }
@@ -372,7 +373,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
             if (m_CustomHero != null)
             {
                 m_HeroText.text = m_CustomHero.Name;
-                m_HeroImage.sprite = m_CustomHero.Portrait;
+                m_HeroImage.sprite = m_CustomHero.SmallPortrait;
             }
             else
             {
