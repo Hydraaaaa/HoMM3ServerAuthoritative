@@ -1402,11 +1402,16 @@ public class H3MImporter : EditorWindow
                             _CurrentByte += 9;
                         }
 
-                        bool _hasCustomPrimarySkills = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
+                        _Object.Hero.HasCustomPrimarySkills = BitConverter.ToBoolean(a_Bytes, _CurrentByte);
                         _CurrentByte += 1;
 
-                        if (_hasCustomPrimarySkills)
+                        if (_Object.Hero.HasCustomPrimarySkills)
                         {
+                            _Object.Hero.Attack = a_Bytes[_CurrentByte];
+                            _Object.Hero.Defense = a_Bytes[_CurrentByte + 1];
+                            _Object.Hero.Spellpower = a_Bytes[_CurrentByte + 2];
+                            _Object.Hero.Knowledge = a_Bytes[_CurrentByte + 3];
+
                             _CurrentByte += 4;
                         }
 

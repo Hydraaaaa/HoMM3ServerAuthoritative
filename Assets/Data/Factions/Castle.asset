@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Castle
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: b9e72415c9da6f04383b1ac8cc07c837, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: d3ee94fee826d8d4ebf9b8000b844fde, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 2eb9c601cffe90649aa04fed2c5cae45, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 008ea7ff066cd7b4482b332e09baaca6,
+  m_TownSpriteSmall: {fileID: 21300000, guid: b9e72415c9da6f04383b1ac8cc07c837, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: d3ee94fee826d8d4ebf9b8000b844fde,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 2eb9c601cffe90649aa04fed2c5cae45,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: 008ea7ff066cd7b4482b332e09baaca6,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: 390776dd777b26941bced5ddaeeb600a, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: 4957e8f34e64cb041a583f6929870acc,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: 4f6fef6796404d2479a6c411152c848a,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: 06a5365632c76ad49bc1d59994b3b5d4,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: 17e8909dcdb500348b7b2e300f567679, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 50fd9f760fbb95e45993de56e6bab28a,

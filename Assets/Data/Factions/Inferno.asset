@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Inferno
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: 24ab4bd00629653468b361b3ee820de5, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: 09cccef2ef87f924bbe0a90ba9dd69f6, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 208166d679b07b345856127c472a03cf, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 71a603a5b72bd6a42b9e377989c238db,
+  m_TownSpriteSmall: {fileID: 21300000, guid: 24ab4bd00629653468b361b3ee820de5, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: 09cccef2ef87f924bbe0a90ba9dd69f6,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 208166d679b07b345856127c472a03cf,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: 71a603a5b72bd6a42b9e377989c238db,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: 1cbe6fb6c2b58e545a352a2e68114ecc, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: 9e67e7a1bea4955429bc079197a37f2a,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: ed56b30c29abe074287f28d21b6af496,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: d463f41a11f5cb1438784bab1124700a,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: 481da3786d3df5d4da652497bb6fbfcf, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 9cb99df22f2a62549b74c70d7deb442b,

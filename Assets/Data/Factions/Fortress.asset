@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Fortress
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: 4998edbad85a1964db4513c589892888, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: 8607e2001fbec564f991e6cf8ab0720c, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 617c2c87d6613f143ab5fbb6bb2b4f49, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 9dc6e5eb26dcc694b953b8b15d4af982,
+  m_TownSpriteSmall: {fileID: 21300000, guid: 4998edbad85a1964db4513c589892888, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: 8607e2001fbec564f991e6cf8ab0720c,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 617c2c87d6613f143ab5fbb6bb2b4f49,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: 9dc6e5eb26dcc694b953b8b15d4af982,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: ae577b25af7516f43a9425f4cd7dd64f, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: 423c1ad5a99105d4985e7cc8d2c57aa5,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: bdf8f7cb4fed7f647a07e91849413be3,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: 5eda45a8711b37440b05ed14b80e5267,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: 73fb96c664db35b43b880e9880763ac9, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 5cd61baa23cb6414092488b15b73577a,

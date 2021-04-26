@@ -1,14 +1,21 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Heroes 3/Faction")]
 public class Faction : ScriptableObject
 {
-    public Sprite TownSprite => m_TownSprite;
-    public Sprite TownBuiltSprite => m_TownBuiltSprite;
+    public Sprite TownSpriteSmall => m_TownSpriteSmall;
+    public Sprite TownBuiltSpriteSmall => m_TownBuiltSpriteSmall;
 
-    public Sprite TownNoFortSprite => m_TownNoFortSprite;
-    public Sprite TownNoFortBuiltSprite => m_TownNoFortBuiltSprite;
+    public Sprite TownNoFortSpriteSmall => m_TownNoFortSpriteSmall;
+    public Sprite TownNoFortBuiltSpriteSmall => m_TownNoFortBuiltSpriteSmall;
+
+    public Sprite TownSpriteLarge => m_TownSpriteLarge;
+    public Sprite TownBuiltSpriteLarge => m_TownBuiltSpriteLarge;
+
+    public Sprite TownNoFortSpriteLarge => m_TownNoFortSpriteLarge;
+    public Sprite TownNoFortBuiltSpriteLarge => m_TownNoFortBuiltSpriteLarge;
 
     public MapObjectVisualData MapVisualData => m_MapVisualData;
     public MapObjectVisualData MapVisualDataCapitol => m_MapVisualDataCapitol;
@@ -16,11 +23,17 @@ public class Faction : ScriptableObject
 
     public List<HeroContainer> Heroes => m_Heroes;
 
-    [SerializeField] Sprite m_TownSprite;
-    [SerializeField] Sprite m_TownBuiltSprite;
+    [SerializeField] Sprite m_TownSpriteSmall;
+    [SerializeField] Sprite m_TownBuiltSpriteSmall;
 
-    [SerializeField] Sprite m_TownNoFortSprite;
-    [SerializeField] Sprite m_TownNoFortBuiltSprite;
+    [SerializeField] Sprite m_TownNoFortSpriteSmall;
+    [SerializeField] Sprite m_TownNoFortBuiltSpriteSmall;
+
+    [SerializeField] Sprite m_TownSpriteLarge;
+    [SerializeField] Sprite m_TownBuiltSpriteLarge;
+
+    [SerializeField] Sprite m_TownNoFortSpriteLarge;
+    [SerializeField] Sprite m_TownNoFortBuiltSpriteLarge;
 
     [Space]
 

@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Tower
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: 8b3f09ec41362764a81a80d6bb5e844a, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: d27f4bf6cac4fcd4aa0de7a2589c7e72, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 0ae961f525afbb5459f0211d5c2eda81, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 25085f4cf2750ca448b959d6c7fcef03,
+  m_TownSpriteSmall: {fileID: 21300000, guid: 8b3f09ec41362764a81a80d6bb5e844a, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: d27f4bf6cac4fcd4aa0de7a2589c7e72,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 0ae961f525afbb5459f0211d5c2eda81,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: 25085f4cf2750ca448b959d6c7fcef03,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: 027bbc1e106cbf3428a51e8d50794ba3, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: 9a36949cd77d6a54cb051a4e926a2355,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: 94f8a13fa0cf1bc4cbce15aafb2b5d5d,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: 501ebee64549c8b4aa1cdf06a823c534,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: 2db04e6f8c283f342be459a587f85849, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 70e9ec4a251a1d84db1445c19d694a96,

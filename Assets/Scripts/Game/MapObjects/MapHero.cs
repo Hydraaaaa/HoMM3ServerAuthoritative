@@ -161,6 +161,21 @@ public class MapHero : MapObjectBase
             Hero.LargePortrait = _BaseHero.LargePortrait;
         }
 
+        if (a_ScenarioObject.Hero.HasCustomPrimarySkills)
+        {
+            Hero.Attack = a_ScenarioObject.Hero.Attack;
+            Hero.Defense = a_ScenarioObject.Hero.Defense;
+            Hero.Spellpower = a_ScenarioObject.Hero.Spellpower;
+            Hero.Knowledge = a_ScenarioObject.Hero.Knowledge;
+        }
+        else
+        {
+            Hero.Attack = _BaseHero.Attack;
+            Hero.Defense = _BaseHero.Defense;
+            Hero.Spellpower = _BaseHero.Spellpower;
+            Hero.Knowledge = _BaseHero.Knowledge;
+        }
+
         if (!_ClaimedMainHero)
         {
             HeroPool.ClaimHero(Hero);

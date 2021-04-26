@@ -128,6 +128,13 @@ public class ScenarioObjectHero
     public byte ID;
     public string Name = "";
     public byte Portrait;
+
+    public bool HasCustomPrimarySkills;
+
+    public byte Attack;
+    public byte Defense;
+    public byte Spellpower;
+    public byte Knowledge;
 }
 
 [Serializable]

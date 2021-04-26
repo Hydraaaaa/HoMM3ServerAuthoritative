@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Rampart
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: befd6d3e81a7165478a49b684f36d325, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: 7a7594e1b9d67d94ba4b55162a03a4f4, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 25eb643e7de3efa4a95b762ccceaac6c, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: 441462f8e4760074ca3a1aa1d978b5dc,
+  m_TownSpriteSmall: {fileID: 21300000, guid: befd6d3e81a7165478a49b684f36d325, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: 7a7594e1b9d67d94ba4b55162a03a4f4,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 25eb643e7de3efa4a95b762ccceaac6c,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: 441462f8e4760074ca3a1aa1d978b5dc,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: 78fa5b0545952fb42a7dc4948aa0948e, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: faacad7221537ce47b0f0ce3adc9de01,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: c227be93e49ca5444969590269a4fd69,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: a9b14fa4ef42bbd48b78249bb4a9819b,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: 4e1c8c54d6ae39446b17a41da195c91c, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: fc345a16707cc594e9d9b00679c1ed81,

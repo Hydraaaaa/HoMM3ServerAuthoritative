@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Necropolis
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: 379999744aa2bf344a43fa59dea58d45, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: 0ba6be3b791df6448956650bdf256a5e, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 7ea7724b8a73dc1458d4dfff9ae64b04, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: da9267488bd4ab84e83f9e5ba9eebb8a,
+  m_TownSpriteSmall: {fileID: 21300000, guid: 379999744aa2bf344a43fa59dea58d45, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: 0ba6be3b791df6448956650bdf256a5e,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 7ea7724b8a73dc1458d4dfff9ae64b04,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: da9267488bd4ab84e83f9e5ba9eebb8a,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: 96e5afb130ebf2c4493a19a068d8595d, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: cb055deb2e87c1949be33ee8b0e4e362,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: 44210fbfa0f37b342a357ca29a382844,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: 64b5b40dc9b36804ca5ba78e5119bde5,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: d929db9cabe1dc34b9f7ac61b1134149, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 74868e22350050540aff04f1f5a44d84,

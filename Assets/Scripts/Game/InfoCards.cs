@@ -12,6 +12,13 @@ public class InfoCards : MonoBehaviour
     [SerializeField] GameObject m_InfoCard;
 
     [SerializeField] Image m_HeroImage;
+    [SerializeField] Text m_HeroName;
+    [SerializeField] Text m_HeroAttack;
+    [SerializeField] Text m_HeroDefense;
+    [SerializeField] Text m_HeroSpellpower;
+    [SerializeField] Text m_HeroKnowledge;
+
+    [SerializeField] Image m_TownImage;
 
     void Awake()
     {
@@ -28,8 +35,15 @@ public class InfoCards : MonoBehaviour
     void OnHeroSelected(MapHero a_Hero, int a_Index)
     {
         m_HeroCard.SetActive(true);
-        m_HeroImage.sprite = a_Hero.Hero.LargePortrait;
         m_InfoCard.SetActive(false);
+
+        m_HeroImage.sprite = a_Hero.Hero.LargePortrait;
+        m_HeroName.text = a_Hero.Hero.Name;
+
+        m_HeroAttack.text = a_Hero.Hero.Attack.ToString();
+        m_HeroDefense.text = a_Hero.Hero.Defense.ToString();
+        m_HeroKnowledge.text = a_Hero.Hero.Knowledge.ToString();
+        m_HeroSpellpower.text = a_Hero.Hero.Spellpower.ToString();
     }
 
     void OnHeroDeselected(MapHero a_Hero)
@@ -42,6 +56,8 @@ public class InfoCards : MonoBehaviour
     {
         m_TownCard.SetActive(true);
         m_InfoCard.SetActive(false);
+
+        m_TownImage.sprite = a_Town.Faction.TownSpriteLarge;
     }
 
     void OnTownDeselected(MapTown a_Town)

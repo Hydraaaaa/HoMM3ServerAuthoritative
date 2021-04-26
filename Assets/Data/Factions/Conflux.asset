@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a207d65c1662a45a53a27b168f4ae4, type: 3}
   m_Name: Conflux
   m_EditorClassIdentifier: 
-  m_TownSprite: {fileID: 21300000, guid: 92a4072b7998b2f40bebd419746029c5, type: 3}
-  m_TownBuiltSprite: {fileID: 21300000, guid: 7c1cae178e95f484f80c45ee8d870f40, type: 3}
-  m_TownNoFortSprite: {fileID: 21300000, guid: 67447edb36f99d84d98b32db8f617a1e, type: 3}
-  m_TownNoFortBuiltSprite: {fileID: 21300000, guid: aa57edbf5ef716f45993457d47d233f4,
+  m_TownSpriteSmall: {fileID: 21300000, guid: 92a4072b7998b2f40bebd419746029c5, type: 3}
+  m_TownBuiltSpriteSmall: {fileID: 21300000, guid: 7c1cae178e95f484f80c45ee8d870f40,
+    type: 3}
+  m_TownNoFortSpriteSmall: {fileID: 21300000, guid: 67447edb36f99d84d98b32db8f617a1e,
+    type: 3}
+  m_TownNoFortBuiltSpriteSmall: {fileID: 21300000, guid: aa57edbf5ef716f45993457d47d233f4,
+    type: 3}
+  m_TownSpriteLarge: {fileID: 21300000, guid: d8dff78beddf6444a91966782c9f0d5f, type: 3}
+  m_TownBuiltSpriteLarge: {fileID: 21300000, guid: 130cf33ef4bd4474bb65a569c3da4672,
+    type: 3}
+  m_TownNoFortSpriteLarge: {fileID: 21300000, guid: 3c53bb8651552d64295a61fd94f565e4,
+    type: 3}
+  m_TownNoFortBuiltSpriteLarge: {fileID: 21300000, guid: d34fd51d3c70030469db1fe925317802,
     type: 3}
   m_MapVisualData: {fileID: 11400000, guid: c425878958cf5fe42919909b6ee34c44, type: 2}
   m_MapVisualDataCapitol: {fileID: 11400000, guid: 6a2999fa06581a849875313c3181f81e,

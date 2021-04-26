@@ -303,7 +303,7 @@ public class ScenarioSettingsPlayer : MonoBehaviour
         }
         else
         {
-            m_TownImage.sprite = m_AvailableTowns[m_CurrentTownIndex].TownSprite;
+            m_TownImage.sprite = m_AvailableTowns[m_CurrentTownIndex].TownSpriteSmall;
             m_TownText.text = m_AvailableTowns[m_CurrentTownIndex].name;
         }
     }

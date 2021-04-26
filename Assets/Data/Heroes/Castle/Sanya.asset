@@ -19,3 +19,7 @@ MonoBehaviour:
     HeroVisualData: {fileID: 11400000, guid: 19c0753fbfcc33f4397f4c77cfd31297, type: 2}
     SmallPortrait: {fileID: 21300000, guid: 531f0cbbedf421a42a8c52fc4a1599c9, type: 3}
     LargePortrait: {fileID: 21300000, guid: 0b61114e366568647a18a664b06aef22, type: 3}
+    Attack: 1
+    Defense: 0
+    Spellpower: 2
+    Knowledge: 2
