@@ -18,6 +18,7 @@ public class Map : MonoBehaviour
     [SerializeField] MapObject m_MapObjectPrefab;
     [SerializeField] MapHero m_MapHeroPrefab;
     [SerializeField] MapDwelling m_MapDwellingPrefab;
+    [SerializeField] MapGarrison m_MapGarrisonPrefab;
     [SerializeField] MapTown m_MapTownPrefab;
     [SerializeField] MapResource m_MapResourcePrefab;
     [SerializeField] MapMonster m_MapMonsterPrefab;
@@ -436,6 +437,12 @@ public class Map : MonoBehaviour
                     _Monster.Initialize(_Object, m_GameReferences);
                     _MapObject = _Monster;
                     _DynamicObstacles.Add(_Object, _Monster.DynamicObstacle);
+                    break;
+
+                case ScenarioObjectType.Garrison:
+                    MapGarrison _Garrison = Instantiate(m_MapGarrisonPrefab, m_MapObjectParent);
+                    _Garrison.Initialize(_Object, m_GameReferences);
+                    _MapObject = _Garrison;
                     break;
 
                 default:

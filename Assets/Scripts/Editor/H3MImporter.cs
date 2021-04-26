@@ -992,7 +992,6 @@ public class H3MImporter : EditorWindow
                 _Object.MineType = BitConverter.ToInt32(a_Bytes, _CurrentByte);
                 _CurrentByte += 4;
 
-
                 switch (_Type)
                 {
                     case 5:
@@ -1034,15 +1033,16 @@ public class H3MImporter : EditorWindow
                         _Object.Type = ScenarioObjectType.Grail;
                         break;
 
-                    case 53: // Mine
-                        // Potentially some weird stuff with abandoned mines
-
+                    case 53:
                         if (_Object.MineType == 7)
                         {
-                            Debug.LogError($"CODE RED @@@@@@@@@@@@@@@@@@@@@@@@@@");
+                            _Object.Type = ScenarioObjectType.AbandonedMine;
+                        }
+                        else
+                        {
+                            _Object.Type = ScenarioObjectType.Mine;
                         }
 
-                        _Object.Type = ScenarioObjectType.Dwelling;
                         break;
 
                     case 54:
@@ -1298,6 +1298,8 @@ public class H3MImporter : EditorWindow
                     }
 
                     case ScenarioObjectType.Garrison:
+                        _Object.Garrison = new ScenarioObjectGarrison();
+                        _Object.Garrison.PlayerIndex = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 41;
                         break;
 
@@ -1825,6 +1827,10 @@ public class H3MImporter : EditorWindow
                     case ScenarioObjectType.TownDwelling:
                         _CurrentByte += 4; // Owner
                         _CurrentByte += 2;
+                        break;
+
+                    case ScenarioObjectType.Mine:
+                        _CurrentByte += 4;
                         break;
 
                     case ScenarioObjectType.AbandonedMine:

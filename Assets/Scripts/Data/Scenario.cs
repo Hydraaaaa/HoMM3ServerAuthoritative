@@ -50,6 +50,7 @@ public enum ScenarioObjectType
     GeneralDwelling,
     LevelDwelling,
     TownDwelling,
+    Mine,
     AbandonedMine,
     Unknown
 }
@@ -83,6 +84,7 @@ public class ScenarioObject
     public ScenarioObjectMonster Monster;
     public ScenarioObjectTown Town;
     public ScenarioObjectHero Hero;
+    public ScenarioObjectGarrison Garrison;
     public uint DwellingOwner;
 }
 
@@ -126,6 +128,12 @@ public class ScenarioObjectHero
     public byte ID;
     public string Name = "";
     public byte Portrait;
+}
+
+[Serializable]
+public class ScenarioObjectGarrison
+{
+    public uint PlayerIndex;
 }
 
 [Serializable]

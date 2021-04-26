@@ -9298,6 +9298,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avcranx0
@@ -9342,11 +9344,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlct2g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 118
       Passability: ffffff1f1f1f
       Interactability: 000000000000
@@ -9386,11 +9390,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -9430,11 +9436,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh3g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -9474,11 +9482,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -9518,11 +9528,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -9562,11 +9574,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -9606,11 +9620,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswmp3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -9650,11 +9666,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -9694,11 +9712,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt00
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -9738,11 +9758,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmorro0
       MineType: 2
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff1f1f
       Interactability: 000000000040
@@ -9782,11 +9804,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avxredw
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 58
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -9826,11 +9850,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsgzbo0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 100
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -9870,11 +9896,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsidol0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 38
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -9914,11 +9942,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsmarl
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 23
       Passability: ffffffffff3f
       Interactability: 000000000080
@@ -9958,11 +9988,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxwelr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 49
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -10002,11 +10034,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxpost0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 99
       Passability: ffffffffff3f
       Interactability: 000000000080
@@ -10046,11 +10080,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmsawg0
       MineType: 0
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff3f0f
       Interactability: 000000000040
@@ -10090,11 +10126,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avlmtdr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -10134,11 +10172,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -10178,11 +10218,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -10222,11 +10264,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffffc71f
       Interactability: 000000000000
@@ -10266,11 +10310,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -10310,11 +10356,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -10354,11 +10402,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -10398,11 +10448,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtsw4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -10442,11 +10494,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -10486,11 +10540,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -10530,11 +10586,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswt19
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -10574,11 +10632,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -10618,11 +10678,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -10662,11 +10724,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -10706,11 +10770,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -10750,11 +10816,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -10794,11 +10862,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff0f07c7
       Interactability: 000000000000
@@ -10838,11 +10908,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlf06g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -10882,11 +10954,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffffc71f
       Interactability: 000000000000
@@ -10926,11 +11000,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlbuzr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -10970,11 +11046,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxro06
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 209
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -11014,11 +11092,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -11058,11 +11138,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -11102,11 +11184,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr8
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -11146,11 +11230,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -11190,11 +11276,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -11234,11 +11322,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avldead4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 119
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -11278,11 +11368,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsu05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 210
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -11322,11 +11414,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsu08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 210
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -11366,11 +11460,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr02r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -11410,11 +11506,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avloc2r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 136
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -11454,11 +11552,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -11498,11 +11598,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -11542,11 +11644,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -11586,11 +11690,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -11630,11 +11736,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -11674,11 +11782,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -11718,11 +11828,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -11762,11 +11874,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr10r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -11806,11 +11920,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -11850,11 +11966,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -11894,11 +12012,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -11938,11 +12058,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -11982,11 +12104,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -12026,11 +12150,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -12070,11 +12196,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff0f07c7
       Interactability: 000000000000
@@ -12114,11 +12242,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlman50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 131
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -12158,11 +12288,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlman20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 131
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -12202,11 +12334,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlman50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 131
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -12246,11 +12380,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrr05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -12290,11 +12426,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -12334,11 +12472,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -12378,11 +12518,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -12422,11 +12564,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl4d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -12466,11 +12610,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -12510,11 +12656,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -12554,11 +12702,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -12598,11 +12748,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -12642,11 +12794,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff0f07c7
       Interactability: 000000000000
@@ -12686,11 +12840,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -12730,11 +12886,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -12774,11 +12932,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -12818,11 +12978,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -12862,11 +13024,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl5d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -12906,11 +13070,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -12950,11 +13116,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -12994,11 +13162,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13038,11 +13208,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -13082,11 +13254,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -13126,11 +13300,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -13170,11 +13346,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlyuc20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13214,11 +13392,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlca060
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 116
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13258,11 +13438,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswp20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -13302,11 +13484,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmordr0
       MineType: 2
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff1f1f
       Interactability: 000000000040
@@ -13346,11 +13530,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avlsh6d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -13390,11 +13576,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -13434,11 +13622,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -13478,11 +13668,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -13522,11 +13714,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh4d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -13566,11 +13760,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13610,11 +13806,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr15r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13654,11 +13852,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -13698,11 +13898,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -13742,11 +13944,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlca030
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 116
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13786,11 +13990,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr07r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -13830,11 +14036,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -13874,11 +14082,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -13918,11 +14128,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlca090
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 116
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -13962,11 +14174,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff0f07c7
       Interactability: 000000000000
@@ -14006,11 +14220,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxro09
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 209
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -14050,11 +14266,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -14094,11 +14312,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff0f07c7
       Interactability: 000000000000
@@ -14138,11 +14358,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr14r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14182,11 +14404,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -14226,11 +14450,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro12
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14270,11 +14496,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14314,11 +14542,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl3d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -14358,11 +14588,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg03
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14402,11 +14634,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt00
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -14446,11 +14680,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -14490,11 +14726,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14534,11 +14772,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14578,11 +14818,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswp40
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -14622,11 +14864,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14666,11 +14910,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk2s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14710,11 +14956,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14754,11 +15002,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw07
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -14798,11 +15048,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -14842,11 +15094,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlct3d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 118
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -14886,11 +15140,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg03
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -14930,11 +15186,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -14974,11 +15232,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr13r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15018,11 +15278,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -15062,11 +15324,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxds08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 206
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -15106,11 +15370,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlroug2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15150,11 +15416,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15194,11 +15462,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avldt2s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 119
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -15238,11 +15508,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr07
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -15282,11 +15554,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -15326,11 +15600,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -15370,11 +15646,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -15414,11 +15692,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtsw6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -15458,11 +15738,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref60
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f7f
       Interactability: 000000000000
@@ -15502,11 +15784,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15546,11 +15830,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avls10s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15590,11 +15876,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15634,11 +15922,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avls08s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15678,6 +15968,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxseer0
@@ -15722,11 +16014,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt07
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -15766,11 +16060,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlca2r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 116
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15810,11 +16106,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -15854,11 +16152,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -15898,11 +16198,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg03
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15942,11 +16244,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -15986,11 +16290,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr15r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16030,11 +16336,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref60
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f7f
       Interactability: 000000000000
@@ -16074,11 +16382,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro06
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16118,11 +16428,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtsw4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -16162,11 +16474,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -16206,11 +16520,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -16250,11 +16566,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -16294,11 +16612,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro07
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16338,11 +16658,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -16382,11 +16704,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -16426,11 +16750,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref40
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f3f
       Interactability: 000000000000
@@ -16470,11 +16796,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro00
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16514,11 +16842,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr08r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -16558,11 +16888,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh9r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -16602,11 +16934,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -16646,11 +16980,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -16690,11 +17026,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -16734,6 +17072,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxseey0
@@ -16778,11 +17118,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbnk10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 16
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -16822,11 +17164,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlskul0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 151
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16866,11 +17210,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -16910,11 +17256,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avls08s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -16954,11 +17302,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt07
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -16998,11 +17348,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17042,11 +17394,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -17086,11 +17440,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh8d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17130,11 +17486,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17174,11 +17532,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswt01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17218,11 +17578,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -17262,11 +17624,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17306,11 +17670,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17350,11 +17716,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17394,11 +17762,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref40
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f3f
       Interactability: 000000000000
@@ -17438,11 +17808,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -17482,11 +17854,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -17526,11 +17900,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17570,6 +17946,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxl1sh0
@@ -17614,11 +17992,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17658,11 +18038,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17702,11 +18084,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -17746,11 +18130,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17790,11 +18176,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -17834,11 +18222,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -17878,11 +18268,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -17922,11 +18314,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr03
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -17966,11 +18360,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr09
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -18010,11 +18406,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxgr05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 208
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -18054,11 +18452,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -18098,11 +18498,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18142,11 +18544,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18186,11 +18590,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh2r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18230,11 +18636,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -18274,11 +18682,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -18318,11 +18728,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18362,11 +18774,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -18406,11 +18820,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18450,11 +18866,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18494,11 +18912,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlman50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 131
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18538,11 +18958,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -18582,11 +19004,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -18626,11 +19050,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffffc71f
       Interactability: 000000000000
@@ -18670,11 +19096,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh9r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -18714,11 +19142,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -18758,11 +19188,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18802,11 +19234,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh3r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18846,11 +19280,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr10r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18890,11 +19326,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -18934,11 +19372,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlstm2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 153
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -18978,6 +19418,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: ahrandom
@@ -19022,6 +19464,8 @@ MonoBehaviour:
       ID: 255
       Name: 
       Portrait: 255
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: ahrandom
@@ -19066,6 +19510,8 @@ MonoBehaviour:
       ID: 255
       Name: 
       Portrait: 255
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: ahrandom
@@ -19110,6 +19556,8 @@ MonoBehaviour:
       ID: 255
       Name: 
       Portrait: 255
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -19154,6 +19602,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -19198,6 +19648,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -19242,6 +19694,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -19286,6 +19740,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -19330,6 +19786,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -19374,11 +19832,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -19418,6 +19878,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -19462,6 +19924,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -19506,11 +19970,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -19550,6 +20016,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -19594,11 +20062,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -19638,6 +20108,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -19682,6 +20154,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -19726,6 +20200,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -19770,6 +20246,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -19814,11 +20292,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -19858,6 +20338,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -19902,6 +20384,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -19946,6 +20430,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -19990,11 +20476,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -20034,6 +20522,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -20078,6 +20568,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -20122,6 +20614,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -20166,6 +20660,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -20210,6 +20706,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -20254,6 +20752,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -20298,6 +20798,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -20342,6 +20844,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -20386,6 +20890,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -20430,6 +20936,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -20474,6 +20982,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -20518,6 +21028,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -20562,6 +21074,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -20606,6 +21120,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -20650,11 +21166,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -20694,11 +21212,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -20738,6 +21258,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -20782,6 +21304,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -20826,6 +21350,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -20870,6 +21396,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -20914,11 +21442,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -20958,6 +21488,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -21002,11 +21534,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21046,6 +21580,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -21090,6 +21626,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -21134,6 +21672,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -21178,11 +21718,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avawrek0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 85
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -21222,11 +21764,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxwhrl0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 111
       Passability: ffffffff1f1f
       Interactability: 00000000e0e0
@@ -21266,11 +21810,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxwhrl0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 111
       Passability: ffffffff1f1f
       Interactability: 00000000e0e0
@@ -21310,11 +21856,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlklp10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 125
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -21354,11 +21902,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21398,11 +21948,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21442,11 +21994,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21486,11 +22040,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21530,11 +22086,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -21574,11 +22132,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -21618,11 +22178,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -21662,11 +22224,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref40
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f3f
       Interactability: 000000000000
@@ -21706,11 +22270,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk1w0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -21750,11 +22316,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -21794,11 +22362,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avawrek0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 85
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -21838,11 +22408,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avadlic0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 24
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -21882,11 +22454,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -21926,11 +22500,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlroug2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -21970,11 +22546,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -22014,11 +22592,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -22058,11 +22638,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr8
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1fc7
       Interactability: 000000000000
@@ -22102,11 +22684,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmabmg
       MineType: 7
-      Type: 2
+      Type: 21
       TypeDebug: 53
       Passability: ffffffffff1f
       Interactability: 000000000040
@@ -22146,11 +22730,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 58
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avlsptr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22190,11 +22776,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22234,11 +22822,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk4s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22278,11 +22868,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22322,11 +22914,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -22366,11 +22960,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr13r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22410,6 +23006,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -22454,11 +23052,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsschm0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 47
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -22498,6 +23098,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon3
@@ -22542,11 +23144,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: adcfra
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 12
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -22586,6 +23190,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -22630,6 +23236,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -22674,11 +23282,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -22718,6 +23328,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -22762,11 +23374,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -22806,6 +23420,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -22850,11 +23466,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -22894,11 +23512,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr11u0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -22938,11 +23558,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr09r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -22982,6 +23604,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avrcgen0
@@ -23026,6 +23650,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -23070,11 +23696,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk1w0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -23114,11 +23742,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -23158,11 +23788,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref40
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f3f
       Interactability: 000000000000
@@ -23202,11 +23834,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -23246,11 +23880,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -23290,11 +23926,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -23334,11 +23972,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk1w0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -23378,11 +24018,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrk2w0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -23422,11 +24064,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -23466,6 +24110,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -23510,11 +24156,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrg04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -23554,6 +24202,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxsndg0
@@ -23598,11 +24248,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrd04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -23642,6 +24294,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbor80
@@ -23686,6 +24340,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxsndg0
@@ -23730,11 +24386,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -23774,11 +24432,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxhilg0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 35
       Passability: ffffffffff3f
       Interactability: 000000000080
@@ -23818,11 +24478,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -23862,11 +24524,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -23906,11 +24570,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -23950,11 +24616,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avls06s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -23994,11 +24662,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -24038,11 +24708,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -24082,11 +24754,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -24126,11 +24800,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avls04s0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -24170,6 +24846,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtcrys0
@@ -24214,11 +24892,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlf07g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24258,11 +24938,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avloc3d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 136
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24302,11 +24984,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -24346,11 +25030,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avloc4r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 136
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24390,11 +25076,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt08
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -24434,11 +25122,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24478,11 +25168,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt01
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24522,11 +25214,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlman20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 131
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24566,11 +25260,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -24610,11 +25306,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxro03
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 209
       Passability: ffffffff7f3f
       Interactability: 000000000000
@@ -24654,11 +25352,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxro02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 209
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -24698,11 +25398,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -24742,6 +25444,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtwood0
@@ -24786,11 +25490,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -24830,11 +25536,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -24874,11 +25582,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -24918,11 +25628,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -24962,11 +25674,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -25006,11 +25720,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -25050,11 +25766,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr9
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff278f
       Interactability: 000000000000
@@ -25094,11 +25812,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffbfbf
       Interactability: 000000000000
@@ -25138,11 +25858,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -25182,11 +25904,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -25226,11 +25950,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref50
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -25270,11 +25996,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlklp20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 125
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -25314,11 +26042,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw04
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -25358,11 +26088,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -25402,11 +26134,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -25446,6 +26180,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -25490,11 +26226,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffff9f1fbf
       Interactability: 000000000000
@@ -25534,6 +26272,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -25578,11 +26318,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlct4g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 118
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -25622,11 +26364,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlyuc30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -25666,11 +26410,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlrr05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -25710,11 +26456,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl3d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -25754,11 +26502,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxsw05
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 211
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -25798,11 +26548,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -25842,11 +26594,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlf09g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -25886,11 +26640,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -25930,11 +26686,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -25974,11 +26732,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswt19
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -26018,11 +26778,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26062,11 +26824,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr8
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -26106,11 +26870,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avllk2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 126
       Passability: ffffffff0f0f
       Interactability: 000000000000
@@ -26150,11 +26916,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro06
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -26194,11 +26962,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffff9f1fbf
       Interactability: 000000000000
@@ -26238,11 +27008,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26282,11 +27054,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffbfbf
       Interactability: 000000000000
@@ -26326,11 +27100,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffbf1f
       Interactability: 000000000000
@@ -26370,11 +27146,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswt06
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -26414,6 +27192,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtore0
@@ -26458,11 +27238,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffff9f1fbf
       Interactability: 000000000000
@@ -26502,11 +27284,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26546,11 +27330,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -26590,11 +27376,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr9
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff278f
       Interactability: 000000000000
@@ -26634,6 +27422,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -26678,11 +27468,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -26722,11 +27514,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26766,11 +27560,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26810,11 +27606,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -26854,11 +27652,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -26898,11 +27698,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffbfbf
       Interactability: 000000000000
@@ -26942,11 +27744,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr3d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -26986,11 +27790,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlct5g0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 118
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -27030,11 +27836,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27074,11 +27882,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27118,11 +27928,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27162,11 +27974,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27206,11 +28020,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27250,11 +28066,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr14r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27294,11 +28112,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27338,11 +28158,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27382,11 +28204,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27426,11 +28250,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27470,11 +28296,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -27514,11 +28342,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -27558,11 +28388,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlstm2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 153
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27602,11 +28434,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27646,11 +28480,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -27690,11 +28526,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27734,6 +28572,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -27778,11 +28618,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -27822,11 +28664,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -27866,11 +28710,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -27910,11 +28756,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsh8r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 150
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27954,11 +28802,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlstm3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 153
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -27998,11 +28848,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlct6r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 118
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -28042,11 +28894,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlr12r0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 147
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -28086,11 +28940,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f9f
       Interactability: 000000000000
@@ -28130,11 +28986,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxro02
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 209
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -28174,11 +29032,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -28218,11 +29078,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -28262,11 +29124,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmsawr0
       MineType: 0
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff3f0f
       Interactability: 000000000040
@@ -28306,11 +29170,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avltro11
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -28350,11 +29216,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro09
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -28394,11 +29262,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlsptr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -28438,11 +29308,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -28482,11 +29354,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlxdt09
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 207
       Passability: ffffffffff1f
       Interactability: 000000000000
@@ -28526,11 +29400,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -28570,11 +29446,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn3
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff1f3f
       Interactability: 000000000000
@@ -28614,11 +29492,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtgn1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffff87071f
       Interactability: 000000000000
@@ -28658,6 +29538,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon4
@@ -28702,6 +29584,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon1
@@ -28746,11 +29630,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avawrek0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 85
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -28790,11 +29676,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff3f1f9f
       Interactability: 000000000000
@@ -28834,11 +29722,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlpntr0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 137
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -28878,11 +29768,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmsawd0
       MineType: 0
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff3f0f
       Interactability: 000000000040
@@ -28922,11 +29814,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avlautr6
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -28966,6 +29860,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avcranx0
@@ -29010,6 +29906,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -29054,6 +29952,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avswtch0
@@ -29098,11 +29998,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref60
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff7f7f
       Interactability: 000000000000
@@ -29142,6 +30044,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxshyd0
@@ -29186,11 +30090,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 255
   - Template:
       Name: avlref30
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -29230,11 +30136,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlref20
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 161
       Passability: ffffff9f1f3f
       Interactability: 000000000000
@@ -29274,11 +30182,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29318,11 +30228,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avaflot0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 29
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29362,11 +30274,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxrk2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 231
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -29406,11 +30320,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxrk2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 231
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -29450,11 +30366,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxrk2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 231
       Passability: ffffffffffff
       Interactability: 000000000000
@@ -29494,11 +30412,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbnk40
       MineType: 3
-      Type: 21
+      Type: 22
       TypeDebug: 16
       Passability: ffffffffff3f
       Interactability: 000000000080
@@ -29538,11 +30458,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbnk50
       MineType: 4
-      Type: 21
+      Type: 22
       TypeDebug: 16
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -29582,11 +30504,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29626,11 +30550,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtrf5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -29670,6 +30596,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avrcgen0
@@ -29714,11 +30642,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltro12
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -29758,6 +30688,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -29802,11 +30734,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29846,11 +30780,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29890,11 +30826,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29934,11 +30872,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -29978,11 +30918,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -30022,6 +30964,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avccasx0
@@ -30066,6 +31010,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -30110,11 +31056,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlmtdr7
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 134
       Passability: ffffffffc71f
       Interactability: 000000000000
@@ -30154,11 +31102,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxmn4b0
       MineType: 3
-      Type: 21
+      Type: 22
       TypeDebug: 45
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -30198,6 +31148,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtmerc0
@@ -30242,6 +31194,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon3
@@ -30286,6 +31240,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon6
@@ -30330,11 +31286,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlfl8d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 120
       Passability: ffffffffff3f
       Interactability: 000000000000
@@ -30374,11 +31332,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbnk10
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 16
       Passability: ffffffffff3f
       Interactability: 000000000040
@@ -30418,11 +31378,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -30462,11 +31424,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlautr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 135
       Passability: ffffffffff7f
       Interactability: 000000000000
@@ -30506,11 +31470,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsaxis0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 61
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -30550,6 +31516,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtsulf0
@@ -30594,11 +31562,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbnk30
       MineType: 2
-      Type: 21
+      Type: 22
       TypeDebug: 16
       Passability: ffffffffff3f
       Interactability: 000000000080
@@ -30638,6 +31608,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxseeb0
@@ -30682,6 +31654,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -30726,11 +31700,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmcrrf0
       MineType: 4
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffffff1f
       Interactability: 000000000040
@@ -30770,7 +31746,9 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avtcrys0
       MineType: 4
@@ -30814,11 +31792,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avsgrdn0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 32
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -30858,11 +31838,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmgedr0
       MineType: 5
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff1f1f
       Interactability: 000000000040
@@ -30902,11 +31884,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avlswtr5
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffffcfa7
       Interactability: 000000000000
@@ -30946,11 +31930,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltrro2
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff9f3f
       Interactability: 000000000000
@@ -30990,11 +31976,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avmsulf0
       MineType: 3
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffffff1f
       Interactability: 000000000040
@@ -31034,11 +32022,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avmgedr0
       MineType: 5
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffff1f1f
       Interactability: 000000000040
@@ -31078,11 +32068,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avmalch0
       MineType: 1
-      Type: 2
+      Type: 20
       TypeDebug: 53
       Passability: ffffffffff1f
       Interactability: 000000000040
@@ -31122,7 +32114,9 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
-    DwellingOwner: 255
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
   - Template:
       Name: avtmerc0
       MineType: 1
@@ -31166,6 +32160,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtgems0
@@ -31210,6 +32206,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon1
@@ -31254,6 +32252,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: ava0128
@@ -31298,6 +32298,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxbor80
@@ -31342,11 +32344,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -31386,11 +32390,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avllk1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 126
       Passability: ffffff0101f1
       Interactability: 000000000000
@@ -31430,11 +32436,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avtchst0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 101
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -31474,6 +32482,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon2
@@ -31518,11 +32528,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr8
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f3f
       Interactability: 000000000000
@@ -31562,11 +32574,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr4
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffff9f1fbf
       Interactability: 000000000000
@@ -31606,11 +32620,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -31650,11 +32666,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avlswtr1
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 199
       Passability: ffffffff3f9f
       Interactability: 000000000000
@@ -31694,11 +32712,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avxmn4b0
       MineType: 3
-      Type: 21
+      Type: 22
       TypeDebug: 45
       Passability: ffffffffff7f
       Interactability: 000000000080
@@ -31738,6 +32758,8 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avwmon3
@@ -31782,11 +32804,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr1d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -31826,11 +32850,13 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
   - Template:
       Name: avltr2d0
       MineType: 0
-      Type: 21
+      Type: 22
       TypeDebug: 155
       Passability: ffffffffffbf
       Interactability: 000000000000
@@ -31870,4 +32896,6 @@ MonoBehaviour:
       ID: 0
       Name: 
       Portrait: 0
+    Garrison:
+      PlayerIndex: 0
     DwellingOwner: 0
