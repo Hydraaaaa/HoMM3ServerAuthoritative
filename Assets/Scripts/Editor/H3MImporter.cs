@@ -1830,10 +1830,12 @@ public class H3MImporter : EditorWindow
                         break;
 
                     case ScenarioObjectType.Mine:
+                        _Object.DwellingOwner = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         break;
 
                     case ScenarioObjectType.AbandonedMine:
+                        _Object.DwellingOwner = BitConverter.ToUInt32(a_Bytes, _CurrentByte);
                         _CurrentByte += 4;
                         break;
                 }

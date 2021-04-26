@@ -421,6 +421,8 @@ public class Map : MonoBehaviour
                     break;
 
                 case ScenarioObjectType.Dwelling:
+                case ScenarioObjectType.Mine:           // Temporary
+                case ScenarioObjectType.AbandonedMine:  // Temporary
                     MapDwelling _Dwelling = Instantiate(m_MapDwellingPrefab, m_MapObjectParent);
                     _Dwelling.Initialize(_Object, m_GameReferences);
                     _MapObject = _Dwelling;
