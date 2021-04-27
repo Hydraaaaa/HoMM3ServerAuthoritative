@@ -20,7 +20,9 @@ public class PlayerColors : ScriptableObject
         public Sprite Resources;
         public Sprite BottomBarFill;
         public Sprite Date;
-        public Sprite HeroCard;
+
+        public Sprite TownUI;
+        public Sprite TownScreenFlag;
 
         // Buttons
         public Sprite NextHero;

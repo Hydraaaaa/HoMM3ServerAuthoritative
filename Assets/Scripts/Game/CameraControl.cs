@@ -7,6 +7,7 @@ public class CameraControl : MonoBehaviour
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] LocalOwnership m_LocalOwnership;
     [SerializeField] Map m_Map;
+    [SerializeField] TownScreen m_TownScreen;
 
     bool m_Active;
 
@@ -46,7 +47,8 @@ public class CameraControl : MonoBehaviour
         }
 
         if (!(m_LocalOwnership.SelectedHero != null &&
-            m_LocalOwnership.SelectedHero.IsMoving))
+            m_LocalOwnership.SelectedHero.IsMoving) &&
+            !m_TownScreen.Enabled)
         {
             if (m_Active)
             {

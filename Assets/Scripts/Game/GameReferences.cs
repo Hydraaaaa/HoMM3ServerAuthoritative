@@ -7,6 +7,7 @@ public class GameReferences : MonoBehaviour
     public Map Map => m_Map;
     public Pathfinding Pathfinding => m_Pathfinding;
     public LocalOwnership LocalOwnership => m_LocalOwnership;
+    public TownScreen TownScreen => m_TownScreen;
     public GameObject InputBlocker => m_InputBlocker;
 
     public GameSettings GameSettings => m_GameSettings;
@@ -16,6 +17,7 @@ public class GameReferences : MonoBehaviour
     [SerializeField] Map m_Map;
     [SerializeField] Pathfinding m_Pathfinding;
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] TownScreen m_TownScreen;
     [SerializeField] GameObject m_InputBlocker;
 
     [Header("Project")]

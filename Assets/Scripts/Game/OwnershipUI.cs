@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class OwnershipUI : MonoBehaviour
 {
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] TownScreen m_TownScreen;
 
     [Header("High Res UI")]
     [SerializeField] List<Image> m_HeroImages;
@@ -310,7 +311,18 @@ public class OwnershipUI : MonoBehaviour
 
     public void TownPressed(int a_Index)
     {
-        m_LocalOwnership.SelectTown(m_LocalOwnership.GetTowns()[a_Index + m_TownUIIndex]);
+        int _Index = a_Index + m_TownUIIndex;
+
+        List<MapTown> _Towns = m_LocalOwnership.GetTowns();
+
+        if (m_LocalOwnership.SelectedTown != _Towns[_Index])
+        {
+            m_LocalOwnership.SelectTown(_Towns[_Index]);
+        }
+        else
+        {
+            m_TownScreen.ShowTown(m_LocalOwnership.SelectedTown);
+        }
     }
 
     public void TownPressedLowRes(int a_Index)

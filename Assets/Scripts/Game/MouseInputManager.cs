@@ -8,6 +8,7 @@ public class MouseInputManager : MonoBehaviour
     [SerializeField] LocalOwnership m_LocalOwnership;
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] Pathfinding m_Pathfinding;
+    [SerializeField] TownScreen m_TownScreen;
 
     [Header("Cursors")]
     [SerializeField] Sprite m_MoveCursor;
@@ -55,7 +56,8 @@ public class MouseInputManager : MonoBehaviour
         if (Input.mousePosition.x >= GameScreenScaler.VIEWPORT_PADDING_LEFT &&
             Input.mousePosition.y >= GameScreenScaler.VIEWPORT_PADDING_BOTTOM &&
             Input.mousePosition.x <= Screen.width - GameScreenScaler.VIEWPORT_PADDING_RIGHT &&
-            Input.mousePosition.y <= Screen.height - GameScreenScaler.VIEWPORT_PADDING_TOP)
+            Input.mousePosition.y <= Screen.height - GameScreenScaler.VIEWPORT_PADDING_TOP &&
+            !m_TownScreen.Enabled)
         {
             Vector3 _WorldMousePos = m_Camera.ScreenToWorldPoint(Input.mousePosition - new Vector3(0, 8, 0));
             Vector2Int _WorldMouseCoords = new Vector2Int
@@ -293,7 +295,7 @@ public class MouseInputManager : MonoBehaviour
                     }
                     else
                     {
-                        // Enter the town
+                        m_TownScreen.ShowTown(m_HoveredTown);
                     }
                 }
                 else if (m_LocalOwnership.SelectedHero != null)
@@ -332,45 +334,48 @@ public class MouseInputManager : MonoBehaviour
             CursorManager.ResetCursor();
         }
 
-        if (Input.mousePosition.x <= 2)
+        if (!m_TownScreen.Enabled)
         {
-            if (Input.mousePosition.y <= 2)
+            if (Input.mousePosition.x <= 2)
             {
-                CursorManager.SetCursor(m_BottomLeftCursor, new Vector2(0, 18));
+                if (Input.mousePosition.y <= 2)
+                {
+                    CursorManager.SetCursor(m_BottomLeftCursor, new Vector2(0, 18));
+                }
+                else if (Input.mousePosition.y >= Screen.height - 3)
+                {
+                    CursorManager.SetCursor(m_TopLeftCursor, new Vector2(0, 1));
+                }
+                else
+                {
+                    CursorManager.SetCursor(m_LeftCursor, new Vector2(0, 5));
+                }
             }
-            else if (Input.mousePosition.y >= Screen.height - 3)
+            else if (Input.mousePosition.x >= Screen.width - 3)
             {
-                CursorManager.SetCursor(m_TopLeftCursor, new Vector2(0, 1));
+                if (Input.mousePosition.y <= 2)
+                {
+                    CursorManager.SetCursor(m_BottomRightCursor, new Vector2(-18, 18));
+                }
+                else if (Input.mousePosition.y >= Screen.height - 3)
+                {
+                    CursorManager.SetCursor(m_TopRightCursor, new Vector2(-18, 1));
+                }
+                else
+                {
+                    CursorManager.SetCursor(m_RightCursor, new Vector2(-23, 6));
+                }
             }
             else
             {
-                CursorManager.SetCursor(m_LeftCursor, new Vector2(0, 5));
-            }
-        }
-        else if (Input.mousePosition.x >= Screen.width - 3)
-        {
-            if (Input.mousePosition.y <= 2)
-            {
-                CursorManager.SetCursor(m_BottomRightCursor, new Vector2(-18, 18));
-            }
-            else if (Input.mousePosition.y >= Screen.height - 3)
-            {
-                CursorManager.SetCursor(m_TopRightCursor, new Vector2(-18, 1));
-            }
-            else
-            {
-                CursorManager.SetCursor(m_RightCursor, new Vector2(-23, 6));
-            }
-        }
-        else
-        {
-            if (Input.mousePosition.y <= 2)
-            {
-                CursorManager.SetCursor(m_BottomCursor, new Vector2(-6, 23));
-            }
-            else if (Input.mousePosition.y >= Screen.height - 3)
-            {
-                CursorManager.SetCursor(m_TopCursor, new Vector2(-6, 0));
+                if (Input.mousePosition.y <= 2)
+                {
+                    CursorManager.SetCursor(m_BottomCursor, new Vector2(-6, 23));
+                }
+                else if (Input.mousePosition.y >= Screen.height - 3)
+                {
+                    CursorManager.SetCursor(m_TopCursor, new Vector2(-6, 0));
+                }
             }
         }
     }

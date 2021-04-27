@@ -460,7 +460,19 @@ public class MapHero : MapObjectBase
             m_FlagSpriteRenderer.transform.localPosition = Hero.HeroVisualData.IdleFlagOffsets[m_Direction];
         }
 
-        m_DynamicObstacle.AddInteractedNode(m_GameReferences.Pathfinding.GetNode(m_PathfindingPos, IsUnderground));
+        Pathfinding.Node _FinalNode = m_GameReferences.Pathfinding.GetNode(m_PathfindingPos, IsUnderground);
+
+        m_DynamicObstacle.AddInteractedNode(_FinalNode);
+
+        for (int i = 0; i < _FinalNode.InteractionObjects.Count; i++)
+        {
+            MapTown _Town = _FinalNode.InteractionObjects[i] as MapTown;
+
+            if (_Town != null)
+            {
+                m_GameReferences.TownScreen.ShowTown(_Town);
+            }
+        }
 
         m_PathableArea = m_GameReferences.Pathfinding.GetPathableArea(m_PathfindingPos, IsUnderground);
 
