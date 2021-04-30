@@ -17,8 +17,6 @@ public class Faction : ScriptableObject
     public Sprite TownNoFortSpriteLarge => m_TownNoFortSpriteLarge;
     public Sprite TownNoFortBuiltSpriteLarge => m_TownNoFortBuiltSpriteLarge;
 
-    public Sprite TownScreenBackground => m_TownScreenBackground;
-
     public MapObjectVisualData MapVisualData => m_MapVisualData;
     public MapObjectVisualData MapVisualDataCapitol => m_MapVisualDataCapitol;
     public MapObjectVisualData MapVisualDataNoFort => m_MapVisualDataNoFort;
@@ -36,8 +34,6 @@ public class Faction : ScriptableObject
 
     [SerializeField] Sprite m_TownNoFortSpriteLarge;
     [SerializeField] Sprite m_TownNoFortBuiltSpriteLarge;
-
-    [SerializeField] Sprite m_TownScreenBackground;
 
     [Space]
 

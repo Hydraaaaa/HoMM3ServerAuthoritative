@@ -1693,7 +1693,13 @@ public class H3MImporter : EditorWindow
 
                         if (_Object.Town.HasCustomBuildings)
                         {
-                            _CurrentByte += 12;
+                            _Object.Town.Buildings = new List<byte>();
+
+                            for (int j = 0; j < 12; j++)
+                            {
+                                _Object.Town.Buildings.Add(a_Bytes[_CurrentByte]);
+                                _CurrentByte += 1;
+                            }
                         }
                         else
                         {

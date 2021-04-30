@@ -119,6 +119,7 @@ public class ScenarioObjectTown
     public bool IsGroupFormation;
     public bool HasCustomBuildings;
     public bool HasFort;
+    public List<byte> Buildings;
 }
 
 [Serializable]
