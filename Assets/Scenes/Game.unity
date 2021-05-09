@@ -6752,6 +6752,99 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Collider: {fileID: 459554535}
   m_Outline: {fileID: 108999610}
+--- !u!1 &121158184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121158185}
+  - component: {fileID: 121158188}
+  - component: {fileID: 121158187}
+  - component: {fileID: 121158186}
+  m_Layer: 5
+  m_Name: Lighthouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &121158185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121158184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1937332149}
+  - {fileID: 497126663}
+  - {fileID: 1689524547}
+  m_Father: {fileID: 745716884}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 533, y: 187}
+  m_SizeDelta: {x: 96, y: 116}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &121158186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121158184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d397434d3de61f4d847fa0d635f0458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 1689524548}
+  m_Outline: {fileID: 497126662}
+--- !u!114 &121158187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121158184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6df1405615956a643907044c8c6f9558, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &121158188
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121158184}
+  m_CullTransparentMesh: 1
 --- !u!1 &121424287
 GameObject:
   m_ObjectHideFlags: 0
@@ -12077,13 +12170,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216071878}
+  - component: {fileID: 216071879}
   m_Layer: 5
   m_Name: Rampart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &216071878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12146,6 +12240,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &216071879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216071877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a9b7158f13d2746ab033f90d474e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 1750394768}
+  m_TownHall: {fileID: 158188353}
+  m_CityHall: {fileID: 902276297}
+  m_Capitol: {fileID: 603043025}
+  m_Fort: {fileID: 894518778}
+  m_Citadel: {fileID: 708566636}
+  m_Castle: {fileID: 586475518}
+  m_Tavern: {fileID: 1834600669}
+  m_Blacksmith: {fileID: 23144357}
+  m_Market: {fileID: 1400948828}
+  m_Silo: {fileID: 2119636115}
+  m_MageGuild1: {fileID: 627636437}
+  m_MageGuild2: {fileID: 763278471}
+  m_MageGuild3: {fileID: 1615835239}
+  m_MageGuild4: {fileID: 195580584}
+  m_MageGuild5: {fileID: 188639873}
+  m_Grail: {fileID: 1343477861}
+  m_Dwelling1: {fileID: 1881348219}
+  m_Dwelling1Up: {fileID: 551071841}
+  m_Dwelling2: {fileID: 1503975386}
+  m_Dwelling2Up: {fileID: 1058453274}
+  m_Dwelling3: {fileID: 179365466}
+  m_Dwelling3Up: {fileID: 986421523}
+  m_Dwelling4: {fileID: 1352993490}
+  m_Dwelling4Up: {fileID: 1709684832}
+  m_Dwelling5: {fileID: 1639306056}
+  m_Dwelling5Up: {fileID: 386062932}
+  m_Dwelling6: {fileID: 66128558}
+  m_Dwelling6Up: {fileID: 612671057}
+  m_Dwelling7: {fileID: 91806119}
+  m_Dwelling7Up: {fileID: 1814531210}
 --- !u!1 &216818740
 GameObject:
   m_ObjectHideFlags: 0
@@ -13918,7 +14055,7 @@ GameObject:
   - component: {fileID: 246670844}
   - component: {fileID: 246670846}
   m_Layer: 5
-  m_Name: MageGuild
+  m_Name: MageGuild1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21511,7 +21648,7 @@ GameObject:
   - component: {fileID: 412057900}
   - component: {fileID: 412057902}
   m_Layer: 5
-  m_Name: MageGuild
+  m_Name: MageGuild1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21735,8 +21872,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 67b01223c0bec774d88f3f71302d9270, type: 3}
   - {fileID: 21300000, guid: fbf3be63c0596f64cb6359062cfb4e16, type: 3}
   - {fileID: 21300000, guid: 8523d4200e52a1147813719268c995b7, type: 3}
-  - {fileID: 21300000, guid: 2d769b133a55f4042903b70e727f5635, type: 3}
-  - {fileID: 21300000, guid: 36b295586f165644699c9aa95fecb40c, type: 3}
 --- !u!114 &415781981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22858,7 +22993,7 @@ RectTransform:
   - {fileID: 951974732}
   - {fileID: 957501595}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23590,7 +23725,7 @@ RectTransform:
   - {fileID: 1260192365}
   - {fileID: 1523543956}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -25142,7 +25277,7 @@ GameObject:
   - component: {fileID: 475741381}
   - component: {fileID: 475741383}
   m_Layer: 5
-  m_Name: MageGuild
+  m_Name: MageGuild1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26213,6 +26348,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493068875}
   m_CullTransparentMesh: 1
+--- !u!1 &497126662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 497126663}
+  - component: {fileID: 497126665}
+  - component: {fileID: 497126664}
+  m_Layer: 5
+  m_Name: Outline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &497126663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497126662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 121158185}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &497126664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497126662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a5f31133e863fd64182d10d79600059d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &497126665
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497126662}
+  m_CullTransparentMesh: 1
 --- !u!1 &497455438
 GameObject:
   m_ObjectHideFlags: 0
@@ -26484,16 +26694,16 @@ MonoBehaviour:
   m_UI: {fileID: 1302206197}
   m_Portrait: {fileID: 1026984816}
   m_Flag: {fileID: 830043001}
-  m_Landscapes:
-  - {fileID: 745716883}
-  - {fileID: 216071877}
-  - {fileID: 1173678203}
-  - {fileID: 1673299891}
-  - {fileID: 1354771768}
-  - {fileID: 1306310431}
-  - {fileID: 1012192048}
-  - {fileID: 705466280}
-  - {fileID: 2021859227}
+  m_TownBuildings:
+  - {fileID: 745716885}
+  - {fileID: 216071879}
+  - {fileID: 1173678205}
+  - {fileID: 1673299893}
+  - {fileID: 1354771770}
+  - {fileID: 1306310433}
+  - {fileID: 1012192050}
+  - {fileID: 705466282}
+  - {fileID: 2021859229}
 --- !u!1 &500960795
 GameObject:
   m_ObjectHideFlags: 0
@@ -34265,7 +34475,7 @@ GameObject:
   - component: {fileID: 627636435}
   - component: {fileID: 627636437}
   m_Layer: 5
-  m_Name: MageGuild
+  m_Name: MageGuild1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37731,13 +37941,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 705466281}
+  - component: {fileID: 705466282}
   m_Layer: 5
   m_Name: Fortress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &705466281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37795,6 +38006,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &705466282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705466280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc06c293401c83a429581c16405a73e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 2047510794}
+  m_TownHall: {fileID: 102902274}
+  m_CityHall: {fileID: 761928325}
+  m_Capitol: {fileID: 843431173}
+  m_Fort: {fileID: 1873956570}
+  m_Citadel: {fileID: 1260906369}
+  m_Castle: {fileID: 1214742529}
+  m_Tavern: {fileID: 1824794250}
+  m_Blacksmith: {fileID: 1304341314}
+  m_Market: {fileID: 958381347}
+  m_Silo: {fileID: 1322615054}
+  m_MageGuild1: {fileID: 452830723}
+  m_MageGuild2: {fileID: 626731524}
+  m_MageGuild3: {fileID: 1028229207}
+  m_MageGuild4: {fileID: 0}
+  m_MageGuild5: {fileID: 0}
+  m_Grail: {fileID: 0}
+  m_Dwelling1: {fileID: 1558539519}
+  m_Dwelling1Up: {fileID: 390073670}
+  m_Dwelling2: {fileID: 1202229323}
+  m_Dwelling2Up: {fileID: 2097927299}
+  m_Dwelling3: {fileID: 1692365786}
+  m_Dwelling3Up: {fileID: 1167272484}
+  m_Dwelling4: {fileID: 135866187}
+  m_Dwelling4Up: {fileID: 1763911315}
+  m_Dwelling5: {fileID: 1429832227}
+  m_Dwelling5Up: {fileID: 33136656}
+  m_Dwelling6: {fileID: 100419963}
+  m_Dwelling6Up: {fileID: 663245802}
+  m_Dwelling7: {fileID: 1532388244}
+  m_Dwelling7Up: {fileID: 5457800}
 --- !u!1 &706266134
 GameObject:
   m_ObjectHideFlags: 0
@@ -39988,6 +40242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 745716884}
+  - component: {fileID: 745716885}
   m_Layer: 5
   m_Name: Castle
   m_TagString: Untagged
@@ -40038,6 +40293,7 @@ RectTransform:
   - {fileID: 1688411729}
   - {fileID: 850099664}
   - {fileID: 929380986}
+  - {fileID: 121158185}
   - {fileID: 1026795565}
   - {fileID: 2102414909}
   - {fileID: 2044600158}
@@ -40054,6 +40310,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &745716885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745716883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d300ffcc629754bbed21a6528df308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 532274266}
+  m_TownHall: {fileID: 298379870}
+  m_CityHall: {fileID: 2045751671}
+  m_Capitol: {fileID: 102041326}
+  m_Fort: {fileID: 1383271460}
+  m_Citadel: {fileID: 1503385311}
+  m_Castle: {fileID: 1056462749}
+  m_Tavern: {fileID: 1846842056}
+  m_Blacksmith: {fileID: 197956174}
+  m_Market: {fileID: 1565445380}
+  m_Silo: {fileID: 1731898368}
+  m_MageGuild1: {fileID: 1026795568}
+  m_MageGuild2: {fileID: 2102414912}
+  m_MageGuild3: {fileID: 2044600161}
+  m_MageGuild4: {fileID: 1952637122}
+  m_MageGuild5: {fileID: 0}
+  m_Grail: {fileID: 904115459}
+  m_Dwelling1: {fileID: 1710178964}
+  m_Dwelling1Up: {fileID: 858070642}
+  m_Dwelling2: {fileID: 18636316}
+  m_Dwelling2Up: {fileID: 363174966}
+  m_Dwelling3: {fileID: 1836287788}
+  m_Dwelling3Up: {fileID: 1098532641}
+  m_Dwelling4: {fileID: 1070579877}
+  m_Dwelling4Up: {fileID: 41294477}
+  m_Dwelling5: {fileID: 437554519}
+  m_Dwelling5Up: {fileID: 449888637}
+  m_Dwelling6: {fileID: 542492710}
+  m_Dwelling6Up: {fileID: 636888402}
+  m_Dwelling7: {fileID: 1884753779}
+  m_Dwelling7Up: {fileID: 752297815}
+  m_GriffinG: {fileID: 1962063027}
+  m_Griffin2G: {fileID: 426660520}
+  m_Brotherhood: {fileID: 144305426}
+  m_Stables: {fileID: 1194531271}
+  m_Shipyard: {fileID: 1333430439}
+  m_ShipyardShip: {fileID: 1688411732}
+  m_ShipyardMoat: {fileID: 850099667}
+  m_ShipyardMoatShip: {fileID: 929380989}
+  m_Lighthouse: {fileID: 121158186}
 --- !u!1 &746905695
 GameObject:
   m_ObjectHideFlags: 0
@@ -51104,13 +51412,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1012192049}
+  - component: {fileID: 1012192050}
   m_Layer: 5
   m_Name: Stronghold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1012192049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51167,6 +51476,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1012192050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012192048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54353eaa5863ff4ea706523d1bc1e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 1532200631}
+  m_TownHall: {fileID: 363968804}
+  m_CityHall: {fileID: 543366366}
+  m_Capitol: {fileID: 23332051}
+  m_Fort: {fileID: 1170875274}
+  m_Citadel: {fileID: 1889039389}
+  m_Castle: {fileID: 814650518}
+  m_Tavern: {fileID: 655529637}
+  m_Blacksmith: {fileID: 977618379}
+  m_Market: {fileID: 776115390}
+  m_Silo: {fileID: 956649857}
+  m_MageGuild1: {fileID: 1472137293}
+  m_MageGuild2: {fileID: 1339036176}
+  m_MageGuild3: {fileID: 289310745}
+  m_MageGuild4: {fileID: 0}
+  m_MageGuild5: {fileID: 0}
+  m_Grail: {fileID: 1740985648}
+  m_Dwelling1: {fileID: 1532498103}
+  m_Dwelling1Up: {fileID: 2031416323}
+  m_Dwelling2: {fileID: 1682797811}
+  m_Dwelling2Up: {fileID: 1828989149}
+  m_Dwelling3: {fileID: 1151699526}
+  m_Dwelling3Up: {fileID: 1455998170}
+  m_Dwelling4: {fileID: 224581873}
+  m_Dwelling4Up: {fileID: 722601531}
+  m_Dwelling5: {fileID: 418020598}
+  m_Dwelling5Up: {fileID: 1791732482}
+  m_Dwelling6: {fileID: 1626209345}
+  m_Dwelling6Up: {fileID: 1160326802}
+  m_Dwelling7: {fileID: 66953588}
+  m_Dwelling7Up: {fileID: 281180768}
 --- !u!1 &1013089357
 GameObject:
   m_ObjectHideFlags: 0
@@ -51834,7 +52186,7 @@ RectTransform:
   - {fileID: 1445600284}
   - {fileID: 1682439075}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -59482,13 +59834,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173678204}
+  - component: {fileID: 1173678205}
   m_Layer: 5
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1173678204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59546,6 +59899,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1173678205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173678203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a117d29d2fffd5145922aca079bc80a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 153925910}
+  m_TownHall: {fileID: 1563324989}
+  m_CityHall: {fileID: 1829541999}
+  m_Capitol: {fileID: 56267145}
+  m_Fort: {fileID: 1610627308}
+  m_Citadel: {fileID: 1124995522}
+  m_Castle: {fileID: 1733041877}
+  m_Tavern: {fileID: 1828293328}
+  m_Blacksmith: {fileID: 285878800}
+  m_Market: {fileID: 570438035}
+  m_Silo: {fileID: 288819996}
+  m_MageGuild1: {fileID: 475741383}
+  m_MageGuild2: {fileID: 1001207002}
+  m_MageGuild3: {fileID: 1691399400}
+  m_MageGuild4: {fileID: 122893390}
+  m_MageGuild5: {fileID: 1080163955}
+  m_Grail: {fileID: 204529406}
+  m_Dwelling1: {fileID: 1260377215}
+  m_Dwelling1Up: {fileID: 1730368280}
+  m_Dwelling2: {fileID: 2063367204}
+  m_Dwelling2Up: {fileID: 1167723754}
+  m_Dwelling3: {fileID: 1398452755}
+  m_Dwelling3Up: {fileID: 1541821014}
+  m_Dwelling4: {fileID: 681423722}
+  m_Dwelling4Up: {fileID: 1658830236}
+  m_Dwelling5: {fileID: 1984931949}
+  m_Dwelling5Up: {fileID: 448418966}
+  m_Dwelling6: {fileID: 798387153}
+  m_Dwelling6Up: {fileID: 1110420030}
+  m_Dwelling7: {fileID: 302649666}
+  m_Dwelling7Up: {fileID: 1474606530}
 --- !u!1 &1178329419
 GameObject:
   m_ObjectHideFlags: 0
@@ -65665,13 +66061,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1306310432}
+  - component: {fileID: 1306310433}
   m_Layer: 5
   m_Name: Dungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1306310432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -65730,6 +66127,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1306310433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306310431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e2d8eebc3f3a84aa379287f8393291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 234459051}
+  m_TownHall: {fileID: 589716003}
+  m_CityHall: {fileID: 370994235}
+  m_Capitol: {fileID: 116646341}
+  m_Fort: {fileID: 1125197927}
+  m_Citadel: {fileID: 1383055359}
+  m_Castle: {fileID: 657046110}
+  m_Tavern: {fileID: 420635277}
+  m_Blacksmith: {fileID: 849639502}
+  m_Market: {fileID: 726153592}
+  m_Silo: {fileID: 1461328257}
+  m_MageGuild1: {fileID: 1298062732}
+  m_MageGuild2: {fileID: 1915759285}
+  m_MageGuild3: {fileID: 1123795887}
+  m_MageGuild4: {fileID: 1110896063}
+  m_MageGuild5: {fileID: 228632031}
+  m_Grail: {fileID: 862373729}
+  m_Dwelling1: {fileID: 1437716280}
+  m_Dwelling1Up: {fileID: 1084468039}
+  m_Dwelling2: {fileID: 770714925}
+  m_Dwelling2Up: {fileID: 242605584}
+  m_Dwelling3: {fileID: 543438878}
+  m_Dwelling3Up: {fileID: 1050275662}
+  m_Dwelling4: {fileID: 439744941}
+  m_Dwelling4Up: {fileID: 1639428892}
+  m_Dwelling5: {fileID: 720622189}
+  m_Dwelling5Up: {fileID: 1740876957}
+  m_Dwelling6: {fileID: 1209509660}
+  m_Dwelling6Up: {fileID: 665748783}
+  m_Dwelling7: {fileID: 124627190}
+  m_Dwelling7Up: {fileID: 1301903672}
 --- !u!1 &1309408603
 GameObject:
   m_ObjectHideFlags: 0
@@ -67519,13 +67959,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354771769}
+  - component: {fileID: 1354771770}
   m_Layer: 5
   m_Name: Necropolis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1354771769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -67588,6 +68029,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1354771770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354771768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a075db1e0a7f5e8418fb526894866af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 994406031}
+  m_TownHall: {fileID: 637780810}
+  m_CityHall: {fileID: 1484492576}
+  m_Capitol: {fileID: 1880307229}
+  m_Fort: {fileID: 343677011}
+  m_Citadel: {fileID: 1551666834}
+  m_Castle: {fileID: 94131456}
+  m_Tavern: {fileID: 1638958757}
+  m_Blacksmith: {fileID: 1274803958}
+  m_Market: {fileID: 95582156}
+  m_Silo: {fileID: 104152031}
+  m_MageGuild1: {fileID: 412057902}
+  m_MageGuild2: {fileID: 909612979}
+  m_MageGuild3: {fileID: 1983753768}
+  m_MageGuild4: {fileID: 889911772}
+  m_MageGuild5: {fileID: 641101977}
+  m_Grail: {fileID: 912210}
+  m_Dwelling1: {fileID: 1266837766}
+  m_Dwelling1Up: {fileID: 190031963}
+  m_Dwelling2: {fileID: 1098758080}
+  m_Dwelling2Up: {fileID: 97054397}
+  m_Dwelling3: {fileID: 1904117819}
+  m_Dwelling3Up: {fileID: 990146165}
+  m_Dwelling4: {fileID: 1674930420}
+  m_Dwelling4Up: {fileID: 1456749564}
+  m_Dwelling5: {fileID: 479663578}
+  m_Dwelling5Up: {fileID: 1315696456}
+  m_Dwelling6: {fileID: 438537239}
+  m_Dwelling6Up: {fileID: 2094215333}
+  m_Dwelling7: {fileID: 466724249}
+  m_Dwelling7Up: {fileID: 1741898326}
 --- !u!1 &1355087445
 GameObject:
   m_ObjectHideFlags: 0
@@ -78818,7 +79302,7 @@ RectTransform:
   - {fileID: 597518910}
   - {fileID: 1146385763}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -83602,13 +84086,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1673299892}
+  - component: {fileID: 1673299893}
   m_Layer: 5
   m_Name: Inferno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1673299892
 RectTransform:
   m_ObjectHideFlags: 0
@@ -83667,6 +84152,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1673299893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673299891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3ddbaa85d66444ca242b713d1a2846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 215324432}
+  m_TownHall: {fileID: 407492906}
+  m_CityHall: {fileID: 1113826605}
+  m_Capitol: {fileID: 1953443780}
+  m_Fort: {fileID: 1356887768}
+  m_Citadel: {fileID: 1195672781}
+  m_Castle: {fileID: 481418913}
+  m_Tavern: {fileID: 49459896}
+  m_Blacksmith: {fileID: 1358288888}
+  m_Market: {fileID: 388367876}
+  m_Silo: {fileID: 159863574}
+  m_MageGuild1: {fileID: 246670846}
+  m_MageGuild2: {fileID: 1682926826}
+  m_MageGuild3: {fileID: 1884843991}
+  m_MageGuild4: {fileID: 1222766111}
+  m_MageGuild5: {fileID: 1137833787}
+  m_Grail: {fileID: 1795873351}
+  m_Dwelling1: {fileID: 961417507}
+  m_Dwelling1Up: {fileID: 1904145992}
+  m_Dwelling2: {fileID: 1904267717}
+  m_Dwelling2Up: {fileID: 1885334458}
+  m_Dwelling3: {fileID: 1986904127}
+  m_Dwelling3Up: {fileID: 1738177950}
+  m_Dwelling4: {fileID: 197434409}
+  m_Dwelling4Up: {fileID: 881673566}
+  m_Dwelling5: {fileID: 839123817}
+  m_Dwelling5Up: {fileID: 788651423}
+  m_Dwelling6: {fileID: 1366559656}
+  m_Dwelling6Up: {fileID: 810396768}
+  m_Dwelling7: {fileID: 281794326}
+  m_Dwelling7Up: {fileID: 861069047}
 --- !u!1 &1674930416
 GameObject:
   m_ObjectHideFlags: 0
@@ -84580,6 +85108,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688834947}
+  m_CullTransparentMesh: 1
+--- !u!1 &1689524546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1689524547}
+  - component: {fileID: 1689524549}
+  - component: {fileID: 1689524548}
+  m_Layer: 5
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1689524547
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689524546}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 121158185}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1689524548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689524546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 501e281ec92cdd949ab1cda0659bc833, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1689524549
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689524546}
   m_CullTransparentMesh: 1
 --- !u!1 &1691399396
 GameObject:
@@ -86143,7 +86746,7 @@ RectTransform:
   - {fileID: 626641283}
   - {fileID: 2090129038}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -95890,6 +96493,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934936132}
   m_CullTransparentMesh: 1
+--- !u!1 &1937332148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937332149}
+  - component: {fileID: 1937332152}
+  - component: {fileID: 1937332151}
+  - component: {fileID: 1937332150}
+  m_Layer: 5
+  m_Name: Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1937332149
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937332148}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 121158185}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1937332150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937332148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3dddf00ae08a748a3e9b27825aaa26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 1937332151}
+  m_Sprites:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 0bce23d4c41ffa744a4533e713ffb0bd, type: 3}
+  - {fileID: 21300000, guid: 833f0d884e4114748bafc50a210f4d30, type: 3}
+  - {fileID: 21300000, guid: cc97a75f63a698f46b84afb5ff2dadcb, type: 3}
+  - {fileID: 21300000, guid: 07465fad2408efb44b83feef8bdd7cc3, type: 3}
+  - {fileID: 21300000, guid: 591b655742bbbd344a699244dcdc6026, type: 3}
+  - {fileID: 21300000, guid: 9929e38f9e6ab254aac412c3de77a1e4, type: 3}
+  - {fileID: 21300000, guid: b0741147f76d40c48ba1c98ce01e28d0, type: 3}
+  - {fileID: 21300000, guid: 62edecf813ad0274a8a8418551e4aa44, type: 3}
+  - {fileID: 21300000, guid: 68ccf35bf3b6fb14fa78448f8d2a93e5, type: 3}
+  - {fileID: 21300000, guid: 320b1a60a0431b149a050f7983c5ad58, type: 3}
+  - {fileID: 21300000, guid: 8a091bb8eaa2de348b39e1c4a863ad72, type: 3}
+  - {fileID: 21300000, guid: 7b91d4ac09dbf6d4fbd66964687dc133, type: 3}
+  - {fileID: 21300000, guid: ef0f0147876bb7e429ea738e463947c1, type: 3}
+  - {fileID: 21300000, guid: ccd2086b1ffe3f34e837c175bf2ec823, type: 3}
+  - {fileID: 21300000, guid: dcd0ce66d9aa15141b08bc41711515e7, type: 3}
+  - {fileID: 21300000, guid: 62c4cea3311b56643b4c8fd52c4cad45, type: 3}
+  - {fileID: 21300000, guid: 06a395750b6041642ab2f1f32b59913c, type: 3}
+  - {fileID: 21300000, guid: 8c4483fd95b531a4aaf867063f1b8db8, type: 3}
+  - {fileID: 21300000, guid: be78c5e25ed543a44b5d6dd315bb85d2, type: 3}
+--- !u!114 &1937332151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937332148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1937332152
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937332148}
+  m_CullTransparentMesh: 1
 --- !u!1 &1941880120
 GameObject:
   m_ObjectHideFlags: 0
@@ -96224,7 +96937,7 @@ RectTransform:
   - {fileID: 630993086}
   - {fileID: 924285180}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -99861,13 +100574,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021859228}
+  - component: {fileID: 2021859229}
   m_Layer: 5
   m_Name: Conflux
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2021859228
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99930,6 +100644,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2021859229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021859227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1c7d54c18526941a4a21be0b95df70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VillageHall: {fileID: 1478183045}
+  m_TownHall: {fileID: 1625679061}
+  m_CityHall: {fileID: 1979106567}
+  m_Capitol: {fileID: 1688834949}
+  m_Fort: {fileID: 1636454778}
+  m_Citadel: {fileID: 55576662}
+  m_Castle: {fileID: 1168619871}
+  m_Tavern: {fileID: 445315965}
+  m_Blacksmith: {fileID: 1378778903}
+  m_Market: {fileID: 1957434101}
+  m_Silo: {fileID: 346596840}
+  m_MageGuild1: {fileID: 77754365}
+  m_MageGuild2: {fileID: 1678693984}
+  m_MageGuild3: {fileID: 1013089361}
+  m_MageGuild4: {fileID: 335775834}
+  m_MageGuild5: {fileID: 2033798160}
+  m_Grail: {fileID: 1887519113}
+  m_Dwelling1: {fileID: 404085727}
+  m_Dwelling1Up: {fileID: 1772517425}
+  m_Dwelling2: {fileID: 444061527}
+  m_Dwelling2Up: {fileID: 1596831928}
+  m_Dwelling3: {fileID: 731007116}
+  m_Dwelling3Up: {fileID: 1802517953}
+  m_Dwelling4: {fileID: 194544259}
+  m_Dwelling4Up: {fileID: 944783759}
+  m_Dwelling5: {fileID: 1027850269}
+  m_Dwelling5Up: {fileID: 1807424361}
+  m_Dwelling6: {fileID: 1451751883}
+  m_Dwelling6Up: {fileID: 655611742}
+  m_Dwelling7: {fileID: 2088166026}
+  m_Dwelling7Up: {fileID: 354464495}
 --- !u!1 &2021916574
 GameObject:
   m_ObjectHideFlags: 0
@@ -101534,7 +102291,7 @@ RectTransform:
   - {fileID: 1341630143}
   - {fileID: 346181150}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -104959,7 +105716,7 @@ RectTransform:
   - {fileID: 125096002}
   - {fileID: 657885367}
   m_Father: {fileID: 745716884}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

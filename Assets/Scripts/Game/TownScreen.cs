@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,7 @@ public class TownScreen : MonoBehaviour
     [SerializeField] Image m_UI;
     [SerializeField] Image m_Portrait;
     [SerializeField] Image m_Flag;
-    [SerializeField] GameObject[] m_Landscapes;
+    [SerializeField] TownBuildings[] m_TownBuildings;
 
     MapTown m_CurrentTown;
 
@@ -31,9 +32,9 @@ public class TownScreen : MonoBehaviour
 
         m_Root.SetActive(false);
 
-        for (int i = 0; i < m_Landscapes.Length; i++)
+        for (int i = 0; i < m_TownBuildings.Length; i++)
         {
-            m_Landscapes[i].SetActive(false);
+            m_TownBuildings[i].gameObject.SetActive(false);
         }
     }
 
@@ -64,12 +65,18 @@ public class TownScreen : MonoBehaviour
 
     public void ShowTown(MapTown a_Town)
     {
+        for (int i = 0; i < a_Town.Buildings.Count; i++)
+        {
+            Debug.Log($"{Convert.ToString(a_Town.Buildings[i], 2)}");
+        }
+
         m_CurrentTown = a_Town;
 
         int _FactionIndex = m_Factions.Factions.IndexOf(m_CurrentTown.Faction);
 
-        m_Landscapes[m_CurrentIndex].SetActive(false);
-        m_Landscapes[_FactionIndex].SetActive(true);
+        m_TownBuildings[m_CurrentIndex].gameObject.SetActive(false);
+        m_TownBuildings[_FactionIndex].gameObject.SetActive(true);
+        m_TownBuildings[_FactionIndex].SetBuildings(a_Town.Buildings);
 
         m_CurrentIndex = _FactionIndex;
 

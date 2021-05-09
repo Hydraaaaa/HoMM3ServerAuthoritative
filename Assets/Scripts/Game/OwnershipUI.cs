@@ -327,6 +327,17 @@ public class OwnershipUI : MonoBehaviour
 
     public void TownPressedLowRes(int a_Index)
     {
-        m_LocalOwnership.SelectTown(m_LocalOwnership.GetTowns()[a_Index + m_TownUIIndexLowRes]);
+        int _Index = a_Index + m_TownUIIndexLowRes;
+
+        List<MapTown> _Towns = m_LocalOwnership.GetTowns();
+
+        if (m_LocalOwnership.SelectedTown != _Towns[_Index])
+        {
+            m_LocalOwnership.SelectTown(_Towns[_Index]);
+        }
+        else
+        {
+            m_TownScreen.ShowTown(m_LocalOwnership.SelectedTown);
+        }
     }
 }

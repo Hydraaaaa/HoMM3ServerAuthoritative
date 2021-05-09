@@ -8,6 +8,7 @@ public class MapTown : MapObjectBase
     public Faction Faction { get; private set; }
     public int PlayerIndex { get; private set; }
     public bool IsUnderground { get; private set; }
+    public List<byte> Buildings { get; private set; }
 
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] MapObjectRenderer m_Renderer;
@@ -121,5 +122,7 @@ public class MapTown : MapObjectBase
         {
             gameObject.name = Faction.name;
         }
+
+        Buildings = a_ScenarioObject.Town.Buildings;
     }
 }
