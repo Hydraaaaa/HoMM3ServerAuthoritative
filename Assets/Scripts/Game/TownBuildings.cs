@@ -45,8 +45,7 @@ public abstract class TownBuildings : MonoBehaviour
 
     public virtual void SetBuildings(List<byte> a_Bytes)
     {
-        if (a_Bytes == null ||
-            a_Bytes.Count == 0)
+        if (a_Bytes.Count == 0)
         {
             Debug.Log($"!! NULL");
             return;
@@ -227,12 +226,12 @@ public abstract class TownBuildings : MonoBehaviour
             m_Dwelling4Up.gameObject.SetActive(false);
         }
 
-        if ((a_Bytes[4] & 4) == 4)
+        if ((a_Bytes[4] & 8) == 8)
         {
             m_Dwelling5.gameObject.SetActive(false);
             m_Dwelling5Up.gameObject.SetActive(true);
         }
-        else if ((a_Bytes[4] & 8) == 8)
+        else if ((a_Bytes[4] & 4) == 4)
         {
             m_Dwelling5.gameObject.SetActive(true);
             m_Dwelling5Up.gameObject.SetActive(false);
