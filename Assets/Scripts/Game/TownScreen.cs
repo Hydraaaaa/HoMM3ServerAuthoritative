@@ -65,11 +65,6 @@ public class TownScreen : MonoBehaviour
 
     public void ShowTown(MapTown a_Town)
     {
-        for (int i = 0; i < a_Town.Buildings.Count; i++)
-        {
-            Debug.Log($"{Convert.ToString(a_Town.Buildings[i], 2)}");
-        }
-
         m_CurrentTown = a_Town;
 
         int _FactionIndex = m_Factions.Factions.IndexOf(m_CurrentTown.Faction);

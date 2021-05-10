@@ -23,7 +23,7 @@ MonoBehaviour:
     ComputerPlayable: 1
     AIBehaviour: 0
     LimitedTownChoice: 0
-    AllowedTowns: 1
+    AllowedTowns: 511
     IsTownChoosable: 0
     HasMainTown: 1
     MainTownXCoord: 15
@@ -18361,9 +18361,9 @@ MonoBehaviour:
       IsGuarded: 0
       Guards: []
       IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 1
-      Buildings: 
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 00004092a400000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19262,16 +19262,68 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 9
-    PosY: 18
+    PosX: 37
+    PosY: 16
+    IsUnderground: 0
+    SortOrder: 18
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 00004092a400010000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcramx0
+      MineType: 1
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 34
+    PosY: 16
     IsUnderground: 0
     SortOrder: 19
     Monster:
@@ -19299,7 +19351,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 48001d500000000000000000
+      Buildings: 00000c000000010000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19314,16 +19366,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 12
-    PosY: 18
+    PosX: 31
+    PosY: 16
     IsUnderground: 0
     SortOrder: 20
     Monster:
@@ -19351,7 +19403,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 08004092a400000000000000
+      Buildings: 000010020000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19366,16 +19418,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 15
-    PosY: 18
+    PosX: 28
+    PosY: 16
     IsUnderground: 0
     SortOrder: 21
     Monster:
@@ -19403,7 +19455,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 400008000000000000000000
+      Buildings: 0000000a0000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19418,16 +19470,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 18
-    PosY: 18
+    PosX: 25
+    PosY: 16
     IsUnderground: 0
     SortOrder: 22
     Monster:
@@ -19455,7 +19507,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000000008001000000000000
+      Buildings: 000000001400000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19470,16 +19522,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 21
-    PosY: 18
+    PosX: 22
+    PosY: 16
     IsUnderground: 0
     SortOrder: 23
     Monster:
@@ -19507,7 +19559,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000005000000000000000000
+      Buildings: 380010000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19522,16 +19574,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 24
-    PosY: 18
+    PosX: 19
+    PosY: 16
     IsUnderground: 0
     SortOrder: 24
     Monster:
@@ -19559,7 +19611,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000001000000000000000000
+      Buildings: 000804000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19574,16 +19626,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 30
-    PosY: 18
+    PosX: 16
+    PosY: 16
     IsUnderground: 0
     SortOrder: 25
     Monster:
@@ -19611,7 +19663,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000000700000000000000000
+      Buildings: 000808000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19626,16 +19678,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 33
-    PosY: 18
+    PosX: 13
+    PosY: 16
     IsUnderground: 0
     SortOrder: 26
     Monster:
@@ -19663,7 +19715,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000040060000000000000000
+      Buildings: 000500000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19678,16 +19730,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 36
-    PosY: 18
+    PosX: 10
+    PosY: 16
     IsUnderground: 0
     SortOrder: 27
     Monster:
@@ -19715,7 +19767,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 0000c0000000000000000000
+      Buildings: 000000500000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19730,16 +19782,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 3
-    PosY: 18
+    PosX: 7
+    PosY: 16
     IsUnderground: 0
     SortOrder: 28
     Monster:
@@ -19767,7 +19819,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 090000000000000000000000
+      Buildings: 000810000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19782,16 +19834,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 6
-    PosY: 18
+    PosX: 4
+    PosY: 16
     IsUnderground: 0
     SortOrder: 29
     Monster:
@@ -19819,7 +19871,7 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 0800c0f6ed01000000000000
+      Buildings: 080008000000000000000000
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19834,18 +19886,798 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avccasx0
-      MineType: 0
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 27
-    PosY: 17
+    PosX: 4
+    PosY: 19
     IsUnderground: 0
-    SortOrder: 18
+    SortOrder: 30
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 080004000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcinfx0
+      MineType: 3
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 7
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 31
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 080044010000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcnecx0
+      MineType: 4
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 10
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 32
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 080004000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcnecx0
+      MineType: 4
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 13
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 33
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000808000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcdunx0
+      MineType: 5
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 16
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 34
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000804000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcdunx0
+      MineType: 5
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 19
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 35
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000008000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcdunx0
+      MineType: 5
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 22
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 36
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000010000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcstrx0
+      MineType: 6
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 25
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 37
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000020000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcstrx0
+      MineType: 6
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 28
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 38
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000108000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcstrx0
+      MineType: 6
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 31
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 39
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 800010000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcstrx0
+      MineType: 6
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 34
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 40
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 880014000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcstrx0
+      MineType: 6
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 37
+    PosY: 19
+    IsUnderground: 0
+    SortOrder: 41
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 880016000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcftrx0
+      MineType: 7
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 37
+    PosY: 22
+    IsUnderground: 0
+    SortOrder: 42
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 080004000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avchforx
+      MineType: 8
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 37
+    PosY: 25
+    IsUnderground: 0
+    SortOrder: 45
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 000004000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcftrx0
+      MineType: 7
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 34
+    PosY: 22
+    IsUnderground: 0
+    SortOrder: 43
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      Buildings: 080008000000000000000000
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcftrx0
+      MineType: 7
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 31
+    PosY: 22
+    IsUnderground: 0
+    SortOrder: 44
     Monster:
       Type: 0
       Count: 0

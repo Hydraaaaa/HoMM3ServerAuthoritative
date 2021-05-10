@@ -12283,6 +12283,17 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 612671057}
   m_Dwelling7: {fileID: 91806119}
   m_Dwelling7Up: {fileID: 1814531210}
+  m_VillageHouses: {fileID: 1812314448}
+  m_TownHouses: {fileID: 2121267584}
+  m_CityHouses: {fileID: 1629878331}
+  m_CapitolHouses: {fileID: 1293462460}
+  m_MysticPond: {fileID: 293124404}
+  m_FountainOfFortune: {fileID: 175476844}
+  m_DwarfG: {fileID: 406348636}
+  m_Dwarf2G: {fileID: 142673797}
+  m_DendroidG: {fileID: 1022623453}
+  m_Dendroid2G: {fileID: 156444077}
+  m_Treasury: {fileID: 2030708715}
 --- !u!1 &216818740
 GameObject:
   m_ObjectHideFlags: 0
@@ -38034,7 +38045,7 @@ MonoBehaviour:
   m_MageGuild3: {fileID: 1028229207}
   m_MageGuild4: {fileID: 0}
   m_MageGuild5: {fileID: 0}
-  m_Grail: {fileID: 0}
+  m_Grail: {fileID: 1245564998}
   m_Dwelling1: {fileID: 1558539519}
   m_Dwelling1Up: {fileID: 390073670}
   m_Dwelling2: {fileID: 1202229323}
@@ -38049,6 +38060,13 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 663245802}
   m_Dwelling7: {fileID: 1532388244}
   m_Dwelling7Up: {fileID: 5457800}
+  m_GnollG: {fileID: 130968399}
+  m_Gnoll2G: {fileID: 2010772217}
+  m_GlyphsOfFear: {fileID: 1901702806}
+  m_BloodObelisk: {fileID: 1055208367}
+  m_CageOfWarlords: {fileID: 288233849}
+  m_Shipyard: {fileID: 76927278}
+  m_ShipyardShip: {fileID: 1552916801}
 --- !u!1 &706266134
 GameObject:
   m_ObjectHideFlags: 0
@@ -51519,6 +51537,12 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 1160326802}
   m_Dwelling7: {fileID: 66953588}
   m_Dwelling7Up: {fileID: 281180768}
+  m_GoblinG: {fileID: 707855097}
+  m_Goblin2G: {fileID: 1366522886}
+  m_HallOfValhalla: {fileID: 1089577630}
+  m_EscapeTunnel: {fileID: 450479980}
+  m_FreelancersGuild: {fileID: 1093309650}
+  m_BallistaYard: {fileID: 500960799}
 --- !u!1 &1013089357
 GameObject:
   m_ObjectHideFlags: 0
@@ -59942,6 +59966,12 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 1110420030}
   m_Dwelling7: {fileID: 302649666}
   m_Dwelling7Up: {fileID: 1474606530}
+  m_GargoyleG: {fileID: 220828836}
+  m_Gargoyle2G: {fileID: 728969766}
+  m_Library: {fileID: 435894563}
+  m_WallOfKnowledge: {fileID: 613294077}
+  m_LookoutTower: {fileID: 1962400635}
+  m_ArtifactMerchants: {fileID: 1654138834}
 --- !u!1 &1178329419
 GameObject:
   m_ObjectHideFlags: 0
@@ -66170,6 +66200,13 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 665748783}
   m_Dwelling7: {fileID: 124627190}
   m_Dwelling7Up: {fileID: 1301903672}
+  m_WarrenG: {fileID: 353943788}
+  m_Warren2G: {fileID: 146710793}
+  m_ManaVortex: {fileID: 152359854}
+  m_ManaVortex2: {fileID: 950996170}
+  m_BattleScholarAcademy: {fileID: 468049506}
+  m_SummoningPortal: {fileID: 161695371}
+  m_ArtifactMerchants: {fileID: 1447082938}
 --- !u!1 &1309408603
 GameObject:
   m_ObjectHideFlags: 0
@@ -68072,6 +68109,13 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 2094215333}
   m_Dwelling7: {fileID: 466724249}
   m_Dwelling7Up: {fileID: 1741898326}
+  m_SkeletonG: {fileID: 403691775}
+  m_Skeleton2G: {fileID: 1831219683}
+  m_Shipyard: {fileID: 1320461703}
+  m_ShipyardShip: {fileID: 1995877362}
+  m_SkeletonTransformer: {fileID: 1794632759}
+  m_NecromancyAmplifier: {fileID: 884727681}
+  m_CoverOfDarkness: {fileID: 993845001}
 --- !u!1 &1355087445
 GameObject:
   m_ObjectHideFlags: 0
@@ -84195,6 +84239,13 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 810396768}
   m_Dwelling7: {fileID: 281794326}
   m_Dwelling7Up: {fileID: 861069047}
+  m_ImpG: {fileID: 1311270572}
+  m_Imp2G: {fileID: 1807054577}
+  m_HellhoundG: {fileID: 721546301}
+  m_Hellhound2G: {fileID: 1527761812}
+  m_CastleGate: {fileID: 1531076455}
+  m_BrimstoneStormclouds: {fileID: 1918032366}
+  m_OrderOfFire: {fileID: 2046026916}
 --- !u!1 &1674930416
 GameObject:
   m_ObjectHideFlags: 0
@@ -100687,6 +100738,12 @@ MonoBehaviour:
   m_Dwelling6Up: {fileID: 655611742}
   m_Dwelling7: {fileID: 2088166026}
   m_Dwelling7Up: {fileID: 354464495}
+  m_PixieG: {fileID: 979331252}
+  m_Pixie2G: {fileID: 836234001}
+  m_MagicUniversity: {fileID: 1256701691}
+  m_Shipyard: {fileID: 120608041}
+  m_ShipyardShip: {fileID: 1964780174}
+  m_ArtifactMerchants: {fileID: 226213336}
 --- !u!1 &2021916574
 GameObject:
   m_ObjectHideFlags: 0
