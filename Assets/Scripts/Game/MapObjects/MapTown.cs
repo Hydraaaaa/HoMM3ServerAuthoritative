@@ -109,10 +109,30 @@ public class MapTown : MapObjectBase
 
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[PlayerIndex]);
 
-        // TODO: Check buildings to determine if there's a fort or capitol
 
-        m_Renderer.SetSprites(Faction.MapVisualData.m_Sprites);
-        m_ShadowRenderer.SetSprites(Faction.MapVisualData.m_ShadowSprites);
+        if (a_ScenarioObject.Town.Buildings.Count > 0)
+        {
+            if ((a_ScenarioObject.Town.Buildings[0] & 4) == 4)
+            {
+                m_Renderer.SetSprites(Faction.MapVisualDataCapitol.m_Sprites);
+                m_ShadowRenderer.SetSprites(Faction.MapVisualDataCapitol.m_ShadowSprites);
+            }
+            else if ((a_ScenarioObject.Town.Buildings[0] & 8) == 8)
+            {
+                m_Renderer.SetSprites(Faction.MapVisualData.m_Sprites);
+                m_ShadowRenderer.SetSprites(Faction.MapVisualData.m_ShadowSprites);
+            }
+            else
+            {
+                m_Renderer.SetSprites(Faction.MapVisualDataNoFort.m_Sprites);
+                m_ShadowRenderer.SetSprites(Faction.MapVisualDataNoFort.m_ShadowSprites);
+            }
+        }
+        else
+        {
+            m_Renderer.SetSprites(Faction.MapVisualData.m_Sprites);
+            m_ShadowRenderer.SetSprites(Faction.MapVisualData.m_ShadowSprites);
+        }
 
         if (a_ScenarioObject.Town.Name != "")
         {
