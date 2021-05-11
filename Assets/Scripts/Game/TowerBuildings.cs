@@ -10,15 +10,14 @@ public class TowerBuildings : TownBuildings
     [SerializeField] Building m_Library;
     [SerializeField] Building m_WallOfKnowledge;
     [SerializeField] Building m_LookoutTower;
-    [SerializeField] Building m_ArtifactMerchants;
 
-    public override void SetBuildings(List<byte> a_Bytes)
+    public override void SetBuildings(BuildingData a_Data)
     {
-        base.SetBuildings(a_Bytes);
+        base.SetBuildings(a_Data);
 
-        if ((a_Bytes[3] & 8) == 8)
+        if (a_Data.Dwelling2Growth)
         {
-            if ((a_Bytes[3] & 4) == 4)
+            if (a_Data.Dwelling2Up)
             {
                 m_GargoyleG.gameObject.SetActive(false);
                 m_Gargoyle2G.gameObject.SetActive(true);
@@ -38,10 +37,5 @@ public class TowerBuildings : TownBuildings
             m_GargoyleG.gameObject.SetActive(false);
             m_Gargoyle2G.gameObject.SetActive(false);
         }
-
-        m_Library.gameObject.SetActive((a_Bytes[2] & 4) == 4);
-        m_WallOfKnowledge.gameObject.SetActive((a_Bytes[2] & 8) == 8);
-        m_LookoutTower.gameObject.SetActive((a_Bytes[2] & 16) == 16);
-        m_ArtifactMerchants.gameObject.SetActive((a_Bytes[1] & 4) == 4);
     }
 }

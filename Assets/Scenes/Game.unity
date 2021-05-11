@@ -7901,7 +7901,7 @@ GameObject:
   - component: {fileID: 144305424}
   - component: {fileID: 144305426}
   m_Layer: 5
-  m_Name: Brotherhood
+  m_Name: BrotherhoodOfTheSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12263,12 +12263,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 23144357}
   m_Market: {fileID: 1400948828}
   m_Silo: {fileID: 2119636115}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 627636437}
   m_MageGuild2: {fileID: 763278471}
   m_MageGuild3: {fileID: 1615835239}
   m_MageGuild4: {fileID: 195580584}
   m_MageGuild5: {fileID: 188639873}
+  m_Shipyard: {fileID: 0}
+  m_ShipyardShip: {fileID: 0}
   m_Grail: {fileID: 1343477861}
+  m_FactionBuilding1: {fileID: 293124404}
+  m_FactionBuilding2: {fileID: 175476844}
+  m_FactionBuilding3: {fileID: 2030708715}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1881348219}
   m_Dwelling1Up: {fileID: 551071841}
   m_Dwelling2: {fileID: 1503975386}
@@ -12287,13 +12294,10 @@ MonoBehaviour:
   m_TownHouses: {fileID: 2121267584}
   m_CityHouses: {fileID: 1629878331}
   m_CapitolHouses: {fileID: 1293462460}
-  m_MysticPond: {fileID: 293124404}
-  m_FountainOfFortune: {fileID: 175476844}
   m_DwarfG: {fileID: 406348636}
   m_Dwarf2G: {fileID: 142673797}
   m_DendroidG: {fileID: 1022623453}
   m_Dendroid2G: {fileID: 156444077}
-  m_Treasury: {fileID: 2030708715}
 --- !u!1 &216818740
 GameObject:
   m_ObjectHideFlags: 0
@@ -38040,12 +38044,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 1304341314}
   m_Market: {fileID: 958381347}
   m_Silo: {fileID: 1322615054}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 452830723}
   m_MageGuild2: {fileID: 626731524}
   m_MageGuild3: {fileID: 1028229207}
   m_MageGuild4: {fileID: 0}
   m_MageGuild5: {fileID: 0}
+  m_Shipyard: {fileID: 76927278}
+  m_ShipyardShip: {fileID: 1552916801}
   m_Grail: {fileID: 1245564998}
+  m_FactionBuilding1: {fileID: 1055208367}
+  m_FactionBuilding2: {fileID: 1901702806}
+  m_FactionBuilding3: {fileID: 288233849}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1558539519}
   m_Dwelling1Up: {fileID: 390073670}
   m_Dwelling2: {fileID: 1202229323}
@@ -38062,11 +38073,6 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 5457800}
   m_GnollG: {fileID: 130968399}
   m_Gnoll2G: {fileID: 2010772217}
-  m_GlyphsOfFear: {fileID: 1901702806}
-  m_BloodObelisk: {fileID: 1055208367}
-  m_CageOfWarlords: {fileID: 288233849}
-  m_Shipyard: {fileID: 76927278}
-  m_ShipyardShip: {fileID: 1552916801}
 --- !u!1 &706266134
 GameObject:
   m_ObjectHideFlags: 0
@@ -40351,12 +40357,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 197956174}
   m_Market: {fileID: 1565445380}
   m_Silo: {fileID: 1731898368}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 1026795568}
   m_MageGuild2: {fileID: 2102414912}
   m_MageGuild3: {fileID: 2044600161}
   m_MageGuild4: {fileID: 1952637122}
   m_MageGuild5: {fileID: 0}
+  m_Shipyard: {fileID: 1333430439}
+  m_ShipyardShip: {fileID: 1688411732}
   m_Grail: {fileID: 904115459}
+  m_FactionBuilding1: {fileID: 121158186}
+  m_FactionBuilding2: {fileID: 144305426}
+  m_FactionBuilding3: {fileID: 1194531271}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1710178964}
   m_Dwelling1Up: {fileID: 858070642}
   m_Dwelling2: {fileID: 18636316}
@@ -40373,13 +40386,8 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 752297815}
   m_GriffinG: {fileID: 1962063027}
   m_Griffin2G: {fileID: 426660520}
-  m_Brotherhood: {fileID: 144305426}
-  m_Stables: {fileID: 1194531271}
-  m_Shipyard: {fileID: 1333430439}
-  m_ShipyardShip: {fileID: 1688411732}
   m_ShipyardMoat: {fileID: 850099667}
   m_ShipyardMoatShip: {fileID: 929380989}
-  m_Lighthouse: {fileID: 121158186}
 --- !u!1 &746905695
 GameObject:
   m_ObjectHideFlags: 0
@@ -51517,12 +51525,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 977618379}
   m_Market: {fileID: 776115390}
   m_Silo: {fileID: 956649857}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 1472137293}
   m_MageGuild2: {fileID: 1339036176}
   m_MageGuild3: {fileID: 289310745}
   m_MageGuild4: {fileID: 0}
   m_MageGuild5: {fileID: 0}
+  m_Shipyard: {fileID: 0}
+  m_ShipyardShip: {fileID: 0}
   m_Grail: {fileID: 1740985648}
+  m_FactionBuilding1: {fileID: 450479980}
+  m_FactionBuilding2: {fileID: 1093309650}
+  m_FactionBuilding3: {fileID: 500960799}
+  m_FactionBuilding4: {fileID: 1089577630}
   m_Dwelling1: {fileID: 1532498103}
   m_Dwelling1Up: {fileID: 2031416323}
   m_Dwelling2: {fileID: 1682797811}
@@ -51539,10 +51554,6 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 281180768}
   m_GoblinG: {fileID: 707855097}
   m_Goblin2G: {fileID: 1366522886}
-  m_HallOfValhalla: {fileID: 1089577630}
-  m_EscapeTunnel: {fileID: 450479980}
-  m_FreelancersGuild: {fileID: 1093309650}
-  m_BallistaYard: {fileID: 500960799}
 --- !u!1 &1013089357
 GameObject:
   m_ObjectHideFlags: 0
@@ -59946,12 +59957,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 285878800}
   m_Market: {fileID: 570438035}
   m_Silo: {fileID: 288819996}
+  m_ArtifactMerchants: {fileID: 1654138834}
   m_MageGuild1: {fileID: 475741383}
   m_MageGuild2: {fileID: 1001207002}
   m_MageGuild3: {fileID: 1691399400}
   m_MageGuild4: {fileID: 122893390}
   m_MageGuild5: {fileID: 1080163955}
+  m_Shipyard: {fileID: 0}
+  m_ShipyardShip: {fileID: 0}
   m_Grail: {fileID: 204529406}
+  m_FactionBuilding1: {fileID: 435894563}
+  m_FactionBuilding2: {fileID: 613294077}
+  m_FactionBuilding3: {fileID: 1962400635}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1260377215}
   m_Dwelling1Up: {fileID: 1730368280}
   m_Dwelling2: {fileID: 2063367204}
@@ -59971,7 +59989,6 @@ MonoBehaviour:
   m_Library: {fileID: 435894563}
   m_WallOfKnowledge: {fileID: 613294077}
   m_LookoutTower: {fileID: 1962400635}
-  m_ArtifactMerchants: {fileID: 1654138834}
 --- !u!1 &1178329419
 GameObject:
   m_ObjectHideFlags: 0
@@ -66180,12 +66197,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 849639502}
   m_Market: {fileID: 726153592}
   m_Silo: {fileID: 1461328257}
+  m_ArtifactMerchants: {fileID: 1447082938}
   m_MageGuild1: {fileID: 1298062732}
   m_MageGuild2: {fileID: 1915759285}
   m_MageGuild3: {fileID: 1123795887}
   m_MageGuild4: {fileID: 1110896063}
   m_MageGuild5: {fileID: 228632031}
+  m_Shipyard: {fileID: 0}
+  m_ShipyardShip: {fileID: 0}
   m_Grail: {fileID: 862373729}
+  m_FactionBuilding1: {fileID: 152359854}
+  m_FactionBuilding2: {fileID: 161695371}
+  m_FactionBuilding3: {fileID: 468049506}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1437716280}
   m_Dwelling1Up: {fileID: 1084468039}
   m_Dwelling2: {fileID: 770714925}
@@ -66202,11 +66226,7 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 1301903672}
   m_WarrenG: {fileID: 353943788}
   m_Warren2G: {fileID: 146710793}
-  m_ManaVortex: {fileID: 152359854}
-  m_ManaVortex2: {fileID: 950996170}
-  m_BattleScholarAcademy: {fileID: 468049506}
-  m_SummoningPortal: {fileID: 161695371}
-  m_ArtifactMerchants: {fileID: 1447082938}
+  m_ManaVortexMageGuild5: {fileID: 0}
 --- !u!1 &1309408603
 GameObject:
   m_ObjectHideFlags: 0
@@ -68089,12 +68109,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 1274803958}
   m_Market: {fileID: 95582156}
   m_Silo: {fileID: 104152031}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 412057902}
   m_MageGuild2: {fileID: 909612979}
   m_MageGuild3: {fileID: 1983753768}
   m_MageGuild4: {fileID: 889911772}
   m_MageGuild5: {fileID: 641101977}
+  m_Shipyard: {fileID: 1320461703}
+  m_ShipyardShip: {fileID: 1995877362}
   m_Grail: {fileID: 912210}
+  m_FactionBuilding1: {fileID: 993845001}
+  m_FactionBuilding2: {fileID: 884727681}
+  m_FactionBuilding3: {fileID: 1794632759}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 1266837766}
   m_Dwelling1Up: {fileID: 190031963}
   m_Dwelling2: {fileID: 1098758080}
@@ -68111,8 +68138,6 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 1741898326}
   m_SkeletonG: {fileID: 403691775}
   m_Skeleton2G: {fileID: 1831219683}
-  m_Shipyard: {fileID: 1320461703}
-  m_ShipyardShip: {fileID: 1995877362}
   m_SkeletonTransformer: {fileID: 1794632759}
   m_NecromancyAmplifier: {fileID: 884727681}
   m_CoverOfDarkness: {fileID: 993845001}
@@ -84219,12 +84244,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 1358288888}
   m_Market: {fileID: 388367876}
   m_Silo: {fileID: 159863574}
+  m_ArtifactMerchants: {fileID: 0}
   m_MageGuild1: {fileID: 246670846}
   m_MageGuild2: {fileID: 1682926826}
   m_MageGuild3: {fileID: 1884843991}
   m_MageGuild4: {fileID: 1222766111}
   m_MageGuild5: {fileID: 1137833787}
+  m_Shipyard: {fileID: 0}
+  m_ShipyardShip: {fileID: 0}
   m_Grail: {fileID: 1795873351}
+  m_FactionBuilding1: {fileID: 1918032366}
+  m_FactionBuilding2: {fileID: 1531076455}
+  m_FactionBuilding3: {fileID: 2046026916}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 961417507}
   m_Dwelling1Up: {fileID: 1904145992}
   m_Dwelling2: {fileID: 1904267717}
@@ -84243,9 +84275,6 @@ MonoBehaviour:
   m_Imp2G: {fileID: 1807054577}
   m_HellhoundG: {fileID: 721546301}
   m_Hellhound2G: {fileID: 1527761812}
-  m_CastleGate: {fileID: 1531076455}
-  m_BrimstoneStormclouds: {fileID: 1918032366}
-  m_OrderOfFire: {fileID: 2046026916}
 --- !u!1 &1674930416
 GameObject:
   m_ObjectHideFlags: 0
@@ -100718,12 +100747,19 @@ MonoBehaviour:
   m_Blacksmith: {fileID: 1378778903}
   m_Market: {fileID: 1957434101}
   m_Silo: {fileID: 346596840}
+  m_ArtifactMerchants: {fileID: 226213336}
   m_MageGuild1: {fileID: 77754365}
   m_MageGuild2: {fileID: 1678693984}
   m_MageGuild3: {fileID: 1013089361}
   m_MageGuild4: {fileID: 335775834}
   m_MageGuild5: {fileID: 2033798160}
+  m_Shipyard: {fileID: 120608041}
+  m_ShipyardShip: {fileID: 1964780174}
   m_Grail: {fileID: 1887519113}
+  m_FactionBuilding1: {fileID: 1256701691}
+  m_FactionBuilding2: {fileID: 0}
+  m_FactionBuilding3: {fileID: 0}
+  m_FactionBuilding4: {fileID: 0}
   m_Dwelling1: {fileID: 404085727}
   m_Dwelling1Up: {fileID: 1772517425}
   m_Dwelling2: {fileID: 444061527}
@@ -100740,10 +100776,6 @@ MonoBehaviour:
   m_Dwelling7Up: {fileID: 354464495}
   m_PixieG: {fileID: 979331252}
   m_Pixie2G: {fileID: 836234001}
-  m_MagicUniversity: {fileID: 1256701691}
-  m_Shipyard: {fileID: 120608041}
-  m_ShipyardShip: {fileID: 1964780174}
-  m_ArtifactMerchants: {fileID: 226213336}
 --- !u!1 &2021916574
 GameObject:
   m_ObjectHideFlags: 0

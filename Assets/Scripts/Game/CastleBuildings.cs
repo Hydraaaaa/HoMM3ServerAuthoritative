@@ -8,21 +8,16 @@ public class CastleBuildings : TownBuildings
 
     [SerializeField] Building m_GriffinG;
     [SerializeField] Building m_Griffin2G;
-    [SerializeField] Building m_Brotherhood;
-    [SerializeField] Building m_Stables;
-    [SerializeField] Building m_Shipyard;
-    [SerializeField] Building m_ShipyardShip;
     [SerializeField] Building m_ShipyardMoat;
     [SerializeField] Building m_ShipyardMoatShip;
-    [SerializeField] Building m_Lighthouse;
 
-    public override void SetBuildings(List<byte> a_Bytes)
+    public override void SetBuildings(BuildingData a_Data)
     {
-        base.SetBuildings(a_Bytes);
+        base.SetBuildings(a_Data);
 
-        if ((a_Bytes[3] & 64) == 64)
+        if (a_Data.Dwelling3Growth)
         {
-            if ((a_Bytes[3] & 32) == 32)
+            if (a_Data.Dwelling3Up)
             {
                 m_GriffinG.gameObject.SetActive(false);
                 m_Griffin2G.gameObject.SetActive(true);
@@ -43,25 +38,15 @@ public class CastleBuildings : TownBuildings
             m_Griffin2G.gameObject.SetActive(false);
         }
 
-        if ((a_Bytes[2] & 8) == 8)
+        // Brotherhood of the Sword
+        if (a_Data.FactionBuilding2)
         {
             m_Tavern.gameObject.SetActive(false);
-            m_Brotherhood.gameObject.SetActive(true);
-        }
-        else
-        {
-            m_Brotherhood.gameObject.SetActive(false);
         }
 
-        m_Stables.gameObject.SetActive((a_Bytes[2] & 16) == 16);
-
-        m_ShipyardShip.gameObject.SetActive(false);
-        m_ShipyardMoatShip.gameObject.SetActive(false);
-
-        if ((a_Bytes[2] & 1) == 1)
+        if (a_Data.Shipyard)
         {
-            if ((a_Bytes[0] & 16) == 16 ||
-                (a_Bytes[0] & 8) == 8)
+            if (a_Data.Citadel || a_Data.Castle)
             {
                 m_Shipyard.gameObject.SetActive(false);
                 m_ShipyardMoat.gameObject.SetActive(true);
@@ -78,6 +63,6 @@ public class CastleBuildings : TownBuildings
             m_ShipyardMoat.gameObject.SetActive(false);
         }
 
-        m_Lighthouse.gameObject.SetActive((a_Bytes[2] & 4) == 4);
+        m_ShipyardMoatShip.gameObject.SetActive(false);
     }
 }

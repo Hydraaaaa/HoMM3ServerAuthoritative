@@ -7,18 +7,14 @@ public class StrongholdBuildings : TownBuildings
     [Space]
     [SerializeField] Building m_GoblinG;
     [SerializeField] Building m_Goblin2G;
-    [SerializeField] Building m_HallOfValhalla;
-    [SerializeField] Building m_EscapeTunnel;
-    [SerializeField] Building m_FreelancersGuild;
-    [SerializeField] Building m_BallistaYard;
 
-    public override void SetBuildings(List<byte> a_Bytes)
+    public override void SetBuildings(BuildingData a_Data)
     {
-        base.SetBuildings(a_Bytes);
+        base.SetBuildings(a_Data);
 
-        if ((a_Bytes[3] & 1) == 1)
+        if (a_Data.Dwelling1Growth)
         {
-            if ((a_Bytes[2] & 128) == 128)
+            if (a_Data.Dwelling1Up)
             {
                 m_GoblinG.gameObject.SetActive(false);
                 m_Goblin2G.gameObject.SetActive(true);
@@ -38,10 +34,5 @@ public class StrongholdBuildings : TownBuildings
             m_GoblinG.gameObject.SetActive(false);
             m_Goblin2G.gameObject.SetActive(false);
         }
-
-        m_EscapeTunnel.gameObject.SetActive((a_Bytes[2] & 4) == 4);
-        m_FreelancersGuild.gameObject.SetActive((a_Bytes[2] & 8) == 8);
-        m_BallistaYard.gameObject.SetActive((a_Bytes[2] & 16) == 16);
-        m_HallOfValhalla.gameObject.SetActive((a_Bytes[2] & 32) == 32);
     }
 }

@@ -9,17 +9,14 @@ public class InfernoBuildings : TownBuildings
     [SerializeField] Building m_Imp2G;
     [SerializeField] Building m_HellhoundG;
     [SerializeField] Building m_Hellhound2G;
-    [SerializeField] Building m_CastleGate;
-    [SerializeField] Building m_BrimstoneStormclouds;
-    [SerializeField] Building m_OrderOfFire;
 
-    public override void SetBuildings(List<byte> a_Bytes)
+    public override void SetBuildings(BuildingData a_Data)
     {
-        base.SetBuildings(a_Bytes);
+        base.SetBuildings(a_Data);
 
-        if ((a_Bytes[3] & 1) == 1)
+        if (a_Data.Dwelling1Growth)
         {
-            if ((a_Bytes[2] & 128) == 128)
+            if (a_Data.Dwelling1Up)
             {
                 m_ImpG.gameObject.SetActive(false);
                 m_Imp2G.gameObject.SetActive(true);
@@ -40,9 +37,9 @@ public class InfernoBuildings : TownBuildings
             m_Imp2G.gameObject.SetActive(false);
         }
 
-        if ((a_Bytes[3] & 128) == 128)
+        if (a_Data.Dwelling3Growth)
         {
-            if ((a_Bytes[3] & 64) == 64)
+            if (a_Data.Dwelling3Up)
             {
                 m_HellhoundG.gameObject.SetActive(false);
                 m_Hellhound2G.gameObject.SetActive(true);
@@ -62,9 +59,5 @@ public class InfernoBuildings : TownBuildings
             m_HellhoundG.gameObject.SetActive(false);
             m_Hellhound2G.gameObject.SetActive(false);
         }
-
-        m_BrimstoneStormclouds.gameObject.SetActive((a_Bytes[2] & 4) == 4);
-        m_CastleGate.gameObject.SetActive((a_Bytes[2] & 8) == 8);
-        m_OrderOfFire.gameObject.SetActive((a_Bytes[2] & 16) == 16);
     }
 }

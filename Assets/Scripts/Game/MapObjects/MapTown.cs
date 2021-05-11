@@ -8,7 +8,7 @@ public class MapTown : MapObjectBase
     public Faction Faction { get; private set; }
     public int PlayerIndex { get; private set; }
     public bool IsUnderground { get; private set; }
-    public List<byte> Buildings { get; private set; }
+    public BuildingData Buildings { get; private set; }
 
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] MapObjectRenderer m_Renderer;
@@ -109,29 +109,31 @@ public class MapTown : MapObjectBase
 
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[PlayerIndex]);
 
-
-        if (a_ScenarioObject.Town.Buildings.Count > 0)
+        if (a_ScenarioObject.Town.HasCustomBuildings)
         {
-            if ((a_ScenarioObject.Town.Buildings[0] & 4) == 4)
-            {
-                m_Renderer.SetSprites(Faction.MapVisualDataCapitol.m_Sprites);
-                m_ShadowRenderer.SetSprites(Faction.MapVisualDataCapitol.m_ShadowSprites);
-            }
-            else if ((a_ScenarioObject.Town.Buildings[0] & 8) == 8)
-            {
-                m_Renderer.SetSprites(Faction.MapVisualData.m_Sprites);
-                m_ShadowRenderer.SetSprites(Faction.MapVisualData.m_ShadowSprites);
-            }
-            else
-            {
-                m_Renderer.SetSprites(Faction.MapVisualDataNoFort.m_Sprites);
-                m_ShadowRenderer.SetSprites(Faction.MapVisualDataNoFort.m_ShadowSprites);
-            }
+            Buildings = a_ScenarioObject.Town.CustomBuildings;
         }
         else
         {
+            Buildings = new BuildingData();
+            Buildings.Fort = a_ScenarioObject.Town.HasFort;
+            Buildings.Tavern = true;
+        }
+
+        if (Buildings.Capitol)
+        {
+            m_Renderer.SetSprites(Faction.MapVisualDataCapitol.m_Sprites);
+            m_ShadowRenderer.SetSprites(Faction.MapVisualDataCapitol.m_ShadowSprites);
+        }
+        else if (Buildings.Fort)
+        {
             m_Renderer.SetSprites(Faction.MapVisualData.m_Sprites);
             m_ShadowRenderer.SetSprites(Faction.MapVisualData.m_ShadowSprites);
+        }
+        else
+        {
+            m_Renderer.SetSprites(Faction.MapVisualDataNoFort.m_Sprites);
+            m_ShadowRenderer.SetSprites(Faction.MapVisualDataNoFort.m_ShadowSprites);
         }
 
         if (a_ScenarioObject.Town.Name != "")
@@ -142,7 +144,5 @@ public class MapTown : MapObjectBase
         {
             gameObject.name = Faction.name;
         }
-
-        Buildings = a_ScenarioObject.Town.Buildings;
     }
 }

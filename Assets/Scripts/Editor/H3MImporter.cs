@@ -1693,13 +1693,51 @@ public class H3MImporter : EditorWindow
 
                         if (_Object.Town.HasCustomBuildings)
                         {
-                            _Object.Town.Buildings = new List<byte>();
+                            _Object.Town.CustomBuildings = new BuildingData();
 
-                            for (int j = 0; j < 12; j++)
-                            {
-                                _Object.Town.Buildings.Add(a_Bytes[_CurrentByte]);
-                                _CurrentByte += 1;
-                            }
+                            _Object.Town.CustomBuildings.TownHall = (a_Bytes[_CurrentByte] & 1) != 0;
+                            _Object.Town.CustomBuildings.CityHall = (a_Bytes[_CurrentByte] & 2) != 0;
+                            _Object.Town.CustomBuildings.Capitol = (a_Bytes[_CurrentByte] & 4) != 0;
+                            _Object.Town.CustomBuildings.Fort = (a_Bytes[_CurrentByte] & 8) != 0;
+                            _Object.Town.CustomBuildings.Citadel = (a_Bytes[_CurrentByte] & 16) != 0;
+                            _Object.Town.CustomBuildings.Castle = (a_Bytes[_CurrentByte] & 32) != 0;
+                            _Object.Town.CustomBuildings.Tavern = (a_Bytes[_CurrentByte] & 64) != 0;
+                            _Object.Town.CustomBuildings.Blacksmith = (a_Bytes[_CurrentByte] & 128) != 0;
+                            _Object.Town.CustomBuildings.Market = (a_Bytes[_CurrentByte + 1] & 1) != 0;
+                            _Object.Town.CustomBuildings.Silo = (a_Bytes[_CurrentByte + 1] & 2) != 0;
+                            _Object.Town.CustomBuildings.ArtifactMerchants = (a_Bytes[_CurrentByte + 1] & 4) != 0;
+                            _Object.Town.CustomBuildings.MageGuild1 = (a_Bytes[_CurrentByte + 1] & 8) != 0;
+                            _Object.Town.CustomBuildings.MageGuild2 = (a_Bytes[_CurrentByte + 1] & 16) != 0;
+                            _Object.Town.CustomBuildings.MageGuild3 = (a_Bytes[_CurrentByte + 1] & 32) != 0;
+                            _Object.Town.CustomBuildings.MageGuild4 = (a_Bytes[_CurrentByte + 1] & 64) != 0;
+                            _Object.Town.CustomBuildings.MageGuild5 = (a_Bytes[_CurrentByte + 1] & 128) != 0;
+                            _Object.Town.CustomBuildings.Shipyard = (a_Bytes[_CurrentByte + 2] & 1) != 0;
+                            _Object.Town.CustomBuildings.Grail = (a_Bytes[_CurrentByte + 2] & 2) != 0;
+                            _Object.Town.CustomBuildings.FactionBuilding1 = (a_Bytes[_CurrentByte + 2] & 4) != 0;
+                            _Object.Town.CustomBuildings.FactionBuilding2 = (a_Bytes[_CurrentByte + 2] & 8) != 0;
+                            _Object.Town.CustomBuildings.FactionBuilding3 = (a_Bytes[_CurrentByte + 2] & 16) != 0;
+                            _Object.Town.CustomBuildings.FactionBuilding4 = (a_Bytes[_CurrentByte + 2] & 32) != 0;
+                            _Object.Town.CustomBuildings.Dwelling1 = (a_Bytes[_CurrentByte + 2] & 64) != 0;
+                            _Object.Town.CustomBuildings.Dwelling1Up = (a_Bytes[_CurrentByte + 2] & 128) != 0;
+                            _Object.Town.CustomBuildings.Dwelling1Growth = (a_Bytes[_CurrentByte + 3] & 1) != 0;
+                            _Object.Town.CustomBuildings.Dwelling2 = (a_Bytes[_CurrentByte + 3] & 2) != 0;
+                            _Object.Town.CustomBuildings.Dwelling2Up = (a_Bytes[_CurrentByte + 3] & 4) != 0;
+                            _Object.Town.CustomBuildings.Dwelling2Growth = (a_Bytes[_CurrentByte + 3] & 8) != 0;
+                            _Object.Town.CustomBuildings.Dwelling3 = (a_Bytes[_CurrentByte + 3] & 16) != 0;
+                            _Object.Town.CustomBuildings.Dwelling3Up = (a_Bytes[_CurrentByte + 3] & 32) != 0;
+                            _Object.Town.CustomBuildings.Dwelling3Growth = (a_Bytes[_CurrentByte + 3] & 64) != 0;
+                            _Object.Town.CustomBuildings.Dwelling4 = (a_Bytes[_CurrentByte + 3] & 128) != 0;
+                            _Object.Town.CustomBuildings.Dwelling4Up = (a_Bytes[_CurrentByte + 4] & 1) != 0;
+                            _Object.Town.CustomBuildings.Dwelling4Growth = (a_Bytes[_CurrentByte + 4] & 2) != 0;
+                            _Object.Town.CustomBuildings.Dwelling5 = (a_Bytes[_CurrentByte + 4] & 4) != 0;
+                            _Object.Town.CustomBuildings.Dwelling5Up = (a_Bytes[_CurrentByte + 4] & 8) != 0;
+                            _Object.Town.CustomBuildings.Dwelling5Growth = (a_Bytes[_CurrentByte + 4] & 16) != 0;
+                            _Object.Town.CustomBuildings.Dwelling6 = (a_Bytes[_CurrentByte + 4] & 32) != 0;
+                            _Object.Town.CustomBuildings.Dwelling6Up = (a_Bytes[_CurrentByte + 4] & 64) != 0;
+                            _Object.Town.CustomBuildings.Dwelling7 = (a_Bytes[_CurrentByte + 4] & 128) != 0;
+                            _Object.Town.CustomBuildings.Dwelling7Up = (a_Bytes[_CurrentByte + 5] & 1) != 0;
+
+                            _CurrentByte += 12;
                         }
                         else
                         {

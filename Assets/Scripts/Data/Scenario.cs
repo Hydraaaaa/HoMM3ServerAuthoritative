@@ -118,8 +118,54 @@ public class ScenarioObjectTown
     public List<MonsterStack> Guards;
     public bool IsGroupFormation;
     public bool HasCustomBuildings;
-    public bool HasFort;
-    public List<byte> Buildings;
+    public bool HasFort; // Used when custom buildings aren't specified
+    public BuildingData CustomBuildings;
+}
+
+[Serializable]
+public class BuildingData
+{
+    public bool TownHall;
+    public bool CityHall;
+    public bool Capitol;
+    public bool Fort;
+    public bool Citadel;
+    public bool Castle;
+    public bool Tavern;
+    public bool Blacksmith;
+    public bool Market;
+    public bool Silo;
+    public bool ArtifactMerchants;
+    public bool MageGuild1;
+    public bool MageGuild2;
+    public bool MageGuild3;
+    public bool MageGuild4;
+    public bool MageGuild5;
+    public bool Shipyard;
+    public bool Grail;
+    public bool FactionBuilding1;
+    public bool FactionBuilding2;
+    public bool FactionBuilding3;
+    public bool FactionBuilding4;
+    public bool Dwelling1;
+    public bool Dwelling1Up;
+    public bool Dwelling1Growth;
+    public bool Dwelling2;
+    public bool Dwelling2Up;
+    public bool Dwelling2Growth;
+    public bool Dwelling3;
+    public bool Dwelling3Up;
+    public bool Dwelling3Growth;
+    public bool Dwelling4;
+    public bool Dwelling4Up;
+    public bool Dwelling4Growth;
+    public bool Dwelling5;
+    public bool Dwelling5Up;
+    public bool Dwelling5Growth;
+    public bool Dwelling6;
+    public bool Dwelling6Up;
+    public bool Dwelling7;
+    public bool Dwelling7Up;
 }
 
 [Serializable]

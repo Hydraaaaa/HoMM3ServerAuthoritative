@@ -18337,7 +18337,7 @@ MonoBehaviour:
     PosX: 17
     PosY: 6
     IsUnderground: 0
-    SortOrder: 1
+    SortOrder: 2
     Monster:
       Type: 0
       Count: 0
@@ -18363,7 +18363,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 00004092a400000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 1
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 1
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 1
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 1
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 1
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 1
+        Dwelling6Up: 0
+        Dwelling7: 1
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -18389,7 +18430,7 @@ MonoBehaviour:
     PosX: 7
     PosY: 6
     IsUnderground: 0
-    SortOrder: 2
+    SortOrder: 3
     Monster:
       Type: 0
       Count: 0
@@ -18415,7 +18456,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 1
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -18439,110 +18521,6 @@ MonoBehaviour:
       Landscape: 0
       IsLowPrioritySortOrder: 0
     PosX: 5
-    PosY: 11
-    IsUnderground: 0
-    SortOrder: 11
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-      Buildings: 
-    Hero:
-      PlayerIndex: 1
-      ID: 255
-      Name: 
-      Portrait: 255
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: ahrandom
-      MineType: 0
-      Type: 5
-      TypeDebug: 70
-      Passability: ffffffffffbf
-      Interactability: 000000000040
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 6
-    PosY: 11
-    IsUnderground: 0
-    SortOrder: 12
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-      Buildings: 
-    Hero:
-      PlayerIndex: 1
-      ID: 255
-      Name: 
-      Portrait: 255
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: ahrandom
-      MineType: 0
-      Type: 5
-      TypeDebug: 70
-      Passability: ffffffffffbf
-      Interactability: 000000000040
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 7
     PosY: 11
     IsUnderground: 0
     SortOrder: 13
@@ -18571,7 +18549,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 1
       ID: 255
@@ -18594,7 +18613,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 8
+    PosX: 6
     PosY: 11
     IsUnderground: 0
     SortOrder: 14
@@ -18623,7 +18642,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 1
       ID: 255
@@ -18646,7 +18706,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 9
+    PosX: 7
     PosY: 11
     IsUnderground: 0
     SortOrder: 15
@@ -18675,7 +18735,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 1
       ID: 255
@@ -18698,7 +18799,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 10
+    PosX: 8
     PosY: 11
     IsUnderground: 0
     SortOrder: 16
@@ -18727,7 +18828,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 1
       ID: 255
@@ -18750,7 +18892,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 4
+    PosX: 9
     PosY: 11
     IsUnderground: 0
     SortOrder: 17
@@ -18779,7 +18921,234 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 1
+      ID: 255
+      Name: 
+      Portrait: 255
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ahrandom
+      MineType: 0
+      Type: 5
+      TypeDebug: 70
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 10
+    PosY: 11
+    IsUnderground: 0
+    SortOrder: 18
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 1
+      ID: 255
+      Name: 
+      Portrait: 255
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ahrandom
+      MineType: 0
+      Type: 5
+      TypeDebug: 70
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 4
+    PosY: 11
+    IsUnderground: 0
+    SortOrder: 19
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 1
       ID: 255
@@ -18805,7 +19174,7 @@ MonoBehaviour:
     PosX: 30
     PosY: 5
     IsUnderground: 0
-    SortOrder: 0
+    SortOrder: 1
     Monster:
       Type: 0
       Count: 0
@@ -18831,7 +19200,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 1
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -18855,110 +19265,6 @@ MonoBehaviour:
       Landscape: 0
       IsLowPrioritySortOrder: 0
     PosX: 26
-    PosY: 9
-    IsUnderground: 0
-    SortOrder: 3
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-      Buildings: 
-    Hero:
-      PlayerIndex: 2
-      ID: 255
-      Name: 
-      Portrait: 255
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: ahrandom
-      MineType: 0
-      Type: 5
-      TypeDebug: 70
-      Passability: ffffffffffbf
-      Interactability: 000000000040
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 28
-    PosY: 9
-    IsUnderground: 0
-    SortOrder: 4
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 0
-      HasFort: 0
-      Buildings: 
-    Hero:
-      PlayerIndex: 2
-      ID: 255
-      Name: 
-      Portrait: 255
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: ahrandom
-      MineType: 0
-      Type: 5
-      TypeDebug: 70
-      Passability: ffffffffffbf
-      Interactability: 000000000040
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 27
     PosY: 9
     IsUnderground: 0
     SortOrder: 5
@@ -18987,7 +19293,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 2
       ID: 255
@@ -19010,7 +19357,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 29
+    PosX: 28
     PosY: 9
     IsUnderground: 0
     SortOrder: 6
@@ -19039,7 +19386,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 2
       ID: 255
@@ -19062,7 +19450,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 30
+    PosX: 27
     PosY: 9
     IsUnderground: 0
     SortOrder: 7
@@ -19091,7 +19479,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 2
       ID: 255
@@ -19114,7 +19543,7 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 31
+    PosX: 29
     PosY: 9
     IsUnderground: 0
     SortOrder: 8
@@ -19143,7 +19572,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 2
       ID: 255
@@ -19166,8 +19636,8 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 17
-    PosY: 10
+    PosX: 30
+    PosY: 9
     IsUnderground: 0
     SortOrder: 9
     Monster:
@@ -19195,9 +19665,50 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
-      PlayerIndex: 0
+      PlayerIndex: 2
       ID: 255
       Name: 
       Portrait: 255
@@ -19218,8 +19729,8 @@ MonoBehaviour:
       Interactability: 000000000040
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 18
-    PosY: 10
+    PosX: 31
+    PosY: 9
     IsUnderground: 0
     SortOrder: 10
     Monster:
@@ -19247,7 +19758,234 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 0
       HasFort: 0
-      Buildings: 
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 2
+      ID: 255
+      Name: 
+      Portrait: 255
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ahrandom
+      MineType: 0
+      Type: 5
+      TypeDebug: 70
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 17
+    PosY: 10
+    IsUnderground: 0
+    SortOrder: 11
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 255
+      Name: 
+      Portrait: 255
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: ahrandom
+      MineType: 0
+      Type: 5
+      TypeDebug: 70
+      Passability: ffffffffffbf
+      Interactability: 000000000040
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 18
+    PosY: 10
+    IsUnderground: 0
+    SortOrder: 12
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 255
@@ -19271,110 +20009,6 @@ MonoBehaviour:
       Landscape: 0
       IsLowPrioritySortOrder: 0
     PosX: 37
-    PosY: 16
-    IsUnderground: 0
-    SortOrder: 18
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 1
-      HasFort: 0
-      Buildings: 00004092a400010000000000
-    Hero:
-      PlayerIndex: 0
-      ID: 0
-      Name: 
-      Portrait: 0
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avcramx0
-      MineType: 1
-      Type: 14
-      TypeDebug: 98
-      Passability: ffffff8f0707
-      Interactability: 000000000020
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 34
-    PosY: 16
-    IsUnderground: 0
-    SortOrder: 19
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 1
-      HasFort: 0
-      Buildings: 00000c000000010000000000
-    Hero:
-      PlayerIndex: 0
-      ID: 0
-      Name: 
-      Portrait: 0
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avcramx0
-      MineType: 1
-      Type: 14
-      TypeDebug: 98
-      Passability: ffffff8f0707
-      Interactability: 000000000020
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 31
     PosY: 16
     IsUnderground: 0
     SortOrder: 20
@@ -19403,7 +20037,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000010020000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 1
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 1
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 1
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 1
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 1
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 1
+        Dwelling6Up: 0
+        Dwelling7: 1
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19426,7 +20101,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 28
+    PosX: 34
     PosY: 16
     IsUnderground: 0
     SortOrder: 21
@@ -19455,7 +20130,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 0000000a0000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19478,7 +20194,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 25
+    PosX: 31
     PosY: 16
     IsUnderground: 0
     SortOrder: 22
@@ -19507,7 +20223,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000000001400000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 1
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19522,15 +20279,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avctowx0
-      MineType: 2
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 22
+    PosX: 28
     PosY: 16
     IsUnderground: 0
     SortOrder: 23
@@ -19559,7 +20316,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 380010000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 1
+        Dwelling2Up: 0
+        Dwelling2Growth: 1
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19574,15 +20372,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avctowx0
-      MineType: 2
+      Name: avcramx0
+      MineType: 1
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 19
+    PosX: 25
     PosY: 16
     IsUnderground: 0
     SortOrder: 24
@@ -19611,7 +20409,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000804000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 1
+        Dwelling5Up: 0
+        Dwelling5Growth: 1
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19634,7 +20473,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 16
+    PosX: 22
     PosY: 16
     IsUnderground: 0
     SortOrder: 25
@@ -19663,7 +20502,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000808000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 1
+        Castle: 1
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19686,7 +20566,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 13
+    PosX: 19
     PosY: 16
     IsUnderground: 0
     SortOrder: 26
@@ -19715,7 +20595,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000500000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 1
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19730,15 +20651,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcinfx0
-      MineType: 3
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 10
+    PosX: 16
     PosY: 16
     IsUnderground: 0
     SortOrder: 27
@@ -19767,7 +20688,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000000500000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 1
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19782,15 +20744,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcinfx0
-      MineType: 3
+      Name: avctowx0
+      MineType: 2
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 7
+    PosX: 13
     PosY: 16
     IsUnderground: 0
     SortOrder: 28
@@ -19819,7 +20781,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000810000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 1
+        Silo: 0
+        ArtifactMerchants: 1
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19842,7 +20845,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 4
+    PosX: 10
     PosY: 16
     IsUnderground: 0
     SortOrder: 29
@@ -19871,7 +20874,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080008000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 1
+        Dwelling3Up: 0
+        Dwelling3Growth: 1
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19894,8 +20938,8 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 4
-    PosY: 19
+    PosX: 7
+    PosY: 16
     IsUnderground: 0
     SortOrder: 30
     Monster:
@@ -19923,7 +20967,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080004000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 1
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19946,8 +21031,8 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 7
-    PosY: 19
+    PosX: 4
+    PosY: 16
     IsUnderground: 0
     SortOrder: 31
     Monster:
@@ -19975,7 +21060,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080044010000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -19990,15 +21116,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcnecx0
-      MineType: 4
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 10
+    PosX: 4
     PosY: 19
     IsUnderground: 0
     SortOrder: 32
@@ -20027,7 +21153,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080004000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20042,15 +21209,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcnecx0
-      MineType: 4
+      Name: avcinfx0
+      MineType: 3
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 13
+    PosX: 7
     PosY: 19
     IsUnderground: 0
     SortOrder: 33
@@ -20079,7 +21246,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000808000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 1
+        Dwelling1Up: 0
+        Dwelling1Growth: 1
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20094,15 +21302,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcdunx0
-      MineType: 5
+      Name: avcnecx0
+      MineType: 4
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 16
+    PosX: 10
     PosY: 19
     IsUnderground: 0
     SortOrder: 34
@@ -20131,7 +21339,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000804000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20146,15 +21395,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcdunx0
-      MineType: 5
+      Name: avcnecx0
+      MineType: 4
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 19
+    PosX: 13
     PosY: 19
     IsUnderground: 0
     SortOrder: 35
@@ -20183,7 +21432,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000008000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 1
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20206,7 +21496,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 22
+    PosX: 16
     PosY: 19
     IsUnderground: 0
     SortOrder: 36
@@ -20235,7 +21525,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000010000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 1
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20250,15 +21581,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcstrx0
-      MineType: 6
+      Name: avcdunx0
+      MineType: 5
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 25
+    PosX: 19
     PosY: 19
     IsUnderground: 0
     SortOrder: 37
@@ -20287,7 +21618,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000020000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20302,15 +21674,15 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcstrx0
-      MineType: 6
+      Name: avcdunx0
+      MineType: 5
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 28
+    PosX: 22
     PosY: 19
     IsUnderground: 0
     SortOrder: 38
@@ -20339,7 +21711,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000108000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20362,7 +21775,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 31
+    PosX: 25
     PosY: 19
     IsUnderground: 0
     SortOrder: 39
@@ -20391,7 +21804,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 800010000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 1
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20414,7 +21868,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 34
+    PosX: 28
     PosY: 19
     IsUnderground: 0
     SortOrder: 40
@@ -20443,7 +21897,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 880014000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 1
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20466,7 +21961,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 37
+    PosX: 31
     PosY: 19
     IsUnderground: 0
     SortOrder: 41
@@ -20495,7 +21990,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 880016000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 1
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20510,16 +22046,16 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avcftrx0
-      MineType: 7
+      Name: avcstrx0
+      MineType: 6
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 37
-    PosY: 22
+    PosX: 34
+    PosY: 19
     IsUnderground: 0
     SortOrder: 42
     Monster:
@@ -20547,7 +22083,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080004000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 1
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20562,8 +22139,8 @@ MonoBehaviour:
       PlayerIndex: 0
     DwellingOwner: 0
   - Template:
-      Name: avchforx
-      MineType: 8
+      Name: avcstrx0
+      MineType: 6
       Type: 14
       TypeDebug: 98
       Passability: ffffff8f0707
@@ -20571,59 +22148,7 @@ MonoBehaviour:
       Landscape: 0
       IsLowPrioritySortOrder: 0
     PosX: 37
-    PosY: 25
-    IsUnderground: 0
-    SortOrder: 45
-    Monster:
-      Type: 0
-      Count: 0
-      Mood: 0
-      IsTreasureOrText: 0
-      Text: 
-      Wood: 0
-      Mercury: 0
-      Ore: 0
-      Sulfur: 0
-      Crystal: 0
-      Gem: 0
-      Gold: 0
-      ArtifactID: 0
-      NeverRun: 0
-      DontGrow: 0
-    Town:
-      Owner: 0
-      IsNamed: 0
-      Name: 
-      IsGuarded: 0
-      Guards: []
-      IsGroupFormation: 0
-      HasCustomBuildings: 1
-      HasFort: 0
-      Buildings: 000004000000000000000000
-    Hero:
-      PlayerIndex: 0
-      ID: 0
-      Name: 
-      Portrait: 0
-      HasCustomPrimarySkills: 0
-      Attack: 0
-      Defense: 0
-      Spellpower: 0
-      Knowledge: 0
-    Garrison:
-      PlayerIndex: 0
-    DwellingOwner: 0
-  - Template:
-      Name: avcftrx0
-      MineType: 7
-      Type: 14
-      TypeDebug: 98
-      Passability: ffffff8f0707
-      Interactability: 000000000020
-      Landscape: 0
-      IsLowPrioritySortOrder: 0
-    PosX: 34
-    PosY: 22
+    PosY: 19
     IsUnderground: 0
     SortOrder: 43
     Monster:
@@ -20651,7 +22176,48 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 080008000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 1
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 1
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
@@ -20674,7 +22240,7 @@ MonoBehaviour:
       Interactability: 000000000020
       Landscape: 0
       IsLowPrioritySortOrder: 0
-    PosX: 31
+    PosX: 37
     PosY: 22
     IsUnderground: 0
     SortOrder: 44
@@ -20703,7 +22269,513 @@ MonoBehaviour:
       IsGroupFormation: 0
       HasCustomBuildings: 1
       HasFort: 0
-      Buildings: 000010000000000000000000
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avchforx
+      MineType: 8
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 37
+    PosY: 25
+    IsUnderground: 0
+    SortOrder: 47
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 1
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcftrx0
+      MineType: 7
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 34
+    PosY: 22
+    IsUnderground: 0
+    SortOrder: 45
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 1
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 1
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avcftrx0
+      MineType: 7
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 31
+    PosY: 22
+    IsUnderground: 0
+    SortOrder: 46
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 1
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 1
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avccasx0
+      MineType: 0
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 24
+    PosY: 4
+    IsUnderground: 0
+    SortOrder: 0
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 1
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
+    Hero:
+      PlayerIndex: 0
+      ID: 0
+      Name: 
+      Portrait: 0
+      HasCustomPrimarySkills: 0
+      Attack: 0
+      Defense: 0
+      Spellpower: 0
+      Knowledge: 0
+    Garrison:
+      PlayerIndex: 0
+    DwellingOwner: 0
+  - Template:
+      Name: avccasx0
+      MineType: 0
+      Type: 14
+      TypeDebug: 98
+      Passability: ffffff8f0707
+      Interactability: 000000000020
+      Landscape: 0
+      IsLowPrioritySortOrder: 0
+    PosX: 24
+    PosY: 7
+    IsUnderground: 0
+    SortOrder: 4
+    Monster:
+      Type: 0
+      Count: 0
+      Mood: 0
+      IsTreasureOrText: 0
+      Text: 
+      Wood: 0
+      Mercury: 0
+      Ore: 0
+      Sulfur: 0
+      Crystal: 0
+      Gem: 0
+      Gold: 0
+      ArtifactID: 0
+      NeverRun: 0
+      DontGrow: 0
+    Town:
+      Owner: 0
+      IsNamed: 0
+      Name: 
+      IsGuarded: 0
+      Guards: []
+      IsGroupFormation: 0
+      HasCustomBuildings: 0
+      HasFort: 0
+      CustomBuildings:
+        TownHall: 0
+        CityHall: 0
+        Capitol: 0
+        Fort: 0
+        Citadel: 0
+        Castle: 0
+        Tavern: 0
+        Blacksmith: 0
+        Market: 0
+        Silo: 0
+        ArtifactMerchants: 0
+        MageGuild1: 0
+        MageGuild2: 0
+        MageGuild3: 0
+        MageGuild4: 0
+        MageGuild5: 0
+        Shipyard: 0
+        Grail: 0
+        FactionBuilding1: 0
+        FactionBuilding2: 0
+        FactionBuilding3: 0
+        FactionBuilding4: 0
+        Dwelling1: 0
+        Dwelling1Up: 0
+        Dwelling1Growth: 0
+        Dwelling2: 0
+        Dwelling2Up: 0
+        Dwelling2Growth: 0
+        Dwelling3: 0
+        Dwelling3Up: 0
+        Dwelling3Growth: 0
+        Dwelling4: 0
+        Dwelling4Up: 0
+        Dwelling4Growth: 0
+        Dwelling5: 0
+        Dwelling5Up: 0
+        Dwelling5Growth: 0
+        Dwelling6: 0
+        Dwelling6Up: 0
+        Dwelling7: 0
+        Dwelling7Up: 0
     Hero:
       PlayerIndex: 0
       ID: 0
