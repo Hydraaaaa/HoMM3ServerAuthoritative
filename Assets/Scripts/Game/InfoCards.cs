@@ -57,7 +57,14 @@ public class InfoCards : MonoBehaviour
         m_TownCard.SetActive(true);
         m_InfoCard.SetActive(false);
 
-        m_TownImage.sprite = a_Town.Faction.TownSpriteLarge;
+        if (a_Town.Buildings.Fort)
+        {
+            m_TownImage.sprite = a_Town.Faction.TownSpriteLarge;
+        }
+        else
+        {
+            m_TownImage.sprite = a_Town.Faction.TownNoFortSpriteLarge;
+        }
     }
 
     void OnTownDeselected(MapTown a_Town)

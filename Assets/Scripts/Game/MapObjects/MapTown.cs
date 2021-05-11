@@ -102,11 +102,6 @@ public class MapTown : MapObjectBase
                 break;
         }
 
-        if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
-        {
-            m_GameReferences.LocalOwnership.AddTown(this);
-        }
-
         m_SpriteRenderer.material.SetColor("_PlayerColor", m_PlayerColors.Colors[PlayerIndex]);
 
         if (a_ScenarioObject.Town.HasCustomBuildings)
@@ -143,6 +138,11 @@ public class MapTown : MapObjectBase
         else
         {
             gameObject.name = Faction.name;
+        }
+
+        if (PlayerIndex == m_GameSettings.LocalPlayerIndex)
+        {
+            m_GameReferences.LocalOwnership.AddTown(this);
         }
     }
 }

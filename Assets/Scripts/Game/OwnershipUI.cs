@@ -242,7 +242,15 @@ public class OwnershipUI : MonoBehaviour
         {
             if (i < _Towns.Count)
             {
-                m_TownImages[i].sprite = _Towns[i + m_TownUIIndex].Faction.TownSpriteSmall;
+                if (_Towns[i + m_TownUIIndex].Buildings.Fort)
+                {
+                    m_TownImages[i].sprite = _Towns[i + m_TownUIIndex].Faction.TownSpriteSmall;
+                }
+                else
+                {
+                    m_TownImages[i].sprite = _Towns[i + m_TownUIIndex].Faction.TownNoFortSpriteSmall;
+                }
+
                 m_TownImages[i].gameObject.SetActive(true);
             }
             else
@@ -259,7 +267,15 @@ public class OwnershipUI : MonoBehaviour
         {
             if (i < _Towns.Count)
             {
-                m_TownImagesLowRes[i].sprite = _Towns[i + m_TownUIIndexLowRes].Faction.TownSpriteSmall;
+                if (_Towns[i + m_TownUIIndexLowRes].Buildings.Fort)
+                {
+                    m_TownImagesLowRes[i].sprite = _Towns[i + m_TownUIIndexLowRes].Faction.TownSpriteSmall;
+                }
+                else
+                {
+                    m_TownImagesLowRes[i].sprite = _Towns[i + m_TownUIIndexLowRes].Faction.TownNoFortSpriteSmall;
+                }
+
                 m_TownImagesLowRes[i].gameObject.SetActive(true);
             }
             else

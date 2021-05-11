@@ -75,7 +75,14 @@ public class TownScreen : MonoBehaviour
 
         m_CurrentIndex = _FactionIndex;
 
-        m_Portrait.sprite = m_CurrentTown.Faction.TownSpriteLarge;
+        if (m_CurrentTown.Buildings.Fort)
+        {
+            m_Portrait.sprite = m_CurrentTown.Faction.TownSpriteLarge;
+        }
+        else
+        {
+            m_Portrait.sprite = m_CurrentTown.Faction.TownNoFortSpriteLarge;
+        }
 
         m_Root.SetActive(true);
     }
