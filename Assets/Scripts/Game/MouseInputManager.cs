@@ -295,7 +295,7 @@ public class MouseInputManager : MonoBehaviour
                     }
                     else
                     {
-                        m_TownScreen.ShowTown(m_HoveredTown);
+                        m_TownScreen.OpenTown(m_HoveredTown);
                     }
                 }
                 else if (m_LocalOwnership.SelectedHero != null)

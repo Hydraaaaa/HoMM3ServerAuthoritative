@@ -41,5 +41,9 @@ public class DungeonBuildings : TownBuildings
             m_ManaVortexMageGuild5.gameObject.SetActive(true);
             m_FactionBuilding1.gameObject.SetActive(false);
         }
+        else
+        {
+            m_ManaVortexMageGuild5.gameObject.SetActive(false);
+        }
     }
 }

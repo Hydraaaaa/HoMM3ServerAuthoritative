@@ -337,7 +337,7 @@ public class OwnershipUI : MonoBehaviour
         }
         else
         {
-            m_TownScreen.ShowTown(m_LocalOwnership.SelectedTown);
+            m_TownScreen.OpenTown(m_LocalOwnership.SelectedTown);
         }
     }
 
@@ -353,7 +353,7 @@ public class OwnershipUI : MonoBehaviour
         }
         else
         {
-            m_TownScreen.ShowTown(m_LocalOwnership.SelectedTown);
+            m_TownScreen.OpenTown(m_LocalOwnership.SelectedTown);
         }
     }
 }

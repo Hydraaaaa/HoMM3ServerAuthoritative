@@ -470,7 +470,7 @@ public class MapHero : MapObjectBase
 
             if (_Town != null)
             {
-                m_GameReferences.TownScreen.ShowTown(_Town);
+                m_GameReferences.TownScreen.OpenTown(_Town);
             }
         }
 
