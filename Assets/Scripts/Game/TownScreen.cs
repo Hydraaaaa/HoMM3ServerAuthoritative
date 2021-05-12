@@ -27,6 +27,7 @@ public class TownScreen : MonoBehaviour
     [SerializeField] Button m_TownDownArrow;
 
     MapTown m_CurrentTown;
+    int m_TownListIndex;
     int m_CurrentTownIndex;
     int m_CurrentFactionIndex;
 
@@ -78,16 +79,16 @@ public class TownScreen : MonoBehaviour
 
         List<MapTown> _Towns = m_LocalOwnership.GetTowns();
 
-        m_CurrentTownIndex = _Towns.IndexOf(a_Town) - 1;
+        m_TownListIndex = _Towns.IndexOf(a_Town) - 1;
 
-        if (m_CurrentTownIndex > _Towns.Count - 3)
+        if (m_TownListIndex > _Towns.Count - 3)
         {
-            m_CurrentTownIndex = _Towns.Count - 3;
+            m_TownListIndex = _Towns.Count - 3;
         }
 
-        if (m_CurrentTownIndex < 0)
+        if (m_TownListIndex < 0)
         {
-            m_CurrentTownIndex = 0;
+            m_TownListIndex = 0;
         }
 
         UpdateTownDisplay();
@@ -96,6 +97,7 @@ public class TownScreen : MonoBehaviour
     void ShowTown(MapTown a_Town)
     {
         m_CurrentTown = a_Town;
+        m_CurrentTownIndex = m_LocalOwnership.GetTowns().IndexOf(a_Town);
 
         int _FactionIndex = m_Factions.Factions.IndexOf(m_CurrentTown.Faction);
 
@@ -122,9 +124,9 @@ public class TownScreen : MonoBehaviour
 
     public void TownUpArrowPressed()
     {
-        if (m_CurrentTownIndex > 0)
+        if (m_TownListIndex > 0)
         {
-            m_CurrentTownIndex--;
+            m_TownListIndex--;
 
             UpdateTownDisplay();
         }
@@ -134,9 +136,9 @@ public class TownScreen : MonoBehaviour
     {
         int _TownCount = m_LocalOwnership.GetTownCount();
 
-        if (m_CurrentTownIndex < _TownCount - 3)
+        if (m_TownListIndex < _TownCount - 3)
         {
-            m_CurrentTownIndex++;
+            m_TownListIndex++;
 
             UpdateTownDisplay();
         }
@@ -150,13 +152,13 @@ public class TownScreen : MonoBehaviour
         {
             if (i < _Towns.Count)
             {
-                if (_Towns[i + m_CurrentTownIndex].Buildings.Fort)
+                if (_Towns[i + m_TownListIndex].Buildings.Fort)
                 {
-                    m_TownList[i].sprite = _Towns[i + m_CurrentTownIndex].Faction.TownSpriteSmall;
+                    m_TownList[i].sprite = _Towns[i + m_TownListIndex].Faction.TownSpriteSmall;
                 }
                 else
                 {
-                    m_TownList[i].sprite = _Towns[i + m_CurrentTownIndex].Faction.TownNoFortSpriteSmall;
+                    m_TownList[i].sprite = _Towns[i + m_TownListIndex].Faction.TownNoFortSpriteSmall;
                 }
 
                 m_TownList[i].gameObject.SetActive(true);
@@ -167,35 +169,31 @@ public class TownScreen : MonoBehaviour
             }
         }
 
-        m_TownUpArrow.interactable = m_CurrentTownIndex != 0;
-        m_TownDownArrow.interactable = m_CurrentTownIndex < _Towns.Count - 3;
+        m_TownUpArrow.interactable = m_TownListIndex != 0;
+        m_TownDownArrow.interactable = m_TownListIndex < _Towns.Count - 3;
 
-        int _SelectedTownIndex = m_LocalOwnership.GetTowns().IndexOf(m_CurrentTown);
-
-        if (_SelectedTownIndex < m_CurrentTownIndex ||
-            _SelectedTownIndex >= m_CurrentTownIndex + 3)
+        if (m_CurrentTownIndex < m_TownListIndex ||
+            m_CurrentTownIndex >= m_TownListIndex + 3)
         {
             m_TownSelectedBorder.SetActive(false);
         }
         else
         {
             m_TownSelectedBorder.SetActive(true);
-            m_TownSelectedBorder.transform.position = m_TownList[_SelectedTownIndex - m_CurrentTownIndex].transform.position;
+            m_TownSelectedBorder.transform.position = m_TownList[m_CurrentTownIndex - m_TownListIndex].transform.position;
         }
     }
 
     public void TownPressed(int a_Index)
     {
-        int _Index = a_Index + m_CurrentTownIndex;
+        int _Index = a_Index + m_TownListIndex;
 
-        List<MapTown> _Towns = m_LocalOwnership.GetTowns();
-
-        if (m_LocalOwnership.SelectedTown != _Towns[_Index])
+        if (m_CurrentTownIndex != _Index)
         {
-            ShowTown(_Towns[_Index]);
+            ShowTown(m_LocalOwnership.GetTowns()[_Index]);
 
             m_TownSelectedBorder.SetActive(true);
-            m_TownSelectedBorder.transform.position = m_TownList[_Index - m_CurrentTownIndex].transform.position;
+            m_TownSelectedBorder.transform.position = m_TownList[a_Index].transform.position;
         }
     }
 }
