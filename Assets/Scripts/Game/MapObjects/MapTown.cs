@@ -111,8 +111,20 @@ public class MapTown : MapObjectBase
         else
         {
             Buildings = new BuildingData();
-            Buildings.Fort = a_ScenarioObject.Town.HasFort;
             Buildings.Tavern = true;
+
+            if (a_ScenarioObject.Town.HasFort)
+            {
+                Buildings.Fort = true;
+                Buildings.Dwelling1 = true;
+
+                int _Random = Random.Range(0, 3);
+
+                if (_Random == 0)
+                {
+                    Buildings.Dwelling2 = true;
+                }
+            }
         }
 
         if (Buildings.Capitol)
