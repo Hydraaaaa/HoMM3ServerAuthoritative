@@ -8,7 +8,7 @@ Font:
   m_PrefabAsset: {fileID: 0}
   m_Name: MedFont
   serializedVersion: 5
-  m_LineSpacing: 18
+  m_LineSpacing: 20
   m_DefaultMaterial: {fileID: 2100000, guid: 4f2c0ec8bbb1f8c4cadfee4ef288f053, type: 2}
   m_FontSize: 0
   m_Texture: {fileID: 0}
@@ -568,13 +568,13 @@ Font:
       serializedVersion: 2
       x: 0.5625
       y: 0.375
-      width: 0.0625
+      width: 0.032894738
       height: 0.125
     vert:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 19
+      width: 10
       height: -18
     advance: 5
     flipped: 0
@@ -800,7 +800,7 @@ Font:
       y: 0
       width: 19
       height: -18
-    advance: 12
+    advance: 11
     flipped: 0
   - serializedVersion: 2
     index: 120
@@ -896,7 +896,7 @@ Font:
       y: 0
       width: 19
       height: -18
-    advance: 4
+    advance: 5
     flipped: 0
   - serializedVersion: 2
     index: 46
@@ -912,7 +912,7 @@ Font:
       y: 0
       width: 19
       height: -18
-    advance: 4
+    advance: 5
     flipped: 0
   - serializedVersion: 2
     index: 40
@@ -1217,6 +1217,22 @@ Font:
       width: 19
       height: -18
     advance: 6
+    flipped: 0
+  - serializedVersion: 2
+    index: 43
+    uv:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0.875
+      width: 0.0625
+      height: 0.125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 19
+      height: -18
+    advance: 10
     flipped: 0
   m_KerningValues: []
   m_PixelScale: 0.1
