@@ -119,11 +119,11 @@ public class ScenarioObjectTown
     public bool IsGroupFormation;
     public bool HasCustomBuildings;
     public bool HasFort; // Used when custom buildings aren't specified
-    public BuildingData CustomBuildings;
+    public BuiltBuildings CustomBuildings;
 }
 
 [Serializable]
-public class BuildingData
+public class BuiltBuildings
 {
     public bool TownHall;
     public bool CityHall;

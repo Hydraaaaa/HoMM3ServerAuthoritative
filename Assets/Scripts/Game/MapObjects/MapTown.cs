@@ -8,7 +8,7 @@ public class MapTown : MapObjectBase
     public Faction Faction { get; private set; }
     public int PlayerIndex { get; private set; }
     public bool IsUnderground { get; private set; }
-    public BuildingData Buildings { get; private set; }
+    public BuiltBuildings Buildings { get; private set; }
 
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] MapObjectRenderer m_Renderer;
@@ -110,7 +110,7 @@ public class MapTown : MapObjectBase
         }
         else
         {
-            Buildings = new BuildingData();
+            Buildings = new BuiltBuildings();
             Buildings.Tavern = true;
 
             if (a_ScenarioObject.Town.HasFort)

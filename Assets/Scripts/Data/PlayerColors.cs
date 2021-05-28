@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Heroes 3/Player Colors")]
 public class PlayerColors : ScriptableObject
@@ -23,6 +24,11 @@ public class PlayerColors : ScriptableObject
 
         public Sprite TownUI;
         public Sprite TownScreenFlag;
+        public Sprite TownHallUI1; // Castle
+        public Sprite TownHallUI2; // Rampart, Fortress, Conflux
+        public Sprite TownHallUI3; // Tower, Necropolis, Dungeon, Stronghold
+        [FormerlySerializedAs("BuildWindow")]
+        public Sprite BuildPanel;
 
         // Buttons
         public Sprite NextHero;

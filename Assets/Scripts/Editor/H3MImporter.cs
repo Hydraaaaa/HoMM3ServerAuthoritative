@@ -1693,7 +1693,7 @@ public class H3MImporter : EditorWindow
 
                         if (_Object.Town.HasCustomBuildings)
                         {
-                            _Object.Town.CustomBuildings = new BuildingData();
+                            _Object.Town.CustomBuildings = new BuiltBuildings();
 
                             _Object.Town.CustomBuildings.TownHall = (a_Bytes[_CurrentByte] & 1) != 0;
                             _Object.Town.CustomBuildings.CityHall = (a_Bytes[_CurrentByte] & 2) != 0;
