@@ -71,12 +71,6 @@ public abstract class TownBuildings : MonoBehaviour
     [SerializeField] protected HallBuilding m_HallSilo;
     [SerializeField] protected HallBuilding m_HallArtifactMerchants;
 
-    [SerializeField] protected HallBuilding m_HallMageGuild1;
-    [SerializeField] protected HallBuilding m_HallMageGuild2;
-    [SerializeField] protected HallBuilding m_HallMageGuild3;
-    [SerializeField] protected HallBuilding m_HallMageGuild4;
-    [SerializeField] protected HallBuilding m_HallMageGuild5;
-
     [SerializeField] protected HallBuilding m_HallShipyard;
 
     [SerializeField] protected HallBuilding m_HallDwelling1;
@@ -97,16 +91,16 @@ public abstract class TownBuildings : MonoBehaviour
     [Space]
 
     // Hall Sprites
-    [SerializeField] Sprite m_Cross;
-    [SerializeField] Sprite m_Tick;
-    [SerializeField] Sprite m_NoMoney;
+    [SerializeField] protected Sprite m_Cross;
+    [SerializeField] protected Sprite m_Tick;
+    [SerializeField] protected Sprite m_NoMoney;
 
-    [SerializeField] Sprite m_Green;
-    [SerializeField] Sprite m_Red;
-    [SerializeField] Sprite m_Yellow;
-    [SerializeField] Sprite m_Grey;
+    [SerializeField] protected Sprite m_Green;
+    [SerializeField] protected Sprite m_Red;
+    [SerializeField] protected Sprite m_Yellow;
+    [SerializeField] protected Sprite m_Grey;
 
-    BuiltBuildings m_BuiltBuildings;
+    protected BuiltBuildings m_BuiltBuildings;
 
     public virtual void SetBuildings(BuiltBuildings a_BuiltBuildings)
     {
@@ -319,6 +313,7 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallCapitol.ButtonImage.sprite = m_Yellow;
             m_HallCapitol.CornerImage.gameObject.SetActive(true);
             m_HallCapitol.CornerImage.sprite = m_Tick;
+            m_HallCapitol.Buildable = false;
 
             m_HallTownHall.gameObject.SetActive(false);
             m_HallCityHall.gameObject.SetActive(false);
@@ -331,12 +326,14 @@ public abstract class TownBuildings : MonoBehaviour
             {
                 m_HallCapitol.ButtonImage.sprite = m_Green;
                 m_HallCapitol.CornerImage.gameObject.SetActive(false);
+                m_HallCapitol.Buildable = true;
             }
             else
             {
                 m_HallCapitol.ButtonImage.sprite = m_Red;
                 m_HallCapitol.CornerImage.gameObject.SetActive(true);
                 m_HallCapitol.CornerImage.sprite = m_Cross;
+                m_HallCapitol.Buildable = false;
             }
 
             m_HallTownHall.gameObject.SetActive(false);
@@ -352,12 +349,14 @@ public abstract class TownBuildings : MonoBehaviour
             {
                 m_HallCityHall.ButtonImage.sprite = m_Green;
                 m_HallCityHall.CornerImage.gameObject.SetActive(false);
+                m_HallCityHall.Buildable = true;
             }
             else
             {
                 m_HallCityHall.ButtonImage.sprite = m_Red;
                 m_HallCityHall.CornerImage.gameObject.SetActive(true);
                 m_HallCityHall.CornerImage.sprite = m_Cross;
+                m_HallCityHall.Buildable = false;
             }
 
             m_HallTownHall.gameObject.SetActive(false);
@@ -371,12 +370,14 @@ public abstract class TownBuildings : MonoBehaviour
             {
                 m_HallTownHall.ButtonImage.sprite = m_Green;
                 m_HallTownHall.CornerImage.gameObject.SetActive(false);
+                m_HallTownHall.Buildable = true;
             }
             else
             {
                 m_HallTownHall.ButtonImage.sprite = m_Red;
                 m_HallTownHall.CornerImage.gameObject.SetActive(true);
                 m_HallTownHall.CornerImage.sprite = m_Cross;
+                m_HallTownHall.Buildable = false;
             }
 
             m_HallCityHall.gameObject.SetActive(false);
@@ -389,6 +390,7 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallCastle.ButtonImage.sprite = m_Yellow;
             m_HallCastle.CornerImage.gameObject.SetActive(true);
             m_HallCastle.CornerImage.sprite = m_Tick;
+            m_HallCastle.Buildable = false;
 
             m_HallFort.gameObject.SetActive(false);
             m_HallCitadel.gameObject.SetActive(false);
@@ -399,6 +401,7 @@ public abstract class TownBuildings : MonoBehaviour
 
             m_HallCastle.ButtonImage.sprite = m_Green;
             m_HallCastle.CornerImage.gameObject.SetActive(false);
+            m_HallCastle.Buildable = true;
 
             m_HallFort.gameObject.SetActive(false);
             m_HallCitadel.gameObject.SetActive(false);
@@ -409,6 +412,7 @@ public abstract class TownBuildings : MonoBehaviour
 
             m_HallCitadel.ButtonImage.sprite = m_Green;
             m_HallCitadel.CornerImage.gameObject.SetActive(false);
+            m_HallCitadel.Buildable = true;
 
             m_HallFort.gameObject.SetActive(false);
             m_HallCastle.gameObject.SetActive(false);
@@ -419,6 +423,7 @@ public abstract class TownBuildings : MonoBehaviour
 
             m_HallFort.ButtonImage.sprite = m_Green;
             m_HallFort.CornerImage.gameObject.SetActive(false);
+            m_HallFort.Buildable = true;
 
             m_HallCitadel.gameObject.SetActive(false);
             m_HallCastle.gameObject.SetActive(false);
@@ -431,11 +436,13 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallBlacksmith.ButtonImage.sprite = m_Yellow;
             m_HallBlacksmith.CornerImage.gameObject.SetActive(true);
             m_HallBlacksmith.CornerImage.sprite = m_Tick;
+            m_HallBlacksmith.Buildable = false;
         }
         else
         {
             m_HallBlacksmith.ButtonImage.sprite = m_Green;
             m_HallBlacksmith.CornerImage.gameObject.SetActive(false);
+            m_HallBlacksmith.Buildable = true;
         }
 
         if (m_BuiltBuildings.Silo)
@@ -444,6 +451,7 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallSilo.ButtonImage.sprite = m_Yellow;
             m_HallSilo.CornerImage.gameObject.SetActive(true);
             m_HallSilo.CornerImage.sprite = m_Tick;
+            m_HallSilo.Buildable = false;
 
             m_HallMarket.gameObject.SetActive(false);
         }
@@ -452,6 +460,7 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallSilo.gameObject.SetActive(true);
             m_HallSilo.ButtonImage.sprite = m_Green;
             m_HallSilo.CornerImage.gameObject.SetActive(false);
+            m_HallSilo.Buildable = true;
 
             m_HallMarket.gameObject.SetActive(false);
         }
@@ -460,12 +469,13 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallMarket.gameObject.SetActive(true);
             m_HallMarket.ButtonImage.sprite = m_Green;
             m_HallMarket.CornerImage.gameObject.SetActive(false);
+            m_HallMarket.Buildable = true;
 
             m_HallSilo.gameObject.SetActive(false);
         }
     }
 
-    public void BuildBuilding(BuildingData a_BuildingData)
+    public virtual void BuildBuilding(BuildingData a_BuildingData)
     {
         if (a_BuildingData == m_HallTownHall.BuildingData)
         {
@@ -491,49 +501,77 @@ public abstract class TownBuildings : MonoBehaviour
         {
             BuildCastle();
         }
-
-        UpdateHall();
+        else if (a_BuildingData == m_HallBlacksmith.BuildingData)
+        {
+            BuildBlacksmith();
+        }
+        else if (a_BuildingData == m_HallMarket.BuildingData)
+        {
+            BuildMarket();
+        }
+        else if (a_BuildingData == m_HallSilo.BuildingData)
+        {
+            BuildSilo();
+        }
     }
 
-    public virtual void BuildTownHall()
+    protected virtual void BuildTownHall()
     {
         StartCoroutine(BuildBuilding(m_TownHall));
         StartCoroutine(RemoveBuilding(m_VillageHall.Image));
         m_BuiltBuildings.TownHall = true;
     }
 
-    public virtual void BuildCityHall()
+    protected virtual void BuildCityHall()
     {
         StartCoroutine(BuildBuilding(m_CityHall));
         StartCoroutine(RemoveBuilding(m_TownHall.Image));
         m_BuiltBuildings.CityHall = true;
     }
 
-    public virtual void BuildCapitol()
+    protected virtual void BuildCapitol()
     {
         StartCoroutine(BuildBuilding(m_Capitol));
         StartCoroutine(RemoveBuilding(m_CityHall.Image));
         m_BuiltBuildings.Capitol = true;
     }
 
-    public virtual void BuildFort()
+    protected virtual void BuildFort()
     {
         StartCoroutine(BuildBuilding(m_Fort));
         m_BuiltBuildings.Fort = true;
     }
 
-    public virtual void BuildCitadel()
+    protected virtual void BuildCitadel()
     {
         StartCoroutine(BuildBuilding(m_Citadel));
         StartCoroutine(RemoveBuilding(m_Fort.Image));
         m_BuiltBuildings.Citadel = true;
     }
 
-    public virtual void BuildCastle()
+    protected virtual void BuildCastle()
     {
         StartCoroutine(BuildBuilding(m_Castle));
         StartCoroutine(RemoveBuilding(m_Citadel.Image));
         m_BuiltBuildings.Castle = true;
+    }
+
+    protected virtual void BuildBlacksmith()
+    {
+        StartCoroutine(BuildBuilding(m_Blacksmith));
+        m_BuiltBuildings.Blacksmith = true;
+    }
+
+    protected virtual void BuildMarket()
+    {
+        StartCoroutine(BuildBuilding(m_Market));
+        m_BuiltBuildings.Market = true;
+    }
+
+    protected virtual void BuildSilo()
+    {
+        StartCoroutine(BuildBuilding(m_Silo));
+        m_BuiltBuildings.Silo = true;
     }
 
     protected IEnumerator BuildBuilding(Building a_Building)

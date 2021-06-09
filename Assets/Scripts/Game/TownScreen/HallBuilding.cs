@@ -12,6 +12,8 @@ public class HallBuilding : MonoBehaviour, IPointerDownHandler
     public Image ButtonImage => m_ButtonImage;
     public Image CornerImage => m_CornerImage;
 
+    public bool Buildable { get; set; }
+
     [SerializeField] BuildPanel m_BuildPanel;
 
     [SerializeField] BuildingData m_BuildingData;

@@ -8,6 +8,7 @@ public class ScenarioSettings : MonoBehaviour
     Scenario m_Scenario;
 
     [SerializeField] GameSettings m_GameSettings;
+    [SerializeField] PlayerResources m_PlayerResources;
     [SerializeField] ScenarioInfo m_ScenarioInfo;
     [SerializeField] ScenarioSettingsPlayer[] m_Players;
     [SerializeField] Image[] m_AlliesFlags;
@@ -135,6 +136,79 @@ public class ScenarioSettings : MonoBehaviour
         for (int i = 0; i < m_Scenario.ComputerCount; i++)
         {
             m_GameSettings.Players.Add(m_Players[i].GetGameSettings());
+        }
+
+        switch (m_GameSettings.Rating)
+        {
+            case GameSettings.RATING_EASY:
+            {
+                m_PlayerResources.Wood = 30;
+                m_PlayerResources.Ore = 30;
+
+                m_PlayerResources.Mercury = 15;
+                m_PlayerResources.Sulfur = 15;
+                m_PlayerResources.Crystals = 15;
+                m_PlayerResources.Gems = 15;
+
+                m_PlayerResources.Gold = 30000;
+                break;
+            }
+
+            case GameSettings.RATING_NORMAL:
+            {
+                m_PlayerResources.Wood = 20;
+                m_PlayerResources.Ore = 20;
+
+                m_PlayerResources.Mercury = 10;
+                m_PlayerResources.Sulfur = 10;
+                m_PlayerResources.Crystals = 10;
+                m_PlayerResources.Gems = 10;
+
+                m_PlayerResources.Gold = 20000;
+                break;
+            }
+
+            case GameSettings.RATING_HARD:
+            {
+                m_PlayerResources.Wood = 15;
+                m_PlayerResources.Ore = 15;
+
+                m_PlayerResources.Mercury = 7;
+                m_PlayerResources.Sulfur = 7;
+                m_PlayerResources.Crystals = 7;
+                m_PlayerResources.Gems = 7;
+
+                m_PlayerResources.Gold = 15000;
+                break;
+            }
+
+            case GameSettings.RATING_EXPERT:
+            {
+                m_PlayerResources.Wood = 10;
+                m_PlayerResources.Ore = 10;
+
+                m_PlayerResources.Mercury = 4;
+                m_PlayerResources.Sulfur = 4;
+                m_PlayerResources.Crystals = 4;
+                m_PlayerResources.Gems = 4;
+
+                m_PlayerResources.Gold = 10000;
+                break;
+            }
+
+            case GameSettings.RATING_IMPOSSIBLE:
+            {
+                m_PlayerResources.Wood = 0;
+                m_PlayerResources.Ore = 0;
+
+                m_PlayerResources.Mercury = 0;
+                m_PlayerResources.Sulfur = 0;
+                m_PlayerResources.Crystals = 0;
+                m_PlayerResources.Gems = 0;
+
+                m_PlayerResources.Gold = 0;
+                break;
+            }
         }
     }
 

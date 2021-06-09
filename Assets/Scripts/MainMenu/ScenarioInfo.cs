@@ -53,7 +53,7 @@ public class ScenarioInfo : MonoBehaviour
 
     public void EasyPressed()
     {
-        m_Settings.Rating = 0;
+        m_Settings.Rating = GameSettings.RATING_EASY;
         m_RatingText.text = "80%";
 
         ResetSprites();
@@ -62,7 +62,7 @@ public class ScenarioInfo : MonoBehaviour
 
     public void NormalPressed()
     {
-        m_Settings.Rating = 1;
+        m_Settings.Rating = GameSettings.RATING_NORMAL;
         m_RatingText.text = "100%";
 
         ResetSprites();
@@ -71,7 +71,7 @@ public class ScenarioInfo : MonoBehaviour
 
     public void HardPressed()
     {
-        m_Settings.Rating = 2;
+        m_Settings.Rating = GameSettings.RATING_HARD;
         m_RatingText.text = "130%";
 
         ResetSprites();
@@ -80,7 +80,7 @@ public class ScenarioInfo : MonoBehaviour
 
     public void ExpertPressed()
     {
-        m_Settings.Rating = 3;
+        m_Settings.Rating = GameSettings.RATING_EXPERT;
         m_RatingText.text = "160%";
 
         ResetSprites();
@@ -89,7 +89,7 @@ public class ScenarioInfo : MonoBehaviour
 
     public void ImpossiblePressed()
     {
-        m_Settings.Rating = 4;
+        m_Settings.Rating = GameSettings.RATING_IMPOSSIBLE;
         m_RatingText.text = "200%";
 
         ResetSprites();

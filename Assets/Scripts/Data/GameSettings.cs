@@ -6,6 +6,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Heroes 3/Game Settings")]
 public class GameSettings : ScriptableObject
 {
+    public const int RATING_EASY = 0;
+    public const int RATING_NORMAL = 1;
+    public const int RATING_HARD = 2;
+    public const int RATING_EXPERT = 3;
+    public const int RATING_IMPOSSIBLE = 4;
+
     [Serializable]
     public class Player
     {

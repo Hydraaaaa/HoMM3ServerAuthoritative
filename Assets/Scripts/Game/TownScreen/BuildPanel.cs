@@ -11,6 +11,7 @@ public class BuildPanel : MonoBehaviour
     [SerializeField] Image m_Image;
     [SerializeField] Text m_Description;
     [SerializeField] Text m_Requirements;
+    [SerializeField] Button m_BuildButton;
 
     BuildingData m_BuildingData;
 
@@ -24,6 +25,8 @@ public class BuildPanel : MonoBehaviour
         m_Image.sprite = a_Building.Image.sprite;
         m_Description.text = m_BuildingData.Description;
         //m_Requirements.text =
+
+        m_BuildButton.interactable = a_Building.Buildable;
     }
 
     public void Build()

@@ -25,12 +25,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 74322fec3ab5a8342876d13efeacf111, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 61ae1099a34f2944f914b18d4fb55098, type: 3}
     Date: {fileID: 21300000, guid: f172fadf272f4064490eeb52a1de3704, type: 3}
-    TownUI: {fileID: 21300000, guid: 84af78345427656458bc14721fb2dccd, type: 3}
+    TownUI: {fileID: 21300000, guid: 2521dea508cce84488a28a317d5a71ed, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: f2a2ba765f420824cb7ba31c19e4d788, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: 48098424ebaecf5498d2949bddfc0878, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: f888efa2b642bf24f83b197b8adc52b3, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: bd1d293453a712c478888dbbdb1bcd67, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 73327e022e9828f4d88daf7dffc7b701, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 39c0b0540723b8940b7328d7d4be2aed, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: 56e2d9e05f36f9140b994d7da65e1e8d, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: 3a239a66194bd2744b9b6f14c1aa1a2f, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 73327e022e9828f4d88daf7dffc7b701, type: 3}
     NextHero: {fileID: 21300000, guid: 149cf3db131090f4189cf77720787d1a, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: 99a42a62cb8938c4db31a06d0c526ef6, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 2d6688cb5ba653549bb484392e735086, type: 3}
@@ -106,7 +106,7 @@ MonoBehaviour:
     TownHallUI1: {fileID: 21300000, guid: 8245615b0a9ada446b24cd7394ab90f3, type: 3}
     TownHallUI2: {fileID: 21300000, guid: 26c7501198c9a4546b162c70ddc5e12e, type: 3}
     TownHallUI3: {fileID: 21300000, guid: be4c19077ae8de743a458e1f6ea83625, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 16b864942b5dc3245a19108a17c3ffeb, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 16b864942b5dc3245a19108a17c3ffeb, type: 3}
     NextHero: {fileID: 21300000, guid: ca431bb86f3c25d44a4bf3aac1403df7, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: 3d5af36e335f55843b46fa53eb2f081f, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 68008360825f25c42acf50884bdab318, type: 3}
@@ -177,12 +177,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: f475ddda4e7dd0e40bdc32bc81f45145, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 15e60ad60b24f7842b0616851b3b0a07, type: 3}
     Date: {fileID: 21300000, guid: e3b46e6923107cb4887c9c7c74c811b2, type: 3}
-    TownUI: {fileID: 21300000, guid: 0dec51030136f31408bb62dac6ec041a, type: 3}
+    TownUI: {fileID: 21300000, guid: 650a1bf57d07a914097b7e3d0a50ea35, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 1162052220c2e1245871486f106dda9d, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: 3b0b040ffd9db634999d360e6815e71e, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: 3c5d7b52d514b47409290c6e22016328, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: 811371afe5618c3408aad7c79e998afb, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 105f0373ce964bf449e1d2242bb9c46e, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 837b2a33fd23d9d43a7b811d0093af09, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: fa0770a0db6914e4b8f93427fa9b65ed, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: 8798ade1022283b41881b98de2da5025, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 105f0373ce964bf449e1d2242bb9c46e, type: 3}
     NextHero: {fileID: 21300000, guid: a232f63dc3d472344a80cf8e2f965aab, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: e74ab887a4f3e364692ca600e7bd46dd, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: a1ac8486312739f428442b46d033967b, type: 3}
@@ -253,12 +253,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 73a0ac8ff7c1a4547a96402b5a9a7520, type: 3}
     BottomBarFill: {fileID: 21300000, guid: a9eb23f38cf47ba4cb800ff9ef8af801, type: 3}
     Date: {fileID: 21300000, guid: 40549e731301cb747b89d08dc127a704, type: 3}
-    TownUI: {fileID: 21300000, guid: 7b7fec885d667314ebed0ea43eecdda7, type: 3}
+    TownUI: {fileID: 21300000, guid: 43ccffff76cd266449324a91e4652419, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 731da5fdecdf5d549bdf05ffc15c0f0c, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: a98a3381eed20054e8c377f86e61d216, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: 6d44d38ce7f66b740a393e0cf1f46886, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: f6e2cff6eb6af35429ea3ed787f6e5ca, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 71604eee1ebe4c345b645120d620f41c, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 3f5fec62bcacda745a82952dab66a04f, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: c3f6cdd9961cf1b4eb6ec1f4f59b533f, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: 5464f005c89e63a4f916f5b1416edd5b, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 71604eee1ebe4c345b645120d620f41c, type: 3}
     NextHero: {fileID: 21300000, guid: d28197ee49be07c43a0f141a224f6836, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: 44ce34b7f82f445419de3335fff6f1f4, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 5f606d6daef7e0f4d982ef227fa43b85, type: 3}
@@ -329,12 +329,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 0384ccba9d5ea6b4ca6e5c81151ecac2, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 2410603824002e24d8823e4d611161cc, type: 3}
     Date: {fileID: 21300000, guid: 7de2a32d4b351754981a2f7442d221e9, type: 3}
-    TownUI: {fileID: 21300000, guid: 72230f59bd7162642b137002fff79fb0, type: 3}
+    TownUI: {fileID: 21300000, guid: 9c1875c11023a8240a67d69789562bbf, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 2925f21b85423a746988db93084d286e, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: 81c528afd5b4aaf4290e2fa43e1dac16, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: c346848020358384fa691077842d5b03, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: ab67d7a56b98a084c8b16d4c6ddacca1, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 154ea9b8181718a448ba4baa860125fd, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: fa54c62e439ee41479924f1b4ffe450a, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: f53d343a80d46dd4ab4ed37fd5fec389, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: bd78671cdb0d7af4b904daba11f6adaa, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 154ea9b8181718a448ba4baa860125fd, type: 3}
     NextHero: {fileID: 21300000, guid: c283425b25e057f4089daba20acd6af3, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: df21700d6b291a449b026d22f25a418d, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 7bafb707b23a244468ee6e2bf00fff88, type: 3}
@@ -405,12 +405,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: a3a2afb1ad6737f4cbc19f9d0b6e4822, type: 3}
     BottomBarFill: {fileID: 21300000, guid: c65000b4bf7e20543b30b39414efe1b3, type: 3}
     Date: {fileID: 21300000, guid: f62f3874b052b0b46b77b68382f3f0e2, type: 3}
-    TownUI: {fileID: 21300000, guid: 8aeebfc9dc8041242bdb81869af6f594, type: 3}
+    TownUI: {fileID: 21300000, guid: 510db9c512126be4a9c03049a8569127, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 4c46634bcf30b634eb635f612f48bc47, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: b44a91b6e5626e24b8b768caf5181868, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: 79da1e9342cc36f47b1de53d1618c0de, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: 6e2f177258c961440b2efb110f111cbe, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 9e50d1ca1ccd8d14c886ac61095ab673, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 4d32a14d341478541b2258f14fcc7d81, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: 3e44cc6de952ea140ab71f339c15c4ff, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: 0422065dcbdc00845b16a946c2e76ced, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 9e50d1ca1ccd8d14c886ac61095ab673, type: 3}
     NextHero: {fileID: 21300000, guid: 32d69e7da04d80446941074745d99922, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: 2c650cc70d3ad304bbfea2c13b0b018e, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 7ff76524cfcd86f4aa07ae954f2f381c, type: 3}
@@ -481,12 +481,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 5e11e620c4db6ea40a23aa3541562fb0, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 46e15afe9650e1a4dbbe8cc49a1154be, type: 3}
     Date: {fileID: 21300000, guid: 28c528054cd62e4438097760a5c7f029, type: 3}
-    TownUI: {fileID: 21300000, guid: fbc6124930255d2479726db5e3255f4f, type: 3}
+    TownUI: {fileID: 21300000, guid: 8c513b39996bbd947a47dcedd474f22c, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 8c43add69e2fb684e82b81e033e02a16, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: a8eaf4a91a9ca7e479ed3f48162c3eb5, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: 15465c538fe624743851e2a70bdb747c, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: 8b4cbe4299bfbad4984646538c144444, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 1b254f57e5e56c34699328bbc2e406db, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 7b9b069870967624690e0e0c7036a6a4, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: 9f1c5f3717dfc4941b7ce3e5f6891359, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: ffb3a83d399dec148ad00e3160b3e2b9, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 1b254f57e5e56c34699328bbc2e406db, type: 3}
     NextHero: {fileID: 21300000, guid: 38c371dad079117418b96af4f0958221, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: 9be66daeb4f9f244eb8e522a7a5011d5, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: 6d3c09e64f80c3e42b6a18a2cc2095c9, type: 3}
@@ -557,12 +557,12 @@ MonoBehaviour:
     Resources: {fileID: 21300000, guid: 2875cfbb7c34ddb488f8f00dea25be48, type: 3}
     BottomBarFill: {fileID: 21300000, guid: 325d99fd94509954f98d2a4427f44de2, type: 3}
     Date: {fileID: 21300000, guid: 0c20dae777a5ee84b8ceda9c2e4e4613, type: 3}
-    TownUI: {fileID: 21300000, guid: b18cd66a2a2c57545b3aeaf33f03ec07, type: 3}
+    TownUI: {fileID: 21300000, guid: 7e28b917e4a83fd4dbda8798b3dfcc2a, type: 3}
     TownScreenFlag: {fileID: 21300000, guid: 01fe60c3e7ae1cd42b28f973c33d3a30, type: 3}
-    TownHallUI1: {fileID: 21300000, guid: 6ea700a09c7d7644896e2d4eb0164bea, type: 3}
-    TownHallUI2: {fileID: 21300000, guid: c0ef80ac2f1a2c340b215d9f6f9cabaa, type: 3}
-    TownHallUI3: {fileID: 21300000, guid: deaf2ed985612b9459e45c8506c8553f, type: 3}
-    BuildWindow: {fileID: 21300000, guid: 95dbe0ad67442e14fa17a61be21a2d50, type: 3}
+    TownHallUI1: {fileID: 21300000, guid: 6d274c7100735d94da395b4355ae75af, type: 3}
+    TownHallUI2: {fileID: 21300000, guid: 8a7a22bd68601fc46962bc984ba022b1, type: 3}
+    TownHallUI3: {fileID: 21300000, guid: 252625ed979d7b840a9672f75d1bcb34, type: 3}
+    BuildPanel: {fileID: 21300000, guid: 95dbe0ad67442e14fa17a61be21a2d50, type: 3}
     NextHero: {fileID: 21300000, guid: e3d5ab7fad3ac0949804482d2e8d4f2e, type: 3}
     NextHeroPressed: {fileID: 21300000, guid: ab949168d7346c644a443a7b4fafee3a, type: 3}
     NextHeroDisabled: {fileID: 21300000, guid: d287db050e68e1145866407a087b1116, type: 3}
