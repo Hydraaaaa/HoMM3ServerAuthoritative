@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec083f480179b7408405d9ba5372817, type: 3}
   m_Name: PlayerResources
   m_EditorClassIdentifier: 
-  Wood: 0
-  Mercury: 0
-  Ore: 0
-  Sulfur: 0
-  Crystals: 0
-  Gems: 0
-  Gold: 0
+  Wood: 20
+  Mercury: 10
+  Ore: 20
+  Sulfur: 10
+  Crystals: 10
+  Gems: 10
+  Gold: 20000

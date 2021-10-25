@@ -9,6 +9,9 @@ public class BuildingHall : MonoBehaviour, IPointerDownHandler
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
-        m_TownScreen.HallPressed();
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            m_TownScreen.HallPressed();
+        }
     }
 }

@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: ArchersTower2
+  m_Name: Brotherhood
   m_EditorClassIdentifier: 
-  m_DisplayName: Upg. Archers' Tower
-  m_Description: The Archers' Tower allows you to recruit Marksmen.
+  m_DisplayName: Brotherhood of the Sword
+  m_Description: During a siege, the Brotherhood of the Sword increases troop morale
+    by +2.
   m_WoodCost: 5
   m_MercuryCost: 0
-  m_OreCost: 5
+  m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 1000
+  m_GoldCost: 500
+  m_Requirements:
+  - {fileID: 11400000, guid: b29823b638d3d9f4b807f3382e5d345d, type: 2}

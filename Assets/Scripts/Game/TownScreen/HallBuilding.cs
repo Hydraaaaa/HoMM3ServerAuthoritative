@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class HallBuilding : MonoBehaviour, IPointerDownHandler
+public class HallBuilding : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public BuildingData BuildingData => m_BuildingData;
 
@@ -31,6 +31,25 @@ public class HallBuilding : MonoBehaviour, IPointerDownHandler
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
-        m_BuildPanel.Open(this);
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            m_BuildPanel.Open(this);
+        }
+        else if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            m_BuildPanel.Open(this, true);
+
+            CursorManager.SetCursorVisible(false);
+        }
+    }
+
+    void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            m_BuildPanel.Close();
+
+            CursorManager.SetCursorVisible(true);
+        }
     }
 }

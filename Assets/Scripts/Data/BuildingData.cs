@@ -15,6 +15,7 @@ public class BuildingData : ScriptableObject
     public int CrystalCost => m_CrystalCost;
     public int GemCost => m_GemCost;
     public int GoldCost => m_GoldCost;
+    public BuildingData[] Requirements => m_Requirements;
 
     [SerializeField] string m_DisplayName;
     [SerializeField] string m_Description;
@@ -26,4 +27,5 @@ public class BuildingData : ScriptableObject
     [SerializeField] int m_CrystalCost;
     [SerializeField] int m_GemCost;
     [SerializeField] int m_GoldCost;
+    [SerializeField] BuildingData[] m_Requirements;
 }

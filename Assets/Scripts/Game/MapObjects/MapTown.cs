@@ -10,6 +10,10 @@ public class MapTown : MapObjectBase
     public bool IsUnderground { get; private set; }
     public BuiltBuildings Buildings { get; private set; }
 
+    // If there's no shipyard spot, this will be Vector2Int.zero
+    public Vector2Int ShipyardSpot { get; private set; }
+    public bool CanBuildShipyard { get; private set; }
+
     [SerializeField] GameSettings m_GameSettings;
     [SerializeField] MapObjectRenderer m_Renderer;
     [SerializeField] MapObjectRenderer m_ShadowRenderer;
@@ -17,7 +21,7 @@ public class MapTown : MapObjectBase
     [SerializeField] PlayerColors m_PlayerColors;
     [SerializeField] FactionList m_Factions;
 
-    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences)
+    public void Initialize(ScenarioObject a_ScenarioObject, GameReferences a_GameReferences, Vector2Int a_ShipyardSpot)
     {
         m_GameReferences = a_GameReferences;
 
@@ -25,6 +29,9 @@ public class MapTown : MapObjectBase
 
         PlayerIndex = a_ScenarioObject.Town.Owner;
         IsUnderground = a_ScenarioObject.IsUnderground;
+
+        ShipyardSpot = a_ShipyardSpot;
+        CanBuildShipyard = a_ShipyardSpot != Vector2Int.zero;
 
         // Neutral objects are 255
         if (PlayerIndex == 255)

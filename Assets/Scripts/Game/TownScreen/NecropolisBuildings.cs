@@ -11,9 +11,9 @@ public class NecropolisBuildings : TownBuildings
     [SerializeField] Building m_NecromancyAmplifier;
     [SerializeField] Building m_CoverOfDarkness;
 
-    public override void SetBuildings(BuiltBuildings a_Data)
+    public override void SetBuildings(BuiltBuildings a_Data, bool a_CanBuildShipyard)
     {
-        base.SetBuildings(a_Data);
+        base.SetBuildings(a_Data, a_CanBuildShipyard);
 
         if (a_Data.Dwelling1Growth)
         {

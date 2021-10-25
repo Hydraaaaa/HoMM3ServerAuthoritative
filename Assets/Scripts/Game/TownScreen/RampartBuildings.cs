@@ -15,9 +15,9 @@ public class RampartBuildings : TownBuildings
     [SerializeField] Building m_DendroidG;
     [SerializeField] Building m_Dendroid2G;
 
-    public override void SetBuildings(BuiltBuildings a_Data)
+    public override void SetBuildings(BuiltBuildings a_Data, bool a_CanBuildShipyard)
     {
-        base.SetBuildings(a_Data);
+        base.SetBuildings(a_Data, a_CanBuildShipyard);
 
         m_VillageHouses.SetActive(true);
         m_TownHouses.SetActive(a_Data.TownHall);

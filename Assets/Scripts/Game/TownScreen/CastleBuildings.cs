@@ -20,10 +20,12 @@ public class CastleBuildings : TownBuildings
     [SerializeField] protected HallBuilding m_HallLighthouse;
     [SerializeField] protected HallBuilding m_HallBrotherhood;
     [SerializeField] protected HallBuilding m_HallStables;
+    [SerializeField] protected HallBuilding m_HallGriffinBastion;
+    [SerializeField] protected HallBuilding m_HallGriffinBastionUp;
 
-    public override void SetBuildings(BuiltBuildings a_Data)
+    public override void SetBuildings(BuiltBuildings a_Data, bool a_CanBuildShipyard)
     {
-        base.SetBuildings(a_Data);
+        base.SetBuildings(a_Data, a_CanBuildShipyard);
 
         if (a_Data.Dwelling3Growth)
         {
@@ -82,56 +84,46 @@ public class CastleBuildings : TownBuildings
 
         if (m_BuiltBuildings.MageGuild4)
         {
-            m_HallMageGuild4.gameObject.SetActive(true);
-            m_HallMageGuild4.ButtonImage.sprite = m_Yellow;
-            m_HallMageGuild4.CornerImage.gameObject.SetActive(true);
-            m_HallMageGuild4.CornerImage.sprite = m_Tick;
-            m_HallMageGuild4.Buildable = false;
+            SetHallBuildingBuilt(m_HallMageGuild4);
 
+            m_HallMageGuild4.gameObject.SetActive(true);
             m_HallMageGuild1.gameObject.SetActive(false);
             m_HallMageGuild2.gameObject.SetActive(false);
             m_HallMageGuild3.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.MageGuild3)
         {
-            m_HallMageGuild4.gameObject.SetActive(true);
-            m_HallMageGuild4.ButtonImage.sprite = m_Green;
-            m_HallMageGuild4.CornerImage.gameObject.SetActive(false);
-            m_HallMageGuild4.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallMageGuild4);
 
+            m_HallMageGuild4.gameObject.SetActive(true);
             m_HallMageGuild1.gameObject.SetActive(false);
             m_HallMageGuild2.gameObject.SetActive(false);
             m_HallMageGuild3.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.MageGuild2)
         {
-            m_HallMageGuild3.gameObject.SetActive(true);
-            m_HallMageGuild3.ButtonImage.sprite = m_Green;
-            m_HallMageGuild3.CornerImage.gameObject.SetActive(false);
-            m_HallMageGuild3.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallMageGuild3);
 
+            m_HallMageGuild3.gameObject.SetActive(true);
             m_HallMageGuild1.gameObject.SetActive(false);
             m_HallMageGuild2.gameObject.SetActive(false);
             m_HallMageGuild4.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.MageGuild1)
         {
-            m_HallMageGuild2.gameObject.SetActive(true);
-            m_HallMageGuild2.ButtonImage.sprite = m_Green;
-            m_HallMageGuild2.CornerImage.gameObject.SetActive(false);
-            m_HallMageGuild2.Buildable = true;
 
+            SetHallBuildingNotBuilt(m_HallMageGuild2);
+
+            m_HallMageGuild2.gameObject.SetActive(true);
             m_HallMageGuild1.gameObject.SetActive(false);
             m_HallMageGuild3.gameObject.SetActive(false);
             m_HallMageGuild4.gameObject.SetActive(false);
         }
         else
         {
-            m_HallMageGuild1.gameObject.SetActive(true);
-            m_HallMageGuild1.ButtonImage.sprite = m_Green;
-            m_HallMageGuild1.CornerImage.gameObject.SetActive(false);
-            m_HallMageGuild1.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallMageGuild1);
 
+            m_HallMageGuild1.gameObject.SetActive(true);
             m_HallMageGuild2.gameObject.SetActive(false);
             m_HallMageGuild3.gameObject.SetActive(false);
             m_HallMageGuild4.gameObject.SetActive(false);
@@ -140,45 +132,93 @@ public class CastleBuildings : TownBuildings
         // Lighthouse
         if (m_BuiltBuildings.FactionBuilding1)
         {
+            SetHallBuildingBuilt(m_HallLighthouse);
 
+            m_HallLighthouse.gameObject.SetActive(true);
+            m_HallShipyard.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.Shipyard)
         {
+            SetHallBuildingNotBuilt(m_HallLighthouse);
 
+            m_HallLighthouse.gameObject.SetActive(true);
+            m_HallShipyard.gameObject.SetActive(false);
         }
         else
         {
+            if (m_CanBuildShipyard)
+            {
+                SetHallBuildingNotBuilt(m_HallShipyard);
+            }
+            else
+            {
+                SetHallBuildingUnbuildable(m_HallShipyard);
+            }
 
+            m_HallShipyard.gameObject.SetActive(true);
+            m_HallLighthouse.gameObject.SetActive(false);
         }
 
         // Brotherhood of the Sword
         if (m_BuiltBuildings.FactionBuilding2)
         {
-            m_HallBrotherhood.gameObject.SetActive(true);
-            m_HallBrotherhood.ButtonImage.sprite = m_Yellow;
-            m_HallBrotherhood.CornerImage.gameObject.SetActive(true);
-            m_HallBrotherhood.CornerImage.sprite = m_Tick;
-            m_HallBrotherhood.Buildable = false;
+            SetHallBuildingBuilt(m_HallBrotherhood);
 
+            m_HallBrotherhood.gameObject.SetActive(true);
             m_HallTavern.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.Tavern)
         {
-            m_HallBrotherhood.gameObject.SetActive(true);
-            m_HallBrotherhood.ButtonImage.sprite = m_Green;
-            m_HallBrotherhood.CornerImage.gameObject.SetActive(false);
-            m_HallBrotherhood.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallBrotherhood);
 
+            m_HallBrotherhood.gameObject.SetActive(true);
             m_HallTavern.gameObject.SetActive(false);
         }
         else
         {
-            m_HallTavern.gameObject.SetActive(true);
-            m_HallTavern.ButtonImage.sprite = m_Green;
-            m_HallTavern.CornerImage.gameObject.SetActive(false);
-            m_HallTavern.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallTavern);
 
+            m_HallTavern.gameObject.SetActive(true);
             m_HallBrotherhood.gameObject.SetActive(false);
+        }
+
+        // Stables
+        if (m_BuiltBuildings.FactionBuilding3)
+        {
+            SetHallBuildingBuilt(m_HallStables);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallStables);
+        }
+
+        if (m_BuiltBuildings.Dwelling3Up)
+        {
+            m_HallGriffinBastionUp.gameObject.SetActive(true);
+            m_HallGriffinBastion.gameObject.SetActive(false);
+
+            if (m_BuiltBuildings.Dwelling3Growth)
+            {
+                SetHallBuildingBuilt(m_HallGriffinBastionUp);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallGriffinBastionUp);
+            }
+        }
+        else
+        {
+            m_HallGriffinBastion.gameObject.SetActive(true);
+            m_HallGriffinBastionUp.gameObject.SetActive(false);
+
+            if (m_BuiltBuildings.Dwelling3Growth)
+            {
+                SetHallBuildingBuilt(m_HallGriffinBastion);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallGriffinBastion);
+            }
         }
     }
 
@@ -200,6 +240,22 @@ public class CastleBuildings : TownBuildings
         {
             BuildMageGuild4();
         }
+        else if (a_BuildingData == m_HallLighthouse.BuildingData)
+        {
+            BuildFactionBuilding1();
+        }
+        else if (a_BuildingData == m_HallBrotherhood.BuildingData)
+        {
+            BuildFactionBuilding2();
+        }
+        else if (a_BuildingData == m_HallStables.BuildingData)
+        {
+            BuildFactionBuilding3();
+        }
+        else if (a_BuildingData == m_HallGriffinBastion.BuildingData)
+        {
+            BuildGriffinBastion();
+        }
         else
         {
             base.BuildBuilding(a_BuildingData);
@@ -208,30 +264,78 @@ public class CastleBuildings : TownBuildings
         UpdateHall();
     }
 
-    void BuildMageGuild1()
+    protected override void BuildFactionBuilding1()
     {
-        StartCoroutine(BuildBuilding(m_MageGuild1));
-        m_BuiltBuildings.MageGuild1 = true;
+        StartCoroutine(BuildBuilding(m_FactionBuilding1));
+        StartCoroutine(RemoveBuilding(m_Tavern.Image));
+        m_BuiltBuildings.FactionBuilding1 = true;
     }
 
-    void BuildMageGuild2()
+    protected override void BuildDwelling3Up()
     {
-        StartCoroutine(BuildBuilding(m_MageGuild2));
-        StartCoroutine(RemoveBuilding(m_MageGuild1.Image));
-        m_BuiltBuildings.MageGuild2 = true;
+        if (m_BuiltBuildings.Dwelling3Growth)
+        {
+            StartCoroutine(BuildBuilding(m_Griffin2G));
+            StartCoroutine(RemoveBuilding(m_GriffinG.Image));
+        }
+        else
+        {
+            StartCoroutine(BuildBuilding(m_Dwelling3Up));
+            StartCoroutine(RemoveBuilding(m_Dwelling3.Image));
+        }
+
+        m_BuiltBuildings.Dwelling3Up = true;
     }
 
-    void BuildMageGuild3()
+    protected void BuildGriffinBastion()
     {
-        StartCoroutine(BuildBuilding(m_MageGuild3));
-        StartCoroutine(RemoveBuilding(m_MageGuild2.Image));
-        m_BuiltBuildings.MageGuild3 = true;
+        if (m_BuiltBuildings.Dwelling3Up)
+        {
+            StartCoroutine(BuildBuilding(m_Griffin2G));
+            StartCoroutine(RemoveBuilding(m_Dwelling3Up.Image));
+        }
+        else
+        {
+            StartCoroutine(BuildBuilding(m_GriffinG));
+            StartCoroutine(RemoveBuilding(m_Dwelling3.Image));
+        }
+
+        m_BuiltBuildings.Dwelling3Growth = true;
     }
 
-    void BuildMageGuild4()
+    public override bool IsBuildingBuilt(BuildingData a_Building)
     {
-        StartCoroutine(BuildBuilding(m_MageGuild4));
-        StartCoroutine(RemoveBuilding(m_MageGuild3.Image));
-        m_BuiltBuildings.MageGuild4 = true;
+        if (a_Building == m_HallMageGuild1.BuildingData)
+        {
+            return m_BuiltBuildings.MageGuild1;
+        }
+        else if (a_Building == m_HallMageGuild2.BuildingData)
+        {
+            return m_BuiltBuildings.MageGuild2;
+        }
+        else if (a_Building == m_HallMageGuild3.BuildingData)
+        {
+            return m_BuiltBuildings.MageGuild3;
+        }
+        else if (a_Building == m_HallMageGuild4.BuildingData)
+        {
+            return m_BuiltBuildings.MageGuild4;
+        }
+        else if (a_Building == m_HallLighthouse.BuildingData)
+        {
+            return m_BuiltBuildings.FactionBuilding1;
+        }
+        else if (a_Building == m_HallBrotherhood.BuildingData)
+        {
+            return m_BuiltBuildings.FactionBuilding2;
+        }
+        else if (a_Building == m_HallStables.BuildingData)
+        {
+            return m_BuiltBuildings.FactionBuilding3;
+        }
+        else
+        {
+            return base.IsBuildingBuilt(a_Building);
+        }
     }
 }

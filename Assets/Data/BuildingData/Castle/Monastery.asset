@@ -21,3 +21,5 @@ MonoBehaviour:
   m_CrystalCost: 2
   m_GemCost: 2
   m_GoldCost: 3000
+  m_Requirements:
+  - {fileID: 11400000, guid: 7c149e98eb9f94341950be125edbbee9, type: 2}

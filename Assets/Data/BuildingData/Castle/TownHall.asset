@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: TrainingGrounds
+  m_Name: TownHall
   m_EditorClassIdentifier: 
-  m_DisplayName: Training Grounds
-  m_Description: The Training Grounds allow you to recruit Cavaliers.
-  m_WoodCost: 20
+  m_DisplayName: Town Hall
+  m_Description: The Town Hall allows you to purchase town structures and earns your
+    kingdom 1000 gold per day.
+  m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 5000
+  m_GoldCost: 2500
+  m_Requirements:
+  - {fileID: 11400000, guid: b29823b638d3d9f4b807f3382e5d345d, type: 2}

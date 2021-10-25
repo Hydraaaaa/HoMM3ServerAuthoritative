@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: SiloWoodOre
+  m_Name: PortalOfGlory
   m_EditorClassIdentifier: 
-  m_DisplayName: Resource Silo
-  m_Description: The Resource Silo provides you with an additional +1 wood and +1
-    ore each day.
+  m_DisplayName: Portal of Glory
+  m_Description: The Portal of Glory allows you to recruit Angels.
   m_WoodCost: 0
-  m_MercuryCost: 0
-  m_OreCost: 5
-  m_SulfurCost: 0
-  m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 5000
+  m_MercuryCost: 10
+  m_OreCost: 0
+  m_SulfurCost: 10
+  m_CrystalCost: 10
+  m_GemCost: 10
+  m_GoldCost: 20000
+  m_Requirements:
+  - {fileID: 11400000, guid: ac933942655d55642a2d41b4822da9ca, type: 2}

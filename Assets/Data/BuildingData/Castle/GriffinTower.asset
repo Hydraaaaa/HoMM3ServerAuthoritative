@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: CityHall
+  m_Name: GriffinTower
   m_EditorClassIdentifier: 
-  m_DisplayName: City Hall
-  m_Description: The City Hall allows you to purchase town structures and earns your
-    kingdom 2000 gold per day.
+  m_DisplayName: Griffin Tower
+  m_Description: The Griffin  Tower allows you to recruit Griffins.
   m_WoodCost: 0
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 5
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 5000
+  m_GoldCost: 1000
+  m_Requirements:
+  - {fileID: 11400000, guid: 7c149e98eb9f94341950be125edbbee9, type: 2}

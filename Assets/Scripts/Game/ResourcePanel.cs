@@ -17,6 +17,18 @@ public class ResourcePanel : MonoBehaviour
 
     void Start()
     {
+        OnResourcesUpdated();
+
+        m_Resources.OnResourcesUpdated += OnResourcesUpdated;
+    }
+
+    void OnDestroy()
+    {
+        m_Resources.OnResourcesUpdated -= OnResourcesUpdated;
+    }
+
+    void OnResourcesUpdated()
+    {
         m_Wood.text = m_Resources.Wood.ToString();
         m_Mercury.text = m_Resources.Mercury.ToString();
         m_Ore.text = m_Resources.Ore.ToString();

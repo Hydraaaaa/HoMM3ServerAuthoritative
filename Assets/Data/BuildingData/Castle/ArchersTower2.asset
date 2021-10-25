@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: GriffinBastion
+  m_Name: ArchersTower2
   m_EditorClassIdentifier: 
-  m_DisplayName: Griffin Bastion
-  m_Description: The Griffin Bastion increases Griffin production by 3 per week.
-  m_WoodCost: 0
+  m_DisplayName: Upg. Archers' Tower
+  m_Description: The Archers' Tower allows you to recruit Marksmen.
+  m_WoodCost: 5
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 5
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
   m_GoldCost: 1000
+  m_Requirements: []

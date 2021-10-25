@@ -10,11 +10,17 @@ public class ScenarioDetailsButton : MonoBehaviour, IPointerDownHandler, IPointe
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
-        m_PressTransform.anchoredPosition = new Vector2(1.0f, -1.0f);
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            m_PressTransform.anchoredPosition = new Vector2(1.0f, -1.0f);
+        }
     }
 
     void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
     {
-        m_PressTransform.anchoredPosition = new Vector2(0.0f, 0.0f);
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            m_PressTransform.anchoredPosition = new Vector2(0.0f, 0.0f);
+        }
     }
 }

@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: BlacksmithBallista
+  m_Name: GriffinBastion
   m_EditorClassIdentifier: 
-  m_DisplayName: Blacksmith
-  m_Description: The Blacksmith provides your armies with Ballistas.
-  m_WoodCost: 5
+  m_DisplayName: Griffin Bastion
+  m_Description: The Griffin Bastion increases Griffin production by 3 per week.
+  m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
   m_GoldCost: 1000
+  m_Requirements:
+  - {fileID: 11400000, guid: 945dd9ad761f26a4f919f599c6d0e1cf, type: 2}

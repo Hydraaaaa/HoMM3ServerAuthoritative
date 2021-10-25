@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: PortalOfGlory
+  m_Name: Stables
   m_EditorClassIdentifier: 
-  m_DisplayName: Portal of Glory
-  m_Description: The Portal of Glory allows you to recruit Angels.
-  m_WoodCost: 0
-  m_MercuryCost: 10
+  m_DisplayName: Stables
+  m_Description: The Stables increase the land movement rate of any visiting hero.
+  m_WoodCost: 10
+  m_MercuryCost: 0
   m_OreCost: 0
-  m_SulfurCost: 10
-  m_CrystalCost: 10
-  m_GemCost: 10
-  m_GoldCost: 20000
+  m_SulfurCost: 0
+  m_CrystalCost: 0
+  m_GemCost: 0
+  m_GoldCost: 2000
+  m_Requirements:
+  - {fileID: 11400000, guid: 7c149e98eb9f94341950be125edbbee9, type: 2}

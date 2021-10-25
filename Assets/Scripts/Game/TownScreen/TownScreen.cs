@@ -12,6 +12,7 @@ public class TownScreen : MonoBehaviour
     [SerializeField] PlayerColors m_PlayerColors;
     [SerializeField] FactionList m_Factions;
     [SerializeField] LocalOwnership m_LocalOwnership;
+    [SerializeField] PlayerResources m_Resources;
 
     [SerializeField] GameObject m_Root;
     [SerializeField] RectTransform m_Body;
@@ -119,7 +120,7 @@ public class TownScreen : MonoBehaviour
 
         m_TownBuildings[m_CurrentFactionIndex].gameObject.SetActive(false);
         m_TownBuildings[_FactionIndex].gameObject.SetActive(true);
-        m_TownBuildings[_FactionIndex].SetBuildings(a_Town.Buildings);
+        m_TownBuildings[_FactionIndex].SetBuildings(a_Town.Buildings, m_CurrentTown.CanBuildShipyard);
 
         m_CurrentFactionIndex = _FactionIndex;
 
@@ -227,7 +228,20 @@ public class TownScreen : MonoBehaviour
 
     public void BuildBuilding(BuildingData a_Data)
     {
+        m_Resources.Gold -= a_Data.GoldCost;
+        m_Resources.Wood -= a_Data.WoodCost;
+        m_Resources.Ore -= a_Data.OreCost;
+        m_Resources.Mercury -= a_Data.MercuryCost;
+        m_Resources.Sulfur -= a_Data.SulfurCost;
+        m_Resources.Crystals -= a_Data.CrystalCost;
+        m_Resources.Gems -= a_Data.GemCost;
+
         m_BaseHallScreen.SetActive(false);
         m_TownBuildings[m_CurrentFactionIndex].BuildBuilding(a_Data);
+    }
+
+    public TownBuildings GetTownBuildings()
+    {
+        return m_TownBuildings[m_CurrentFactionIndex];
     }
 }

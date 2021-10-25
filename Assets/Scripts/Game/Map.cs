@@ -430,7 +430,31 @@ public class Map : MonoBehaviour
 
                 case ScenarioObjectType.Town:
                     MapTown _Town = Instantiate(m_MapTownPrefab, m_MapObjectParent);
-                    _Town.Initialize(_Object, m_GameReferences);
+
+                    // Determine if this town can build a shipyard, and where the ship will spawn
+                    Vector2Int _ShipyardSpot = Vector2Int.zero;
+
+                    Vector2Int _ShipyardSpot1 = new Vector2Int(_Object.PosX - 3, _Object.PosY + 2);
+                    Vector2Int _ShipyardSpot2 = new Vector2Int(_Object.PosX - 1, _Object.PosY + 2);
+
+                    int _ShipyardIndex1 = _ShipyardSpot1.x + _ShipyardSpot1.y * _Size;
+                    int _ShipyardIndex2 = _ShipyardSpot2.x + _ShipyardSpot2.y * _Size;
+
+                    if (_ShipyardIndex1 < _Size*_Size)
+                    {
+                        if (_Terrain[_ShipyardIndex1].TerrainType == WATER_TILE_INDEX)
+                        {
+                            _ShipyardSpot = _ShipyardSpot1;
+                        }
+                        else if (_ShipyardIndex2 < _Size*_Size &&
+                                 _Terrain[_ShipyardIndex2].TerrainType == WATER_TILE_INDEX)
+                        {
+                            _ShipyardSpot = _ShipyardSpot2;
+                        }
+                    }
+
+                    // If _ShipyardSpot is still Vector2Int.zero, there's no shipyard
+                    _Town.Initialize(_Object, m_GameReferences, _ShipyardSpot);
                     _MapObject = _Town;
                     break;
 

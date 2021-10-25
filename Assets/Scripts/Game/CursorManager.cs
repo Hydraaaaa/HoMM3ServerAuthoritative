@@ -24,6 +24,11 @@ public class CursorManager : MonoBehaviour
         s_Instance.m_Cursor.rectTransform.anchoredPosition = Input.mousePosition + s_Instance.m_Offset;
     }
 
+    public static void SetCursorVisible(bool a_Visible)
+    {
+        s_Instance.m_Cursor.enabled = a_Visible;
+    }
+
     public static void ResetCursor()
     {
         SetCursor(s_Instance.m_DefaultSprite);

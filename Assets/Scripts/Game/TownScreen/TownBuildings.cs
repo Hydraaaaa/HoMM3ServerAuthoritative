@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public abstract class TownBuildings : MonoBehaviour
 {
+    [SerializeField] protected PlayerResources m_Resources;
+
+    [Space]
+
     [SerializeField] protected Building m_VillageHall;
     [SerializeField] protected Building m_TownHall;
     [SerializeField] protected Building m_CityHall;
@@ -101,10 +105,12 @@ public abstract class TownBuildings : MonoBehaviour
     [SerializeField] protected Sprite m_Grey;
 
     protected BuiltBuildings m_BuiltBuildings;
+    protected bool m_CanBuildShipyard;
 
-    public virtual void SetBuildings(BuiltBuildings a_BuiltBuildings)
+    public virtual void SetBuildings(BuiltBuildings a_BuiltBuildings, bool a_CanBuildShipyard)
     {
         m_BuiltBuildings = a_BuiltBuildings;
+        m_CanBuildShipyard = a_CanBuildShipyard;
 
         if (m_BuiltBuildings.Capitol)
         {
@@ -309,122 +315,65 @@ public abstract class TownBuildings : MonoBehaviour
     {
         if (m_BuiltBuildings.Capitol)
         {
-            m_HallCapitol.gameObject.SetActive(true);
-            m_HallCapitol.ButtonImage.sprite = m_Yellow;
-            m_HallCapitol.CornerImage.gameObject.SetActive(true);
-            m_HallCapitol.CornerImage.sprite = m_Tick;
-            m_HallCapitol.Buildable = false;
+            SetHallBuildingBuilt(m_HallCapitol);
 
+            m_HallCapitol.gameObject.SetActive(true);
             m_HallTownHall.gameObject.SetActive(false);
             m_HallCityHall.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.CityHall)
         {
+            SetHallBuildingNotBuilt(m_HallCapitol);
+
             m_HallCapitol.gameObject.SetActive(true);
-
-            if (m_BuiltBuildings.Castle)
-            {
-                m_HallCapitol.ButtonImage.sprite = m_Green;
-                m_HallCapitol.CornerImage.gameObject.SetActive(false);
-                m_HallCapitol.Buildable = true;
-            }
-            else
-            {
-                m_HallCapitol.ButtonImage.sprite = m_Red;
-                m_HallCapitol.CornerImage.gameObject.SetActive(true);
-                m_HallCapitol.CornerImage.sprite = m_Cross;
-                m_HallCapitol.Buildable = false;
-            }
-
             m_HallTownHall.gameObject.SetActive(false);
             m_HallCityHall.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.TownHall)
         {
+            SetHallBuildingNotBuilt(m_HallCityHall);
+
             m_HallCityHall.gameObject.SetActive(true);
-
-            if (m_BuiltBuildings.Blacksmith &&
-                m_BuiltBuildings.Market &&
-                m_BuiltBuildings.MageGuild1)
-            {
-                m_HallCityHall.ButtonImage.sprite = m_Green;
-                m_HallCityHall.CornerImage.gameObject.SetActive(false);
-                m_HallCityHall.Buildable = true;
-            }
-            else
-            {
-                m_HallCityHall.ButtonImage.sprite = m_Red;
-                m_HallCityHall.CornerImage.gameObject.SetActive(true);
-                m_HallCityHall.CornerImage.sprite = m_Cross;
-                m_HallCityHall.Buildable = false;
-            }
-
             m_HallTownHall.gameObject.SetActive(false);
             m_HallCapitol.gameObject.SetActive(false);
         }
         else
         {
+            SetHallBuildingNotBuilt(m_HallTownHall);
+
             m_HallTownHall.gameObject.SetActive(true);
-
-            if (m_BuiltBuildings.Tavern)
-            {
-                m_HallTownHall.ButtonImage.sprite = m_Green;
-                m_HallTownHall.CornerImage.gameObject.SetActive(false);
-                m_HallTownHall.Buildable = true;
-            }
-            else
-            {
-                m_HallTownHall.ButtonImage.sprite = m_Red;
-                m_HallTownHall.CornerImage.gameObject.SetActive(true);
-                m_HallTownHall.CornerImage.sprite = m_Cross;
-                m_HallTownHall.Buildable = false;
-            }
-
             m_HallCityHall.gameObject.SetActive(false);
             m_HallCapitol.gameObject.SetActive(false);
         }
 
         if (m_BuiltBuildings.Castle)
         {
-            m_HallCastle.gameObject.SetActive(true);
-            m_HallCastle.ButtonImage.sprite = m_Yellow;
-            m_HallCastle.CornerImage.gameObject.SetActive(true);
-            m_HallCastle.CornerImage.sprite = m_Tick;
-            m_HallCastle.Buildable = false;
+            SetHallBuildingBuilt(m_HallCastle);
 
             m_HallFort.gameObject.SetActive(false);
             m_HallCitadel.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.Citadel)
         {
+            SetHallBuildingNotBuilt(m_HallCastle);
+
             m_HallCastle.gameObject.SetActive(true);
-
-            m_HallCastle.ButtonImage.sprite = m_Green;
-            m_HallCastle.CornerImage.gameObject.SetActive(false);
-            m_HallCastle.Buildable = true;
-
             m_HallFort.gameObject.SetActive(false);
             m_HallCitadel.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.Fort)
         {
+            SetHallBuildingNotBuilt(m_HallCitadel);
+
             m_HallCitadel.gameObject.SetActive(true);
-
-            m_HallCitadel.ButtonImage.sprite = m_Green;
-            m_HallCitadel.CornerImage.gameObject.SetActive(false);
-            m_HallCitadel.Buildable = true;
-
             m_HallFort.gameObject.SetActive(false);
             m_HallCastle.gameObject.SetActive(false);
         }
         else
         {
+            SetHallBuildingNotBuilt(m_HallFort);
+
             m_HallFort.gameObject.SetActive(true);
-
-            m_HallFort.ButtonImage.sprite = m_Green;
-            m_HallFort.CornerImage.gameObject.SetActive(false);
-            m_HallFort.Buildable = true;
-
             m_HallCitadel.gameObject.SetActive(false);
             m_HallCastle.gameObject.SetActive(false);
         }
@@ -433,46 +382,250 @@ public abstract class TownBuildings : MonoBehaviour
 
         if (m_BuiltBuildings.Blacksmith)
         {
-            m_HallBlacksmith.ButtonImage.sprite = m_Yellow;
-            m_HallBlacksmith.CornerImage.gameObject.SetActive(true);
-            m_HallBlacksmith.CornerImage.sprite = m_Tick;
-            m_HallBlacksmith.Buildable = false;
+            SetHallBuildingBuilt(m_HallBlacksmith);
         }
         else
         {
-            m_HallBlacksmith.ButtonImage.sprite = m_Green;
-            m_HallBlacksmith.CornerImage.gameObject.SetActive(false);
-            m_HallBlacksmith.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallBlacksmith);
         }
 
         if (m_BuiltBuildings.Silo)
         {
-            m_HallSilo.gameObject.SetActive(true);
-            m_HallSilo.ButtonImage.sprite = m_Yellow;
-            m_HallSilo.CornerImage.gameObject.SetActive(true);
-            m_HallSilo.CornerImage.sprite = m_Tick;
-            m_HallSilo.Buildable = false;
+            SetHallBuildingBuilt(m_HallSilo);
 
+            m_HallSilo.gameObject.SetActive(true);
             m_HallMarket.gameObject.SetActive(false);
         }
         else if (m_BuiltBuildings.Market)
         {
-            m_HallSilo.gameObject.SetActive(true);
-            m_HallSilo.ButtonImage.sprite = m_Green;
-            m_HallSilo.CornerImage.gameObject.SetActive(false);
-            m_HallSilo.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallSilo);
 
+            m_HallSilo.gameObject.SetActive(true);
             m_HallMarket.gameObject.SetActive(false);
         }
         else
         {
-            m_HallMarket.gameObject.SetActive(true);
-            m_HallMarket.ButtonImage.sprite = m_Green;
-            m_HallMarket.CornerImage.gameObject.SetActive(false);
-            m_HallMarket.Buildable = true;
+            SetHallBuildingNotBuilt(m_HallMarket);
 
+            m_HallMarket.gameObject.SetActive(true);
             m_HallSilo.gameObject.SetActive(false);
         }
+
+        if (m_BuiltBuildings.Dwelling1)
+        {
+            if (m_BuiltBuildings.Dwelling1Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling1Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling1Up);
+            }
+
+            m_HallDwelling1Up.gameObject.SetActive(true);
+            m_HallDwelling1.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling1);
+
+            m_HallDwelling1.gameObject.SetActive(true);
+            m_HallDwelling1Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling2)
+        {
+            if (m_BuiltBuildings.Dwelling2Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling2Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling2Up);
+            }
+
+            m_HallDwelling2Up.gameObject.SetActive(true);
+            m_HallDwelling2.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling2);
+
+            m_HallDwelling2.gameObject.SetActive(true);
+            m_HallDwelling2Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling3)
+        {
+            if (m_BuiltBuildings.Dwelling3Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling3Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling3Up);
+            }
+
+            m_HallDwelling3Up.gameObject.SetActive(true);
+            m_HallDwelling3.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling3);
+
+            m_HallDwelling3.gameObject.SetActive(true);
+            m_HallDwelling3Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling4)
+        {
+            if (m_BuiltBuildings.Dwelling4Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling4Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling4Up);
+            }
+
+            m_HallDwelling4Up.gameObject.SetActive(true);
+            m_HallDwelling4.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling4);
+
+            m_HallDwelling4.gameObject.SetActive(true);
+            m_HallDwelling4Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling5)
+        {
+            if (m_BuiltBuildings.Dwelling5Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling5Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling5Up);
+            }
+
+            m_HallDwelling5Up.gameObject.SetActive(true);
+            m_HallDwelling5.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling5);
+
+            m_HallDwelling5.gameObject.SetActive(true);
+            m_HallDwelling5Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling6)
+        {
+            if (m_BuiltBuildings.Dwelling6Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling6Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling6Up);
+            }
+
+            m_HallDwelling6Up.gameObject.SetActive(true);
+            m_HallDwelling6.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling6);
+
+            m_HallDwelling6.gameObject.SetActive(true);
+            m_HallDwelling6Up.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.Dwelling7)
+        {
+            if (m_BuiltBuildings.Dwelling7Up)
+            {
+                SetHallBuildingBuilt(m_HallDwelling7Up);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallDwelling7Up);
+            }
+
+            m_HallDwelling7Up.gameObject.SetActive(true);
+            m_HallDwelling7.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallDwelling7);
+
+            m_HallDwelling7.gameObject.SetActive(true);
+            m_HallDwelling7Up.gameObject.SetActive(false);
+        }
+    }
+
+    protected void SetHallBuildingNotBuilt(HallBuilding a_Building)
+    {
+        bool _RequirementsMet = true;
+
+        if (a_Building.BuildingData.Requirements != null)
+        {
+            for (int i = 0; i < a_Building.BuildingData.Requirements.Length; i++)
+            {
+                if (!IsBuildingBuilt(a_Building.BuildingData.Requirements[i]))
+                {
+                    _RequirementsMet = false;
+                }
+            }
+        }
+
+        if (_RequirementsMet)
+        {
+            if (a_Building.BuildingData.GoldCost <= m_Resources.Gold &&
+                a_Building.BuildingData.WoodCost <= m_Resources.Wood &&
+                a_Building.BuildingData.OreCost <= m_Resources.Ore &&
+                a_Building.BuildingData.MercuryCost <= m_Resources.Mercury &&
+                a_Building.BuildingData.SulfurCost <= m_Resources.Sulfur &&
+                a_Building.BuildingData.CrystalCost <= m_Resources.Crystals &&
+                a_Building.BuildingData.GemCost <= m_Resources.Gems)
+            {
+                a_Building.ButtonImage.sprite = m_Green;
+                a_Building.CornerImage.gameObject.SetActive(false);
+                a_Building.Buildable = true;
+            }
+            else
+            {
+                a_Building.ButtonImage.sprite = m_Red;
+                a_Building.CornerImage.gameObject.SetActive(true);
+                a_Building.CornerImage.sprite = m_NoMoney;
+                a_Building.Buildable = false;
+            }
+        }
+        else
+        {
+            a_Building.ButtonImage.sprite = m_Red;
+            a_Building.CornerImage.gameObject.SetActive(true);
+            a_Building.CornerImage.sprite = m_Cross;
+            a_Building.Buildable = false;
+        }
+    }
+
+    protected void SetHallBuildingBuilt(HallBuilding a_Building)
+    {
+        a_Building.ButtonImage.sprite = m_Yellow;
+        a_Building.CornerImage.gameObject.SetActive(true);
+        a_Building.CornerImage.sprite = m_Tick;
+        a_Building.Buildable = false;
+    }
+
+    protected void SetHallBuildingUnbuildable(HallBuilding a_Building)
+    {
+        a_Building.ButtonImage.sprite = m_Grey;
+        a_Building.CornerImage.gameObject.SetActive(true);
+        a_Building.CornerImage.sprite = m_Cross;
+        a_Building.Buildable = false;
     }
 
     public virtual void BuildBuilding(BuildingData a_BuildingData)
@@ -512,6 +665,62 @@ public abstract class TownBuildings : MonoBehaviour
         else if (a_BuildingData == m_HallSilo.BuildingData)
         {
             BuildSilo();
+        }
+        else if (a_BuildingData == m_HallDwelling1.BuildingData)
+        {
+            BuildDwelling1();
+        }
+        else if (a_BuildingData == m_HallDwelling1Up.BuildingData)
+        {
+            BuildDwelling1Up();
+        }
+        else if (a_BuildingData == m_HallDwelling2.BuildingData)
+        {
+            BuildDwelling2();
+        }
+        else if (a_BuildingData == m_HallDwelling2Up.BuildingData)
+        {
+            BuildDwelling2Up();
+        }
+        else if (a_BuildingData == m_HallDwelling3.BuildingData)
+        {
+            BuildDwelling3();
+        }
+        else if (a_BuildingData == m_HallDwelling3Up.BuildingData)
+        {
+            BuildDwelling3Up();
+        }
+        else if (a_BuildingData == m_HallDwelling4.BuildingData)
+        {
+            BuildDwelling4();
+        }
+        else if (a_BuildingData == m_HallDwelling4Up.BuildingData)
+        {
+            BuildDwelling4Up();
+        }
+        else if (a_BuildingData == m_HallDwelling5.BuildingData)
+        {
+            BuildDwelling5();
+        }
+        else if (a_BuildingData == m_HallDwelling5Up.BuildingData)
+        {
+            BuildDwelling5Up();
+        }
+        else if (a_BuildingData == m_HallDwelling6.BuildingData)
+        {
+            BuildDwelling6();
+        }
+        else if (a_BuildingData == m_HallDwelling6Up.BuildingData)
+        {
+            BuildDwelling6Up();
+        }
+        else if (a_BuildingData == m_HallDwelling7.BuildingData)
+        {
+            BuildDwelling7();
+        }
+        else if (a_BuildingData == m_HallDwelling7Up.BuildingData)
+        {
+            BuildDwelling7Up();
         }
     }
 
@@ -572,6 +781,155 @@ public abstract class TownBuildings : MonoBehaviour
     {
         StartCoroutine(BuildBuilding(m_Silo));
         m_BuiltBuildings.Silo = true;
+    }
+
+    protected virtual void BuildMageGuild1()
+    {
+        StartCoroutine(BuildBuilding(m_MageGuild1));
+        m_BuiltBuildings.MageGuild1 = true;
+    }
+
+    protected virtual void BuildMageGuild2()
+    {
+        StartCoroutine(BuildBuilding(m_MageGuild2));
+        StartCoroutine(RemoveBuilding(m_MageGuild1.Image));
+        m_BuiltBuildings.MageGuild2 = true;
+    }
+
+    protected virtual void BuildMageGuild3()
+    {
+        StartCoroutine(BuildBuilding(m_MageGuild3));
+        StartCoroutine(RemoveBuilding(m_MageGuild2.Image));
+        m_BuiltBuildings.MageGuild3 = true;
+    }
+
+    protected virtual void BuildMageGuild4()
+    {
+        StartCoroutine(BuildBuilding(m_MageGuild4));
+        StartCoroutine(RemoveBuilding(m_MageGuild3.Image));
+        m_BuiltBuildings.MageGuild4 = true;
+    }
+
+    protected virtual void BuildMageGuild5()
+    {
+        StartCoroutine(BuildBuilding(m_MageGuild5));
+        StartCoroutine(RemoveBuilding(m_MageGuild4.Image));
+        m_BuiltBuildings.MageGuild5 = true;
+    }
+
+    protected virtual void BuildDwelling1()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling1));
+        m_BuiltBuildings.Dwelling1 = true;
+    }
+
+    protected virtual void BuildDwelling1Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling1Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling1.Image));
+        m_BuiltBuildings.Dwelling1Up = true;
+    }
+
+    protected virtual void BuildDwelling2()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling2));
+        m_BuiltBuildings.Dwelling2 = true;
+    }
+
+    protected virtual void BuildDwelling2Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling2Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling2.Image));
+        m_BuiltBuildings.Dwelling2Up = true;
+    }
+
+    protected virtual void BuildDwelling3()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling3));
+        m_BuiltBuildings.Dwelling3 = true;
+    }
+
+    protected virtual void BuildDwelling3Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling3Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling3.Image));
+        m_BuiltBuildings.Dwelling3Up = true;
+    }
+
+    protected virtual void BuildDwelling4()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling4));
+        m_BuiltBuildings.Dwelling4 = true;
+    }
+
+    protected virtual void BuildDwelling4Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling4Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling4.Image));
+        m_BuiltBuildings.Dwelling4Up = true;
+    }
+
+    protected virtual void BuildDwelling5()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling5));
+        m_BuiltBuildings.Dwelling5 = true;
+    }
+
+    protected virtual void BuildDwelling5Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling5Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling5.Image));
+        m_BuiltBuildings.Dwelling5Up = true;
+    }
+
+    protected virtual void BuildDwelling6()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling6));
+        m_BuiltBuildings.Dwelling6 = true;
+    }
+
+    protected virtual void BuildDwelling6Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling6Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling6.Image));
+        m_BuiltBuildings.Dwelling6Up = true;
+    }
+
+    protected virtual void BuildDwelling7()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling7));
+        m_BuiltBuildings.Dwelling7 = true;
+    }
+
+    protected virtual void BuildDwelling7Up()
+    {
+        StartCoroutine(BuildBuilding(m_Dwelling7Up));
+        StartCoroutine(RemoveBuilding(m_Dwelling7.Image));
+        m_BuiltBuildings.Dwelling7Up = true;
+    }
+
+    protected virtual void BuildFactionBuilding1()
+    {
+        StartCoroutine(BuildBuilding(m_FactionBuilding1));
+        m_BuiltBuildings.FactionBuilding1 = true;
+    }
+
+    protected virtual void BuildFactionBuilding2()
+    {
+        StartCoroutine(BuildBuilding(m_FactionBuilding2));
+        m_BuiltBuildings.FactionBuilding2 = true;
+    }
+
+    protected virtual void BuildFactionBuilding3()
+    {
+        StartCoroutine(BuildBuilding(m_FactionBuilding3));
+        m_BuiltBuildings.FactionBuilding3 = true;
+    }
+
+    protected virtual void BuildFactionBuilding4()
+    {
+        StartCoroutine(BuildBuilding(m_FactionBuilding4));
+        m_BuiltBuildings.FactionBuilding4 = true;
     }
 
     protected IEnumerator BuildBuilding(Building a_Building)
@@ -652,5 +1010,110 @@ public abstract class TownBuildings : MonoBehaviour
         }
 
         a_Building.gameObject.SetActive(false);
+    }
+
+    // This should probably be moved to some kind of dictionary solution
+    public virtual bool IsBuildingBuilt(BuildingData a_Building)
+    {
+        if (a_Building == m_HallTownHall.BuildingData)
+        {
+            return m_BuiltBuildings.TownHall;
+        }
+        else if (a_Building == m_HallCityHall.BuildingData)
+        {
+            return m_BuiltBuildings.CityHall;
+        }
+        else if (a_Building == m_HallCapitol.BuildingData)
+        {
+            return m_BuiltBuildings.Capitol;
+        }
+        else if (a_Building == m_HallFort.BuildingData)
+        {
+            return m_BuiltBuildings.Fort;
+        }
+        else if (a_Building == m_HallCitadel.BuildingData)
+        {
+            return m_BuiltBuildings.Citadel;
+        }
+        else if (a_Building == m_HallCastle.BuildingData)
+        {
+            return m_BuiltBuildings.Castle;
+        }
+        else if (a_Building == m_HallBlacksmith.BuildingData)
+        {
+            return m_BuiltBuildings.Blacksmith;
+        }
+        else if (a_Building == m_HallMarket.BuildingData)
+        {
+            return m_BuiltBuildings.Market;
+        }
+        else if (a_Building == m_HallSilo.BuildingData)
+        {
+            return m_BuiltBuildings.Silo;
+        }
+        else if (a_Building == m_HallTavern.BuildingData)
+        {
+            return m_BuiltBuildings.Tavern;
+        }
+        else if (a_Building == m_HallDwelling1.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling1;
+        }
+        else if (a_Building == m_HallDwelling1Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling1Up;
+        }
+        else if (a_Building == m_HallDwelling2.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling2;
+        }
+        else if (a_Building == m_HallDwelling2Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling2Up;
+        }
+        else if (a_Building == m_HallDwelling3.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling3;
+        }
+        else if (a_Building == m_HallDwelling3Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling3Up;
+        }
+        else if (a_Building == m_HallDwelling4.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling4;
+        }
+        else if (a_Building == m_HallDwelling4Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling4Up;
+        }
+        else if (a_Building == m_HallDwelling5.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling5;
+        }
+        else if (a_Building == m_HallDwelling5Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling5Up;
+        }
+        else if (a_Building == m_HallDwelling6.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling6;
+        }
+        else if (a_Building == m_HallDwelling6Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling6Up;
+        }
+        else if (a_Building == m_HallDwelling7.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling7;
+        }
+        else if (a_Building == m_HallDwelling7Up.BuildingData)
+        {
+            return m_BuiltBuildings.Dwelling7Up;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

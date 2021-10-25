@@ -11,9 +11,9 @@ public class TowerBuildings : TownBuildings
     [SerializeField] Building m_WallOfKnowledge;
     [SerializeField] Building m_LookoutTower;
 
-    public override void SetBuildings(BuiltBuildings a_Data)
+    public override void SetBuildings(BuiltBuildings a_Data, bool a_CanBuildShipyard)
     {
-        base.SetBuildings(a_Data);
+        base.SetBuildings(a_Data, a_CanBuildShipyard);
 
         if (a_Data.Dwelling2Growth)
         {

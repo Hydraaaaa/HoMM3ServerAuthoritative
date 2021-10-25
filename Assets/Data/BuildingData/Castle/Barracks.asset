@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: Brotherhood
+  m_Name: Barracks
   m_EditorClassIdentifier: 
-  m_DisplayName: Brotherhood of the Sword
-  m_Description: During a siege, the Brotherhood of the Sword increases troop morale
-    by +2.
-  m_WoodCost: 5
+  m_DisplayName: Barracks
+  m_Description: The Barracks allow you to recruit Swordsmen.
+  m_WoodCost: 0
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 5
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 500
+  m_GoldCost: 2000
+  m_Requirements:
+  - {fileID: 11400000, guid: 90af70d2dcc35b746a19ce533718fcc3, type: 2}
+  - {fileID: 11400000, guid: 8c99cf7da83114e4bae6b84639c04c01, type: 2}

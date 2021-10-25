@@ -9,9 +9,9 @@ public class DungeonBuildings : TownBuildings
     [SerializeField] Building m_Warren2G;
     [SerializeField] Building m_ManaVortexMageGuild5;
 
-    public override void SetBuildings(BuiltBuildings a_Data)
+    public override void SetBuildings(BuiltBuildings a_Data, bool a_CanBuildShipyard)
     {
-        base.SetBuildings(a_Data);
+        base.SetBuildings(a_Data, a_CanBuildShipyard);
 
         if (a_Data.Dwelling1Growth)
         {
