@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
+  m_Name: Castle
+  m_EditorClassIdentifier: 
+  m_DisplayName: Castle
+  m_Description: The Castle adds two arrow towers, fortifies your town's defenses,
+    and doubles base creature growth.
+  m_WoodCost: 10
+  m_MercuryCost: 0
+  m_OreCost: 10
+  m_SulfurCost: 0
+  m_CrystalCost: 0
+  m_GemCost: 0
+  m_GoldCost: 5000
+  m_Requirements: {fileID: 11400000, guid: c806bf5f9e187ef48a0bb171f5b4d85a, type: 2}

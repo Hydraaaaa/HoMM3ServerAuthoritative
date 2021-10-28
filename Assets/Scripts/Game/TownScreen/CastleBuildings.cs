@@ -303,33 +303,33 @@ public class CastleBuildings : TownBuildings
         m_BuiltBuildings.Dwelling3Growth = true;
     }
 
-    public override bool IsBuildingBuilt(BuildingData a_Building)
+    public override bool IsBuildingBuilt(BuildingRequirements a_Building)
     {
-        if (a_Building == m_HallMageGuild1.BuildingData)
+        if (a_Building == m_HallMageGuild1.BuildingData.Requirements)
         {
             return m_BuiltBuildings.MageGuild1;
         }
-        else if (a_Building == m_HallMageGuild2.BuildingData)
+        else if (a_Building == m_HallMageGuild2.BuildingData.Requirements)
         {
             return m_BuiltBuildings.MageGuild2;
         }
-        else if (a_Building == m_HallMageGuild3.BuildingData)
+        else if (a_Building == m_HallMageGuild3.BuildingData.Requirements)
         {
             return m_BuiltBuildings.MageGuild3;
         }
-        else if (a_Building == m_HallMageGuild4.BuildingData)
+        else if (a_Building == m_HallMageGuild4.BuildingData.Requirements)
         {
             return m_BuiltBuildings.MageGuild4;
         }
-        else if (a_Building == m_HallLighthouse.BuildingData)
+        else if (a_Building == m_HallLighthouse.BuildingData.Requirements)
         {
             return m_BuiltBuildings.FactionBuilding1;
         }
-        else if (a_Building == m_HallBrotherhood.BuildingData)
+        else if (a_Building == m_HallBrotherhood.BuildingData.Requirements)
         {
             return m_BuiltBuildings.FactionBuilding2;
         }
-        else if (a_Building == m_HallStables.BuildingData)
+        else if (a_Building == m_HallStables.BuildingData.Requirements)
         {
             return m_BuiltBuildings.FactionBuilding3;
         }

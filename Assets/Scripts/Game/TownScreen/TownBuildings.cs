@@ -572,9 +572,9 @@ public abstract class TownBuildings : MonoBehaviour
 
         if (a_Building.BuildingData.Requirements != null)
         {
-            for (int i = 0; i < a_Building.BuildingData.Requirements.Length; i++)
+            for (int i = 0; i < a_Building.BuildingData.Requirements.Requirements.Length; i++)
             {
-                if (!IsBuildingBuilt(a_Building.BuildingData.Requirements[i]))
+                if (!IsBuildingBuilt(a_Building.BuildingData.Requirements.Requirements[i]))
                 {
                     _RequirementsMet = false;
                 }
@@ -1013,101 +1013,101 @@ public abstract class TownBuildings : MonoBehaviour
     }
 
     // This should probably be moved to some kind of dictionary solution
-    public virtual bool IsBuildingBuilt(BuildingData a_Building)
+    public virtual bool IsBuildingBuilt(BuildingRequirements a_Building)
     {
-        if (a_Building == m_HallTownHall.BuildingData)
+        if (a_Building == m_HallTownHall.BuildingData.Requirements)
         {
             return m_BuiltBuildings.TownHall;
         }
-        else if (a_Building == m_HallCityHall.BuildingData)
+        else if (a_Building == m_HallCityHall.BuildingData.Requirements)
         {
             return m_BuiltBuildings.CityHall;
         }
-        else if (a_Building == m_HallCapitol.BuildingData)
+        else if (a_Building == m_HallCapitol.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Capitol;
         }
-        else if (a_Building == m_HallFort.BuildingData)
+        else if (a_Building == m_HallFort.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Fort;
         }
-        else if (a_Building == m_HallCitadel.BuildingData)
+        else if (a_Building == m_HallCitadel.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Citadel;
         }
-        else if (a_Building == m_HallCastle.BuildingData)
+        else if (a_Building == m_HallCastle.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Castle;
         }
-        else if (a_Building == m_HallBlacksmith.BuildingData)
+        else if (a_Building == m_HallBlacksmith.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Blacksmith;
         }
-        else if (a_Building == m_HallMarket.BuildingData)
+        else if (a_Building == m_HallMarket.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Market;
         }
-        else if (a_Building == m_HallSilo.BuildingData)
+        else if (a_Building == m_HallSilo.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Silo;
         }
-        else if (a_Building == m_HallTavern.BuildingData)
+        else if (a_Building == m_HallTavern.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Tavern;
         }
-        else if (a_Building == m_HallDwelling1.BuildingData)
+        else if (a_Building == m_HallDwelling1.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling1;
         }
-        else if (a_Building == m_HallDwelling1Up.BuildingData)
+        else if (a_Building == m_HallDwelling1Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling1Up;
         }
-        else if (a_Building == m_HallDwelling2.BuildingData)
+        else if (a_Building == m_HallDwelling2.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling2;
         }
-        else if (a_Building == m_HallDwelling2Up.BuildingData)
+        else if (a_Building == m_HallDwelling2Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling2Up;
         }
-        else if (a_Building == m_HallDwelling3.BuildingData)
+        else if (a_Building == m_HallDwelling3.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling3;
         }
-        else if (a_Building == m_HallDwelling3Up.BuildingData)
+        else if (a_Building == m_HallDwelling3Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling3Up;
         }
-        else if (a_Building == m_HallDwelling4.BuildingData)
+        else if (a_Building == m_HallDwelling4.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling4;
         }
-        else if (a_Building == m_HallDwelling4Up.BuildingData)
+        else if (a_Building == m_HallDwelling4Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling4Up;
         }
-        else if (a_Building == m_HallDwelling5.BuildingData)
+        else if (a_Building == m_HallDwelling5.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling5;
         }
-        else if (a_Building == m_HallDwelling5Up.BuildingData)
+        else if (a_Building == m_HallDwelling5Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling5Up;
         }
-        else if (a_Building == m_HallDwelling6.BuildingData)
+        else if (a_Building == m_HallDwelling6.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling6;
         }
-        else if (a_Building == m_HallDwelling6Up.BuildingData)
+        else if (a_Building == m_HallDwelling6Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling6Up;
         }
-        else if (a_Building == m_HallDwelling7.BuildingData)
+        else if (a_Building == m_HallDwelling7.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling7;
         }
-        else if (a_Building == m_HallDwelling7Up.BuildingData)
+        else if (a_Building == m_HallDwelling7Up.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Dwelling7Up;
         }

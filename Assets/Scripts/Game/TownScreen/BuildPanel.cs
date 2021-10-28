@@ -44,22 +44,22 @@ public class BuildPanel : MonoBehaviour
         m_Description.text = m_BuildingData.Description;
         m_Requirements.text = "Requires:\n";
 
-        List<BuildingData> _RemainingRequirements = new List<BuildingData>();
+        List<BuildingRequirements> _RemainingRequirements = new List<BuildingRequirements>();
 
         if (m_BuildingData.Requirements != null)
         {
-            for (int i = 0; i < m_BuildingData.Requirements.Length; i++)
+            for (int i = 0; i < m_BuildingData.Requirements.Requirements.Length; i++)
             {
-                if (!_Buildings.IsBuildingBuilt(m_BuildingData.Requirements[i]))
+                if (!_Buildings.IsBuildingBuilt(m_BuildingData.Requirements.Requirements[i]))
                 {
-                    _RemainingRequirements.Add(m_BuildingData.Requirements[i]);
+                    _RemainingRequirements.Add(m_BuildingData.Requirements.Requirements[i]);
                 }
             }
         }
 
         for (int i = 0; i < _RemainingRequirements.Count; i++)
         {
-            m_Requirements.text += _RemainingRequirements[i].DisplayName;
+            m_Requirements.text += _RemainingRequirements[i].name;
 
             if (i < _RemainingRequirements.Count - 1)
             {

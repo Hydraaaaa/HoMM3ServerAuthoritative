@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
+  m_Name: SiloWoodOre
+  m_EditorClassIdentifier: 
+  m_DisplayName: Resource Silo
+  m_Description: The Resource Silo provides you with an additional +1 wood and +1
+    ore each day.
+  m_WoodCost: 0
+  m_MercuryCost: 0
+  m_OreCost: 5
+  m_SulfurCost: 0
+  m_CrystalCost: 0
+  m_GemCost: 0
+  m_GoldCost: 5000
+  m_Requirements: {fileID: 11400000, guid: 5d6384238e63b4a49836780d7976285e, type: 2}
