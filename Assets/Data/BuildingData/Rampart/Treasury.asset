@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Treasury
   m_EditorClassIdentifier: 
   m_DisplayName: Treasury
-  m_Description: 
+  m_Description: The Treasury earns you 10% interest on any gold you have at the
+    start of each week.
   m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0

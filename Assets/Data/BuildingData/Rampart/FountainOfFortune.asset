@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: FountainOfFortune
   m_EditorClassIdentifier: 
   m_DisplayName: Fountain of Fortune
-  m_Description: 
+  m_Description: The Fountain of Fortune increases the luck of the garrison hero
+    by +2 when defending against a siege.
   m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0

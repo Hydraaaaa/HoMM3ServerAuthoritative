@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: BloodObelisk
   m_EditorClassIdentifier: 
   m_DisplayName: Blood Obelisk
-  m_Description: 
+  m_Description: The presence of a Blood obelisk adds +2 to a garrison hero's attack
+    skill when defending against a siege.
   m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0

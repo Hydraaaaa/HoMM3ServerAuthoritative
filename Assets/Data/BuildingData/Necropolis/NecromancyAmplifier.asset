@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NecromancyAmplifier
   m_EditorClassIdentifier: 
   m_DisplayName: Necromancy Amplifier
-  m_Description: 
+  m_Description: The Necromancy Amplifier increases the Necromancy skill of all heroes
+    you control (with the Necromancy skill) by 10%.
   m_WoodCost: 0
   m_MercuryCost: 0
   m_OreCost: 0
