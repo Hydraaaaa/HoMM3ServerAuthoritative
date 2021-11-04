@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Upg. Hydra Pond
   m_Description: The Hydra Pond allows you to recruit Chaos Hydras.
-  m_WoodCost: 0
+  m_WoodCost: 10
   m_MercuryCost: 0
-  m_OreCost: 0
-  m_SulfurCost: 0
+  m_OreCost: 10
+  m_SulfurCost: 20
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 15000
   m_Requirements: {fileID: 0}

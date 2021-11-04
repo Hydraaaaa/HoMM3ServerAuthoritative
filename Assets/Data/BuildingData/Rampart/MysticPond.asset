@@ -15,11 +15,11 @@ MonoBehaviour:
   m_DisplayName: Mystic Pond
   m_Description: The Mystic Pond produces a small random number of resources each
     week.
-  m_WoodCost: 0
-  m_MercuryCost: 0
-  m_OreCost: 0
-  m_SulfurCost: 0
-  m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_WoodCost: 2
+  m_MercuryCost: 2
+  m_OreCost: 2
+  m_SulfurCost: 2
+  m_CrystalCost: 2
+  m_GemCost: 2
+  m_GoldCost: 1000
   m_Requirements: {fileID: 0}

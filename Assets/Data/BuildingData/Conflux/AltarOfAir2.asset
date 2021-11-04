@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Upg. Altar of Air
   m_Description: The Altar of Air allows you to recruit Storm Elementals.
-  m_WoodCost: 0
-  m_MercuryCost: 0
+  m_WoodCost: 2
+  m_MercuryCost: 2
   m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_GemCost: 2
+  m_GoldCost: 1500
   m_Requirements: {fileID: 0}

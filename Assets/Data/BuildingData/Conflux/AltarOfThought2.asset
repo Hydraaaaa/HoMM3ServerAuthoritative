@@ -15,10 +15,10 @@ MonoBehaviour:
   m_DisplayName: Upg. Altar of Thought
   m_Description: The Altar of Thought allows you to recruit Magic Elementals.
   m_WoodCost: 0
-  m_MercuryCost: 0
+  m_MercuryCost: 3
   m_OreCost: 0
-  m_SulfurCost: 0
-  m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_SulfurCost: 3
+  m_CrystalCost: 3
+  m_GemCost: 3
+  m_GoldCost: 3000
   m_Requirements: {fileID: 0}

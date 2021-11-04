@@ -15,11 +15,11 @@ MonoBehaviour:
   m_DisplayName: Order of Fire
   m_Description: The Order of Fire increases the Power skill of any visiting hero
     by +1.
-  m_WoodCost: 0
+  m_WoodCost: 5
   m_MercuryCost: 0
   m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 1000
   m_Requirements: {fileID: 0}

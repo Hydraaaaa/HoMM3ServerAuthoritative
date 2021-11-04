@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Chapel of Stilled Voices
   m_Description: The Chapel of Stilled Voices allows you to recruit Medusas.
-  m_WoodCost: 0
+  m_WoodCost: 5
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 10
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 2000
   m_Requirements: {fileID: 0}

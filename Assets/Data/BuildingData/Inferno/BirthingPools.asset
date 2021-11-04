@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85690450fb83fc2459e518aab5d7fa64, type: 3}
-  m_Name: BirthingPool
+  m_Name: BirthingPools
   m_EditorClassIdentifier: 
-  m_DisplayName: Birthing Pool
+  m_DisplayName: Birthing Pools
   m_Description: The Birthing Pools increase Imp production by 8 per week.
   m_WoodCost: 0
   m_MercuryCost: 0
@@ -20,5 +20,5 @@ MonoBehaviour:
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 1000
   m_Requirements: {fileID: 0}

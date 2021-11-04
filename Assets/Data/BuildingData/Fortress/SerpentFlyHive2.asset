@@ -15,10 +15,10 @@ MonoBehaviour:
   m_DisplayName: Upg. Serpent Fly Hive
   m_Description: The Serpent Fly Hive allows you to recruit Dragon Fly.
   m_WoodCost: 0
-  m_MercuryCost: 0
+  m_MercuryCost: 2
   m_OreCost: 0
-  m_SulfurCost: 0
+  m_SulfurCost: 2
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 1000
   m_Requirements: {fileID: 0}

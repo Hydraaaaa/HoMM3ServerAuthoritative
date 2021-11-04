@@ -16,9 +16,9 @@ MonoBehaviour:
   m_Description: The Cyclops Cave allows you to recruit Cyclopes.
   m_WoodCost: 0
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 20
   m_SulfurCost: 0
-  m_CrystalCost: 0
+  m_CrystalCost: 20
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 3500
   m_Requirements: {fileID: 0}

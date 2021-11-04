@@ -16,9 +16,9 @@ MonoBehaviour:
   m_Description: The Dragon Cliffs allows you to recruit Gold Dragons.
   m_WoodCost: 0
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 30
   m_SulfurCost: 0
-  m_CrystalCost: 0
+  m_CrystalCost: 20
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 20000
   m_Requirements: {fileID: 0}

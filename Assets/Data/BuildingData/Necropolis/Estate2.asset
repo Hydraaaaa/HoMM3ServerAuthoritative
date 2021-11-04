@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Upg. Estate
   m_Description: The Estate allows you to recruit Vampire Lords.
-  m_WoodCost: 0
+  m_WoodCost: 10
   m_MercuryCost: 0
   m_OreCost: 0
   m_SulfurCost: 0
-  m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_CrystalCost: 10
+  m_GemCost: 10
+  m_GoldCost: 2000
   m_Requirements: {fileID: 0}

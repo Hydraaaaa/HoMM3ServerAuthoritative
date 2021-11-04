@@ -15,10 +15,10 @@ MonoBehaviour:
   m_DisplayName: Upg. Fire Lake
   m_Description: The Fire Lake allows you to recruit Efreet Sultans.
   m_WoodCost: 0
-  m_MercuryCost: 0
-  m_OreCost: 0
-  m_SulfurCost: 0
+  m_MercuryCost: 5
+  m_OreCost: 5
+  m_SulfurCost: 5
   m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_GemCost: 5
+  m_GoldCost: 3000
   m_Requirements: {fileID: 0}

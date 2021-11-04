@@ -15,11 +15,11 @@ MonoBehaviour:
   m_DisplayName: Magic University
   m_Description: At the Magic University, you can pay to learn any, or all, of the
     four schools of magic.
-  m_WoodCost: 0
+  m_WoodCost: 10
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 10
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 5000
   m_Requirements: {fileID: 0}

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Ogre Fort
   m_Description: The Ogre Fort allows you to recruit Ogres.
-  m_WoodCost: 0
+  m_WoodCost: 20
   m_MercuryCost: 0
   m_OreCost: 0
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 2000
   m_Requirements: {fileID: 0}

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DisplayName: Upg. Graveyard
   m_Description: The Graveyard allows you to recruit Zombies.
-  m_WoodCost: 0
+  m_WoodCost: 5
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 5
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 1000
   m_Requirements: {fileID: 0}

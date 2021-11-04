@@ -15,10 +15,10 @@ MonoBehaviour:
   m_DisplayName: Fire Lake
   m_Description: The Fire Lake allows you to recruit Efreet.
   m_WoodCost: 0
-  m_MercuryCost: 0
-  m_OreCost: 0
-  m_SulfurCost: 0
+  m_MercuryCost: 3
+  m_OreCost: 10
+  m_SulfurCost: 3
   m_CrystalCost: 0
-  m_GemCost: 0
-  m_GoldCost: 0
+  m_GemCost: 3
+  m_GoldCost: 4000
   m_Requirements: {fileID: 0}

@@ -15,11 +15,11 @@ MonoBehaviour:
   m_DisplayName: Escape Tunnel
   m_Description: The Escape Tunnel allows a garrison hero to flee from defending
     against a siege.
-  m_WoodCost: 0
+  m_WoodCost: 5
   m_MercuryCost: 0
-  m_OreCost: 0
+  m_OreCost: 5
   m_SulfurCost: 0
   m_CrystalCost: 0
   m_GemCost: 0
-  m_GoldCost: 0
+  m_GoldCost: 2000
   m_Requirements: {fileID: 0}
