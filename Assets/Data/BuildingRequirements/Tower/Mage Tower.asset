@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Mage Tower
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: ae0317e4ba6ef884f9991fc624a8798c, type: 2}
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 47340b66fdb5da340b6c19da77b50d28, type: 2}
+  - {fileID: 11400000, guid: 0f7fa1333ca49924eab51e093169a19d, type: 2}
+  - {fileID: 11400000, guid: 72d0b7f1f2a32424b830a5b68048bac5, type: 2}

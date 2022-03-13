@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Miners' Guild
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 1436676b4f3d05a42be280397b8bf53d, type: 2}
+  - {fileID: 11400000, guid: 970facd7a92b96f418732498f7d433bf, type: 2}

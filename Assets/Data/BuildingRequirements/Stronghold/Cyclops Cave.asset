@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Cyclops Cave
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 9d6f1415973eeb845a6a39be460a2cd9, type: 2}
+  - {fileID: 11400000, guid: 539204d5701a05041b4d932acf40846e, type: 2}
+  - {fileID: 11400000, guid: ec799ac15058b1e4e8009853bcf3433c, type: 2}

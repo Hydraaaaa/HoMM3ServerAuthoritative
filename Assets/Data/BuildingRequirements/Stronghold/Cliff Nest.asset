@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Cliff Nest
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 9d6f1415973eeb845a6a39be460a2cd9, type: 2}
+  - {fileID: 11400000, guid: a6a33b724d34cb341a1f0d3998073e22, type: 2}

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Library
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: ae0317e4ba6ef884f9991fc624a8798c, type: 2}

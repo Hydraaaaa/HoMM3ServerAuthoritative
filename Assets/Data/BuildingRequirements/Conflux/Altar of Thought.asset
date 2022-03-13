@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Altar of Thought
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: ae0317e4ba6ef884f9991fc624a8798c, type: 2}
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 9d41997f929ad314ea3e34edd7959e37, type: 2}
+  - {fileID: 11400000, guid: 48dd6606031ab474db3066afe568c222, type: 2}
+  - {fileID: 11400000, guid: e97568be541640040b8c23f1de9bf06b, type: 2}
+  - {fileID: 11400000, guid: abf2b305322644c48b45ad9b84c25f7c, type: 2}
+  - {fileID: 11400000, guid: e6efbf3bec83e684a8b4c736c9affab1, type: 2}

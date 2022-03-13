@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Dragon Cave
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: f466c9f8f6b2da34499854bf511d52f6, type: 2}
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 2e09ede2bf11f7a46bcc8d4eaee4320a, type: 2}
+  - {fileID: 11400000, guid: 2627ec8db771c0b478cb80a8961752e8, type: 2}
+  - {fileID: 11400000, guid: 2e52605a5ba1cdf43880e5c32cda82ae, type: 2}
+  - {fileID: 11400000, guid: 4650244adecadab41bcdbf2179a6f6aa, type: 2}
+  - {fileID: 11400000, guid: 56a87f5eb4e4f3449929519eb9f60554, type: 2}
+  - {fileID: 11400000, guid: f6c5417ec366eee408eb182b256f0190, type: 2}

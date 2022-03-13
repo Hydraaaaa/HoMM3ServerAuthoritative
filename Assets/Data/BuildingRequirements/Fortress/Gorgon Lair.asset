@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Gorgon Lair
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 6712dfb67215e084080ee9383ae51d6a, type: 2}
+  - {fileID: 11400000, guid: 09367f90f289d2f4198e21e802f8c41e, type: 2}
+  - {fileID: 11400000, guid: 29078244d2aeb3546909411b2f53b26e, type: 2}

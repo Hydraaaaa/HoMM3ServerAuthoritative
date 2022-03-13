@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Mausoleum
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: ae0317e4ba6ef884f9991fc624a8798c, type: 2}
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: 3f61398eedf681e49b219154472f558a, type: 2}
+  - {fileID: 11400000, guid: b6b731aeba7941b4196da0d5ae05d1b8, type: 2}

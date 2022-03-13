@@ -77,6 +77,12 @@ public abstract class TownBuildings : MonoBehaviour
 
     [SerializeField] protected HallBuilding m_HallShipyard;
 
+    [SerializeField] protected HallBuilding m_HallMageGuild1;
+    [SerializeField] protected HallBuilding m_HallMageGuild2;
+    [SerializeField] protected HallBuilding m_HallMageGuild3;
+    [SerializeField] protected HallBuilding m_HallMageGuild4;
+    [SerializeField] protected HallBuilding m_HallMageGuild5;
+
     [SerializeField] protected HallBuilding m_HallDwelling1;
     [SerializeField] protected HallBuilding m_HallDwelling1Up;
     [SerializeField] protected HallBuilding m_HallDwelling2;
@@ -378,6 +384,17 @@ public abstract class TownBuildings : MonoBehaviour
             m_HallCastle.gameObject.SetActive(false);
         }
 
+        m_HallTavern.gameObject.SetActive(true);
+
+        if (m_BuiltBuildings.Tavern)
+        {
+            SetHallBuildingBuilt(m_HallTavern);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallTavern);
+        }
+
         m_HallBlacksmith.gameObject.SetActive(true);
 
         if (m_BuiltBuildings.Blacksmith)
@@ -409,6 +426,111 @@ public abstract class TownBuildings : MonoBehaviour
 
             m_HallMarket.gameObject.SetActive(true);
             m_HallSilo.gameObject.SetActive(false);
+        }
+
+        if (m_BuiltBuildings.MageGuild5)
+        {
+            SetHallBuildingBuilt(m_HallMageGuild5);
+
+            m_HallMageGuild5.gameObject.SetActive(true);
+            m_HallMageGuild1.gameObject.SetActive(false);
+            m_HallMageGuild2.gameObject.SetActive(false);
+            m_HallMageGuild3.gameObject.SetActive(false);
+            m_HallMageGuild4.gameObject.SetActive(false);
+        }
+        else if (m_BuiltBuildings.MageGuild4)
+        {
+            if (m_HallMageGuild5 != null)
+            {
+                SetHallBuildingNotBuilt(m_HallMageGuild5);
+
+                m_HallMageGuild5.gameObject.SetActive(true);
+                m_HallMageGuild4.gameObject.SetActive(false);
+            }
+            else
+            {
+                SetHallBuildingBuilt(m_HallMageGuild4);
+
+                m_HallMageGuild4.gameObject.SetActive(true);
+            }
+
+            m_HallMageGuild1.gameObject.SetActive(false);
+            m_HallMageGuild2.gameObject.SetActive(false);
+            m_HallMageGuild3.gameObject.SetActive(false);
+        }
+        else if (m_BuiltBuildings.MageGuild3)
+        {
+            if (m_HallMageGuild4 != null)
+            {
+                SetHallBuildingNotBuilt(m_HallMageGuild4);
+
+                m_HallMageGuild4.gameObject.SetActive(true);
+                m_HallMageGuild3.gameObject.SetActive(false);
+            }
+            else
+            {
+                SetHallBuildingBuilt(m_HallMageGuild3);
+
+                m_HallMageGuild3.gameObject.SetActive(true);
+            }
+
+            m_HallMageGuild1.gameObject.SetActive(false);
+            m_HallMageGuild2.gameObject.SetActive(false);
+            m_HallMageGuild5?.gameObject.SetActive(false);
+        }
+        else if (m_BuiltBuildings.MageGuild2)
+        {
+            SetHallBuildingNotBuilt(m_HallMageGuild3);
+
+            m_HallMageGuild3.gameObject.SetActive(true);
+            m_HallMageGuild1.gameObject.SetActive(false);
+            m_HallMageGuild2.gameObject.SetActive(false);
+            m_HallMageGuild4?.gameObject.SetActive(false);
+            m_HallMageGuild5?.gameObject.SetActive(false);
+        }
+        else if (m_BuiltBuildings.MageGuild1)
+        {
+            SetHallBuildingNotBuilt(m_HallMageGuild2);
+
+            m_HallMageGuild2.gameObject.SetActive(true);
+            m_HallMageGuild1.gameObject.SetActive(false);
+            m_HallMageGuild3.gameObject.SetActive(false);
+            m_HallMageGuild4?.gameObject.SetActive(false);
+            m_HallMageGuild5?.gameObject.SetActive(false);
+        }
+        else
+        {
+            SetHallBuildingNotBuilt(m_HallMageGuild1);
+
+            m_HallMageGuild1.gameObject.SetActive(true);
+            m_HallMageGuild2.gameObject.SetActive(false);
+            m_HallMageGuild3.gameObject.SetActive(false);
+            m_HallMageGuild4?.gameObject.SetActive(false);
+            m_HallMageGuild5?.gameObject.SetActive(false);
+        }
+
+        if (m_HallArtifactMerchants != null)
+        {
+            if (m_BuiltBuildings.ArtifactMerchants)
+            {
+                SetHallBuildingBuilt(m_HallArtifactMerchants);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallArtifactMerchants);
+            }
+        }
+
+        if (m_HallShipyard != null)
+        {
+            if (m_BuiltBuildings.Shipyard)
+            {
+                SetHallBuildingBuilt(m_HallShipyard);
+            }
+            else
+            {
+                SetHallBuildingNotBuilt(m_HallShipyard);
+            }
         }
 
         if (m_BuiltBuildings.Dwelling1)
@@ -630,6 +752,10 @@ public abstract class TownBuildings : MonoBehaviour
 
     public virtual void BuildBuilding(BuildingData a_BuildingData)
     {
+        if (a_BuildingData == null)
+        {
+            Debug.LogError($"!! IT'S NULL @@@@@@@@@@@@@@@@@");
+        }
         if (a_BuildingData == m_HallTownHall.BuildingData)
         {
             BuildTownHall();
@@ -654,6 +780,10 @@ public abstract class TownBuildings : MonoBehaviour
         {
             BuildCastle();
         }
+        else if (a_BuildingData == m_HallTavern.BuildingData)
+        {
+            BuildTavern();
+        }
         else if (a_BuildingData == m_HallBlacksmith.BuildingData)
         {
             BuildBlacksmith();
@@ -665,6 +795,34 @@ public abstract class TownBuildings : MonoBehaviour
         else if (a_BuildingData == m_HallSilo.BuildingData)
         {
             BuildSilo();
+        }
+        else if (a_BuildingData == m_HallMageGuild1.BuildingData)
+        {
+            BuildMageGuild1();
+        }
+        else if (a_BuildingData == m_HallMageGuild2.BuildingData)
+        {
+            BuildMageGuild2();
+        }
+        else if (a_BuildingData == m_HallMageGuild3.BuildingData)
+        {
+            BuildMageGuild3();
+        }
+        else if (a_BuildingData == m_HallMageGuild4?.BuildingData)
+        {
+            BuildMageGuild4();
+        }
+        else if (a_BuildingData == m_HallMageGuild5?.BuildingData)
+        {
+            BuildMageGuild5();
+        }
+        else if (a_BuildingData == m_HallArtifactMerchants?.BuildingData)
+        {
+            BuildArtifactMerchants();
+        }
+        else if (a_BuildingData == m_HallShipyard?.BuildingData)
+        {
+            BuildShipyard();
         }
         else if (a_BuildingData == m_HallDwelling1.BuildingData)
         {
@@ -765,6 +923,12 @@ public abstract class TownBuildings : MonoBehaviour
         m_BuiltBuildings.Castle = true;
     }
 
+    protected virtual void BuildTavern()
+    {
+        StartCoroutine(BuildBuilding(m_Tavern));
+        m_BuiltBuildings.Tavern = true;
+    }
+
     protected virtual void BuildBlacksmith()
     {
         StartCoroutine(BuildBuilding(m_Blacksmith));
@@ -815,6 +979,18 @@ public abstract class TownBuildings : MonoBehaviour
         StartCoroutine(BuildBuilding(m_MageGuild5));
         StartCoroutine(RemoveBuilding(m_MageGuild4.Image));
         m_BuiltBuildings.MageGuild5 = true;
+    }
+
+    protected virtual void BuildArtifactMerchants()
+    {
+        StartCoroutine(BuildBuilding(m_ArtifactMerchants));
+        m_BuiltBuildings.ArtifactMerchants = true;
+    }
+
+    protected virtual void BuildShipyard()
+    {
+        StartCoroutine(BuildBuilding(m_Shipyard));
+        m_BuiltBuildings.Shipyard = true;
     }
 
     protected virtual void BuildDwelling1()
@@ -1054,6 +1230,26 @@ public abstract class TownBuildings : MonoBehaviour
         else if (a_Building == m_HallTavern.BuildingData.Requirements)
         {
             return m_BuiltBuildings.Tavern;
+        }
+        else if (a_Building == m_HallMageGuild1.BuildingData.Requirements)
+        {
+            return m_BuiltBuildings.MageGuild1;
+        }
+        else if (a_Building == m_HallMageGuild2.BuildingData.Requirements)
+        {
+            return m_BuiltBuildings.MageGuild2;
+        }
+        else if (a_Building == m_HallMageGuild3.BuildingData.Requirements)
+        {
+            return m_BuiltBuildings.MageGuild3;
+        }
+        else if (a_Building == m_HallMageGuild4?.BuildingData.Requirements)
+        {
+            return m_BuiltBuildings.MageGuild4;
+        }
+        else if (a_Building == m_HallMageGuild5?.BuildingData.Requirements)
+        {
+            return m_BuiltBuildings.MageGuild5;
         }
         else if (a_Building == m_HallDwelling1.BuildingData.Requirements)
         {

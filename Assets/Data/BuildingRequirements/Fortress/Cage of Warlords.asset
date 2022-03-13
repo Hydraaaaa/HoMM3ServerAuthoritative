@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e283d0e8881075a4e8eaeb9cfa16fcb8, type: 3}
   m_Name: Cage of Warlords
   m_EditorClassIdentifier: 
-  m_Requirements: []
+  m_Requirements:
+  - {fileID: 11400000, guid: d5c9c62b8ec8b974e80704a2a1066447, type: 2}
+  - {fileID: 11400000, guid: a7906a9845a12ba438cd1ffb5aecfc8e, type: 2}
+  - {fileID: 11400000, guid: b27d6ecb632a2b44ea2c233ab4cae748, type: 2}
+  - {fileID: 11400000, guid: f5ef96b22f44490478efd26d6a6f8b76, type: 2}
