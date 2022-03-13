@@ -111,12 +111,13 @@ public abstract class TownBuildings : MonoBehaviour
     [SerializeField] protected Sprite m_Grey;
 
     protected BuiltBuildings m_BuiltBuildings;
-    protected bool m_CanBuildShipyard;
+
+    public bool CanBuildShipyard { get; protected set; }
 
     public virtual void SetBuildings(BuiltBuildings a_BuiltBuildings, bool a_CanBuildShipyard)
     {
         m_BuiltBuildings = a_BuiltBuildings;
-        m_CanBuildShipyard = a_CanBuildShipyard;
+        CanBuildShipyard = a_CanBuildShipyard;
 
         if (m_BuiltBuildings.Capitol)
         {
@@ -529,7 +530,14 @@ public abstract class TownBuildings : MonoBehaviour
             }
             else
             {
-                SetHallBuildingNotBuilt(m_HallShipyard);
+                if (CanBuildShipyard)
+                {
+                    SetHallBuildingNotBuilt(m_HallShipyard);
+                }
+                else
+                {
+                    SetHallBuildingUnbuildable(m_HallShipyard);
+                }
             }
         }
 

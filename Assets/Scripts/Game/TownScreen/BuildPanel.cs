@@ -72,6 +72,12 @@ public class BuildPanel : MonoBehaviour
             m_Requirements.text = "All prerequisites for this building have been met.";
         }
 
+        if (a_Building.IsShipyard &&
+            !m_TownScreen.GetTownBuildings().CanBuildShipyard)
+        {
+            m_Requirements.text = "This town is not near water.";
+        }
+
         m_BuildButton.interactable = a_Building.Buildable;
 
         int _ResourceCount = 0;

@@ -13,6 +13,7 @@ public class HallBuilding : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public Image CornerImage => m_CornerImage;
 
     public bool Buildable { get; set; }
+    public bool IsShipyard => m_IsShipyard;
 
     [SerializeField] BuildPanel m_BuildPanel;
 
@@ -21,6 +22,7 @@ public class HallBuilding : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     [SerializeField] Image m_Image;
     [SerializeField] Image m_ButtonImage;
     [SerializeField] Image m_CornerImage;
+    [SerializeField] bool m_IsShipyard;
 
     void Reset()
     {

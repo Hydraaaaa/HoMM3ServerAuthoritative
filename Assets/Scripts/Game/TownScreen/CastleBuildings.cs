@@ -98,7 +98,7 @@ public class CastleBuildings : TownBuildings
         }
         else
         {
-            if (m_CanBuildShipyard)
+            if (CanBuildShipyard)
             {
                 SetHallBuildingNotBuilt(m_HallShipyard);
             }
